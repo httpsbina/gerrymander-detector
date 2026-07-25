@@ -1,0 +1,10 @@
+data/raw/
+data/processed/
+data/external/
+outputs/ensembles/
+.venv/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+rdh_api_tool/download_texas.py
