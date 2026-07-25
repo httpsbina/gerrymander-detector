@@ -7,7 +7,7 @@
 
 Can we mathematically prove a congressional map is gerrymandered?
 
-This project generates thousands of legally valid alternative district maps using [MCMC sampling](https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo) and checks whether the real enacted map is a statistical outlier. If the real map looks nothing like what a neutral process would produce, that's a red flag.
+This project generates thousands of legally valid alternative district maps using [MCMC sampling](https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo) and checks whether the real enacted map is a statistical outlier. If the real map looks nothing like what a neutral process would produce, that's a red flag!
 
 Built for my [PEAK Award](https://undergraduate.northeastern.edu/research/awards/peak-fellowships-overview/) research at [Northeastern University](https://www.northeastern.edu/). Texas is the proof of concept, the goal is to scale to every state.
 
@@ -58,7 +58,7 @@ Side-by-side comparison of Texas congressional districts colored by partisan lea
 
 ## Why Texas
 
-- **New maps, little coverage.** One of the newest states to redraw district lines. Most existing gerrymandering projects haven't analyzed these maps yet.
+- **New maps.** One of the newest states to redraw district lines. Most existing gerrymandering projects haven't analyzed these maps yet.
 - **Rare mid-decade redistricting.** States normally redraw every 10 years after the census. Texas redrew in 2025, [just 4 years after the last round](https://en.wikipedia.org/wiki/2025_Texas_redistricting).
 - **Scale test.** 38 congressional districts makes it one of the largest and most complex states to redistrict. If the pipeline works here it works anywhere.
 
@@ -67,7 +67,7 @@ Side-by-side comparison of Texas congressional districts colored by partisan lea
 ## Assumptions
 
 - **Partisan proxy**: 2024 presidential race, following the approach in [Duchin's expert testimony](https://mggg.org/uploads/md-report.pdf) in the Pennsylvania redistricting case and the [MGGG Lab's](https://mggg.org) published work. Still just one election.
-- **Constraints**: Population balance (±5%) and contiguity (every district is one connected piece). Does not enforce compactness or county preservation, which actually strengthens outlier findings since stricter rules would narrow the ensemble range further.
+- **Constraints**: Population balance (±5%) and contiguity (every district is one connected piece). Does not enforce compactness or county preservation, which actually helps outlier findings since stricter rules would narrow the ensemble range further.
 - **Data merge**: Precinct boundaries shifted between the 2020 census and 2024 elections. Used centroid-based spatial joins to merge population data. About 1,500 precincts ended up with zero population, likely water or uninhabited areas. Statewide total still matches the census.
 
 ---
@@ -118,7 +118,7 @@ Side-by-side comparison of Texas congressional districts colored by partisan lea
 
 ## Author
 
-**Binafsha Bakhramova** — [Northeastern University](https://www.northeastern.edu/), Khoury College of Computer Sciences
+**Binafsha Bakhramova** — [Northeastern University](https://www.northeastern.edu/), D'Amore McKim School of Business
 
 PEAK Award Research. Not affiliated with any political party, campaign, or advocacy organization.
 
