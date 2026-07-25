@@ -12,3 +12,11 @@ The notebook uses pandas version 1.3.1, requests version 2.25.1, and numpy versi
 Please note that there is additional information about datasets on our website: redistrictingdatahub.org. Should you be interested in this information, please navigate to your state(s) of interest and then desired dataset(s).
 
 If you have any questions or requests about/for the script, accessing RDH data, or becoming a designated API user, please contact info@redistrictingdatahub.org. 
+
+# RDH API Tool
+
+These notebooks are from the [Redistricting Data Hub's official API repo](https://github.com/nonpartisan-redistricting-datahub/api). Included here for convenience — all credit to RDH.
+
+You need to be an approved API user to use these. Apply at redistrictingdatahub.org.
+
+`download_texas.py` is not included in this repo because it contains login credentials.
