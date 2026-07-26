@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texas | Gerrymander Detector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="inner"><a href="index.html" class="brand">Gerrymander Detector</a><div class="links"><a href="index.html">Map</a><a href="method.html">Method</a><a href="future.html">Future</a><a href="learn.html">Learn</a><a href="about.html">About</a></div></div></nav>
+<div class="wrap">
+
+<div class="page-header">
+    <div class="back"><a href="index.html">&larr; Back to map</a></div>
+    <div class="verdict">Outlier detected</div>
+    <h1>Texas Congressional Redistricting</h1>
+    <p class="lead">The 2025 Texas congressional map is a statistical outlier. Not one of 500 randomly generated valid maps produced as few Democratic seats as the enacted plan.</p>
+</div>
+
+<div class="content">
+
+<h2>Why I started here</h2>
+<p>Texas is one of the newest states to redraw its district lines, and most gerrymandering projects haven't analyzed these maps yet. It's also an unusual case because Texas did a mid-decade redistricting in 2025, only four years after the last round. States normally wait until after the census every ten years.</p>
+<p>With 38 congressional districts, it's one of the largest and most complex states to redistrict. I figured if the pipeline could handle Texas, it could handle anywhere.</p>
+<p>The 2025 map is currently being challenged in <em>LULAC v. Abbott</em>. A three-judge federal panel heard nine days of testimony from 23 witnesses and found substantial evidence of racial gerrymandering. The Supreme Court later reversed the injunction on procedural grounds, but the full trial is still pending.</p>
+
+<h2>Results</h2>
+<p>I generated 500 valid alternative congressional maps, all following standard redistricting rules (population balanced within 5%, every district one connected piece). Then I checked how many Democratic seats each map would produce using the 2024 presidential vote.</p>
+
+<div class="stats">
+    <div class="stat"><div class="num red">8</div><div class="cap">Dem seats, 2025 map</div></div>
+    <div class="stat"><div class="num">10 to 16</div><div class="cap">Ensemble range (n=500)</div></div>
+    <div class="stat"><div class="num red">0th</div><div class="cap">Percentile</div></div>
+</div>
+
+<p>The 2025 map produces only 8 Democratic seats. Not a single one of the 500 randomly generated maps went below 10. The enacted map sits completely outside the distribution.</p>
+<p>The older 2021 map produces 11 Democratic seats. That's on the lower end but still falls within the normal range, at the 20th percentile.</p>
+
+<figure>
+    <img src="outputs/figures/tx_outlier_comparison.png" alt="Ensemble histogram">
+    <figcaption>Distribution of Democratic seats across 500 sampled maps. Red line marks the 2025 enacted map (8 seats). Orange line marks the 2021 map (11 seats).</figcaption>
+</figure>
+
+<figure>
+    <img src="outputs/figures/tx_district_maps.png" alt="Texas district maps">
+    <figcaption>Congressional districts colored by 2024 presidential vote. Blue leans Democratic, red leans Republican. You can see several blue-leaning districts from 2021 broken apart in the 2025 version.</figcaption>
+</figure>
+
+<h2>Assumptions</h2>
+<p>Every analysis makes simplifications. Here are mine and why they matter.</p>
+
+<div class="assumption">
+    <strong>Partisan proxy: 2024 presidential race</strong>
+    <p>I used the Harris vs. Trump results to measure how each precinct leans. This follows the approach in Duchin's expert testimony in the Pennsylvania case and the MGGG Lab's published work. A stronger version would test multiple statewide races to confirm the finding holds.</p>
+</div>
+<div class="assumption">
+    <strong>Two constraints: population and contiguity</strong>
+    <p>The ensemble checks that each district has roughly equal population (within 5%) and that every district is one connected piece. It doesn't check for compactness or county splits, which real commissions also care about. This actually makes an outlier finding stronger: adding stricter rules would narrow the range, making the enacted map look even more extreme.</p>
+</div>
+<div class="assumption">
+    <strong>Mismatched boundaries</strong>
+    <p>There are 9,712 election precincts from 2024 but only 9,007 census VTDs from 2020. I used centroid-based spatial joins to match population data. About 1,500 precincts ended up with zero population, mostly water or empty land. The statewide total still matches the census.</p>
+</div>
+<div class="assumption">
+    <strong>Sample size</strong>
+    <p>500 maps is enough to establish a clear pattern. For court-grade evidence, you'd want 10,000 to 100,000. That's on the roadmap.</p>
+</div>
+
+<h2>Data sources</h2>
+<table>
+    <thead><tr><th>Dataset</th><th>Source</th><th>What it provides</th></tr></thead>
+    <tbody>
+        <tr><td>2024 General Election VTD Results</td><td>RDH / VEST</td><td>Precinct-level vote totals</td></tr>
+        <tr><td>2020 PL 94-171 VTD data</td><td>Census Bureau via RDH</td><td>Population by VTD</td></tr>
+        <tr><td>2025 Congressional Plan (PLANC2333)</td><td>Texas Legislative Council</td><td>Enacted 2025 boundaries</td></tr>
+        <tr><td>2012-2021 Congressional Districts</td><td>Texas Legislative Council</td><td>Previous boundaries</td></tr>
+    </tbody>
+</table>
+
+</div>
+
+<footer>
+    <p><a href="index.html">&larr; Back to map</a></p>
+    <p style="margin-top:16px"><strong>Binafsha Bakhramova</strong> · D'Amore-McKim School of Business, Northeastern University</p>
+    <p><a href="mailto:bakhramova.b@northeastern.edu">bakhramova.b@northeastern.edu</a></p>
+</footer>
+
+</div>
+</body>
+</html>

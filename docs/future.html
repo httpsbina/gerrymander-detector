@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future | Gerrymander Detector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="inner"><a href="index.html" class="brand">Gerrymander Detector</a><div class="links"><a href="index.html">Map</a><a href="method.html">Method</a><a href="future.html" class="active">Future</a><a href="learn.html">Learn</a><a href="about.html">About</a></div></div></nav>
+<div class="wrap">
+
+<div class="page-header">
+    <div class="label">What's next</div>
+    <h1>Where this is going</h1>
+    <p class="lead">Texas was the proof of concept. Here's what comes next through the PEAK Award program.</p>
+</div>
+
+<div class="content">
+
+<div class="future-item">
+    <strong>More states</strong>
+    <p>The pipeline is designed so I can swap a config file and data source to run the same analysis on a new state. Next targets include North Carolina, Ohio, Georgia, Louisiana, and Alabama. All of these have active redistricting litigation or Voting Rights Act concerns that make them worth examining.</p>
+</div>
+
+<div class="future-item">
+    <strong>Multiple election proxies</strong>
+    <p>Right now I'm using the 2024 presidential race as the partisan proxy. A stronger analysis would test against Senate, Governor, and Attorney General races too, making sure the finding isn't just an artifact of one specific election.</p>
+</div>
+
+<div class="future-item">
+    <strong>Machine learning layer</strong>
+    <p>The current method is MCMC simulation, not ML. But there's a natural extension: using ensemble metrics (seats, efficiency gap, mean-median, compactness scores) as features to train a classifier that predicts gerrymandering likelihood. That would let us quickly flag suspicious maps without running a full chain every time. I'm also exploring whether graph neural networks could learn structural patterns in district graphs that correlate with manipulation.</p>
+</div>
+
+<div class="future-item">
+    <strong>Stricter constraints</strong>
+    <p>Adding compactness requirements, county preservation rules, and Voting Rights Act compliance checks to the ensemble. This makes the generated maps more realistic and the analysis more legally defensible.</p>
+</div>
+
+<div class="future-item">
+    <strong>Public tool</strong>
+    <p>Eventually I'd like to make this accessible to people who don't write code. Upload an enacted plan, run the analysis, get back a report card. Something like the Princeton Gerrymandering Project's grading system, but powered by fresh ensemble runs rather than pre-computed grades.</p>
+</div>
+
+</div>
+
+<footer>
+    <p><strong>Binafsha Bakhramova</strong> · D'Amore-McKim School of Business, Northeastern University</p>
+    <p><a href="mailto:bakhramova.b@northeastern.edu">bakhramova.b@northeastern.edu</a></p>
+</footer>
+
+</div>
+</body>
+</html>

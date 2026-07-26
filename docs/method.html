@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method | Gerrymander Detector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="inner"><a href="index.html" class="brand">Gerrymander Detector</a><div class="links"><a href="index.html">Map</a><a href="method.html" class="active">Method</a><a href="future.html">Future</a><a href="learn.html">Learn</a><a href="about.html">About</a></div></div></nav>
+<div class="wrap">
+
+<div class="page-header">
+    <div class="label">Methodology</div>
+    <h1>How it works</h1>
+    <p class="lead">Generate a lot of valid maps. See where the real one falls. If it's way outside the range, something is off.</p>
+</div>
+
+<div class="content">
+
+<p>The idea behind this is pretty intuitive. If you randomly generate a bunch of maps that all follow the same rules (equal population, connected districts), you get a picture of what "normal" looks like. Then you check whether the real map falls inside that range or way outside it.</p>
+
+<p>This approach is called <strong>ensemble analysis</strong>. It was developed by the <a href="https://mggg.org">MGGG Redistricting Lab</a> and has been used as expert testimony in federal court, including in <em>League of Women Voters v. Commonwealth of Pennsylvania</em>, where a court struck down a congressional map partly based on this kind of evidence.</p>
+
+<h2>The pipeline</h2>
+
+<div class="pipeline">
+    <div class="pipe-step"><div class="pipe-num">01</div><div class="pipe-title">Get data</div><div class="pipe-desc">Pull precinct-level election results and census population from the Redistricting Data Hub API.</div><div class="pipe-arrow"></div></div>
+    <div class="pipe-step"><div class="pipe-num">02</div><div class="pipe-title">Build graph</div><div class="pipe-desc">Each precinct becomes a node. Shared borders become edges. Texas = 9,712 nodes.</div><div class="pipe-arrow"></div></div>
+    <div class="pipe-step"><div class="pipe-num">03</div><div class="pipe-title">Run chain</div><div class="pipe-desc">ReCom algorithm: merge two districts, randomly split them back. Keep if valid. Repeat thousands of times.</div><div class="pipe-arrow"></div></div>
+    <div class="pipe-step"><div class="pipe-num">04</div><div class="pipe-title">Measure</div><div class="pipe-desc">Record seats won, efficiency gap, and mean-median for each generated map.</div><div class="pipe-arrow"></div></div>
+    <div class="pipe-step"><div class="pipe-num">05</div><div class="pipe-title">Compare</div><div class="pipe-desc">Where does the real map fall? Extreme tail = statistical outlier.</div></div>
+</div>
+
+<h2>What is ReCom?</h2>
+
+<p>ReCom (Recombination) is a Markov chain algorithm built specifically for redistricting. Each step picks two adjacent districts and merges them into one blob. Then it builds a random spanning tree over that blob and cuts it at one edge, splitting it back into two new districts. If the new districts have balanced population and stay contiguous, the map gets accepted. Otherwise it tries again.</p>
+
+<p>The algorithm comes from DeFord, Duchin, and Solomon's 2021 paper in the Harvard Data Science Review. I use <a href="https://github.com/mggg/GerryChain">GerryChain</a>, an open-source Python library built by the MGGG Lab.</p>
+
+<h2>What does an outlier actually mean?</h2>
+
+<p>It means the enacted map is extremely unlikely to have come from a neutral process. That's strong statistical evidence, but it doesn't prove gerrymandering on its own. Courts also look at intent, alternative explanations, and Voting Rights Act compliance.</p>
+
+<p>But this is the same kind of evidence that expert witnesses present in federal redistricting cases, and courts have accepted it as part of larger arguments. The statistical finding doesn't exist in a vacuum. It's one piece of a bigger picture.</p>
+
+<h2>References</h2>
+
+<div class="ref">DeFord, Duchin, and Solomon (2021). <a href="https://hdsr.mitpress.mit.edu/pub/1ds8ptxu">Recombination: A Family of Markov Chains for Redistricting.</a> <em>Harvard Data Science Review</em>, 3(1).</div>
+<div class="ref">Chikina, Frieze, and Pegden (2017). <a href="https://www.pnas.org/doi/10.1073/pnas.1617540114">Assessing Significance in a Markov Chain without Mixing.</a> <em>PNAS</em>, 114(11).</div>
+<div class="ref">Duchin (2018). <a href="https://mggg.org/uploads/md-report.pdf">Outlier Analysis for Pennsylvania Congressional Redistricting.</a> Expert report.</div>
+<div class="ref">Becker et al. (2021). Computational Redistricting and the Voting Rights Act.</div>
+
+</div>
+
+<footer>
+    <p><strong>Binafsha Bakhramova</strong> · D'Amore-McKim School of Business, Northeastern University</p>
+    <p><a href="mailto:bakhramova.b@northeastern.edu">bakhramova.b@northeastern.edu</a></p>
+</footer>
+
+</div>
+</body>
+</html>

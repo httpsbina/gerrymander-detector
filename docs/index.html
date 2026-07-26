@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerrymander Detector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+</head>
+<body>
+
+<div class="tooltip" id="tip"></div>
+
+<nav>
+    <div class="inner">
+        <a href="index.html" class="brand">Gerrymander Detector</a>
+        <div class="links">
+            <a href="index.html" class="active">Map</a>
+            <a href="method.html">Method</a>
+            <a href="future.html">Future</a>
+            <a href="learn.html">Learn</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+</nav>
+
+<div class="wrap">
+
+<div class="page-header">
+    <div class="label">Ongoing Research</div>
+    <h1>Can we mathematically detect gerrymandering?</h1>
+    <p class="lead">
+        I'm generating thousands of valid congressional maps and testing whether the ones
+        politicians actually drew are statistical outliers. Click a state to see the analysis.
+    </p>
+</div>
+
+<div class="content">
+    <div id="map-container"></div>
+    <div class="map-legend">
+        <div class="legend-item"><div class="legend-swatch" style="background:var(--outlier)"></div>Outlier detected</div>
+        <div class="legend-item"><div class="legend-swatch" style="background:var(--safe)"></div>Analyzed, not an outlier</div>
+        <div class="legend-item"><div class="legend-swatch" style="background:var(--progress)"></div>In progress</div>
+        <div class="legend-item"><div class="legend-swatch" style="background:var(--empty)"></div>Not yet analyzed</div>
+    </div>
+    <p class="map-hint">Click on a colored state to view its full analysis.</p>
+</div>
+
+<footer>
+    <p><strong>Binafsha Bakhramova</strong> · D'Amore-McKim School of Business, Northeastern University</p>
+    <p>PEAK Award Research · <a href="mailto:bakhramova.b@northeastern.edu">bakhramova.b@northeastern.edu</a></p>
+</footer>
+
+</div>
+
+<script>
+const stateData={
+    "Texas":{status:"outlier",link:"texas.html",detail:"2025 map: 8 Dem seats, 0th percentile. Click to view."},
+    "North Carolina":{status:"progress",detail:"Data acquisition in progress."},
+    "Ohio":{status:"planned",detail:"Planned. Active redistricting litigation."},
+    "Georgia":{status:"planned",detail:"Planned. Voting Rights Act implications."},
+    "Louisiana":{status:"planned",detail:"Planned. Active redistricting case."},
+    "Alabama":{status:"planned",detail:"Planned. Allen v. Milligan follow-up."},
+    "Florida":{status:"planned",detail:"Planned. 28 districts, recent litigation."},
+    "Pennsylvania":{status:"planned",detail:"Planned. Landmark ensemble case."},
+};
+const statusColors={outlier:"#b91c1c","not-outlier":"#1d4ed8",progress:"#d97706",planned:"#e4e4e7",none:"#e4e4e7"};
+const statusLabels={outlier:"Outlier detected","not-outlier":"Not an outlier",progress:"In progress",planned:"Planned",none:"Not yet analyzed"};
+const tip=document.getElementById("tip");
+const w=720,h=460;
+const svg=d3.select("#map-container").append("svg").attr("viewBox",`0 0 ${w} ${h}`).attr("preserveAspectRatio","xMidYMid meet");
+const projection=d3.geoAlbersUsa().scale(920).translate([w/2,h/2]);
+const path=d3.geoPath().projection(projection);
+const idToName={"01":"Alabama","02":"Alaska","04":"Arizona","05":"Arkansas","06":"California","08":"Colorado","09":"Connecticut","10":"Delaware","11":"District of Columbia","12":"Florida","13":"Georgia","15":"Hawaii","16":"Idaho","17":"Illinois","18":"Indiana","19":"Iowa","20":"Kansas","21":"Kentucky","22":"Louisiana","23":"Maine","24":"Maryland","25":"Massachusetts","26":"Michigan","27":"Minnesota","28":"Mississippi","29":"Missouri","30":"Montana","31":"Nebraska","32":"Nevada","33":"New Hampshire","34":"New Jersey","35":"New Mexico","36":"New York","37":"North Carolina","38":"North Dakota","39":"Ohio","40":"Oklahoma","41":"Oregon","42":"Pennsylvania","44":"Rhode Island","45":"South Carolina","46":"South Dakota","47":"Tennessee","48":"Texas","49":"Utah","50":"Vermont","51":"Virginia","53":"Washington","54":"West Virginia","55":"Wisconsin","56":"Wyoming"};
+d3.json("https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json").then(us=>{
+    const states=topojson.feature(us,us.objects.states).features;
+    svg.selectAll("path").data(states).enter().append("path")
+        .attr("d",path).attr("class","state-shape")
+        .attr("fill",d=>{const n=idToName[d.id];const s=stateData[n];return s?statusColors[s.status]:statusColors.none})
+        .on("mouseenter",function(e,d){
+            const n=idToName[d.id];const s=stateData[n];const st=s?s.status:"none";
+            let h=`<b>${n||"Unknown"}</b><div class="tag ${st}">${statusLabels[st]}</div>`;
+            if(s&&s.detail)h+=`<div>${s.detail}</div>`;
+            tip.innerHTML=h;tip.style.opacity="1";
+        })
+        .on("mousemove",function(e){tip.style.left=(e.clientX+14)+"px";tip.style.top=(e.clientY-14)+"px"})
+        .on("mouseleave",function(){tip.style.opacity="0"})
+        .on("click",function(e,d){const n=idToName[d.id];const s=stateData[n];if(s&&s.link)window.location.href=s.link});
+    svg.append("path").datum(topojson.mesh(us,us.objects.states,(a,b)=>a!==b))
+        .attr("fill","none").attr("stroke","#fff").attr("stroke-width",1).attr("d",path);
+});
+</script>
+</body>
+</html>
