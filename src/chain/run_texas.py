@@ -1,101 +1,682 @@
 """
 run_texas.py
-builds the graph from our merged precinct shapefile and runs a
-recom markov chain to generate alternative congressional maps
 
-can pass number of steps as argument, defaults to 500 for testing
-ex: python src/chain/run_texas.py 500
+Runs a reproducible ReCom Markov chain on the validated Texas
+2024 precinct dataset.
+
+Important:
+- Population comes from exact 2020 Census block aggregation.
+- 2024 presidential votes come from block-disaggregated election data.
+- Zero-population precincts remain zero.
+- No graph components are dropped.
+- CONG_DIST is the 2024 congressional map used only as the initial seed.
+- PLANC2333 is scored separately at the block level and is NOT used to
+  construct the neutral ensemble.
+
+Example:
+    python src/chain/run_texas.py --steps 500 --epsilon 0.01 --seed 101
+
+epsilon examples:
+    0.01  = +/- 1.0%
+    0.005 = +/- 0.5%
+    0.001 = +/- 0.1%
 """
 
+import argparse
+import hashlib
 import os
-import sys
-import pandas as pd
-import networkx as nx
+import random
+
 import geopandas as gpd
-from gerrychain import Graph, GeographicPartition, MarkovChain, Election
-from gerrychain.proposals import recom
-from gerrychain.updaters import Tally, cut_edges
-from gerrychain.constraints import within_percent_of_ideal_population, contiguous
-from gerrychain.accept import always_accept
+import networkx as nx
+import pandas as pd
+
 from functools import partial
 
-root = os.path.join(os.path.expanduser("~"), "OneDrive", "Documents", "gerrymander-detector")
-shapefile = os.path.join(root, "data", "processed", "tx_merged.shp")
+from gerrychain import (
+    Graph,
+    GeographicPartition,
+    MarkovChain,
+    Election,
+)
 
-print("building graph...")
-gdf = gpd.read_file(shapefile)
-gdf["geometry"] = gdf.geometry.buffer(0)
-fixed_path = shapefile.replace("tx_merged", "tx_merged_fixed")
-gdf.to_file(fixed_path)
-graph = Graph.from_file(fixed_path)
-print(f"  {len(graph.nodes)} nodes, {len(graph.edges)} edges")
+from gerrychain.proposals import recom
+from gerrychain.updaters import Tally, cut_edges
 
-components = list(nx.connected_components(graph))
-if len(components) > 1:
-    biggest = max(components, key=len)
-    print(f"  graph has {len(components)} components, keeping largest ({len(biggest)} nodes)")
-    graph = graph.subgraph(biggest).copy()
+from gerrychain.constraints import (
+    within_percent_of_ideal_population,
+    contiguous,
+)
 
-for node in graph.nodes:
-    if graph.nodes[node]["TOTPOP"] == 0:
-        graph.nodes[node]["TOTPOP"] = 1
+from gerrychain.accept import always_accept
 
-election = Election("PRES24", {"Dem": "G24PREDHAR", "Rep": "G24PRERTRU"})
+
+ROOT = os.path.join(
+    os.path.expanduser("~"),
+    "OneDrive",
+    "Documents",
+    "gerrymander-detector",
+)
+
+DATASET_PATH = os.path.join(
+    ROOT,
+    "data",
+    "processed",
+    "tx_precincts_validated.gpkg",
+)
+
+OUTPUT_DIR = os.path.join(
+    ROOT,
+    "outputs",
+    "ensembles",
+)
+
+EXPECTED_PRECINCTS = 9_712
+EXPECTED_POP = 29_145_505
+EXPECTED_HARRIS = 4_835_134
+EXPECTED_TRUMP = 6_393_403
+EXPECTED_DISTRICTS = 38
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description=(
+            "Run a validated Texas ReCom ensemble."
+        )
+    )
+
+    parser.add_argument(
+        "--steps",
+        type=int,
+        default=500,
+        help="Total Markov chain states including the initial state.",
+    )
+
+    parser.add_argument(
+        "--epsilon",
+        type=float,
+        default=0.01,
+        help=(
+            "Allowed population deviation. "
+            "0.01 = 1%%, 0.005 = 0.5%%, "
+            "0.001 = 0.1%%."
+        ),
+    )
+
+    parser.add_argument(
+        "--seed",
+        type=int,
+        default=101,
+        help="Random seed for reproducibility.",
+    )
+
+    parser.add_argument(
+        "--sample-every",
+        type=int,
+        default=1,
+        help="Record every Nth state.",
+    )
+
+    parser.add_argument(
+        "--node-repeats",
+        type=int,
+        default=2,
+        help="ReCom node_repeats parameter.",
+    )
+
+    return parser.parse_args()
+
+
+def plan_hash(partition):
+    """
+    Label-independent exact plan fingerprint.
+
+    A plan is represented by its set of cut edges. District numbering
+    can change without changing this fingerprint.
+    """
+
+    normalized_edges = []
+
+    for u, v in partition["cut_edges"]:
+        a, b = sorted(
+            (
+                str(u),
+                str(v),
+            )
+        )
+
+        normalized_edges.append(
+            f"{a}:{b}"
+        )
+
+    normalized_edges.sort()
+
+    payload = "|".join(
+        normalized_edges
+    )
+
+    return hashlib.sha256(
+        payload.encode("utf-8")
+    ).hexdigest()[:20]
+
+
+def population_stats(partition, ideal_pop):
+    pops = list(
+        partition["population"].values()
+    )
+
+    deviations = [
+        abs(pop / ideal_pop - 1)
+        for pop in pops
+    ]
+
+    return {
+        "min_pop": min(pops),
+        "max_pop": max(pops),
+        "max_abs_pop_dev": max(deviations),
+    }
+
+
+def dem_seats(partition):
+    return sum(
+        1
+        for pct in partition[
+            "PRES24"
+        ].percents("Dem")
+        if pct > 0.5
+    )
+
+
+args = parse_args()
+
+if args.steps < 1:
+    raise ValueError(
+        "--steps must be at least 1"
+    )
+
+if args.epsilon <= 0:
+    raise ValueError(
+        "--epsilon must be positive"
+    )
+
+if args.sample_every < 1:
+    raise ValueError(
+        "--sample-every must be at least 1"
+    )
+
+
+print("Texas validated ensemble")
+print("========================")
+
+print(
+    f"steps:        {args.steps:,}"
+)
+
+print(
+    f"epsilon:      {args.epsilon:.6f} "
+    f"({args.epsilon:.3%})"
+)
+
+print(
+    f"random seed:  {args.seed}"
+)
+
+print(
+    f"sample every: {args.sample_every}"
+)
+
+print(
+    f"node repeats: {args.node_repeats}"
+)
+
+
+print("\nloading validated precinct dataset...")
+
+gdf = gpd.read_file(
+    DATASET_PATH,
+    layer="precincts",
+)
+
+assert len(gdf) == EXPECTED_PRECINCTS
+assert gdf["TOTPOP"].sum() == EXPECTED_POP
+assert gdf["G24PREDHAR"].sum() == EXPECTED_HARRIS
+assert gdf["G24PRERTRU"].sum() == EXPECTED_TRUMP
+assert gdf["CONG_DIST"].nunique() == EXPECTED_DISTRICTS
+
+print(
+    f"  precincts: {len(gdf):,}"
+)
+
+print(
+    f"  population: {gdf['TOTPOP'].sum():,}"
+)
+
+print(
+    f"  zero-pop precincts: "
+    f"{(gdf['TOTPOP'] == 0).sum():,}"
+)
+
+
+print("\nbuilding adjacency graph...")
+
+graph = Graph.from_file(
+    DATASET_PATH
+)
+
+assert len(graph.nodes) == EXPECTED_PRECINCTS
+
+components = list(
+    nx.connected_components(graph)
+)
+
+isolates = list(
+    nx.isolates(graph)
+)
+
+print(
+    f"  nodes: {len(graph.nodes):,}"
+)
+
+print(
+    f"  edges: {len(graph.edges):,}"
+)
+
+print(
+    f"  connected components: "
+    f"{len(components)}"
+)
+
+print(
+    f"  isolates: {len(isolates)}"
+)
+
+if len(components) != 1:
+    raise RuntimeError(
+        "Texas precinct graph is not connected. "
+        "No components will be silently dropped."
+    )
+
+if isolates:
+    raise RuntimeError(
+        "Texas precinct graph contains isolated nodes."
+    )
+
+
+print("\nchecking graph totals...")
+
+graph_pop = sum(
+    int(graph.nodes[node]["TOTPOP"])
+    for node in graph.nodes
+)
+
+graph_harris = sum(
+    int(graph.nodes[node]["G24PREDHAR"])
+    for node in graph.nodes
+)
+
+graph_trump = sum(
+    int(graph.nodes[node]["G24PRERTRU"])
+    for node in graph.nodes
+)
+
+assert graph_pop == EXPECTED_POP
+assert graph_harris == EXPECTED_HARRIS
+assert graph_trump == EXPECTED_TRUMP
+
+print(
+    f"  population: {graph_pop:,}"
+)
+
+print(
+    f"  Harris: {graph_harris:,}"
+)
+
+print(
+    f"  Trump: {graph_trump:,}"
+)
+
+
+election = Election(
+    "PRES24",
+    {
+        "Dem": "G24PREDHAR",
+        "Rep": "G24PRERTRU",
+    },
+)
+
 
 initial = GeographicPartition(
     graph,
     assignment="CONG_DIST",
     updaters={
-        "population": Tally("TOTPOP", alias="population"),
+        "population": Tally(
+            "TOTPOP",
+            alias="population",
+        ),
         "cut_edges": cut_edges,
         "PRES24": election,
-    }
+    },
 )
 
-total_pop = sum(initial["population"].values())
+
 num_districts = len(initial)
-ideal_pop = total_pop / num_districts
 
-enacted_dem_seats = sum(1 for p in initial["PRES24"].percents("Dem") if p > 0.5)
-print(f"\nenacted map:")
-print(f"  pop: {total_pop:,} across {num_districts} districts (ideal: {ideal_pop:,.0f})")
-print(f"  dem seats: {enacted_dem_seats}/{num_districts}")
-print(f"  efficiency gap: {initial['PRES24'].efficiency_gap():.4f}")
-print(f"  mean-median: {initial['PRES24'].mean_median():.4f}")
+assert (
+    num_districts
+    == EXPECTED_DISTRICTS
+)
 
-proposal = partial(recom, pop_col="TOTPOP", pop_target=ideal_pop, epsilon=0.05, node_repeats=2)
-constraints = [within_percent_of_ideal_population(initial, 0.05), contiguous]
+total_pop = sum(
+    initial["population"].values()
+)
 
-steps = int(sys.argv[1]) if len(sys.argv) > 1 else 500
-print(f"\nrunning chain for {steps} steps...")
+ideal_pop = (
+    total_pop
+    / num_districts
+)
+
+assert total_pop == EXPECTED_POP
+
+
+initial_pop_stats = population_stats(
+    initial,
+    ideal_pop,
+)
+
+initial_dem_seats = dem_seats(
+    initial
+)
+
+initial_hash = plan_hash(
+    initial
+)
+
+
+print("\ninitial seed map:")
+
+print(
+    f"  districts: "
+    f"{num_districts}"
+)
+
+print(
+    f"  ideal population: "
+    f"{ideal_pop:,.6f}"
+)
+
+print(
+    f"  population range: "
+    f"{initial_pop_stats['min_pop']:,} - "
+    f"{initial_pop_stats['max_pop']:,}"
+)
+
+print(
+    f"  max population deviation: "
+    f"{initial_pop_stats['max_abs_pop_dev']:.6%}"
+)
+
+print(
+    f"  Harris > Trump districts: "
+    f"{initial_dem_seats}/{num_districts}"
+)
+
+print(
+    f"  efficiency gap: "
+    f"{initial['PRES24'].efficiency_gap():.6f}"
+)
+
+print(
+    f"  mean-median: "
+    f"{initial['PRES24'].mean_median():.6f}"
+)
+
+print(
+    f"  cut edges: "
+    f"{len(initial['cut_edges']):,}"
+)
+
+print(
+    f"  plan hash: "
+    f"{initial_hash}"
+)
+
+
+if (
+    initial_pop_stats[
+        "max_abs_pop_dev"
+    ]
+    > args.epsilon
+):
+    raise RuntimeError(
+        "Initial seed map exceeds requested "
+        f"epsilon ({args.epsilon:.6%}). "
+        "Use a larger epsilon or construct "
+        "a different seed plan."
+    )
+
+
+random.seed(
+    args.seed
+)
+
+
+proposal = partial(
+    recom,
+    pop_col="TOTPOP",
+    pop_target=ideal_pop,
+    epsilon=args.epsilon,
+    node_repeats=args.node_repeats,
+)
+
+
+constraints = [
+    within_percent_of_ideal_population(
+        initial,
+        args.epsilon,
+    ),
+    contiguous,
+]
+
 
 chain = MarkovChain(
     proposal=proposal,
     constraints=constraints,
     accept=always_accept,
     initial_state=initial,
-    total_steps=steps,
+    total_steps=args.steps,
 )
 
+
+print("\nrunning chain...")
+
 results = []
-for i, partition in enumerate(chain):
-    if i % 10 == 0:
-        dem_seats = sum(1 for p in partition["PRES24"].percents("Dem") if p > 0.5)
-        results.append({
-            "step": i,
-            "dem_seats": dem_seats,
-            "cut_edges": len(partition["cut_edges"]),
-            "efficiency_gap": partition["PRES24"].efficiency_gap(),
-            "mean_median": partition["PRES24"].mean_median(),
-        })
-    if i % 100 == 0:
-        print(f"  step {i}/{steps}")
 
-df = pd.DataFrame(results)
-outpath = os.path.join(root, "outputs", "ensembles", f"tx_test_{steps}steps.csv")
-df.to_csv(outpath, index=False)
 
-print(f"\nsaved {len(df)} samples to {outpath}")
-print(f"  dem seats range: {df['dem_seats'].min()} - {df['dem_seats'].max()} (mean {df['dem_seats'].mean():.1f})")
-print(f"  enacted map had {enacted_dem_seats} dem seats")
-print("done!")
+try:
+
+    for step, partition in enumerate(
+        chain
+    ):
+
+        if (
+            step
+            % args.sample_every
+            == 0
+        ):
+
+            pop_stats = population_stats(
+                partition,
+                ideal_pop,
+            )
+
+            results.append(
+                {
+                    "seed": args.seed,
+                    "epsilon": args.epsilon,
+                    "step": step,
+                    "dem_seats": dem_seats(
+                        partition
+                    ),
+                    "cut_edges": len(
+                        partition[
+                            "cut_edges"
+                        ]
+                    ),
+                    "efficiency_gap": (
+                        partition[
+                            "PRES24"
+                        ].efficiency_gap()
+                    ),
+                    "mean_median": (
+                        partition[
+                            "PRES24"
+                        ].mean_median()
+                    ),
+                    "min_pop": (
+                        pop_stats[
+                            "min_pop"
+                        ]
+                    ),
+                    "max_pop": (
+                        pop_stats[
+                            "max_pop"
+                        ]
+                    ),
+                    "max_abs_pop_dev": (
+                        pop_stats[
+                            "max_abs_pop_dev"
+                        ]
+                    ),
+                    "plan_hash": (
+                        plan_hash(
+                            partition
+                        )
+                    ),
+                }
+            )
+
+        if (
+            step % 100 == 0
+            or step == args.steps - 1
+        ):
+            print(
+                f"  step "
+                f"{step:,}/"
+                f"{args.steps - 1:,}"
+            )
+
+except RuntimeError as exc:
+
+    print()
+    print(
+        "CHAIN STOPPED WITH RuntimeError"
+    )
+
+    print(
+        str(exc)
+    )
+
+    print(
+        "\nThis may indicate that the "
+        "requested population tolerance "
+        "is difficult for ReCom to satisfy."
+    )
+
+    raise
+
+
+df = pd.DataFrame(
+    results
+)
+
+
+if df.empty:
+    raise RuntimeError(
+        "No chain samples were recorded."
+    )
+
+
+os.makedirs(
+    OUTPUT_DIR,
+    exist_ok=True,
+)
+
+
+epsilon_tag = (
+    f"{args.epsilon:.4f}"
+    .rstrip("0")
+    .rstrip(".")
+    .replace(".", "p")
+)
+
+output_name = (
+    f"tx_chain_"
+    f"eps{epsilon_tag}_"
+    f"seed{args.seed}_"
+    f"{args.steps}steps.csv"
+)
+
+output_path = os.path.join(
+    OUTPUT_DIR,
+    output_name,
+)
+
+df.to_csv(
+    output_path,
+    index=False,
+)
+
+
+unique_plans = (
+    df["plan_hash"].nunique()
+)
+
+duplicate_states = (
+    len(df)
+    - unique_plans
+)
+
+
+print("\nchain complete")
+print("==============")
+
+print(
+    f"recorded states: "
+    f"{len(df):,}"
+)
+
+print(
+    f"unique exact plans: "
+    f"{unique_plans:,}"
+)
+
+print(
+    f"duplicate states: "
+    f"{duplicate_states:,}"
+)
+
+print(
+    f"Dem-seat range: "
+    f"{df['dem_seats'].min()} - "
+    f"{df['dem_seats'].max()}"
+)
+
+print(
+    f"mean Dem seats: "
+    f"{df['dem_seats'].mean():.3f}"
+)
+
+print(
+    f"max observed population deviation: "
+    f"{df['max_abs_pop_dev'].max():.6%}"
+)
+
+print(
+    f"saved to:"
+)
+
+print(
+    f"  {output_path}"
+)
+
+print("\ndone!")
