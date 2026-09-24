@@ -9,3 +9,4 @@ __pycache__/
 .DS_Store
 rdh_api_tool/download_texas.py
 outputs/validation/
+outputs/checkpoints/
