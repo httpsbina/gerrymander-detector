@@ -51,6 +51,8 @@ from gerrychain.constraints import (
 
 from gerrychain.accept import always_accept
 
+from gerrychain.tree import bipartition_tree
+
 
 ROOT = os.path.join(
     os.path.expanduser("~"),
@@ -538,6 +540,11 @@ proposal = partial(
     pop_target=ideal_pop,
     epsilon=args.epsilon,
     node_repeats=args.node_repeats,
+    method=partial(
+        bipartition_tree,
+        max_attempts=1000,
+        allow_pair_reselection=True,
+    ),
 )
 
 
@@ -564,6 +571,50 @@ chain = MarkovChain(
     total_steps=chain_total_steps,
 )
 
+def save_checkpoint(partition, next_step):
+    os.makedirs(
+        CHECKPOINT_DIR,
+        exist_ok=True,
+    )
+
+    checkpoint = {
+        "version": 1,
+        "seed": run_seed,
+        "epsilon": args.epsilon,
+        "node_repeats": args.node_repeats,
+        "next_step": next_step,
+        "assignment": dict(
+            partition.assignment
+        ),
+        "random_state": random.getstate(),
+        "pythonhashseed": os.environ.get(
+            "PYTHONHASHSEED"
+        ),
+    }
+
+    eps_tag = (
+        f"{args.epsilon:g}"
+        .replace(".", "p")
+    )
+
+    checkpoint_path = os.path.join(
+        CHECKPOINT_DIR,
+        (
+            f"tx_checkpoint_"
+            f"eps{eps_tag}_"
+            f"seed{run_seed}_"
+            f"next{next_step}.pkl"
+        ),
+    )
+
+    with open(checkpoint_path, "wb") as f:
+        pickle.dump(
+            checkpoint,
+            f,
+            protocol=pickle.HIGHEST_PROTOCOL,
+        )
+
+    return checkpoint_path
 
 print("\nrunning chain...")
 
@@ -594,9 +645,23 @@ try:
         )
 
         recorded += 1
+        periodic_next_step = (
+            start_step
+            + recorded
+        )
 
-        final_partition = partition
+        if periodic_next_step % 100 == 0:
+            periodic_checkpoint = save_checkpoint(
+                partition,
+                periodic_next_step,
+            )
 
+            print(
+                f"  periodic checkpoint: "
+                f"next step "
+                f"{periodic_next_step:,}"
+            )
+    
         if (
             step
             % args.sample_every
@@ -686,65 +751,15 @@ except RuntimeError as exc:
 
     raise
 
-if final_partition is None:
-    raise RuntimeError(
-        "No final partition available "
-        "for checkpoint."
-    )
-
-
-os.makedirs(
-    CHECKPOINT_DIR,
-    exist_ok=True,
-)
-
-
 next_step = (
     start_step
     + recorded
 )
 
-
-checkpoint = {
-    "version": 1,
-    "seed": run_seed,
-    "epsilon": args.epsilon,
-    "node_repeats": args.node_repeats,
-    "next_step": next_step,
-    "assignment": dict(
-        final_partition.assignment
-    ),
-    "random_state": random.getstate(),
-    "pythonhashseed": os.environ.get(
-        "PYTHONHASHSEED"
-    ),
-}
-
-
-eps_tag = (
-    f"{args.epsilon:g}"
-    .replace(".", "p")
+checkpoint_path = save_checkpoint(
+    partition,
+    next_step,
 )
-
-
-checkpoint_path = os.path.join(
-    CHECKPOINT_DIR,
-    (
-        f"tx_checkpoint_"
-        f"eps{eps_tag}_"
-        f"seed{run_seed}_"
-        f"next{next_step}.pkl"
-    ),
-)
-
-
-with open(checkpoint_path, "wb") as f:
-    pickle.dump(
-        checkpoint,
-        f,
-        protocol=pickle.HIGHEST_PROTOCOL,
-    )
-
 
 print("\ncheckpoint saved:")
 print(
@@ -797,7 +812,7 @@ output_path = os.path.join(
     OUTPUT_DIR,
     (
         f"tx_chain_"
-        f"eps{eps_tag}_"
+        f"eps{epsilon_tag}_"        
         f"seed{run_seed}_"
         f"steps{start_step:06d}-"
         f"{end_step:06d}.csv"
