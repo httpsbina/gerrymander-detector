@@ -131,11 +131,12 @@ def plan_hash(partition):
     """
     Label-independent exact plan fingerprint.
 
-    A plan is represented by its set of cut edges. District numbering
-    can change without changing this fingerprint.
+    A plan is represented by its sorted set of cut edges.
+    Full SHA-256 is retained so fingerprints are consistent
+    across validation scripts.
     """
 
-    normalized_edges = []
+    edges = []
 
     for u, v in partition["cut_edges"]:
         a, b = sorted(
@@ -145,20 +146,20 @@ def plan_hash(partition):
             )
         )
 
-        normalized_edges.append(
-            f"{a}:{b}"
+        edges.append(
+            (a, b)
         )
 
-    normalized_edges.sort()
+    edges = sorted(edges)
 
     payload = "|".join(
-        normalized_edges
+        f"{u}:{v}"
+        for u, v in edges
     )
 
     return hashlib.sha256(
         payload.encode("utf-8")
-    ).hexdigest()[:20]
-
+    ).hexdigest()
 
 def population_stats(partition, ideal_pop):
     pops = list(
@@ -175,7 +176,6 @@ def population_stats(partition, ideal_pop):
         "max_pop": max(pops),
         "max_abs_pop_dev": max(deviations),
     }
-
 
 def dem_seats(partition):
     return sum(
