@@ -26,6 +26,7 @@ import argparse
 import hashlib
 import os
 import random
+import pickle
 
 import geopandas as gpd
 import networkx as nx
@@ -50,6 +51,8 @@ from gerrychain.constraints import (
 
 from gerrychain.accept import always_accept
 
+from gerrychain.tree import bipartition_tree
+
 
 ROOT = os.path.join(
     os.path.expanduser("~"),
@@ -69,6 +72,12 @@ OUTPUT_DIR = os.path.join(
     ROOT,
     "outputs",
     "ensembles",
+)
+
+CHECKPOINT_DIR = os.path.join(
+    ROOT,
+    "outputs",
+    "checkpoints",
 )
 
 EXPECTED_PRECINCTS = 9_712
@@ -122,6 +131,13 @@ def parse_args():
         type=int,
         default=2,
         help="ReCom node_repeats parameter.",
+    )
+
+    parser.add_argument(
+        "--resume-from",
+        type=str,
+        default=None,
+        help="Resume from a saved GerryChain checkpoint.",
     )
 
     return parser.parse_args()
@@ -345,19 +361,83 @@ election = Election(
 )
 
 
-initial = GeographicPartition(
-    graph,
-    assignment="CONG_DIST",
-    updaters={
-        "population": Tally(
-            "TOTPOP",
-            alias="population",
-        ),
-        "cut_edges": cut_edges,
-        "PRES24": election,
-    },
-)
+updaters = {
+    "population": Tally(
+        "TOTPOP",
+        alias="population",
+    ),
+    "cut_edges": cut_edges,
+    "PRES24": election,
+}
 
+
+resume_checkpoint = None
+start_step = 0
+run_seed = args.seed
+
+
+if args.resume_from:
+    print("\nloading checkpoint...")
+
+    with open(args.resume_from, "rb") as f:
+        resume_checkpoint = pickle.load(f)
+
+    assignment = resume_checkpoint["assignment"]
+
+    if set(assignment.keys()) != set(graph.nodes):
+        raise RuntimeError(
+            "Checkpoint nodes do not match current graph."
+        )
+
+    initial = GeographicPartition(
+        graph,
+        assignment=assignment,
+        updaters=updaters,
+    )
+
+    start_step = int(
+        resume_checkpoint["next_step"]
+    )
+
+    run_seed = int(
+        resume_checkpoint["seed"]
+    )
+
+    saved_hash_seed = resume_checkpoint.get(
+        "pythonhashseed"
+    )
+
+    current_hash_seed = os.environ.get(
+        "PYTHONHASHSEED"
+    )
+
+    if saved_hash_seed != current_hash_seed:
+        raise RuntimeError(
+            "PYTHONHASHSEED does not match checkpoint. "
+            f"Checkpoint={saved_hash_seed}, "
+            f"current={current_hash_seed}"
+        )
+
+    random.setstate(
+        resume_checkpoint["random_state"]
+    )
+
+    print(
+        f"  resuming at step: {start_step:,}"
+    )
+
+    print(
+        f"  original seed:    {run_seed}"
+    )
+
+else:
+    initial = GeographicPartition(
+        graph,
+        assignment="CONG_DIST",
+        updaters=updaters,
+    )
+
+    random.seed(args.seed)
 
 num_districts = len(initial)
 
@@ -454,18 +534,17 @@ if (
         "a different seed plan."
     )
 
-
-random.seed(
-    args.seed
-)
-
-
 proposal = partial(
     recom,
     pop_col="TOTPOP",
     pop_target=ideal_pop,
     epsilon=args.epsilon,
     node_repeats=args.node_repeats,
+    method=partial(
+        bipartition_tree,
+        max_attempts=1000,
+        allow_pair_reselection=True,
+    ),
 )
 
 
@@ -478,14 +557,64 @@ constraints = [
 ]
 
 
+chain_total_steps = (
+    args.steps + 1
+    if args.resume_from
+    else args.steps
+)
+
 chain = MarkovChain(
     proposal=proposal,
     constraints=constraints,
     accept=always_accept,
     initial_state=initial,
-    total_steps=args.steps,
+    total_steps=chain_total_steps,
 )
 
+def save_checkpoint(partition, next_step):
+    os.makedirs(
+        CHECKPOINT_DIR,
+        exist_ok=True,
+    )
+
+    checkpoint = {
+        "version": 1,
+        "seed": run_seed,
+        "epsilon": args.epsilon,
+        "node_repeats": args.node_repeats,
+        "next_step": next_step,
+        "assignment": dict(
+            partition.assignment
+        ),
+        "random_state": random.getstate(),
+        "pythonhashseed": os.environ.get(
+            "PYTHONHASHSEED"
+        ),
+    }
+
+    eps_tag = (
+        f"{args.epsilon:g}"
+        .replace(".", "p")
+    )
+
+    checkpoint_path = os.path.join(
+        CHECKPOINT_DIR,
+        (
+            f"tx_checkpoint_"
+            f"eps{eps_tag}_"
+            f"seed{run_seed}_"
+            f"next{next_step}.pkl"
+        ),
+    )
+
+    with open(checkpoint_path, "wb") as f:
+        pickle.dump(
+            checkpoint,
+            f,
+            protocol=pickle.HIGHEST_PROTOCOL,
+        )
+
+    return checkpoint_path
 
 print("\nrunning chain...")
 
@@ -494,10 +623,45 @@ results = []
 
 try:
 
-    for step, partition in enumerate(
+    recorded = 0
+    final_partition = None
+
+    for local_step, partition in enumerate(
         chain
     ):
 
+        # When resuming, GerryChain first yields
+        # the checkpoint map itself. That state was
+        # already recorded in the previous run.
+        if (
+            args.resume_from
+            and local_step == 0
+        ):
+            continue
+
+        step = (
+            start_step
+            + recorded
+        )
+
+        recorded += 1
+        periodic_next_step = (
+            start_step
+            + recorded
+        )
+
+        if periodic_next_step % 100 == 0:
+            periodic_checkpoint = save_checkpoint(
+                partition,
+                periodic_next_step,
+            )
+
+            print(
+                f"  periodic checkpoint: "
+                f"next step "
+                f"{periodic_next_step:,}"
+            )
+    
         if (
             step
             % args.sample_every
@@ -511,7 +675,7 @@ try:
 
             results.append(
                 {
-                    "seed": args.seed,
+                    "seed": run_seed,
                     "epsilon": args.epsilon,
                     "step": step,
                     "dem_seats": dem_seats(
@@ -556,13 +720,16 @@ try:
             )
 
         if (
-            step % 100 == 0
-            or step == args.steps - 1
+            recorded == 1
+            or recorded % 100 == 0
+            or recorded == args.steps
         ):
             print(
-                f"  step "
-                f"{step:,}/"
-                f"{args.steps - 1:,}"
+                f"  global step "
+                f"{step:,} "
+                f"(new "
+                f"{recorded:,}/"
+                f"{args.steps:,})"
             )
 
 except RuntimeError as exc:
@@ -584,6 +751,25 @@ except RuntimeError as exc:
 
     raise
 
+next_step = (
+    start_step
+    + recorded
+)
+
+checkpoint_path = save_checkpoint(
+    partition,
+    next_step,
+)
+
+print("\ncheckpoint saved:")
+print(
+    f"  {checkpoint_path}"
+)
+
+print(
+    f"  next run begins at "
+    f"step {next_step:,}"
+)
 
 df = pd.DataFrame(
     results
@@ -616,9 +802,21 @@ output_name = (
     f"{args.steps}steps.csv"
 )
 
+end_step = (
+    start_step
+    + recorded
+    - 1
+)
+
 output_path = os.path.join(
     OUTPUT_DIR,
-    output_name,
+    (
+        f"tx_chain_"
+        f"eps{epsilon_tag}_"        
+        f"seed{run_seed}_"
+        f"steps{start_step:06d}-"
+        f"{end_step:06d}.csv"
+    ),
 )
 
 df.to_csv(
