@@ -1,4 +1,4 @@
-# Gerrymander Detector
+﻿# Gerrymander Detector
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue)](https://python.org)
 [![GerryChain](https://img.shields.io/badge/GerryChain-0.3.2-green)](https://github.com/mggg/GerryChain)
@@ -27,32 +27,32 @@ If the enacted map sits outside the range of what random valid maps produce, it 
 
 ## Texas Results
 
-Using 2024 presidential vote data across 9,712 precincts and 500 sampled maps:
+Using 2024 presidential vote data across 9,712 validated precinct units and 30,000 post-burn-in ReCom states with a +/-0.1% population tolerance:
 
 | Map | Dem Seats | Percentile | Outlier |
 |-----|-----------|------------|---------|
-| 2021 enacted | 11 | 20th | No |
-| 2025 enacted | 8 | **0th** | **Yes** |
-| Ensemble range | 10-16 | - | - |
-| Ensemble mean | 12.6 | - | - |
+| Current Texas map | 11 | 12.607% lower tail | Within seat range |
+| PLANC2333 (2025) | 8 | **Below all observed states** | **Outlier** |
+| Ensemble range | 9-17 | - | - |
+| Ensemble mean | 12.973 | - | - |
 
-Not a single randomly generated valid map produced as few as 8 Democratic seats. The 2025 map, currently being challenged in [LULAC v. Abbott](https://www.democracydocket.com/cases/texas-redistricting-challenge-lulac/), sits completely outside the distribution.
+No retained post-burn-in ensemble state produced as few as 8 Harris-won districts. The 2025 map, currently being challenged in [LULAC v. Abbott](https://www.democracydocket.com/cases/texas-redistricting-challenge-lulac/), sits completely outside the distribution.
 
 ### Ensemble Outlier Analysis
 
 <p align="center">
-  <img src="outputs/figures/tx_outlier_comparison.png" alt="Ensemble Analysis" width="800">
+  <img src="outputs/figures/texas_dem_seat_distribution.png" alt="Ensemble Analysis" width="800">
 </p>
 
-The red dashed line (2025 map) falls entirely outside the blue ensemble distribution. The orange line (2021 map) sits within range.
+PLANC2333 lies below the observed 9 to 17 seat range. The current map produces 11 Harris-won districts and remains within the observed seat distribution.
 
-### District Maps — 2021 vs 2025
+### District Maps â€” 2021 vs 2025
 
 <p align="center">
-  <img src="outputs/figures/tx_district_maps.png" alt="District Maps" width="900">
+  <img src="outputs/figures/texas_representative_neutral_map.png" alt="District Maps" width="900">
 </p>
 
-Side-by-side comparison of Texas congressional districts colored by partisan lean. Blue = Democratic, Red = Republican. Notice how blue districts in the 2021 map get broken apart in the 2025 version.
+The representative neutral plan is chain step 26,999. It has 13 Harris-won districts, efficiency gap -0.049588, mean-median +0.008427, and maximum population deviation 0.098043%.
 
 ---
 
@@ -67,8 +67,8 @@ Side-by-side comparison of Texas congressional districts colored by partisan lea
 ## Assumptions
 
 - **Partisan proxy**: 2024 presidential race, following the approach in [Duchin's expert testimony](https://mggg.org/uploads/md-report.pdf) in the Pennsylvania redistricting case and the [MGGG Lab's](https://mggg.org) published work. Still just one election.
-- **Constraints**: Population balance (±5%) and contiguity (every district is one connected piece). Does not enforce compactness or county preservation, which actually helps outlier findings since stricter rules would narrow the ensemble range further.
-- **Data merge**: Precinct boundaries shifted between the 2020 census and 2024 elections. Used centroid-based spatial joins to merge population data. About 1,500 precincts ended up with zero population, likely water or uninhabited areas. Statewide total still matches the census.
+- **Constraints**: Population balance (Â±5%) and contiguity (every district is one connected piece). Does not enforce compactness or county preservation, which actually helps outlier findings since stricter rules would narrow the ensemble range further.
+- **Data construction**: Census-block population is aggregated to the validated 2024 precinct geography. PLANC2333 is scored using exact block-level C2333 assignments rather than precinct centroids. The validated dataset contains 322 zero-population units and preserves the exact statewide population total.
 
 ---
 
@@ -76,13 +76,14 @@ Side-by-side comparison of Texas congressional districts colored by partisan lea
 
     src/
       data_prep/               data cleaning and merging
-        build_texas_dataset.py
+        build_texas_master.py
+        build_texas_precincts.py
       chain/                   markov chain generation
-        run_texas.py
+        run_ensemble.py
       analysis/                outlier scoring and visualization
-        score_2025_map.py
-        plot_texas.py
-        map_texas.py
+        analyze_texas_ensemble.py
+        analyze_thinning.py
+        make_texas_final_figures.py
       metrics/                 partisan and compactness metrics
     rdh_api_tool/              redistricting data hub api notebooks
     outputs/
@@ -118,7 +119,7 @@ Side-by-side comparison of Texas congressional districts colored by partisan lea
 
 ## Author
 
-**Binafsha Bakhramova** — [Northeastern University](https://www.northeastern.edu/), D'Amore McKim School of Business
+**Binafsha Bakhramova** â€” [Northeastern University](https://www.northeastern.edu/), D'Amore McKim School of Business
 
 PEAK Award Research. Not affiliated with any political party, campaign, or advocacy organization.
 
