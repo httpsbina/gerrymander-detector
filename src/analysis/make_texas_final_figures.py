@@ -1,4 +1,5 @@
 from pathlib import Path
+import re
 
 import geopandas as gpd
 import matplotlib.pyplot as plt
@@ -271,18 +272,22 @@ plt.close(fig)
 # MAPS
 # ============================================================
 
+DOC_FIGURES = ROOT / "docs" / "outputs" / "figures"
+DOC_FIGURES.mkdir(parents=True, exist_ok=True)
+
 precincts = gpd.read_file(
-    ROOT
-    / "data"
-    / "processed"
-    / "tx_precincts_validated.gpkg",
+    ROOT / "data" / "processed" / "tx_precincts_validated.gpkg",
     layer="precincts",
 )
 
 neutral = gpd.read_file(
-    ANALYSIS
-    / "texas_representative_neutral_plan.gpkg",
+    ANALYSIS / "texas_representative_neutral_plan.gpkg",
     layer="representative_neutral",
+)
+
+blocks = pd.read_csv(
+    ROOT / "data" / "processed" / "tx_blocks_master.csv",
+    low_memory=False,
 )
 
 plan2025 = gpd.read_file(
@@ -295,24 +300,163 @@ plan2025 = gpd.read_file(
 )
 
 if plan2025.crs != precincts.crs:
-    plan2025 = plan2025.to_crs(
-        precincts.crs
+    plan2025 = plan2025.to_crs(precincts.crs)
+
+
+def district_key(value):
+    if pd.isna(value):
+        return None
+
+    numbers = re.findall(r"\d+", str(value))
+
+    if not numbers:
+        return None
+
+    return int(numbers[-1])
+
+
+def dissolve_with_votes(gdf, district_col):
+    plan = (
+        gdf
+        .dissolve(
+            by=district_col,
+            aggfunc={
+                "G24PREDHAR": "sum",
+                "G24PRERTRU": "sum",
+            },
+        )
+        .reset_index()
+    )
+
+    plan["winner"] = np.where(
+        plan["G24PREDHAR"] > plan["G24PRERTRU"],
+        "Harris",
+        "Trump",
+    )
+
+    return plan
+
+
+current_districts = dissolve_with_votes(
+    precincts,
+    "CONG_DIST",
+)
+
+neutral_districts = dissolve_with_votes(
+    neutral,
+    "NEUTRAL_DIST",
+)
+
+
+# Exact block-level partisan scoring for PLANC2333.
+blocks["_district_key"] = blocks["C2333"].map(
+    district_key
+)
+
+block_votes = (
+    blocks
+    .groupby("_district_key")[
+        ["G24PREDHAR", "G24PRERTRU"]
+    ]
+    .sum()
+    .reset_index()
+)
+
+enacted_2025 = (
+    plan2025
+    .dissolve(by="District")
+    .reset_index()
+)
+
+enacted_2025["_district_key"] = (
+    enacted_2025["District"].map(district_key)
+)
+
+enacted_2025 = enacted_2025.merge(
+    block_votes,
+    on="_district_key",
+    how="left",
+    validate="one_to_one",
+)
+
+enacted_2025["winner"] = np.where(
+    enacted_2025["G24PREDHAR"]
+    > enacted_2025["G24PRERTRU"],
+    "Harris",
+    "Trump",
+)
+
+
+def harris_seats(plan):
+    return int(
+        (plan["winner"] == "Harris").sum()
     )
 
 
-def save_map(boundaries, title, filename):
+assert len(current_districts) == 38
+assert len(neutral_districts) == 38
+assert len(enacted_2025) == 38
+
+assert harris_seats(current_districts) == 11
+assert harris_seats(neutral_districts) == 13
+assert harris_seats(enacted_2025) == 8
+
+
+COLORS = {
+    "Harris": "#2f6fbb",
+    "Trump": "#c84c4c",
+}
+
+
+def save_partisan_map(plan, title, filename):
     fig, ax = plt.subplots(figsize=(9, 8))
 
-    boundaries.boundary.plot(
+    plan.plot(
         ax=ax,
-        linewidth=0.8,
+        color=plan["winner"].map(COLORS),
+        edgecolor="#222222",
+        linewidth=0.65,
     )
 
     ax.set_title(title)
     ax.set_axis_off()
 
+    legend_handles = [
+        plt.Rectangle(
+            (0, 0),
+            1,
+            1,
+            facecolor=COLORS["Harris"],
+            edgecolor="#222222",
+            label="Harris-won district",
+        ),
+        plt.Rectangle(
+            (0, 0),
+            1,
+            1,
+            facecolor=COLORS["Trump"],
+            edgecolor="#222222",
+            label="Trump-won district",
+        ),
+    ]
+
+    ax.legend(
+        handles=legend_handles,
+        loc="lower left",
+        frameon=True,
+    )
+
+    output_path = FIGURES / filename
+    docs_path = DOC_FIGURES / filename
+
     fig.savefig(
-        FIGURES / filename,
+        output_path,
+        dpi=200,
+        bbox_inches="tight",
+    )
+
+    fig.savefig(
+        docs_path,
         dpi=200,
         bbox_inches="tight",
     )
@@ -320,40 +464,21 @@ def save_map(boundaries, title, filename):
     plt.close(fig)
 
 
-current_districts = (
-    precincts
-    .dissolve(by="CONG_DIST")
-)
-
-neutral_districts = (
-    neutral
-    .dissolve(by="NEUTRAL_DIST")
-)
-
-if "District" in plan2025.columns:
-    enacted_2025 = (
-        plan2025
-        .dissolve(by="District")
-    )
-else:
-    enacted_2025 = plan2025
-
-
-save_map(
+save_partisan_map(
     current_districts,
-    "Current Texas Congressional Map",
+    "Current Texas Congressional Map - 11 Harris / 27 Trump",
     "texas_current_map.png",
 )
 
-save_map(
+save_partisan_map(
     neutral_districts,
-    "Representative Neutral Plan — Step 26,999",
+    "Representative Neutral Plan - 13 Harris / 25 Trump",
     "texas_representative_neutral_map.png",
 )
 
-save_map(
+save_partisan_map(
     enacted_2025,
-    "Texas PLANC2333 — 2025",
+    "Texas PLANC2333 - 8 Harris / 30 Trump",
     "texas_planc2333_map.png",
 )
 
@@ -368,3 +493,11 @@ print(mm_fig)
 print(FIGURES / "texas_current_map.png")
 print(FIGURES / "texas_representative_neutral_map.png")
 print(FIGURES / "texas_planc2333_map.png")
+
+print()
+print("Partisan map validation")
+print("=======================")
+print("Current Harris seats:", harris_seats(current_districts))
+print("Neutral Harris seats:", harris_seats(neutral_districts))
+print("PLANC2333 Harris seats:", harris_seats(enacted_2025))
+
