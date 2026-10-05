@@ -1,4 +1,4 @@
-﻿# Gerrymander Detector
+# Gerrymander Detector
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue)](https://python.org)
 [![GerryChain](https://img.shields.io/badge/GerryChain-0.3.2-green)](https://github.com/mggg/GerryChain)
@@ -46,7 +46,7 @@ No retained post-burn-in ensemble state produced as few as 8 Harris-won district
 
 PLANC2333 lies below the observed 9 to 17 seat range. The current map produces 11 Harris-won districts and remains within the observed seat distribution.
 
-### District Maps â€” 2021 vs 2025
+### Representative Neutral Plan
 
 <p align="center">
   <img src="outputs/figures/texas_representative_neutral_map.png" alt="District Maps" width="900">
@@ -67,7 +67,7 @@ The representative neutral plan is chain step 26,999. It has 13 Harris-won distr
 ## Assumptions
 
 - **Partisan proxy**: 2024 presidential race, following the approach in [Duchin's expert testimony](https://mggg.org/uploads/md-report.pdf) in the Pennsylvania redistricting case and the [MGGG Lab's](https://mggg.org) published work. Still just one election.
-- **Constraints**: Population balance (Â±5%) and contiguity (every district is one connected piece). Does not enforce compactness or county preservation, which actually helps outlier findings since stricter rules would narrow the ensemble range further.
+- **Constraints**: Population balance within ±0.1% and contiguity (every district is one connected piece). Does not enforce compactness or county preservation, which actually helps outlier findings since stricter rules would narrow the ensemble range further.
 - **Data construction**: Census-block population is aggregated to the validated 2024 precinct geography. PLANC2333 is scored using exact block-level C2333 assignments rather than precinct centroids. The validated dataset contains 322 zero-population units and preserves the exact statewide population total.
 
 ---
@@ -119,7 +119,7 @@ The representative neutral plan is chain step 26,999. It has 13 Harris-won distr
 
 ## Author
 
-**Binafsha Bakhramova** â€” [Northeastern University](https://www.northeastern.edu/), D'Amore McKim School of Business
+**Binafsha Bakhramova** — [Northeastern University](https://www.northeastern.edu/), D'Amore McKim School of Business
 
 PEAK Award Research. Not affiliated with any political party, campaign, or advocacy organization.
 
