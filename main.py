@@ -75,7 +75,7 @@ def build_parser():
     selection.add_argument("--penn", action="store_true", help="Pennsylvania (not yet prepared)")
     parser.add_argument("--year", help="Configured starting-plan year, e.g. 2023 or 2025")
     parser.add_argument(
-        "--stage", choices=("status", "simulate", "audit"), default="status",
+        "--stage", choices=("status", "simulate", "audit", "sources", "inventory", "download"), default="status",
         help="Status is read-only and does not execute simulation"
     )
     parser.add_argument("--steps", type=int, help="New states for simulate; total states for audit")
@@ -85,6 +85,8 @@ def build_parser():
     parser.add_argument("--window", type=int, help="Override audit window")
     parser.add_argument("--resume-from", type=Path, help="Checkpoint for simulate")
     parser.add_argument("--dry-run", action="store_true", help="Show the command; run nothing")
+    parser.add_argument("--rdh-filter", help="Filter Pennsylvania RDH inventory listings")
+    parser.add_argument("--rdh-file", help="Exact cached RDH filename to download")
     return parser
 
 
@@ -217,6 +219,21 @@ def main(argv=None):
     args = build_parser().parse_args(argv)
     try:
         states = load_registry()
+        if args.stage in ("sources", "inventory", "download"):
+            if not args.penn:
+                raise PipelineError("RDH source stages currently support Pennsylvania only")
+            if any(v is not None for v in (
+                args.year, args.steps, args.seed, args.seeds,
+                args.warmup, args.window, args.resume_from
+            )):
+                raise PipelineError("Simulation and audit options cannot be used with RDH stages")
+            from src.data.rdh_client import run_pennsylvania
+            return run_pennsylvania(
+                args.stage, query=args.rdh_filter,
+                filename=args.rdh_file, dry_run=args.dry_run
+            )
+        if args.rdh_filter is not None or args.rdh_file is not None:
+            raise PipelineError("RDH options require --stage sources, inventory or download")
         state, year, plan = get_selection(states, state_key_from_args(args), args.year)
         if args.stage == "status":
             if any(v is not None for v in (args.steps, args.seed, args.seeds, args.warmup, args.window, args.resume_from)):

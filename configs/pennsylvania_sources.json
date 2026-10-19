@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "state": "Pennsylvania",
+  "purpose": "Source inventory only; no datasets or election joins validated yet",
+  "requirements": [
+    {
+      "name": "2022 enacted congressional boundaries (17 districts)",
+      "purpose": "Official enacted-plan geometry and benchmark",
+      "status": "UNVERIFIED",
+      "source_url": "https://redistrictingdatahub.org/state/pennsylvania/"
+    },
+    {
+      "name": "2020 Census block geography and PL 94-171 population",
+      "purpose": "Exact population allocation and geographic coverage",
+      "status": "UNVERIFIED",
+      "source_url": "https://redistrictingdatahub.org/state/pennsylvania/"
+    },
+    {
+      "name": "2024 general-election precinct-level results",
+      "purpose": "Same-election partisan comparison of district plans",
+      "status": "UNVERIFIED",
+      "source_url": "https://www.pa.gov/agencies/dos/resources/voting-and-elections-resources/voting-and-election-statistics/election-data"
+    },
+    {
+      "name": "Precinct polygons corresponding to the election return IDs",
+      "purpose": "Reliable vote-geography join; cannot infer from returns alone",
+      "status": "UNVERIFIED",
+      "source_url": "https://redistrictingdatahub.org/state/pennsylvania/"
+    },
+    {
+      "name": "Official 2022 district-to-block assignment or verified spatial overlay",
+      "purpose": "Avoid incorrect precinct centroid assignment when districts split precincts",
+      "status": "UNVERIFIED",
+      "source_url": "https://redistrictingdatahub.org/state/pennsylvania/"
+    }
+  ]
+}
