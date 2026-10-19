@@ -12,8 +12,8 @@ SOURCE = ROOT / "outputs/ensembles"
 OUTPUT = ROOT / "outputs/analysis"
 
 SEEDS = [101, 202, 303]
-EXPECTED_STEPS = 500
-WARMUP = 100
+EXPECTED_STEPS = 2000
+WARMUP = 500
 EPSILON = 0.01
 
 REQUIRED = {
@@ -98,9 +98,9 @@ for seed in SEEDS:
         "mean_all": run.dem_seats.mean(),
         "mean_first100": run.iloc[:100].dem_seats.mean(),
         "mean_last100": run.iloc[-100:].dem_seats.mean(),
-        "mean_post100": post.dem_seats.mean(),
-        "lag1_post100": autocorrelation(post.dem_seats, 1),
-        "lag10_post100": autocorrelation(post.dem_seats, 10),
+        "mean_post500": post.dem_seats.mean(),
+        "lag1_post500": autocorrelation(post.dem_seats, 1),
+        "lag10_post500": autocorrelation(post.dem_seats, 10),
     })
 
 # All three runs intentionally start from the same enacted plan.
@@ -161,14 +161,14 @@ frequency = pd.crosstab(
     combined.seed
 ).reindex(columns=SEEDS, fill_value=0)
 
-post100 = pd.concat(
+post500 = pd.concat(
     [runs[s].iloc[WARMUP:] for s in SEEDS],
     ignore_index=True
 )
 
 post_frequency = pd.crosstab(
-    post100.dem_seats,
-    post100.seed
+    post500.dem_seats,
+    post500.seed
 ).reindex(columns=SEEDS, fill_value=0)
 
 OUTPUT.mkdir(parents=True, exist_ok=True)
@@ -180,13 +180,13 @@ frequency.to_csv(
     OUTPUT / "nc_seat_frequencies_all.csv"
 )
 post_frequency.to_csv(
-    OUTPUT / "nc_seat_frequencies_post100.csv"
+    OUTPUT / "nc_seat_frequencies_post500.csv"
 )
 
 print("\nPER-CHAIN DIAGNOSTICS")
 print(summary.round(4).to_string(index=False))
 
-print("\nALL 1,500 STATES")
+print(f"\nALL {len(combined):,} STATES")
 print(f"Total states: {len(combined)}")
 print(f"Unique plan hashes: {unique_total}")
 print(f"Repeated state hashes: {len(combined) - unique_total}")
@@ -196,12 +196,14 @@ print(f"Combined mean seats: {combined.dem_seats.mean():.4f}")
 print("\nSEAT DISTRIBUTION - ALL STATES")
 print(frequency.to_string())
 
-print("\nSEAT DISTRIBUTION - AFTER FIRST 100 PER CHAIN")
+print("\nSEAT DISTRIBUTION - AFTER FIRST 500 PER CHAIN")
 print(post_frequency.to_string())
-print(f"Post-warmup states: {len(post100)}")
-print(f"Post-warmup mean seats: {post100.dem_seats.mean():.4f}")
+print(f"Post-warmup states: {len(post500)}")
+print(f"Post-warmup mean seats: {post500.dem_seats.mean():.4f}")
 
 print(f"\nProvisional split-Rhat (seat count): {rhat:.4f}")
 print("Note: correlated, discrete seat counts require cautious interpretation.")
 print("Multiple chains and Rhat alone do not establish representative sampling.")
 print("\nNC multi-chain analysis completed")
+
+
