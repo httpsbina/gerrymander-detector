@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "states": {
+    "texas": {
+      "name": "Texas",
+      "status": "local_data_required",
+      "dataset": "data/processed/tx_precincts_validated.gpkg",
+      "layer": "precincts",
+      "districts": 38,
+      "expected": {
+        "geographic_units": 9712,
+        "population": 29145505,
+        "dem_votes": 4835134,
+        "rep_votes": 6393403
+      },
+      "columns": {
+        "population": "TOTPOP",
+        "dem": "G24PREDHAR",
+        "rep": "G24PRERTRU"
+      },
+      "default_year": "current",
+      "plans": {
+        "current": {
+          "assignment": "CONG_DIST",
+          "state_label": "Texas Independent Pilot",
+          "epsilon": 0.001,
+          "node_repeats": 2,
+          "output_dir": "outputs/analysis/tx_independent_pilot/ensembles",
+          "checkpoint_dir": "outputs/analysis/tx_independent_pilot/checkpoints",
+          "audit": {
+            "prefix": "texas_independent_pilot",
+            "seeds": [1117, 2227, 3331],
+            "steps": 4000,
+            "warmup": 500,
+            "window": 500,
+            "output_dir": "outputs/analysis/multistate_audit/tx_4000"
+          }
+        }
+      },
+      "notes": "The neutral chain starts at the pre-2025 congressional assignment; PLANC2333 is separately scored at Census-block resolution."
+    },
+    "north_carolina": {
+      "name": "North Carolina",
+      "status": "local_data_required",
+      "dataset": "data/processed/nc_precincts_common_2023_2025.gpkg",
+      "layer": "precincts",
+      "districts": 14,
+      "expected": {
+        "geographic_units": 2681,
+        "population": 10439388,
+        "dem_votes": 2713609,
+        "rep_votes": 2896942
+      },
+      "columns": {
+        "population": "TOTPOP",
+        "dem": "G24PREDHAR",
+        "rep": "G24PRERTRU"
+      },
+      "default_year": "2025",
+      "plans": {
+        "2023": {
+          "assignment": "CONG_DIST",
+          "state_label": "North Carolina Common 2023",
+          "epsilon": 0.005,
+          "node_repeats": 2,
+          "output_dir": "outputs/ensembles",
+          "checkpoint_dir": "outputs/checkpoints",
+          "audit": {
+            "prefix": "north_carolina_common_2023",
+            "seeds": [707, 808, 909],
+            "steps": 5000,
+            "warmup": 500,
+            "window": 1000,
+            "output_dir": "outputs/analysis/multistate_audit/nc_common_2023_5000"
+          }
+        },
+        "2025": {
+          "assignment": "CONG_DIST_2025",
+          "state_label": "North Carolina Common 2025",
+          "epsilon": 0.005,
+          "node_repeats": 2,
+          "output_dir": "outputs/ensembles",
+          "checkpoint_dir": "outputs/checkpoints",
+          "audit": {
+            "prefix": "north_carolina_common_2025",
+            "seeds": [707, 808, 909],
+            "steps": 5000,
+            "warmup": 500,
+            "window": 1000,
+            "output_dir": "outputs/analysis/multistate_audit/nc_common_2025_5000"
+          }
+        }
+      },
+      "notes": "The 2023 and 2025 enacted assignments use the same 2,681-unit geography; audit each initialization group separately."
+    },
+    "pennsylvania": {
+      "name": "Pennsylvania",
+      "status": "pending_data",
+      "dataset": null,
+      "districts": 17,
+      "plans": {},
+      "notes": "Data-source authorization, geospatial harmonization, election columns, and official congressional assignments have not been validated. Do not simulate or claim an analysis is complete."
+    }
+  }
+}
