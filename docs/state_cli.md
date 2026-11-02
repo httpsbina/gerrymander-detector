@@ -1,86 +1,69 @@
-# State-configured research CLI (Phase 1)
+# State-configured research CLI
 
-This is a **non-destructive orchestration layer** around the existing ReCom
-runner (`src/chain/run_ensemble.py`) and independent-chain auditor
-(`src/analysis/audit_ensemble_chains.py`). It does not replace either tool,
-change historical results, download data, or certify convergence.
+Texas and North Carolina are **not research-ready**. See the [source audit](../deliverables/rdh-research-audit-2026-11-02/README.md) and [completed campaign audit](../deliverables/rebuild-campaign-2026-11-02/README.md). Historical data and chain files were unavailable; new-source runs are separate experiments.
 
-Run from the repository root using the existing virtual environment:
+Run from the repository root with the verified Python 3.12 environment:
 
-```powershell
-.\.venv\Scripts\python.exe main.py --texas
-.\.venv\Scripts\python.exe main.py --nc --year 2023
-.\.venv\Scripts\python.exe main.py --nc --year 2025
-.\.venv\Scripts\python.exe main.py --penn
+```sh
+export MPLCONFIGDIR="$PWD/data/external/rdh/rebuild_2026-11-02/runtime/matplotlib312"
+export TMPDIR="$PWD/.venv/test-runtime"
+export UV_CACHE_DIR="$PWD/.venv/uv-cache"
+.venv/science/bin/python main.py --texas --config configs/research_rebuild_2026-11-02.json
+.venv/science/bin/python main.py --nc --year 2023 --config configs/research_rebuild_2026-11-02.json
+.venv/science/bin/python main.py --nc --year 2025 --config configs/research_rebuild_2026-11-02.json
 ```
 
-With no `--stage`, all commands are **read-only status checks**. Pennsylvania
-is explicitly **pending data preparation**. `--penn` does not currently fetch
-or process Pennsylvania, and its simulation and audit stages refuse to run.
+Status is read-only. The original `configs/states.json` remains available for historical definitions; the new registry explicitly selects the source-derived candidates. `--penn` remains secondary and has no validated simulation inputs.
 
-## Audit existing Texas and North Carolina ensembles
+## Validate and build candidates
 
-```powershell
-.\.venv\Scripts\python.exe main.py --texas --stage audit --dry-run
-.\.venv\Scripts\python.exe main.py --texas --stage audit
-.\.venv\Scripts\python.exe main.py --nc --year 2023 --stage audit
-.\.venv\Scripts\python.exe main.py --nc --year 2025 --stage audit
+RDH acquisition requires authorized access. Checksums, source pages, metadata and limitations are recorded in `configs/rdh_rebuild_sources_2026-11-02.json`. Existing output directories are refused; use new paths for another execution.
+
+```sh
+.venv/science/bin/python main.py --nc --stage validate --source-root data/external/rdh/rebuild_2026-11-02 --report-dir outputs/analysis/new_nc_source_validation
+.venv/science/bin/python main.py --texas --stage validate --source-root data/external/rdh/rebuild_2026-11-02 --report-dir outputs/analysis/new_tx_source_validation
+.venv/science/bin/python main.py --nc --stage rebuild --source-root data/external/rdh/rebuild_2026-11-02 --block-master outputs/analysis/new_nc_source_validation/blocks/blocks_master.csv --report-dir outputs/analysis/new_nc_block_union_candidate --dry-run
 ```
 
-The audit uses the configured existing simulation files. Texas defaults to
-three 4,000-state chains with 500 warmup states; NC uses three 5,000-state
-chains per starting plan, with 500 warmup states. The current scripts do **not**
-establish convergence, and this CLI does not claim otherwise.
+Validation runs both block accounting and raw-source geometry checks. It returns a failure status when geometry requires review, even if block accounting passes. It does not repair source data. NC rebuild defaults to the approved Census-block-union baseline. Explicit `--rebuild-geography precinct` creates the separate precinct sensitivity candidate. Texas rebuild applies only the five approved repairs to the checksum-restricted source; eight source overlaps remain documented. Creating a candidate does not certify readiness or select it automatically in a registry.
 
-## Explicit simulations
+## Simulate and continue
 
-Simulations require both `--steps` and `--seed`. Use `--dry-run` to inspect the
-full command without starting a simulation:
+Simulation requires explicit `--seed` and `--steps`. Always inspect the configuration and output namespace. These commands are dry runs; they start no chains:
 
-```powershell
-.\.venv\Scripts\python.exe main.py --nc --year 2025 --stage simulate --steps 100 --seed 1234 --dry-run
+```sh
+.venv/science/bin/python main.py --nc --year 2025 --config configs/research_rebuild_2026-11-02.json --stage simulate --steps 5000 --seed 2707 --dry-run
+.venv/science/bin/python main.py --texas --config configs/research_rebuild_2026-11-02.json --stage simulate --steps 4000 --seed 1117 --resume-from outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed1117_next4000.pkl --dry-run
 ```
 
-To continue an existing Texas chain from the recorded step-4,000 checkpoint:
+The second command would append steps 4,000–7,999 under the recorded version-2 checkpoint lineage. The runner verifies dataset/graph fingerprints, parameters, runtime, source-code hashes, seed, assignment and `PYTHONHASHSEED`. It refuses unverifiable legacy checkpoints, overlapping CSV steps and checkpoint collisions. The CLI supplies `PYTHONHASHSEED=0` when unset. Actual Texas and NC 100+20 versus 120-state continuation checks matched complete CSV records exactly; these probes are never research samples.
 
-```powershell
-.\.venv\Scripts\python.exe main.py --texas --stage simulate --steps 2000 --seed 1117 --resume-from outputs/analysis/tx_independent_pilot/checkpoints/texas_independent_pilot_checkpoint_eps0p001_seed1117_next4000.pkl --dry-run
+The campaign launcher prepares all 26 separately labeled baseline and sensitivity commands. Without `--run`, it only writes a new manifest and per-experiment registries:
+
+```sh
+.venv/science/bin/python src/chain/run_rebuild_campaign.py --output-dir outputs/analysis/new_campaign_plan
 ```
 
-Remove `--dry-run` only when ready to execute that simulation. The CLI refuses
-to overwrite an existing chain CSV segment. It validates checkpoint names
-against state, epsilon and seed; the existing runner performs the substantive
-checkpoint checks.
+Adding `--run --workers 4` executes every prepared command through `main.py`. The exact completed campaign manifest and historical registrations are preserved in the campaign deliverable. Reused seeds across sensitivity conditions do not establish independent comparisons. No graph or tolerance conditions are pooled.
 
-For a clean restart, set `PYTHONHASHSEED` consistently with saved checkpoints.
-The CLI supplies `PYTHONHASHSEED=0` to child processes if it is otherwise unset.
+## Full diagnostics through the state CLI
 
-## Configuration and source limitations
-
-`configs/states.json` is the state registry. It records validated local dataset
-paths, per-plan starting-map column, election/population columns, tolerances,
-reproducibility labels and existing audit defaults. It is intentionally JSON,
-so there is no new YAML dependency.
-
-- Texas's neutral ReCom ensemble starts from the prior congressional map.
-  The 2025 PLANC2333 enacted benchmark must still be evaluated separately at
-  Census-block level. Do not treat the `current` assignment as PLANC2333.
-- North Carolina uses the same processed graph for 2023 and 2025 initializations;
-  the two configured plan-year labels must not be collapsed into one.
-- Pennsylvania has **no** validated input definition yet. A future data-source
-  adapter and preprocessing/validation stages are separate implementation work.
-
-The CLI only checks whether the configured dataset file exists before running
-a simulation. The underlying runner handles graph and population validations.
-Full election provenance, legal constraints, geography matching, and statistical
-reliability remain scientific responsibilities, not guaranteed CLI features.
-
-## No-GIS smoke tests
-
-```powershell
-.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+```sh
+.venv/science/bin/python main.py --nc --config configs/research_rebuild_2026-11-02.json --stage research-audit --campaign-manifest outputs/analysis/rebuild_campaign_2026-11-02/manifest_with_constraint_sensitivity_v2.json --report-dir outputs/analysis/new_nc_research_audit
+.venv/science/bin/python main.py --texas --config configs/research_rebuild_2026-11-02.json --stage research-audit --campaign-manifest outputs/analysis/rebuild_campaign_2026-11-02/manifest_with_constraint_sensitivity_v2.json --report-dir outputs/analysis/new_tx_research_audit
 ```
 
-The tests run without GerryChain, GeoPandas, or RDH access, and cover state/year
-selection, command construction, pending-data blocking, no-execution dry runs,
-and accidental overwrite protection.
+`research-audit` includes **every experiment for the selected state** in the manifest. It verifies segment continuity, seed/tolerance consistency, finite traces, final checkpoint endpoints and provenance, and refuses unconfigured segments. It runs rank-normalized split R-hat, bulk/tail ESS, mean/SD/quantile MCSE, four warmup views, autocorrelation and window summaries for seats, efficiency gap, cut edges and mean–median. NC initialization groups are assessed separately and jointly within each compatible condition. Trace/rank plotting and geographic checkpoint diagnostics have separate recorded commands in the campaign report.
+
+The legacy `--stage audit` remains a limited historical auditor. Both audit stages refuse an existing destination; `--report-dir` can select a new one. Audit execution status is separate from scientific readiness: a completed audit may return exit 0 while reporting failed convergence screens and `research_ready: false`.
+
+## Verification and scope
+
+```sh
+.venv/science/bin/python -m unittest discover -s tests -v
+.venv/bin/uv pip check --python .venv/science/bin/python
+```
+
+The complete scientific suite requires the pinned research environment; fixture tests alone establish no real-data validity. No Python formatter/linter is configured. Changed Markdown/JSON use Prettier; Python uses syntax and whitespace checks.
+
+Texas PLANC2333 is scored separately at block resolution. NC assignments use identical common-unit IDs within each geometry; equal unit counts across geometries do not imply equal graphs. Modeled block votes are not observed block returns. The sampler imposes population and graph-contiguity constraints, without establishing uniform plan sampling or full legal compliance. No descriptive frequency is a calibrated p-value, and zero observations do not imply zero probability.

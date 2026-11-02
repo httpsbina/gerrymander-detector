@@ -127,6 +127,41 @@ class StateCliTests(unittest.TestCase):
             code, _, _ = self.run_cli("--nc", "--config", "../outside.json")
         self.assertEqual(code, 2)
 
+    def test_nc_rebuild_defaults_to_block_union_and_retains_precinct_option(self):
+        for option, script in (([], "rebuild_nc_block_union.py"),
+                               (["--rebuild-geography", "precinct"], "rebuild_nc_common.py")):
+            code, out, _ = self.run_cli(
+                "--nc", "--stage", "rebuild", "--source-root", "data/fixture-not-present",
+                "--block-master", "data/fixture-master-not-present.csv",
+                "--report-dir", "outputs/fixture-not-present", "--dry-run", *option)
+            self.assertEqual(code, 0)
+            self.assertIn(script, out)
+
+    def test_legacy_audit_refuses_existing_output_directory(self):
+        code, _, err = self.run_cli("--texas", "--stage", "audit", "--report-dir", "tests", "--dry-run")
+        self.assertEqual(code, 2)
+        self.assertIn("Refusing", err)
+
+    def test_research_audit_requires_manifest_and_output(self):
+        code, _, err = self.run_cli("--nc", "--stage", "research-audit", "--dry-run")
+        self.assertEqual(code, 2)
+        self.assertIn("--campaign-manifest", err)
+
+    def test_research_audit_includes_all_state_experiments_without_subprocess(self):
+        manifest = {"experiments": {
+            "nc_23": {"state": "north_carolina"}, "nc_25": {"state": "north_carolina"},
+            "nc_sensitivity": {"state": "north_carolina"}, "tx": {"state": "texas"}}}
+        import json
+        with patch.object(Path, "read_text", return_value=json.dumps(manifest)), patch.object(
+            subprocess, "run", side_effect=AssertionError("unexpected subprocess")
+        ):
+            code, out, _ = self.run_cli(
+                "--nc", "--stage", "research-audit", "--campaign-manifest", "fixture-manifest.json",
+                "--report-dir", "outputs/fixture-not-present", "--dry-run")
+        self.assertEqual(code, 0)
+        self.assertIn("--experiments nc_23 nc_25 nc_sensitivity", out)
+        self.assertNotIn("nc_sensitivity tx", out)
+
 
 if __name__ == "__main__":
     unittest.main()

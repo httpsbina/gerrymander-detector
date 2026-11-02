@@ -76,7 +76,7 @@ def build_parser():
     parser.add_argument("--year", help="Configured starting-plan year, e.g. 2023 or 2025")
     parser.add_argument("--config", type=Path, help="Explicit state registry inside this checkout")
     parser.add_argument(
-        "--stage", choices=("status", "preflight", "validate", "rebuild", "simulate", "audit", "sources", "inventory", "download"), default="status",
+        "--stage", choices=("status", "preflight", "validate", "rebuild", "simulate", "audit", "research-audit", "sources", "inventory", "download"), default="status",
         help="Status is read-only and does not execute simulation"
     )
     parser.add_argument("--steps", type=int, help="New states for simulate; total states for audit")
@@ -91,6 +91,8 @@ def build_parser():
     parser.add_argument("--report-dir", type=Path, help="New directory for preflight reports")
     parser.add_argument("--source-root", type=Path, help="Acquired RDH source directory for validate/rebuild")
     parser.add_argument("--block-master", type=Path, help="Audited block master CSV for rebuild")
+    parser.add_argument("--rebuild-geography", choices=("block-union", "precinct"), help="NC rebuild geography; default: approved block-union baseline")
+    parser.add_argument("--campaign-manifest", type=Path, help="Recorded experiment manifest for research-audit")
     return parser
 
 
@@ -201,6 +203,10 @@ def build_audit_command(args, state, plan):
         raise PipelineError("Invalid audit steps, warmup or window")
     if len(seeds) < 2 or len(set(seeds)) != len(seeds):
         raise PipelineError("Audit requires at least two distinct seeds")
+    from src.analysis.research_preflight import local_path
+    destination = local_path(ROOT, args.report_dir or audit["output_dir"])
+    if destination.exists():
+        raise PipelineError("Refusing an existing audit output directory")
 
     command = [
         sys.executable, str(ROOT / "src/analysis/audit_ensemble_chains.py"),
@@ -212,7 +218,7 @@ def build_audit_command(args, state, plan):
         "--districts", str(state["districts"]),
         "--warmup", str(warmup),
         "--window", str(window),
-        "--output-dir", str(resolve(audit["output_dir"])),
+        "--output-dir", str(destination),
     ]
     if not resolve(plan["output_dir"]).is_dir() and not args.dry_run:
         raise PipelineError(f"Ensemble directory missing: {resolve(plan['output_dir'])}")
@@ -225,8 +231,12 @@ def main(argv=None):
         config_path = resolve(args.config).resolve() if args.config is not None else CONFIG_PATH
         config_path.relative_to(ROOT)
         states = load_registry(config_path)
-        if args.report_dir is not None and args.stage not in ("preflight", "validate", "rebuild"):
-            raise PipelineError("--report-dir requires --stage preflight, validate or rebuild")
+        if args.report_dir is not None and args.stage not in ("preflight", "validate", "rebuild", "audit", "research-audit"):
+            raise PipelineError("--report-dir requires a report-producing stage")
+        if args.campaign_manifest is not None and args.stage != "research-audit":
+            raise PipelineError("--campaign-manifest requires --stage research-audit")
+        if args.rebuild_geography is not None and (args.stage != "rebuild" or not args.nc):
+            raise PipelineError("--rebuild-geography requires --nc --stage rebuild")
         if args.source_root is not None and args.stage not in ("validate", "rebuild"):
             raise PipelineError("--source-root requires --stage validate or rebuild")
         if args.block_master is not None and args.stage != "rebuild":
@@ -258,6 +268,33 @@ def main(argv=None):
                 f"{state['name']} has no validated dataset or plan configuration. "
                 "Data ingestion and validation must be completed before running this stage."
             )
+        if args.stage == "research-audit":
+            if args.campaign_manifest is None or args.report_dir is None:
+                raise PipelineError("Research-audit requires --campaign-manifest and --report-dir")
+            if any(v is not None for v in (args.year, args.steps, args.seed, args.seeds, args.warmup, args.window, args.resume_from)):
+                raise PipelineError("Research-audit uses every configured state experiment without run overrides")
+            from src.analysis.research_preflight import local_path
+            manifest_path = local_path(ROOT, args.campaign_manifest)
+            destination = local_path(ROOT, args.report_dir)
+            if destination.exists():
+                raise PipelineError("Refusing an existing research audit output directory")
+            manifest = json.loads(manifest_path.read_text())
+            if not isinstance(manifest.get("experiments"), dict):
+                raise PipelineError("Campaign manifest requires an experiments object")
+            experiments = [key for key, value in manifest["experiments"].items()
+                           if value["state"] == state_key_from_args(args)]
+            if not experiments:
+                raise PipelineError("No experiments for the selected state in this manifest")
+            command = [sys.executable, str(ROOT / "src/analysis/audit_rebuild_campaign.py"),
+                       "--manifest", str(manifest_path), "--output-dir", str(destination),
+                       "--experiments", *experiments]
+            print("COMMAND: " + subprocess.list2cmdline(command))
+            if args.dry_run:
+                print("DRY RUN: no files written, no subprocess started")
+                return 0
+            env = os.environ.copy()
+            env.setdefault("MPLCONFIGDIR", str(ROOT / ".venv/matplotlib"))
+            return subprocess.run(command, cwd=ROOT, env=env, check=False).returncode
         if args.stage in ("validate", "rebuild"):
             if any(v is not None for v in (
                 args.steps, args.seed, args.seeds, args.warmup, args.window, args.resume_from
@@ -283,7 +320,8 @@ def main(argv=None):
                 if args.block_master is None:
                     raise PipelineError("Rebuild requires --block-master from a successful source audit")
                 master = local_path(ROOT, args.block_master)
-                script = "rebuild_texas_candidate.py" if args.texas else "rebuild_nc_common.py"
+                script = "rebuild_texas_candidate.py" if args.texas else (
+                    "rebuild_nc_common.py" if args.rebuild_geography == "precinct" else "rebuild_nc_block_union.py")
                 commands = [[
                     sys.executable, str(ROOT / "src/data_prep" / script),
                     "--source-root", str(source), "--block-master", str(master),
@@ -330,6 +368,7 @@ def main(argv=None):
             return 0
         env = os.environ.copy()
         env.setdefault("PYTHONHASHSEED", "0")
+        env.setdefault("MPLCONFIGDIR", str(ROOT / ".venv/matplotlib"))
         return subprocess.run(command, cwd=ROOT, env=env, check=False).returncode
     except (PipelineError, OSError, ValueError, json.JSONDecodeError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)

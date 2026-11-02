@@ -29,19 +29,22 @@ def prepare(destination):
     destination.mkdir(parents=True, exist_ok=False)
     manifest = {"schema_version": 1, "research_ready": False,
                 "purpose": "New-source baseline and sensitivity experiments; not historical continuation",
-                "seed_design": "Distinct seeds within each geometry across NC starting maps; graph sensitivity reuses seed labels, is not pooled, and is not assumed independent of the baseline",
+                "seed_design": "Distinct seeds across NC starting maps within a condition; geography and population sensitivities reuse seed labels, are never pooled, and are not assumed independent of the baseline",
                 "experiments": {}, "commands": [],
                 "source_code": {name: file_sha256(ROOT / name) for name in (
                     "main.py", "src/chain/run_ensemble.py", "src/chain/checkpoint_integrity.py",
                     "src/chain/run_rebuild_campaign.py")}}
     definitions = [
-        ("tx_rebuild", "texas", "current", BASE / "tx_candidate/tx_candidate.gpkg", [1117, 2227, 3331]),
-        ("nc_block_union_2023", "north_carolina", "2023", BASE / "nc_block_union_candidate/nc_block_union_candidate.gpkg", [707, 808, 909]),
-        ("nc_block_union_2025", "north_carolina", "2025", BASE / "nc_block_union_candidate/nc_block_union_candidate.gpkg", [1707, 1808, 1909]),
-        ("nc_precinct_sensitivity_2023", "north_carolina", "2023", BASE / "nc_common_candidate/nc_common_candidate.gpkg", [707, 808, 909]),
-        ("nc_precinct_sensitivity_2025", "north_carolina", "2025", BASE / "nc_common_candidate/nc_common_candidate.gpkg", [1707, 1808, 1909]),
+        ("tx_rebuild", "texas", "current", BASE / "tx_candidate/tx_candidate.gpkg", [1117, 2227, 3331, 4441], 0.001),
+        ("nc_block_union_2023", "north_carolina", "2023", BASE / "nc_block_union_candidate/nc_block_union_candidate.gpkg", [707, 808, 909], 0.005),
+        ("nc_block_union_2025", "north_carolina", "2025", BASE / "nc_block_union_candidate/nc_block_union_candidate.gpkg", [1707, 1808, 1909], 0.005),
+        ("nc_precinct_sensitivity_2023", "north_carolina", "2023", BASE / "nc_common_candidate/nc_common_candidate.gpkg", [707, 808, 909], 0.005),
+        ("nc_precinct_sensitivity_2025", "north_carolina", "2025", BASE / "nc_common_candidate/nc_common_candidate.gpkg", [1707, 1808, 1909], 0.005),
+        ("tx_population_sensitivity", "texas", "current", BASE / "tx_candidate/tx_candidate.gpkg", [1117, 2227, 3331, 4441], 0.005),
+        ("nc_population_sensitivity_2023", "north_carolina", "2023", BASE / "nc_block_union_candidate/nc_block_union_candidate.gpkg", [707, 808, 909], 0.01),
+        ("nc_population_sensitivity_2025", "north_carolina", "2025", BASE / "nc_block_union_candidate/nc_block_union_candidate.gpkg", [1707, 1808, 1909], 0.01),
     ]
-    for key, state_key, year, dataset, seeds in definitions:
+    for key, state_key, year, dataset, seeds, epsilon in definitions:
         with (ROOT / "configs/states.json").open() as stream:
             registry = json.load(stream)
         state = registry["states"][state_key]
@@ -49,6 +52,7 @@ def prepare(destination):
         label = key + "_20261102"
         experiment_root = destination / key
         plan["state_label"] = label
+        plan["epsilon"] = epsilon
         plan["output_dir"] = str((experiment_root / "ensembles").relative_to(ROOT))
         plan["checkpoint_dir"] = str((experiment_root / "checkpoints").relative_to(ROOT))
         plan["audit"]["prefix"] = label

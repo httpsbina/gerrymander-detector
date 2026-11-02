@@ -1,4 +1,4 @@
-"""Build a separately labeled NC topology sensitivity candidate from Census blocks.
+"""Build the approved new-source NC baseline candidate from Census blocks.
 
 All block membership comes from the audited master. No polygon repair, snapping,
 centroid reassignment, population imputation, or production replacement occurs.

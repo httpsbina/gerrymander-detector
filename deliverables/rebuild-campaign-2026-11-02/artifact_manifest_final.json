@@ -1,0 +1,227 @@
+{
+  "research_ready": false,
+  "publication_files": [
+    {
+      "path": "README.md",
+      "bytes": 19603,
+      "sha256": "f6491f827f8ba2fa99ea651054e4a42ef923b2171ed279758ae787968bc4b834"
+    },
+    {
+      "path": "adopted_plan_geometry.json",
+      "bytes": 6349,
+      "sha256": "b3e82234f185f8269940a59d537ff6cae3d077be2b339d7adbcaae077ca71b3d"
+    },
+    {
+      "path": "artifact_manifest.json",
+      "bytes": 6985,
+      "sha256": "b2e17e56529e63c330143cd56949f7d38184eed9c51ea6d4a2ed00c6b31d9869"
+    },
+    {
+      "path": "campaign_manifest.json",
+      "bytes": 29834,
+      "sha256": "dc2cddcb3d68e7916d82aad2f4cec68c98841e7b6a42c3c04e9d8572f52e4bbe"
+    },
+    {
+      "path": "campaign_manifest.original",
+      "bytes": 30106,
+      "sha256": "6f5495d914fbed21a24311b0491e4650faf678740ac7423a25f2e7b05d00baa1"
+    },
+    {
+      "path": "chain_summary.csv",
+      "bytes": 17350,
+      "sha256": "bef1d4dd7b9fe7379a0763274a13ea7410e05999fb75e7d34d4807504dbfdc45"
+    },
+    {
+      "path": "county_chain_ranges.csv",
+      "bytes": 54307,
+      "sha256": "ff63f33e0d80459671b5172f005b833fff4fa9837ed48df1e2300499cce86aad"
+    },
+    {
+      "path": "county_chain_summary.csv",
+      "bytes": 360001,
+      "sha256": "a86655710aa90fedc5f4b34143562777a817174f179f897c1e867e74514f704c"
+    },
+    {
+      "path": "diagnostics.csv",
+      "bytes": 29416,
+      "sha256": "19603d8601708afc1636506b7b04f1d051585c5fcf4d015ea0960beb816437d8"
+    },
+    {
+      "path": "diagnostics.json",
+      "bytes": 166687,
+      "sha256": "3069db6f9a4b39c7815c1ecb4a7a7aad150ee0e3254b25b80df2f23256df0b07"
+    },
+    {
+      "path": "enacted_tail_counts.csv",
+      "bytes": 1879,
+      "sha256": "dec2128918f1187f1930ccc984954ed9bfde5398e2d88341e52bb0f69cdd53cd"
+    },
+    {
+      "path": "enacted_tail_diagnostics.json",
+      "bytes": 22360,
+      "sha256": "6b805ad18dc0c41da8b17ef170ff8fe76fb45c11e1130d5da8cb4715b1d1c5bc"
+    },
+    {
+      "path": "executed_state_registries.json",
+      "bytes": 12967,
+      "sha256": "712b0bba02ba2f4f092f834502edbb72c35ed0f86c15af02ccd9d8adaa466856"
+    },
+    {
+      "path": "figures/README.md",
+      "bytes": 1945,
+      "sha256": "ce78d2e00ce8075b740e967610a7fb25c4fdd65d3ecec1cf5b5460132e8cf4e4"
+    },
+    {
+      "path": "figures/figure_manifest.json",
+      "bytes": 4801,
+      "sha256": "8df037f614bec7022bdaccc2c3800627f3634c90a1221bffb0feda5bb8b7c86e"
+    },
+    {
+      "path": "figures/nc_block_union_2023_rank.png",
+      "bytes": 138625,
+      "sha256": "2fd833ce663d2935d61091929b1056dc072a49dcec9d150d81e9af48a654efdf"
+    },
+    {
+      "path": "figures/nc_block_union_2023_trace.png",
+      "bytes": 487798,
+      "sha256": "31f03bbf95c2021d50e904ef1cb22cef3acb22cee92eb84f3c539f23399d7171"
+    },
+    {
+      "path": "figures/nc_block_union_2025_rank.png",
+      "bytes": 138882,
+      "sha256": "8abc35609c1a44df8360daca5518f751b97b27e4121ea5a1ea9b57000e23939b"
+    },
+    {
+      "path": "figures/nc_block_union_2025_trace.png",
+      "bytes": 473770,
+      "sha256": "654454c019553806a6019f5283f84fca2940cce1250d7dafb7a0e32fa943c9d9"
+    },
+    {
+      "path": "figures/nc_block_union_joint_rank.png",
+      "bytes": 151586,
+      "sha256": "f9d93df2d75349074e94923f2c935955d1b7783c36ccfea17b515eae199897db"
+    },
+    {
+      "path": "figures/nc_block_union_joint_trace.png",
+      "bytes": 608447,
+      "sha256": "85f1c7e8d46ea892064383bb11cef634bf81c34f5820b5a270c03e2aed0d9d27"
+    },
+    {
+      "path": "figures/nc_population_sensitivity_2023_rank.png",
+      "bytes": 141702,
+      "sha256": "dbf05623d72a9a8c1d26cf99ab6bb144fed701d9f4ce7a17b9f7c9f6c356d053"
+    },
+    {
+      "path": "figures/nc_population_sensitivity_2023_trace.png",
+      "bytes": 490546,
+      "sha256": "56880447d1d09bcc4a27610cdb86a5132ead8928b96f85f08a9bb03b8a7f1ec2"
+    },
+    {
+      "path": "figures/nc_population_sensitivity_2025_rank.png",
+      "bytes": 140432,
+      "sha256": "352107478347735e8820974d32becef5900de5c515b3bba0d4db4ca1140e94d0"
+    },
+    {
+      "path": "figures/nc_population_sensitivity_2025_trace.png",
+      "bytes": 483757,
+      "sha256": "cdb000f387544d84e714a587cd69288eb79d5c096e98a294e4ea57e9eafc5f4a"
+    },
+    {
+      "path": "figures/nc_population_sensitivity_joint_rank.png",
+      "bytes": 156734,
+      "sha256": "42e1af3d4dfa9cf00234a75ca478f6df26961d4ac85cc5a9345178fec6846744"
+    },
+    {
+      "path": "figures/nc_population_sensitivity_joint_trace.png",
+      "bytes": 622478,
+      "sha256": "573d903706196f817dc94ca329245ed8398b5e1011811b69e97fdba3c34f7dc8"
+    },
+    {
+      "path": "figures/nc_precinct_sensitivity_2023_rank.png",
+      "bytes": 140782,
+      "sha256": "0438797471f1fc13a3907b3f88f12846f867ec9798cdd2f238759a19a72da8a1"
+    },
+    {
+      "path": "figures/nc_precinct_sensitivity_2023_trace.png",
+      "bytes": 488370,
+      "sha256": "7770fed059d905afe5c40e90cbcf29bc8ea48f8fc8a14cc36134b30b965ff17b"
+    },
+    {
+      "path": "figures/nc_precinct_sensitivity_2025_rank.png",
+      "bytes": 142426,
+      "sha256": "37731c94cb9d61761c72d534eaf521ff21ed3a0d8917c5fd085f8bdf7454a693"
+    },
+    {
+      "path": "figures/nc_precinct_sensitivity_2025_trace.png",
+      "bytes": 500040,
+      "sha256": "8de2e3a2c2a3b0b535e3e321a1565068a68dbaebf9ac435aa7c56d19276361c5"
+    },
+    {
+      "path": "figures/nc_precinct_sensitivity_joint_rank.png",
+      "bytes": 150859,
+      "sha256": "53f1c95e2e9e8b741bf5cd2672de1a9af51ef0514ba24721509a76c3015f82c7"
+    },
+    {
+      "path": "figures/nc_precinct_sensitivity_joint_trace.png",
+      "bytes": 630853,
+      "sha256": "5b58710870aae04f76bfa3ca598a62dd2c80bc25129623b1c6adaf8fb0373f66"
+    },
+    {
+      "path": "figures/tx_population_sensitivity_rank.png",
+      "bytes": 149706,
+      "sha256": "ebba2334a86278d89112a00643e816b609cfea16e27fc920205409669a5af6f9"
+    },
+    {
+      "path": "figures/tx_population_sensitivity_trace.png",
+      "bytes": 530153,
+      "sha256": "b042f1ef5c01ad5d4ec67e4ae725577bfebcdd7cbf36460b7c36d54436ba0da2"
+    },
+    {
+      "path": "figures/tx_rebuild_rank.png",
+      "bytes": 148120,
+      "sha256": "67f144069d7f4a6a867625e106392ba7ce591702461dae602d7add0ebfe91231"
+    },
+    {
+      "path": "figures/tx_rebuild_trace.png",
+      "bytes": 512302,
+      "sha256": "69fc66502e0f4e2a7a69520ddf316a4fa1267eaae6bb10a2a6a78781e6d958d6"
+    },
+    {
+      "path": "geography_audit.json",
+      "bytes": 431628,
+      "sha256": "f6adcede16907d6f4779d35c70559c36fa8407c11f52c0f1c8f983838a864d2d"
+    },
+    {
+      "path": "primary_diagnostics.csv",
+      "bytes": 7195,
+      "sha256": "f64e15c37228e8f03ef7e443b5f5fc0671b626e92c627fc6e0c0fd18b0a0f4cd"
+    },
+    {
+      "path": "test_suite.log",
+      "bytes": 9872,
+      "sha256": "441b9cc53fb9cdf10d502089c1970d00dcf84c11d2211defe8b72016e088f64c"
+    },
+    {
+      "path": "test_suite_final.log",
+      "bytes": 9872,
+      "sha256": "0aa06b39b01de36ef7949c5baeadeda81ccf4bd79ec176f09a07f8ea7d2f5310"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 3958,
+      "sha256": "095f305deec2f5aaf41b6ae03ba8fa4e7c67a88c89006e4e4ca7359d3d8d258d"
+    },
+    {
+      "path": "verification_final.json",
+      "bytes": 5293,
+      "sha256": "366fa2d5bd93e83517074b77ff95e716bf23653e29ac791dce991f147c45ee67"
+    },
+    {
+      "path": "windows.csv",
+      "bytes": 14611,
+      "sha256": "fb974283bfbd705d2fc2d3fbe70156f8962be5f42de6418d7ea7d240c1d0479d"
+    }
+  ],
+  "original_manifest_sha256": "6f5495d914fbed21a24311b0491e4650faf678740ac7423a25f2e7b05d00baa1",
+  "note": "Final publication checksums, including the tail supplement. artifact_manifest.json is an earlier publication-draft snapshot; its README checksum predates the final report. Protected source outputs were not reformatted or overwritten."
+}

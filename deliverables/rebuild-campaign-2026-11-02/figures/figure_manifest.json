@@ -1,0 +1,94 @@
+{
+  "research_ready": false,
+  "manifest_sha256": "6f5495d914fbed21a24311b0491e4650faf678740ac7423a25f2e7b05d00baa1",
+  "figures": [
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/tx_rebuild_trace.png",
+      "sha256": "69fc66502e0f4e2a7a69520ddf316a4fa1267eaae6bb10a2a6a78781e6d958d6"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/tx_rebuild_rank.png",
+      "sha256": "67f144069d7f4a6a867625e106392ba7ce591702461dae602d7add0ebfe91231"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_block_union_2023_trace.png",
+      "sha256": "31f03bbf95c2021d50e904ef1cb22cef3acb22cee92eb84f3c539f23399d7171"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_block_union_2023_rank.png",
+      "sha256": "2fd833ce663d2935d61091929b1056dc072a49dcec9d150d81e9af48a654efdf"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_block_union_2025_trace.png",
+      "sha256": "654454c019553806a6019f5283f84fca2940cce1250d7dafb7a0e32fa943c9d9"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_block_union_2025_rank.png",
+      "sha256": "8abc35609c1a44df8360daca5518f751b97b27e4121ea5a1ea9b57000e23939b"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_precinct_sensitivity_2023_trace.png",
+      "sha256": "7770fed059d905afe5c40e90cbcf29bc8ea48f8fc8a14cc36134b30b965ff17b"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_precinct_sensitivity_2023_rank.png",
+      "sha256": "0438797471f1fc13a3907b3f88f12846f867ec9798cdd2f238759a19a72da8a1"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_precinct_sensitivity_2025_trace.png",
+      "sha256": "8de2e3a2c2a3b0b535e3e321a1565068a68dbaebf9ac435aa7c56d19276361c5"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_precinct_sensitivity_2025_rank.png",
+      "sha256": "37731c94cb9d61761c72d534eaf521ff21ed3a0d8917c5fd085f8bdf7454a693"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/tx_population_sensitivity_trace.png",
+      "sha256": "b042f1ef5c01ad5d4ec67e4ae725577bfebcdd7cbf36460b7c36d54436ba0da2"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/tx_population_sensitivity_rank.png",
+      "sha256": "ebba2334a86278d89112a00643e816b609cfea16e27fc920205409669a5af6f9"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_population_sensitivity_2023_trace.png",
+      "sha256": "56880447d1d09bcc4a27610cdb86a5132ead8928b96f85f08a9bb03b8a7f1ec2"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_population_sensitivity_2023_rank.png",
+      "sha256": "dbf05623d72a9a8c1d26cf99ab6bb144fed701d9f4ce7a17b9f7c9f6c356d053"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_population_sensitivity_2025_trace.png",
+      "sha256": "cdb000f387544d84e714a587cd69288eb79d5c096e98a294e4ea57e9eafc5f4a"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_population_sensitivity_2025_rank.png",
+      "sha256": "352107478347735e8820974d32becef5900de5c515b3bba0d4db4ca1140e94d0"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_block_union_joint_trace.png",
+      "sha256": "85f1c7e8d46ea892064383bb11cef634bf81c34f5820b5a270c03e2aed0d9d27"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_block_union_joint_rank.png",
+      "sha256": "f9d93df2d75349074e94923f2c935955d1b7783c36ccfea17b515eae199897db"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_precinct_sensitivity_joint_trace.png",
+      "sha256": "5b58710870aae04f76bfa3ca598a62dd2c80bc25129623b1c6adaf8fb0373f66"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_precinct_sensitivity_joint_rank.png",
+      "sha256": "53f1c95e2e9e8b741bf5cd2672de1a9af51ef0514ba24721509a76c3015f82c7"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_population_sensitivity_joint_trace.png",
+      "sha256": "573d903706196f817dc94ca329245ed8398b5e1011811b69e97fdba3c34f7dc8"
+    },
+    {
+      "path": "outputs/analysis/rebuild_campaign_2026-11-02/final_full_figures/nc_population_sensitivity_joint_rank.png",
+      "sha256": "42e1af3d4dfa9cf00234a75ca478f6df26961d4ac85cc5a9345178fec6846744"
+    }
+  ]
+}

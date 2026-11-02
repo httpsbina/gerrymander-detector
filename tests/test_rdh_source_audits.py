@@ -95,6 +95,20 @@ class SourceAuditTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             swing_seats([(0, 0)], 0)
 
+    def test_campaign_refuses_unconfigured_seeds_and_tolerances(self):
+        from src.analysis.audit_rebuild_campaign import campaign_segments
+        experiment = dict(prefix="fixture", epsilon=0.005, seeds=[1, 2])
+        first = self.root / "fixture_chain_eps0p005_seed1_steps000000-000001.csv"
+        first.touch()
+        self.assertEqual(campaign_segments(self.root, experiment), [first])
+        for name in ("fixture_chain_eps0p005_seed3_steps000000-000001.csv",
+                     "fixture_chain_eps0p01_seed1_steps000000-000001.csv"):
+            path = self.root / name
+            path.touch()
+            with self.subTest(name=name), self.assertRaisesRegex(ValueError, "not omitted"):
+                campaign_segments(self.root, experiment)
+            path.unlink()
+
 
 @unittest.skipIf(gpd is None, "Scientific environment required for geometry fixtures")
 class GeometryAuditTests(unittest.TestCase):
@@ -146,6 +160,19 @@ class GeometryAuditTests(unittest.TestCase):
         self.assertFalse(result["all_finite"])
         self.assertIsNone(result["rank_split_rhat"])
         self.assertTrue(result["issues"])
+
+    def test_checkpoint_geography_weights_population_and_keeps_zero_population_units(self):
+        import pandas as pd
+        from src.analysis.audit_checkpoint_geography import county_summary
+        frame = pd.DataFrame({"TOTPOP": [100, 50, 0, 100],
+                              "G24PREDHAR": [60, 40, 0, 0], "G24PRERTRU": [40, 10, 0, 100]})
+        result = county_summary(frame, {0: "1", 1: "1", 2: "2", 3: "2"}, ["A", "B", "A", "B"]).set_index("county")
+        self.assertEqual(result.loc["A", "units"], 2)
+        self.assertEqual(result.loc["A", "district_count"], 2)
+        self.assertEqual(result.loc["A", "population_fraction_in_dem_majority_district"], 1)
+        self.assertAlmostEqual(result.loc["B", "population_fraction_in_dem_majority_district"], 1 / 3)
+        with self.assertRaisesRegex(ValueError, "nodes"):
+            county_summary(frame, {0: "1"}, ["A", "B", "A", "B"])
 
     def test_convergence_diagnostics_on_independent_normal_reference(self):
         import numpy as np

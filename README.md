@@ -1,6 +1,6 @@
 # Gerrymander Detector
 
-**Current research status (November 2, 2026): Texas and North Carolina are not research-ready.** Historical results below have not been revalidated from their original chain files, which are unavailable in this checkout. The [new-source data and methods audit](deliverables/rdh-research-audit-2026-11-02/README.md) records current block coverage, geography, election-source discrepancies and continuation checks. New-source chains are separate experiments and do not replace or reproduce the historical analyses.
+**Current research status (November 2, 2026): Texas and North Carolina are not research-ready.** Historical results below have not been revalidated from their original chain files, which are unavailable in this checkout. The [new-source data and methods audit](deliverables/rdh-research-audit-2026-11-02/README.md) records current block coverage, geography, election-source discrepancies and continuation checks. The [completed 26-chain campaign audit](deliverables/rebuild-campaign-2026-11-02/README.md) reports failed convergence screens from 122,000 recorded states. New-source chains are separate experiments and do not replace or reproduce the historical analyses.
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue)](https://python.org)
 [![GerryChain](https://img.shields.io/badge/GerryChain-0.3.2-green)](https://github.com/mggg/GerryChain)

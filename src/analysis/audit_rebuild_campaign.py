@@ -8,6 +8,7 @@ import argparse
 import json
 from pathlib import Path
 import pickle
+import re
 from types import SimpleNamespace
 import sys
 import warnings
@@ -22,6 +23,20 @@ from src.analysis.audit_ensemble_chains import load_chain
 from src.chain.checkpoint_integrity import file_sha256
 
 METRICS = ("dem_seats", "efficiency_gap", "cut_edges", "mean_median")
+
+
+def campaign_segments(directory, experiment):
+    seeds = experiment["seeds"]
+    if len(seeds) < 2 or len(set(seeds)) != len(seeds):
+        raise ValueError("Campaign requires at least two distinct configured seeds")
+    tag = f"{experiment['epsilon']:g}".replace(".", "p")
+    pattern = re.escape(experiment["prefix"] + "_chain_eps" + tag) + r"_seed(-?\d+)_steps\d+-\d+\.csv"
+    files = sorted(directory.glob("*.csv"))
+    for path in files:
+        match = re.fullmatch(pattern, path.name)
+        if match is None or int(match.group(1)) not in seeds:
+            raise ValueError(f"Unconfigured chain segment must be reviewed, not omitted: {path.name}")
+    return files
 
 
 def check_final_checkpoint(checkpoint, experiment, seed, chain, source_code):
@@ -150,6 +165,7 @@ def audit(manifest_path, destination, selected=None):
             args = SimpleNamespace(input_dir=directory, prefix=experiment["prefix"],
                                    epsilon=experiment["epsilon"], steps=experiment["steps"],
                                    districts=experiment["districts"])
+            files = campaign_segments(directory, experiment)
             chains = {seed: load_chain(args, seed) for seed in experiment["seeds"]}
             if len({chain.plan_hash.iloc[0] for chain in chains.values()}) != 1:
                 raise ValueError("Different initial maps within one starting-map group")
@@ -173,7 +189,7 @@ def audit(manifest_path, destination, selected=None):
             entry["checkpoints"] = checkpoint_records
             entry["checkpoint_provenance"] = provenances[0]
             entry["integrity"] = "pass"
-            for path in sorted(directory.glob(experiment["prefix"] + "_chain_*.csv")):
+            for path in files:
                 entry["files"].append({"path": str(path), "sha256": file_sha256(path)})
             warmup, window = experiment["warmup"], experiment["window"]
             summaries.extend(summarize_chains(chains, key, warmup))
