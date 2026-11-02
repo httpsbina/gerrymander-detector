@@ -6,8 +6,8 @@
   "publication_files": [
     {
       "path": "README.md",
-      "bytes": 14719,
-      "sha256": "b10dce7ef8fc31dd948aa223859b9176fa7c6dda979583bec91bdfedea63512e"
+      "bytes": 17415,
+      "sha256": "3c8e9607b16f0b16349fddbdda3704024db151b20b6bed03568a264ef4772bf5"
     },
     {
       "path": "adopted_plan_geometry.json",
@@ -185,19 +185,59 @@
       "sha256": "3feb7c46cf44c588aeb49c665bab63a843379384c2efbfef254df466bb17fcc3"
     },
     {
+      "path": "partition_distances/distance_summary.csv",
+      "bytes": 23804,
+      "sha256": "4bb1fd8f567d241b9252f5396ea71a481d28b53e741a3f89e566658a020c7c7f"
+    },
+    {
+      "path": "partition_distances/nc_block_union_distances.png",
+      "bytes": 347276,
+      "sha256": "8fd566d89dfaaa39e1feb37a2ec2acece3dd413ef76fc7c5d423fdeb9cd8ec3d"
+    },
+    {
+      "path": "partition_distances/nc_population_sensitivity_distances.png",
+      "bytes": 351040,
+      "sha256": "8e1f9ca0c179cc939a970918d693497af579ac08296a9b93bfa0edb1405f6427"
+    },
+    {
+      "path": "partition_distances/nc_precinct_sensitivity_distances.png",
+      "bytes": 349827,
+      "sha256": "190582b9df3f9c1c3d5d1fa2b19727e8e96c23191e77217944844753e6b97c4a"
+    },
+    {
+      "path": "partition_distances/partition_distances.json",
+      "bytes": 3482,
+      "sha256": "cf2ccd0545eda53eb477596b5516ec5fe0a559282f23177ce23ebad4070f4eaa"
+    },
+    {
+      "path": "partition_distances/reference_distances.csv",
+      "bytes": 89207,
+      "sha256": "c69e10ec7f2a68ea28f0904229bab4111e04c1ecff5c6c589f8fc3a835f0e812"
+    },
+    {
+      "path": "partition_distances/tx_population_sensitivity_distances.png",
+      "bytes": 155049,
+      "sha256": "879498a4b8c7156b7f42ef076f4e6b23683dd24434d81610e1b734b41c781360"
+    },
+    {
+      "path": "partition_distances/tx_rebuild_distances.png",
+      "bytes": 154397,
+      "sha256": "daa3e90e835f1fe78bd4d709caa63b0b40a93a77b651a67a6b43915c0dd2ce48"
+    },
+    {
       "path": "primary_diagnostics.csv",
       "bytes": 7195,
       "sha256": "f64e15c37228e8f03ef7e443b5f5fc0671b626e92c627fc6e0c0fd18b0a0f4cd"
     },
     {
       "path": "test_suite.log",
-      "bytes": 9200,
-      "sha256": "ac69c23553069f45029b0317266400e4b8e096b64ae1f4902d5816b21df7eedb"
+      "bytes": 8881,
+      "sha256": "03e54f84ed4205bddbea55fa91191f1b38cd995413918553a1d8755be3941058"
     },
     {
       "path": "verification.json",
-      "bytes": 4151,
-      "sha256": "3eb7c73f90114c0b830819fe301578f3df27a0c9007daa003df986be739cae0f"
+      "bytes": 4585,
+      "sha256": "91b95e1cf2c5e4155a7da98f563d9c3222a9f5b540d5c8f6cfcb19f03d619393"
     },
     {
       "path": "windows.csv",

@@ -78,6 +78,26 @@ Among Texas counties above 500,000 population, the largest baseline across-seed 
 
 FIPS suffixes 491, 029, 453, 439 and 201 correspond to Williamson, Bexar, Travis, Tarrant and Harris counties. Williamson's range is 33.8 percentage points. Harris's last-ten minus first-ten checkpoint mean changes range from +0.0091 to +0.1879 across baseline chains; Dallas includes changes in opposing directions. The [county summaries](county_chain_summary.csv), [across-chain ranges](county_chain_ranges.csv) and [checkpoint fingerprints](geography_audit.json) locate these differences.
 
+## Partition comparison
+
+I compared every saved district assignment using [variation of information](https://doi.org/10.1016/j.jmva.2006.11.013), a label-invariant partition measure, in bits. The analysis covers 1,220 checkpoints and 159,990 pairs. Each condition has separate unit-weighted and population-weighted measures; the unit measure includes zero-population units, while their population weight is zero.
+
+For checkpoint pairs at least 2,000 states apart after the configured warmup, mean population-weighted distances are:
+
+| Condition      | Within chain | Between chains, same starting map | Between starting maps |
+| -------------- | -----------: | --------------------------------: | --------------------: |
+| Texas baseline |      2.93988 |                           2.95174 |                   n/a |
+| Texas ±0.5%    |      2.96859 |                           2.98761 |                   n/a |
+| NC block-union |      2.62961 |                           2.63198 |               2.63028 |
+| NC precinct    |      2.57550 |                           2.58450 |               2.58389 |
+| NC ±1%         |      2.60352 |                           2.60076 |               2.59967 |
+
+The lag distributions match across these comparison categories. Within-chain and between-chain averages are close, including comparisons between NC starting maps. This summary shows no clear global partition separation between chains, alongside the previously measured county-allocation differences and failed convergence diagnostics. The next analysis should examine localized boundary persistence and temporal drift before attributing the disagreement to distinct global map modes.
+
+![Texas partition comparisons](partition_distances/tx_rebuild_distances.png)
+
+[All lag-stratified summaries](partition_distances/distance_summary.csv), [distances to the common reference assignment](partition_distances/reference_distances.csv), and [method and input fingerprints](partition_distances/partition_distances.json) accompany the five condition heatmaps. Full pair-level tables remain with the local analysis outputs.
+
 ## Data checks
 
 Texas retains all 668,757 blocks, population 29,145,505 and 9,712 simulation units. Five ring self-intersections were repaired with `make_valid` in the derived geography. Eight precinct overlap pairs remain, with the largest approximately 0.198461 m². Both graph constructions agree on the candidate adjacency.
@@ -92,7 +112,7 @@ The [manifest](campaign_manifest.json) uses repository-relative paths and retain
 
 Both state-CLI audits match the corresponding full-audit results. The campaign planner reproduces all 26 scientific definitions. Texas and NC 120-state runs match split 100+20-state continuations exactly. The [verification record](verification.json) contains the software versions and check results; publication checksums are in the [artifact manifest](artifact_manifest.json).
 
-The full suite passes 54 tests without skips. Dependency consistency, Prettier, Python syntax and whitespace checks pass. Python formatting/linting has no configured tool in this repository.
+The full suite passes 59 tests without skips. Dependency consistency, Prettier, Python syntax and whitespace checks pass. Python formatting/linting has no configured tool in this repository.
 
 Commands below run from the repository root. Existing result directories are protected; choose new output paths when repeating the analysis.
 
@@ -109,13 +129,14 @@ export UV_CACHE_DIR="$PWD/.venv/uv-cache"
 .venv/science/bin/python main.py --nc --config configs/research_rebuild_2026-11-02.json --stage research-audit --campaign-manifest outputs/analysis/rebuild_campaign_2026-11-02/manifest_with_constraint_sensitivity_v2.json --report-dir outputs/analysis/rebuild_campaign_2026-11-02/state_cli_nc_full_audit
 .venv/science/bin/python main.py --texas --config configs/research_rebuild_2026-11-02.json --stage research-audit --campaign-manifest outputs/analysis/rebuild_campaign_2026-11-02/manifest_with_constraint_sensitivity_v2.json --report-dir outputs/analysis/rebuild_campaign_2026-11-02/state_cli_tx_full_audit
 .venv/science/bin/python src/chain/run_rebuild_campaign.py --output-dir outputs/analysis/rebuild_campaign_replay_check_2026-11-02
+.venv/science/bin/python src/analysis/audit_partition_distances.py --manifest outputs/analysis/rebuild_campaign_2026-11-02/manifest_with_constraint_sensitivity_v2.json --checkpoint-audit outputs/analysis/rebuild_campaign_2026-11-02/final_checkpoint_geography/geography_audit.json --output-dir outputs/analysis/partition_distances_2026-11-02
 .venv/science/bin/python -m unittest discover -s tests -v
 .venv/bin/uv pip check --python .venv/science/bin/python
 ```
 
 ## Limitations
 
-The chains remain autocorrelated and unconverged under the stated screens. MCSE estimates assume adequate sampling, and acceptance criteria for MCSE and window stability still need to be specified. The four Texas tail observations occur within six steps of one chain; descriptive frequencies are not calibrated p-values. Zero observed outcomes or a constant indicator's zero MCSE do not establish zero probability or zero uncertainty. Snapshot-based geographic summaries and similar condition means cannot establish sampler connectivity, a causal constraint effect or distributional equivalence.
+The chains remain autocorrelated and unconverged under the stated screens. MCSE estimates assume adequate sampling, and acceptance criteria for MCSE and window stability still need to be specified. The four Texas tail observations occur within six steps of one chain; descriptive frequencies are not calibrated p-values. Zero observed outcomes or a constant indicator's zero MCSE do not establish zero probability or zero uncertainty. Snapshot-based geographic summaries and similar condition means cannot establish sampler connectivity, a causal constraint effect or distributional equivalence. Partition-distance pairs share plans and are dependent; their count is not an effective sample size. Variation of information compares membership rather than physical boundary displacement, and its global averages can mask localized differences.
 
 RDH block votes are modeled allocations rather than observed block returns. Election-source differences, NC privacy noise, candidate strength and the uniform-swing assumption affect interpretation. Population and election years differ. Alternative-election scoring has been evaluated on enacted maps, but not across the full ensemble.
 

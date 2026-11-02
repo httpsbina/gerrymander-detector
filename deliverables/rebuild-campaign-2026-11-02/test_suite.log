@@ -1,6 +1,11 @@
 test_legacy_and_mismatched_provenance_are_rejected (test_checkpoint_integrity.CheckpointIntegrityTests.test_legacy_and_mismatched_provenance_are_rejected) ... ok
 test_overlap_and_checkpoint_collisions_are_rejected (test_checkpoint_integrity.CheckpointIntegrityTests.test_overlap_and_checkpoint_collisions_are_rejected) ... ok
 test_split_run_matches_uninterrupted_run_including_periodic_boundary (test_checkpoint_integrity.ContinuationIntegrationTests.test_split_run_matches_uninterrupted_run_including_periodic_boundary) ... ok
+test_independent_binary_partitions_have_two_bits (test_partition_distances.PartitionDistanceTests.test_independent_binary_partitions_have_two_bits) ... ok
+test_missing_coverage_and_invalid_weights_fail (test_partition_distances.PartitionDistanceTests.test_missing_coverage_and_invalid_weights_fail) ... ok
+test_relabeling_districts_has_zero_distance (test_partition_distances.PartitionDistanceTests.test_relabeling_districts_has_zero_distance) ... ok
+test_weighted_distance_is_symmetric (test_partition_distances.PartitionDistanceTests.test_weighted_distance_is_symmetric) ... ok
+test_zero_population_units_remain_in_unit_measure (test_partition_distances.PartitionDistanceTests.test_zero_population_units_remain_in_unit_measure) ... ok
 test_catalog_rejects_external_host (test_rdh_client.RDHClientTests.test_catalog_rejects_external_host) ... ok
 test_catalog_rejects_missing_dataset_id (test_rdh_client.RDHClientTests.test_catalog_rejects_missing_dataset_id) ... ok
 test_catalog_rejects_path_traversal (test_rdh_client.RDHClientTests.test_catalog_rejects_path_traversal) ... ok
@@ -11,17 +16,7 @@ test_inventory_mocks_network_and_stores_clean_catalog (test_rdh_client.RDHClient
 test_missing_credentials_sanitized (test_rdh_client.RDHClientTests.test_missing_credentials_sanitized) ... ok
 test_safe_catalog_drops_credentials (test_rdh_client.RDHClientTests.test_safe_catalog_drops_credentials) ... ok
 test_source_checklist_is_offline (test_rdh_client.RDHClientTests.test_source_checklist_is_offline) ... ok
-test_campaign_checkpoint_detects_source_parameter_and_endpoint_mismatches (test_rdh_source_audits.GeometryAuditTests.test_campaign_checkpoint_detects_source_parameter_and_endpoint_mismatches) ... .venv/science/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
-  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
-.venv/science/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
-  parse = parser.parseString(pattern)
-.venv/science/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
-  parser.resetCache()
-.venv/science/lib/python3.12/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
-  ParserElement.enablePackrat()
-In .venv/science/lib/python3.12/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
-In .venv/science/lib/python3.12/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
-ok
+test_campaign_checkpoint_detects_source_parameter_and_endpoint_mismatches (test_rdh_source_audits.GeometryAuditTests.test_campaign_checkpoint_detects_source_parameter_and_endpoint_mismatches) ... ok
 test_checkpoint_geography_weights_population_and_keeps_zero_population_units (test_rdh_source_audits.GeometryAuditTests.test_checkpoint_geography_weights_population_and_keeps_zero_population_units) ... ok
 test_convergence_diagnostics_detect_constant_chains (test_rdh_source_audits.GeometryAuditTests.test_convergence_diagnostics_detect_constant_chains) ... ok
 test_convergence_diagnostics_on_independent_normal_reference (test_rdh_source_audits.GeometryAuditTests.test_convergence_diagnostics_on_independent_normal_reference) ... ok
@@ -64,11 +59,11 @@ test_status_is_read_only (test_state_cli.StateCliTests.test_status_is_read_only)
 test_texas_audit_dry_run_uses_existing_files (test_state_cli.StateCliTests.test_texas_audit_dry_run_uses_existing_files) ... ok
 
 ----------------------------------------------------------------------
-Ran 54 tests in 3.085s
+Ran 59 tests in 2.560s
 
 OK
-DRY RUN: would download RDH file 'election.zip' to .venv/test-runtime/tmpigyalm0m/election.zip
-DOWNLOADED: .venv/test-runtime/tmph8upt8rz/election.zip
+DRY RUN: would download RDH file 'election.zip' to .venv/test-runtime/tmpwuxsm88e/election.zip
+DOWNLOADED: .venv/test-runtime/tmp4bkelcyx/election.zip
 BYTES: 12
 SHA256: 44752f37272e944fd2c913a35342eaccdd1aaf189bae50676b301ab213fc5061
 Research status: not validated; do not use for inference yet.

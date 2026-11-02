@@ -4,7 +4,7 @@
   "unit_tests": {
     "command": "MPLCONFIGDIR=\"$PWD/data/external/rdh/rebuild_2026-11-02/runtime/matplotlib312\" TMPDIR=\"$PWD/.venv/test-runtime\" .venv/science/bin/python -m unittest discover -s tests -v",
     "exit_code": 0,
-    "passed": 54,
+    "passed": 59,
     "skipped": 0,
     "log": "test_suite.log"
   },
@@ -15,7 +15,7 @@
   },
   "python_syntax": {
     "method": "ast.parse for all task-changed Python files, UTF-8-sig decoding",
-    "files": 25,
+    "files": 27,
     "status": "pass"
   },
   "python_formatter_linter": {
@@ -118,7 +118,20 @@
     "published_csv_bytes_unchanged": true,
     "figure_plot_regions_pixel_identical": 25,
     "caption_revisions": 24,
-    "test_suite_passed": 54,
+    "test_suite_passed": 59,
     "test_suite_skipped": 0
+  },
+  "partition_comparison": {
+    "checkpoints": 1220,
+    "pair_comparisons": 159990,
+    "conditions": 5,
+    "measures": [
+      "unit-weighted variation of information",
+      "population-weighted variation of information"
+    ],
+    "long_lag_step_distributions_matched": true,
+    "finite_nonnegative_pair_distances": true,
+    "district_relabeling_invariance_test": "pass",
+    "zero_population_unit_retention_test": "pass"
   }
 }
