@@ -1,6 +1,9 @@
 test_legacy_and_mismatched_provenance_are_rejected (test_checkpoint_integrity.CheckpointIntegrityTests.test_legacy_and_mismatched_provenance_are_rejected) ... ok
 test_overlap_and_checkpoint_collisions_are_rejected (test_checkpoint_integrity.CheckpointIntegrityTests.test_overlap_and_checkpoint_collisions_are_rejected) ... ok
 test_split_run_matches_uninterrupted_run_including_periodic_boundary (test_checkpoint_integrity.ContinuationIntegrationTests.test_split_run_matches_uninterrupted_run_including_periodic_boundary) ... ok
+test_below_threshold_counties_remain_in_coverage_record (test_county_partition_distances.CountySelectionTests.test_below_threshold_counties_remain_in_coverage_record) ... ok
+test_invalid_coverage_population_and_threshold_fail (test_county_partition_distances.CountySelectionTests.test_invalid_coverage_population_and_threshold_fail) ... ok
+test_selection_uses_total_population_and_includes_zero_population_units (test_county_partition_distances.CountySelectionTests.test_selection_uses_total_population_and_includes_zero_population_units) ... ok
 test_independent_binary_partitions_have_two_bits (test_partition_distances.PartitionDistanceTests.test_independent_binary_partitions_have_two_bits) ... ok
 test_missing_coverage_and_invalid_weights_fail (test_partition_distances.PartitionDistanceTests.test_missing_coverage_and_invalid_weights_fail) ... ok
 test_relabeling_districts_has_zero_distance (test_partition_distances.PartitionDistanceTests.test_relabeling_districts_has_zero_distance) ... ok
@@ -59,11 +62,11 @@ test_status_is_read_only (test_state_cli.StateCliTests.test_status_is_read_only)
 test_texas_audit_dry_run_uses_existing_files (test_state_cli.StateCliTests.test_texas_audit_dry_run_uses_existing_files) ... ok
 
 ----------------------------------------------------------------------
-Ran 59 tests in 2.560s
+Ran 62 tests in 2.841s
 
 OK
-DRY RUN: would download RDH file 'election.zip' to .venv/test-runtime/tmpwuxsm88e/election.zip
-DOWNLOADED: .venv/test-runtime/tmp4bkelcyx/election.zip
+DRY RUN: would download RDH file 'election.zip' to .venv/test-runtime/tmpexbq8nzv/election.zip
+DOWNLOADED: .venv/test-runtime/tmpzacamz5p/election.zip
 BYTES: 12
 SHA256: 44752f37272e944fd2c913a35342eaccdd1aaf189bae50676b301ab213fc5061
 Research status: not validated; do not use for inference yet.

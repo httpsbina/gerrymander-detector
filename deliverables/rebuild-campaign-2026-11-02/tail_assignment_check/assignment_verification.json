@@ -1,0 +1,170 @@
+{
+  "purpose": "Exact replay verification; duplicate states excluded from research sample counts",
+  "seed": 3331,
+  "steps": [2253, 2256, 2257, 2258],
+  "replayed_rows": 59,
+  "all_csv_records_match_original": true,
+  "distinct_plan_fingerprints": 4,
+  "all_six_partition_comparisons_positive": true,
+  "plan_hashes": [
+    "6bb6cdfe80a8967c6793e0b8e65e9a63b904d97dfc7301c3e0d4d6d28b38dc7d",
+    "86e3f1d6f560781545fe7dfdc5f08fa9c0e1cd63ca1553ca683567cb38408f0a",
+    "2bceb0d7c9209e198ea3425656354f2501a0fbb86020171cd090e10e145bd0f4",
+    "f48dfc589efc89f56f2d6ccbea750783eb886066049afa586d09165524018d35"
+  ],
+  "pair_distances": [
+    {
+      "left_step": 2253,
+      "right_step": 2256,
+      "unit_vi_bits": 0.15039255867455115,
+      "population_vi_bits": 0.11072676068236298
+    },
+    {
+      "left_step": 2253,
+      "right_step": 2257,
+      "unit_vi_bits": 0.1730240200743145,
+      "population_vi_bits": 0.1314068451611181
+    },
+    {
+      "left_step": 2253,
+      "right_step": 2258,
+      "unit_vi_bits": 0.20225532099769783,
+      "population_vi_bits": 0.14570493510846738
+    },
+    {
+      "left_step": 2256,
+      "right_step": 2257,
+      "unit_vi_bits": 0.022631461399761577,
+      "population_vi_bits": 0.020680084478755134
+    },
+    {
+      "left_step": 2256,
+      "right_step": 2258,
+      "unit_vi_bits": 0.062206001075082895,
+      "population_vi_bits": 0.03901940014445415
+    },
+    {
+      "left_step": 2257,
+      "right_step": 2258,
+      "unit_vi_bits": 0.039574539675323095,
+      "population_vi_bits": 0.01833931566569902
+    }
+  ],
+  "original_csv_sha256": "52c8f62c9f6e9f5c7bbc325cdc4a1d33c7b4f32d6e9d6c67f5ca434f690d2b33",
+  "commands": [
+    {
+      "step": 2253,
+      "command": [
+        ".venv/science/bin/python",
+        "main.py",
+        "--texas",
+        "--config",
+        "outputs/analysis/texas_tail_assignment_check_2026-11-02/state.json",
+        "--stage",
+        "simulate",
+        "--seed",
+        "3331",
+        "--steps",
+        "54",
+        "--resume-from",
+        "outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed3331_next2200.pkl"
+      ],
+      "exit_code": 0,
+      "input_checkpoint_sha256": "293202a867485970f71180cadfcbe694fc02dcd06851c0d675a0e4f0c25a8df8"
+    },
+    {
+      "step": 2256,
+      "command": [
+        ".venv/science/bin/python",
+        "main.py",
+        "--texas",
+        "--config",
+        "outputs/analysis/texas_tail_assignment_check_2026-11-02/state.json",
+        "--stage",
+        "simulate",
+        "--seed",
+        "3331",
+        "--steps",
+        "3",
+        "--resume-from",
+        "outputs/analysis/texas_tail_assignment_check_2026-11-02/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed3331_next2254.pkl"
+      ],
+      "exit_code": 0,
+      "input_checkpoint_sha256": "6a141334cd99770ff65082c90dad8fde7d92c3e747ca645b335e54ce144cbd20"
+    },
+    {
+      "step": 2257,
+      "command": [
+        ".venv/science/bin/python",
+        "main.py",
+        "--texas",
+        "--config",
+        "outputs/analysis/texas_tail_assignment_check_2026-11-02/state.json",
+        "--stage",
+        "simulate",
+        "--seed",
+        "3331",
+        "--steps",
+        "1",
+        "--resume-from",
+        "outputs/analysis/texas_tail_assignment_check_2026-11-02/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed3331_next2257.pkl"
+      ],
+      "exit_code": 0,
+      "input_checkpoint_sha256": "b28cc92bae338f2abe98f1e348fef9617429292d720bdb389bfd01050758e233"
+    },
+    {
+      "step": 2258,
+      "command": [
+        ".venv/science/bin/python",
+        "main.py",
+        "--texas",
+        "--config",
+        "outputs/analysis/texas_tail_assignment_check_2026-11-02/state.json",
+        "--stage",
+        "simulate",
+        "--seed",
+        "3331",
+        "--steps",
+        "1",
+        "--resume-from",
+        "outputs/analysis/texas_tail_assignment_check_2026-11-02/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed3331_next2258.pkl"
+      ],
+      "exit_code": 0,
+      "input_checkpoint_sha256": "93fe4ecb58ab1abbeb9d67ce9807de41720ce46f0232b212892510341e50ab43"
+    }
+  ],
+  "independent_assignment_checks": [
+    {
+      "step": 2253,
+      "democratic_majority_districts": 8,
+      "districts": 38,
+      "max_abs_population_deviation": 0.0009948360819274082,
+      "all_districts_contiguous": true,
+      "recomputed_plan_hash": "6bb6cdfe80a8967c6793e0b8e65e9a63b904d97dfc7301c3e0d4d6d28b38dc7d"
+    },
+    {
+      "step": 2256,
+      "democratic_majority_districts": 8,
+      "districts": 38,
+      "max_abs_population_deviation": 0.0009699952016615221,
+      "all_districts_contiguous": true,
+      "recomputed_plan_hash": "86e3f1d6f560781545fe7dfdc5f08fa9c0e1cd63ca1553ca683567cb38408f0a"
+    },
+    {
+      "step": 2257,
+      "democratic_majority_districts": 8,
+      "districts": 38,
+      "max_abs_population_deviation": 0.0009739752322013295,
+      "all_districts_contiguous": true,
+      "recomputed_plan_hash": "2bceb0d7c9209e198ea3425656354f2501a0fbb86020171cd090e10e145bd0f4"
+    },
+    {
+      "step": 2258,
+      "democratic_majority_districts": 8,
+      "districts": 38,
+      "max_abs_population_deviation": 0.0009739752322013295,
+      "all_districts_contiguous": true,
+      "recomputed_plan_hash": "f48dfc589efc89f56f2d6ccbea750783eb886066049afa586d09165524018d35"
+    }
+  ]
+}

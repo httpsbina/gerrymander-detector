@@ -1,6 +1,6 @@
 # Gerrymander Detector
 
-**Status (November 2026):** I rebuilt the Texas and North Carolina analyses from Redistricting Data Hub sources. The new chains do not yet meet the convergence thresholds used in the audit: R-hat below 1.01 and bulk/tail ESS of at least `max(400, 100 × chains)`, with a floor of 600 for six-chain NC groups. The earlier chain files are no longer available, so I have not been able to revalidate the historical results. The Texas rebuild produced four distinct sampled plans with 8 Democratic-majority districts, so the earlier claim that PLANC2333 falls below every sampled plan does not hold for the new ensemble. Full diagnostics are in the [campaign audit](deliverables/rebuild-campaign-2026-11-02/README.md).
+**Status (November 2026):** I rebuilt the Texas and North Carolina analyses from Redistricting Data Hub sources. The new chains do not yet meet the convergence thresholds used in the audit: R-hat below 1.01 and bulk and tail ESS of at least 400 (600 for the six-chain NC groups). The earlier chain files are no longer available, so I have not been able to revalidate the historical results. The Texas rebuild produced four sampled states with 8 Democratic-majority districts, so the earlier claim that PLANC2333 falls below every sampled plan does not hold for the new ensemble. Full diagnostics are in the [campaign audit](deliverables/rebuild-campaign-2026-11-02/README.md).
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue)](https://python.org)
 [![GerryChain](https://img.shields.io/badge/GerryChain-0.3.2-green)](https://github.com/mggg/GerryChain)
@@ -32,7 +32,7 @@ PLANC2333 is scored at Census-block resolution using modeled 2024 presidential v
 | Mean sampled Democratic-majority districts |                12.9562 |
 | Retained states with 8 districts           |             4 / 14,000 |
 
-Those four states have distinct plan hashes and occur in one chain at steps 2,253, 2,256, 2,257 and 2,258. The [tail audit](deliverables/rebuild-campaign-2026-11-02/enacted_tail_counts.csv) records counts for every chain and sensitivity condition.
+Those four states have distinct plan hashes and occur in one chain at steps 2,253, 2,256, 2,257 and 2,258. The [assignment check](deliverables/rebuild-campaign-2026-11-02/tail_assignment_check/assignment_verification.json) verifies the four partitions directly, and the [tail audit](deliverables/rebuild-campaign-2026-11-02/enacted_tail_counts.csv) records counts for every chain and sensitivity condition.
 
 ### North Carolina geography
 

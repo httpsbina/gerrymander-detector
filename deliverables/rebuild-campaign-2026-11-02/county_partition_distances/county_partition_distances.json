@@ -1,0 +1,27 @@
+{
+  "manifest_sha256": "6f5495d914fbed21a24311b0491e4650faf678740ac7423a25f2e7b05d00baa1",
+  "checkpoint_audit_sha256": "f6adcede16907d6f4779d35c70559c36fa8407c11f52c0f1c8f983838a864d2d",
+  "analysis_code_sha256": "1df4c67cf7cedf7b2b4f15ffcacff377c71bdbbd0ce7853e100ea4c93d9b7474",
+  "distance_code_sha256": "c4c1cc8004522c024f6c364aad57ab5d542d8a60701282ae84b5d515e3f5a2e2",
+  "minimum_county_population": 500000,
+  "conditions": [
+    {
+      "condition": "tx_rebuild",
+      "dataset_sha256": "ff09876b030c693307cdf362fef38a0fccf00dee5ed8b6fb973fa29b86f20179",
+      "checkpoint_count": 160,
+      "selected_counties": 12,
+      "pair_file_sha256": "1094292dc4bc56c82f7918f5fd3c69b3259959585b374524d7fd333670b1bb69",
+      "comparisons_per_county": 12720
+    },
+    {
+      "condition": "nc_block_union",
+      "dataset_sha256": "e1c35f15fc97cf2ddcc6bb5e78dd15cc27d5c3b155b848db8bc655e32c66e969",
+      "checkpoint_count": 300,
+      "selected_counties": 3,
+      "pair_file_sha256": "eb4b3da7fd8f60185ab266d248f373d3e3939ae283e0fe39483b5255da57e7b3",
+      "comparisons_per_county": 44850
+    }
+  ],
+  "primary_comparison": "Both snapshots after the configured 500-state warmup, step lag at least 2000, matching lag distributions",
+  "measure": "Variation of information restricted to county units; unit measure includes zero-population units, population measure gives them zero mass"
+}
