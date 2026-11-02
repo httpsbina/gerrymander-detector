@@ -6,8 +6,8 @@
   "publication_files": [
     {
       "path": "README.md",
-      "bytes": 14731,
-      "sha256": "7c3c7b3ad5ec74da63e370e76a78ad8a9a3a8dfcedfb9c323eb37b6aac024b40"
+      "bytes": 14719,
+      "sha256": "b10dce7ef8fc31dd948aa223859b9176fa7c6dda979583bec91bdfedea63512e"
     },
     {
       "path": "adopted_plan_geometry.json",
@@ -190,9 +190,14 @@
       "sha256": "f64e15c37228e8f03ef7e443b5f5fc0671b626e92c627fc6e0c0fd18b0a0f4cd"
     },
     {
-      "path": "verification_final.json",
-      "bytes": 4122,
-      "sha256": "4c84fad7d194bd200f86c771782a72aa448a9d1c451ab645dc4d9bb448d7b3fc"
+      "path": "test_suite.log",
+      "bytes": 9200,
+      "sha256": "ac69c23553069f45029b0317266400e4b8e096b64ae1f4902d5816b21df7eedb"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 4151,
+      "sha256": "3eb7c73f90114c0b830819fe301578f3df27a0c9007daa003df986be739cae0f"
     },
     {
       "path": "windows.csv",

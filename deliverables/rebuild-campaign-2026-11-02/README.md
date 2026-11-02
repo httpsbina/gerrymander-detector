@@ -90,7 +90,7 @@ The [adopted-plan polygon audit](adopted_plan_geometry.json) finds valid single 
 
 The [manifest](campaign_manifest.json) uses repository-relative paths and retains execution-record hashes. `manifest_sha256` in the audit records identifies the original execution manifest; `publication_manifest_sha256` identifies the portable copy. Source-code, dataset, chain and checkpoint hashes retain their recorded values.
 
-Both state-CLI audits match the corresponding full-audit results. The campaign planner reproduces all 26 scientific definitions. Texas and NC 120-state runs match split 100+20-state continuations exactly. The [verification record](verification_final.json) contains the software versions and check results; publication checksums are in the [artifact manifest](artifact_manifest_final.json).
+Both state-CLI audits match the corresponding full-audit results. The campaign planner reproduces all 26 scientific definitions. Texas and NC 120-state runs match split 100+20-state continuations exactly. The [verification record](verification.json) contains the software versions and check results; publication checksums are in the [artifact manifest](artifact_manifest.json).
 
 The full suite passes 54 tests without skips. Dependency consistency, Prettier, Python syntax and whitespace checks pass. Python formatting/linting has no configured tool in this repository.
 

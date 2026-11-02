@@ -1,4 +1,4 @@
-Gerrymander Detector research reports — November 2026
+Gerrymander Detector research reports: November 2026
 
 Current reports:
 - rdh-research-audit-2026-11-02/README.md: source data, geography and election models.

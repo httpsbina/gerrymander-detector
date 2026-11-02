@@ -5,7 +5,8 @@
     "command": "MPLCONFIGDIR=\"$PWD/data/external/rdh/rebuild_2026-11-02/runtime/matplotlib312\" TMPDIR=\"$PWD/.venv/test-runtime\" .venv/science/bin/python -m unittest discover -s tests -v",
     "exit_code": 0,
     "passed": 54,
-    "skipped": 0
+    "skipped": 0,
+    "log": "test_suite.log"
   },
   "dependency_check": {
     "command": "UV_CACHE_DIR=\"$PWD/.venv/uv-cache\" .venv/bin/uv pip check --python .venv/science/bin/python",
