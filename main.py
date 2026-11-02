@@ -75,7 +75,7 @@ def build_parser():
     selection.add_argument("--penn", action="store_true", help="Pennsylvania (not yet prepared)")
     parser.add_argument("--year", help="Configured starting-plan year, e.g. 2023 or 2025")
     parser.add_argument(
-        "--stage", choices=("status", "simulate", "audit", "sources", "inventory", "download"), default="status",
+        "--stage", choices=("status", "preflight", "simulate", "audit", "sources", "inventory", "download"), default="status",
         help="Status is read-only and does not execute simulation"
     )
     parser.add_argument("--steps", type=int, help="New states for simulate; total states for audit")
@@ -87,6 +87,7 @@ def build_parser():
     parser.add_argument("--dry-run", action="store_true", help="Show the command; run nothing")
     parser.add_argument("--rdh-filter", help="Filter Pennsylvania RDH inventory listings")
     parser.add_argument("--rdh-file", help="Exact cached RDH filename to download")
+    parser.add_argument("--report-dir", type=Path, help="New directory for preflight reports")
     return parser
 
 
@@ -219,6 +220,8 @@ def main(argv=None):
     args = build_parser().parse_args(argv)
     try:
         states = load_registry()
+        if args.report_dir is not None and args.stage != "preflight":
+            raise PipelineError("--report-dir requires --stage preflight")
         if args.stage in ("sources", "inventory", "download"):
             if not args.penn:
                 raise PipelineError("RDH source stages currently support Pennsylvania only")
@@ -246,6 +249,27 @@ def main(argv=None):
                 f"{state['name']} has no validated dataset or plan configuration. "
                 "Data ingestion and validation must be completed before running this stage."
             )
+        if args.stage == "preflight":
+            if any(v is not None for v in (
+                args.steps, args.seed, args.seeds, args.warmup, args.window, args.resume_from
+            )):
+                raise PipelineError("Preflight inventories configured runs; run options are not supported")
+            from src.analysis.research_preflight import build_report, local_path, write_report
+            destination = local_path(ROOT, args.report_dir) if args.report_dir is not None else None
+            if args.dry_run:
+                print(f"DRY RUN: preflight report target: {destination or 'stdout'}")
+                return 0
+            report = build_report(
+                ROOT, state_key_from_args(args), year, state, plan,
+                [sys.executable, str(ROOT / "main.py"), *(argv if argv is not None else sys.argv[1:])],
+            )
+            if destination is not None:
+                write_report(report, destination)
+                print(f"REPORT: {destination}")
+                print("EXECUTION: completed; RESEARCH-READY: NO")
+            else:
+                print(json.dumps(report, indent=2, allow_nan=False))
+            return 0
         if args.stage == "simulate":
             command, target = build_simulation_command(args, state, plan)
             print(f"TARGET (will not overwrite): {target}")

@@ -1,0 +1,17 @@
+north_carolina / 2023
+Execution: completed
+Research-ready: NO
+Dataset: /Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/data/processed/nc_precincts_common_2023_2025.gpkg
+Seed 707: fail; verified length: False; observed steps: 0
+  No chain segments found
+Seed 808: fail; verified length: False; observed steps: 0
+  No chain segments found
+Seed 909: fail; verified length: False; observed steps: 0
+  No chain segments found
+Required scientific diagnostics: unavailable (see report.json)
+Configured lengths and totals are expectations, not measured results.
+Missing or nonfinite diagnostics mean not research-ready.
+ReCom is not established as uniform or fully legally constrained.
+Block vote allocations are modeled, not observed block returns.
+Texas PLANC2333 requires a separate block-resolution benchmark.
+No frequencies, probabilities, or calibrated p-values are estimated.
