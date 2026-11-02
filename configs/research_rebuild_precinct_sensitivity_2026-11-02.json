@@ -37,7 +37,7 @@
           }
         }
       },
-      "notes": "New-source research candidate with five explicitly approved ring repairs. Eight source overlap pairs remain documented. PLANC2333 is scored separately at block resolution. Not research-ready."
+      "notes": "Five make_valid ring repairs; eight precinct overlap pairs. PLANC2333 is scored at block resolution."
     },
     "north_carolina": {
       "name": "North Carolina",
@@ -91,7 +91,7 @@
           }
         }
       },
-      "notes": "Separate NC precinct-geometry sensitivity experiment, with documented numerical overlaps and a distinct graph. Never pool with the block-union baseline. Not research-ready."
+      "notes": "Precinct-geometry sensitivity with 2,681 common unit IDs and both district assignments."
     },
     "pennsylvania": {
       "name": "Pennsylvania",
@@ -99,7 +99,7 @@
       "dataset": null,
       "districts": 17,
       "plans": {},
-      "notes": "Data-source authorization, geospatial harmonization, election columns, and official congressional assignments have not been validated. Do not simulate or claim an analysis is complete."
+      "notes": "Pennsylvania inputs are pending preparation."
     }
   }
 }

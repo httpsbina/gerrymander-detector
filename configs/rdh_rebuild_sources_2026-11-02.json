@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "purpose": "Pinned source inventory; raw archives remain local and ignored",
+  "purpose": "Source archive inventory, checksums and provider metadata",
   "sources": [
     {
       "provider": "Redistricting Data Hub",

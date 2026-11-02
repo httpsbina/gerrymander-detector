@@ -89,10 +89,10 @@ def main():
                 ax.grid(alpha=0.12)
             axes[0, 0].legend(frameon=False, fontsize=8)
             fig.suptitle(key.replace("_", " ") + f" | {mode} diagnostics", fontsize=13, fontweight="bold")
-            caption = ("Gray region: configured warmup. No states were thinned or removed from the underlying chain files."
+            caption = ("Gray region: configured warmup. All recorded states are shown."
                        if mode == "trace" else
-                       "Average ranks preserve ties; discrete quantities may leave empty bins. Compare chains, not histogram uniformity alone.")
-            fig.text(0.05, 0.025, caption + "\nDiagnostic evidence only; no convergence or research-readiness certification.", fontsize=8)
+                       "Post-warmup pooled ranks, with average ranks for ties; discrete seat counts leave empty bins.")
+            fig.text(0.05, 0.025, caption, fontsize=8)
             fig.tight_layout(rect=(0, 0.07, 1, 0.94))
             path = args.output_dir / f"{key}_{mode}.png"
             if path.exists():

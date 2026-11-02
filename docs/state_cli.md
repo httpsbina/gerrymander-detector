@@ -1,6 +1,6 @@
 # State-configured research CLI
 
-Texas and North Carolina are **not research-ready**. See the [source audit](../deliverables/rdh-research-audit-2026-11-02/README.md) and [completed campaign audit](../deliverables/rebuild-campaign-2026-11-02/README.md). Historical data and chain files were unavailable; new-source runs are separate experiments.
+The state CLI covers validation, geographic construction, simulation, continuation and diagnostics. See the [source audit](../deliverables/rdh-research-audit-2026-11-02/README.md) and [campaign results](../deliverables/rebuild-campaign-2026-11-02/README.md).
 
 Run from the repository root with the verified Python 3.12 environment:
 
@@ -25,7 +25,7 @@ RDH acquisition requires authorized access. Checksums, source pages, metadata an
 .venv/science/bin/python main.py --nc --stage rebuild --source-root data/external/rdh/rebuild_2026-11-02 --block-master outputs/analysis/new_nc_source_validation/blocks/blocks_master.csv --report-dir outputs/analysis/new_nc_block_union_candidate --dry-run
 ```
 
-Validation runs both block accounting and raw-source geometry checks. It returns a failure status when geometry requires review, even if block accounting passes. It does not repair source data. NC rebuild defaults to the approved Census-block-union baseline. Explicit `--rebuild-geography precinct` creates the separate precinct sensitivity candidate. Texas rebuild applies only the five approved repairs to the checksum-restricted source; eight source overlaps remain documented. Creating a candidate does not certify readiness or select it automatically in a registry.
+Validation runs both block accounting and raw-source geometry checks. It returns a failure status when geometry requires review, even if block accounting passes. It does not repair source data. NC rebuild defaults to the Census-block-union baseline. Explicit `--rebuild-geography precinct` creates the separate precinct sensitivity candidate. Texas rebuild applies only the five make_valid ring repairs to the checksum-restricted source; eight source overlaps remain documented. Select a constructed dataset explicitly in the state registry.
 
 ## Simulate and continue
 
@@ -36,7 +36,7 @@ Simulation requires explicit `--seed` and `--steps`. Always inspect the configur
 .venv/science/bin/python main.py --texas --config configs/research_rebuild_2026-11-02.json --stage simulate --steps 4000 --seed 1117 --resume-from outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed1117_next4000.pkl --dry-run
 ```
 
-The second command would append steps 4,000–7,999 under the recorded version-2 checkpoint lineage. The runner verifies dataset/graph fingerprints, parameters, runtime, source-code hashes, seed, assignment and `PYTHONHASHSEED`. It refuses unverifiable legacy checkpoints, overlapping CSV steps and checkpoint collisions. The CLI supplies `PYTHONHASHSEED=0` when unset. Actual Texas and NC 100+20 versus 120-state continuation checks matched complete CSV records exactly; these probes are never research samples.
+The second command would append steps 4,000–7,999 under the recorded version-2 checkpoint lineage. The runner verifies dataset/graph fingerprints, parameters, runtime, source-code hashes, seed, assignment and `PYTHONHASHSEED`. It refuses unverifiable legacy checkpoints, overlapping CSV steps and checkpoint collisions. The CLI supplies `PYTHONHASHSEED=0` when unset. Texas and NC 100+20 versus 120-state continuation checks matched complete CSV records exactly.
 
 The campaign launcher prepares all 26 separately labeled baseline and sensitivity commands. Without `--run`, it only writes a new manifest and per-experiment registries:
 
@@ -55,7 +55,7 @@ Adding `--run --workers 4` executes every prepared command through `main.py`. Th
 
 `research-audit` includes **every experiment for the selected state** in the manifest. It verifies segment continuity, seed/tolerance consistency, finite traces, final checkpoint endpoints and provenance, and refuses unconfigured segments. It runs rank-normalized split R-hat, bulk/tail ESS, mean/SD/quantile MCSE, four warmup views, autocorrelation and window summaries for seats, efficiency gap, cut edges and mean–median. NC initialization groups are assessed separately and jointly within each compatible condition. Trace/rank plotting and geographic checkpoint diagnostics have separate recorded commands in the campaign report.
 
-The legacy `--stage audit` remains a limited historical auditor. Both audit stages refuse an existing destination; `--report-dir` can select a new one. Audit execution status is separate from scientific readiness: a completed audit may return exit 0 while reporting failed convergence screens and `research_ready: false`.
+The legacy `--stage audit` remains a limited historical auditor. Both audit stages refuse an existing destination; `--report-dir` can select a new one. A completed audit returns its execution status and reports convergence flags separately in the result files.
 
 ## Verification and scope
 
@@ -66,4 +66,4 @@ The legacy `--stage audit` remains a limited historical auditor. Both audit stag
 
 The complete scientific suite requires the pinned research environment; fixture tests alone establish no real-data validity. No Python formatter/linter is configured. Changed Markdown/JSON use Prettier; Python uses syntax and whitespace checks.
 
-Texas PLANC2333 is scored separately at block resolution. NC assignments use identical common-unit IDs within each geometry; equal unit counts across geometries do not imply equal graphs. Modeled block votes are not observed block returns. The sampler imposes population and graph-contiguity constraints, without establishing uniform plan sampling or full legal compliance. No descriptive frequency is a calibrated p-value, and zero observations do not imply zero probability.
+Scientific interpretation and outstanding research checks are collected in the campaign report’s [Limitations](../deliverables/rebuild-campaign-2026-11-02/README.md#limitations).

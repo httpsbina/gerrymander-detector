@@ -141,13 +141,13 @@
       "experiment": "tx_rebuild",
       "seed": 1117,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--texas",
         "--year",
         "current",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild.json",
         "--stage",
         "simulate",
         "--steps",
@@ -155,19 +155,19 @@
         "--seed",
         "1117"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild_seed1117.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild_seed1117.log"
     },
     {
       "experiment": "tx_rebuild",
       "seed": 2227,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--texas",
         "--year",
         "current",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild.json",
         "--stage",
         "simulate",
         "--steps",
@@ -175,19 +175,19 @@
         "--seed",
         "2227"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild_seed2227.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild_seed2227.log"
     },
     {
       "experiment": "tx_rebuild",
       "seed": 3331,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--texas",
         "--year",
         "current",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild.json",
         "--stage",
         "simulate",
         "--steps",
@@ -195,19 +195,19 @@
         "--seed",
         "3331"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild_seed3331.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild_seed3331.log"
     },
     {
       "experiment": "nc_block_union_2023",
       "seed": 707,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2023",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2023.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2023.json",
         "--stage",
         "simulate",
         "--steps",
@@ -215,19 +215,19 @@
         "--seed",
         "707"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2023_seed707.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2023_seed707.log"
     },
     {
       "experiment": "nc_block_union_2023",
       "seed": 808,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2023",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2023.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2023.json",
         "--stage",
         "simulate",
         "--steps",
@@ -235,19 +235,19 @@
         "--seed",
         "808"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2023_seed808.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2023_seed808.log"
     },
     {
       "experiment": "nc_block_union_2023",
       "seed": 909,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2023",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2023.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2023.json",
         "--stage",
         "simulate",
         "--steps",
@@ -255,19 +255,19 @@
         "--seed",
         "909"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2023_seed909.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2023_seed909.log"
     },
     {
       "experiment": "nc_block_union_2025",
       "seed": 1707,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2025",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2025.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2025.json",
         "--stage",
         "simulate",
         "--steps",
@@ -275,19 +275,19 @@
         "--seed",
         "1707"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2025_seed1707.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2025_seed1707.log"
     },
     {
       "experiment": "nc_block_union_2025",
       "seed": 1808,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2025",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2025.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2025.json",
         "--stage",
         "simulate",
         "--steps",
@@ -295,19 +295,19 @@
         "--seed",
         "1808"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2025_seed1808.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2025_seed1808.log"
     },
     {
       "experiment": "nc_block_union_2025",
       "seed": 1909,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2025",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2025.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2025.json",
         "--stage",
         "simulate",
         "--steps",
@@ -315,19 +315,19 @@
         "--seed",
         "1909"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2025_seed1909.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2025_seed1909.log"
     },
     {
       "experiment": "nc_precinct_sensitivity_2023",
       "seed": 707,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2023",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023.json",
         "--stage",
         "simulate",
         "--steps",
@@ -335,19 +335,19 @@
         "--seed",
         "707"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023_seed707.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023_seed707.log"
     },
     {
       "experiment": "nc_precinct_sensitivity_2023",
       "seed": 808,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2023",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023.json",
         "--stage",
         "simulate",
         "--steps",
@@ -355,19 +355,19 @@
         "--seed",
         "808"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023_seed808.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023_seed808.log"
     },
     {
       "experiment": "nc_precinct_sensitivity_2023",
       "seed": 909,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2023",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023.json",
         "--stage",
         "simulate",
         "--steps",
@@ -375,19 +375,19 @@
         "--seed",
         "909"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023_seed909.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023_seed909.log"
     },
     {
       "experiment": "nc_precinct_sensitivity_2025",
       "seed": 1707,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2025",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025.json",
         "--stage",
         "simulate",
         "--steps",
@@ -395,19 +395,19 @@
         "--seed",
         "1707"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025_seed1707.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025_seed1707.log"
     },
     {
       "experiment": "nc_precinct_sensitivity_2025",
       "seed": 1808,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2025",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025.json",
         "--stage",
         "simulate",
         "--steps",
@@ -415,19 +415,19 @@
         "--seed",
         "1808"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025_seed1808.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025_seed1808.log"
     },
     {
       "experiment": "nc_precinct_sensitivity_2025",
       "seed": 1909,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2025",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025.json",
         "--stage",
         "simulate",
         "--steps",
@@ -435,19 +435,19 @@
         "--seed",
         "1909"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025_seed1909.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025_seed1909.log"
     },
     {
       "experiment": "tx_rebuild",
       "seed": 4441,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--texas",
         "--year",
         "current",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild.json",
         "--stage",
         "simulate",
         "--steps",
@@ -455,19 +455,19 @@
         "--seed",
         "4441"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild_seed4441.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild_seed4441.log"
     },
     {
       "experiment": "tx_population_sensitivity",
       "seed": 1117,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--texas",
         "--year",
         "current",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity.json",
         "--stage",
         "simulate",
         "--steps",
@@ -475,19 +475,19 @@
         "--seed",
         "1117"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity_seed1117_launch_v2.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity_seed1117_launch_v2.log"
     },
     {
       "experiment": "tx_population_sensitivity",
       "seed": 2227,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--texas",
         "--year",
         "current",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity.json",
         "--stage",
         "simulate",
         "--steps",
@@ -495,19 +495,19 @@
         "--seed",
         "2227"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity_seed2227_launch_v2.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity_seed2227_launch_v2.log"
     },
     {
       "experiment": "tx_population_sensitivity",
       "seed": 3331,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--texas",
         "--year",
         "current",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity.json",
         "--stage",
         "simulate",
         "--steps",
@@ -515,19 +515,19 @@
         "--seed",
         "3331"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity_seed3331_launch_v2.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity_seed3331_launch_v2.log"
     },
     {
       "experiment": "tx_population_sensitivity",
       "seed": 4441,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--texas",
         "--year",
         "current",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity.json",
         "--stage",
         "simulate",
         "--steps",
@@ -535,19 +535,19 @@
         "--seed",
         "4441"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity_seed4441_launch_v2.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity_seed4441_launch_v2.log"
     },
     {
       "experiment": "nc_population_sensitivity_2023",
       "seed": 707,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2023",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2023.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2023.json",
         "--stage",
         "simulate",
         "--steps",
@@ -555,19 +555,19 @@
         "--seed",
         "707"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2023_seed707_launch_v2.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2023_seed707_launch_v2.log"
     },
     {
       "experiment": "nc_population_sensitivity_2023",
       "seed": 808,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2023",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2023.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2023.json",
         "--stage",
         "simulate",
         "--steps",
@@ -575,19 +575,19 @@
         "--seed",
         "808"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2023_seed808_launch_v2.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2023_seed808_launch_v2.log"
     },
     {
       "experiment": "nc_population_sensitivity_2023",
       "seed": 909,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2023",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2023.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2023.json",
         "--stage",
         "simulate",
         "--steps",
@@ -595,19 +595,19 @@
         "--seed",
         "909"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2023_seed909_launch_v2.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2023_seed909_launch_v2.log"
     },
     {
       "experiment": "nc_population_sensitivity_2025",
       "seed": 1707,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2025",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2025.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2025.json",
         "--stage",
         "simulate",
         "--steps",
@@ -615,19 +615,19 @@
         "--seed",
         "1707"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2025_seed1707_launch_v2.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2025_seed1707_launch_v2.log"
     },
     {
       "experiment": "nc_population_sensitivity_2025",
       "seed": 1808,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2025",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2025.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2025.json",
         "--stage",
         "simulate",
         "--steps",
@@ -635,19 +635,19 @@
         "--seed",
         "1808"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2025_seed1808_launch_v2.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2025_seed1808_launch_v2.log"
     },
     {
       "experiment": "nc_population_sensitivity_2025",
       "seed": 1909,
       "command": [
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/main.py",
+        ".venv/science/bin/python",
+        "main.py",
         "--nc",
         "--year",
         "2025",
         "--config",
-        "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2025.json",
+        "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2025.json",
         "--stage",
         "simulate",
         "--steps",
@@ -655,7 +655,7 @@
         "--seed",
         "1909"
       ],
-      "log": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2025_seed1909_launch_v2.log"
+      "log": "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2025_seed1909_launch_v2.log"
     }
   ],
   "source_code": {
@@ -669,6 +669,5 @@
     "registered_utc": "2026-11-02T07:28:08.580692+00:00",
     "reason": "Investigate population constraints after low bulk ESS in the first NC baseline group; baseline tolerances, lengths, warmup and screening unchanged",
     "no_pooling_across_constraints": true
-  },
-  "constraint_launch_correction": "Initial commands used the system interpreter and failed importing GIS before producing chain states. Retrying with the verified science interpreter; original logs and manifest retained."
+  }
 }

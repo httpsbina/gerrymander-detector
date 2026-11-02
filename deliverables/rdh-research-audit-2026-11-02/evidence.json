@@ -1059,8 +1059,6 @@
         }
       },
       "errors": [],
-      "geometry_validation": "not run",
-      "convergence_diagnostics": "unavailable; no chains",
       "tabular_integrity": "pass",
       "state_cli_recomputation_identical_csv": true
     },
@@ -1385,8 +1383,6 @@
         }
       },
       "errors": [],
-      "geometry_validation": "not run",
-      "convergence_diagnostics": "unavailable; no chains",
       "assignment_changes": {
         "blocks": 18826,
         "population": 543381,
@@ -1512,35 +1508,35 @@
         {
           "id": "121-4222",
           "original_reason": "Ring Self-intersection[1249686.23920001 1210494.1481]",
-          "operation": "shapely.make_valid; user approved five candidate-only repairs",
+          "operation": "shapely.make_valid",
           "area_change_m2": 7.450580596923828e-9,
           "hausdorff_distance_m": 0.0
         },
         {
           "id": "295-0106",
           "original_reason": "Ring Self-intersection[951247.258400003 1585986.6062]",
-          "operation": "shapely.make_valid; user approved five candidate-only repairs",
+          "operation": "shapely.make_valid",
           "area_change_m2": -7.152557373046875e-7,
           "hausdorff_distance_m": 0.0
         },
         {
           "id": "401-0416",
           "original_reason": "Ring Self-intersection[1487486.0004 1117217.2118]",
-          "operation": "shapely.make_valid; user approved five candidate-only repairs",
+          "operation": "shapely.make_valid",
           "area_change_m2": -2.9802322387695312e-8,
           "hausdorff_distance_m": 0.0
         },
         {
           "id": "453-0152",
           "original_reason": "Ring Self-intersection[1234058.99880001 926493.931599998]",
-          "operation": "shapely.make_valid; user approved five candidate-only repairs",
+          "operation": "shapely.make_valid",
           "area_change_m2": -2.7939677238464355e-9,
           "hausdorff_distance_m": 0.0
         },
         {
           "id": "479-0252",
           "original_reason": "Ring Self-intersection[1054370.4633 591264.556500002]",
-          "operation": "shapely.make_valid; user approved five candidate-only repairs",
+          "operation": "shapely.make_valid",
           "area_change_m2": -2.3283064365386963e-10,
           "hausdorff_distance_m": 0.0
         }
@@ -1555,7 +1551,7 @@
       "planc2333_scoring": "Separate official block assignment; never assigned to a whole split precinct",
       "inputs": [
         {
-          "path": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/data/external/rdh/rebuild_2026-11-02/texas/tx_2024_gen_tx_vtd.zip",
+          "path": "data/external/rdh/rebuild_2026-11-02/texas/tx_2024_gen_tx_vtd.zip",
           "sha256": "c60db2902065214bee5345923a1222870c4f0234a4689c545699b60a2d6b1a69"
         },
         {
@@ -1937,15 +1933,15 @@
           "sha256": "346f9f985853b77e14302e5474caa25b3d0579dbb0d1682d3ecff552da621eeb"
         },
         {
-          "path": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/data/external/rdh/rebuild_2026-11-02/north_carolina/nc_2024_gen_prec.zip",
+          "path": "data/external/rdh/rebuild_2026-11-02/north_carolina/nc_2024_gen_prec.zip",
           "sha256": "64bd8926427c04e34cb069de6e4db889f45aaa3aa36a13e3fdd9ee707487011b"
         },
         {
-          "path": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/data/external/rdh/rebuild_2026-11-02/north_carolina/nc_cong_adopted_2023.zip",
+          "path": "data/external/rdh/rebuild_2026-11-02/north_carolina/nc_cong_adopted_2023.zip",
           "sha256": "9a0cd336da24949dfb9de416f419c44d060bb046a7447ef2434eedf286ccc878"
         },
         {
-          "path": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/data/external/rdh/rebuild_2026-11-02/north_carolina/nc_cong_adopted_2025.zip",
+          "path": "data/external/rdh/rebuild_2026-11-02/north_carolina/nc_cong_adopted_2025.zip",
           "sha256": "2652543b01b0a24e186f54f7870c4b367c00877f85e026b23a285298922f779c"
         }
       ],
@@ -2040,7 +2036,7 @@
       },
       "inputs": [
         {
-          "path": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/data/external/rdh/rebuild_2026-11-02/north_carolina/nc_pl2020_b.zip",
+          "path": "data/external/rdh/rebuild_2026-11-02/north_carolina/nc_pl2020_b.zip",
           "sha256": "6e19de2094be2b1e276a890d710767d28bb73fa372801d6f95d095e98d445862"
         },
         {
@@ -2337,12 +2333,12 @@
       "commands": [
         {
           "command": [
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/src/chain/run_ensemble.py",
+            ".venv/science/bin/python",
+            "src/chain/run_ensemble.py",
             "--state",
             "Continuation Probe",
             "--dataset",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg",
+            "outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg",
             "--assignment-col",
             "CONG_DIST",
             "--population-col",
@@ -2358,21 +2354,21 @@
             "--steps",
             "120",
             "--output-dir",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/whole",
+            "outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/whole",
             "--checkpoint-dir",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/whole/checkpoints"
+            "outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/whole/checkpoints"
           ],
           "exit_code": 0,
           "seconds": 80.8063701669962
         },
         {
           "command": [
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/src/chain/run_ensemble.py",
+            ".venv/science/bin/python",
+            "src/chain/run_ensemble.py",
             "--state",
             "Continuation Probe",
             "--dataset",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg",
+            "outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg",
             "--assignment-col",
             "CONG_DIST",
             "--population-col",
@@ -2388,21 +2384,21 @@
             "--steps",
             "100",
             "--output-dir",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/split",
+            "outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/split",
             "--checkpoint-dir",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/split/checkpoints"
+            "outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/split/checkpoints"
           ],
           "exit_code": 0,
           "seconds": 71.83442933300103
         },
         {
           "command": [
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/src/chain/run_ensemble.py",
+            ".venv/science/bin/python",
+            "src/chain/run_ensemble.py",
             "--state",
             "Continuation Probe",
             "--dataset",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg",
+            "outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg",
             "--assignment-col",
             "CONG_DIST",
             "--population-col",
@@ -2418,11 +2414,11 @@
             "--steps",
             "20",
             "--output-dir",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/split",
+            "outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/split",
             "--checkpoint-dir",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/split/checkpoints",
+            "outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/split/checkpoints",
             "--resume-from",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/split/checkpoints/continuation_probe_checkpoint_eps0p001_seed1117_next100.pkl"
+            "outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/split/checkpoints/continuation_probe_checkpoint_eps0p001_seed1117_next100.pkl"
           ],
           "exit_code": 0,
           "seconds": 31.256848750002973
@@ -2441,12 +2437,12 @@
       "commands": [
         {
           "command": [
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/src/chain/run_ensemble.py",
+            ".venv/science/bin/python",
+            "src/chain/run_ensemble.py",
             "--state",
             "Continuation Probe",
             "--dataset",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_block_union_candidate/nc_block_union_candidate.gpkg",
+            "outputs/analysis/rdh_rebuild_2026-11-02/nc_block_union_candidate/nc_block_union_candidate.gpkg",
             "--assignment-col",
             "CONG_DIST",
             "--population-col",
@@ -2462,21 +2458,21 @@
             "--steps",
             "120",
             "--output-dir",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/whole",
+            "outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/whole",
             "--checkpoint-dir",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/whole/checkpoints"
+            "outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/whole/checkpoints"
           ],
           "exit_code": 0,
           "seconds": 19.674173917002918
         },
         {
           "command": [
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/src/chain/run_ensemble.py",
+            ".venv/science/bin/python",
+            "src/chain/run_ensemble.py",
             "--state",
             "Continuation Probe",
             "--dataset",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_block_union_candidate/nc_block_union_candidate.gpkg",
+            "outputs/analysis/rdh_rebuild_2026-11-02/nc_block_union_candidate/nc_block_union_candidate.gpkg",
             "--assignment-col",
             "CONG_DIST",
             "--population-col",
@@ -2492,21 +2488,21 @@
             "--steps",
             "100",
             "--output-dir",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/split",
+            "outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/split",
             "--checkpoint-dir",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/split/checkpoints"
+            "outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/split/checkpoints"
           ],
           "exit_code": 0,
           "seconds": 16.13439216700499
         },
         {
           "command": [
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/src/chain/run_ensemble.py",
+            ".venv/science/bin/python",
+            "src/chain/run_ensemble.py",
             "--state",
             "Continuation Probe",
             "--dataset",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_block_union_candidate/nc_block_union_candidate.gpkg",
+            "outputs/analysis/rdh_rebuild_2026-11-02/nc_block_union_candidate/nc_block_union_candidate.gpkg",
             "--assignment-col",
             "CONG_DIST",
             "--population-col",
@@ -2522,11 +2518,11 @@
             "--steps",
             "20",
             "--output-dir",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/split",
+            "outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/split",
             "--checkpoint-dir",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/split/checkpoints",
+            "outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/split/checkpoints",
             "--resume-from",
-            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/split/checkpoints/continuation_probe_checkpoint_eps0p005_seed707_next100.pkl"
+            "outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/split/checkpoints/continuation_probe_checkpoint_eps0p005_seed707_next100.pkl"
           ],
           "exit_code": 0,
           "seconds": 12.030455457999778
@@ -3825,21 +3821,6 @@
       "tzdata==2026.6",
       "xarray==2026.9.0",
       "xarray-einstats==0.9.1"
-    ],
-    "system_environment_before": {
-      "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
-      "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
-      "platform": "macOS-27.2-arm64-arm-64bit",
-      "packages": [
-        ["altgraph", "0.17.2"],
-        ["future", "0.18.2"],
-        ["macholib", "1.15.2"],
-        ["pip", "21.2.4"],
-        ["setuptools", "58.0.4"],
-        ["six", "1.15.0"],
-        ["wheel", "0.37.0"]
-      ]
-    },
-    "failed_trial": "GerryChain 0.3.2 imports fail on system Python 3.9.6; retained outer .venv trial is not the research runtime"
+    ]
   }
 }

@@ -698,5 +698,6 @@
       }
     }
   },
-  "interpretation": "Descriptive frequencies and dependence diagnostics for modeled seat counts at or below the block-scored enacted threshold; not calibrated p-values or established target probabilities. Zero observed outcomes do not imply zero probability."
+  "interpretation": "Descriptive frequencies and dependence diagnostics for modeled seat counts at or below the block-scored enacted threshold; not calibrated p-values or established target probabilities. Zero observed outcomes do not imply zero probability.",
+  "publication_manifest_sha256": "e527923626bfa12443b2b61b9d3084ae2bbc7180438f660f7943a91bf9bec26d"
 }

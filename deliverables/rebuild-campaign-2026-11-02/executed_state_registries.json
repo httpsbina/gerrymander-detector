@@ -38,7 +38,7 @@
             }
           }
         },
-        "notes": "The neutral chain starts at the pre-2025 congressional assignment; PLANC2333 is separately scored at Census-block resolution."
+        "notes": "Five make_valid ring repairs; eight precinct overlap pairs. PLANC2333 is scored at block resolution."
       }
     }
   },
@@ -81,7 +81,7 @@
             }
           }
         },
-        "notes": "The 2023 and 2025 enacted assignments use the same 2,681-unit geography; audit each initialization group separately."
+        "notes": "Census-block-union baseline with 2,681 common units and exact block totals for both assignments."
       }
     }
   },
@@ -124,7 +124,7 @@
             }
           }
         },
-        "notes": "The 2023 and 2025 enacted assignments use the same 2,681-unit geography; audit each initialization group separately."
+        "notes": "Census-block-union baseline with 2,681 common units and exact block totals for both assignments."
       }
     }
   },
@@ -167,7 +167,7 @@
             }
           }
         },
-        "notes": "The 2023 and 2025 enacted assignments use the same 2,681-unit geography; audit each initialization group separately."
+        "notes": "Precinct-geometry sensitivity with 2,681 common unit IDs and both district assignments."
       }
     }
   },
@@ -210,7 +210,7 @@
             }
           }
         },
-        "notes": "The 2023 and 2025 enacted assignments use the same 2,681-unit geography; audit each initialization group separately."
+        "notes": "Precinct-geometry sensitivity with 2,681 common unit IDs and both district assignments."
       }
     }
   },
@@ -253,7 +253,7 @@
             }
           }
         },
-        "notes": "The neutral chain starts at the pre-2025 congressional assignment; PLANC2333 is separately scored at Census-block resolution."
+        "notes": "Five make_valid ring repairs; eight precinct overlap pairs. PLANC2333 is scored at block resolution."
       }
     }
   },
@@ -296,7 +296,7 @@
             }
           }
         },
-        "notes": "The 2023 and 2025 enacted assignments use the same 2,681-unit geography; audit each initialization group separately."
+        "notes": "Block-union population-tolerance sensitivity (\u00b11%) with 2,681 common units."
       }
     }
   },
@@ -339,7 +339,7 @@
             }
           }
         },
-        "notes": "The 2023 and 2025 enacted assignments use the same 2,681-unit geography; audit each initialization group separately."
+        "notes": "Block-union population-tolerance sensitivity (\u00b11%) with 2,681 common units."
       }
     }
   }

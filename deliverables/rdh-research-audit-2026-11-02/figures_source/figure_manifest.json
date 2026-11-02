@@ -1,14 +1,14 @@
 {
   "research_ready": false,
-  "plot_code_sha256": "5befad5ecbe684d2f33a08200ca31e30cb6c011661c42982d7272bc9caf04671",
+  "plot_code_sha256": "31f2ddd243f374805481c13c11f6c849048e8a9df9293e420e8f0ca491978755",
   "figures": [
     {
       "file": "election_model_sensitivity.png",
-      "sha256": "1ca5c9879541f351edb784690aacd40e2929b49a434c501dc1fc114e0bdf1eab"
+      "sha256": "6184e804ed5724b4fbbe089b8ad8ec71489d2b63806a553c63a9da724e4f4691"
     },
     {
       "file": "nc_election_normalization_sensitivity.png",
-      "sha256": "47b13a2b28b170820037404502a6ccb2eb8fd226c8d3f27eae521c2195147261"
+      "sha256": "1fbebc39576cdff945aa02d76f0b32236ceb7f6e3e34fbb9f9b8b9c9d2c90401"
     },
     {
       "file": "nc_onslow_block_union.png",

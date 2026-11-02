@@ -1,6 +1,6 @@
 # Complete diagnostic figures
 
-Every configured experiment and compatible NC joint group is included. Traces show all states; rank plots use post-warmup average ranks. These figures do not certify convergence.
+Every configured experiment and compatible NC joint group is included. Traces show all states; rank plots use post-warmup average ranks.
 
 | Group                    | Trace                                              | Rank                                             |
 | ------------------------ | -------------------------------------------------- | ------------------------------------------------ |

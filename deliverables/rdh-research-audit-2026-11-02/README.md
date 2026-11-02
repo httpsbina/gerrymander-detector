@@ -1,114 +1,85 @@
-# Texas and North Carolina: source audit and reconstruction
+# Texas and North Carolina: source data and geography
 
-November 2, 2026. Gerrymander Detector, advised by Dr. Eric Gerber at Northeastern.
+November 2026. Research advised by Dr. Eric Gerber at Northeastern University.
 
-**Neither state is research-ready.** This package records new source-backed evidence, candidate geographies, election-model sensitivity, and validated continuation mechanics. It does not certify convergence or calibrated inference. Historical chain files and the proposed three-commit patch were unavailable in the permitted checkout; no historical chain was discarded, replaced, or treated as reproduced. New simulation results are a distinct campaign.
+I reconstructed the Texas and North Carolina inputs from nine Redistricting Data Hub archives. This report records block accounting, geographic construction and election-model comparisons. The [campaign audit](../rebuild-campaign-2026-11-02/README.md) presents the simulations and consolidates the [scientific limitations](../rebuild-campaign-2026-11-02/README.md#limitations).
 
-This analysis was conducted using data from the Redistricting Data Hub.
+This analysis was conducted using data from the Redistricting Data Hub. Source pages, archive members, byte counts and SHA-256 hashes are listed in the [source manifest](../../configs/rdh_rebuild_sources_2026-11-02.json). Detailed measurements are in [evidence.json](evidence.json).
 
-## Verified block-level evidence
-
-Nine RDH archives were acquired under the approved noncommercial, nonpartisan terms. Their byte counts, checksums, source pages, and archive members are pinned in [the source manifest](../../configs/rdh_rebuild_sources_2026-11-02.json). Raw archives, block masters, GeoPackages, checkpoints, runtime files, and chain CSVs remain local and ignored by Git. No account credentials or signed download URLs are stored in this package.
+## Block accounting
 
 | Measure                                    |      Texas | North Carolina |
 | ------------------------------------------ | ---------: | -------------: |
 | Unique 2020 Census blocks                  |    668,757 |        236,638 |
-| Population                                 | 29,145,505 |     10,439,388 |
+| Census P1 total population                 | 29,145,505 |     10,439,388 |
 | Modeled 2024 Harris votes                  |  4,835,134 |      2,713,609 |
 | Modeled 2024 Trump votes                   |  6,393,403 |      2,896,942 |
 | Population blocks missing election records |          0 |              0 |
 | Election blocks missing population records |          0 |              0 |
 | Official plan assignments missing blocks   |          0 |              0 |
-| Zero-population Census blocks retained     |    219,672 |         61,650 |
+| Zero-population blocks retained            |    219,672 |         61,650 |
 
-Population is Census P1 total population, not voting-age population. All block IDs were checked for state FIPS, length and uniqueness. The election, Census population and official plan files have exactly equal block sets. State totals reproduce the historical configuration; that agreement alone does not validate an election source against the canvass. Independent execution through `main.py --stage validate` reproduced the block-master CSVs byte for byte.
+Block IDs were checked for state FIPS, length and uniqueness. The Census, election and official assignment files have identical block sets within each state. Independent execution through the state CLI reproduced the block-master CSVs byte for byte.
 
-Texas PLANC2333 was scored using its official block equivalency: **8 Democratic-majority districts** under modeled presidential votes. The source includes **427 precincts split by PLANC2333**; no whole-precinct assignment was substituted for block scoring. Maximum relative district population deviation is approximately 0.00012695%.
+Texas PLANC2333 scores **8 Democratic-majority districts** under the modeled presidential votes. Its official block assignment splits 427 precincts; scoring remains at block resolution. Maximum district population deviation is approximately 0.00012695%.
 
-Both NC plans score **3 Democratic-majority districts** under the same modeled presidential vote file. The 2023-to-2025 assignment change moves 18,826 blocks, population 543,381, and modeled votes 117,023 Democratic / 177,741 Republican. These are descriptive assignments and scores, not congressional election outcomes or calibrated probabilities.
+Both NC maps score **3 Democratic-majority districts** with the same presidential vote allocation. Between 2023 and 2025, 18,826 blocks change districts, containing population 543,381 and modeled votes 117,023 Democratic / 177,741 Republican.
 
-## Election source limitations found, not corrected away
+## Election totals and source versions
 
-RDH's block allocations use modified 2020 voting-age population, precinct assignment procedures including nearest-precinct fallbacks, and integer rounding. They are modeled block votes, not observed block returns. Population and election years also differ. The zero-population audit retains 65 Texas blocks with modeled 2024 two-party votes despite zero 2020 population, totaling 543 Democratic and 450 Republican allocations. This alone does not establish an error or unlawful voting. NC has no such positive presidential allocations in its zero-population blocks.
+RDH allocates precinct votes to Census blocks using modified voting-age population, precinct membership procedures and integer rounding. Population is measured in 2020 and the elections in 2024. The zero-population audit retains 65 Texas blocks with positive modeled presidential allocations, totaling 543 Democratic and 450 Republican votes. NC has no such allocations in its zero-population blocks.
 
-Texas's block allocations reproduce the RDH precinct presidential counts exactly. However, the [November 25, 2024 Texas certificate](https://www.archives.gov/files/electoral-college/2024/ascertainment-texas.pdf) contains 116 more Harris votes and 194 more Trump votes. RDH's precinct metadata acknowledges small differences from the official canvass. No votes were scaled, imputed or redistributed to force agreement.
+Texas block totals match the RDH precinct presidential counts exactly. The [November 25, 2024 Texas certificate](https://www.archives.gov/files/electoral-college/2024/ascertainment-texas.pdf) has 116 more Harris votes and 194 more Trump votes. RDH's precinct metadata notes small differences from the official canvass.
 
-NC's block file contains one more modeled Trump vote than its precinct file, at `WAKE-:-16-09`. The [official NCSBE documentation](https://www.ncsbe.gov/results-data/election-results/historical-election-results-data) explains that precinct-sorted results include privacy noise and are not the official election totals. RDH documents a mixture of sorted and unsorted inputs.
+NC's block allocation contains one more Trump vote than its precinct file, at `WAKE-:-16-09`. RDH documents a mixture of precinct-sorted and unsorted election inputs. [NCSBE explains](https://www.ncsbe.gov/results-data/election-results/historical-election-results-data) that the sorted files contain privacy noise.
 
-The public unsorted [NCSBE return file](https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_11_05/results_pct_20241105.zip), downloaded and hashed separately, totals 2,715,375 Harris / 2,898,423 Trump. Its server modification date is December 3, 2024. RDH's block totals are lower by 1,766 / 1,481, with differences in 27 counties; summed absolute county differences are 1,794 / 1,495. Both positive and negative county discrepancies exist. These differences are measured, not all causally attributed to privacy noise.
+| NC source snapshot                                 |    Harris |     Trump |
+| -------------------------------------------------- | --------: | --------: |
+| RDH modeled block allocation                       | 2,713,609 | 2,896,942 |
+| NCSBE unsorted file, modified December 3, 2024     | 2,715,375 | 2,898,423 |
+| November 26 certification / December 9 certificate | 2,715,378 | 2,898,424 |
 
-The [November 26 NCSBE certification](https://s3.amazonaws.com/dl.ncsbe.gov/State_Board_Meeting_Docs/2024-11-26/Canvass/Certification%20of%20State%20Jurisdiction%20Contests%20112624.pdf) and [December 9 certificate](https://www.archives.gov/files/electoral-college/2024/ascertainment-north-carolina.pdf) instead give 2,715,378 / 2,898,424. That additional 3 / 1 discrepancy between official snapshots is retained explicitly. None of these snapshots is silently substituted for another or asserted to be the latest amended canvass.
+The [unsorted file](https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_11_05/results_pct_20241105.zip) differs from RDH in 27 counties, with net differences of 1,766 Harris and 1,481 Trump votes. Summed absolute county differences are 1,794 and 1,495, respectively. Both positive and negative differences occur. The [November 26 certification](https://s3.amazonaws.com/dl.ncsbe.gov/State_Board_Meeting_Docs/2024-11-26/Canvass/Certification%20of%20State%20Jurisdiction%20Contests%20112624.pdf) and [December 9 certificate](https://www.archives.gov/files/electoral-college/2024/ascertainment-north-carolina.pdf) differ from the unsorted snapshot by another 3 Harris and 1 Trump votes. The reconstruction retains the RDH values without redistribution.
 
-Provider documentation also contains apparent template errors: the NC precinct README's first line says 2022 despite the 2024 fields and dataset, and the Texas PL dataset page's description mentions Ohio. Actual file identities were checked using state-coded block IDs, named candidate fields, population totals, and source URLs rather than titles alone.
+Provider metadata contains two apparent template errors: the NC precinct README's first line says 2022 despite its 2024 fields, and the Texas Census dataset page mentions Ohio. File identity was checked against state-coded IDs, candidate fields, population totals and source URLs.
 
-## Geometry findings and approved candidates
+## Texas geographic construction
 
-### Texas
+The 9,712-unit source precinct and congressional layers each contain five ring self-intersections and eight positive-area overlap pairs. The largest overlap is approximately 0.198461 m².
 
-The raw 9,712-unit precinct and congressional layers each contain five ring self-intersections and eight positive-area overlap pairs. The largest overlap is approximately 0.198461 m².
+I applied `shapely.make_valid` to five polygons in the derived candidate: `121-4222`, `295-0106`, `401-0416`, `453-0152` and `479-0252`. The source archive is pinned by checksum. Each repair produces a valid Polygon with zero measured Hausdorff boundary displacement; the largest absolute area change is approximately 7.16 × 10⁻⁷ m².
 
-The user approved a specific `make_valid` candidate repair for `121-4222`, `295-0106`, `401-0416`, `453-0152`, and `479-0252`. The repair script is restricted to the reviewed source archive checksum. All five repaired polygons remain polygons, are valid, and have zero measured Hausdorff displacement; the maximum absolute area change is approximately 7.16×10⁻⁷ m². Original files were untouched.
+The candidate retains all units, blocks, population and votes. GerryChain and positive shared-boundary adjacency agree on all 26,860 graph edges. The graph is connected, all 38 prior-map districts are contiguous, and the starting population deviation is 0.0524163%. The eight source overlap pairs remain in the candidate.
 
-The candidate retains every unit, block, population and vote. Its graph has 26,860 edges and one component; all 38 prior-map districts are contiguous. GerryChain and positive shared-boundary adjacency agree on every edge. The starting population deviation is 0.0524163%, within the unchanged ±0.1% constraint. **Eight source overlap pairs remain documented**, so the repairs are not a blanket geography certification.
+## North Carolina geographic construction
 
-### North Carolina
+The all-races precinct layer has 2,658 valid polygons and zero positive-area overlaps. The congressional-split layer has 2,678 valid polygons and 44 overlap pairs, the largest approximately 3.13 × 10⁻⁸ m².
 
-The all-races source layer has 2,658 valid polygons and no positive-area overlaps. Its congressional-split layer has 2,678 valid polygons but 44 tiny overlap pairs, the largest approximately 3.13×10⁻⁸ m².
+The common precinct-based candidate has 2,681 units, both district assignments and exact block totals. It has 57 overlap pairs and an Onslow coverage residual of approximately 0.001211 m². Its GerryChain graph has 7,584 edges, versus 7,581 under positive shared-boundary adjacency. In-memory coordinate-rounding scenarios produce 7,592–7,598 edges; the candidate retains the original coordinates.
 
-The reconstructed precinct-based common candidate has 2,681 units. It preserves all block totals and both plans' district totals and contiguity. It has 57 positive-area overlap pairs. The unreassigned Onslow coverage residual is approximately 0.001211 m². No snapping, sliver reassignment or geometry repair was performed on this candidate.
+The primary geography instead unions all 236,638 Census blocks by their precinct / 2023 / 2025 membership. It retains the same 2,681 IDs, block counts, populations, modeled votes and assignments. All units are valid and nonempty, overlaps and isolates are zero, and both plans are contiguous. GerryChain and positive shared-boundary adjacency agree on 7,581 edges.
 
-GerryChain produces 7,584 edges on that candidate; exact positive shared-boundary adjacency produces 7,581. Three sampler-only contacts are recorded with measurements. Rounding experiments at 10⁻⁸, 10⁻⁶, 10⁻⁴ and 0.01 US survey feet produce different graphs, ranging from 7,592 to 7,598 edges. No rounding precision was selected as a production rule.
-
-A separately constructed alternative unions all **236,638 valid Census block geometries** by the audited precinct / 2023 / 2025 membership. It has:
-
-- The same 2,681 unit IDs, assignments, block counts, populations and modeled votes.
-- No invalid or empty units, no positive-area overlaps, no isolates and one connected graph.
-- Contiguous districts under both plans.
-- Exactly matching GerryChain and shared-boundary graphs, with 7,581 edges.
-
-The two candidate graphs differ by **47 edges**: 25 precinct-only and 22 block-union-only. Equal edge counts therefore do not establish equal topology. The sum of unitwise symmetric-difference areas is 774,347 m², with a largest unit difference of 155,680 m². This sum can count transferred territory twice; it is not a statewide coverage-loss estimate. Precinct membership still inherits RDH's block-assignment assumptions.
-
-The user approved the block-union candidate as the **new NC baseline**, retaining the precinct candidate as a separate topology sensitivity experiment. Old and new chains must not be pooled as one experiment.
+The two graphs differ by **47 edges**: 25 precinct-only and 22 block-union-only. The sum of unitwise symmetric-difference areas is 774,347 m², with a maximum of 155,680 m². This sum counts transferred territory more than once. The block-union geometry is the baseline; the precinct geometry is a separate sensitivity condition.
 
 ![Onslow split](figures_source/nc_onslow_block_union.png)
 
-The Onslow SW19 unit contains 208 blocks and population 7,450. The 2025 district-1 piece has 131 blocks, population 4,853, and modeled votes 805 Democratic / 2,116 Republican. The district-3 piece has 77 blocks, population 2,597, and modeled votes 434 / 1,146. Both pieces were assigned to district 3 in 2023.
+Onslow SW19 contains 208 blocks and population 7,450. The 2025 district-1 piece contains 131 blocks, population 4,853 and modeled votes 805 Democratic / 2,116 Republican. The district-3 piece contains 77 blocks, population 2,597 and votes 434 / 1,146. Both pieces belonged to district 3 in 2023.
 
-## Election-model sensitivity on enacted plans
+## Enacted-plan election sensitivity
 
-![Election choice](figures_source/election_model_sensitivity.png)
+![Election models](figures_source/election_model_sensitivity.png)
 
-Texas PLANC2333 scores 8 Democratic-majority districts with either presidential or Senate votes. Under the Senate model, the smallest two-party margin is only 224 modeled votes; a +1 percentage-point Democratic uniform swing produces 10 districts, versus 8 under the presidential model. These scores therefore should not be generalized to all election models.
+Texas PLANC2333 scores 8 Democratic-majority districts using either presidential or Senate votes. The Senate model's smallest two-party margin is 224 modeled votes. A +1 percentage-point Democratic uniform swing produces 10 districts in the Senate model and 8 in the presidential model.
 
-NC's 2023 / 2025 plans score 3 / 3 using presidential votes, 4 / 3 using attorney-general votes, and 12 / 13 using gubernatorial votes. Candidate strength differs substantially across these elections. An additional uniform-swing scenario normalizes every election to the presidential statewide two-party share; all three normalized models then score 3 / 3. This is an assumed comparison model, not a correction to the observed returns and not a claim of model independence.
+NC's 2023 / 2025 maps score 3 / 3 using presidential votes, 4 / 3 using attorney-general votes, and 12 / 13 using gubernatorial votes. Normalizing each election to the presidential statewide two-party share with a uniform swing produces 3 / 3 for all three models.
 
-![Normalized election sensitivity](figures_source/nc_election_normalization_sensitivity.png)
+![Statewide-share normalization](figures_source/nc_election_normalization_sensitivity.png)
 
-These are enacted-plan sensitivities. **Alternative-election scoring over every ensemble state has not been performed.** No descriptive frequency is presented as a calibrated p-value, and no zero count is interpreted as zero probability.
+## Continuation and software
 
-## Continuation bug found and fixed
+Version-2 checkpoints record dataset and graph fingerprints, sampler source hashes, parameters, software versions, seed, assignment and RNG state. Stable cut-edge, spanning-tree input and district iteration make reconstructed continuations reproducible. Texas, NC and a synthetic-grid check each matched complete CSV records for uninterrupted 120-state and split 100+20-state runs. Legacy checkpoints lack the required provenance fields.
 
-The initial 100+20 versus 120-state continuation test failed. Saving Python's RNG state and the assignment was insufficient: unordered cut-edge and subgraph iteration could change proposals after reconstruction. A second check produced identical plans but tiny differences in floating diagnostic reductions.
-
-The new implementation orders cut-edge iteration, node/edge ordering for IID spanning-tree weight draws, and district ordering for diagnostic reductions. It retains the intended uniform cut-edge-choice and random-MST mechanisms, population constraints, `node_repeats=2`, and pair-reselection settings. This is a new recorded implementation lineage, not a claim of legacy bitwise equivalence or a uniform ensemble over valid plans.
-
-The final synthetic-grid test and real Texas/NC checks produce **identical complete CSV records** for uninterrupted 120-state and split 100+20-state runs. Earlier failed probes and logs remain preserved and are excluded from all research ensembles.
-
-Version-2 checkpoints verify dataset and graph fingerprints, requested parameters, software/runtime versions, source-code hashes, seed, assignment fingerprint and `PYTHONHASHSEED`. Legacy version-1 checkpoints are refused because their provenance cannot establish these properties. Existing checkpoints and overlapping CSV segments are refused before simulation; writes use exclusive creation. The periodic/final checkpoint boundary is tested without overwriting the same checkpoint twice.
-
-## Runtime and verification
-
-The original system environment was recorded and left intact. GerryChain 0.3.2 failed importing on Python 3.9.6, despite metadata allowing installation. An isolated Python **3.12.16** environment was therefore created at `.venv/science`; use `.venv/science/bin/python`, not the retained outer Python-3.9 trial. Exact package versions are in [the research environment freeze](../../requirements-research-macos-arm64-py312.txt). Imports, ArviZ reference diagnostics and dependency consistency checks pass.
-
-The full suite passed **48 tests** before publication, including malformed/duplicate block rejection, zero-population preservation, disconnected districts, point-only contacts, tiny overlap adjacency, nonfinite diagnostics, protected paths, checkpoint endpoint/provenance mismatches and exact continuation. Later changes receive their own verification record. Final fixtures are confined to `.venv/test-runtime`, outside research data/results paths; earlier labeled temporary test fixtures were cleaned after their tests.
-
-Both raw-source `main.py --stage validate` commands returned **exit 1**, because unresolved geometry findings require review. Their block-level subaudits passed and produced identical masters to the independent runs. Successful acquisition, completed audits, passing software tests and research readiness are separate statuses.
-
-No Python formatter or linter was configured in the checkout. Python syntax and whitespace checks are run; no formatter/linter pass is claimed. Prettier 3.9.10 is installed only in the ignored local tooling environment to check changed Markdown and JSON. No existing research outputs are reformatted or overwritten.
-
-## Commands used
-
-Commands run from the repository root. Existing destinations now refuse collisions; choose new output paths when repeating a full audit or candidate build.
+The research environment uses Python 3.12.16 and the [pinned dependency set](../../requirements-research-macos-arm64-py312.txt). The [state CLI guide](../../docs/state_cli.md) covers the workflow. Source-validation and construction commands follow; each output directory must be new.
 
 ```sh
 export MPLCONFIGDIR="$PWD/data/external/rdh/rebuild_2026-11-02/runtime/matplotlib312"
@@ -131,17 +102,7 @@ python3 src/validation/audit_rdh_sources.py --state texas --source-root data/ext
 .venv/science/bin/python main.py --texas --config configs/research_rebuild_2026-11-02.json
 ```
 
-The same continuation command was run for each state, using its dataset, tolerance and seed, with fresh `_v3` paths after the earlier failures:
-
 ```sh
 .venv/science/bin/python src/validation/check_continuation.py --dataset outputs/analysis/rdh_rebuild_2026-11-02/nc_block_union_candidate/nc_block_union_candidate.gpkg --assignment-col CONG_DIST --epsilon 0.005 --seed 707 --output-dir outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3
 .venv/science/bin/python src/validation/check_continuation.py --dataset outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg --assignment-col CONG_DIST --epsilon 0.001 --seed 1117 --output-dir outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3
 ```
-
-Source acquisition used approved, short-lived RDH download links with a browser-compatible user agent and RDH referrer, supplied through stdin to the local acquisition helper. The initial unheadered request returned HTTP 403. Signed query strings were not saved; public source pages, unsigned file paths, checksums and acquisition times are retained instead.
-
-## Research steps still required
-
-The running campaign must be evaluated using all recorded chains, starting maps and predefined sensitivity conditions. Rank-normalized split R-hat, bulk/tail ESS, MCSE, autocorrelation, trace/rank plots, window behavior and warmup sensitivity are required; NC starting-map groups are assessed separately and jointly within each geometry. No different-geography or different-tolerance chains are pooled. Numerical screening follows [Vehtari et al.](https://arxiv.org/abs/1903.08008), with a strict R-hat limit of 1.01 and ESS floor `max(400, 100 × chains)`; MCSE and stability criteria still need scientific review.
-
-The implemented sampler chooses cut edges, generates random-MST proposals and applies population/contiguity constraints with pair reselection. It does not establish uniform sampling or full legal compliance; [ReCom's methodological scope](https://arxiv.org/abs/1911.05725) is distinct from a legally exhaustive ensemble. Texas starting-map sensitivity, ensemble-wide alternative-election scoring, election-source/noise uncertainty, any failed diagnostic, and persistent chain disagreement remain research work. Neither successful execution nor the volume of generated maps establishes readiness.

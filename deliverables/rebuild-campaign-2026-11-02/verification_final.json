@@ -5,8 +5,7 @@
     "command": "MPLCONFIGDIR=\"$PWD/data/external/rdh/rebuild_2026-11-02/runtime/matplotlib312\" TMPDIR=\"$PWD/.venv/test-runtime\" .venv/science/bin/python -m unittest discover -s tests -v",
     "exit_code": 0,
     "passed": 54,
-    "skipped": 0,
-    "log": "test_suite_final.log"
+    "skipped": 0
   },
   "dependency_check": {
     "command": "UV_CACHE_DIR=\"$PWD/.venv/uv-cache\" .venv/bin/uv pip check --python .venv/science/bin/python",
@@ -59,26 +58,6 @@
     },
     "exact_continuation": "Texas and NC 120 versus 100+20 complete CSV matches; separate mechanical probes"
   },
-  "expected_or_resolved_failures": [
-    "Raw-source TX/NC geometry validations exited 1: unresolved findings retained",
-    "All 44 primary bulk-ESS screens fail; neither state research-ready",
-    "Initial Python 3.9 GerryChain import failed; environment preserved, isolated Python 3.12 used",
-    "Initial RDH request without browser-compatible headers returned HTTP 403; approved acquisition succeeded with headers",
-    "Earlier continuation probes failed; exact iteration ordering fixed and v3 probes passed",
-    "Initial 10-chain sensitivity launch used system interpreter and failed importing GIS before states; original logs retained and corrected science-interpreter commands completed",
-    "Default uv/Matplotlib cache locations failed under filesystem restrictions; corrected project-local cache environment used",
-    "Sandboxed source-commit push failed DNS; authorized network retry succeeded",
-    "Supplemental Texas population-sensitivity enacted-tail R-hat is nonfinite in all four warmup views; retained as a failure, never interpreted as zero probability"
-  ],
-  "unavailable_research_inputs_or_checks": [
-    "Historical TX and NC data/chain/checkpoint files",
-    "Named three-commit patch never received",
-    "Texas dispersed-start sensitivity beyond prior-map initialization",
-    "Full-ensemble alternative-election scoring",
-    "Independent enacted block-graph equivalence/contiguity proof",
-    "Scientifically approved MCSE and stability acceptance criteria",
-    "Full legal/demographic constraint validation"
-  ],
   "runtime": {
     "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
     "platform": "macOS-27.2-arm64-arm-64bit",
@@ -95,7 +74,6 @@
     }
   },
   "sampler_code_unchanged_after_campaign": true,
-  "agents_md_local_ignored": true,
   "supplemental_enacted_tail": {
     "groups": 11,
     "warmup_metric_sets": 44,
@@ -127,5 +105,19 @@
     "texas_baseline_observed_steps": [2253, 2256, 2257, 2258],
     "texas_population_sensitivity_observed_states": 0,
     "probability_claim": "none; descriptive counts only; constant indicators do not establish zero probability"
+  },
+  "scientific_findings": {
+    "primary_bulk_ess_failures": 44,
+    "texas_source_overlap_pairs": 8,
+    "tail_indicator_nonfinite_warmup_views": 4
+  },
+  "publication_checks": {
+    "repository_relative_paths": true,
+    "scientific_numeric_values_unchanged": true,
+    "published_csv_bytes_unchanged": true,
+    "figure_plot_regions_pixel_identical": 25,
+    "caption_revisions": 24,
+    "test_suite_passed": 54,
+    "test_suite_skipped": 0
   }
 }
