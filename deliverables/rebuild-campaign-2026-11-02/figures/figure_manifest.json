@@ -1,0 +1,96 @@
+{
+  "research_ready": false,
+  "manifest_sha256": "6f5495d914fbed21a24311b0491e4650faf678740ac7423a25f2e7b05d00baa1",
+  "figures": [
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/tx_rebuild_trace.png",
+      "sha256": "e66a194d52ae876c44ebf5ef94b928d7e7092520ccc09e94f46ce1fe3e9a585b"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/tx_rebuild_rank.png",
+      "sha256": "4b39cde8a6669d33adeaa5c705ad696ce92e2f8aa6d0a37fdf9c0307174540ef"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_block_union_2023_trace.png",
+      "sha256": "e093e362454649a3bebbbf81c8af43fe3a4e472d485f5b1d653fe42e9af03f11"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_block_union_2023_rank.png",
+      "sha256": "19285f579ca12a1fba7756c0833cce69e23662943e00be6b541b43e8060e8edc"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_block_union_2025_trace.png",
+      "sha256": "ab436ef552f1c02342b7542f0f85d92703bfda574a6f2160680aa1e4b256b56e"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_block_union_2025_rank.png",
+      "sha256": "ee9d0b62e437a03090cf1fa3632a41ffacb76ec490b3e2e64bf0d2d9ed18e01b"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_precinct_sensitivity_2023_trace.png",
+      "sha256": "982dc8c5e23907d7cf512da1520e4a9f9ed3062c6bc910b8ad863e66a3118d12"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_precinct_sensitivity_2023_rank.png",
+      "sha256": "79860186a50921c4b5776f34815ed7b6e5d26e5b14f78d915cb30bd8cc15d953"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_precinct_sensitivity_2025_trace.png",
+      "sha256": "8e934bc35630e315c94e186f83e1b7649f6ba8fbde7201f6054b76cd7f8abcea"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_precinct_sensitivity_2025_rank.png",
+      "sha256": "f3a69dfaee29ef8e8e6d0f26976986d6b6c5a4aaead0f8d8fef3f9005f42d2ee"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/tx_population_sensitivity_trace.png",
+      "sha256": "591afe17b5cfb0251e9b1a38365d6478c2242faeabf726eddb8ca6703c3f7904"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/tx_population_sensitivity_rank.png",
+      "sha256": "7e63207b7d8928e62e295ac63d59650205d67ac0d76fcab2f10cfd9ebdbe1c1e"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_population_sensitivity_2023_trace.png",
+      "sha256": "7d7b53328aaf8c4eca0df000c97ed4f547eafd8db5d374315f5d1516084477bd"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_population_sensitivity_2023_rank.png",
+      "sha256": "5389a02d5920aed37f4156d071576b7f5cfa95e03b8a8b87ad8afd0820e2c34e"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_population_sensitivity_2025_trace.png",
+      "sha256": "0ebf409881a7ae8f924cbaa5648c2e50ecf2f8a919772fc081888ab132cc2d11"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_population_sensitivity_2025_rank.png",
+      "sha256": "49fef5d4d1ba37e7965652f12ae2f944682879a42d50e4544501636437ba670f"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_block_union_joint_trace.png",
+      "sha256": "320e41476cb2025fad7fc03fd6c0a6a41d472ac2cbc4f610fed750d691d78721"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_block_union_joint_rank.png",
+      "sha256": "22caf9665a02984f5a2938f2c7a77e31d148c4cf9f529c62eb17c73a117f35c2"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_precinct_sensitivity_joint_trace.png",
+      "sha256": "d04c45fff968cadfe4a481e95d92d938b5c31284b49f7de16440edbe0b5b1c34"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_precinct_sensitivity_joint_rank.png",
+      "sha256": "e6217cf41fb28bb3536d1321b59a182595713cda9a292c4e92b47c04488907f1"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_population_sensitivity_joint_trace.png",
+      "sha256": "c9539d6b61081af78af18f930037c699d7efc8182a71998b7f71c6b78855051a"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/nc_population_sensitivity_joint_rank.png",
+      "sha256": "562a61f8a60894996e2264569189423cbe667fa3a009e16a091ff521cabdf46b"
+    }
+  ],
+  "plot_code_sha256": "1879d97ec9ffa880d4cf4bb4eba466ac3a3b218b973c30d5de57d296d81c5f8d",
+  "publication_manifest_sha256": "e527923626bfa12443b2b61b9d3084ae2bbc7180438f660f7943a91bf9bec26d"
+}

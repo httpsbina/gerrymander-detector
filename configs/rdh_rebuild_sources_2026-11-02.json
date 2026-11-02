@@ -1,0 +1,664 @@
+{
+  "schema_version": 1,
+  "purpose": "Source archive inventory, checksums and provider metadata",
+  "sources": [
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/disag_votes_block/nc_2024_gen_2020_blocks_csv.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/north-carolina-2024-general-election-results-disaggregated-to-the-2020-block/",
+      "filename": "north_carolina/nc_2024_gen_2020_blocks_csv.zip",
+      "sha256": "8a990f5b6b09f97c2f7faec9150687cc1ac773de9c0b66b66e100593532ae0ff",
+      "bytes": 8336039,
+      "downloaded_utc": "2026-11-02T06:00:41.383533+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "README.txt",
+          "bytes": 33467
+        },
+        {
+          "name": "nc_2024_gen_2020_blocks.csv",
+          "bytes": 210638927
+        }
+      ]
+    },
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/elections_results_precinct_boundaries_2024/nc_2024_gen_prec.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/north-carolina-2024-general-election-precinct-level-results-and-boundaries/",
+      "filename": "north_carolina/nc_2024_gen_prec.zip",
+      "sha256": "64bd8926427c04e34cb069de6e4db889f45aaa3aa36a13e3fdd9ee707487011b",
+      "bytes": 81608469,
+      "downloaded_utc": "2026-11-02T06:02:25.017242+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "nc_2024_gen_all_prec/",
+          "bytes": 0
+        },
+        {
+          "name": "nc_2024_gen_all_prec/nc_2024_gen_all_prec.shp",
+          "bytes": 32274400
+        },
+        {
+          "name": "nc_2024_gen_all_prec/nc_2024_gen_all_prec.shx",
+          "bytes": 21364
+        },
+        {
+          "name": "nc_2024_gen_all_prec/nc_2024_gen_all_prec.dbf",
+          "bytes": 27595636
+        },
+        {
+          "name": "nc_2024_gen_all_prec/nc_2024_gen_all_prec.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_2024_gen_all_prec/nc_2024_gen_all_prec.prj",
+          "bytes": 549
+        },
+        {
+          "name": "nc_2024_gen_cong_prec/",
+          "bytes": 0
+        },
+        {
+          "name": "nc_2024_gen_cong_prec/nc_2024_gen_cong_prec.shp",
+          "bytes": 32517792
+        },
+        {
+          "name": "nc_2024_gen_cong_prec/nc_2024_gen_cong_prec.shx",
+          "bytes": 21524
+        },
+        {
+          "name": "nc_2024_gen_cong_prec/nc_2024_gen_cong_prec.dbf",
+          "bytes": 3046136
+        },
+        {
+          "name": "nc_2024_gen_cong_prec/nc_2024_gen_cong_prec.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_2024_gen_cong_prec/nc_2024_gen_cong_prec.prj",
+          "bytes": 549
+        },
+        {
+          "name": "nc_2024_gen_sldl_prec/",
+          "bytes": 0
+        },
+        {
+          "name": "nc_2024_gen_sldl_prec/nc_2024_gen_sldl_prec.shp",
+          "bytes": 32450164
+        },
+        {
+          "name": "nc_2024_gen_sldl_prec/nc_2024_gen_sldl_prec.shx",
+          "bytes": 21452
+        },
+        {
+          "name": "nc_2024_gen_sldl_prec/nc_2024_gen_sldl_prec.dbf",
+          "bytes": 15597151
+        },
+        {
+          "name": "nc_2024_gen_sldl_prec/nc_2024_gen_sldl_prec.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_2024_gen_sldl_prec/nc_2024_gen_sldl_prec.prj",
+          "bytes": 549
+        },
+        {
+          "name": "nc_2024_gen_sldu_prec/",
+          "bytes": 0
+        },
+        {
+          "name": "nc_2024_gen_sldu_prec/nc_2024_gen_sldu_prec.shp",
+          "bytes": 32365784
+        },
+        {
+          "name": "nc_2024_gen_sldu_prec/nc_2024_gen_sldu_prec.shx",
+          "bytes": 21460
+        },
+        {
+          "name": "nc_2024_gen_sldu_prec/nc_2024_gen_sldu_prec.dbf",
+          "bytes": 7845440
+        },
+        {
+          "name": "nc_2024_gen_sldu_prec/nc_2024_gen_sldu_prec.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_2024_gen_sldu_prec/nc_2024_gen_sldu_prec.prj",
+          "bytes": 549
+        },
+        {
+          "name": "README.txt",
+          "bytes": 35497
+        }
+      ]
+    },
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/legislative/2021_adopted_plans/nc_cong_adopted_2023.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/2024-north-carolina-congressional-districts-approved-plan/",
+      "filename": "north_carolina/nc_cong_adopted_2023.zip",
+      "sha256": "9a0cd336da24949dfb9de416f419c44d060bb046a7447ef2434eedf286ccc878",
+      "bytes": 14740784,
+      "downloaded_utc": "2026-11-02T06:05:04.999415+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "README.txt",
+          "bytes": 1088
+        },
+        {
+          "name": "SL 2023-145 Congress - 11 x 17 Map.pdf",
+          "bytes": 1651619
+        },
+        {
+          "name": "SL 2023-145 Congress - 19 x 36 Map.pdf",
+          "bytes": 3335528
+        },
+        {
+          "name": "SL 2023-145 Congress - Compactness Report.pdf",
+          "bytes": 87164
+        },
+        {
+          "name": "SL 2023-145 Congress - Shapefile/SL 2023-145.cpg",
+          "bytes": 5
+        },
+        {
+          "name": "SL 2023-145 Congress - Shapefile/SL 2023-145.dbf",
+          "bytes": 448
+        },
+        {
+          "name": "SL 2023-145 Congress - Shapefile/SL 2023-145.prj",
+          "bytes": 523
+        },
+        {
+          "name": "SL 2023-145 Congress - Shapefile/SL 2023-145.sbn",
+          "bytes": 268
+        },
+        {
+          "name": "SL 2023-145 Congress - Shapefile/SL 2023-145.sbx",
+          "bytes": 132
+        },
+        {
+          "name": "SL 2023-145 Congress - Shapefile/SL 2023-145.shp",
+          "bytes": 3345508
+        },
+        {
+          "name": "SL 2023-145 Congress - Shapefile/SL 2023-145.shx",
+          "bytes": 212
+        },
+        {
+          "name": "SL 2023-145 Congress - StatPack2023_C.pdf",
+          "bytes": 2919756
+        },
+        {
+          "name": "SL 2023-145 Congress - StatPack2023_RVR_C.pdf",
+          "bytes": 3821426
+        },
+        {
+          "name": "SL 2023-145.csv",
+          "bytes": 5521613
+        }
+      ]
+    },
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/legislative/2021_adopted_plans/nc_cong_adopted_2025.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/2025-north-carolina-congressional-districts-approved-plan/",
+      "filename": "north_carolina/nc_cong_adopted_2025.zip",
+      "sha256": "2652543b01b0a24e186f54f7870c4b367c00877f85e026b23a285298922f779c",
+      "bytes": 11550320,
+      "downloaded_utc": "2026-11-02T06:02:39.207347+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "README.txt",
+          "bytes": 974
+        },
+        {
+          "name": "NCGA_CCM-2 - Shapefile/",
+          "bytes": 0
+        },
+        {
+          "name": "NCGA_CCM-2 - Shapefile/CCM-2.cpg",
+          "bytes": 5
+        },
+        {
+          "name": "NCGA_CCM-2 - Shapefile/CCM-2.dbf",
+          "bytes": 890
+        },
+        {
+          "name": "NCGA_CCM-2 - Shapefile/CCM-2.prj",
+          "bytes": 523
+        },
+        {
+          "name": "NCGA_CCM-2 - Shapefile/CCM-2.sbn",
+          "bytes": 268
+        },
+        {
+          "name": "NCGA_CCM-2 - Shapefile/CCM-2.sbx",
+          "bytes": 132
+        },
+        {
+          "name": "NCGA_CCM-2 - Shapefile/CCM-2.shp",
+          "bytes": 3357124
+        },
+        {
+          "name": "NCGA_CCM-2 - Shapefile/CCM-2.shx",
+          "bytes": 212
+        },
+        {
+          "name": "NCGA_CCM-2  - StatPack2025_C.pdf",
+          "bytes": 3279025
+        },
+        {
+          "name": "NCGA_CCM-2 - 11 x 17 Map_.pdf",
+          "bytes": 1810318
+        },
+        {
+          "name": "NCGA_CCM-2 - 19 x 36 Map .pdf",
+          "bytes": 11555165
+        },
+        {
+          "name": "NCGA_CCM-2 - Measures of Compactness Rpt.pdf",
+          "bytes": 92200
+        },
+        {
+          "name": "NCGA_CCM-2 .csv",
+          "bytes": 5521614
+        }
+      ]
+    },
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/PL2020_5FILES/shp/nc_pl2020_b.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/north-carolina-block-pl-94171-2020-by-table/",
+      "filename": "north_carolina/nc_pl2020_b.zip",
+      "sha256": "6e19de2094be2b1e276a890d710767d28bb73fa372801d6f95d095e98d445862",
+      "bytes": 1027237633,
+      "downloaded_utc": "2026-11-02T06:04:22.658667+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "README.txt",
+          "bytes": 3395
+        },
+        {
+          "name": "nc_pl2020_p1_b.shp",
+          "bytes": 313795448
+        },
+        {
+          "name": "nc_pl2020_p1_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_pl2020_p1_b.dbf",
+          "bytes": 397317668
+        },
+        {
+          "name": "nc_pl2020_p1_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "nc_pl2020_p1_b.shx",
+          "bytes": 1893204
+        },
+        {
+          "name": "nc_pl2020_p2_b.shp",
+          "bytes": 313795448
+        },
+        {
+          "name": "nc_pl2020_p2_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_pl2020_p2_b.dbf",
+          "bytes": 405836700
+        },
+        {
+          "name": "nc_pl2020_p2_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "nc_pl2020_p2_b.shx",
+          "bytes": 1893204
+        },
+        {
+          "name": "nc_pl2020_p3_b.shp",
+          "bytes": 313795448
+        },
+        {
+          "name": "nc_pl2020_p3_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_pl2020_p3_b.dbf",
+          "bytes": 397317668
+        },
+        {
+          "name": "nc_pl2020_p3_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "nc_pl2020_p3_b.shx",
+          "bytes": 1893204
+        },
+        {
+          "name": "nc_pl2020_p4_b.shp",
+          "bytes": 313795448
+        },
+        {
+          "name": "nc_pl2020_p4_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_pl2020_p4_b.dbf",
+          "bytes": 405836700
+        },
+        {
+          "name": "nc_pl2020_p4_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "nc_pl2020_p4_b.shx",
+          "bytes": 1893204
+        },
+        {
+          "name": "nc_pl2020_h1p5_b.shp",
+          "bytes": 313795448
+        },
+        {
+          "name": "nc_pl2020_h1p5_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_pl2020_h1p5_b.dbf",
+          "bytes": 150265740
+        },
+        {
+          "name": "nc_pl2020_h1p5_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "nc_pl2020_h1p5_b.shx",
+          "bytes": 1893204
+        }
+      ]
+    },
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/disag_votes_block/tx_2024_gen_2020_blocks_csv.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/texas-2024-general-election-results-disaggregated-to-the-2020-block/",
+      "filename": "texas/tx_2024_gen_2020_blocks_csv.zip",
+      "sha256": "e78d858bdc4233938c1dbfdf02f287abd2652929d0158ed13fdac4a73c84953b",
+      "bytes": 13544758,
+      "downloaded_utc": "2026-11-02T06:00:24.010275+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "README.txt",
+          "bytes": 16369
+        },
+        {
+          "name": "tx_2024_gen_2020_blocks.csv",
+          "bytes": 459003369
+        }
+      ]
+    },
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/elections_results_precinct_boundaries_2024/tx_2024_gen_tx_vtd.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/texas-2024-general-election-precinct-level-texas-vtd-results-and-boundaries/",
+      "filename": "texas/tx_2024_gen_tx_vtd.zip",
+      "sha256": "c60db2902065214bee5345923a1222870c4f0234a4689c545699b60a2d6b1a69",
+      "bytes": 102707646,
+      "downloaded_utc": "2026-11-02T06:02:36.548095+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "tx_2024_gen_all_tx_vtd/",
+          "bytes": 0
+        },
+        {
+          "name": "tx_2024_gen_cong_tx_vtd/",
+          "bytes": 0
+        },
+        {
+          "name": "README.txt",
+          "bytes": 19363
+        },
+        {
+          "name": "tx_2024_gen_all_tx_vtd/tx_2024_gen_all_tx_vtd.shx",
+          "bytes": 77796
+        },
+        {
+          "name": "tx_2024_gen_all_tx_vtd/tx_2024_gen_all_tx_vtd.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "tx_2024_gen_all_tx_vtd/tx_2024_gen_all_tx_vtd.shp",
+          "bytes": 73104268
+        },
+        {
+          "name": "tx_2024_gen_all_tx_vtd/tx_2024_gen_all_tx_vtd.dbf",
+          "bytes": 61147602
+        },
+        {
+          "name": "tx_2024_gen_all_tx_vtd/tx_2024_gen_all_tx_vtd.prj",
+          "bytes": 519
+        },
+        {
+          "name": "tx_2024_gen_cong_tx_vtd/tx_2024_gen_cong_tx_vtd.prj",
+          "bytes": 519
+        },
+        {
+          "name": "tx_2024_gen_cong_tx_vtd/tx_2024_gen_cong_tx_vtd.shx",
+          "bytes": 77796
+        },
+        {
+          "name": "tx_2024_gen_cong_tx_vtd/tx_2024_gen_cong_tx_vtd.shp",
+          "bytes": 73104268
+        },
+        {
+          "name": "tx_2024_gen_cong_tx_vtd/tx_2024_gen_cong_tx_vtd.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "tx_2024_gen_cong_tx_vtd/tx_2024_gen_cong_tx_vtd.dbf",
+          "bytes": 17183154
+        }
+      ]
+    },
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/legislative/2021_adopted_plans/tx_cong_adopted_2025.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/2025-texas-congressional-districts-approved-plan/",
+      "filename": "texas/tx_cong_adopted_2025.zip",
+      "sha256": "36933aec5ece1703b82ed609662ad14fa4adb9d1f5bc82636b11a5a2ea2ac4b3",
+      "bytes": 26141444,
+      "downloaded_utc": "2026-11-02T06:02:42.653343+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "PLANC2333/",
+          "bytes": 0
+        },
+        {
+          "name": "PLANC2333/PLANC2333.cpg",
+          "bytes": 5
+        },
+        {
+          "name": "PLANC2333/PLANC2333.dbf",
+          "bytes": 484
+        },
+        {
+          "name": "PLANC2333/PLANC2333.prj",
+          "bytes": 530
+        },
+        {
+          "name": "PLANC2333/PLANC2333.sbn",
+          "bytes": 492
+        },
+        {
+          "name": "PLANC2333/PLANC2333.sbx",
+          "bytes": 148
+        },
+        {
+          "name": "PLANC2333/PLANC2333.shp",
+          "bytes": 6581492
+        },
+        {
+          "name": "PLANC2333/PLANC2333.shx",
+          "bytes": 404
+        },
+        {
+          "name": "PLANC2333.csv",
+          "bytes": 14581459
+        },
+        {
+          "name": "planc2333_map_report_package.pdf",
+          "bytes": 19511430
+        },
+        {
+          "name": "README.txt",
+          "bytes": 799
+        }
+      ]
+    },
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/PL2020_5FILES/shp/tx_pl2020_b.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/texas-block-pl-94171-2020-by-table/",
+      "filename": "texas/tx_pl2020_b.zip",
+      "sha256": "a9901c388beba44c2ef50fe3959194285294b1140ed2a563a719d4c47ee02be1",
+      "bytes": 2140869167,
+      "downloaded_utc": "2026-11-02T06:05:14.597882+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "README.txt",
+          "bytes": 3386
+        },
+        {
+          "name": "tx_pl2020_p1_b.shp",
+          "bytes": 649307076
+        },
+        {
+          "name": "tx_pl2020_p1_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "tx_pl2020_p1_b.dbf",
+          "bytes": 1122845469
+        },
+        {
+          "name": "tx_pl2020_p1_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "tx_pl2020_p1_b.shx",
+          "bytes": 5350156
+        },
+        {
+          "name": "tx_pl2020_p2_b.shp",
+          "bytes": 649307076
+        },
+        {
+          "name": "tx_pl2020_p2_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "tx_pl2020_p2_b.dbf",
+          "bytes": 1146920785
+        },
+        {
+          "name": "tx_pl2020_p2_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "tx_pl2020_p2_b.shx",
+          "bytes": 5350156
+        },
+        {
+          "name": "tx_pl2020_p3_b.shp",
+          "bytes": 649307076
+        },
+        {
+          "name": "tx_pl2020_p3_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "tx_pl2020_p3_b.dbf",
+          "bytes": 1122845469
+        },
+        {
+          "name": "tx_pl2020_p3_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "tx_pl2020_p3_b.shx",
+          "bytes": 5350156
+        },
+        {
+          "name": "tx_pl2020_p4_b.shp",
+          "bytes": 649307076
+        },
+        {
+          "name": "tx_pl2020_p4_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "tx_pl2020_p4_b.dbf",
+          "bytes": 1146920785
+        },
+        {
+          "name": "tx_pl2020_p4_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "tx_pl2020_p4_b.shx",
+          "bytes": 5350156
+        },
+        {
+          "name": "tx_pl2020_h1p5_b.shp",
+          "bytes": 649307076
+        },
+        {
+          "name": "tx_pl2020_h1p5_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "tx_pl2020_h1p5_b.dbf",
+          "bytes": 424661305
+        },
+        {
+          "name": "tx_pl2020_h1p5_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "tx_pl2020_h1p5_b.shx",
+          "bytes": 5350156
+        }
+      ]
+    }
+  ]
+}

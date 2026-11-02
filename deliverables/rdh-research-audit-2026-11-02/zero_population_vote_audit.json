@@ -1,0 +1,16 @@
+{
+  "tx": {
+    "zero_2020_population_blocks": 219672,
+    "zero_2020_population_blocks_with_modeled_2024_two_party_votes": 65,
+    "modeled_dem_votes_on_zero_2020_population_blocks": 543,
+    "modeled_rep_votes_on_zero_2020_population_blocks": 450,
+    "interpretation": "2020 population and modeled 2024 votes describe different years. These rows are preserved; positive votes here alone do not establish an error or unlawful voting."
+  },
+  "nc": {
+    "zero_2020_population_blocks": 61650,
+    "zero_2020_population_blocks_with_modeled_2024_two_party_votes": 0,
+    "modeled_dem_votes_on_zero_2020_population_blocks": 0,
+    "modeled_rep_votes_on_zero_2020_population_blocks": 0,
+    "interpretation": "2020 population and modeled 2024 votes describe different years. These rows are preserved; positive votes here alone do not establish an error or unlawful voting."
+  }
+}

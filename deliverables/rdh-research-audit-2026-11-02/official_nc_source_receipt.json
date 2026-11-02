@@ -1,0 +1,15 @@
+{
+  "source_url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_11_05/results_pct_20241105.zip",
+  "provider": "North Carolina State Board of Elections",
+  "downloaded_utc": "2026-11-02T06:56:08.175209+00:00",
+  "last_modified": "Tue, 03 Dec 2024 18:32:58 GMT",
+  "sha256": "2fab44e9b12e03c0d88ef832c2e6dc8c569e2b020d64df06a8b551b62bbdb426",
+  "bytes": 3741131,
+  "members": [
+    {
+      "name": "results_pct_20241105.txt",
+      "bytes": 23861000
+    }
+  ],
+  "status": "DOWNLOADED_NOT_VALIDATED"
+}

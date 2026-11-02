@@ -1,0 +1,346 @@
+{
+  "tx_rebuild": {
+    "schema_version": 1,
+    "states": {
+      "texas": {
+        "name": "Texas",
+        "status": "new_source_candidate_not_research_ready",
+        "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg",
+        "layer": "precincts",
+        "districts": 38,
+        "expected": {
+          "geographic_units": 9712,
+          "population": 29145505,
+          "dem_votes": 4835134,
+          "rep_votes": 6393403
+        },
+        "columns": {
+          "population": "TOTPOP",
+          "dem": "G24PREDHAR",
+          "rep": "G24PRERTRU"
+        },
+        "default_year": "current",
+        "plans": {
+          "current": {
+            "assignment": "CONG_DIST",
+            "state_label": "tx_rebuild_20261102",
+            "epsilon": 0.001,
+            "node_repeats": 2,
+            "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild/ensembles",
+            "checkpoint_dir": "outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild/checkpoints",
+            "audit": {
+              "prefix": "tx_rebuild_20261102",
+              "seeds": [1117, 2227, 3331],
+              "steps": 4000,
+              "warmup": 500,
+              "window": 500,
+              "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild/audit"
+            }
+          }
+        },
+        "notes": "Five make_valid ring repairs; eight precinct overlap pairs. PLANC2333 is scored at block resolution."
+      }
+    }
+  },
+  "nc_block_union_2023": {
+    "schema_version": 1,
+    "states": {
+      "north_carolina": {
+        "name": "North Carolina",
+        "status": "new_source_candidate_not_research_ready",
+        "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/nc_block_union_candidate/nc_block_union_candidate.gpkg",
+        "layer": "precincts",
+        "districts": 14,
+        "expected": {
+          "geographic_units": 2681,
+          "population": 10439388,
+          "dem_votes": 2713609,
+          "rep_votes": 2896942
+        },
+        "columns": {
+          "population": "TOTPOP",
+          "dem": "G24PREDHAR",
+          "rep": "G24PRERTRU"
+        },
+        "default_year": "2023",
+        "plans": {
+          "2023": {
+            "assignment": "CONG_DIST",
+            "state_label": "nc_block_union_2023_20261102",
+            "epsilon": 0.005,
+            "node_repeats": 2,
+            "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2023/ensembles",
+            "checkpoint_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2023/checkpoints",
+            "audit": {
+              "prefix": "nc_block_union_2023_20261102",
+              "seeds": [707, 808, 909],
+              "steps": 5000,
+              "warmup": 500,
+              "window": 1000,
+              "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2023/audit"
+            }
+          }
+        },
+        "notes": "Census-block-union baseline with 2,681 common units and exact block totals for both assignments."
+      }
+    }
+  },
+  "nc_block_union_2025": {
+    "schema_version": 1,
+    "states": {
+      "north_carolina": {
+        "name": "North Carolina",
+        "status": "new_source_candidate_not_research_ready",
+        "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/nc_block_union_candidate/nc_block_union_candidate.gpkg",
+        "layer": "precincts",
+        "districts": 14,
+        "expected": {
+          "geographic_units": 2681,
+          "population": 10439388,
+          "dem_votes": 2713609,
+          "rep_votes": 2896942
+        },
+        "columns": {
+          "population": "TOTPOP",
+          "dem": "G24PREDHAR",
+          "rep": "G24PRERTRU"
+        },
+        "default_year": "2025",
+        "plans": {
+          "2025": {
+            "assignment": "CONG_DIST_2025",
+            "state_label": "nc_block_union_2025_20261102",
+            "epsilon": 0.005,
+            "node_repeats": 2,
+            "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2025/ensembles",
+            "checkpoint_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2025/checkpoints",
+            "audit": {
+              "prefix": "nc_block_union_2025_20261102",
+              "seeds": [1707, 1808, 1909],
+              "steps": 5000,
+              "warmup": 500,
+              "window": 1000,
+              "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_block_union_2025/audit"
+            }
+          }
+        },
+        "notes": "Census-block-union baseline with 2,681 common units and exact block totals for both assignments."
+      }
+    }
+  },
+  "nc_precinct_sensitivity_2023": {
+    "schema_version": 1,
+    "states": {
+      "north_carolina": {
+        "name": "North Carolina",
+        "status": "new_source_candidate_not_research_ready",
+        "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/nc_common_candidate/nc_common_candidate.gpkg",
+        "layer": "precincts",
+        "districts": 14,
+        "expected": {
+          "geographic_units": 2681,
+          "population": 10439388,
+          "dem_votes": 2713609,
+          "rep_votes": 2896942
+        },
+        "columns": {
+          "population": "TOTPOP",
+          "dem": "G24PREDHAR",
+          "rep": "G24PRERTRU"
+        },
+        "default_year": "2023",
+        "plans": {
+          "2023": {
+            "assignment": "CONG_DIST",
+            "state_label": "nc_precinct_sensitivity_2023_20261102",
+            "epsilon": 0.005,
+            "node_repeats": 2,
+            "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023/ensembles",
+            "checkpoint_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023/checkpoints",
+            "audit": {
+              "prefix": "nc_precinct_sensitivity_2023_20261102",
+              "seeds": [707, 808, 909],
+              "steps": 5000,
+              "warmup": 500,
+              "window": 1000,
+              "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023/audit"
+            }
+          }
+        },
+        "notes": "Precinct-geometry sensitivity with 2,681 common unit IDs and both district assignments."
+      }
+    }
+  },
+  "nc_precinct_sensitivity_2025": {
+    "schema_version": 1,
+    "states": {
+      "north_carolina": {
+        "name": "North Carolina",
+        "status": "new_source_candidate_not_research_ready",
+        "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/nc_common_candidate/nc_common_candidate.gpkg",
+        "layer": "precincts",
+        "districts": 14,
+        "expected": {
+          "geographic_units": 2681,
+          "population": 10439388,
+          "dem_votes": 2713609,
+          "rep_votes": 2896942
+        },
+        "columns": {
+          "population": "TOTPOP",
+          "dem": "G24PREDHAR",
+          "rep": "G24PRERTRU"
+        },
+        "default_year": "2025",
+        "plans": {
+          "2025": {
+            "assignment": "CONG_DIST_2025",
+            "state_label": "nc_precinct_sensitivity_2025_20261102",
+            "epsilon": 0.005,
+            "node_repeats": 2,
+            "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025/ensembles",
+            "checkpoint_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025/checkpoints",
+            "audit": {
+              "prefix": "nc_precinct_sensitivity_2025_20261102",
+              "seeds": [1707, 1808, 1909],
+              "steps": 5000,
+              "warmup": 500,
+              "window": 1000,
+              "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025/audit"
+            }
+          }
+        },
+        "notes": "Precinct-geometry sensitivity with 2,681 common unit IDs and both district assignments."
+      }
+    }
+  },
+  "tx_population_sensitivity": {
+    "schema_version": 1,
+    "states": {
+      "texas": {
+        "name": "Texas",
+        "status": "new_source_candidate_not_research_ready",
+        "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg",
+        "layer": "precincts",
+        "districts": 38,
+        "expected": {
+          "geographic_units": 9712,
+          "population": 29145505,
+          "dem_votes": 4835134,
+          "rep_votes": 6393403
+        },
+        "columns": {
+          "population": "TOTPOP",
+          "dem": "G24PREDHAR",
+          "rep": "G24PRERTRU"
+        },
+        "default_year": "current",
+        "plans": {
+          "current": {
+            "assignment": "CONG_DIST",
+            "state_label": "tx_population_sensitivity_20261102",
+            "epsilon": 0.005,
+            "node_repeats": 2,
+            "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity/ensembles",
+            "checkpoint_dir": "outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity/checkpoints",
+            "audit": {
+              "prefix": "tx_population_sensitivity_20261102",
+              "seeds": [1117, 2227, 3331, 4441],
+              "steps": 4000,
+              "warmup": 500,
+              "window": 500,
+              "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/tx_population_sensitivity/audit"
+            }
+          }
+        },
+        "notes": "Five make_valid ring repairs; eight precinct overlap pairs. PLANC2333 is scored at block resolution."
+      }
+    }
+  },
+  "nc_population_sensitivity_2023": {
+    "schema_version": 1,
+    "states": {
+      "north_carolina": {
+        "name": "North Carolina",
+        "status": "new_source_candidate_not_research_ready",
+        "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/nc_block_union_candidate/nc_block_union_candidate.gpkg",
+        "layer": "precincts",
+        "districts": 14,
+        "expected": {
+          "geographic_units": 2681,
+          "population": 10439388,
+          "dem_votes": 2713609,
+          "rep_votes": 2896942
+        },
+        "columns": {
+          "population": "TOTPOP",
+          "dem": "G24PREDHAR",
+          "rep": "G24PRERTRU"
+        },
+        "default_year": "2023",
+        "plans": {
+          "2023": {
+            "assignment": "CONG_DIST",
+            "state_label": "nc_population_sensitivity_2023_20261102",
+            "epsilon": 0.01,
+            "node_repeats": 2,
+            "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2023/ensembles",
+            "checkpoint_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2023/checkpoints",
+            "audit": {
+              "prefix": "nc_population_sensitivity_2023_20261102",
+              "seeds": [707, 808, 909],
+              "steps": 5000,
+              "warmup": 500,
+              "window": 1000,
+              "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2023/audit"
+            }
+          }
+        },
+        "notes": "Block-union population-tolerance sensitivity (\u00b11%) with 2,681 common units."
+      }
+    }
+  },
+  "nc_population_sensitivity_2025": {
+    "schema_version": 1,
+    "states": {
+      "north_carolina": {
+        "name": "North Carolina",
+        "status": "new_source_candidate_not_research_ready",
+        "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/nc_block_union_candidate/nc_block_union_candidate.gpkg",
+        "layer": "precincts",
+        "districts": 14,
+        "expected": {
+          "geographic_units": 2681,
+          "population": 10439388,
+          "dem_votes": 2713609,
+          "rep_votes": 2896942
+        },
+        "columns": {
+          "population": "TOTPOP",
+          "dem": "G24PREDHAR",
+          "rep": "G24PRERTRU"
+        },
+        "default_year": "2025",
+        "plans": {
+          "2025": {
+            "assignment": "CONG_DIST_2025",
+            "state_label": "nc_population_sensitivity_2025_20261102",
+            "epsilon": 0.01,
+            "node_repeats": 2,
+            "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2025/ensembles",
+            "checkpoint_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2025/checkpoints",
+            "audit": {
+              "prefix": "nc_population_sensitivity_2025_20261102",
+              "seeds": [1707, 1808, 1909],
+              "steps": 5000,
+              "warmup": 500,
+              "window": 1000,
+              "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_population_sensitivity_2025/audit"
+            }
+          }
+        },
+        "notes": "Block-union population-tolerance sensitivity (\u00b11%) with 2,681 common units."
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "manifest_sha256": "6f5495d914fbed21a24311b0491e4650faf678740ac7423a25f2e7b05d00baa1",
+  "checkpoint_audit_sha256": "f6adcede16907d6f4779d35c70559c36fa8407c11f52c0f1c8f983838a864d2d",
+  "analysis_code_sha256": "c4c1cc8004522c024f6c364aad57ab5d542d8a60701282ae84b5d515e3f5a2e2",
+  "checkpoint_snapshots": 1220,
+  "pair_comparisons": 159990,
+  "conditions": [
+    {
+      "condition": "tx_rebuild",
+      "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg",
+      "dataset_sha256": "ff09876b030c693307cdf362fef38a0fccf00dee5ed8b6fb973fa29b86f20179",
+      "units": 9712,
+      "zero_population_units": 322,
+      "checkpoints": 160,
+      "reference_assignment": "CONG_DIST",
+      "figure": "tx_rebuild_distances.png",
+      "figure_sha256": "daa3e90e835f1fe78bd4d709caa63b0b40a93a77b651a67a6b43915c0dd2ce48"
+    },
+    {
+      "condition": "nc_block_union",
+      "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/nc_block_union_candidate/nc_block_union_candidate.gpkg",
+      "dataset_sha256": "e1c35f15fc97cf2ddcc6bb5e78dd15cc27d5c3b155b848db8bc655e32c66e969",
+      "units": 2681,
+      "zero_population_units": 3,
+      "checkpoints": 300,
+      "reference_assignment": "CONG_DIST",
+      "figure": "nc_block_union_distances.png",
+      "figure_sha256": "8fd566d89dfaaa39e1feb37a2ec2acece3dd413ef76fc7c5d423fdeb9cd8ec3d"
+    },
+    {
+      "condition": "nc_precinct_sensitivity",
+      "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/nc_common_candidate/nc_common_candidate.gpkg",
+      "dataset_sha256": "a5c45ecb290b151b4a9aabf8a4f42f552e11b8142be4ca50fda10fb198f9a27e",
+      "units": 2681,
+      "zero_population_units": 3,
+      "checkpoints": 300,
+      "reference_assignment": "CONG_DIST",
+      "figure": "nc_precinct_sensitivity_distances.png",
+      "figure_sha256": "190582b9df3f9c1c3d5d1fa2b19727e8e96c23191e77217944844753e6b97c4a"
+    },
+    {
+      "condition": "tx_population_sensitivity",
+      "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg",
+      "dataset_sha256": "ff09876b030c693307cdf362fef38a0fccf00dee5ed8b6fb973fa29b86f20179",
+      "units": 9712,
+      "zero_population_units": 322,
+      "checkpoints": 160,
+      "reference_assignment": "CONG_DIST",
+      "figure": "tx_population_sensitivity_distances.png",
+      "figure_sha256": "879498a4b8c7156b7f42ef076f4e6b23683dd24434d81610e1b734b41c781360"
+    },
+    {
+      "condition": "nc_population_sensitivity",
+      "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/nc_block_union_candidate/nc_block_union_candidate.gpkg",
+      "dataset_sha256": "e1c35f15fc97cf2ddcc6bb5e78dd15cc27d5c3b155b848db8bc655e32c66e969",
+      "units": 2681,
+      "zero_population_units": 3,
+      "checkpoints": 300,
+      "reference_assignment": "CONG_DIST",
+      "figure": "nc_population_sensitivity_distances.png",
+      "figure_sha256": "8e1f9ca0c179cc939a970918d693497af579ac08296a9b93bfa0edb1405f6427"
+    }
+  ],
+  "measure": "VI = 2 H(A,B) - H(A) - H(B), log base 2; unit weights include every unit, population weights assign zero mass to zero-population units",
+  "reference": "https://doi.org/10.1016/j.jmva.2006.11.013",
+  "limitations": "Saved checkpoints are spaced 100 states apart. Pair comparisons share plans and are dependent; counts are not effective sample sizes. VI measures partition membership, not physical boundary displacement. These descriptive comparisons do not establish disconnected support or convergence."
+}
