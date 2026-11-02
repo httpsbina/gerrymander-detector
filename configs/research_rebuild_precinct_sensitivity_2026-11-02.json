@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "states": {
+    "texas": {
+      "name": "Texas",
+      "status": "new_source_candidate_not_research_ready",
+      "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg",
+      "layer": "precincts",
+      "districts": 38,
+      "expected": {
+        "geographic_units": 9712,
+        "population": 29145505,
+        "dem_votes": 4835134,
+        "rep_votes": 6393403
+      },
+      "columns": {
+        "population": "TOTPOP",
+        "dem": "G24PREDHAR",
+        "rep": "G24PRERTRU"
+      },
+      "default_year": "current",
+      "plans": {
+        "current": {
+          "assignment": "CONG_DIST",
+          "state_label": "tx_rebuild_20261102",
+          "epsilon": 0.001,
+          "node_repeats": 2,
+          "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild/ensembles",
+          "checkpoint_dir": "outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild/checkpoints",
+          "audit": {
+            "prefix": "tx_rebuild_20261102",
+            "seeds": [1117, 2227, 3331, 4441],
+            "steps": 4000,
+            "warmup": 500,
+            "window": 500,
+            "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/tx_rebuild/audit"
+          }
+        }
+      },
+      "notes": "New-source research candidate with five explicitly approved ring repairs. Eight source overlap pairs remain documented. PLANC2333 is scored separately at block resolution. Not research-ready."
+    },
+    "north_carolina": {
+      "name": "North Carolina",
+      "status": "new_source_candidate_not_research_ready",
+      "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/nc_common_candidate/nc_common_candidate.gpkg",
+      "layer": "precincts",
+      "districts": 14,
+      "expected": {
+        "geographic_units": 2681,
+        "population": 10439388,
+        "dem_votes": 2713609,
+        "rep_votes": 2896942
+      },
+      "columns": {
+        "population": "TOTPOP",
+        "dem": "G24PREDHAR",
+        "rep": "G24PRERTRU"
+      },
+      "default_year": "2025",
+      "plans": {
+        "2023": {
+          "assignment": "CONG_DIST",
+          "state_label": "nc_precinct_sensitivity_2023_20261102",
+          "epsilon": 0.005,
+          "node_repeats": 2,
+          "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023/ensembles",
+          "checkpoint_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023/checkpoints",
+          "audit": {
+            "prefix": "nc_precinct_sensitivity_2023_20261102",
+            "seeds": [707, 808, 909],
+            "steps": 5000,
+            "warmup": 500,
+            "window": 1000,
+            "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2023/audit"
+          }
+        },
+        "2025": {
+          "assignment": "CONG_DIST_2025",
+          "state_label": "nc_precinct_sensitivity_2025_20261102",
+          "epsilon": 0.005,
+          "node_repeats": 2,
+          "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025/ensembles",
+          "checkpoint_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025/checkpoints",
+          "audit": {
+            "prefix": "nc_precinct_sensitivity_2025_20261102",
+            "seeds": [1707, 1808, 1909],
+            "steps": 5000,
+            "warmup": 500,
+            "window": 1000,
+            "output_dir": "outputs/analysis/rebuild_campaign_2026-11-02/nc_precinct_sensitivity_2025/audit"
+          }
+        }
+      },
+      "notes": "Separate NC precinct-geometry sensitivity experiment, with documented numerical overlaps and a distinct graph. Never pool with the block-union baseline. Not research-ready."
+    },
+    "pennsylvania": {
+      "name": "Pennsylvania",
+      "status": "pending_data",
+      "dataset": null,
+      "districts": 17,
+      "plans": {},
+      "notes": "Data-source authorization, geospatial harmonization, election columns, and official congressional assignments have not been validated. Do not simulate or claim an analysis is complete."
+    }
+  }
+}

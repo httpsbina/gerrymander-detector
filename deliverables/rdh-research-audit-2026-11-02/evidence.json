@@ -1,0 +1,3845 @@
+{
+  "schema_version": 1,
+  "scope": "Source acquisition, internal validation, candidate geography and enacted-plan sensitivity; MCMC reported separately",
+  "research_ready": false,
+  "generated_utc": "2026-11-02T07:19:18.788639+00:00",
+  "source_receipts": [
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/disag_votes_block/nc_2024_gen_2020_blocks_csv.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/north-carolina-2024-general-election-results-disaggregated-to-the-2020-block/",
+      "filename": "north_carolina/nc_2024_gen_2020_blocks_csv.zip",
+      "sha256": "8a990f5b6b09f97c2f7faec9150687cc1ac773de9c0b66b66e100593532ae0ff",
+      "bytes": 8336039,
+      "downloaded_utc": "2026-11-02T06:00:41.383533+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "README.txt",
+          "bytes": 33467
+        },
+        {
+          "name": "nc_2024_gen_2020_blocks.csv",
+          "bytes": 210638927
+        }
+      ]
+    },
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/elections_results_precinct_boundaries_2024/nc_2024_gen_prec.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/north-carolina-2024-general-election-precinct-level-results-and-boundaries/",
+      "filename": "north_carolina/nc_2024_gen_prec.zip",
+      "sha256": "64bd8926427c04e34cb069de6e4db889f45aaa3aa36a13e3fdd9ee707487011b",
+      "bytes": 81608469,
+      "downloaded_utc": "2026-11-02T06:02:25.017242+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "nc_2024_gen_all_prec/",
+          "bytes": 0
+        },
+        {
+          "name": "nc_2024_gen_all_prec/nc_2024_gen_all_prec.shp",
+          "bytes": 32274400
+        },
+        {
+          "name": "nc_2024_gen_all_prec/nc_2024_gen_all_prec.shx",
+          "bytes": 21364
+        },
+        {
+          "name": "nc_2024_gen_all_prec/nc_2024_gen_all_prec.dbf",
+          "bytes": 27595636
+        },
+        {
+          "name": "nc_2024_gen_all_prec/nc_2024_gen_all_prec.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_2024_gen_all_prec/nc_2024_gen_all_prec.prj",
+          "bytes": 549
+        },
+        {
+          "name": "nc_2024_gen_cong_prec/",
+          "bytes": 0
+        },
+        {
+          "name": "nc_2024_gen_cong_prec/nc_2024_gen_cong_prec.shp",
+          "bytes": 32517792
+        },
+        {
+          "name": "nc_2024_gen_cong_prec/nc_2024_gen_cong_prec.shx",
+          "bytes": 21524
+        },
+        {
+          "name": "nc_2024_gen_cong_prec/nc_2024_gen_cong_prec.dbf",
+          "bytes": 3046136
+        },
+        {
+          "name": "nc_2024_gen_cong_prec/nc_2024_gen_cong_prec.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_2024_gen_cong_prec/nc_2024_gen_cong_prec.prj",
+          "bytes": 549
+        },
+        {
+          "name": "nc_2024_gen_sldl_prec/",
+          "bytes": 0
+        },
+        {
+          "name": "nc_2024_gen_sldl_prec/nc_2024_gen_sldl_prec.shp",
+          "bytes": 32450164
+        },
+        {
+          "name": "nc_2024_gen_sldl_prec/nc_2024_gen_sldl_prec.shx",
+          "bytes": 21452
+        },
+        {
+          "name": "nc_2024_gen_sldl_prec/nc_2024_gen_sldl_prec.dbf",
+          "bytes": 15597151
+        },
+        {
+          "name": "nc_2024_gen_sldl_prec/nc_2024_gen_sldl_prec.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_2024_gen_sldl_prec/nc_2024_gen_sldl_prec.prj",
+          "bytes": 549
+        },
+        {
+          "name": "nc_2024_gen_sldu_prec/",
+          "bytes": 0
+        },
+        {
+          "name": "nc_2024_gen_sldu_prec/nc_2024_gen_sldu_prec.shp",
+          "bytes": 32365784
+        },
+        {
+          "name": "nc_2024_gen_sldu_prec/nc_2024_gen_sldu_prec.shx",
+          "bytes": 21460
+        },
+        {
+          "name": "nc_2024_gen_sldu_prec/nc_2024_gen_sldu_prec.dbf",
+          "bytes": 7845440
+        },
+        {
+          "name": "nc_2024_gen_sldu_prec/nc_2024_gen_sldu_prec.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_2024_gen_sldu_prec/nc_2024_gen_sldu_prec.prj",
+          "bytes": 549
+        },
+        {
+          "name": "README.txt",
+          "bytes": 35497
+        }
+      ]
+    },
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/legislative/2021_adopted_plans/nc_cong_adopted_2023.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/2024-north-carolina-congressional-districts-approved-plan/",
+      "filename": "north_carolina/nc_cong_adopted_2023.zip",
+      "sha256": "9a0cd336da24949dfb9de416f419c44d060bb046a7447ef2434eedf286ccc878",
+      "bytes": 14740784,
+      "downloaded_utc": "2026-11-02T06:05:04.999415+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "README.txt",
+          "bytes": 1088
+        },
+        {
+          "name": "SL 2023-145 Congress - 11 x 17 Map.pdf",
+          "bytes": 1651619
+        },
+        {
+          "name": "SL 2023-145 Congress - 19 x 36 Map.pdf",
+          "bytes": 3335528
+        },
+        {
+          "name": "SL 2023-145 Congress - Compactness Report.pdf",
+          "bytes": 87164
+        },
+        {
+          "name": "SL 2023-145 Congress - Shapefile/SL 2023-145.cpg",
+          "bytes": 5
+        },
+        {
+          "name": "SL 2023-145 Congress - Shapefile/SL 2023-145.dbf",
+          "bytes": 448
+        },
+        {
+          "name": "SL 2023-145 Congress - Shapefile/SL 2023-145.prj",
+          "bytes": 523
+        },
+        {
+          "name": "SL 2023-145 Congress - Shapefile/SL 2023-145.sbn",
+          "bytes": 268
+        },
+        {
+          "name": "SL 2023-145 Congress - Shapefile/SL 2023-145.sbx",
+          "bytes": 132
+        },
+        {
+          "name": "SL 2023-145 Congress - Shapefile/SL 2023-145.shp",
+          "bytes": 3345508
+        },
+        {
+          "name": "SL 2023-145 Congress - Shapefile/SL 2023-145.shx",
+          "bytes": 212
+        },
+        {
+          "name": "SL 2023-145 Congress - StatPack2023_C.pdf",
+          "bytes": 2919756
+        },
+        {
+          "name": "SL 2023-145 Congress - StatPack2023_RVR_C.pdf",
+          "bytes": 3821426
+        },
+        {
+          "name": "SL 2023-145.csv",
+          "bytes": 5521613
+        }
+      ]
+    },
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/legislative/2021_adopted_plans/nc_cong_adopted_2025.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/2025-north-carolina-congressional-districts-approved-plan/",
+      "filename": "north_carolina/nc_cong_adopted_2025.zip",
+      "sha256": "2652543b01b0a24e186f54f7870c4b367c00877f85e026b23a285298922f779c",
+      "bytes": 11550320,
+      "downloaded_utc": "2026-11-02T06:02:39.207347+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "README.txt",
+          "bytes": 974
+        },
+        {
+          "name": "NCGA_CCM-2 - Shapefile/",
+          "bytes": 0
+        },
+        {
+          "name": "NCGA_CCM-2 - Shapefile/CCM-2.cpg",
+          "bytes": 5
+        },
+        {
+          "name": "NCGA_CCM-2 - Shapefile/CCM-2.dbf",
+          "bytes": 890
+        },
+        {
+          "name": "NCGA_CCM-2 - Shapefile/CCM-2.prj",
+          "bytes": 523
+        },
+        {
+          "name": "NCGA_CCM-2 - Shapefile/CCM-2.sbn",
+          "bytes": 268
+        },
+        {
+          "name": "NCGA_CCM-2 - Shapefile/CCM-2.sbx",
+          "bytes": 132
+        },
+        {
+          "name": "NCGA_CCM-2 - Shapefile/CCM-2.shp",
+          "bytes": 3357124
+        },
+        {
+          "name": "NCGA_CCM-2 - Shapefile/CCM-2.shx",
+          "bytes": 212
+        },
+        {
+          "name": "NCGA_CCM-2  - StatPack2025_C.pdf",
+          "bytes": 3279025
+        },
+        {
+          "name": "NCGA_CCM-2 - 11 x 17 Map_.pdf",
+          "bytes": 1810318
+        },
+        {
+          "name": "NCGA_CCM-2 - 19 x 36 Map .pdf",
+          "bytes": 11555165
+        },
+        {
+          "name": "NCGA_CCM-2 - Measures of Compactness Rpt.pdf",
+          "bytes": 92200
+        },
+        {
+          "name": "NCGA_CCM-2 .csv",
+          "bytes": 5521614
+        }
+      ]
+    },
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/PL2020_5FILES/shp/nc_pl2020_b.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/north-carolina-block-pl-94171-2020-by-table/",
+      "filename": "north_carolina/nc_pl2020_b.zip",
+      "sha256": "6e19de2094be2b1e276a890d710767d28bb73fa372801d6f95d095e98d445862",
+      "bytes": 1027237633,
+      "downloaded_utc": "2026-11-02T06:04:22.658667+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "README.txt",
+          "bytes": 3395
+        },
+        {
+          "name": "nc_pl2020_p1_b.shp",
+          "bytes": 313795448
+        },
+        {
+          "name": "nc_pl2020_p1_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_pl2020_p1_b.dbf",
+          "bytes": 397317668
+        },
+        {
+          "name": "nc_pl2020_p1_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "nc_pl2020_p1_b.shx",
+          "bytes": 1893204
+        },
+        {
+          "name": "nc_pl2020_p2_b.shp",
+          "bytes": 313795448
+        },
+        {
+          "name": "nc_pl2020_p2_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_pl2020_p2_b.dbf",
+          "bytes": 405836700
+        },
+        {
+          "name": "nc_pl2020_p2_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "nc_pl2020_p2_b.shx",
+          "bytes": 1893204
+        },
+        {
+          "name": "nc_pl2020_p3_b.shp",
+          "bytes": 313795448
+        },
+        {
+          "name": "nc_pl2020_p3_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_pl2020_p3_b.dbf",
+          "bytes": 397317668
+        },
+        {
+          "name": "nc_pl2020_p3_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "nc_pl2020_p3_b.shx",
+          "bytes": 1893204
+        },
+        {
+          "name": "nc_pl2020_p4_b.shp",
+          "bytes": 313795448
+        },
+        {
+          "name": "nc_pl2020_p4_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_pl2020_p4_b.dbf",
+          "bytes": 405836700
+        },
+        {
+          "name": "nc_pl2020_p4_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "nc_pl2020_p4_b.shx",
+          "bytes": 1893204
+        },
+        {
+          "name": "nc_pl2020_h1p5_b.shp",
+          "bytes": 313795448
+        },
+        {
+          "name": "nc_pl2020_h1p5_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "nc_pl2020_h1p5_b.dbf",
+          "bytes": 150265740
+        },
+        {
+          "name": "nc_pl2020_h1p5_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "nc_pl2020_h1p5_b.shx",
+          "bytes": 1893204
+        }
+      ]
+    },
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/disag_votes_block/tx_2024_gen_2020_blocks_csv.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/texas-2024-general-election-results-disaggregated-to-the-2020-block/",
+      "filename": "texas/tx_2024_gen_2020_blocks_csv.zip",
+      "sha256": "e78d858bdc4233938c1dbfdf02f287abd2652929d0158ed13fdac4a73c84953b",
+      "bytes": 13544758,
+      "downloaded_utc": "2026-11-02T06:00:24.010275+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "README.txt",
+          "bytes": 16369
+        },
+        {
+          "name": "tx_2024_gen_2020_blocks.csv",
+          "bytes": 459003369
+        }
+      ]
+    },
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/elections_results_precinct_boundaries_2024/tx_2024_gen_tx_vtd.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/texas-2024-general-election-precinct-level-texas-vtd-results-and-boundaries/",
+      "filename": "texas/tx_2024_gen_tx_vtd.zip",
+      "sha256": "c60db2902065214bee5345923a1222870c4f0234a4689c545699b60a2d6b1a69",
+      "bytes": 102707646,
+      "downloaded_utc": "2026-11-02T06:02:36.548095+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "tx_2024_gen_all_tx_vtd/",
+          "bytes": 0
+        },
+        {
+          "name": "tx_2024_gen_cong_tx_vtd/",
+          "bytes": 0
+        },
+        {
+          "name": "README.txt",
+          "bytes": 19363
+        },
+        {
+          "name": "tx_2024_gen_all_tx_vtd/tx_2024_gen_all_tx_vtd.shx",
+          "bytes": 77796
+        },
+        {
+          "name": "tx_2024_gen_all_tx_vtd/tx_2024_gen_all_tx_vtd.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "tx_2024_gen_all_tx_vtd/tx_2024_gen_all_tx_vtd.shp",
+          "bytes": 73104268
+        },
+        {
+          "name": "tx_2024_gen_all_tx_vtd/tx_2024_gen_all_tx_vtd.dbf",
+          "bytes": 61147602
+        },
+        {
+          "name": "tx_2024_gen_all_tx_vtd/tx_2024_gen_all_tx_vtd.prj",
+          "bytes": 519
+        },
+        {
+          "name": "tx_2024_gen_cong_tx_vtd/tx_2024_gen_cong_tx_vtd.prj",
+          "bytes": 519
+        },
+        {
+          "name": "tx_2024_gen_cong_tx_vtd/tx_2024_gen_cong_tx_vtd.shx",
+          "bytes": 77796
+        },
+        {
+          "name": "tx_2024_gen_cong_tx_vtd/tx_2024_gen_cong_tx_vtd.shp",
+          "bytes": 73104268
+        },
+        {
+          "name": "tx_2024_gen_cong_tx_vtd/tx_2024_gen_cong_tx_vtd.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "tx_2024_gen_cong_tx_vtd/tx_2024_gen_cong_tx_vtd.dbf",
+          "bytes": 17183154
+        }
+      ]
+    },
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/legislative/2021_adopted_plans/tx_cong_adopted_2025.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/2025-texas-congressional-districts-approved-plan/",
+      "filename": "texas/tx_cong_adopted_2025.zip",
+      "sha256": "36933aec5ece1703b82ed609662ad14fa4adb9d1f5bc82636b11a5a2ea2ac4b3",
+      "bytes": 26141444,
+      "downloaded_utc": "2026-11-02T06:02:42.653343+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "PLANC2333/",
+          "bytes": 0
+        },
+        {
+          "name": "PLANC2333/PLANC2333.cpg",
+          "bytes": 5
+        },
+        {
+          "name": "PLANC2333/PLANC2333.dbf",
+          "bytes": 484
+        },
+        {
+          "name": "PLANC2333/PLANC2333.prj",
+          "bytes": 530
+        },
+        {
+          "name": "PLANC2333/PLANC2333.sbn",
+          "bytes": 492
+        },
+        {
+          "name": "PLANC2333/PLANC2333.sbx",
+          "bytes": 148
+        },
+        {
+          "name": "PLANC2333/PLANC2333.shp",
+          "bytes": 6581492
+        },
+        {
+          "name": "PLANC2333/PLANC2333.shx",
+          "bytes": 404
+        },
+        {
+          "name": "PLANC2333.csv",
+          "bytes": 14581459
+        },
+        {
+          "name": "planc2333_map_report_package.pdf",
+          "bytes": 19511430
+        },
+        {
+          "name": "README.txt",
+          "bytes": 799
+        }
+      ]
+    },
+    {
+      "provider": "Redistricting Data Hub",
+      "source_url": "https://data.redistrictingdatahub.org/web_ready_stage/PL2020_5FILES/shp/tx_pl2020_b.zip",
+      "source_page": "https://redistrictingdatahub.org/dataset/texas-block-pl-94171-2020-by-table/",
+      "filename": "texas/tx_pl2020_b.zip",
+      "sha256": "a9901c388beba44c2ef50fe3959194285294b1140ed2a563a719d4c47ee02be1",
+      "bytes": 2140869167,
+      "downloaded_utc": "2026-11-02T06:05:14.597882+00:00",
+      "status": "DOWNLOADED_NOT_VALIDATED",
+      "terms_authorized": true,
+      "zip_crc": "pass",
+      "members": [
+        {
+          "name": "README.txt",
+          "bytes": 3386
+        },
+        {
+          "name": "tx_pl2020_p1_b.shp",
+          "bytes": 649307076
+        },
+        {
+          "name": "tx_pl2020_p1_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "tx_pl2020_p1_b.dbf",
+          "bytes": 1122845469
+        },
+        {
+          "name": "tx_pl2020_p1_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "tx_pl2020_p1_b.shx",
+          "bytes": 5350156
+        },
+        {
+          "name": "tx_pl2020_p2_b.shp",
+          "bytes": 649307076
+        },
+        {
+          "name": "tx_pl2020_p2_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "tx_pl2020_p2_b.dbf",
+          "bytes": 1146920785
+        },
+        {
+          "name": "tx_pl2020_p2_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "tx_pl2020_p2_b.shx",
+          "bytes": 5350156
+        },
+        {
+          "name": "tx_pl2020_p3_b.shp",
+          "bytes": 649307076
+        },
+        {
+          "name": "tx_pl2020_p3_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "tx_pl2020_p3_b.dbf",
+          "bytes": 1122845469
+        },
+        {
+          "name": "tx_pl2020_p3_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "tx_pl2020_p3_b.shx",
+          "bytes": 5350156
+        },
+        {
+          "name": "tx_pl2020_p4_b.shp",
+          "bytes": 649307076
+        },
+        {
+          "name": "tx_pl2020_p4_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "tx_pl2020_p4_b.dbf",
+          "bytes": 1146920785
+        },
+        {
+          "name": "tx_pl2020_p4_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "tx_pl2020_p4_b.shx",
+          "bytes": 5350156
+        },
+        {
+          "name": "tx_pl2020_h1p5_b.shp",
+          "bytes": 649307076
+        },
+        {
+          "name": "tx_pl2020_h1p5_b.cpg",
+          "bytes": 10
+        },
+        {
+          "name": "tx_pl2020_h1p5_b.dbf",
+          "bytes": 424661305
+        },
+        {
+          "name": "tx_pl2020_h1p5_b.prj",
+          "bytes": 167
+        },
+        {
+          "name": "tx_pl2020_h1p5_b.shx",
+          "bytes": 5350156
+        }
+      ]
+    }
+  ],
+  "source_audits": {
+    "texas": {
+      "state": "texas",
+      "research_ready": false,
+      "attribution": "This analysis was conducted using data from the Redistricting Data Hub.",
+      "vote_interpretation": "Modeled allocations to Census blocks, not observed block returns",
+      "population_blocks": 668757,
+      "election_blocks": 668757,
+      "election_precinct_ids": 9712,
+      "zero_population_blocks": 219672,
+      "population_blocks_missing_votes": 0,
+      "vote_blocks_missing_population": 0,
+      "totals": {
+        "population": 29145505,
+        "dem_votes": 4835134,
+        "rep_votes": 6393403
+      },
+      "historical_expected_totals": {
+        "geographic_units": 9712,
+        "population": 29145505,
+        "dem_votes": 4835134,
+        "rep_votes": 6393403
+      },
+      "source_files": [
+        {
+          "path": "data/external/rdh/rebuild_2026-11-02/texas/tx_pl2020_b.zip",
+          "bytes": 2140869167,
+          "sha256": "a9901c388beba44c2ef50fe3959194285294b1140ed2a563a719d4c47ee02be1"
+        },
+        {
+          "path": "data/external/rdh/rebuild_2026-11-02/texas/tx_2024_gen_2020_blocks_csv.zip",
+          "bytes": 13544758,
+          "sha256": "e78d858bdc4233938c1dbfdf02f287abd2652929d0158ed13fdac4a73c84953b"
+        },
+        {
+          "path": "data/external/rdh/rebuild_2026-11-02/texas/tx_cong_adopted_2025.zip",
+          "bytes": 26141444,
+          "sha256": "36933aec5ece1703b82ed609662ad14fa4adb9d1f5bc82636b11a5a2ea2ac4b3"
+        }
+      ],
+      "plans": {
+        "2025": {
+          "assignment_blocks": 668757,
+          "exact_block_set_match": true,
+          "missing_population_blocks": 0,
+          "extra_assignment_blocks": 0,
+          "districts": [
+            {
+              "district": 1,
+              "blocks": 27270,
+              "population": 766987,
+              "dem_modeled_votes": 80853,
+              "rep_modeled_votes": 241951,
+              "dem_two_party_share": 0.25047087396686535,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 2,
+              "blocks": 7574,
+              "population": 766987,
+              "dem_modeled_votes": 127882,
+              "rep_modeled_votes": 204844,
+              "dem_two_party_share": 0.3843462789201926,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 3,
+              "blocks": 16921,
+              "population": 766987,
+              "dem_modeled_votes": 137007,
+              "rep_modeled_votes": 223472,
+              "dem_two_party_share": 0.38006929668579864,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 4,
+              "blocks": 19732,
+              "population": 766987,
+              "dem_modeled_votes": 134651,
+              "rep_modeled_votes": 225152,
+              "dem_two_party_share": 0.3742353454529284,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 5,
+              "blocks": 16862,
+              "population": 766987,
+              "dem_modeled_votes": 113222,
+              "rep_modeled_votes": 176425,
+              "dem_two_party_share": 0.3908965050561546,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 6,
+              "blocks": 14650,
+              "population": 766987,
+              "dem_modeled_votes": 116829,
+              "rep_modeled_votes": 187695,
+              "dem_two_party_share": 0.3836446388461993,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 7,
+              "blocks": 7070,
+              "population": 766987,
+              "dem_modeled_votes": 153109,
+              "rep_modeled_votes": 93620,
+              "dem_two_party_share": 0.6205553461490136,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 8,
+              "blocks": 8446,
+              "population": 766987,
+              "dem_modeled_votes": 109498,
+              "rep_modeled_votes": 194468,
+              "dem_two_party_share": 0.36023107847588215,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 9,
+              "blocks": 12692,
+              "population": 766987,
+              "dem_modeled_votes": 78614,
+              "rep_modeled_votes": 118108,
+              "dem_two_party_share": 0.39961976799747867,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 10,
+              "blocks": 19908,
+              "population": 766987,
+              "dem_modeled_votes": 134132,
+              "rep_modeled_votes": 214153,
+              "dem_two_party_share": 0.385121380478631,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 11,
+              "blocks": 28328,
+              "population": 766987,
+              "dem_modeled_votes": 94102,
+              "rep_modeled_votes": 194572,
+              "dem_two_party_share": 0.3259801714044216,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 12,
+              "blocks": 14985,
+              "population": 766987,
+              "dem_modeled_votes": 117747,
+              "rep_modeled_votes": 192722,
+              "dem_two_party_share": 0.37925525575822383,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 13,
+              "blocks": 43795,
+              "population": 766987,
+              "dem_modeled_votes": 80157,
+              "rep_modeled_votes": 220421,
+              "dem_two_party_share": 0.26667620384725427,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 14,
+              "blocks": 18230,
+              "population": 766987,
+              "dem_modeled_votes": 124887,
+              "rep_modeled_votes": 206267,
+              "dem_two_party_share": 0.3771266540642722,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 15,
+              "blocks": 20399,
+              "population": 766987,
+              "dem_modeled_votes": 92648,
+              "rep_modeled_votes": 133387,
+              "dem_two_party_share": 0.4098834251332758,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 16,
+              "blocks": 11837,
+              "population": 766987,
+              "dem_modeled_votes": 131977,
+              "rep_modeled_votes": 94329,
+              "dem_two_party_share": 0.5831794119466563,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 17,
+              "blocks": 24107,
+              "population": 766987,
+              "dem_modeled_votes": 123175,
+              "rep_modeled_votes": 192406,
+              "dem_two_party_share": 0.3903118375314103,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 18,
+              "blocks": 10922,
+              "population": 766987,
+              "dem_modeled_votes": 186804,
+              "rep_modeled_votes": 53116,
+              "dem_two_party_share": 0.7786095365121707,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 19,
+              "blocks": 50079,
+              "population": 766987,
+              "dem_modeled_votes": 66862,
+              "rep_modeled_votes": 212708,
+              "dem_two_party_share": 0.239160138784562,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 20,
+              "blocks": 10045,
+              "population": 766987,
+              "dem_modeled_votes": 144268,
+              "rep_modeled_votes": 79626,
+              "dem_two_party_share": 0.6443584910716679,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 21,
+              "blocks": 14678,
+              "population": 766987,
+              "dem_modeled_votes": 159540,
+              "rep_modeled_votes": 249966,
+              "dem_two_party_share": 0.38959136129873556,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 22,
+              "blocks": 12374,
+              "population": 766987,
+              "dem_modeled_votes": 126910,
+              "rep_modeled_votes": 201291,
+              "dem_two_party_share": 0.3866837700067946,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 23,
+              "blocks": 36589,
+              "population": 766987,
+              "dem_modeled_votes": 133940,
+              "rep_modeled_votes": 181128,
+              "dem_two_party_share": 0.4251145784402097,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 24,
+              "blocks": 11457,
+              "population": 766987,
+              "dem_modeled_votes": 153016,
+              "rep_modeled_votes": 213030,
+              "dem_two_party_share": 0.4180239642012206,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 25,
+              "blocks": 21751,
+              "population": 766987,
+              "dem_modeled_votes": 115589,
+              "rep_modeled_votes": 189984,
+              "dem_two_party_share": 0.3782696769675331,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 26,
+              "blocks": 13665,
+              "population": 766987,
+              "dem_modeled_votes": 144965,
+              "rep_modeled_votes": 237128,
+              "dem_two_party_share": 0.37939716247091676,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 27,
+              "blocks": 26581,
+              "population": 766987,
+              "dem_modeled_votes": 125620,
+              "rep_modeled_votes": 194243,
+              "dem_two_party_share": 0.39273063780430995,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 28,
+              "blocks": 21954,
+              "population": 766987,
+              "dem_modeled_votes": 88384,
+              "rep_modeled_votes": 109012,
+              "dem_two_party_share": 0.44774970110843176,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 29,
+              "blocks": 7529,
+              "population": 766987,
+              "dem_modeled_votes": 116002,
+              "rep_modeled_votes": 61313,
+              "dem_two_party_share": 0.6542142514733666,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 30,
+              "blocks": 11537,
+              "population": 766987,
+              "dem_modeled_votes": 177383,
+              "rep_modeled_votes": 62628,
+              "dem_two_party_share": 0.7390619596601823,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 31,
+              "blocks": 17668,
+              "population": 766987,
+              "dem_modeled_votes": 134752,
+              "rep_modeled_votes": 211395,
+              "dem_two_party_share": 0.38929125487148525,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 32,
+              "blocks": 14372,
+              "population": 766987,
+              "dem_modeled_votes": 129701,
+              "rep_modeled_votes": 187132,
+              "dem_two_party_share": 0.4093670798180745,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 33,
+              "blocks": 11139,
+              "population": 766987,
+              "dem_modeled_votes": 136382,
+              "rep_modeled_votes": 68184,
+              "dem_two_party_share": 0.6666894791900903,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 34,
+              "blocks": 18253,
+              "population": 766987,
+              "dem_modeled_votes": 106947,
+              "rep_modeled_votes": 131304,
+              "dem_two_party_share": 0.4488837402571238,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 35,
+              "blocks": 12037,
+              "population": 766987,
+              "dem_modeled_votes": 133351,
+              "rep_modeled_votes": 164837,
+              "dem_two_party_share": 0.4472044482004641,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 36,
+              "blocks": 17763,
+              "population": 766987,
+              "dem_modeled_votes": 114961,
+              "rep_modeled_votes": 192718,
+              "dem_two_party_share": 0.37363940990447836,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 37,
+              "blocks": 8875,
+              "population": 766987,
+              "dem_modeled_votes": 252355,
+              "rep_modeled_votes": 67688,
+              "dem_two_party_share": 0.7885034198529572,
+              "population_relative_deviation": 3.4310608132415155e-8
+            },
+            {
+              "district": 38,
+              "blocks": 6683,
+              "population": 766986,
+              "dem_modeled_votes": 136912,
+              "rep_modeled_votes": 210980,
+              "dem_two_party_share": 0.39354742276338633,
+              "population_relative_deviation": -1.2694924997891377e-6
+            }
+          ],
+          "dem_modeled_seats": 8,
+          "tied_districts": 0,
+          "max_abs_population_deviation": 1.2694924997891377e-6
+        }
+      },
+      "errors": [],
+      "geometry_validation": "not run",
+      "convergence_diagnostics": "unavailable; no chains",
+      "tabular_integrity": "pass",
+      "state_cli_recomputation_identical_csv": true
+    },
+    "north_carolina": {
+      "state": "north_carolina",
+      "research_ready": false,
+      "attribution": "This analysis was conducted using data from the Redistricting Data Hub.",
+      "vote_interpretation": "Modeled allocations to Census blocks, not observed block returns",
+      "population_blocks": 236638,
+      "election_blocks": 236638,
+      "election_precinct_ids": 2658,
+      "zero_population_blocks": 61650,
+      "population_blocks_missing_votes": 0,
+      "vote_blocks_missing_population": 0,
+      "totals": {
+        "population": 10439388,
+        "dem_votes": 2713609,
+        "rep_votes": 2896942
+      },
+      "historical_expected_totals": {
+        "geographic_units": 2681,
+        "population": 10439388,
+        "dem_votes": 2713609,
+        "rep_votes": 2896942
+      },
+      "source_files": [
+        {
+          "path": "data/external/rdh/rebuild_2026-11-02/north_carolina/nc_pl2020_b.zip",
+          "bytes": 1027237633,
+          "sha256": "6e19de2094be2b1e276a890d710767d28bb73fa372801d6f95d095e98d445862"
+        },
+        {
+          "path": "data/external/rdh/rebuild_2026-11-02/north_carolina/nc_2024_gen_2020_blocks_csv.zip",
+          "bytes": 8336039,
+          "sha256": "8a990f5b6b09f97c2f7faec9150687cc1ac773de9c0b66b66e100593532ae0ff"
+        },
+        {
+          "path": "data/external/rdh/rebuild_2026-11-02/north_carolina/nc_cong_adopted_2023.zip",
+          "bytes": 14740784,
+          "sha256": "9a0cd336da24949dfb9de416f419c44d060bb046a7447ef2434eedf286ccc878"
+        },
+        {
+          "path": "data/external/rdh/rebuild_2026-11-02/north_carolina/nc_cong_adopted_2025.zip",
+          "bytes": 11550320,
+          "sha256": "2652543b01b0a24e186f54f7870c4b367c00877f85e026b23a285298922f779c"
+        }
+      ],
+      "plans": {
+        "2023": {
+          "assignment_blocks": 236638,
+          "exact_block_set_match": true,
+          "missing_population_blocks": 0,
+          "extra_assignment_blocks": 0,
+          "districts": [
+            {
+              "district": 1,
+              "blocks": 23945,
+              "population": 745670,
+              "dem_modeled_votes": 182362,
+              "rep_modeled_votes": 194330,
+              "dem_two_party_share": 0.48411434275216886,
+              "population_relative_deviation": -7.663284476988608e-7
+            },
+            {
+              "district": 2,
+              "blocks": 9220,
+              "population": 745670,
+              "dem_modeled_votes": 271793,
+              "rep_modeled_votes": 132626,
+              "dem_two_party_share": 0.6720579399088569,
+              "population_relative_deviation": -7.663284476988608e-7
+            },
+            {
+              "district": 3,
+              "blocks": 22208,
+              "population": 745671,
+              "dem_modeled_votes": 147303,
+              "rep_modeled_votes": 230754,
+              "dem_two_party_share": 0.38963172220062053,
+              "population_relative_deviation": 5.747463356353677e-7
+            },
+            {
+              "district": 4,
+              "blocks": 10902,
+              "population": 745671,
+              "dem_modeled_votes": 312380,
+              "rep_modeled_votes": 115422,
+              "dem_two_party_share": 0.7301976147844096,
+              "population_relative_deviation": 5.747463356353677e-7
+            },
+            {
+              "district": 5,
+              "blocks": 18978,
+              "population": 745671,
+              "dem_modeled_votes": 165434,
+              "rep_modeled_votes": 237644,
+              "dem_two_party_share": 0.41042676603535794,
+              "population_relative_deviation": 5.747463356353677e-7
+            },
+            {
+              "district": 6,
+              "blocks": 15029,
+              "population": 745671,
+              "dem_modeled_votes": 159345,
+              "rep_modeled_votes": 226290,
+              "dem_two_party_share": 0.4132016025516356,
+              "population_relative_deviation": 5.747463356353677e-7
+            },
+            {
+              "district": 7,
+              "blocks": 19891,
+              "population": 745671,
+              "dem_modeled_votes": 188296,
+              "rep_modeled_votes": 249694,
+              "dem_two_party_share": 0.42990935866115665,
+              "population_relative_deviation": 5.747463356353677e-7
+            },
+            {
+              "district": 8,
+              "blocks": 18995,
+              "population": 745671,
+              "dem_modeled_votes": 162381,
+              "rep_modeled_votes": 241645,
+              "dem_two_party_share": 0.40190730299535177,
+              "population_relative_deviation": 5.747463356353677e-7
+            },
+            {
+              "district": 9,
+              "blocks": 18551,
+              "population": 745671,
+              "dem_modeled_votes": 158541,
+              "rep_modeled_votes": 219095,
+              "dem_two_party_share": 0.4198249107606266,
+              "population_relative_deviation": 5.747463356353677e-7
+            },
+            {
+              "district": 10,
+              "blocks": 16509,
+              "population": 745670,
+              "dem_modeled_votes": 168701,
+              "rep_modeled_votes": 242192,
+              "dem_two_party_share": 0.41057160866697656,
+              "population_relative_deviation": -7.663284476988608e-7
+            },
+            {
+              "district": 11,
+              "blocks": 24316,
+              "population": 745670,
+              "dem_modeled_votes": 196311,
+              "rep_modeled_votes": 238070,
+              "dem_two_party_share": 0.451932750281435,
+              "population_relative_deviation": -7.663284476988608e-7
+            },
+            {
+              "district": 12,
+              "blocks": 7419,
+              "population": 745670,
+              "dem_modeled_votes": 254937,
+              "rep_modeled_votes": 91826,
+              "dem_two_party_share": 0.7351908940688597,
+              "population_relative_deviation": -7.663284476988608e-7
+            },
+            {
+              "district": 13,
+              "blocks": 14143,
+              "population": 745670,
+              "dem_modeled_votes": 174768,
+              "rep_modeled_votes": 244885,
+              "dem_two_party_share": 0.41645835964475414,
+              "population_relative_deviation": -7.663284476988608e-7
+            },
+            {
+              "district": 14,
+              "blocks": 16532,
+              "population": 745671,
+              "dem_modeled_votes": 171057,
+              "rep_modeled_votes": 232469,
+              "dem_two_party_share": 0.42390577063187995,
+              "population_relative_deviation": 5.747463356353677e-7
+            }
+          ],
+          "dem_modeled_seats": 3,
+          "tied_districts": 0,
+          "max_abs_population_deviation": 7.663284476988608e-7
+        },
+        "2025": {
+          "assignment_blocks": 236638,
+          "exact_block_set_match": true,
+          "missing_population_blocks": 0,
+          "extra_assignment_blocks": 0,
+          "districts": [
+            {
+              "district": 1,
+              "blocks": 26755,
+              "population": 745671,
+              "dem_modeled_votes": 182057,
+              "rep_modeled_votes": 230353,
+              "dem_two_party_share": 0.44144661865619167,
+              "population_relative_deviation": 5.747463356353677e-7
+            },
+            {
+              "district": 2,
+              "blocks": 9220,
+              "population": 745670,
+              "dem_modeled_votes": 271793,
+              "rep_modeled_votes": 132626,
+              "dem_two_party_share": 0.6720579399088569,
+              "population_relative_deviation": -7.663284476988608e-7
+            },
+            {
+              "district": 3,
+              "blocks": 19398,
+              "population": 745670,
+              "dem_modeled_votes": 147608,
+              "rep_modeled_votes": 194731,
+              "dem_two_party_share": 0.4311749464711879,
+              "population_relative_deviation": -7.663284476988608e-7
+            },
+            {
+              "district": 4,
+              "blocks": 10902,
+              "population": 745671,
+              "dem_modeled_votes": 312380,
+              "rep_modeled_votes": 115422,
+              "dem_two_party_share": 0.7301976147844096,
+              "population_relative_deviation": 5.747463356353677e-7
+            },
+            {
+              "district": 5,
+              "blocks": 18978,
+              "population": 745671,
+              "dem_modeled_votes": 165434,
+              "rep_modeled_votes": 237644,
+              "dem_two_party_share": 0.41042676603535794,
+              "population_relative_deviation": 5.747463356353677e-7
+            },
+            {
+              "district": 6,
+              "blocks": 15029,
+              "population": 745671,
+              "dem_modeled_votes": 159345,
+              "rep_modeled_votes": 226290,
+              "dem_two_party_share": 0.4132016025516356,
+              "population_relative_deviation": 5.747463356353677e-7
+            },
+            {
+              "district": 7,
+              "blocks": 19891,
+              "population": 745671,
+              "dem_modeled_votes": 188296,
+              "rep_modeled_votes": 249694,
+              "dem_two_party_share": 0.42990935866115665,
+              "population_relative_deviation": 5.747463356353677e-7
+            },
+            {
+              "district": 8,
+              "blocks": 18995,
+              "population": 745671,
+              "dem_modeled_votes": 162381,
+              "rep_modeled_votes": 241645,
+              "dem_two_party_share": 0.40190730299535177,
+              "population_relative_deviation": 5.747463356353677e-7
+            },
+            {
+              "district": 9,
+              "blocks": 18551,
+              "population": 745671,
+              "dem_modeled_votes": 158541,
+              "rep_modeled_votes": 219095,
+              "dem_two_party_share": 0.4198249107606266,
+              "population_relative_deviation": 5.747463356353677e-7
+            },
+            {
+              "district": 10,
+              "blocks": 16509,
+              "population": 745670,
+              "dem_modeled_votes": 168701,
+              "rep_modeled_votes": 242192,
+              "dem_two_party_share": 0.41057160866697656,
+              "population_relative_deviation": -7.663284476988608e-7
+            },
+            {
+              "district": 11,
+              "blocks": 24316,
+              "population": 745670,
+              "dem_modeled_votes": 196311,
+              "rep_modeled_votes": 238070,
+              "dem_two_party_share": 0.451932750281435,
+              "population_relative_deviation": -7.663284476988608e-7
+            },
+            {
+              "district": 12,
+              "blocks": 7419,
+              "population": 745670,
+              "dem_modeled_votes": 254937,
+              "rep_modeled_votes": 91826,
+              "dem_two_party_share": 0.7351908940688597,
+              "population_relative_deviation": -7.663284476988608e-7
+            },
+            {
+              "district": 13,
+              "blocks": 14143,
+              "population": 745670,
+              "dem_modeled_votes": 174768,
+              "rep_modeled_votes": 244885,
+              "dem_two_party_share": 0.41645835964475414,
+              "population_relative_deviation": -7.663284476988608e-7
+            },
+            {
+              "district": 14,
+              "blocks": 16532,
+              "population": 745671,
+              "dem_modeled_votes": 171057,
+              "rep_modeled_votes": 232469,
+              "dem_two_party_share": 0.42390577063187995,
+              "population_relative_deviation": 5.747463356353677e-7
+            }
+          ],
+          "dem_modeled_seats": 3,
+          "tied_districts": 0,
+          "max_abs_population_deviation": 7.663284476988608e-7
+        }
+      },
+      "errors": [],
+      "geometry_validation": "not run",
+      "convergence_diagnostics": "unavailable; no chains",
+      "assignment_changes": {
+        "blocks": 18826,
+        "population": 543381,
+        "dem_modeled_votes": 117023,
+        "rep_modeled_votes": 177741
+      },
+      "onslow_sw19": {
+        "blocks": 208,
+        "population": 7450,
+        "assignment_pairs": [
+          [3, 1],
+          [3, 3]
+        ],
+        "geometry_verified": false
+      },
+      "tabular_integrity": "pass",
+      "state_cli_recomputation_identical_csv": true
+    }
+  },
+  "candidate_geography": {
+    "texas": {
+      "features": 9712,
+      "unique_ids": 9712,
+      "missing_ids": 0,
+      "crs": "PROJCS[\"NAD_1983_Lambert_Conformal_Conic\",GEOGCS[\"GCS_NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Lambert_Conformal_Conic_2SP\"],PARAMETER[\"latitude_of_origin\",31.1666666666667],PARAMETER[\"central_meridian\",-100],PARAMETER[\"standard_parallel_1\",27.4166666666667],PARAMETER[\"standard_parallel_2\",34.9166666666667],PARAMETER[\"false_easting\",1000000],PARAMETER[\"false_northing\",1000000],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "linear_unit_metres": 1.0,
+      "invalid": [],
+      "empty": 0,
+      "missing_geometry": 0,
+      "overlaps": [
+        {
+          "left": "047-0002",
+          "right": "261-0002",
+          "area_m2": 0.19846076815951763
+        },
+        {
+          "left": "261-0002",
+          "right": "273-0034",
+          "area_m2": 0.14250442356071144
+        },
+        {
+          "left": "047-003S",
+          "right": "261-0003",
+          "area_m2": 0.13448495832666352
+        },
+        {
+          "left": "261-0001",
+          "right": "273-0034",
+          "area_m2": 0.028963676702009264
+        },
+        {
+          "left": "157-1014",
+          "right": "201-0639",
+          "area_m2": 0.0168069469571443
+        },
+        {
+          "left": "201-0639",
+          "right": "473-0420",
+          "area_m2": 0.007816309135945394
+        },
+        {
+          "left": "261-0001",
+          "right": "273-0042",
+          "area_m2": 0.0009153827817293793
+        },
+        {
+          "left": "047-003S",
+          "right": "261-0002",
+          "area_m2": 0.00023668866957781502
+        }
+      ],
+      "intersection_errors": [],
+      "adjacency_definition": "Positive shared source-polygon boundary length; no repair or added edges",
+      "overlap_pairs": 8,
+      "sum_pairwise_overlap_area_m2": 0.5301891542932987,
+      "max_pairwise_overlap_area_m2": 0.19846076815951763,
+      "graph_nodes": 9712,
+      "graph_edges": 26860,
+      "graph_components": 1,
+      "isolates": [],
+      "district_components": {
+        "01": 1,
+        "02": 1,
+        "03": 1,
+        "04": 1,
+        "05": 1,
+        "06": 1,
+        "07": 1,
+        "08": 1,
+        "09": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1,
+        "30": 1,
+        "31": 1,
+        "32": 1,
+        "33": 1,
+        "34": 1,
+        "35": 1,
+        "36": 1,
+        "37": 1,
+        "38": 1
+      },
+      "research_ready": false,
+      "repairs": [
+        {
+          "id": "121-4222",
+          "original_reason": "Ring Self-intersection[1249686.23920001 1210494.1481]",
+          "operation": "shapely.make_valid; user approved five candidate-only repairs",
+          "area_change_m2": 7.450580596923828e-9,
+          "hausdorff_distance_m": 0.0
+        },
+        {
+          "id": "295-0106",
+          "original_reason": "Ring Self-intersection[951247.258400003 1585986.6062]",
+          "operation": "shapely.make_valid; user approved five candidate-only repairs",
+          "area_change_m2": -7.152557373046875e-7,
+          "hausdorff_distance_m": 0.0
+        },
+        {
+          "id": "401-0416",
+          "original_reason": "Ring Self-intersection[1487486.0004 1117217.2118]",
+          "operation": "shapely.make_valid; user approved five candidate-only repairs",
+          "area_change_m2": -2.9802322387695312e-8,
+          "hausdorff_distance_m": 0.0
+        },
+        {
+          "id": "453-0152",
+          "original_reason": "Ring Self-intersection[1234058.99880001 926493.931599998]",
+          "operation": "shapely.make_valid; user approved five candidate-only repairs",
+          "area_change_m2": -2.7939677238464355e-9,
+          "hausdorff_distance_m": 0.0
+        },
+        {
+          "id": "479-0252",
+          "original_reason": "Ring Self-intersection[1054370.4633 591264.556500002]",
+          "operation": "shapely.make_valid; user approved five candidate-only repairs",
+          "area_change_m2": -2.3283064365386963e-10,
+          "hausdorff_distance_m": 0.0
+        }
+      ],
+      "totals": {
+        "TOTPOP": 29145505,
+        "G24PREDHAR": 4835134,
+        "G24PRERTRU": 6393403
+      },
+      "seed_max_abs_population_deviation": 0.000524163159979496,
+      "planc2333_split_precincts": 427,
+      "planc2333_scoring": "Separate official block assignment; never assigned to a whole split precinct",
+      "inputs": [
+        {
+          "path": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/data/external/rdh/rebuild_2026-11-02/texas/tx_2024_gen_tx_vtd.zip",
+          "sha256": "c60db2902065214bee5345923a1222870c4f0234a4689c545699b60a2d6b1a69"
+        },
+        {
+          "path": "outputs/analysis/rdh_rebuild_2026-11-02/tx_block_audit/blocks_master.csv",
+          "sha256": "957b6526e8cb31fd10bd76721a002c966fe4bbb37ae025a9004188305247ca3f"
+        }
+      ]
+    },
+    "nc_precinct": {
+      "features": 2681,
+      "unique_ids": 2681,
+      "missing_ids": 0,
+      "crs": "EPSG:2264",
+      "linear_unit_metres": 0.30480060960121924,
+      "invalid": [],
+      "empty": 0,
+      "missing_geometry": 0,
+      "overlaps": [
+        {
+          "left": "SAMPSON-:-PLVW|07",
+          "right": "HARNETT-:-PR25|13",
+          "area_m2": 3.1286873045557174e-8
+        },
+        {
+          "left": "SAMPSON-:-PLVW|07",
+          "right": "JOHNSTON-:-PR38|13",
+          "area_m2": 2.3758982982151542e-8
+        },
+        {
+          "left": "SAMPSON-:-PLVW|07",
+          "right": "JOHNSTON-:-PR35|13",
+          "area_m2": 2.2904654599573937e-8
+        },
+        {
+          "left": "CARTERET-:-ISLE|03",
+          "right": "ONSLOW-:-SW19|03|25-03",
+          "area_m2": 1.121889327968446e-8
+        },
+        {
+          "left": "GRANVILLE-:-SALM|13",
+          "right": "VANCE-:-NH|01",
+          "area_m2": 7.314164227824028e-9
+        },
+        {
+          "left": "GRANVILLE-:-SALM|01",
+          "right": "VANCE-:-NH|01",
+          "area_m2": 4.443756197512321e-9
+        },
+        {
+          "left": "CHATHAM-:-75|04",
+          "right": "WAKE-:-20-16|04",
+          "area_m2": 4.138131309469028e-9
+        },
+        {
+          "left": "CHATHAM-:-75|09",
+          "right": "WAKE-:-20-16|04",
+          "area_m2": 4.0003678617402944e-9
+        },
+        {
+          "left": "CHATHAM-:-75|09",
+          "right": "WAKE-:-20-15|04",
+          "area_m2": 2.912173401158485e-9
+        },
+        {
+          "left": "GUILFORD-:-NDRI|05",
+          "right": "FORSYTH-:-061|06",
+          "area_m2": 2.463875395081495e-9
+        },
+        {
+          "left": "CHATHAM-:-75|09",
+          "right": "WAKE-:-20-14|04",
+          "area_m2": 1.7529852957500772e-9
+        },
+        {
+          "left": "CARTERET-:-CAPE|03",
+          "right": "ONSLOW-:-SW19|03|25-03",
+          "area_m2": 1.7095233531694523e-9
+        },
+        {
+          "left": "POLK-:-WO06|14",
+          "right": "POLK-:-CL07|14",
+          "area_m2": 1.6036467185138052e-9
+        },
+        {
+          "left": "ROBESON-:-24|08",
+          "right": "ROBESON-:-04|08",
+          "area_m2": 1.221083368845731e-9
+        },
+        {
+          "left": "CUMBERLAND-:-CC14|09",
+          "right": "CUMBERLAND-:-CC21|09",
+          "area_m2": 1.1475661461809692e-9
+        },
+        {
+          "left": "FORSYTH-:-124|06",
+          "right": "FORSYTH-:-605|06",
+          "area_m2": 9.205643605889933e-10
+        },
+        {
+          "left": "CABARRUS-:-12-13|06",
+          "right": "CABARRUS-:-12-11|06",
+          "area_m2": 8.769043305966529e-10
+        },
+        {
+          "left": "GUILFORD-:-NDRI|06",
+          "right": "FORSYTH-:-066|06",
+          "area_m2": 8.168698074853003e-10
+        },
+        {
+          "left": "MECKLENBURG-:-232|08",
+          "right": "MECKLENBURG-:-139.1|14",
+          "area_m2": 6.246899430086455e-10
+        },
+        {
+          "left": "POLK-:-WO06|11",
+          "right": "POLK-:-CL07|14",
+          "area_m2": 5.124258736743579e-10
+        },
+        {
+          "left": "WAKE-:-16-09|02",
+          "right": "WAKE-:-15-01|13",
+          "area_m2": 4.885766937158377e-10
+        },
+        {
+          "left": "GUILFORD-:-NDRI|05",
+          "right": "FORSYTH-:-066|06",
+          "area_m2": 4.846087409274539e-10
+        },
+        {
+          "left": "MECKLENBURG-:-103|08",
+          "right": "MECKLENBURG-:-233|08",
+          "area_m2": 4.82869138185977e-10
+        },
+        {
+          "left": "GUILFORD-:-JEF2|05",
+          "right": "GUILFORD-:-G72|05",
+          "area_m2": 4.547579260693007e-10
+        },
+        {
+          "left": "MECKLENBURG-:-232|14",
+          "right": "MECKLENBURG-:-139.1|14",
+          "area_m2": 4.343066970026365e-10
+        },
+        {
+          "left": "GUILFORD-:-G65|06",
+          "right": "GUILFORD-:-JAM2|09",
+          "area_m2": 4.1485487584186216e-10
+        },
+        {
+          "left": "GUILFORD-:-JEF2|09",
+          "right": "GUILFORD-:-G72|05",
+          "area_m2": 3.6281248820618893e-10
+        },
+        {
+          "left": "MECKLENBURG-:-103|12",
+          "right": "MECKLENBURG-:-233|08",
+          "area_m2": 2.856911345198844e-10
+        },
+        {
+          "left": "FORSYTH-:-042|06",
+          "right": "FORSYTH-:-605|10",
+          "area_m2": 2.67528214901789e-10
+        },
+        {
+          "left": "POLK-:-WO06|11",
+          "right": "POLK-:-CG05|11",
+          "area_m2": 2.2790700931358762e-10
+        },
+        {
+          "left": "GUILFORD-:-G65|09",
+          "right": "GUILFORD-:-JAM2|09",
+          "area_m2": 2.2194992503630314e-10
+        },
+        {
+          "left": "FORSYTH-:-042|06",
+          "right": "FORSYTH-:-605|06",
+          "area_m2": 2.194530255166881e-10
+        },
+        {
+          "left": "CARTERET-:-ISLE|03",
+          "right": "ONSLOW-:-SW19|03|25-01",
+          "area_m2": 2.1085239242684255e-10
+        },
+        {
+          "left": "FORSYTH-:-112|06",
+          "right": "FORSYTH-:-021|06",
+          "area_m2": 1.6531899726966278e-10
+        },
+        {
+          "left": "MECKLENBURG-:-121|14",
+          "right": "MECKLENBURG-:-226|12",
+          "area_m2": 1.6280601391776172e-10
+        },
+        {
+          "left": "WAKE-:-09-02|02",
+          "right": "WAKE-:-09-03|13",
+          "area_m2": 1.5316056103943607e-10
+        },
+        {
+          "left": "FORSYTH-:-401|10",
+          "right": "FORSYTH-:-508|10",
+          "area_m2": 1.515631943960323e-10
+        },
+        {
+          "left": "WAKE-:-04-10|04",
+          "right": "WAKE-:-04-15|02",
+          "area_m2": 1.0859273555886228e-10
+        },
+        {
+          "left": "FORSYTH-:-124|06",
+          "right": "FORSYTH-:-605|10",
+          "area_m2": 9.676169965834746e-11
+        },
+        {
+          "left": "MECKLENBURG-:-232|14",
+          "right": "MECKLENBURG-:-112|08",
+          "area_m2": 7.418234340364553e-11
+        },
+        {
+          "left": "ONSLOW-:-MT24|03",
+          "right": "ONSLOW-:-SW19|03|25-03",
+          "area_m2": 7.14419785570775e-11
+        },
+        {
+          "left": "ROBESON-:-24|07",
+          "right": "ROBESON-:-04|08",
+          "area_m2": 6.938074257904357e-11
+        },
+        {
+          "left": "CHATHAM-:-75|04",
+          "right": "CHATHAM-:-42|09",
+          "area_m2": 6.219904673252911e-11
+        },
+        {
+          "left": "MECKLENBURG-:-232|08",
+          "right": "MECKLENBURG-:-112|08",
+          "area_m2": 6.073523465981348e-11
+        },
+        {
+          "left": "WAKE-:-04-10|02",
+          "right": "WAKE-:-04-15|02",
+          "area_m2": 3.59578488090714e-11
+        },
+        {
+          "left": "WAKE-:-10-05|02",
+          "right": "WAKE-:-10-06|02",
+          "area_m2": 3.1059617409840386e-11
+        },
+        {
+          "left": "FORSYTH-:-112|10",
+          "right": "STOKES-:-1618|05",
+          "area_m2": 2.3500216552694903e-11
+        },
+        {
+          "left": "GUILFORD-:-NDRI|05",
+          "right": "GUILFORD-:-OR2|05",
+          "area_m2": 1.631177224385755e-11
+        },
+        {
+          "left": "FORSYTH-:-112|10",
+          "right": "FORSYTH-:-021|06",
+          "area_m2": 4.642571446461329e-12
+        },
+        {
+          "left": "MECKLENBURG-:-103|08",
+          "right": "MECKLENBURG-:-118|12",
+          "area_m2": 5.593662057439958e-13
+        },
+        {
+          "left": "CABARRUS-:-12-13|08",
+          "right": "CABARRUS-:-12-11|06",
+          "area_m2": 7.26612261036734e-15
+        },
+        {
+          "left": "CUMBERLAND-:-CC14|07",
+          "right": "CUMBERLAND-:-CC21|09",
+          "area_m2": 5.2160169901586364e-15
+        },
+        {
+          "left": "FORSYTH-:-401|10",
+          "right": "FORSYTH-:-508|06",
+          "area_m2": 1.93721434710944e-15
+        },
+        {
+          "left": "ONSLOW-:-MT24|03",
+          "right": "ONSLOW-:-SW19|03|25-01",
+          "area_m2": 1.3330832375004457e-15
+        },
+        {
+          "left": "GUILFORD-:-JEF2|05",
+          "right": "GUILFORD-:-JEF1|09",
+          "area_m2": 1.0958544313060967e-15
+        },
+        {
+          "left": "WAKE-:-10-05|13",
+          "right": "WAKE-:-10-06|02",
+          "area_m2": 1.0740245714658631e-15
+        },
+        {
+          "left": "POLK-:-WO06|14",
+          "right": "POLK-:-CG05|11",
+          "area_m2": 9.757461345245045e-17
+        }
+      ],
+      "intersection_errors": [],
+      "adjacency_definition": "Positive shared source-polygon boundary length; no repair or added edges",
+      "overlap_pairs": 57,
+      "sum_pairwise_overlap_area_m2": 1.3147249171956178e-7,
+      "max_pairwise_overlap_area_m2": 3.1286873045557174e-8,
+      "graph_nodes": 2681,
+      "graph_edges": 7581,
+      "graph_components": 1,
+      "isolates": [],
+      "research_ready": false,
+      "district_components_2023": {
+        "01": 1,
+        "02": 1,
+        "03": 1,
+        "04": 1,
+        "05": 1,
+        "06": 1,
+        "07": 1,
+        "08": 1,
+        "09": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1
+      },
+      "district_components_2025": {
+        "01": 1,
+        "02": 1,
+        "03": 1,
+        "04": 1,
+        "05": 1,
+        "06": 1,
+        "07": 1,
+        "08": 1,
+        "09": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1
+      },
+      "construction_coverage": [
+        {
+          "unit": "FORSYTH-:-508",
+          "operation": "2023 official intersections",
+          "uncovered_m2": 0.0,
+          "outside_m2": 5.476706668089844e-10
+        },
+        {
+          "unit": "FORSYTH-:-605",
+          "operation": "2023 official intersections",
+          "uncovered_m2": 7.634373575566942e-10,
+          "outside_m2": 0.0
+        },
+        {
+          "unit": "GUILFORD-:-G65",
+          "operation": "2023 official intersections",
+          "uncovered_m2": 1.9151947829618282e-9,
+          "outside_m2": 4.169727002525367e-9
+        },
+        {
+          "unit": "ONSLOW-:-SW19|03",
+          "operation": "2025 official intersections",
+          "uncovered_m2": 0.001211074210429565,
+          "outside_m2": 2.3222468915960602e-8
+        }
+      ],
+      "extra_2023_splits": ["FORSYTH-:-508", "FORSYTH-:-605", "GUILFORD-:-G65"],
+      "wake_operation": "Union of both source precinct polygons; combined block ID mapped to that union",
+      "geometry_repair": "none; no slivers assigned and no snapping",
+      "inputs": [
+        {
+          "path": "outputs/analysis/rdh_rebuild_2026-11-02/nc_block_audit/blocks_master.csv",
+          "sha256": "346f9f985853b77e14302e5474caa25b3d0579dbb0d1682d3ecff552da621eeb"
+        },
+        {
+          "path": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/data/external/rdh/rebuild_2026-11-02/north_carolina/nc_2024_gen_prec.zip",
+          "sha256": "64bd8926427c04e34cb069de6e4db889f45aaa3aa36a13e3fdd9ee707487011b"
+        },
+        {
+          "path": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/data/external/rdh/rebuild_2026-11-02/north_carolina/nc_cong_adopted_2023.zip",
+          "sha256": "9a0cd336da24949dfb9de416f419c44d060bb046a7447ef2434eedf286ccc878"
+        },
+        {
+          "path": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/data/external/rdh/rebuild_2026-11-02/north_carolina/nc_cong_adopted_2025.zip",
+          "sha256": "2652543b01b0a24e186f54f7870c4b367c00877f85e026b23a285298922f779c"
+        }
+      ],
+      "totals": {
+        "TOTPOP": 10439388,
+        "G24PREDHAR": 2713609,
+        "G24PRERTRU": 2896942
+      },
+      "onslow": [
+        {
+          "UNIT_ID": "ONSLOW-:-SW19|03|25-01",
+          "CONG_DIST": "03",
+          "CONG_DIST_2025": "01",
+          "BLOCK_COUNT": 131,
+          "TOTPOP": 4853,
+          "G24PREDHAR": 805,
+          "G24PRERTRU": 2116
+        },
+        {
+          "UNIT_ID": "ONSLOW-:-SW19|03|25-03",
+          "CONG_DIST": "03",
+          "CONG_DIST_2025": "03",
+          "BLOCK_COUNT": 77,
+          "TOTPOP": 2597,
+          "G24PREDHAR": 434,
+          "G24PRERTRU": 1146
+        }
+      ]
+    },
+    "nc_block_union": {
+      "features": 2681,
+      "unique_ids": 2681,
+      "missing_ids": 0,
+      "crs": "EPSG:2264",
+      "linear_unit_metres": 0.30480060960121924,
+      "invalid": [],
+      "empty": 0,
+      "missing_geometry": 0,
+      "overlaps": [],
+      "intersection_errors": [],
+      "adjacency_definition": "Positive shared source-polygon boundary length; no repair or added edges",
+      "overlap_pairs": 0,
+      "sum_pairwise_overlap_area_m2": 0,
+      "max_pairwise_overlap_area_m2": 0,
+      "graph_nodes": 2681,
+      "graph_edges": 7581,
+      "graph_components": 1,
+      "graph_status": "computed on valid source polygons; overlaps still require review",
+      "isolates": [],
+      "research_ready": false,
+      "review_required": false,
+      "district_components_2023": {
+        "01": 1,
+        "02": 1,
+        "03": 1,
+        "04": 1,
+        "05": 1,
+        "06": 1,
+        "07": 1,
+        "08": 1,
+        "09": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1
+      },
+      "district_components_2025": {
+        "01": 1,
+        "02": 1,
+        "03": 1,
+        "04": 1,
+        "05": 1,
+        "06": 1,
+        "07": 1,
+        "08": 1,
+        "09": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1
+      },
+      "construction": "Union of every official Census block according to audited precinct/2023/2025 block membership",
+      "production_replacement": false,
+      "geometry_repairs": "none",
+      "block_membership_limitation": "Precinct membership originates in RDH's modeled block assignment, including documented nearest-precinct fallbacks",
+      "totals": {
+        "TOTPOP": 10439388,
+        "G24PREDHAR": 2713609,
+        "G24PRERTRU": 2896942
+      },
+      "inputs": [
+        {
+          "path": "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/data/external/rdh/rebuild_2026-11-02/north_carolina/nc_pl2020_b.zip",
+          "sha256": "6e19de2094be2b1e276a890d710767d28bb73fa372801d6f95d095e98d445862"
+        },
+        {
+          "path": "outputs/analysis/rdh_rebuild_2026-11-02/nc_block_audit/blocks_master.csv",
+          "sha256": "346f9f985853b77e14302e5474caa25b3d0579dbb0d1682d3ecff552da621eeb"
+        }
+      ]
+    }
+  },
+  "adjacency": {
+    "texas": {
+      "research_ready": false,
+      "nodes": 9712,
+      "sampler_edges": 26860,
+      "boundary_edges": 26860,
+      "sampler_components": 1,
+      "boundary_components": 1,
+      "sampler_edge_sha256": "3151b1744c98ac3c3d8b19c736b1c190ffd9e91edfb27aca9a9e598245039c44",
+      "boundary_edge_sha256": "3151b1744c98ac3c3d8b19c736b1c190ffd9e91edfb27aca9a9e598245039c44",
+      "differences": [],
+      "warnings": [
+        "Found overlaps among the given polygons. Indices of overlaps: {(3633, 4872), (6297, 6355), (6298, 6355), (6297, 6358), (4872, 9271), (1320, 6299), (1320, 6298), (1317, 6298)}"
+      ],
+      "interpretation": "Neither graph is substituted for the configured sampler; discrepancies require methodological review"
+    },
+    "nc_precinct": {
+      "research_ready": false,
+      "nodes": 2681,
+      "sampler_edges": 7584,
+      "boundary_edges": 7581,
+      "sampler_components": 1,
+      "boundary_components": 1,
+      "sampler_edge_sha256": "3002f6c4659a6179938a171cfb5499c7d2349c49abb881afef392f053264a4b9",
+      "boundary_edge_sha256": "42bd56e795976a7967db02ca4f770e7d7d1110208fd43cac85ef26744f690c81",
+      "differences": [
+        {
+          "category": "sampler_only",
+          "left": "CABARRUS-:-12-13|08",
+          "right": "CABARRUS-:-12-11|06",
+          "intersection_area_m2": 7.26612261036734e-15,
+          "intersection_length_m": 0.0010645804387827641,
+          "shared_boundary_length_m": 0.0,
+          "distance_m": 0.0
+        },
+        {
+          "category": "sampler_only",
+          "left": "CUMBERLAND-:-CC14|07",
+          "right": "CUMBERLAND-:-CC21|09",
+          "intersection_area_m2": 5.2160169901586364e-15,
+          "intersection_length_m": 0.0013041545691256846,
+          "shared_boundary_length_m": 0.0,
+          "distance_m": 0.0
+        },
+        {
+          "category": "sampler_only",
+          "left": "MECKLENBURG-:-103|12",
+          "right": "MECKLENBURG-:-233|08",
+          "intersection_area_m2": 2.856911345198844e-10,
+          "intersection_length_m": 256.981117115433,
+          "shared_boundary_length_m": 0.0,
+          "distance_m": 0.0
+        }
+      ],
+      "warnings": [
+        "Found overlaps among the given polygons. Indices of overlaps: {(36, 2454), (11, 1122), (21, 1633), (13, 1180), (870, 907), (0, 362), (3, 2539), (1854, 1862), (13, 851), (7, 834), (6, 2217), (839, 907), (393, 1861), (24, 1997), (888, 900), (16, 1639), (16, 1703), (5, 586), (22, 1633), (9, 2329), (870, 906), (1115, 1162), (2, 462), (14, 851), (23, 1998), (30, 2406), (1854, 1861), (35, 2454), (3, 2538), (1, 362), (21, 1659), (25, 2044), (12, 1122), (13, 846), (6, 834), (888, 899), (2, 2539), (839, 906), (11, 1166), (40, 2477), (15, 1703), (1114, 1162), (389, 1862), (23, 1997), (10, 2329), (32, 2451), (3, 2537), (17, 1697), (22, 1659), (28, 1224), (28, 1404), (28, 1407), (26, 2044), (24, 1998), (29, 2406), (4, 586), (393, 1862)}"
+      ],
+      "interpretation": "Neither graph is substituted for the configured sampler; discrepancies require methodological review"
+    },
+    "nc_block_union": {
+      "research_ready": false,
+      "nodes": 2681,
+      "sampler_edges": 7581,
+      "boundary_edges": 7581,
+      "sampler_components": 1,
+      "boundary_components": 1,
+      "sampler_edge_sha256": "3d1e42f2282b7814ed88c630f96f91a2f1223ce9cee075f2595ce18fc9a9fe93",
+      "boundary_edge_sha256": "3d1e42f2282b7814ed88c630f96f91a2f1223ce9cee075f2595ce18fc9a9fe93",
+      "differences": [],
+      "warnings": [],
+      "interpretation": "Neither graph is substituted for the configured sampler; discrepancies require methodological review"
+    }
+  },
+  "election_sensitivity": {
+    "texas": {
+      "state": "texas",
+      "research_ready": false,
+      "blocks": 668757,
+      "models": {
+        "president_2024": {
+          "2025": {
+            "dem_modeled_votes": 4835134,
+            "rep_modeled_votes": 6393403,
+            "statewide_dem_two_party_share": 0.4306112185407591,
+            "dem_modeled_seats": 8,
+            "minimum_absolute_two_party_vote_margin": 20628,
+            "uniform_swing_dem_seats": {
+              "-0.03": 8,
+              "-0.02": 8,
+              "-0.01": 8,
+              "+0.00": 8,
+              "+0.01": 8,
+              "+0.02": 8,
+              "+0.03": 8
+            },
+            "normalized_to_presidential_statewide_share": {
+              "target_dem_two_party_share": 0.4306112185407591,
+              "uniform_district_share_shift": 0.0,
+              "dem_modeled_seats": 8,
+              "interpretation": "Uniform-swing scenario controlling gross statewide candidate support; not a correction to observed data"
+            }
+          }
+        },
+        "us_senate_2024": {
+          "2025": {
+            "dem_modeled_votes": 5031142,
+            "rep_modeled_votes": 5990637,
+            "statewide_dem_two_party_share": 0.4564727708657559,
+            "dem_modeled_seats": 8,
+            "minimum_absolute_two_party_vote_margin": 224,
+            "uniform_swing_dem_seats": {
+              "-0.03": 8,
+              "-0.02": 8,
+              "-0.01": 8,
+              "+0.00": 8,
+              "+0.01": 10,
+              "+0.02": 11,
+              "+0.03": 11
+            },
+            "normalized_to_presidential_statewide_share": {
+              "target_dem_two_party_share": 0.4306112185407591,
+              "uniform_district_share_shift": -0.02586155232499676,
+              "dem_modeled_seats": 8,
+              "interpretation": "Uniform-swing scenario controlling gross statewide candidate support; not a correction to observed data"
+            }
+          }
+        }
+      },
+      "interpretation": "Descriptive modeled block scores; election choice and uniform swing are sensitivity scenarios, not calibrated probabilities or observed block votes"
+    },
+    "north_carolina": {
+      "state": "north_carolina",
+      "research_ready": false,
+      "blocks": 236638,
+      "models": {
+        "president_2024": {
+          "2023": {
+            "dem_modeled_votes": 2713609,
+            "rep_modeled_votes": 2896942,
+            "statewide_dem_two_party_share": 0.4836617651278814,
+            "dem_modeled_seats": 3,
+            "minimum_absolute_two_party_vote_margin": 11968,
+            "uniform_swing_dem_seats": {
+              "-0.03": 3,
+              "-0.02": 3,
+              "-0.01": 3,
+              "+0.00": 3,
+              "+0.01": 3,
+              "+0.02": 4,
+              "+0.03": 4
+            },
+            "normalized_to_presidential_statewide_share": {
+              "target_dem_two_party_share": 0.4836617651278814,
+              "uniform_district_share_shift": 0.0,
+              "dem_modeled_seats": 3,
+              "interpretation": "Uniform-swing scenario controlling gross statewide candidate support; not a correction to observed data"
+            }
+          },
+          "2025": {
+            "dem_modeled_votes": 2713609,
+            "rep_modeled_votes": 2896942,
+            "statewide_dem_two_party_share": 0.4836617651278814,
+            "dem_modeled_seats": 3,
+            "minimum_absolute_two_party_vote_margin": 41759,
+            "uniform_swing_dem_seats": {
+              "-0.03": 3,
+              "-0.02": 3,
+              "-0.01": 3,
+              "+0.00": 3,
+              "+0.01": 3,
+              "+0.02": 3,
+              "+0.03": 3
+            },
+            "normalized_to_presidential_statewide_share": {
+              "target_dem_two_party_share": 0.4836617651278814,
+              "uniform_district_share_shift": 0.0,
+              "dem_modeled_seats": 3,
+              "interpretation": "Uniform-swing scenario controlling gross statewide candidate support; not a correction to observed data"
+            }
+          }
+        },
+        "governor_2024": {
+          "2023": {
+            "dem_modeled_votes": 3067746,
+            "rep_modeled_votes": 2240437,
+            "statewide_dem_two_party_share": 0.5779277014375729,
+            "dem_modeled_seats": 12,
+            "minimum_absolute_two_party_vote_margin": 4696,
+            "uniform_swing_dem_seats": {
+              "-0.03": 6,
+              "-0.02": 8,
+              "-0.01": 11,
+              "+0.00": 12,
+              "+0.01": 13,
+              "+0.02": 14,
+              "+0.03": 14
+            },
+            "normalized_to_presidential_statewide_share": {
+              "target_dem_two_party_share": 0.4836617651278814,
+              "uniform_district_share_shift": -0.09426593630969149,
+              "dem_modeled_seats": 3,
+              "interpretation": "Uniform-swing scenario controlling gross statewide candidate support; not a correction to observed data"
+            }
+          },
+          "2025": {
+            "dem_modeled_votes": 3067746,
+            "rep_modeled_votes": 2240437,
+            "statewide_dem_two_party_share": 0.5779277014375729,
+            "dem_modeled_seats": 13,
+            "minimum_absolute_two_party_vote_margin": 4696,
+            "uniform_swing_dem_seats": {
+              "-0.03": 5,
+              "-0.02": 7,
+              "-0.01": 12,
+              "+0.00": 13,
+              "+0.01": 14,
+              "+0.02": 14,
+              "+0.03": 14
+            },
+            "normalized_to_presidential_statewide_share": {
+              "target_dem_two_party_share": 0.4836617651278814,
+              "uniform_district_share_shift": -0.09426593630969149,
+              "dem_modeled_seats": 3,
+              "interpretation": "Uniform-swing scenario controlling gross statewide candidate support; not a correction to observed data"
+            }
+          }
+        },
+        "attorney_general_2024": {
+          "2023": {
+            "dem_modeled_votes": 2873292,
+            "rep_modeled_votes": 2714407,
+            "statewide_dem_two_party_share": 0.5142173907363299,
+            "dem_modeled_seats": 4,
+            "minimum_absolute_two_party_vote_margin": 6776,
+            "uniform_swing_dem_seats": {
+              "-0.03": 3,
+              "-0.02": 3,
+              "-0.01": 3,
+              "+0.00": 4,
+              "+0.01": 4,
+              "+0.02": 4,
+              "+0.03": 5
+            },
+            "normalized_to_presidential_statewide_share": {
+              "target_dem_two_party_share": 0.4836617651278814,
+              "uniform_district_share_shift": -0.03055562560844849,
+              "dem_modeled_seats": 3,
+              "interpretation": "Uniform-swing scenario controlling gross statewide candidate support; not a correction to observed data"
+            }
+          },
+          "2025": {
+            "dem_modeled_votes": 2873292,
+            "rep_modeled_votes": 2714407,
+            "statewide_dem_two_party_share": 0.5142173907363299,
+            "dem_modeled_seats": 3,
+            "minimum_absolute_two_party_vote_margin": 19632,
+            "uniform_swing_dem_seats": {
+              "-0.03": 3,
+              "-0.02": 3,
+              "-0.01": 3,
+              "+0.00": 3,
+              "+0.01": 3,
+              "+0.02": 3,
+              "+0.03": 4
+            },
+            "normalized_to_presidential_statewide_share": {
+              "target_dem_two_party_share": 0.4836617651278814,
+              "uniform_district_share_shift": -0.03055562560844849,
+              "dem_modeled_seats": 3,
+              "interpretation": "Uniform-swing scenario controlling gross statewide candidate support; not a correction to observed data"
+            }
+          }
+        }
+      },
+      "interpretation": "Descriptive modeled block scores; election choice and uniform swing are sensitivity scenarios, not calibrated probabilities or observed block votes"
+    }
+  },
+  "continuation": {
+    "texas": {
+      "purpose": "Continuation mechanics only; never include probe samples in research ensembles",
+      "research_ready": false,
+      "exact_continuation_match": true,
+      "whole_rows": 120,
+      "split_rows": 120,
+      "commands": [
+        {
+          "command": [
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/src/chain/run_ensemble.py",
+            "--state",
+            "Continuation Probe",
+            "--dataset",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg",
+            "--assignment-col",
+            "CONG_DIST",
+            "--population-col",
+            "TOTPOP",
+            "--dem-col",
+            "G24PREDHAR",
+            "--rep-col",
+            "G24PRERTRU",
+            "--epsilon",
+            "0.001",
+            "--seed",
+            "1117",
+            "--steps",
+            "120",
+            "--output-dir",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/whole",
+            "--checkpoint-dir",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/whole/checkpoints"
+          ],
+          "exit_code": 0,
+          "seconds": 80.8063701669962
+        },
+        {
+          "command": [
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/src/chain/run_ensemble.py",
+            "--state",
+            "Continuation Probe",
+            "--dataset",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg",
+            "--assignment-col",
+            "CONG_DIST",
+            "--population-col",
+            "TOTPOP",
+            "--dem-col",
+            "G24PREDHAR",
+            "--rep-col",
+            "G24PRERTRU",
+            "--epsilon",
+            "0.001",
+            "--seed",
+            "1117",
+            "--steps",
+            "100",
+            "--output-dir",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/split",
+            "--checkpoint-dir",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/split/checkpoints"
+          ],
+          "exit_code": 0,
+          "seconds": 71.83442933300103
+        },
+        {
+          "command": [
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/src/chain/run_ensemble.py",
+            "--state",
+            "Continuation Probe",
+            "--dataset",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg",
+            "--assignment-col",
+            "CONG_DIST",
+            "--population-col",
+            "TOTPOP",
+            "--dem-col",
+            "G24PREDHAR",
+            "--rep-col",
+            "G24PRERTRU",
+            "--epsilon",
+            "0.001",
+            "--seed",
+            "1117",
+            "--steps",
+            "20",
+            "--output-dir",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/split",
+            "--checkpoint-dir",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/split/checkpoints",
+            "--resume-from",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/tx_continuation_probe_v3/split/checkpoints/continuation_probe_checkpoint_eps0p001_seed1117_next100.pkl"
+          ],
+          "exit_code": 0,
+          "seconds": 31.256848750002973
+        }
+      ],
+      "first_differing_step": null,
+      "whole_rows_sha256": "908e71356abac471b7af930209ddf5d2cabd07644064a9f620727530e750d044",
+      "split_rows_sha256": "908e71356abac471b7af930209ddf5d2cabd07644064a9f620727530e750d044"
+    },
+    "north_carolina": {
+      "purpose": "Continuation mechanics only; never include probe samples in research ensembles",
+      "research_ready": false,
+      "exact_continuation_match": true,
+      "whole_rows": 120,
+      "split_rows": 120,
+      "commands": [
+        {
+          "command": [
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/src/chain/run_ensemble.py",
+            "--state",
+            "Continuation Probe",
+            "--dataset",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_block_union_candidate/nc_block_union_candidate.gpkg",
+            "--assignment-col",
+            "CONG_DIST",
+            "--population-col",
+            "TOTPOP",
+            "--dem-col",
+            "G24PREDHAR",
+            "--rep-col",
+            "G24PRERTRU",
+            "--epsilon",
+            "0.005",
+            "--seed",
+            "707",
+            "--steps",
+            "120",
+            "--output-dir",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/whole",
+            "--checkpoint-dir",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/whole/checkpoints"
+          ],
+          "exit_code": 0,
+          "seconds": 19.674173917002918
+        },
+        {
+          "command": [
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/src/chain/run_ensemble.py",
+            "--state",
+            "Continuation Probe",
+            "--dataset",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_block_union_candidate/nc_block_union_candidate.gpkg",
+            "--assignment-col",
+            "CONG_DIST",
+            "--population-col",
+            "TOTPOP",
+            "--dem-col",
+            "G24PREDHAR",
+            "--rep-col",
+            "G24PRERTRU",
+            "--epsilon",
+            "0.005",
+            "--seed",
+            "707",
+            "--steps",
+            "100",
+            "--output-dir",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/split",
+            "--checkpoint-dir",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/split/checkpoints"
+          ],
+          "exit_code": 0,
+          "seconds": 16.13439216700499
+        },
+        {
+          "command": [
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/src/chain/run_ensemble.py",
+            "--state",
+            "Continuation Probe",
+            "--dataset",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_block_union_candidate/nc_block_union_candidate.gpkg",
+            "--assignment-col",
+            "CONG_DIST",
+            "--population-col",
+            "TOTPOP",
+            "--dem-col",
+            "G24PREDHAR",
+            "--rep-col",
+            "G24PRERTRU",
+            "--epsilon",
+            "0.005",
+            "--seed",
+            "707",
+            "--steps",
+            "20",
+            "--output-dir",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/split",
+            "--checkpoint-dir",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/split/checkpoints",
+            "--resume-from",
+            "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/rdh_rebuild_2026-11-02/nc_continuation_probe_v3/split/checkpoints/continuation_probe_checkpoint_eps0p005_seed707_next100.pkl"
+          ],
+          "exit_code": 0,
+          "seconds": 12.030455457999778
+        }
+      ],
+      "first_differing_step": null,
+      "whole_rows_sha256": "7159bab013b1d5a15eaa06277b76e38767dbbd44b2c862b9c6e76d1b01f38286",
+      "split_rows_sha256": "7159bab013b1d5a15eaa06277b76e38767dbbd44b2c862b9c6e76d1b01f38286"
+    }
+  },
+  "official_returns": {
+    "research_ready": false,
+    "official_candidates": [
+      ["DEM", "Kamala D. Harris"],
+      ["REP", "Donald J. Trump"]
+    ],
+    "official_rows": 5816,
+    "counties": [
+      {
+        "county": "ALAMANCE",
+        "official_dem": 40624,
+        "official_rep": 47937,
+        "rdh_modeled_dem": 40624,
+        "rdh_modeled_rep": 47937,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "ALEXANDER",
+        "official_dem": 4060,
+        "official_rep": 16404,
+        "rdh_modeled_dem": 4060,
+        "rdh_modeled_rep": 16404,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "ALLEGHANY",
+        "official_dem": 1533,
+        "official_rep": 4900,
+        "rdh_modeled_dem": 1531,
+        "rdh_modeled_rep": 4891,
+        "official_minus_rdh_dem": 2,
+        "official_minus_rdh_rep": 9
+      },
+      {
+        "county": "ANSON",
+        "official_dem": 5253,
+        "official_rep": 5525,
+        "rdh_modeled_dem": 5253,
+        "rdh_modeled_rep": 5525,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "ASHE",
+        "official_dem": 4431,
+        "official_rep": 11629,
+        "rdh_modeled_dem": 4431,
+        "rdh_modeled_rep": 11629,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "AVERY",
+        "official_dem": 2220,
+        "official_rep": 7181,
+        "rdh_modeled_dem": 2219,
+        "rdh_modeled_rep": 7179,
+        "official_minus_rdh_dem": 1,
+        "official_minus_rdh_rep": 2
+      },
+      {
+        "county": "BEAUFORT",
+        "official_dem": 9049,
+        "official_rep": 17296,
+        "rdh_modeled_dem": 9049,
+        "rdh_modeled_rep": 17296,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "BERTIE",
+        "official_dem": 5279,
+        "official_rep": 3840,
+        "rdh_modeled_dem": 5243,
+        "rdh_modeled_rep": 3823,
+        "official_minus_rdh_dem": 36,
+        "official_minus_rdh_rep": 17
+      },
+      {
+        "county": "BLADEN",
+        "official_dem": 6620,
+        "official_rep": 10035,
+        "rdh_modeled_dem": 6108,
+        "rdh_modeled_rep": 9531,
+        "official_minus_rdh_dem": 512,
+        "official_minus_rdh_rep": 504
+      },
+      {
+        "county": "BRUNSWICK",
+        "official_dem": 40557,
+        "official_rep": 67658,
+        "rdh_modeled_dem": 40557,
+        "rdh_modeled_rep": 67658,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "BUNCOMBE",
+        "official_dem": 98662,
+        "official_rep": 59016,
+        "rdh_modeled_dem": 98662,
+        "rdh_modeled_rep": 59016,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "BURKE",
+        "official_dem": 13272,
+        "official_rep": 32130,
+        "rdh_modeled_dem": 13272,
+        "rdh_modeled_rep": 32130,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "CABARRUS",
+        "official_dem": 54494,
+        "official_rep": 63746,
+        "rdh_modeled_dem": 54496,
+        "rdh_modeled_rep": 63746,
+        "official_minus_rdh_dem": -2,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "CALDWELL",
+        "official_dem": 10146,
+        "official_rep": 33009,
+        "rdh_modeled_dem": 10136,
+        "rdh_modeled_rep": 32970,
+        "official_minus_rdh_dem": 10,
+        "official_minus_rdh_rep": 39
+      },
+      {
+        "county": "CAMDEN",
+        "official_dem": 1522,
+        "official_rep": 4716,
+        "rdh_modeled_dem": 1522,
+        "rdh_modeled_rep": 4716,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "CARTERET",
+        "official_dem": 12813,
+        "official_rep": 32508,
+        "rdh_modeled_dem": 12813,
+        "rdh_modeled_rep": 32508,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "CASWELL",
+        "official_dem": 4493,
+        "official_rep": 7445,
+        "rdh_modeled_dem": 4493,
+        "rdh_modeled_rep": 7445,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "CATAWBA",
+        "official_dem": 26569,
+        "official_rep": 59577,
+        "rdh_modeled_dem": 26569,
+        "rdh_modeled_rep": 59577,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "CHATHAM",
+        "official_dem": 29014,
+        "official_rep": 22507,
+        "rdh_modeled_dem": 29014,
+        "rdh_modeled_rep": 22507,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "CHEROKEE",
+        "official_dem": 3686,
+        "official_rep": 13883,
+        "rdh_modeled_dem": 3686,
+        "rdh_modeled_rep": 13883,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "CHOWAN",
+        "official_dem": 2895,
+        "official_rep": 4587,
+        "rdh_modeled_dem": 2895,
+        "rdh_modeled_rep": 4587,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "CLAY",
+        "official_dem": 1899,
+        "official_rep": 5761,
+        "rdh_modeled_dem": 1899,
+        "rdh_modeled_rep": 5761,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "CLEVELAND",
+        "official_dem": 16603,
+        "official_rep": 34654,
+        "rdh_modeled_dem": 16603,
+        "rdh_modeled_rep": 34654,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "COLUMBUS",
+        "official_dem": 8648,
+        "official_rep": 17592,
+        "rdh_modeled_dem": 8648,
+        "rdh_modeled_rep": 17592,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "CRAVEN",
+        "official_dem": 22011,
+        "official_rep": 33477,
+        "rdh_modeled_dem": 22011,
+        "rdh_modeled_rep": 33477,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "CUMBERLAND",
+        "official_dem": 78631,
+        "official_rep": 59840,
+        "rdh_modeled_dem": 78631,
+        "rdh_modeled_rep": 59840,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "CURRITUCK",
+        "official_dem": 4604,
+        "official_rep": 13235,
+        "rdh_modeled_dem": 4604,
+        "rdh_modeled_rep": 13235,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "DARE",
+        "official_dem": 10074,
+        "official_rep": 14792,
+        "rdh_modeled_dem": 10074,
+        "rdh_modeled_rep": 14791,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 1
+      },
+      {
+        "county": "DAVIDSON",
+        "official_dem": 24150,
+        "official_rep": 67959,
+        "rdh_modeled_dem": 24150,
+        "rdh_modeled_rep": 67959,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "DAVIE",
+        "official_dem": 6988,
+        "official_rep": 19398,
+        "rdh_modeled_dem": 6989,
+        "rdh_modeled_rep": 19398,
+        "official_minus_rdh_dem": -1,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "DUPLIN",
+        "official_dem": 8057,
+        "official_rep": 14677,
+        "rdh_modeled_dem": 8057,
+        "rdh_modeled_rep": 14677,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "DURHAM",
+        "official_dem": 144450,
+        "official_rep": 32853,
+        "rdh_modeled_dem": 144179,
+        "rdh_modeled_rep": 32822,
+        "official_minus_rdh_dem": 271,
+        "official_minus_rdh_rep": 31
+      },
+      {
+        "county": "EDGECOMBE",
+        "official_dem": 14900,
+        "official_rep": 9355,
+        "rdh_modeled_dem": 14900,
+        "rdh_modeled_rep": 9355,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "FORSYTH",
+        "official_dem": 114145,
+        "official_rep": 87292,
+        "rdh_modeled_dem": 114145,
+        "rdh_modeled_rep": 87292,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "FRANKLIN",
+        "official_dem": 18167,
+        "official_rep": 23938,
+        "rdh_modeled_dem": 18167,
+        "rdh_modeled_rep": 23938,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "GASTON",
+        "official_dem": 44062,
+        "official_rep": 73828,
+        "rdh_modeled_dem": 44062,
+        "rdh_modeled_rep": 73828,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "GATES",
+        "official_dem": 2268,
+        "official_rep": 3538,
+        "rdh_modeled_dem": 2268,
+        "rdh_modeled_rep": 3538,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "GRAHAM",
+        "official_dem": 839,
+        "official_rep": 3883,
+        "rdh_modeled_dem": 839,
+        "rdh_modeled_rep": 3883,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "GRANVILLE",
+        "official_dem": 14365,
+        "official_rep": 17383,
+        "rdh_modeled_dem": 14365,
+        "rdh_modeled_rep": 17383,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "GREENE",
+        "official_dem": 3437,
+        "official_rep": 4965,
+        "rdh_modeled_dem": 3437,
+        "rdh_modeled_rep": 4965,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "GUILFORD",
+        "official_dem": 171118,
+        "official_rep": 109077,
+        "rdh_modeled_dem": 171101,
+        "rdh_modeled_rep": 109057,
+        "official_minus_rdh_dem": 17,
+        "official_minus_rdh_rep": 20
+      },
+      {
+        "county": "HALIFAX",
+        "official_dem": 14014,
+        "official_rep": 9778,
+        "rdh_modeled_dem": 13608,
+        "rdh_modeled_rep": 9597,
+        "official_minus_rdh_dem": 406,
+        "official_minus_rdh_rep": 181
+      },
+      {
+        "county": "HARNETT",
+        "official_dem": 23472,
+        "official_rep": 39440,
+        "rdh_modeled_dem": 23472,
+        "rdh_modeled_rep": 39440,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "HAYWOOD",
+        "official_dem": 13913,
+        "official_rep": 23393,
+        "rdh_modeled_dem": 13913,
+        "rdh_modeled_rep": 23393,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "HENDERSON",
+        "official_dem": 29361,
+        "official_rep": 39497,
+        "rdh_modeled_dem": 29361,
+        "rdh_modeled_rep": 39497,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "HERTFORD",
+        "official_dem": 6191,
+        "official_rep": 3561,
+        "rdh_modeled_dem": 6191,
+        "rdh_modeled_rep": 3561,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "HOKE",
+        "official_dem": 11896,
+        "official_rep": 10547,
+        "rdh_modeled_dem": 11896,
+        "rdh_modeled_rep": 10547,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "HYDE",
+        "official_dem": 931,
+        "official_rep": 1465,
+        "rdh_modeled_dem": 931,
+        "rdh_modeled_rep": 1465,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "IREDELL",
+        "official_dem": 36739,
+        "official_rep": 72801,
+        "rdh_modeled_dem": 36739,
+        "rdh_modeled_rep": 72801,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "JACKSON",
+        "official_dem": 9746,
+        "official_rep": 11796,
+        "rdh_modeled_dem": 9746,
+        "rdh_modeled_rep": 11796,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "JOHNSTON",
+        "official_dem": 48116,
+        "official_rep": 74878,
+        "rdh_modeled_dem": 48101,
+        "rdh_modeled_rep": 74873,
+        "official_minus_rdh_dem": 15,
+        "official_minus_rdh_rep": 5
+      },
+      {
+        "county": "JONES",
+        "official_dem": 2007,
+        "official_rep": 3409,
+        "rdh_modeled_dem": 2007,
+        "rdh_modeled_rep": 3409,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "LEE",
+        "official_dem": 12245,
+        "official_rep": 17489,
+        "rdh_modeled_dem": 12245,
+        "rdh_modeled_rep": 17489,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "LENOIR",
+        "official_dem": 12700,
+        "official_rep": 14564,
+        "rdh_modeled_dem": 12700,
+        "rdh_modeled_rep": 14564,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "LINCOLN",
+        "official_dem": 14842,
+        "official_rep": 40183,
+        "rdh_modeled_dem": 14842,
+        "rdh_modeled_rep": 40183,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "MACON",
+        "official_dem": 6675,
+        "official_rep": 14981,
+        "rdh_modeled_dem": 6675,
+        "rdh_modeled_rep": 14981,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "MADISON",
+        "official_dem": 5090,
+        "official_rep": 8275,
+        "rdh_modeled_dem": 5090,
+        "rdh_modeled_rep": 8275,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "MARTIN",
+        "official_dem": 5360,
+        "official_rep": 6601,
+        "rdh_modeled_dem": 5326,
+        "rdh_modeled_rep": 6576,
+        "official_minus_rdh_dem": 34,
+        "official_minus_rdh_rep": 25
+      },
+      {
+        "county": "MCDOWELL",
+        "official_dem": 5911,
+        "official_rep": 17520,
+        "rdh_modeled_dem": 5911,
+        "rdh_modeled_rep": 17520,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "MECKLENBURG",
+        "official_dem": 376454,
+        "official_rep": 187770,
+        "rdh_modeled_dem": 376464,
+        "rdh_modeled_rep": 187776,
+        "official_minus_rdh_dem": -10,
+        "official_minus_rdh_rep": -6
+      },
+      {
+        "county": "MITCHELL",
+        "official_dem": 1915,
+        "official_rep": 6843,
+        "rdh_modeled_dem": 1915,
+        "rdh_modeled_rep": 6843,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "MONTGOMERY",
+        "official_dem": 4055,
+        "official_rep": 9044,
+        "rdh_modeled_dem": 4055,
+        "rdh_modeled_rep": 9044,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "MOORE",
+        "official_dem": 21436,
+        "official_rep": 39617,
+        "rdh_modeled_dem": 21433,
+        "rdh_modeled_rep": 39615,
+        "official_minus_rdh_dem": 3,
+        "official_minus_rdh_rep": 2
+      },
+      {
+        "county": "NASH",
+        "official_dem": 25508,
+        "official_rep": 26431,
+        "rdh_modeled_dem": 25508,
+        "rdh_modeled_rep": 26431,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "NEW HANOVER",
+        "official_dem": 68814,
+        "official_rep": 67949,
+        "rdh_modeled_dem": 68624,
+        "rdh_modeled_rep": 67805,
+        "official_minus_rdh_dem": 190,
+        "official_minus_rdh_rep": 144
+      },
+      {
+        "county": "NORTHAMPTON",
+        "official_dem": 5239,
+        "official_rep": 3905,
+        "rdh_modeled_dem": 5222,
+        "rdh_modeled_rep": 3896,
+        "official_minus_rdh_dem": 17,
+        "official_minus_rdh_rep": 9
+      },
+      {
+        "county": "ONSLOW",
+        "official_dem": 25684,
+        "official_rep": 54960,
+        "rdh_modeled_dem": 25684,
+        "rdh_modeled_rep": 54960,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "ORANGE",
+        "official_dem": 65444,
+        "official_rep": 20806,
+        "rdh_modeled_dem": 65439,
+        "rdh_modeled_rep": 20804,
+        "official_minus_rdh_dem": 5,
+        "official_minus_rdh_rep": 2
+      },
+      {
+        "county": "PAMLICO",
+        "official_dem": 2676,
+        "official_rep": 5229,
+        "rdh_modeled_dem": 2676,
+        "rdh_modeled_rep": 5229,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "PASQUOTANK",
+        "official_dem": 9549,
+        "official_rep": 10537,
+        "rdh_modeled_dem": 9549,
+        "rdh_modeled_rep": 10537,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "PENDER",
+        "official_dem": 12460,
+        "official_rep": 26042,
+        "rdh_modeled_dem": 12460,
+        "rdh_modeled_rep": 26042,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "PERQUIMANS",
+        "official_dem": 2269,
+        "official_rep": 5278,
+        "rdh_modeled_dem": 2246,
+        "rdh_modeled_rep": 5193,
+        "official_minus_rdh_dem": 23,
+        "official_minus_rdh_rep": 85
+      },
+      {
+        "county": "PERSON",
+        "official_dem": 8295,
+        "official_rep": 13509,
+        "rdh_modeled_dem": 8295,
+        "rdh_modeled_rep": 13509,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "PITT",
+        "official_dem": 45595,
+        "official_rep": 40403,
+        "rdh_modeled_dem": 45486,
+        "rdh_modeled_rep": 40336,
+        "official_minus_rdh_dem": 109,
+        "official_minus_rdh_rep": 67
+      },
+      {
+        "county": "POLK",
+        "official_dem": 4827,
+        "official_rep": 8107,
+        "rdh_modeled_dem": 4827,
+        "rdh_modeled_rep": 8107,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "RANDOLPH",
+        "official_dem": 15951,
+        "official_rep": 59357,
+        "rdh_modeled_dem": 15951,
+        "rdh_modeled_rep": 59357,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "RICHMOND",
+        "official_dem": 7787,
+        "official_rep": 11931,
+        "rdh_modeled_dem": 7787,
+        "rdh_modeled_rep": 11931,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "ROBESON",
+        "official_dem": 16728,
+        "official_rep": 29647,
+        "rdh_modeled_dem": 16728,
+        "rdh_modeled_rep": 29647,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "ROCKINGHAM",
+        "official_dem": 15676,
+        "official_rep": 33447,
+        "rdh_modeled_dem": 15676,
+        "rdh_modeled_rep": 33447,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "ROWAN",
+        "official_dem": 23788,
+        "official_rep": 50807,
+        "rdh_modeled_dem": 23788,
+        "rdh_modeled_rep": 50807,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "RUTHERFORD",
+        "official_dem": 8914,
+        "official_rep": 25456,
+        "rdh_modeled_dem": 8914,
+        "rdh_modeled_rep": 25456,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "SAMPSON",
+        "official_dem": 9797,
+        "official_rep": 18178,
+        "rdh_modeled_dem": 9797,
+        "rdh_modeled_rep": 18178,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "SCOTLAND",
+        "official_dem": 6754,
+        "official_rep": 7767,
+        "rdh_modeled_dem": 6754,
+        "rdh_modeled_rep": 7767,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "STANLY",
+        "official_dem": 8881,
+        "official_rep": 27518,
+        "rdh_modeled_dem": 8816,
+        "rdh_modeled_rep": 27429,
+        "official_minus_rdh_dem": 65,
+        "official_minus_rdh_rep": 89
+      },
+      {
+        "county": "STOKES",
+        "official_dem": 5380,
+        "official_rep": 21548,
+        "rdh_modeled_dem": 5375,
+        "rdh_modeled_rep": 21543,
+        "official_minus_rdh_dem": 5,
+        "official_minus_rdh_rep": 5
+      },
+      {
+        "county": "SURRY",
+        "official_dem": 8613,
+        "official_rep": 28565,
+        "rdh_modeled_dem": 8608,
+        "rdh_modeled_rep": 28537,
+        "official_minus_rdh_dem": 5,
+        "official_minus_rdh_rep": 28
+      },
+      {
+        "county": "SWAIN",
+        "official_dem": 2643,
+        "official_rep": 4311,
+        "rdh_modeled_dem": 2643,
+        "rdh_modeled_rep": 4311,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "TRANSYLVANIA",
+        "official_dem": 8972,
+        "official_rep": 11492,
+        "rdh_modeled_dem": 8972,
+        "rdh_modeled_rep": 11492,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "TYRRELL",
+        "official_dem": 680,
+        "official_rep": 1057,
+        "rdh_modeled_dem": 680,
+        "rdh_modeled_rep": 1057,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "UNION",
+        "official_dem": 51168,
+        "official_rep": 86271,
+        "rdh_modeled_dem": 51168,
+        "rdh_modeled_rep": 86271,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "VANCE",
+        "official_dem": 11292,
+        "official_rep": 8614,
+        "rdh_modeled_dem": 11292,
+        "rdh_modeled_rep": 8614,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "WAKE",
+        "official_dem": 402984,
+        "official_rep": 236735,
+        "rdh_modeled_dem": 402984,
+        "rdh_modeled_rep": 236736,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": -1
+      },
+      {
+        "county": "WARREN",
+        "official_dem": 5872,
+        "official_rep": 3976,
+        "rdh_modeled_dem": 5872,
+        "rdh_modeled_rep": 3976,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "WASHINGTON",
+        "official_dem": 3138,
+        "official_rep": 2768,
+        "rdh_modeled_dem": 3138,
+        "rdh_modeled_rep": 2768,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "WATAUGA",
+        "official_dem": 17225,
+        "official_rep": 15254,
+        "rdh_modeled_dem": 17226,
+        "rdh_modeled_rep": 15253,
+        "official_minus_rdh_dem": -1,
+        "official_minus_rdh_rep": 1
+      },
+      {
+        "county": "WAYNE",
+        "official_dem": 22618,
+        "official_rep": 31580,
+        "rdh_modeled_dem": 22618,
+        "rdh_modeled_rep": 31580,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "WILKES",
+        "official_dem": 7194,
+        "official_rep": 28812,
+        "rdh_modeled_dem": 7172,
+        "rdh_modeled_rep": 28743,
+        "official_minus_rdh_dem": 22,
+        "official_minus_rdh_rep": 69
+      },
+      {
+        "county": "WILSON",
+        "official_dem": 19909,
+        "official_rep": 19750,
+        "rdh_modeled_dem": 19909,
+        "rdh_modeled_rep": 19750,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      },
+      {
+        "county": "YADKIN",
+        "official_dem": 3739,
+        "official_rep": 16439,
+        "rdh_modeled_dem": 3707,
+        "rdh_modeled_rep": 16286,
+        "official_minus_rdh_dem": 32,
+        "official_minus_rdh_rep": 153
+      },
+      {
+        "county": "YANCEY",
+        "official_dem": 3635,
+        "official_rep": 7509,
+        "rdh_modeled_dem": 3635,
+        "rdh_modeled_rep": 7509,
+        "official_minus_rdh_dem": 0,
+        "official_minus_rdh_rep": 0
+      }
+    ],
+    "official_totals": {
+      "dem": 2715375,
+      "rep": 2898423
+    },
+    "rdh_modeled_totals": {
+      "dem": 2713609,
+      "rep": 2896942
+    },
+    "counties_with_any_difference": 27,
+    "sum_absolute_county_differences": {
+      "dem": 1794,
+      "rep": 1495
+    },
+    "interpretation": "RDH documents mixed sorted/unsorted sources and privacy noise. Differences are measured, not all causally attributed to noise. No modeled vote is corrected or redistributed."
+  },
+  "certificate_snapshots": {
+    "source": "State certificates of ascertainment hosted by the National Archives; versioned November/December 2024 snapshots, not asserted to be the latest amended canvass",
+    "research_ready": false,
+    "states": {
+      "texas": {
+        "certificate_date": "2024-11-25",
+        "certificate_url": "https://www.archives.gov/files/electoral-college/2024/ascertainment-texas.pdf",
+        "certificate_totals": {
+          "dem_votes": 4835250,
+          "rep_votes": 6393597
+        },
+        "rdh_block_totals": {
+          "dem_votes": 4835134,
+          "rep_votes": 6393403
+        },
+        "certificate_minus_rdh": {
+          "dem_votes": 116,
+          "rep_votes": 194
+        },
+        "status": "UNRESOLVED: historical configuration agreement is not official election-total agreement"
+      },
+      "north_carolina": {
+        "certificate_date": "2024-12-09",
+        "certificate_url": "https://www.archives.gov/files/electoral-college/2024/ascertainment-north-carolina.pdf",
+        "certificate_totals": {
+          "dem_votes": 2715378,
+          "rep_votes": 2898424
+        },
+        "rdh_block_totals": {
+          "dem_votes": 2713609,
+          "rep_votes": 2896942
+        },
+        "certificate_minus_rdh": {
+          "dem_votes": 1769,
+          "rep_votes": 1482
+        },
+        "status": "UNRESOLVED: historical configuration agreement is not official election-total agreement"
+      }
+    }
+  },
+  "precinct_vote_conservation": {
+    "texas": {
+      "modeled_precincts": 9712,
+      "source_precincts_after_documented_wake_union": 9712,
+      "missing_source_precincts": [],
+      "missing_block_precincts": [],
+      "precincts_with_presidential_total_differences": 0,
+      "max_abs_precinct_vote_difference": 0,
+      "statewide_source_totals": {
+        "G24PREDHAR": 4835134,
+        "G24PRERTRU": 6393403
+      },
+      "interpretation": "Conservation check only; matching sums does not validate within-precinct vote allocation"
+    },
+    "north_carolina": {
+      "modeled_precincts": 2657,
+      "source_precincts_after_documented_wake_union": 2657,
+      "missing_source_precincts": [],
+      "missing_block_precincts": [],
+      "precincts_with_presidential_total_differences": 1,
+      "max_abs_precinct_vote_difference": 1,
+      "statewide_source_totals": {
+        "G24PREDHAR": 2713609,
+        "G24PRERTRU": 2896941
+      },
+      "interpretation": "Conservation check only; matching sums does not validate within-precinct vote allocation"
+    }
+  },
+  "nc_precinct_vote_discrepancy": [
+    {
+      "precinct": "WAKE-:-16-09",
+      "block_aggregate": {
+        "G24PREDHAR": 2929,
+        "G24PRERTRU": 1641
+      },
+      "precinct_source": {
+        "G24PREDHAR": 2929,
+        "G24PRERTRU": 1640
+      }
+    }
+  ],
+  "nc_precision_sensitivity": {
+    "research_ready": false,
+    "production_geometry_changed": false,
+    "scenarios": [
+      {
+        "grid_us_survey_feet": 0,
+        "changed_wkb_records": 0,
+        "empty_records": 0,
+        "invalid_records": 0,
+        "sum_symmetric_difference_area_m2": 0.0,
+        "adjacency": {
+          "research_ready": false,
+          "nodes": 2681,
+          "sampler_edges": 7584,
+          "boundary_edges": 7581,
+          "sampler_components": 1,
+          "boundary_components": 1,
+          "sampler_edge_sha256": "3002f6c4659a6179938a171cfb5499c7d2349c49abb881afef392f053264a4b9",
+          "boundary_edge_sha256": "42bd56e795976a7967db02ca4f770e7d7d1110208fd43cac85ef26744f690c81",
+          "differences": [
+            {
+              "category": "sampler_only",
+              "left": "CABARRUS-:-12-13|08",
+              "right": "CABARRUS-:-12-11|06",
+              "intersection_area_m2": 7.26612261036734e-15,
+              "intersection_length_m": 0.0010645804387827641,
+              "shared_boundary_length_m": 0.0,
+              "distance_m": 0.0
+            },
+            {
+              "category": "sampler_only",
+              "left": "CUMBERLAND-:-CC14|07",
+              "right": "CUMBERLAND-:-CC21|09",
+              "intersection_area_m2": 5.2160169901586364e-15,
+              "intersection_length_m": 0.0013041545691256846,
+              "shared_boundary_length_m": 0.0,
+              "distance_m": 0.0
+            },
+            {
+              "category": "sampler_only",
+              "left": "MECKLENBURG-:-103|12",
+              "right": "MECKLENBURG-:-233|08",
+              "intersection_area_m2": 2.856911345198844e-10,
+              "intersection_length_m": 256.981117115433,
+              "shared_boundary_length_m": 0.0,
+              "distance_m": 0.0
+            }
+          ],
+          "warnings": [
+            "Found overlaps among the given polygons. Indices of overlaps: {(36, 2454), (11, 1122), (21, 1633), (13, 1180), (870, 907), (0, 362), (3, 2539), (1854, 1862), (13, 851), (7, 834), (6, 2217), (839, 907), (393, 1861), (24, 1997), (888, 900), (16, 1639), (16, 1703), (5, 586), (22, 1633), (9, 2329), (870, 906), (1115, 1162), (2, 462), (14, 851), (23, 1998), (30, 2406), (1854, 1861), (35, 2454), (3, 2538), (1, 362), (21, 1659), (25, 2044), (12, 1122), (13, 846), (6, 834), (888, 899), (2, 2539), (839, 906), (11, 1166), (40, 2477), (15, 1703), (1114, 1162), (389, 1862), (23, 1997), (10, 2329), (32, 2451), (3, 2537), (17, 1697), (22, 1659), (28, 1224), (28, 1404), (28, 1407), (26, 2044), (24, 1998), (29, 2406), (4, 586), (393, 1862)}"
+          ],
+          "interpretation": "Neither graph is substituted for the configured sampler; discrepancies require methodological review"
+        }
+      },
+      {
+        "grid_us_survey_feet": 1e-8,
+        "changed_wkb_records": 2681,
+        "empty_records": 0,
+        "invalid_records": 0,
+        "sum_symmetric_difference_area_m2": 0.0017990714931997833,
+        "adjacency": {
+          "research_ready": false,
+          "nodes": 2681,
+          "sampler_edges": 7595,
+          "boundary_edges": 7595,
+          "sampler_components": 1,
+          "boundary_components": 1,
+          "sampler_edge_sha256": "ab11d806a7dbfac41cead04a1c1622108512ec2d098aa1b457059b6259b2c4e1",
+          "boundary_edge_sha256": "ab11d806a7dbfac41cead04a1c1622108512ec2d098aa1b457059b6259b2c4e1",
+          "differences": [],
+          "warnings": [
+            "Found overlaps among the given polygons. Indices of overlaps: {(21, 1659), (389, 1861), (14, 846), (2, 2539), (839, 906), (12, 1166), (15, 1639), (393, 1862), (31, 2451), (6, 867), (10, 2329), (2, 2537), (393, 1861), (16, 1703), (28, 1224), (22, 1633), (9, 2329), (3, 462), (14, 851), (29, 2406), (2, 2538)}"
+          ],
+          "interpretation": "Neither graph is substituted for the configured sampler; discrepancies require methodological review"
+        }
+      },
+      {
+        "grid_us_survey_feet": 1e-6,
+        "changed_wkb_records": 2681,
+        "empty_records": 0,
+        "invalid_records": 0,
+        "sum_symmetric_difference_area_m2": 0.1137831840313901,
+        "adjacency": {
+          "research_ready": false,
+          "nodes": 2681,
+          "sampler_edges": 7597,
+          "boundary_edges": 7597,
+          "sampler_components": 1,
+          "boundary_components": 1,
+          "sampler_edge_sha256": "928f306d2eeb10bc78439c72f7114c2a8b7debaf7b0e8e1e3f5a8f9da8bcb508",
+          "boundary_edge_sha256": "928f306d2eeb10bc78439c72f7114c2a8b7debaf7b0e8e1e3f5a8f9da8bcb508",
+          "differences": [],
+          "warnings": [
+            "Found overlaps among the given polygons. Indices of overlaps: {(11, 1122), (39, 2477), (389, 1861), (14, 846), (13, 1180), (2, 2539), (6, 867), (2, 2537), (393, 1861), (16, 1703), (22, 1659), (28, 1224), (1115, 1162), (9, 2329), (24, 1998), (1852, 1862), (14, 851)}"
+          ],
+          "interpretation": "Neither graph is substituted for the configured sampler; discrepancies require methodological review"
+        }
+      },
+      {
+        "grid_us_survey_feet": 0.0001,
+        "changed_wkb_records": 2681,
+        "empty_records": 0,
+        "invalid_records": 0,
+        "sum_symmetric_difference_area_m2": 11.641277123166988,
+        "adjacency": {
+          "research_ready": false,
+          "nodes": 2681,
+          "sampler_edges": 7592,
+          "boundary_edges": 7592,
+          "sampler_components": 1,
+          "boundary_components": 1,
+          "sampler_edge_sha256": "8dc6eaaae9db612c6a53ce6265cb03189657ddefc01e55d4af4a2ea5d0bad17f",
+          "boundary_edge_sha256": "8dc6eaaae9db612c6a53ce6265cb03189657ddefc01e55d4af4a2ea5d0bad17f",
+          "differences": [],
+          "warnings": [
+            "Found overlaps among the given polygons. Indices of overlaps: {(23, 1997), (11, 1122), (1115, 1163), (16, 1703), (4, 597), (15, 1639), (3, 462), (23, 24), (1854, 1861)}"
+          ],
+          "interpretation": "Neither graph is substituted for the configured sampler; discrepancies require methodological review"
+        }
+      },
+      {
+        "grid_us_survey_feet": 0.01,
+        "changed_wkb_records": 2681,
+        "empty_records": 0,
+        "invalid_records": 0,
+        "sum_symmetric_difference_area_m2": 51613.79085966376,
+        "adjacency": {
+          "research_ready": false,
+          "nodes": 2681,
+          "sampler_edges": 7598,
+          "boundary_edges": 7598,
+          "sampler_components": 1,
+          "boundary_components": 1,
+          "sampler_edge_sha256": "8728ffbf6badfe6c307ef35adb069d3c49905447e590bccf44e17b71e5b3f1b5",
+          "boundary_edge_sha256": "8728ffbf6badfe6c307ef35adb069d3c49905447e590bccf44e17b71e5b3f1b5",
+          "differences": [],
+          "warnings": [
+            "Found overlaps among the given polygons. Indices of overlaps: {(3, 2538), (39, 2477), (13, 846), (14, 1180), (29, 2404), (11, 1166), (3, 2539), (15, 1703), (1114, 1162), (5, 577), (839, 907), (10, 2329), (5, 580), (24, 1997), (3, 2537), (0, 363), (28, 1224), (28, 1404), (949, 2513), (781, 2415), (13, 851), (30, 2406), (393, 1862)}"
+          ],
+          "interpretation": "Neither graph is substituted for the configured sampler; discrepancies require methodological review"
+        }
+      }
+    ]
+  },
+  "nc_cross_candidate_graph": {
+    "precinct_edges": 7584,
+    "block_union_edges": 7581,
+    "precinct_only": [
+      ["CABARRUS-:-12-11|06", "CABARRUS-:-12-13|08"],
+      ["CABARRUS-:-12-12|08", "CABARRUS-:-12-13|08"],
+      ["CARTERET-:-ISLE|03", "ONSLOW-:-SW19|03|25-01"],
+      ["CHATHAM-:-75|04", "WAKE-:-20-14|04"],
+      ["CHATHAM-:-75|04", "WAKE-:-20-16|04"],
+      ["CUMBERLAND-:-CC12|07", "CUMBERLAND-:-CC14|07"],
+      ["CUMBERLAND-:-CC14|07", "CUMBERLAND-:-CC21|09"],
+      ["CUMBERLAND-:-CC14|07", "CUMBERLAND-:-CC34|07"],
+      ["FORSYTH-:-042|06", "FORSYTH-:-605|06"],
+      ["FORSYTH-:-066|06", "GUILFORD-:-NDRI|06"],
+      ["FORSYTH-:-068|06", "FORSYTH-:-112|06"],
+      ["GRANVILLE-:-SALM|01", "GRANVILLE-:-SASS|13"],
+      ["GRANVILLE-:-SALM|01", "VANCE-:-NH|01"],
+      ["GUILFORD-:-FR4|05", "GUILFORD-:-NDRI|05"],
+      ["GUILFORD-:-FR5A|05", "GUILFORD-:-NDRI|05"],
+      ["GUILFORD-:-G06|05", "GUILFORD-:-JEF2|09"],
+      ["GUILFORD-:-G65|09", "GUILFORD-:-JAM3|09"],
+      ["GUILFORD-:-NDRI|06", "GUILFORD-:-OR1|05"],
+      ["MECKLENBURG-:-068|12", "MECKLENBURG-:-103|12"],
+      ["MECKLENBURG-:-085|12", "MECKLENBURG-:-103|12"],
+      ["MECKLENBURG-:-099|12", "MECKLENBURG-:-217|08"],
+      ["MECKLENBURG-:-103|08", "MECKLENBURG-:-217|08"],
+      ["MECKLENBURG-:-103|08", "MECKLENBURG-:-233|08"],
+      ["MECKLENBURG-:-112|08", "MECKLENBURG-:-121|08"],
+      ["MECKLENBURG-:-112|08", "MECKLENBURG-:-232|08"]
+    ],
+    "block_union_only": [
+      ["CABARRUS-:-12-04|08", "CABARRUS-:-12-13|06"],
+      ["CABARRUS-:-12-05|08", "CABARRUS-:-12-13|06"],
+      ["CABARRUS-:-12-13|06", "CABARRUS-:-12-14|08"],
+      ["CUMBERLAND-:-CC06|07", "CUMBERLAND-:-CC14|09"],
+      ["FORSYTH-:-068|06", "FORSYTH-:-112|10"],
+      ["GRANVILLE-:-SALM|13", "VANCE-:-CC|01"],
+      ["GUILFORD-:-FR4|05", "GUILFORD-:-NDRI|06"],
+      ["GUILFORD-:-FR5A|05", "GUILFORD-:-NDRI|06"],
+      ["GUILFORD-:-FR5B|05", "GUILFORD-:-NDRI|06"],
+      ["GUILFORD-:-G65|09", "GUILFORD-:-G66|06"],
+      ["GUILFORD-:-JEF2|05", "GUILFORD-:-JEF4|09"],
+      ["MECKLENBURG-:-085|12", "MECKLENBURG-:-103|08"],
+      ["MECKLENBURG-:-096|12", "MECKLENBURG-:-103|08"],
+      ["MECKLENBURG-:-112|08", "MECKLENBURG-:-121|14"],
+      ["MECKLENBURG-:-137|08", "MECKLENBURG-:-232|14"],
+      ["MECKLENBURG-:-216|08", "MECKLENBURG-:-217|12"],
+      ["MECKLENBURG-:-217|12", "MECKLENBURG-:-233|08"],
+      ["POLK-:-GC09|14", "POLK-:-WO06|11"],
+      ["SAMPSON-:-PLVW|07", "SAMPSON-:-WBRK|03"],
+      ["WAKE-:-07-06|02", "WAKE-:-07-07A|02"],
+      ["WAKE-:-10-03|02", "WAKE-:-10-05|13"],
+      ["WAKE-:-16-01|02", "WAKE-:-16-09|13"]
+    ],
+    "production_graph_changed": false
+  },
+  "nc_candidate_comparison": {
+    "identical_unit_ids": true,
+    "identical_block_population_vote_and_plan_attributes": true,
+    "units_with_positive_symmetric_difference_area": 2681,
+    "sum_unit_symmetric_difference_area_m2": 774347.2189868736,
+    "largest_unit_symmetric_difference_area_m2": 155680.205015097,
+    "largest_differences": [
+      {
+        "unit": "WAKE-:-07-07|02",
+        "symmetric_difference_area_m2": 155680.205015097
+      },
+      {
+        "unit": "WAKE-:-07-07A|02",
+        "symmetric_difference_area_m2": 155676.8065424063
+      },
+      {
+        "unit": "HENDERSON-:-CV|11",
+        "symmetric_difference_area_m2": 149728.71974150123
+      },
+      {
+        "unit": "HENDERSON-:-HV-2|11",
+        "symmetric_difference_area_m2": 146219.8122052547
+      },
+      {
+        "unit": "CHATHAM-:-WPP114|04",
+        "symmetric_difference_area_m2": 16899.587126535404
+      },
+      {
+        "unit": "CHATHAM-:-EPP112|04",
+        "symmetric_difference_area_m2": 16895.739571149497
+      },
+      {
+        "unit": "STOKES-:-17|05",
+        "symmetric_difference_area_m2": 14330.491919997377
+      },
+      {
+        "unit": "STOKES-:-150|05",
+        "symmetric_difference_area_m2": 14329.446754148727
+      },
+      {
+        "unit": "PERSON-:-RCOB|13",
+        "symmetric_difference_area_m2": 13244.737730652087
+      },
+      {
+        "unit": "PERSON-:-FLHE|13",
+        "symmetric_difference_area_m2": 11082.483753617085
+      }
+    ],
+    "interpretation": "A separately constructed topology sensitivity geography, not a silent replacement for the precinct-based candidate"
+  },
+  "environment": {
+    "research_python": "3.12.16",
+    "research_executable": ".venv/science/bin/python",
+    "uv_version": "0.13.6",
+    "prettier_version": "3.9.10",
+    "versions": [
+      "arviz==0.17.1",
+      "certifi==2026.10.23",
+      "contourpy==1.3.3",
+      "cycler==0.12.1",
+      "fonttools==4.68.0",
+      "geopandas==1.1.2",
+      "gerrychain==0.3.2",
+      "h5netcdf==1.8.2",
+      "kiwisolver==1.5.1",
+      "matplotlib==3.9.4",
+      "networkx==3.4.2",
+      "numpy==1.26.4",
+      "packaging==26.3",
+      "pandas==2.2.3",
+      "pillow==13.0.0",
+      "pyogrio==0.10.0",
+      "pyparsing==3.3.3",
+      "pyproj==3.6.1",
+      "python-dateutil==4.0.0",
+      "pytz==2026.6",
+      "scipy==1.12.0",
+      "setuptools==84.2.1",
+      "shapely==2.0.7",
+      "typing-extensions==4.16.0",
+      "tzdata==2026.6",
+      "xarray==2026.9.0",
+      "xarray-einstats==0.9.1"
+    ],
+    "system_environment_before": {
+      "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+      "platform": "macOS-27.2-arm64-arm-64bit",
+      "packages": [
+        ["altgraph", "0.17.2"],
+        ["future", "0.18.2"],
+        ["macholib", "1.15.2"],
+        ["pip", "21.2.4"],
+        ["setuptools", "58.0.4"],
+        ["six", "1.15.0"],
+        ["wheel", "0.37.0"]
+      ]
+    },
+    "failed_trial": "GerryChain 0.3.2 imports fail on system Python 3.9.6; retained outer .venv trial is not the research runtime"
+  }
+}

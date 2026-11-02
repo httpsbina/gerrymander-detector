@@ -74,8 +74,9 @@ def build_parser():
     selection.add_argument("--nc", action="store_true", help="North Carolina")
     selection.add_argument("--penn", action="store_true", help="Pennsylvania (not yet prepared)")
     parser.add_argument("--year", help="Configured starting-plan year, e.g. 2023 or 2025")
+    parser.add_argument("--config", type=Path, help="Explicit state registry inside this checkout")
     parser.add_argument(
-        "--stage", choices=("status", "preflight", "simulate", "audit", "sources", "inventory", "download"), default="status",
+        "--stage", choices=("status", "preflight", "validate", "rebuild", "simulate", "audit", "sources", "inventory", "download"), default="status",
         help="Status is read-only and does not execute simulation"
     )
     parser.add_argument("--steps", type=int, help="New states for simulate; total states for audit")
@@ -88,6 +89,8 @@ def build_parser():
     parser.add_argument("--rdh-filter", help="Filter Pennsylvania RDH inventory listings")
     parser.add_argument("--rdh-file", help="Exact cached RDH filename to download")
     parser.add_argument("--report-dir", type=Path, help="New directory for preflight reports")
+    parser.add_argument("--source-root", type=Path, help="Acquired RDH source directory for validate/rebuild")
+    parser.add_argument("--block-master", type=Path, help="Audited block master CSV for rebuild")
     return parser
 
 
@@ -219,9 +222,15 @@ def build_audit_command(args, state, plan):
 def main(argv=None):
     args = build_parser().parse_args(argv)
     try:
-        states = load_registry()
-        if args.report_dir is not None and args.stage != "preflight":
-            raise PipelineError("--report-dir requires --stage preflight")
+        config_path = resolve(args.config).resolve() if args.config is not None else CONFIG_PATH
+        config_path.relative_to(ROOT)
+        states = load_registry(config_path)
+        if args.report_dir is not None and args.stage not in ("preflight", "validate", "rebuild"):
+            raise PipelineError("--report-dir requires --stage preflight, validate or rebuild")
+        if args.source_root is not None and args.stage not in ("validate", "rebuild"):
+            raise PipelineError("--source-root requires --stage validate or rebuild")
+        if args.block_master is not None and args.stage != "rebuild":
+            raise PipelineError("--block-master requires --stage rebuild")
         if args.stage in ("sources", "inventory", "download"):
             if not args.penn:
                 raise PipelineError("RDH source stages currently support Pennsylvania only")
@@ -249,6 +258,46 @@ def main(argv=None):
                 f"{state['name']} has no validated dataset or plan configuration. "
                 "Data ingestion and validation must be completed before running this stage."
             )
+        if args.stage in ("validate", "rebuild"):
+            if any(v is not None for v in (
+                args.steps, args.seed, args.seeds, args.warmup, args.window, args.resume_from
+            )):
+                raise PipelineError("Run overrides cannot be used with validate/rebuild")
+            if args.source_root is None or args.report_dir is None:
+                raise PipelineError("Validate/rebuild requires --source-root and --report-dir")
+            from src.analysis.research_preflight import local_path
+            source = local_path(ROOT, args.source_root)
+            destination = local_path(ROOT, args.report_dir)
+            if destination.exists():
+                raise PipelineError("Refusing an existing validation/rebuild output directory")
+            state_key = state_key_from_args(args)
+            if args.stage == "validate":
+                commands = [[
+                    sys.executable, str(ROOT / script), "--state", state_key,
+                    "--source-root", str(source), "--output-dir", str(destination / folder),
+                ] for script, folder in (
+                    ("src/validation/audit_rdh_sources.py", "blocks"),
+                    ("src/validation/audit_rdh_geometry.py", "geometry"),
+                )]
+            else:
+                if args.block_master is None:
+                    raise PipelineError("Rebuild requires --block-master from a successful source audit")
+                master = local_path(ROOT, args.block_master)
+                script = "rebuild_texas_candidate.py" if args.texas else "rebuild_nc_common.py"
+                commands = [[
+                    sys.executable, str(ROOT / "src/data_prep" / script),
+                    "--source-root", str(source), "--block-master", str(master),
+                    "--output-dir", str(destination),
+                ]]
+            for command in commands:
+                print("COMMAND: " + subprocess.list2cmdline(command), flush=True)
+            if args.dry_run:
+                print("DRY RUN: no files written, no subprocess started")
+                return 0
+            failures = [subprocess.run(command, cwd=ROOT, check=False).returncode
+                        for command in commands]
+            print("RESEARCH-READY: NO; source audits/candidates do not establish scientific readiness")
+            return max((abs(code) for code in failures), default=0)
         if args.stage == "preflight":
             if any(v is not None for v in (
                 args.steps, args.seed, args.seeds, args.warmup, args.window, args.resume_from

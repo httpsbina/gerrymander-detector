@@ -1,5 +1,7 @@
 # Gerrymander Detector
 
+**Current research status (November 2, 2026): Texas and North Carolina are not research-ready.** Historical results below have not been revalidated from their original chain files, which are unavailable in this checkout. The [new-source data and methods audit](deliverables/rdh-research-audit-2026-11-02/README.md) records current block coverage, geography, election-source discrepancies and continuation checks. New-source chains are separate experiments and do not replace or reproduce the historical analyses.
+
 [![Python](https://img.shields.io/badge/Python-3.12-blue)](https://python.org)
 [![GerryChain](https://img.shields.io/badge/GerryChain-0.3.2-green)](https://github.com/mggg/GerryChain)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
@@ -46,14 +48,14 @@ The final Texas analysis uses:
 
 ### Seat Results
 
-| Map | Harris-won districts | Position in observed ensemble |
-|---|---:|---|
-| Current Texas map | 11 | 12.607% lower tail |
-| Representative neutral plan | 13 | Near ensemble center |
-| PLANC2333 (2025) | 8 | Below every observed state |
-| Ensemble range | 9-17 | - |
-| Ensemble mean | 12.973 | - |
-| Ensemble median | 13 | - |
+| Map                         | Harris-won districts | Position in observed ensemble |
+| --------------------------- | -------------------: | ----------------------------- |
+| Current Texas map           |                   11 | 12.607% lower tail            |
+| Representative neutral plan |                   13 | Near ensemble center          |
+| PLANC2333 (2025)            |                    8 | Below every observed state    |
+| Ensemble range              |                 9-17 | -                             |
+| Ensemble mean               |               12.973 | -                             |
+| Ensemble median             |                   13 | -                             |
 
 No retained post-burn-in ensemble state produced as few as 8 Harris-won congressional districts.
 
@@ -191,17 +193,17 @@ First-half and second-half comparisons show some remaining chain drift, so a fut
 
 ## Seat Distribution
 
-| Harris-won districts | Observed states | Share |
-|---:|---:|---:|
-| 9 | 116 | 0.39% |
-| 10 | 822 | 2.74% |
-| 11 | 2,844 | 9.48% |
-| 12 | 6,878 | 22.93% |
-| 13 | 8,721 | 29.07% |
-| 14 | 7,235 | 24.12% |
-| 15 | 2,732 | 9.11% |
-| 16 | 607 | 2.02% |
-| 17 | 45 | 0.15% |
+| Harris-won districts | Observed states |  Share |
+| -------------------: | --------------: | -----: |
+|                    9 |             116 |  0.39% |
+|                   10 |             822 |  2.74% |
+|                   11 |           2,844 |  9.48% |
+|                   12 |           6,878 | 22.93% |
+|                   13 |           8,721 | 29.07% |
+|                   14 |           7,235 | 24.12% |
+|                   15 |           2,732 |  9.11% |
+|                   16 |             607 |  2.02% |
+|                   17 |              45 |  0.15% |
 
 The modal and median outcome is 13 Harris-won districts.
 
@@ -387,25 +389,25 @@ $env:PYTHONHASHSEED = "0"
 
 ## Stack
 
-| Tool | Purpose |
-|---|---|
-| [GerryChain](https://github.com/mggg/GerryChain) | ReCom Markov-chain redistricting |
-| [GeoPandas](https://geopandas.org) | Geospatial data processing |
-| [Pandas](https://pandas.pydata.org) | Tabular analysis |
-| [NetworkX](https://networkx.org) | Graph construction and validation |
-| [SciPy](https://scipy.org) | Statistical analysis |
-| [Matplotlib](https://matplotlib.org) | Visualization |
-| [Redistricting Data Hub](https://redistrictingdatahub.org) | Election and geographic data |
+| Tool                                                       | Purpose                           |
+| ---------------------------------------------------------- | --------------------------------- |
+| [GerryChain](https://github.com/mggg/GerryChain)           | ReCom Markov-chain redistricting  |
+| [GeoPandas](https://geopandas.org)                         | Geospatial data processing        |
+| [Pandas](https://pandas.pydata.org)                        | Tabular analysis                  |
+| [NetworkX](https://networkx.org)                           | Graph construction and validation |
+| [SciPy](https://scipy.org)                                 | Statistical analysis              |
+| [Matplotlib](https://matplotlib.org)                       | Visualization                     |
+| [Redistricting Data Hub](https://redistrictingdatahub.org) | Election and geographic data      |
 
 ---
 
 ## References
 
-DeFord, D., Duchin, M., and Solomon, J. (2021). [Recombination: A Family of Markov Chains for Redistricting](https://hdsr.mitpress.mit.edu/pub/1ds8ptxu). *Harvard Data Science Review*, 3(1).
+DeFord, D., Duchin, M., and Solomon, J. (2021). [Recombination: A Family of Markov Chains for Redistricting](https://hdsr.mitpress.mit.edu/pub/1ds8ptxu). _Harvard Data Science Review_, 3(1).
 
-Chikina, M., Frieze, A., and Pegden, W. (2017). [Assessing Significance in a Markov Chain without Mixing](https://www.pnas.org/doi/10.1073/pnas.1617540114). *PNAS*, 114(11).
+Chikina, M., Frieze, A., and Pegden, W. (2017). [Assessing Significance in a Markov Chain without Mixing](https://www.pnas.org/doi/10.1073/pnas.1617540114). _PNAS_, 114(11).
 
-Duchin, M. (2018). [Outlier Analysis for Pennsylvania Congressional Redistricting](https://mggg.org/uploads/md-report.pdf). Expert report, *League of Women Voters v. Commonwealth of Pennsylvania*.
+Duchin, M. (2018). [Outlier Analysis for Pennsylvania Congressional Redistricting](https://mggg.org/uploads/md-report.pdf). Expert report, _League of Women Voters v. Commonwealth of Pennsylvania_.
 
 Becker et al. (2021). [Computational Redistricting and the Voting Rights Act](https://www.brennancenter.org/sites/default/files/2023-11/Computational%20Redistricting%20and%20the%20Voting%20Rights%20Act%20FINAL%20PUBLISHED%20VERSION%20elj.2020.0704.pdf).
 

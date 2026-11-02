@@ -1,0 +1,18 @@
+{
+  "research_ready": false,
+  "plot_code_sha256": "5befad5ecbe684d2f33a08200ca31e30cb6c011661c42982d7272bc9caf04671",
+  "figures": [
+    {
+      "file": "election_model_sensitivity.png",
+      "sha256": "1ca5c9879541f351edb784690aacd40e2929b49a434c501dc1fc114e0bdf1eab"
+    },
+    {
+      "file": "nc_election_normalization_sensitivity.png",
+      "sha256": "47b13a2b28b170820037404502a6ccb2eb8fd226c8d3f27eae521c2195147261"
+    },
+    {
+      "file": "nc_onslow_block_union.png",
+      "sha256": "6bec0e87c76909aa7ca19199b0cd52c3b798bee48e8015678209d66e13a2dbc8"
+    }
+  ]
+}

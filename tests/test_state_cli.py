@@ -96,6 +96,37 @@ class StateCliTests(unittest.TestCase):
             code, _, _ = self.run_cli("--texas", "--stage", "audit", "--dry-run")
         self.assertEqual(code, 0)
 
+    def test_source_validation_dry_run_routes_both_real_data_audits(self):
+        with patch.object(subprocess, "run", side_effect=AssertionError("unexpected subprocess")):
+            code, out, _ = self.run_cli(
+                "--nc", "--stage", "validate", "--source-root", "data/fixture-not-present",
+                "--report-dir", "outputs/fixture-not-present", "--dry-run",
+            )
+        self.assertEqual(code, 0)
+        self.assertIn("audit_rdh_sources.py", out)
+        self.assertIn("audit_rdh_geometry.py", out)
+
+    def test_rebuild_requires_explicit_block_master(self):
+        code, _, err = self.run_cli(
+            "--texas", "--stage", "rebuild", "--source-root", "data/fixture-not-present",
+            "--report-dir", "outputs/fixture-not-present", "--dry-run",
+        )
+        self.assertEqual(code, 2)
+        self.assertIn("--block-master", err)
+
+    def test_source_validation_refuses_existing_output_directory(self):
+        code, _, err = self.run_cli(
+            "--texas", "--stage", "validate", "--source-root", "data/fixture-not-present",
+            "--report-dir", "tests", "--dry-run",
+        )
+        self.assertEqual(code, 2)
+        self.assertIn("Refusing", err)
+
+    def test_registry_override_cannot_read_outside_checkout(self):
+        with patch.object(main, "load_registry", side_effect=AssertionError("unexpected file access")):
+            code, _, _ = self.run_cli("--nc", "--config", "../outside.json")
+        self.assertEqual(code, 2)
+
 
 if __name__ == "__main__":
     unittest.main()

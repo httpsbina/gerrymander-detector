@@ -27,6 +27,7 @@ import hashlib
 import os
 import random
 import pickle
+import sys
 
 import geopandas as gpd
 import networkx as nx
@@ -51,7 +52,7 @@ from gerrychain.constraints import (
 
 from gerrychain.accept import always_accept
 
-from gerrychain.tree import bipartition_tree
+from gerrychain.tree import bipartition_tree, random_spanning_tree
 
 ROOT = os.path.abspath(
     os.path.join(
@@ -60,6 +61,8 @@ ROOT = os.path.abspath(
         "..",
     )
 )
+sys.path.insert(0, ROOT)
+from src.chain.checkpoint_integrity import CanonicalEdgeSet, provenance, protect_run, validate_checkpoint
 
 DEFAULT_OUTPUT_DIR = os.path.join(
     ROOT,
@@ -270,6 +273,12 @@ if args.sample_every < 1:
     raise ValueError(
         "--sample-every must be at least 1"
     )
+
+hash_seed = os.environ.get("PYTHONHASHSEED", "")
+if not hash_seed.isdigit() or not 0 <= int(hash_seed) <= 4294967295:
+    raise ValueError("Set an explicit integer PYTHONHASHSEED before starting Python")
+if args.node_repeats < 1:
+    raise ValueError("--node-repeats must be positive")
 
 
 state_label = args.state.strip()
@@ -512,6 +521,20 @@ print(
 )
 
 
+def canonical_cut_edges(partition):
+    return CanonicalEdgeSet(cut_edges(partition))
+
+
+def canonical_spanning_tree(graph):
+    # Node/edge iteration can depend on set history when a partition is rebuilt.
+    # Ordering IID edge-weight draws preserves their law, while stabilizing the
+    # correspondence between a saved RNG state and subsequent proposals.
+    ordered = nx.Graph()
+    ordered.add_nodes_from((node, dict(graph.nodes[node])) for node in sorted(graph.nodes))
+    ordered.add_edges_from(sorted(tuple(sorted(edge)) for edge in graph.edges))
+    return random_spanning_tree(ordered)
+
+
 election = Election(
     "ELECTION",
     {
@@ -521,13 +544,21 @@ election = Election(
 )
 
 
+def canonical_election_results(partition):
+    results = election(partition)
+    # A stable district order also makes floating-point diagnostic reductions
+    # identical after restoring the same assignment, without rounding results.
+    results.regions = sorted(results.regions)
+    return results
+
+
 updaters = {
     "population": Tally(
         args.population_col,
         alias="population",
     ),
-    "cut_edges": cut_edges,
-    "ELECTION": election,
+    "cut_edges": canonical_cut_edges,
+    "ELECTION": canonical_election_results,
 }
 
 updaters = {
@@ -535,12 +566,13 @@ updaters = {
         args.population_col,
         alias="population",
     ),
-    "cut_edges": cut_edges,
-    "ELECTION": election,
+    "cut_edges": canonical_cut_edges,
+    "ELECTION": canonical_election_results,
 }
 
 
 resume_checkpoint = None
+run_provenance = provenance(args, graph, __file__)
 start_step = 0
 run_seed = args.seed
 
@@ -550,6 +582,8 @@ if args.resume_from:
 
     with open(args.resume_from, "rb") as f:
         resume_checkpoint = pickle.load(f)
+
+    validate_checkpoint(resume_checkpoint, run_provenance, args.seed)
 
     assignment = resume_checkpoint["assignment"]
 
@@ -648,6 +682,9 @@ initial_dem_seats = dem_seats(
 initial_hash = plan_hash(
     initial
 )
+if resume_checkpoint is not None and resume_checkpoint.get("plan_hash") != initial_hash:
+    raise RuntimeError("Checkpoint assignment fingerprint mismatch")
+protect_run(output_dir, checkpoint_dir, state_slug, args.epsilon, run_seed, start_step, args.steps)
 
 
 print("\ninitial seed map:")
@@ -720,6 +757,7 @@ proposal = partial(
     node_repeats=args.node_repeats,
     method=partial(
         bipartition_tree,
+        spanning_tree_fn=canonical_spanning_tree,
         max_attempts=1000,
         allow_pair_reselection=True,
     ),
@@ -749,14 +787,21 @@ chain = MarkovChain(
     total_steps=chain_total_steps,
 )
 
+saved_checkpoints = {}
+
+
 def save_checkpoint(partition, next_step):
+    if next_step in saved_checkpoints:
+        return saved_checkpoints[next_step]
     os.makedirs(
         checkpoint_dir,
         exist_ok=True,
     )
 
     checkpoint = {
-        "version": 1,
+        "version": 2,
+        "provenance": run_provenance,
+        "plan_hash": plan_hash(partition),
         "seed": run_seed,
         "epsilon": args.epsilon,
         "node_repeats": args.node_repeats,
@@ -785,13 +830,14 @@ def save_checkpoint(partition, next_step):
         ),
     )
 
-    with open(checkpoint_path, "wb") as f:
+    with open(checkpoint_path, "xb") as f:
         pickle.dump(
             checkpoint,
             f,
             protocol=pickle.HIGHEST_PROTOCOL,
         )
 
+    saved_checkpoints[next_step] = checkpoint_path
     return checkpoint_path
 
 print("\nrunning chain...")
@@ -1000,6 +1046,7 @@ output_path = os.path.join(
 df.to_csv(
     output_path,
     index=False,
+    mode="x",
 )
 
 
