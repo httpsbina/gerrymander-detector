@@ -22,6 +22,7 @@ def passing(entry):
 
 
 def audit_milestone(manifest, destination):
+    destination = destination.resolve()
     snapshot = snapshot_manifest(manifest, destination / "snapshot")
     command = [sys.executable, "src/analysis/audit_rebuild_campaign.py", "--manifest",
                str(snapshot.relative_to(ROOT)), "--output-dir", str((destination / "audit").relative_to(ROOT))]
@@ -70,6 +71,7 @@ def main():
     args = parser.parse_args()
     for path in (args.baseline_manifest, args.dispersed_manifest, args.output_dir):
         path.resolve().relative_to(ROOT)
+    args.output_dir = args.output_dir.resolve()
     baseline, dispersed = [json.loads(path.read_text()) for path in
                             (args.baseline_manifest, args.dispersed_manifest)]
     if baseline["source_code"] != dispersed["source_code"]:

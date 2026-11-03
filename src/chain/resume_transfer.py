@@ -68,8 +68,11 @@ def replay(key, experiment, seed, destination):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--verify-only", action="store_true")
+    parser.add_argument("--workers", type=int, default=8)
     parser.add_argument("--verification-dir", type=Path, default=Path("transfer_verification"))
     args = parser.parse_args()
+    if args.workers < 1:
+        raise ValueError("Positive replay worker count required")
     args.verification_dir.resolve().relative_to(ROOT)
     for name, expected in json.loads((ROOT / "SHA256SUMS.json").read_text()).items():
         path = (ROOT / name).resolve()
@@ -82,7 +85,7 @@ def main():
     def run(job):
         key, experiment, seed = job
         return replay(key, experiment, seed, (args.verification_dir / f"{key}_seed{seed}").resolve())
-    with ThreadPoolExecutor(max_workers=min(8, len(jobs))) as pool:
+    with ThreadPoolExecutor(max_workers=min(args.workers, len(jobs))) as pool:
         records = list(pool.map(run, jobs))
     with (args.verification_dir / "replay_verification.json").open("x") as stream:
         json.dump(records, stream, indent=2)
