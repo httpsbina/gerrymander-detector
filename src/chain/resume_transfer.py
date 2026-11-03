@@ -100,7 +100,7 @@ def main():
         path = args.verification_dir / f"{key}_manifest.json"
         path.write_text(json.dumps({"source_code": manifest["source_code"], "experiments": {key: e}}, indent=2) + "\n")
         paths.append(path)
-    subprocess.run([sys.executable, "src/chain/run_texas_matched.py", "--baseline-manifest", str(paths[0]),
+    subprocess.run([sys.executable, "src/chain/run_texas_shared_prefix.py", "--baseline-manifest", str(paths[0]),
                     "--dispersed-manifest", str(paths[1]), "--output-dir", "transferred_continuation"], cwd=ROOT, check=True)
 
 

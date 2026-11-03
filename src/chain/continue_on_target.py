@@ -134,7 +134,7 @@ def main():
         with path.open("x") as stream:
             json.dump({"source_code": manifest["source_code"], "experiments": {key: experiment}}, stream, indent=2)
         paths[key] = path
-    subprocess.run([sys.executable, "src/chain/run_texas_matched.py", "--baseline-manifest", str(paths["tx_rebuild"]),
+    subprocess.run([sys.executable, "src/chain/run_texas_shared_prefix.py", "--baseline-manifest", str(paths["tx_rebuild"]),
                     "--dispersed-manifest", str(paths["tx_dispersed"]), "--output-dir", "transferred_continuation"], cwd=ROOT, check=True)
 
 
