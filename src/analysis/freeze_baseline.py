@@ -16,6 +16,15 @@ from src.chain.checkpoint_integrity import file_sha256
 from src.chain.benchmark_baselines import checkpoint_path
 
 
+def json_text(value):
+    text = json.dumps(value, indent=2, allow_nan=False) + "\n"
+    prettier = ROOT / ".venv/formatting/node_modules/prettier/bin/prettier.cjs"
+    if prettier.is_file():
+        text = subprocess.check_output(["node", str(prettier), "--stdin-filepath", "results.json"],
+                                       input=text, text=True, cwd=ROOT)
+    return text
+
+
 def require_screens(report, state):
     if state == "nc":
         keys = ["nc_block_union_2023", "nc_block_union_2025"]
@@ -98,8 +107,7 @@ def freeze(state, manifest_path, audit_dir, figures_dir, destination):
         receipts[str(absolute.relative_to(ROOT))] = file_sha256(absolute)
     destination.mkdir(parents=True, exist_ok=False)
     with (destination / "results.json").open("x") as stream:
-        json.dump(results, stream, indent=2, allow_nan=False)
-        stream.write("\n")
+        stream.write(json_text(results))
     receipts[str((destination / "results.json").relative_to(ROOT))] = file_sha256(destination / "results.json")
     record = {"state": state, "status": "primary_convergence_frozen", "manifest": str(manifest_path.relative_to(ROOT)),
               "audit_dir": str(audit_dir.relative_to(ROOT)), "figures_dir": str(figures_dir.relative_to(ROOT)),
@@ -129,8 +137,8 @@ def register_freeze(state, destination):
     if state in results:
         raise FileExistsError("State already has frozen results")
     results[state] = json.loads((destination / "results.json").read_text())
-    registry_path.write_text(json.dumps(registry, indent=2, allow_nan=False) + "\n")
-    results_path.write_text(json.dumps(results, indent=2, allow_nan=False) + "\n")
+    registry_path.write_text(json_text(registry))
+    results_path.write_text(json_text(results))
 
 
 def tag_freeze(state, destination, steps):

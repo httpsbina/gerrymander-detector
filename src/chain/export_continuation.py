@@ -41,6 +41,16 @@ def export(manifest_paths, destination):
         copy_file(path)
     for name in ("main.py", "requirements-research-macos-arm64-py312.txt", "docs/freeze_rule.md"):
         copy_file(Path(name))
+    if (ROOT / "configs/paper_freezes.json").exists():
+        for name in ("configs/paper_freezes.json", "results.json", "reproduce_paper.py"):
+            copy_file(Path(name))
+        for name in json.loads((ROOT / "configs/paper_freezes.json").read_text()).values():
+            frozen = json.loads((ROOT / name).read_text())
+            for filename, expected in frozen["checksums"].items():
+                if file_sha256(ROOT / filename) != expected:
+                    raise ValueError("Frozen input changed before transfer")
+                copy_file(Path(filename))
+            copy_file(Path(name))
     (destination / "transfer_configs").mkdir()
     for key, e in experiments.items():
         copy_file(Path(e["dataset"]))
