@@ -1,91 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Texas | Gerrymander Detector</title>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<nav><div class="inner"><a href="index.html" class="brand">Gerrymander Detector</a><div class="links"><a href="index.html">Map</a><a href="method.html">Method</a><a href="future.html">Future</a><a href="learn.html">Learn</a><a href="about.html">About</a></div></div></nav>
-<div class="wrap">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="inner">
+        <a href="index.html" class="brand">Gerrymander Detector</a>
+        <div class="links">
+          <a href="index.html">Map</a><a href="method.html">Method</a
+          ><a href="future.html">Future</a><a href="learn.html">Learn</a
+          ><a href="about.html">About</a>
+        </div>
+      </div>
+    </nav>
+    <div class="wrap">
+      <div class="page-header">
+        <div class="back"><a href="index.html">&larr; Back to map</a></div>
+        <div class="verdict">Historical report</div>
+        <h1>Earlier Texas analysis</h1>
+        <p class="lead">
+          I retain this earlier 30,000-state report as a historical record. The
+          repository contains the continued baseline and dispersed-start audits.
+        </p>
+      </div>
 
-<div class="page-header">
-    <div class="back"><a href="index.html">&larr; Back to map</a></div>
-    <div class="verdict">Outlier detected</div>
-    <h1>Texas Congressional Redistricting</h1>
-    <p class="lead">The 2025 Texas congressional map is a statistical outlier. No retained state in the validated 30,000-state post-burn-in ensemble produced as few Harris-won districts as PLANC2333.</p>
-</div>
+      <div class="content">
+        <h2>Results</h2>
+        <p>
+          I reported 30,000 post-burn-in ReCom states. Every generated plan
+          contains 38 contiguous congressional districts and stays within
+          +/-0.1% of ideal district population. The 2024 Harris-Trump
+          presidential vote is used as the partisan proxy.
+        </p>
 
-<div class="content">
+        <div class="stats">
+          <div class="stat">
+            <div class="num red">8</div>
+            <div class="cap">Dem seats, 2025 map</div>
+          </div>
+          <div class="stat">
+            <div class="num">9 to 17</div>
+            <div class="cap">Observed ensemble range</div>
+          </div>
+          <div class="stat">
+            <div class="num red">Below all</div>
+            <div class="cap">Observed states</div>
+          </div>
+        </div>
 
-<h2>Why I started here</h2>
-<p>Texas is one of the newest states to redraw its district lines, and most gerrymandering projects haven't analyzed these maps yet. It's also an unusual case because Texas did a mid-decade redistricting in 2025, only four years after the last round. States normally wait until after the census every ten years.</p>
-<p>With 38 congressional districts, it's one of the largest and most complex states to redistrict. I figured if the pipeline could handle Texas, it could handle anywhere.</p>
-<p>The 2025 map is currently being challenged in <em>LULAC v. Abbott</em>. A three-judge federal panel heard nine days of testimony from 23 witnesses and found substantial evidence of racial gerrymandering. The Supreme Court later reversed the injunction on procedural grounds, but the full trial is still pending.</p>
+        <p>
+          I reported 8 Democratic seats. No retained state went below 9
+          Harris-won districts. PLANC2333 has 8 and was below this earlier
+          reported range.
+        </p>
+        <p>
+          I scored the older 2021 map at 11 Democratic-majority districts and
+          recorded its descriptive lower tail as 12.607% in the earlier
+          ensemble.
+        </p>
 
-<h2>Results</h2>
-<p>The final analysis retains 30,000 post-burn-in ReCom states. Every generated plan contains 38 contiguous congressional districts and stays within +/-0.1% of ideal district population. The 2024 Harris-Trump presidential vote is used as the partisan proxy.</p>
+        <figure>
+          <img
+            src="outputs/figures/texas_dem_seat_distribution.png"
+            alt="Ensemble histogram"
+          />
+          <figcaption>
+            Harris-won districts across 30,000 retained ensemble states. The
+            earlier ensemble ranges from 9 to 17, while PLANC2333 produces 8.
+          </figcaption>
+        </figure>
 
-<div class="stats">
-    <div class="stat"><div class="num red">8</div><div class="cap">Dem seats, 2025 map</div></div>
-    <div class="stat"><div class="num">9 to 17</div><div class="cap">Observed ensemble range</div></div>
-    <div class="stat"><div class="num red">Below all</div><div class="cap">Observed states</div></div>
-</div>
+        <figure>
+          <img
+            src="outputs/figures/texas_representative_neutral_map.png"
+            alt="Texas district maps"
+          />
+          <figcaption>
+            Representative neutral plan at chain step 26,999. It contains 13
+            Harris-won districts and lies near the ensemble center on efficiency
+            gap and mean-median.
+          </figcaption>
+        </figure>
 
-<p>The 2025 map produces only 8 Democratic seats. No retained state went below 9 Harris-won districts. PLANC2333 has 8 and therefore lies below the observed seat distribution.</p>
-<p>The older 2021 map produces 11 Democratic seats. That's on the lower end but still falls within the normal range, at the 12.607% lower tail.</p>
+        <h2>Data and method</h2>
 
-<figure>
-    <img src="outputs/figures/texas_dem_seat_distribution.png" alt="Ensemble histogram">
-    <figcaption>Harris-won districts across 30,000 retained ensemble states. The neutral ensemble ranges from 9 to 17, while PLANC2333 produces 8.</figcaption>
-</figure>
+        <div class="assumption">
+          <strong>Partisan proxy: 2024 presidential race</strong>
+          <p>
+            I used the Harris vs. Trump results to measure how each precinct
+            leans.
+          </p>
+        </div>
+        <div class="assumption">
+          <strong>Two constraints: population and contiguity</strong>
+          <p>
+            The ensemble requires contiguous districts and population balance
+            within +/-0.1%.
+          </p>
+        </div>
+        <div class="assumption">
+          <strong>Mismatched boundaries</strong>
+          <p>
+            The final pipeline uses Census-block population rather than
+            precinct-centroid population assignment. Block records are
+            aggregated to the validated 2024 precinct geography. The final
+            precinct dataset contains 9,712 units, including 322 zero-population
+            units, and preserves the exact statewide population total.
+          </p>
+        </div>
+        <div class="assumption">
+          <strong>Sample size</strong>
+          <p>
+            I reported 30,000 post-burn-in states. Effective sample sizes are
+            approximately 98 for seat count, 92 for efficiency gap, and 118 for
+            mean-median.
+          </p>
+        </div>
 
-<figure>
-    <img src="outputs/figures/texas_representative_neutral_map.png" alt="Texas district maps">
-    <figcaption>Representative neutral plan at chain step 26,999. It contains 13 Harris-won districts and lies near the ensemble center on efficiency gap and mean-median.</figcaption>
-</figure>
+        <h2>Limitations</h2>
+        <p>
+          I no longer have this earlier chain file, and I keep its reported
+          values separate from the source rebuild. The states are
+          autocorrelated, while descriptive tails, including zero counts, leave
+          event probabilities unresolved. I used modeled presidential votes and
+          population/contiguity constraints, with uniform sampling, compactness,
+          county preservation, and full legal compliance outside the implemented
+          model.
+        </p>
 
-<h2>Assumptions</h2>
-<p>Every analysis makes simplifications. Here are mine and why they matter.</p>
+        <h2>Data sources</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Dataset</th>
+              <th>Source</th>
+              <th>What it provides</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2024 General Election VTD Results</td>
+              <td>RDH / VEST</td>
+              <td>Precinct-level vote totals</td>
+            </tr>
+            <tr>
+              <td>2020 PL 94-171 VTD data</td>
+              <td>Census Bureau via RDH</td>
+              <td>Population by VTD</td>
+            </tr>
+            <tr>
+              <td>2025 Congressional Plan (PLANC2333)</td>
+              <td>Texas Legislative Council</td>
+              <td>Enacted 2025 boundaries</td>
+            </tr>
+            <tr>
+              <td>2012-2021 Congressional Districts</td>
+              <td>Texas Legislative Council</td>
+              <td>Previous boundaries</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-<div class="assumption">
-    <strong>Partisan proxy: 2024 presidential race</strong>
-    <p>I used the Harris vs. Trump results to measure how each precinct leans. This follows the approach in Duchin's expert testimony in the Pennsylvania case and the MGGG Lab's published work. A stronger version would test multiple statewide races to confirm the finding holds.</p>
-</div>
-<div class="assumption">
-    <strong>Two constraints: population and contiguity</strong>
-    <p>The ensemble requires contiguous districts and population balance within +/-0.1%. It does not yet impose explicit compactness, county-preservation, or Voting Rights Act constraints.</p>
-</div>
-<div class="assumption">
-    <strong>Mismatched boundaries</strong>
-    <p>The final pipeline uses Census-block population rather than precinct-centroid population assignment. Block records are aggregated to the validated 2024 precinct geography. The final precinct dataset contains 9,712 units, including 322 zero-population units, and preserves the exact statewide population total.</p>
-</div>
-<div class="assumption">
-    <strong>Sample size</strong>
-    <p>The final analysis retains 30,000 post-burn-in states. Because successive ReCom states are autocorrelated, these states are not treated as 30,000 independent observations. Effective sample sizes are approximately 98 for seat count, 92 for efficiency gap, and 118 for mean-median.</p>
-</div>
-
-<h2>Data sources</h2>
-<table>
-    <thead><tr><th>Dataset</th><th>Source</th><th>What it provides</th></tr></thead>
-    <tbody>
-        <tr><td>2024 General Election VTD Results</td><td>RDH / VEST</td><td>Precinct-level vote totals</td></tr>
-        <tr><td>2020 PL 94-171 VTD data</td><td>Census Bureau via RDH</td><td>Population by VTD</td></tr>
-        <tr><td>2025 Congressional Plan (PLANC2333)</td><td>Texas Legislative Council</td><td>Enacted 2025 boundaries</td></tr>
-        <tr><td>2012-2021 Congressional Districts</td><td>Texas Legislative Council</td><td>Previous boundaries</td></tr>
-    </tbody>
-</table>
-
-</div>
-
-<footer>
-    <p><a href="index.html">&larr; Back to map</a></p>
-    <p style="margin-top:16px"><strong>Binafsha Bakhramova</strong> · D'Amore-McKim School of Business, Northeastern University</p>
-    <p><a href="mailto:bakhramova.b@northeastern.edu">bakhramova.b@northeastern.edu</a></p>
-</footer>
-
-</div>
-</body>
+      <footer>
+        <p><a href="index.html">&larr; Back to map</a></p>
+        <p style="margin-top: 16px">
+          <strong>Binafsha Bakhramova</strong> · D'Amore-McKim School of
+          Business, Northeastern University
+        </p>
+        <p>
+          <a href="mailto:bakhramova.b@northeastern.edu"
+            >bakhramova.b@northeastern.edu</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>

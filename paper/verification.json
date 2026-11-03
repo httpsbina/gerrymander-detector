@@ -1,0 +1,33 @@
+{
+  "recorded_eastern": "2026-11-03T03:09:17.672536-05:00",
+  "tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "count": 92,
+    "skipped": 0,
+    "result": "passed",
+    "log": "paper/test_suite.log",
+    "original_log_sha256": "2256af975e0b012ae8451644a6c89f7e69f4f634fa752de8185e83bb2ab4f181",
+    "published_log_sha256": "c10cea9942b570fc7dafa30cc2e3601614261d055f5632f70d5f368390c6edf2",
+    "path_normalization": "Repository roots replaced with a dot; test names and results retained."
+  },
+  "real_data": {
+    "command": "python -m paper.export",
+    "frozen_input_checksums_matched": 81,
+    "nc_png_checksums_matched": 6,
+    "nc_raw_results_equal_to_frozen": true,
+    "primary_table_values_equal_to_frozen": true
+  },
+  "checks": {
+    "prettier": "Changed Markdown, HTML and JSON",
+    "python": "Syntax checks; no configured formatter or linter",
+    "inline_javascript": "node --check",
+    "whitespace": "git diff --check",
+    "csv_line_endings": "LF"
+  },
+  "protected_sources": {
+    "src/chain/run_ensemble.py": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+    "src/chain/checkpoint_integrity.py": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102"
+  },
+  "export_source_sha256": "e2aaa72d10040ecf2a9e3cd7243dbd2e631407e2720a9156adb8e08c82500e35",
+  "texas_validation": "Registry-driven export tested with fixtures; actual frozen Texas outputs are not yet registered."
+}

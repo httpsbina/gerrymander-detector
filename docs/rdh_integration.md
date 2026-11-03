@@ -1,28 +1,16 @@
-# RDH source acquisition (Phase 2)
+# RDH source acquisition
 
-This is a controlled *data acquisition* component, not redistricting analysis.
-It does not run ReCom, choose an election field, join precinct polygons, or
-certify the legality, neutrality, convergence, or accuracy of any ensemble.
-Pennsylvania remains `pending_data` in `configs/states.json`.
+I use the RDH catalog and download endpoints to inventory source files, retaining dataset IDs, byte counts, and SHA-256 receipts. The interface follows `RDH_API_SET_PARAMS.ipynb`: `GET /wp-json/download/list?states=Pennsylvania&format=csv`, followed by the selected `download/file/...` endpoint. `Download_API.txt` records the `datasetid` parameter.
 
-The interface reuses the `RDH_API_SET_PARAMS.ipynb` approach in this repository:
-`GET /wp-json/download/list?states=Pennsylvania&format=csv` for the listing,
-then the selected `download/file/...` endpoint with its dataset ID. The older
-`Download_API.txt` documents `datasetid` for restricted listing. Our state
-query follows the official RDH notebook; if the provider changes that behavior,
-this inventory stage must be updated. Access requires **designated RDH API-user
-approval**, not merely a verified RDH account.
-
-## 1. View the Pennsylvania source checklist (no account required)
+## Source checklist
 
 ```powershell
 .\.venv\Scripts\python.exe main.py --penn --stage sources
 ```
 
-## 2. Obtain an authenticated catalog listing (approved API users only)
+## Catalog
 
-In PowerShell, enter credentials interactively. Do **not** paste them into a
-GitHub file, commit, terminal command line, or ChatGPT conversation.
+I enter account credentials interactively and keep them outside source control.
 
 ```powershell
 $env:RDH_USERNAME = Read-Host "RDH API username"
@@ -33,35 +21,18 @@ Remove-Item Env:RDH_PASSWORD
 Remove-Item Env:RDH_USERNAME
 ```
 
-For an offline dry run, use `--dry-run` on the inventory stage.
-The listing is saved to `data/external/rdh/pennsylvania/catalog.json`, which
-is ignored by Git. The listing includes safe metadata (dataset IDs and download
-paths only), **not** credential-bearing URLs or credentials. No auto-selection
-of a scientifically valid dataset is performed.
+I use `--dry-run` for an offline inventory. The catalog is saved to `data/external/rdh/pennsylvania/catalog.json`, with dataset IDs and download paths.
 
-## 3. Download a uniquely named catalog entry
+## Download
 
-Use a `filename` printed by inventory or found in its JSON catalog. Review the
-entry before downloading; duplicate filenames are rejected.
+I select an exact catalog filename, check for duplicate names, and inspect the dry run before downloading.
 
 ```powershell
 .\.venv\Scripts\python.exe main.py --penn --stage download --rdh-file "EXACT_FILE_FROM_CATALOG.zip" --dry-run
 ```
 
-Remove `--dry-run` only after verifying the selection and setting the RDH
-environment variables. Each file gets a `.receipt.json` recording the SHA-256,
-byte count, dataset ID, and `DOWNLOADED_NOT_VALIDATED` status. Existing files
-are never overwritten.
+I remove `--dry-run` to download the selected entry. Its `.receipt.json` records SHA-256, bytes, dataset ID, and the `DOWNLOADED_NOT_VALIDATED` status; existing files are preserved.
 
-**Security caveat:** The upstream RDH API authenticates using query parameters,
-so credentials necessarily enter the HTTPS request URL at the provider and
-may appear in provider-side access logs. This client suppresses full URL
-logging and sanitizes errors, but it cannot redesign the provider's protocol.
-Avoid untrusted HTTP proxies and never publish request traces.
+## Limitations
 
-**Scope and limitations:** API metadata is not evidence that source files
-match in year or geography. After download, separately verify 2020 population,
-2024 precinct election totals, precinct shapes, block equivalency, 2022
-congressional district assignments, and district-level checks before setting
-Pennsylvania to a runnable status. A state with no comparable mid-decade redraw
-is a replication/control case, not interchangeable with Texas/NC.
+I validate year, geography, 2020 population, 2024 precinct election totals, shapes, block equivalency, 2022 congressional assignments, and district totals after acquisition. Catalog metadata alone leaves those checks open. Pennsylvania remains `pending_data`; a state with no comparable mid-decade redraw serves a different comparison from Texas or NC. The provider places account credentials in request URLs, so I keep request traces outside the published records.
