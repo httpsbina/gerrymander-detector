@@ -26,14 +26,14 @@ At 13,000 states per chain, the six-chain NC baseline has the following joint re
 
 All four joint screens pass R-hat below 1.01 and bulk/tail ESS at least 600. The three-chain 2023 starting-map group still fails the mean–median R-hat screen. Continuation is running toward 18,000 states per chain; both starting-map groups must also pass their existing ESS threshold of 400.
 
-The last completed Texas audit is at 4,400 states per chain:
+The last completed Texas audit is at 6,400 states per chain:
 
 | Metric           |   R-hat | Bulk ESS | Tail ESS | ESS-only projected states per chain |
 | ---------------- | ------: | -------: | -------: | ----------------------------------: |
-| Democratic seats | 1.03834 |      110 |      125 |                              14,623 |
-| Efficiency gap   | 1.04518 |       83 |      203 |                              19,201 |
-| Cut edges        | 1.09346 |       39 |      124 |                              41,011 |
-| Mean–median      | 1.06715 |       53 |      199 |                              29,775 |
+| Democratic seats | 1.02408 |      112 |      216 |                              21,545 |
+| Efficiency gap   | 1.03027 |      114 |      293 |                              21,231 |
+| Cut edges        | 1.05762 |       90 |      299 |                              26,664 |
+| Mean–median      | 1.05058 |       80 |      229 |                              30,010 |
 
 The Texas estimates extrapolate the smaller of bulk and tail ESS per retained state to the unchanged threshold of 400. R-hat has no reliable linear completion forecast.
 
