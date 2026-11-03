@@ -167,7 +167,13 @@ def audit(manifest_path, destination, selected=None):
                                    districts=experiment["districts"])
             files = campaign_segments(directory, experiment)
             chains = {seed: load_chain(args, seed) for seed in experiment["seeds"]}
-            if len({chain.plan_hash.iloc[0] for chain in chains.values()}) != 1:
+            registered = experiment.get("starting_plan_hashes")
+            if registered:
+                if set(registered) != {str(seed) for seed in chains}:
+                    raise ValueError("Starting-map registry does not cover all seeds")
+                if any(chain.plan_hash.iloc[0] != registered[str(seed)] for seed, chain in chains.items()):
+                    raise ValueError("Initial map differs from its registered assignment")
+            elif len({chain.plan_hash.iloc[0] for chain in chains.values()}) != 1:
                 raise ValueError("Different initial maps within one starting-map group")
             for chain in chains.values():
                 if any(metric not in chain for metric in METRICS):
@@ -182,15 +188,18 @@ def audit(manifest_path, destination, selected=None):
                 # Only load this campaign's trusted local pickle, never an arbitrary external checkpoint.
                 with path.open("rb") as stream:
                     checkpoint = pickle.load(stream)
-                provenances.append(check_final_checkpoint(checkpoint, experiment, seed, chain, manifest["source_code"]))
-                checkpoint_records.append({"path": str(path), "sha256": file_sha256(path)})
-            if any(value != provenances[0] for value in provenances[1:]):
+                provenance = check_final_checkpoint(checkpoint, experiment, seed, chain, manifest["source_code"])
+                if registered and provenance != experiment["expected_checkpoint_provenance"][str(seed)]:
+                    raise ValueError("Checkpoint differs from registered per-map provenance")
+                provenances.append(provenance)
+                checkpoint_records.append({"path": str(path.relative_to(ROOT)), "sha256": file_sha256(path)})
+            if not registered and any(value != provenances[0] for value in provenances[1:]):
                 raise ValueError("Checkpoint provenance differs within a starting-map group")
             entry["checkpoints"] = checkpoint_records
             entry["checkpoint_provenance"] = provenances[0]
             entry["integrity"] = "pass"
             for path in files:
-                entry["files"].append({"path": str(path), "sha256": file_sha256(path)})
+                entry["files"].append({"path": str(path.relative_to(ROOT)), "sha256": file_sha256(path)})
             warmup, window = experiment["warmup"], experiment["window"]
             summaries.extend(summarize_chains(chains, key, warmup))
             for seed, chain in chains.items():
@@ -250,6 +259,25 @@ def audit(manifest_path, destination, selected=None):
             joint["starting_map_mean_difference_2025_minus_2023"][metric] = float(means[1] - means[0])
         report["joint_nc"][geometry] = joint
     report["condition_mean_differences"] = {}
+    texas_keys = ("tx_rebuild", "tx_dispersed")
+    if all(key in loaded for key in texas_keys):
+        from src.analysis.texas_cohort_integrity import verify_kernel_equivalence
+        verify_kernel_equivalence(definitions[texas_keys[0]], definitions[texas_keys[1]])
+        left, right = [definitions[key] for key in texas_keys]
+        for name in ("epsilon", "node_repeats", "steps", "warmup", "districts"):
+            if left[name] != right[name]:
+                raise ValueError("Cannot pool incompatible Texas cohorts")
+        if set(left["seeds"]) & set(right["seeds"]):
+            raise ValueError("Texas cohorts require independent seeds")
+        report["joint_texas"] = {"status": "computed", "diagnostics": {}, "warmup_sensitivity": {}}
+        for burn in sorted({0, 250, left["warmup"], 1000}):
+            values = {metric: diagnostics(np.stack([
+                chain.iloc[burn:][metric].to_numpy(float)
+                for key in texas_keys for chain in loaded[key].values()
+            ])) for metric in METRICS}
+            report["joint_texas"]["warmup_sensitivity"][str(burn)] = values
+            if burn == left["warmup"]:
+                report["joint_texas"]["diagnostics"] = values
     comparisons = [
         ("tx_population", "tx_rebuild", "tx_population_sensitivity"),
         *[(f"nc_graph_{year}", f"nc_block_union_{year}", f"nc_precinct_sensitivity_{year}")

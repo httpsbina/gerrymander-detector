@@ -1,6 +1,6 @@
 # Local compute plan, November 2026
 
-The November 16 compute cutoff is midnight Eastern. The paper freeze is December 17. All estimates below assume local compute; no cluster allocation is required.
+November 16 is the laptop transfer deadline. Results freeze only under the [baseline freeze rule](freeze_rule.md), with no calendar-based scientific stopping point. Runs continue on other available compute after transfer. All estimates below assume local compute; no cluster allocation is required.
 
 ## Measured capacity
 
@@ -39,7 +39,7 @@ The Texas estimates extrapolate the smaller of bulk and tail ESS per retained st
 
 ## Schedule through November 16
 
-1. **November 2–3:** finish the NC baseline continuation, assessing joint and separate starting-map groups after every completed round. Texas's original four chains continue alongside NC.
+1. **November 2–3:** continue NC until every joint and separate starting-map primary screen passes. Texas's original four chains continue alongside NC.
 2. **November 3–6:** prepare four independent, population-balanced Texas starting maps and run those chains alongside the original four. Budget a first milestone of 50,000 states per chain. At half the slowest measured Texas rate this requires about 25 active compute hours for a new chain, or 3.1 days at eight compute hours per day. Initialization time is additional and will be measured.
 3. **November 6–15:** reassess the existing screens at completed milestones and extend the same chains where needed. At eight active hours daily and the conservative rate, roughly 210,000 states per chain fit within the original November 2–16 budget. Update this estimate after measuring eight Texas chains together.
 4. **Before November 16:** preserve a complete boundary snapshot, pinned environment, source fingerprints, seeds, configuration, chain segments, and matching checkpoints for transfer.

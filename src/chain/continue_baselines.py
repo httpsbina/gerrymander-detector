@@ -35,9 +35,12 @@ def run_wave(manifest, jobs, lengths, destination, workers):
         start = lengths[(key, seed)]
         directory = (ROOT / e["input_dir"]).resolve();directory.relative_to(ROOT)
         checkpoint = checkpoint_path(directory.parent / "checkpoints", e, seed, start)
+        configuration = e.get("seed_configs", {}).get(str(seed), e["config"])
         command = [sys.executable, str(ROOT / "main.py"), "--nc" if e["state"] == "north_carolina" else "--texas",
-                   "--year", e["starting_plan"], "--config", str(ROOT / e["config"]),
-                   "--stage", "simulate", "--steps", str(count), "--seed", str(seed), "--resume-from", str(checkpoint)]
+                   "--year", e["starting_plan"], "--config", str(ROOT / configuration),
+                   "--stage", "simulate", "--steps", str(count), "--seed", str(seed)]
+        if start:
+            command.extend(["--resume-from", str(checkpoint)])
         started = time.monotonic()
         with (destination / f"{key}_seed{seed}.log").open("x") as log:
             result = subprocess.run(command, cwd=ROOT, env=env, stdout=log, stderr=subprocess.STDOUT)
@@ -60,6 +63,11 @@ def run_wave(manifest, jobs, lengths, destination, workers):
                 with final.open("rb") as stream: c = pickle.load(stream)
                 expected = copy.deepcopy(e);expected["steps"] = start + count
                 check_final_checkpoint(c, expected, seed, frame, manifest["source_code"])
+                if "expected_checkpoint_provenance" in e:
+                    if c["provenance"] != e["expected_checkpoint_provenance"][str(seed)]:
+                        raise ValueError("Registered starting-map provenance mismatch")
+                    if start == 0 and frame.plan_hash.iloc[0] != e["starting_plan_hashes"][str(seed)]:
+                        raise ValueError("Registered initial assignment mismatch")
                 record.update(csv=str(csv.relative_to(ROOT)), csv_sha256=file_sha256(csv), checkpoint_sha256=file_sha256(final))
             except Exception as exc:
                 record["validation_error"] = f"{type(exc).__name__}: {exc}"

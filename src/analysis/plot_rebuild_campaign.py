@@ -99,7 +99,7 @@ def main():
                 raise FileExistsError("Refusing existing figure")
             fig.savefig(path, dpi=170)
             plt.close(fig)
-            provenance["figures"].append({"path": str(path), "sha256": file_sha256(path)})
+            provenance["figures"].append({"path": str(path.resolve().relative_to(ROOT)), "sha256": file_sha256(path)})
     with (args.output_dir / "figure_manifest.json").open("x") as stream:
         json.dump(provenance, stream, indent=2)
         stream.write("\n")
