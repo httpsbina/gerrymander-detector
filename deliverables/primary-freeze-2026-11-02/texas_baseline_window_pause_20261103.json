@@ -1,0 +1,261 @@
+{
+  "purpose": "Per-chain window comparison during manual baseline pause.",
+  "baseline_windows_inclusive": [
+    [35000, 39999],
+    [40000, 44999]
+  ],
+  "dispersed_windows_inclusive": [
+    [20000, 24999],
+    [25000, 29999]
+  ],
+  "same_step_dispersed_comparison_available": false,
+  "records": [
+    {
+      "cohort": "tx_rebuild",
+      "seed": 1117,
+      "windows": [
+        {
+          "first_step": 35000,
+          "last_step": 39999,
+          "states": 5000,
+          "cut_edges": 2656.202,
+          "mean_median": 0.012688336066253567,
+          "dem_seats": 13.058
+        },
+        {
+          "first_step": 40000,
+          "last_step": 44999,
+          "states": 5000,
+          "cut_edges": 2629.5706,
+          "mean_median": 0.0023196495300735406,
+          "dem_seats": 12.506
+        }
+      ],
+      "change": {
+        "cut_edges": -26.631400000000212,
+        "mean_median": -0.010368686536180026,
+        "dem_seats": -0.5519999999999996
+      },
+      "source_manifest": "outputs/analysis/convergence_campaign_2026-11-02/tx_matched_continuation_20261103/catch_up/tx_rebuild/milestone_045000/snapshot/manifest.json",
+      "source_manifest_sha256": "65ad5c15f9fd17da14fc542117f961ab89d39a00fd1078e9ea5a48bf8140876c"
+    },
+    {
+      "cohort": "tx_rebuild",
+      "seed": 2227,
+      "windows": [
+        {
+          "first_step": 35000,
+          "last_step": 39999,
+          "states": 5000,
+          "cut_edges": 2671.864,
+          "mean_median": 0.012371978804578252,
+          "dem_seats": 13.0948
+        },
+        {
+          "first_step": 40000,
+          "last_step": 44999,
+          "states": 5000,
+          "cut_edges": 2733.1068,
+          "mean_median": 0.011676649078811318,
+          "dem_seats": 13.2628
+        }
+      ],
+      "change": {
+        "cut_edges": 61.24279999999999,
+        "mean_median": -0.0006953297257669341,
+        "dem_seats": 0.16800000000000104
+      },
+      "source_manifest": "outputs/analysis/convergence_campaign_2026-11-02/tx_matched_continuation_20261103/catch_up/tx_rebuild/milestone_045000/snapshot/manifest.json",
+      "source_manifest_sha256": "65ad5c15f9fd17da14fc542117f961ab89d39a00fd1078e9ea5a48bf8140876c"
+    },
+    {
+      "cohort": "tx_rebuild",
+      "seed": 3331,
+      "windows": [
+        {
+          "first_step": 35000,
+          "last_step": 39999,
+          "states": 5000,
+          "cut_edges": 2639.6118,
+          "mean_median": 0.010077330728757548,
+          "dem_seats": 12.529
+        },
+        {
+          "first_step": 40000,
+          "last_step": 44999,
+          "states": 5000,
+          "cut_edges": 2673.1732,
+          "mean_median": 0.010110175986676228,
+          "dem_seats": 13.1724
+        }
+      ],
+      "change": {
+        "cut_edges": 33.56140000000005,
+        "mean_median": 3.2845257918679566e-5,
+        "dem_seats": 0.6433999999999997
+      },
+      "source_manifest": "outputs/analysis/convergence_campaign_2026-11-02/tx_matched_continuation_20261103/catch_up/tx_rebuild/milestone_045000/snapshot/manifest.json",
+      "source_manifest_sha256": "65ad5c15f9fd17da14fc542117f961ab89d39a00fd1078e9ea5a48bf8140876c"
+    },
+    {
+      "cohort": "tx_rebuild",
+      "seed": 4441,
+      "windows": [
+        {
+          "first_step": 35000,
+          "last_step": 39999,
+          "states": 5000,
+          "cut_edges": 2680.644,
+          "mean_median": 0.00856850976286648,
+          "dem_seats": 12.5934
+        },
+        {
+          "first_step": 40000,
+          "last_step": 44999,
+          "states": 5000,
+          "cut_edges": 2652.3148,
+          "mean_median": 0.011517407746738925,
+          "dem_seats": 12.5934
+        }
+      ],
+      "change": {
+        "cut_edges": -28.329199999999673,
+        "mean_median": 0.0029488979838724443,
+        "dem_seats": 0.0
+      },
+      "source_manifest": "outputs/analysis/convergence_campaign_2026-11-02/tx_matched_continuation_20261103/catch_up/tx_rebuild/milestone_045000/snapshot/manifest.json",
+      "source_manifest_sha256": "65ad5c15f9fd17da14fc542117f961ab89d39a00fd1078e9ea5a48bf8140876c"
+    },
+    {
+      "cohort": "tx_dispersed",
+      "seed": 10007,
+      "windows": [
+        {
+          "first_step": 20000,
+          "last_step": 24999,
+          "states": 5000,
+          "cut_edges": 2686.9856,
+          "mean_median": 0.00819420920983337,
+          "dem_seats": 12.5872
+        },
+        {
+          "first_step": 25000,
+          "last_step": 29999,
+          "states": 5000,
+          "cut_edges": 2637.4716,
+          "mean_median": 0.005153718191065062,
+          "dem_seats": 12.8026
+        }
+      ],
+      "change": {
+        "cut_edges": -49.514000000000124,
+        "mean_median": -0.0030404910187683083,
+        "dem_seats": 0.2154000000000007
+      },
+      "source_manifest": "outputs/analysis/convergence_campaign_2026-11-02/tx_matched_continuation_20261103/catch_up/tx_dispersed/milestone_030000/snapshot/manifest.json",
+      "source_manifest_sha256": "a0bd1ab91b9905877982e14dd4bb2f4969ed19048e29cf8247b79565fcb7540d"
+    },
+    {
+      "cohort": "tx_dispersed",
+      "seed": 10009,
+      "windows": [
+        {
+          "first_step": 20000,
+          "last_step": 24999,
+          "states": 5000,
+          "cut_edges": 2664.7756,
+          "mean_median": 0.008861936756378433,
+          "dem_seats": 13.045
+        },
+        {
+          "first_step": 25000,
+          "last_step": 29999,
+          "states": 5000,
+          "cut_edges": 2692.8338,
+          "mean_median": 0.007578259585465158,
+          "dem_seats": 12.5458
+        }
+      ],
+      "change": {
+        "cut_edges": 28.058199999999943,
+        "mean_median": -0.0012836771709132753,
+        "dem_seats": -0.4992000000000001
+      },
+      "source_manifest": "outputs/analysis/convergence_campaign_2026-11-02/tx_matched_continuation_20261103/catch_up/tx_dispersed/milestone_030000/snapshot/manifest.json",
+      "source_manifest_sha256": "a0bd1ab91b9905877982e14dd4bb2f4969ed19048e29cf8247b79565fcb7540d"
+    },
+    {
+      "cohort": "tx_dispersed",
+      "seed": 10037,
+      "windows": [
+        {
+          "first_step": 20000,
+          "last_step": 24999,
+          "states": 5000,
+          "cut_edges": 2674.7708,
+          "mean_median": 0.008069725529446382,
+          "dem_seats": 12.459
+        },
+        {
+          "first_step": 25000,
+          "last_step": 29999,
+          "states": 5000,
+          "cut_edges": 2656.6462,
+          "mean_median": 0.007606691106862432,
+          "dem_seats": 13.342
+        }
+      ],
+      "change": {
+        "cut_edges": -18.124599999999646,
+        "mean_median": -0.00046303442258395066,
+        "dem_seats": 0.8830000000000009
+      },
+      "source_manifest": "outputs/analysis/convergence_campaign_2026-11-02/tx_matched_continuation_20261103/catch_up/tx_dispersed/milestone_030000/snapshot/manifest.json",
+      "source_manifest_sha256": "a0bd1ab91b9905877982e14dd4bb2f4969ed19048e29cf8247b79565fcb7540d"
+    },
+    {
+      "cohort": "tx_dispersed",
+      "seed": 10039,
+      "windows": [
+        {
+          "first_step": 20000,
+          "last_step": 24999,
+          "states": 5000,
+          "cut_edges": 2661.806,
+          "mean_median": 0.006245136716765147,
+          "dem_seats": 12.5938
+        },
+        {
+          "first_step": 25000,
+          "last_step": 29999,
+          "states": 5000,
+          "cut_edges": 2651.545,
+          "mean_median": 0.008987529641390591,
+          "dem_seats": 13.0422
+        }
+      ],
+      "change": {
+        "cut_edges": -10.260999999999967,
+        "mean_median": 0.0027423929246254437,
+        "dem_seats": 0.44839999999999947
+      },
+      "source_manifest": "outputs/analysis/convergence_campaign_2026-11-02/tx_matched_continuation_20261103/catch_up/tx_dispersed/milestone_030000/snapshot/manifest.json",
+      "source_manifest_sha256": "a0bd1ab91b9905877982e14dd4bb2f4969ed19048e29cf8247b79565fcb7540d"
+    }
+  ],
+  "pause": {
+    "recorded_utc": "2026-11-03T19:11:21.185849+00:00",
+    "complete_csv_states_per_chain": 45000,
+    "last_checkpoint_next_step_per_seed": {
+      "1117": 45200,
+      "2227": 45200,
+      "3331": 45200,
+      "4441": 45200
+    },
+    "inflight_processes_suspended": true,
+    "all_prior_and_inflight_states_preserved": true,
+    "passing_baseline_audit": false,
+    "exactly_45000_states_per_chain": false,
+    "source_record": "outputs/analysis/convergence_campaign_2026-11-02/tx_manual_baseline_pause_20261103.json"
+  }
+}

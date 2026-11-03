@@ -1,0 +1,323 @@
+{
+  "recorded_eastern": "2026-11-03T14:10:18.193761-05:00",
+  "informational_only": true,
+  "eligible_for_freeze": false,
+  "recorded_steps_inclusive": [0, 24999],
+  "retained_steps_inclusive": [500, 24999],
+  "warmup_per_chain": 500,
+  "chains": 8,
+  "retained_states_total": 196000,
+  "joint_metrics": {
+    "dem_seats": {
+      "rank_split_rhat": 1.0109102645752255,
+      "bulk_ess": 719.7025208010673,
+      "tail_ess": 1610.8420699328126,
+      "all_finite": true,
+      "ess_screening_minimum": 800
+    },
+    "efficiency_gap": {
+      "rank_split_rhat": 1.0114238998787333,
+      "bulk_ess": 676.0377873872333,
+      "tail_ess": 2016.228715952357,
+      "all_finite": true,
+      "ess_screening_minimum": 800
+    },
+    "cut_edges": {
+      "rank_split_rhat": 1.0155445448463336,
+      "bulk_ess": 719.1414802310351,
+      "tail_ess": 2347.122546845707,
+      "all_finite": true,
+      "ess_screening_minimum": 800
+    },
+    "mean_median": {
+      "rank_split_rhat": 1.0210995423741729,
+      "bulk_ess": 642.5866262543046,
+      "tail_ess": 1750.8851814194677,
+      "all_finite": true,
+      "ess_screening_minimum": 800
+    }
+  },
+  "cohort_seat_means": {
+    "tx_rebuild": {
+      "retained_states": 98000,
+      "democratic_seat_sum": 1262501,
+      "mean_democratic_seats": 12.882663265306123
+    },
+    "tx_dispersed": {
+      "retained_states": 98000,
+      "democratic_seat_sum": 1260330,
+      "mean_democratic_seats": 12.860510204081633
+    }
+  },
+  "chain_seat_means": [
+    {
+      "cohort": "tx_rebuild",
+      "seed": 1117,
+      "retained_states": 24500,
+      "democratic_seat_sum": 316697,
+      "mean_democratic_seats": 12.926408163265306
+    },
+    {
+      "cohort": "tx_rebuild",
+      "seed": 2227,
+      "retained_states": 24500,
+      "democratic_seat_sum": 313670,
+      "mean_democratic_seats": 12.802857142857142
+    },
+    {
+      "cohort": "tx_rebuild",
+      "seed": 3331,
+      "retained_states": 24500,
+      "democratic_seat_sum": 312738,
+      "mean_democratic_seats": 12.764816326530612
+    },
+    {
+      "cohort": "tx_rebuild",
+      "seed": 4441,
+      "retained_states": 24500,
+      "democratic_seat_sum": 319396,
+      "mean_democratic_seats": 13.03657142857143
+    },
+    {
+      "cohort": "tx_dispersed",
+      "seed": 10007,
+      "retained_states": 24500,
+      "democratic_seat_sum": 313856,
+      "mean_democratic_seats": 12.810448979591836
+    },
+    {
+      "cohort": "tx_dispersed",
+      "seed": 10009,
+      "retained_states": 24500,
+      "democratic_seat_sum": 316041,
+      "mean_democratic_seats": 12.899632653061225
+    },
+    {
+      "cohort": "tx_dispersed",
+      "seed": 10037,
+      "retained_states": 24500,
+      "democratic_seat_sum": 314233,
+      "mean_democratic_seats": 12.825836734693878
+    },
+    {
+      "cohort": "tx_dispersed",
+      "seed": 10039,
+      "retained_states": 24500,
+      "democratic_seat_sum": 316200,
+      "mean_democratic_seats": 12.906122448979591
+    }
+  ],
+  "baseline_45000": {
+    "metrics": {
+      "dem_seats": {
+        "rank_split_rhat": 1.0037164856894616,
+        "bulk_ess": 831.9679111898366,
+        "tail_ess": 1461.6026281538213,
+        "ess_screening_minimum": 400
+      },
+      "efficiency_gap": {
+        "rank_split_rhat": 1.0039882452252051,
+        "bulk_ess": 830.2838931278561,
+        "tail_ess": 1953.033433714228,
+        "ess_screening_minimum": 400
+      },
+      "cut_edges": {
+        "rank_split_rhat": 1.0109084262881356,
+        "bulk_ess": 449.1804199378815,
+        "tail_ess": 1636.2471082818208,
+        "ess_screening_minimum": 400
+      },
+      "mean_median": {
+        "rank_split_rhat": 1.0160845433547638,
+        "bulk_ess": 590.5100457019117,
+        "tail_ess": 1456.4073565368283,
+        "ess_screening_minimum": 400
+      }
+    },
+    "cohort_primary_pass": false,
+    "paused": false,
+    "next_audit_states_per_chain": 50000,
+    "source": "outputs/analysis/convergence_campaign_2026-11-02/tx_matched_continuation_20261103/catch_up/tx_rebuild/milestone_045000/progress.json"
+  },
+  "mean_median_rhat_all_audits": [
+    {
+      "cohort": "tx_rebuild",
+      "states_per_chain": 4000,
+      "rank_split_rhat": 1.059792508731427,
+      "sources": ["deliverables/rebuild-campaign-2026-11-02/diagnostics.json"]
+    },
+    {
+      "cohort": "tx_rebuild",
+      "states_per_chain": 4400,
+      "rank_split_rhat": 1.0671468227949268,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/audits/benchmark_8000_4400/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_dispersed",
+      "states_per_chain": 5000,
+      "rank_split_rhat": 1.1028848746489597,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_dispersed/milestone_005000/audit/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_rebuild",
+      "states_per_chain": 6400,
+      "rank_split_rhat": 1.050583610313303,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/audit_001/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_rebuild",
+      "states_per_chain": 8400,
+      "rank_split_rhat": 1.0304841379396044,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/audit_002/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_dispersed",
+      "states_per_chain": 10000,
+      "rank_split_rhat": 1.0490438072141166,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_dispersed/milestone_010000/audit/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_rebuild",
+      "states_per_chain": 10000,
+      "rank_split_rhat": 1.0432922205292776,
+      "informational_prefix": true,
+      "sources": [
+        "deliverables/primary-freeze-2026-11-02/texas_10000_vs_15000.json"
+      ]
+    },
+    {
+      "cohort": "tx_rebuild",
+      "states_per_chain": 10400,
+      "rank_split_rhat": 1.0436846772165744,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/audit_003/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_rebuild",
+      "states_per_chain": 12400,
+      "rank_split_rhat": 1.0459161301174678,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/audit_004/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_rebuild",
+      "states_per_chain": 14400,
+      "rank_split_rhat": 1.031334437418846,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/audit_005/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_dispersed",
+      "states_per_chain": 15000,
+      "rank_split_rhat": 1.0109394411182564,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_dispersed/milestone_015000/audit/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_rebuild",
+      "states_per_chain": 15000,
+      "rank_split_rhat": 1.0273590538174064,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_015000/audit/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_dispersed",
+      "states_per_chain": 20000,
+      "rank_split_rhat": 1.017181333953745,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_dispersed/milestone_020000/audit/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_rebuild",
+      "states_per_chain": 20000,
+      "rank_split_rhat": 1.0205295705924664,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/audit/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_dispersed",
+      "states_per_chain": 25000,
+      "rank_split_rhat": 1.0204597968065554,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_dispersed/milestone_025000/audit/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_rebuild",
+      "states_per_chain": 25000,
+      "rank_split_rhat": 1.020840345480396,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_025000/audit/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_dispersed",
+      "states_per_chain": 30000,
+      "rank_split_rhat": 1.0190606642173112,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_matched_continuation_20261103/catch_up/tx_dispersed/milestone_030000/audit/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_rebuild",
+      "states_per_chain": 30000,
+      "rank_split_rhat": 1.0160703885302358,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_030000/audit/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_rebuild",
+      "states_per_chain": 35000,
+      "rank_split_rhat": 1.012334180327655,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_035000/audit/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_rebuild",
+      "states_per_chain": 40000,
+      "rank_split_rhat": 1.011051583269832,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/audit/diagnostics.json"
+      ]
+    },
+    {
+      "cohort": "tx_rebuild",
+      "states_per_chain": 45000,
+      "rank_split_rhat": 1.0160845433547638,
+      "sources": [
+        "outputs/analysis/convergence_campaign_2026-11-02/tx_matched_continuation_20261103/catch_up/tx_rebuild/milestone_045000/audit/diagnostics.json"
+      ]
+    }
+  ],
+  "records": {
+    "manifest": "outputs/analysis/convergence_campaign_2026-11-02/tx_informational_joint25000_20261103/snapshot/manifest.json",
+    "manifest_sha256": "27a60266fc880d1df7da11e48c252f9624cb15fee09e5eaf2c42b7c896e070d4",
+    "audit": "outputs/analysis/convergence_campaign_2026-11-02/tx_informational_joint25000_20261103/audit/diagnostics.json",
+    "audit_sha256": "3916fa9121da8d0cccd0210b25dbec8c3566e8fa103bf94c9c1851fb283b61da",
+    "command": "outputs/analysis/convergence_campaign_2026-11-02/tx_informational_joint25000_20261103/command.json",
+    "source_code": {
+      "main.py": "8d73d9d443c734fe6746ed0415c2d2caa4ad3e254acf58123cd510ddf64bf19b",
+      "src/chain/run_ensemble.py": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+      "src/chain/checkpoint_integrity.py": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102"
+    }
+  }
+}
