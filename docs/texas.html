@@ -23,120 +23,57 @@
     </nav>
     <div class="wrap">
       <div class="page-header">
-        <div class="back"><a href="index.html">&larr; Back to map</a></div>
-        <div class="verdict">Historical report</div>
         <h1>Earlier Texas analysis</h1>
         <p class="lead">
-          I retain this earlier 30,000-state report as a historical record. The
-          repository contains the continued baseline and dispersed-start audits.
+          I retain this 30,000-state report as a historical record; the
+          repository contains the source rebuild and continued baseline and
+          dispersed-start audits.
         </p>
       </div>
-
       <div class="content">
-        <h2>Results</h2>
+        <h2>Reported results</h2>
         <p>
-          I reported 30,000 post-burn-in ReCom states. Every generated plan
-          contains 38 contiguous congressional districts and stays within
-          +/-0.1% of ideal district population. The 2024 Harris-Trump
-          presidential vote is used as the partisan proxy.
+          I reported 30,000 post-burn-in states with 38 graph-contiguous
+          districts and population within ±0.1% of ideal. Using the 2024
+          Harris-Trump presidential proxy, I recorded a range of 9 to 17
+          Harris-majority districts; PLANC2333 scored 8, below that earlier
+          observed range. The older map scored 11, with a descriptive seat lower
+          tail of 12.607%.
         </p>
-
-        <div class="stats">
-          <div class="stat">
-            <div class="num red">8</div>
-            <div class="cap">Dem seats, 2025 map</div>
-          </div>
-          <div class="stat">
-            <div class="num">9 to 17</div>
-            <div class="cap">Observed ensemble range</div>
-          </div>
-          <div class="stat">
-            <div class="num red">Below all</div>
-            <div class="cap">Observed states</div>
-          </div>
-        </div>
-
-        <p>
-          I reported 8 Democratic seats. No retained state went below 9
-          Harris-won districts. PLANC2333 has 8 and was below this earlier
-          reported range.
-        </p>
-        <p>
-          I scored the older 2021 map at 11 Democratic-majority districts and
-          recorded its descriptive lower tail as 12.607% in the earlier
-          ensemble.
-        </p>
-
         <figure>
           <img
             src="outputs/figures/texas_dem_seat_distribution.png"
-            alt="Ensemble histogram"
+            alt="Historical seat distribution"
           />
           <figcaption>
-            Harris-won districts across 30,000 retained ensemble states. The
-            earlier ensemble ranges from 9 to 17, while PLANC2333 produces 8.
+            I recorded 9–17 Harris-majority districts in the earlier
+            30,000-state ensemble, compared with 8 for PLANC2333.
           </figcaption>
         </figure>
-
         <figure>
           <img
             src="outputs/figures/texas_representative_neutral_map.png"
-            alt="Texas district maps"
+            alt="Historical representative Texas plan"
           />
           <figcaption>
-            Representative neutral plan at chain step 26,999. It contains 13
-            Harris-won districts and lies near the ensemble center on efficiency
-            gap and mean-median.
+            I selected step 26,999 as a representative plan with 13
+            Harris-majority districts near the ensemble center on efficiency gap
+            and mean-median.
           </figcaption>
         </figure>
-
         <h2>Data and method</h2>
-
-        <div class="assumption">
-          <strong>Partisan proxy: 2024 presidential race</strong>
-          <p>
-            I used the Harris vs. Trump results to measure how each precinct
-            leans.
-          </p>
-        </div>
-        <div class="assumption">
-          <strong>Two constraints: population and contiguity</strong>
-          <p>
-            The ensemble requires contiguous districts and population balance
-            within +/-0.1%.
-          </p>
-        </div>
-        <div class="assumption">
-          <strong>Mismatched boundaries</strong>
-          <p>
-            The final pipeline uses Census-block population rather than
-            precinct-centroid population assignment. Block records are
-            aggregated to the validated 2024 precinct geography. The final
-            precinct dataset contains 9,712 units, including 322 zero-population
-            units, and preserves the exact statewide population total.
-          </p>
-        </div>
-        <div class="assumption">
-          <strong>Sample size</strong>
-          <p>
-            I reported 30,000 post-burn-in states. Effective sample sizes are
-            approximately 98 for seat count, 92 for efficiency gap, and 118 for
-            mean-median.
-          </p>
-        </div>
-
-        <h2>Limitations</h2>
         <p>
-          I no longer have this earlier chain file, and I keep its reported
-          values separate from the source rebuild. The states are
-          autocorrelated, while descriptive tails, including zero counts, leave
-          event probabilities unresolved. I used modeled presidential votes and
-          population/contiguity constraints, with uniform sampling, compactness,
-          county preservation, and full legal compliance outside the implemented
-          model.
+          I aggregated Census-block population to the 2024 precinct geography,
+          retaining 9,712 units and 322 zero-population units with the exact
+          statewide total. I used modeled presidential votes to score partisan
+          outcomes and constrained the sampler by population and graph
+          contiguity.
         </p>
-
-        <h2>Data sources</h2>
+        <p>
+          I reported approximate effective sample sizes of 98 for seats, 92 for
+          efficiency gap and 118 for mean-median.
+        </p>
+        <h2>Source records</h2>
         <table>
           <thead>
             <tr>
@@ -168,8 +105,17 @@
             </tr>
           </tbody>
         </table>
+        <h2>Limitations</h2>
+        <p>
+          The earlier chain file is unavailable, so I cannot revalidate these
+          reported values. The states are autocorrelated and the tail counts,
+          including zero observations, leave event probabilities unresolved.
+          Modeled presidential votes and population/contiguity constraints leave
+          compactness, county preservation and other legal requirements outside
+          the implemented model; I have not established uniform sampling or full
+          legal compliance.
+        </p>
       </div>
-
       <footer>
         <p><a href="index.html">&larr; Back to map</a></p>
         <p style="margin-top: 16px">
