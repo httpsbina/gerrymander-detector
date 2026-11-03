@@ -1,0 +1,52 @@
+{
+  "cohort": "tx_rebuild",
+  "chains": 4,
+  "states_per_chain": 20000,
+  "source": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/progress.json",
+  "metrics": {
+    "dem_seats": {
+      "rank_split_rhat": 1.0079651850496645,
+      "bulk_ess": 340.9459174956708,
+      "tail_ess": 584.4582026749364,
+      "ess_screening_minimum": 400
+    },
+    "efficiency_gap": {
+      "rank_split_rhat": 1.0099476311136628,
+      "bulk_ess": 341.3069812138887,
+      "tail_ess": 972.3381011007361,
+      "ess_screening_minimum": 400
+    },
+    "cut_edges": {
+      "rank_split_rhat": 1.0176886289022138,
+      "bulk_ess": 260.47625514747176,
+      "tail_ess": 738.7612502950705,
+      "ess_screening_minimum": 400
+    },
+    "mean_median": {
+      "rank_split_rhat": 1.0205295705924664,
+      "bulk_ess": 254.05202037215767,
+      "tail_ess": 498.16331359577094,
+      "ess_screening_minimum": 400
+    }
+  },
+  "primary_screens_pass": false,
+  "previous_audit_states": 15000,
+  "ess_changes": {
+    "dem_seats": {
+      "bulk": 119.21132883103107,
+      "tail": 199.1648070428401
+    },
+    "efficiency_gap": {
+      "bulk": 138.62536205848997,
+      "tail": 311.14673440448723
+    },
+    "cut_edges": {
+      "bulk": 21.63064768472117,
+      "tail": 95.75936915348427
+    },
+    "mean_median": {
+      "bulk": 69.70558745547763,
+      "tail": 32.98999406083021
+    }
+  }
+}
