@@ -19,6 +19,8 @@ That command is already running. Do not launch a second controller against its o
 
 ## Transfer
 
+`continuation-snapshot-2026-11-02` is a draft backup release. Keep it in draft status; never publish it.
+
 Export complete boundaries with the existing pinned requirements:
 
 ```sh
