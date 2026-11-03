@@ -14,6 +14,7 @@ sys.path.insert(0, str(ROOT))
 os.environ.setdefault("MPLCONFIGDIR", str(ROOT / ".venv/matplotlib"))
 from src.chain.continue_baselines import run_wave
 from src.chain.convergence_state import snapshot_manifest
+from src.chain.platform_transition import validate_receipts
 
 
 def passing(entry):
@@ -23,6 +24,8 @@ def passing(entry):
 
 def audit_milestone(manifest, destination):
     destination = destination.resolve()
+    for experiment in manifest["experiments"].values():
+        validate_receipts(experiment)
     snapshot = snapshot_manifest(manifest, destination / "snapshot")
     command = [sys.executable, "src/analysis/audit_rebuild_campaign.py", "--manifest",
                str(snapshot.relative_to(ROOT)), "--output-dir", str((destination / "audit").relative_to(ROOT))]

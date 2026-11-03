@@ -20,10 +20,13 @@ from src.chain.benchmark_baselines import checkpoint_path
 from src.chain.checkpoint_integrity import file_sha256
 from src.analysis.audit_rebuild_campaign import check_final_checkpoint
 from src.chain.convergence_state import screening_status, snapshot_manifest
+from src.chain.platform_transition import validate_receipts
 
 
 def run_wave(manifest, jobs, lengths, destination, workers):
     destination.mkdir(parents=True, exist_ok=False)
+    for experiment in manifest["experiments"].values():
+        validate_receipts(experiment)
     for name in ("src/chain/run_ensemble.py", "src/chain/checkpoint_integrity.py"):
         if file_sha256(ROOT / name) != manifest["source_code"][name]:
             raise ValueError("Baseline implementation fingerprint changed")

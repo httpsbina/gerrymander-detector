@@ -40,9 +40,17 @@ For offline setup on a compatible ARM Mac, unpack the separate `science-environm
 
 The accompanying `research-history.bundle` can create the checkout without network access: `git clone -b research/baseline-convergence research-history.bundle NEW_PROJECT_DIRECTORY`. It preserves the branch and NC freeze tag without copying credentials or Git configuration. Freeze commits and tags require an existing Bina author and committer identity; the scripts never configure or replace it.
 
-The script creates a virtual environment if needed, installs the pinned packages, verifies file checksums and the recorded runtime, and replays the last 100 recorded states of every chain into separate validation directories. Every CSV field, final assignment, plan hash, provenance record, and random state must match before sampling resumes. Replayed states are validation outputs and are never added to the ensemble. North Carolina remains frozen; Texas resumes both cohorts.
+The script creates a virtual environment if needed, installs the pinned packages, verifies file checksums, and replays the last 100 recorded states of every chain into separate validation directories. A matching runtime requires every CSV field, final assignment, plan hash, provenance record, and random state to match. Replayed states are validation outputs and are never added to the ensemble. North Carolina remains frozen; Texas resumes both cohorts.
 
-Use `./resume.sh --verify-only` to run only the transfer checks. A successful replay on the source laptop is a source-side check, not certification of an untested receiving machine. The current checkpoints require the recorded macOS ARM64 Python build and package profile; Linux or a different Python build is rejected. The target-machine replay must pass before claiming exact continuation there.
+Use `./resume.sh --verify-only` to run only the transfer checks. A successful replay on the source laptop is a source-side check, not certification of an untested receiving machine.
+
+### Native-platform segments
+
+On another ARM Mac or Linux machine, keep the same Python release and pinned package versions. A different build or operating system first requires identical dataset, graph, population/vote, configuration, sampler, and checkpoint-code fingerprints. The current assignment must still satisfy the original population and contiguity constraints. The original checkpoints remain untouched; separately hashed adapter checkpoints preserve their assignments, RNG states, seeds, and next-step indices with the receiving runtime's provenance.
+
+The native runtime then attempts the same 100-state replay. If it matches, the receipt records an exact cross-platform replay. If it completes with valid finite outputs but differs from the source trajectory, production resumes from the original transfer-boundary state as a new documented segment. The receipt marks the last source step, first native step, both runtime profiles, and the end of bit-for-bit reproducibility. The probe's alternative trajectory is excluded. Step numbering and the existing warmup continue without a reset, and the observations remain one chain rather than additional independent chains.
+
+This exception does not waive missing dependencies, changed sampling inputs, changed Python releases, failed execution, incomplete probes, or a replay failure in the same recorded runtime. Those cases stop for investigation. `--exact-only` retains the stricter matching-runtime policy. Transition receipts and their source files are checked before later simulation blocks and audits, and included in subsequent exports. Linux execution is certified only after these checks run on the actual receiving machine.
 
 ## Frozen outputs
 

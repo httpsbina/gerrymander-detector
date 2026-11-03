@@ -104,6 +104,15 @@ def export(manifest_paths, destination):
         e["config"] = e["seed_configs"][str(e["seeds"][0])]
         if "kernel_equivalence_file" in e:
             copy_file(Path(e["kernel_equivalence_file"]))
+        for item in e.get("platform_transitions", []):
+            receipt_path = Path(item["path"])
+            if file_sha256(ROOT / receipt_path) != item["sha256"]:
+                raise ValueError("Platform transition receipt changed before export")
+            copy_file(receipt_path)
+            for name, expected in json.loads((ROOT / receipt_path).read_text())["files"].items():
+                if file_sha256(ROOT / name) != expected:
+                    raise ValueError("Platform transition input changed before export")
+                copy_file(Path(name))
     for name, value in (("manifest.json", {"source_code": source, "experiments": experiments}),):
         with (destination / name).open("x") as stream:
             json.dump(value, stream, indent=2)
@@ -118,7 +127,7 @@ if [ ! -x .venv/science/bin/python ]; then
   "${RESEARCH_PYTHON:-python3.12}" -m venv .venv/science
   .venv/science/bin/python -m pip install -r requirements-research-macos-arm64-py312.txt
 fi
-exec .venv/science/bin/python -m src.chain.resume_transfer "$@"
+exec .venv/science/bin/python -m src.chain.continue_on_target "$@"
 '''
     with (destination / "resume.sh").open("x") as stream:
         stream.write(launcher)
