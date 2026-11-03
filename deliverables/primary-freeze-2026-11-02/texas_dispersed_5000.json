@@ -1,0 +1,34 @@
+{
+  "cohort": "tx_dispersed",
+  "chains": 4,
+  "states_per_chain": 5000,
+  "audit_recorded_eastern": "2026-11-02T23:10:06.132697-05:00",
+  "source": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_dispersed/milestone_005000/progress.json",
+  "metrics": {
+    "dem_seats": {
+      "rank_split_rhat": 1.040534122726951,
+      "bulk_ess": 79.75272214979404,
+      "tail_ess": 217.35237256494682,
+      "ess_screening_minimum": 400
+    },
+    "efficiency_gap": {
+      "rank_split_rhat": 1.0441053423339144,
+      "bulk_ess": 80.14237101204314,
+      "tail_ess": 201.34562795684312,
+      "ess_screening_minimum": 400
+    },
+    "cut_edges": {
+      "rank_split_rhat": 1.0682693027783645,
+      "bulk_ess": 96.83645446749617,
+      "tail_ess": 134.56877767028024,
+      "ess_screening_minimum": 400
+    },
+    "mean_median": {
+      "rank_split_rhat": 1.1028848746489597,
+      "bulk_ess": 37.45403256128883,
+      "tail_ess": 118.85674939662967,
+      "ess_screening_minimum": 400
+    }
+  },
+  "primary_screens_pass": false
+}
