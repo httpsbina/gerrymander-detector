@@ -1,0 +1,76 @@
+{
+  "recorded_utc": "2026-11-03T19:26:12.214119+00:00",
+  "baseline_complete_states_per_chain": 46000,
+  "baseline_last_recorded_step": 45999,
+  "baseline_next_step": 46000,
+  "baseline_held": true,
+  "all_baseline_observations_persisted": true,
+  "chains": [
+    {
+      "seed": 1117,
+      "last_recorded_step": 45999,
+      "next_step": 46000,
+      "complete_states": 46000,
+      "csv": "outputs/analysis/convergence_campaign_2026-11-02/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps045000-045999.csv",
+      "csv_sha256": "7350456db2e1a6d275520bea4dd5b54e0027f0fdf44b1b551c3e010b6440aa6f",
+      "checkpoint": "outputs/analysis/convergence_campaign_2026-11-02/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed1117_next46000.pkl",
+      "checkpoint_sha256": "0961f91399b21ec8e324bd282f8b330bc0a01fbf18c3a7a8ba0b3997f3e5011d"
+    },
+    {
+      "seed": 2227,
+      "last_recorded_step": 45999,
+      "next_step": 46000,
+      "complete_states": 46000,
+      "csv": "outputs/analysis/convergence_campaign_2026-11-02/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps045000-045999.csv",
+      "csv_sha256": "f3ed021e40d2584cedaddff4fd3bb356b38bd1dd4d33ae5c01fc71b43ca02a22",
+      "checkpoint": "outputs/analysis/convergence_campaign_2026-11-02/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed2227_next46000.pkl",
+      "checkpoint_sha256": "5ad53cc2cd3d416a412fb1ded50b45cf6d5445e9c4363f9e3904365f943c6f3b"
+    },
+    {
+      "seed": 3331,
+      "last_recorded_step": 45999,
+      "next_step": 46000,
+      "complete_states": 46000,
+      "csv": "outputs/analysis/convergence_campaign_2026-11-02/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps045000-045999.csv",
+      "csv_sha256": "ba4e644ceecb4f64a5ee8a3c360bb60e6570079844ee7bb3e147f6b27dc441a5",
+      "checkpoint": "outputs/analysis/convergence_campaign_2026-11-02/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed3331_next46000.pkl",
+      "checkpoint_sha256": "da151acd1171fb0a876bcb4a052410a405ccc091d356e9ad6940d2a7fc9eea90"
+    },
+    {
+      "seed": 4441,
+      "last_recorded_step": 45999,
+      "next_step": 46000,
+      "complete_states": 46000,
+      "csv": "outputs/analysis/convergence_campaign_2026-11-02/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps045000-045999.csv",
+      "csv_sha256": "2e703c5e759157716bd36215c23aca0e5705e329276172a60884bdc9e2344ea7",
+      "checkpoint": "outputs/analysis/convergence_campaign_2026-11-02/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed4441_next46000.pkl",
+      "checkpoint_sha256": "3994db90ee34e2502ce77d6a3f31b1dec1e65dcda756dd8f83738690955c26ab"
+    }
+  ],
+  "prior_pause_metadata_correction": "The CLI parents were stopped; sampler children completed their segments through step45999.",
+  "dispersed_complete_boundary_verified": 33000,
+  "dispersed_running_seeds": [10007, 10009, 10037, 10039],
+  "actual_sampler_children_verified": true,
+  "shared_prefix_audit": {
+    "states": 45000,
+    "warmup": 500,
+    "eligible_for_freeze": false,
+    "extra_baseline_states_preserved": true
+  },
+  "next_full_history_shared_audit": 50000,
+  "subsequent_shared_increment": 5000,
+  "backup": {
+    "archive": "outputs/analysis/convergence_campaign_2026-11-02/continuation-complete46000-20261103-nc23000-tx46000-dispersed32000.tar.gz",
+    "sha256": "80a4f044dc028c6bf03023acca56f3b11886a2297f51024621667d7672167572",
+    "remote_digest_matched": true,
+    "release_is_draft": true,
+    "exact_replay_rerun_for_this_snapshot": false
+  },
+  "verification": {
+    "full_tests_passed": 101,
+    "skipped": 0,
+    "frozen_input_checksums_matched": 81,
+    "formatting": "Prettier for changed Markdown; Python AST syntax and git diff --check",
+    "sampler_and_checkpoint_code_unchanged": true
+  }
+}
