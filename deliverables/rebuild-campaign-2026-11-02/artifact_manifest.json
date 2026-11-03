@@ -6,8 +6,8 @@
   "publication_files": [
     {
       "path": "README.md",
-      "bytes": 17415,
-      "sha256": "3c8e9607b16f0b16349fddbdda3704024db151b20b6bed03568a264ef4772bf5"
+      "bytes": 20855,
+      "sha256": "9e58b0e6a4eab96412a49e101e1876ae3981d0b7299e7f3a2fe52d37c4248b10"
     },
     {
       "path": "adopted_plan_geometry.json",
@@ -33,6 +33,36 @@
       "path": "county_chain_summary.csv",
       "bytes": 360001,
       "sha256": "a86655710aa90fedc5f4b34143562777a817174f179f897c1e867e74514f704c"
+    },
+    {
+      "path": "county_partition_distances/county_coverage.csv",
+      "bytes": 12738,
+      "sha256": "e8b314c94234e7c15f57d507ca8ad2e474d8237f2570b8184a6a6a53ca1991b5"
+    },
+    {
+      "path": "county_partition_distances/county_distance_summary.csv",
+      "bytes": 35948,
+      "sha256": "3e6c7eef59aa3b2452edf7d8bc16b1299ff4ea54e7166cbd4aec17c701dbf636"
+    },
+    {
+      "path": "county_partition_distances/county_partition_distances.json",
+      "bytes": 1391,
+      "sha256": "0138a16fff47fadcbbbf1a6ab8b388c22489ae69b37a536a659192339fbdb2db"
+    },
+    {
+      "path": "county_partition_distances/long_lag_contrasts.csv",
+      "bytes": 1867,
+      "sha256": "6fdb61da86af88c2858dcedb88bdde013d04e61c902d64299a78a224de448ea8"
+    },
+    {
+      "path": "county_partition_distances/nc_block_union_county_distances.png",
+      "bytes": 51513,
+      "sha256": "54a37144cde2cb33006ed365fd7586a96fdf991786b9e7f27e0fcdde7395657a"
+    },
+    {
+      "path": "county_partition_distances/tx_rebuild_county_distances.png",
+      "bytes": 48502,
+      "sha256": "12450f574f54433d4609f4a7f5abe97fda777a526fb853889de3c99e7ee19545"
     },
     {
       "path": "diagnostics.csv",
@@ -230,14 +260,29 @@
       "sha256": "f64e15c37228e8f03ef7e443b5f5fc0671b626e92c627fc6e0c0fd18b0a0f4cd"
     },
     {
+      "path": "tail_assignment_check/assignment_verification.json",
+      "bytes": 5411,
+      "sha256": "190de3d19ffc2f8a915457e1f4dce00819cb12e4b5a0f72c130e4bd884153e93"
+    },
+    {
+      "path": "tail_assignment_check/plan_assignments.csv",
+      "bytes": 204223,
+      "sha256": "8abe01a2fead3cbb16568adabcb9e51aae36e6faee85bf4e1754c74587a041eb"
+    },
+    {
+      "path": "tail_assignment_check/state.json",
+      "bytes": 1398,
+      "sha256": "6d0faca6629c45c08b83c1fbf1aac158b7804f860f16a5e03a6be413d819aec6"
+    },
+    {
       "path": "test_suite.log",
-      "bytes": 8881,
-      "sha256": "03e54f84ed4205bddbea55fa91191f1b38cd995413918553a1d8755be3941058"
+      "bytes": 9427,
+      "sha256": "f2ee1ae7a9b6f1ec45e8ef760b286b6df3ec4151254b7d37ea431249d7d6fac6"
     },
     {
       "path": "verification.json",
-      "bytes": 4585,
-      "sha256": "91b95e1cf2c5e4155a7da98f563d9c3222a9f5b540d5c8f6cfcb19f03d619393"
+      "bytes": 5276,
+      "sha256": "ec0a1439192a6419ba69fcdc478c3b4ade3913575bcf73903fc4ffc1eaca633d"
     },
     {
       "path": "windows.csv",

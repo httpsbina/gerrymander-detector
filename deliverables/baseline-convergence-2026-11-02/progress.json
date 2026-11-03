@@ -1,0 +1,115 @@
+{
+  "recorded_eastern": "2026-11-02T19:00:27.731626-05:00",
+  "thresholds": {
+    "rhat_strict_upper": 1.01,
+    "ess_rule": "max(400, 100 * chains)"
+  },
+  "steps_per_hour_per_chain": {
+    "north_carolina": {
+      "minimum": 23389.34571247827,
+      "median": 25393.168147380886,
+      "maximum": 28955.688162307408,
+      "timed_continuations": 12
+    },
+    "texas": {
+      "minimum": 4028.1201210026456,
+      "median": 4388.132804453933,
+      "maximum": 4667.475620493673,
+      "timed_continuations": 4
+    }
+  },
+  "benchmark_load": "8 concurrent single-threaded jobs: 6 NC and 2 Texas, with both Texas pairs measured",
+  "states": {
+    "north_carolina": {
+      "steps_per_chain": 13000,
+      "seat_screen_pass": true,
+      "all_primary_screens_pass": false,
+      "metrics": {
+        "dem_seats": {
+          "rank_split_rhat": 1.0033832247707104,
+          "bulk_ess": 1190.8002032860043,
+          "tail_ess": 1876.4417004610625,
+          "mcse_mean": 0.024063807065752514,
+          "ess_screening_minimum": 600,
+          "ess_only_target_steps_per_chain": 13000
+        },
+        "efficiency_gap": {
+          "rank_split_rhat": 1.0044528493409348,
+          "bulk_ess": 969.1492679563924,
+          "tail_ess": 2832.6188644496815,
+          "mcse_mean": 0.0017345480271342816,
+          "ess_screening_minimum": 600,
+          "ess_only_target_steps_per_chain": 13000
+        },
+        "cut_edges": {
+          "rank_split_rhat": 1.0068284402117873,
+          "bulk_ess": 1463.0352165423983,
+          "tail_ess": 3794.629042191892,
+          "mcse_mean": 1.1135229139162917,
+          "ess_screening_minimum": 600,
+          "ess_only_target_steps_per_chain": 13000
+        },
+        "mean_median": {
+          "rank_split_rhat": 1.0086877282409439,
+          "bulk_ess": 1090.8208542204795,
+          "tail_ess": 2809.1150499950772,
+          "mcse_mean": 0.00032158623754452106,
+          "ess_screening_minimum": 600,
+          "ess_only_target_steps_per_chain": 13000
+        }
+      },
+      "audit_status_file": "outputs/analysis/convergence_campaign_2026-11-02/nc_primary_continuation/status_001.json"
+    },
+    "texas": {
+      "steps_per_chain": 6400,
+      "seat_screen_pass": false,
+      "all_primary_screens_pass": false,
+      "metrics": {
+        "dem_seats": {
+          "rank_split_rhat": 1.024082388841383,
+          "bulk_ess": 112.14593413286077,
+          "tail_ess": 216.1292025351211,
+          "mcse_mean": 0.11425941088364003,
+          "ess_screening_minimum": 400,
+          "ess_only_target_steps_per_chain": 21545
+        },
+        "efficiency_gap": {
+          "rank_split_rhat": 1.0302688138442437,
+          "bulk_ess": 113.84142230971922,
+          "tail_ess": 293.43570377035115,
+          "mcse_mean": 0.002902848756293813,
+          "ess_screening_minimum": 400,
+          "ess_only_target_steps_per_chain": 21231
+        },
+        "cut_edges": {
+          "rank_split_rhat": 1.057623913238314,
+          "bulk_ess": 90.20132990611297,
+          "tail_ess": 298.8424068134506,
+          "mcse_mean": 9.426741951071744,
+          "ess_screening_minimum": 400,
+          "ess_only_target_steps_per_chain": 26664
+        },
+        "mean_median": {
+          "rank_split_rhat": 1.050583610313303,
+          "bulk_ess": 79.9752162377359,
+          "tail_ess": 229.28777340540287,
+          "mcse_mean": 0.0014764393947535428,
+          "ess_screening_minimum": 400,
+          "ess_only_target_steps_per_chain": 30010
+        }
+      },
+      "audit_status_file": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/status_001.json"
+    }
+  },
+  "exact_commands": [
+    "PYTHONUNBUFFERED=1 MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" caffeinate -i .venv/science/bin/python src/chain/continue_baselines.py --manifest outputs/analysis/convergence_campaign_2026-11-02/full_load_benchmark/manifest.json --output-dir outputs/analysis/convergence_campaign_2026-11-02/nc_primary_continuation --state nc --target primary --block-states 5000 --rounds 12 --workers 4 --stop-file .venv/stop_nc_baselines",
+    "PYTHONUNBUFFERED=1 MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" caffeinate -i .venv/science/bin/python src/chain/continue_baselines.py --manifest outputs/analysis/convergence_campaign_2026-11-02/full_load_benchmark/manifest.json --output-dir outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation --state texas --target seats --block-states 2000 --rounds 20 --workers 4 --stop-file .venv/stop_tx_baselines",
+    "MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" TMPDIR=\"$PWD/.venv/test-runtime\" .venv/science/bin/python -m unittest discover -s tests -v"
+  ],
+  "verification": {
+    "full_suite_tests": 71,
+    "full_suite_pass": true,
+    "sampler_and_checkpoint_helper_fingerprints_unchanged": true
+  },
+  "projection_limit": "ESS projections do not predict R-hat or guarantee convergence."
+}

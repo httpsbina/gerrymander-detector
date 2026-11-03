@@ -1,0 +1,32 @@
+{
+  "states_per_chain": 15000,
+  "chains": 4,
+  "primary_screen_pass": false,
+  "source": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_015000/progress.json",
+  "metrics": {
+    "dem_seats": {
+      "rank_split_rhat": 1.0079046766888096,
+      "bulk_ess": 221.73458866463974,
+      "tail_ess": 385.2933956320963,
+      "ess_screening_minimum": 400
+    },
+    "efficiency_gap": {
+      "rank_split_rhat": 1.011916844579935,
+      "bulk_ess": 202.68161915539875,
+      "tail_ess": 661.1913666962489,
+      "ess_screening_minimum": 400
+    },
+    "cut_edges": {
+      "rank_split_rhat": 1.0077857329622026,
+      "bulk_ess": 238.8456074627506,
+      "tail_ess": 643.0018811415862,
+      "ess_screening_minimum": 400
+    },
+    "mean_median": {
+      "rank_split_rhat": 1.0273590538174064,
+      "bulk_ess": 184.34643291668004,
+      "tail_ess": 465.17331953494073,
+      "ess_screening_minimum": 400
+    }
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "recorded_eastern": "2026-11-02T23:03:45.918452-05:00",
+  "group": "tx_rebuild",
+  "seeds": [1117, 2227, 3331, 4441],
+  "warmup_per_chain": 500,
+  "thresholds": {
+    "rhat_strict_upper": 1.01,
+    "bulk_and_tail_ess_minimum": 400
+  },
+  "source_manifest": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_015000/snapshot/manifest.json",
+  "source_manifest_sha256": "d0aa462682724747b0fdc22cb92ae1f86c9f761f994ca21b9b86950ba4d27644",
+  "comparison": "Historical prefixes of all four complete 15000-state baseline chains. Full chain files are preserved; these prefixes do not define a freeze.",
+  "metrics": [
+    {
+      "metric": "dem_seats",
+      "at_10000": {
+        "rank_split_rhat": 1.0264420234896094,
+        "bulk_ess": 142.6945063869302,
+        "tail_ess": 215.70051874408023,
+        "mcse_mean": 0.1081678376871023,
+        "mcse_sd": 0.07664574298276143,
+        "mcse_q05": 0.0,
+        "mcse_q95": 0.0,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400",
+          "tail ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      "at_15000": {
+        "rank_split_rhat": 1.0079046766888096,
+        "bulk_ess": 221.73458866463974,
+        "tail_ess": 385.2933956320963,
+        "mcse_mean": 0.08687003228809542,
+        "mcse_sd": 0.06150738378569256,
+        "mcse_q05": 0.0,
+        "mcse_q95": 0.0,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": ["bulk ESS below 400", "tail ESS below 400"],
+        "ess_screening_minimum": 400
+      },
+      "bulk_ess_change": 79.04008227770956,
+      "tail_ess_change": 169.59287688801606
+    },
+    {
+      "metric": "efficiency_gap",
+      "at_10000": {
+        "rank_split_rhat": 1.0399319021773816,
+        "bulk_ess": 109.46365111439088,
+        "tail_ess": 392.6838622929527,
+        "mcse_mean": 0.00316218252044228,
+        "mcse_sd": 0.002253048073908935,
+        "mcse_q05": 0.001179494710664454,
+        "mcse_q95": 0.0025207647265178,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400",
+          "tail ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      "at_15000": {
+        "rank_split_rhat": 1.011916844579935,
+        "bulk_ess": 202.68161915539875,
+        "tail_ess": 661.1913666962489,
+        "mcse_mean": 0.0023569376302926205,
+        "mcse_sd": 0.0016689974699222033,
+        "mcse_q05": 0.0012520776304161471,
+        "mcse_q95": 0.00216786924244895,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      "bulk_ess_change": 93.21796804100786,
+      "tail_ess_change": 268.5075044032962
+    },
+    {
+      "metric": "cut_edges",
+      "at_10000": {
+        "rank_split_rhat": 1.0273370645464996,
+        "bulk_ess": 178.38804069768548,
+        "tail_ess": 542.5980092252877,
+        "mcse_mean": 6.363680955599737,
+        "mcse_sd": 4.51078290349529,
+        "mcse_q05": 7.0,
+        "mcse_q95": 7.5,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      "at_15000": {
+        "rank_split_rhat": 1.0077857329622026,
+        "bulk_ess": 238.8456074627506,
+        "tail_ess": 643.0018811415862,
+        "mcse_mean": 5.52066327244023,
+        "mcse_sd": 3.917125091797225,
+        "mcse_q05": 5.0,
+        "mcse_q95": 7.5,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": ["bulk ESS below 400"],
+        "ess_screening_minimum": 400
+      },
+      "bulk_ess_change": 60.45756676506511,
+      "tail_ess_change": 100.4038719162985
+    },
+    {
+      "metric": "mean_median",
+      "at_10000": {
+        "rank_split_rhat": 1.0432922205292776,
+        "bulk_ess": 105.13621013416244,
+        "tail_ess": 238.99858708084267,
+        "mcse_mean": 0.0013267502899486853,
+        "mcse_sd": 0.0009408031352450379,
+        "mcse_q05": 0.002383913907780549,
+        "mcse_q95": 0.0011951044954854502,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400",
+          "tail ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      "at_15000": {
+        "rank_split_rhat": 1.0273590538174064,
+        "bulk_ess": 184.34643291668004,
+        "tail_ess": 465.17331953494073,
+        "mcse_mean": 0.0009459288809841301,
+        "mcse_sd": 0.0006699456010419542,
+        "mcse_q05": 0.0015933103180049996,
+        "mcse_q95": 0.0009645544825677994,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      "bulk_ess_change": 79.2102227825176,
+      "tail_ess_change": 226.17473245409806
+    }
+  ],
+  "dispersed": {
+    "complete_states_per_chain": 4000,
+    "first_audit_states_per_chain": 5000,
+    "progress": [
+      {
+        "seed": 10007,
+        "last_completed_csv_boundary": 4000,
+        "latest_checkpoint_next_step": 4600,
+        "recent_steps_per_hour": 2694.5667371838153,
+        "estimated_seconds_to_5000": 534.4087344835978,
+        "checkpoint_written_eastern": "2026-11-02T23:02:38.542635-05:00"
+      },
+      {
+        "seed": 10009,
+        "last_completed_csv_boundary": 4000,
+        "latest_checkpoint_next_step": 4600,
+        "recent_steps_per_hour": 2963.498675308789,
+        "estimated_seconds_to_5000": 485.9121456667956,
+        "checkpoint_written_eastern": "2026-11-02T23:03:37.028136-05:00"
+      },
+      {
+        "seed": 10037,
+        "last_completed_csv_boundary": 4000,
+        "latest_checkpoint_next_step": 4600,
+        "recent_steps_per_hour": 2790.9234695017885,
+        "estimated_seconds_to_5000": 515.958253866795,
+        "checkpoint_written_eastern": "2026-11-02T23:02:00.978149-05:00"
+      },
+      {
+        "seed": 10039,
+        "last_completed_csv_boundary": 4000,
+        "latest_checkpoint_next_step": 4800,
+        "recent_steps_per_hour": 2856.6311245508145,
+        "estimated_seconds_to_5000": 252.0451429000008,
+        "checkpoint_written_eastern": "2026-11-02T23:02:52.838524-05:00"
+      }
+    ],
+    "conditional_eta_eastern": "2026-11-02T23:12:40.327186-05:00",
+    "estimate_method": "Slowest per-seed remaining time using each chain recent completed1000-state timing and its latest checkpoint; excludes audit overhead and is not a guaranteed completion time."
+  }
+}

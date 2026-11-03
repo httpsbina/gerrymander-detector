@@ -1,0 +1,672 @@
+{
+  "recorded_eastern": "2026-11-02T21:52:32.619479-05:00",
+  "freeze_rule_commit": "17db84e26f1b17442b775089a619c48fe8b0a7ce",
+  "north_carolina": {
+    "tag": "nc-baseline-23000",
+    "states_per_chain": 23000,
+    "freeze_manifest": "deliverables/nc-baseline-freeze-23000/freeze_manifest.json",
+    "exact_reproduction_passed": true
+  },
+  "texas": {
+    "baseline_states_per_chain": 14400,
+    "dispersed_states_per_chain": 1000,
+    "frozen": false,
+    "joint_screen": "Pending equal complete chain lengths",
+    "next_baseline_milestone": 15000,
+    "next_dispersed_milestone": 5000,
+    "first_joint_milestone": 50000,
+    "continuation": "Unbounded 5000-state increments after the first joint milestone",
+    "baseline_primary_metrics": {
+      "dem_seats": {
+        "rank_split_rhat": 1.0095232746267728,
+        "bulk_ess": 224.59239459559095,
+        "tail_ess": 392.8356104394923,
+        "ess_screening_minimum": 400
+      },
+      "efficiency_gap": {
+        "rank_split_rhat": 1.0126850026907719,
+        "bulk_ess": 209.55431654249955,
+        "tail_ess": 627.5857838545193,
+        "ess_screening_minimum": 400
+      },
+      "cut_edges": {
+        "rank_split_rhat": 1.0106225755764036,
+        "bulk_ess": 241.3397989998107,
+        "tail_ess": 706.6402437906879,
+        "ess_screening_minimum": 400
+      },
+      "mean_median": {
+        "rank_split_rhat": 1.031334437418846,
+        "bulk_ess": 167.01250421672657,
+        "tail_ess": 479.3349157981669,
+        "ess_screening_minimum": 400
+      }
+    }
+  },
+  "verification": {
+    "tests": 79,
+    "passed": true,
+    "python_formatter_linter": "No project formatter or linter configured; changed Python files parsed successfully",
+    "format_checks": "Prettier for changed Markdown and JSON; git diff --check",
+    "sampler_unchanged": true,
+    "thresholds_unchanged": true,
+    "test_command": "MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" TMPDIR=\"$PWD/.venv/test-runtime\" .venv/science/bin/python -m unittest discover -s tests -v",
+    "reproduction_command": "MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" .venv/science/bin/python reproduce_paper.py --output-dir outputs/analysis/convergence_campaign_2026-11-02/nc_frozen_verification",
+    "texas_kernel_equivalence_sha256": "d56ff95b057f535c7d4b70ddb2f351a795a4c3fe76fd4f16c91b32a12a2f751d"
+  },
+  "texas_disagreement_at_12400": {
+    "metrics": [
+      {
+        "metric": "dem_seats",
+        "seed": 1117,
+        "mean": 12.93201680672269,
+        "mean_minus_other_chains": 0.0074509803921571915,
+        "first_last_1000_difference": 1.0269999999999992
+      },
+      {
+        "metric": "dem_seats",
+        "seed": 2227,
+        "mean": 12.66470588235294,
+        "mean_minus_other_chains": -0.3489635854341735,
+        "first_last_1000_difference": -1.0370000000000008
+      },
+      {
+        "metric": "dem_seats",
+        "seed": 3331,
+        "mean": 12.862941176470589,
+        "mean_minus_other_chains": -0.084649859943978,
+        "first_last_1000_difference": 1.5030000000000001
+      },
+      {
+        "metric": "dem_seats",
+        "seed": 4441,
+        "mean": 13.246050420168068,
+        "mean_minus_other_chains": 0.4261624649859943,
+        "first_last_1000_difference": 1.2490000000000006
+      },
+      {
+        "metric": "efficiency_gap",
+        "seed": 1117,
+        "mean": -0.05159588025619022,
+        "mean_minus_other_chains": -2.477354550009525e-5,
+        "first_last_1000_difference": 0.0379281722097901
+      },
+      {
+        "metric": "efficiency_gap",
+        "seed": 2227,
+        "mean": -0.058718883865639226,
+        "mean_minus_other_chains": -0.009522111691432113,
+        "first_last_1000_difference": -0.03850622569975055
+      },
+      {
+        "metric": "efficiency_gap",
+        "seed": 3331,
+        "mean": -0.054357462821826914,
+        "mean_minus_other_chains": -0.0037068836330156965,
+        "first_last_1000_difference": 0.036060393085938086
+      },
+      {
+        "metric": "efficiency_gap",
+        "seed": 4441,
+        "mean": -0.04163697344460422,
+        "mean_minus_other_chains": 0.013253768869947898,
+        "first_last_1000_difference": 0.022908497963715118
+      },
+      {
+        "metric": "cut_edges",
+        "seed": 1117,
+        "mean": 2681.46512605042,
+        "mean_minus_other_chains": 0.46669467787114627,
+        "first_last_1000_difference": -99.66600000000017
+      },
+      {
+        "metric": "cut_edges",
+        "seed": 2227,
+        "mean": 2671.1447899159666,
+        "mean_minus_other_chains": -13.29375350140026,
+        "first_last_1000_difference": -2.7330000000001746
+      },
+      {
+        "metric": "cut_edges",
+        "seed": 3331,
+        "mean": 2678.762773109244,
+        "mean_minus_other_chains": -3.1364425770307207,
+        "first_last_1000_difference": 23.07699999999977
+      },
+      {
+        "metric": "cut_edges",
+        "seed": 4441,
+        "mean": 2693.087731092437,
+        "mean_minus_other_chains": 15.96350140056029,
+        "first_last_1000_difference": -82.91400000000021
+      },
+      {
+        "metric": "mean_median",
+        "seed": 1117,
+        "mean": 0.012237858468753927,
+        "mean_minus_other_chains": 0.005093534803631621,
+        "first_last_1000_difference": 0.012726646932407713
+      },
+      {
+        "metric": "mean_median",
+        "seed": 2227,
+        "mean": 0.0033920818757524475,
+        "mean_minus_other_chains": -0.006700833987037018,
+        "first_last_1000_difference": 0.0026101325585058694
+      },
+      {
+        "metric": "mean_median",
+        "seed": 3331,
+        "mean": 0.008432515077090164,
+        "mean_minus_other_chains": 1.9743614746603466e-5,
+        "first_last_1000_difference": -0.0017859666842222803
+      },
+      {
+        "metric": "mean_median",
+        "seed": 4441,
+        "mean": 0.009608374042524301,
+        "mean_minus_other_chains": 0.0015875555686587876,
+        "first_last_1000_difference": 0.0012852984769236705
+      }
+    ],
+    "leave_one_out_attribution": [
+      {
+        "metric": "dem_seats",
+        "omitted_seed_for_attribution_only": 1117,
+        "rank_split_rhat": 1.0256115502920842,
+        "bulk_ess": 102.05008612850274,
+        "tail_ess": 190.31835272686206,
+        "mcse_mean": 0.12933858409719012,
+        "mcse_sd": 0.09172082874074104,
+        "mcse_q05": 0.0,
+        "mcse_q95": 0.0,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400",
+          "tail ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      {
+        "metric": "dem_seats",
+        "omitted_seed_for_attribution_only": 2227,
+        "rank_split_rhat": 1.0097219393666625,
+        "bulk_ess": 125.72860403807707,
+        "tail_ess": 221.3194068160335,
+        "mcse_mean": 0.1188688350754387,
+        "mcse_sd": 0.0842499955662905,
+        "mcse_q05": 0.0,
+        "mcse_q95": 0.0,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": ["bulk ESS below 400", "tail ESS below 400"],
+        "ess_screening_minimum": 400
+      },
+      {
+        "metric": "dem_seats",
+        "omitted_seed_for_attribution_only": 3331,
+        "rank_split_rhat": 1.027128698416601,
+        "bulk_ess": 117.64018795701463,
+        "tail_ess": 318.67002133726095,
+        "mcse_mean": 0.11482091166165397,
+        "mcse_sd": 0.08271493961835774,
+        "mcse_q05": 0.0,
+        "mcse_q95": 0.0,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400",
+          "tail ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      {
+        "metric": "dem_seats",
+        "omitted_seed_for_attribution_only": 4441,
+        "rank_split_rhat": 1.0116867880861369,
+        "bulk_ess": 145.1564374595869,
+        "tail_ess": 245.73340088227428,
+        "mcse_mean": 0.10684876489476301,
+        "mcse_sd": 0.07575859311052964,
+        "mcse_q05": 0.0,
+        "mcse_q95": 0.0,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400",
+          "tail ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      {
+        "metric": "efficiency_gap",
+        "omitted_seed_for_attribution_only": 1117,
+        "rank_split_rhat": 1.0382857200264999,
+        "bulk_ess": 80.6375216582682,
+        "tail_ess": 345.7800452751216,
+        "mcse_mean": 0.0037338075553685233,
+        "mcse_sd": 0.002649671656882516,
+        "mcse_q05": 0.0017709341831442516,
+        "mcse_q95": 0.002646114983635,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400",
+          "tail ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      {
+        "metric": "efficiency_gap",
+        "omitted_seed_for_attribution_only": 2227,
+        "rank_split_rhat": 1.0161466459259114,
+        "bulk_ess": 118.45892562541343,
+        "tail_ess": 420.38288701155074,
+        "mcse_mean": 0.003144789759530973,
+        "mcse_sd": 0.0022291831337591774,
+        "mcse_q05": 0.0013042660855995536,
+        "mcse_q95": 0.00208308526747515,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      {
+        "metric": "efficiency_gap",
+        "omitted_seed_for_attribution_only": 3331,
+        "rank_split_rhat": 1.0387942981785432,
+        "bulk_ess": 89.35394199790565,
+        "tail_ess": 404.1470249810006,
+        "mcse_mean": 0.00345605706139972,
+        "mcse_sd": 0.0024516333981528878,
+        "mcse_q05": 0.0017766784755662984,
+        "mcse_q95": 0.0017648781849318,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      {
+        "metric": "efficiency_gap",
+        "omitted_seed_for_attribution_only": 4441,
+        "rank_split_rhat": 1.014977428536862,
+        "bulk_ess": 141.1419027327382,
+        "tail_ess": 355.6793902915897,
+        "mcse_mean": 0.002766172447188211,
+        "mcse_sd": 0.0019599650825929803,
+        "mcse_q05": 0.0014236048739030005,
+        "mcse_q95": 0.0030102318761562,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400",
+          "tail ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      {
+        "metric": "cut_edges",
+        "omitted_seed_for_attribution_only": 1117,
+        "rank_split_rhat": 1.0107443423260734,
+        "bulk_ess": 153.36895477006183,
+        "tail_ess": 478.9005164406588,
+        "mcse_mean": 7.068884639705287,
+        "mcse_sd": 5.008122452709641,
+        "mcse_q05": 7.0,
+        "mcse_q95": 8.5,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      {
+        "metric": "cut_edges",
+        "omitted_seed_for_attribution_only": 2227,
+        "rank_split_rhat": 1.0160121857219278,
+        "bulk_ess": 141.51480626830903,
+        "tail_ess": 520.2701398173076,
+        "mcse_mean": 7.149835840497133,
+        "mcse_sd": 5.066223384961598,
+        "mcse_q05": 7.5,
+        "mcse_q95": 7.5,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      {
+        "metric": "cut_edges",
+        "omitted_seed_for_attribution_only": 3331,
+        "rank_split_rhat": 1.0160901669303304,
+        "bulk_ess": 176.81076347982983,
+        "tail_ess": 520.2025213484261,
+        "mcse_mean": 6.171442014743164,
+        "mcse_sd": 4.376859271485888,
+        "mcse_q05": 5.5,
+        "mcse_q95": 8.0,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      {
+        "metric": "cut_edges",
+        "omitted_seed_for_attribution_only": 4441,
+        "rank_split_rhat": 1.0118568767104643,
+        "bulk_ess": 202.19402419106328,
+        "tail_ess": 506.0950021624085,
+        "mcse_mean": 5.8288663949386095,
+        "mcse_sd": 4.1275720163804435,
+        "mcse_q05": 7.0,
+        "mcse_q95": 8.0,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      {
+        "metric": "mean_median",
+        "omitted_seed_for_attribution_only": 1117,
+        "rank_split_rhat": 1.0288833840311937,
+        "bulk_ess": 107.09504440004353,
+        "tail_ess": 333.606253778155,
+        "mcse_mean": 0.0012898736534744447,
+        "mcse_sd": 0.0009145874322638334,
+        "mcse_q05": 0.0017696684931434508,
+        "mcse_q95": 0.0012164107894589004,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400",
+          "tail ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      {
+        "metric": "mean_median",
+        "omitted_seed_for_attribution_only": 2227,
+        "rank_split_rhat": 1.0217074129307377,
+        "bulk_ess": 120.68788631586881,
+        "tail_ess": 218.45572543724103,
+        "mcse_mean": 0.0011927547910858143,
+        "mcse_sd": 0.0008454870182852883,
+        "mcse_q05": 0.00257755182592965,
+        "mcse_q95": 0.001097172780598149,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400",
+          "tail ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      {
+        "metric": "mean_median",
+        "omitted_seed_for_attribution_only": 3331,
+        "rank_split_rhat": 1.068794594174364,
+        "bulk_ess": 46.727848428017744,
+        "tail_ess": 342.3332926547553,
+        "mcse_mean": 0.001870947214691797,
+        "mcse_sd": 0.0013311878775790825,
+        "mcse_q05": 0.00157204536322065,
+        "mcse_q95": 0.00133010680869005,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400",
+          "tail ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      },
+      {
+        "metric": "mean_median",
+        "omitted_seed_for_attribution_only": 4441,
+        "rank_split_rhat": 1.0582871370502613,
+        "bulk_ess": 89.16628575407577,
+        "tail_ess": 283.94054372108235,
+        "mcse_mean": 0.0014655412799562165,
+        "mcse_sd": 0.0010397251056123806,
+        "mcse_q05": 0.0020718197701665502,
+        "mcse_q95": 0.0012920715558738475,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [
+          "rank R-hat at or above 1.01",
+          "bulk ESS below 400",
+          "tail ESS below 400"
+        ],
+        "ess_screening_minimum": 400
+      }
+    ],
+    "largest_county_contrasts": [
+      {
+        "seed": 2227,
+        "county": "201",
+        "population": 4731145,
+        "democratic_district_population_difference": -179742.77310924325,
+        "democratic_district_fraction_difference": -0.037991389633850514,
+        "district_count_difference": -0.22689075630252198,
+        "absolute_population_difference": 179742.77310924325
+      },
+      {
+        "seed": 4441,
+        "county": "201",
+        "population": 4731145,
+        "democratic_district_population_difference": 98790.81792717054,
+        "democratic_district_fraction_difference": 0.02088095332676776,
+        "district_count_difference": -0.09243697478991564,
+        "absolute_population_difference": 98790.81792717054
+      },
+      {
+        "seed": 2227,
+        "county": "029",
+        "population": 2009324,
+        "democratic_district_population_difference": -93321.04201680655,
+        "democratic_district_fraction_difference": -0.04644399908467067,
+        "district_count_difference": -0.06162464985994376,
+        "absolute_population_difference": 93321.04201680655
+      },
+      {
+        "seed": 4441,
+        "county": "157",
+        "population": 822779,
+        "democratic_district_population_difference": 85852.14005602244,
+        "democratic_district_fraction_difference": 0.1043441070518602,
+        "district_count_difference": 0.42016806722689104,
+        "absolute_population_difference": 85852.14005602244
+      },
+      {
+        "seed": 3331,
+        "county": "029",
+        "population": 2009324,
+        "democratic_district_population_difference": 83255.21568627446,
+        "democratic_district_fraction_difference": 0.041434440481611934,
+        "district_count_difference": 0.0728291316526608,
+        "absolute_population_difference": 83255.21568627446
+      },
+      {
+        "seed": 3331,
+        "county": "157",
+        "population": 822779,
+        "democratic_district_population_difference": -67295.19887955184,
+        "democratic_district_fraction_difference": -0.08179012697158267,
+        "district_count_difference": -0.21848739495798375,
+        "absolute_population_difference": 67295.19887955184
+      },
+      {
+        "seed": 2227,
+        "county": "439",
+        "population": 2110640,
+        "democratic_district_population_difference": 60310.14005602233,
+        "democratic_district_fraction_difference": 0.02857433766820605,
+        "district_count_difference": -0.1316526610644253,
+        "absolute_population_difference": 60310.14005602233
+      },
+      {
+        "seed": 3331,
+        "county": "209",
+        "population": 241067,
+        "democratic_district_population_difference": -56770.03081232494,
+        "democratic_district_fraction_difference": -0.23549482431160185,
+        "district_count_difference": -0.11484593837535018,
+        "absolute_population_difference": 56770.03081232494
+      },
+      {
+        "seed": 2227,
+        "county": "157",
+        "population": 822779,
+        "democratic_district_population_difference": -53493.932773109234,
+        "democratic_district_fraction_difference": -0.0650161620229846,
+        "district_count_difference": -0.3305322128851542,
+        "absolute_population_difference": 53493.932773109234
+      },
+      {
+        "seed": 3331,
+        "county": "201",
+        "population": 4731145,
+        "democratic_district_population_difference": 52532.364145658445,
+        "democratic_district_fraction_difference": 0.011103520214590268,
+        "district_count_difference": 0.14285714285714235,
+        "absolute_population_difference": 52532.364145658445
+      },
+      {
+        "seed": 1117,
+        "county": "113",
+        "population": 2613539,
+        "democratic_district_population_difference": -47086.3417366948,
+        "democratic_district_fraction_difference": -0.018016314941806888,
+        "district_count_difference": 0.0364145658263304,
+        "absolute_population_difference": 47086.3417366948
+      },
+      {
+        "seed": 3331,
+        "county": "085",
+        "population": 1064465,
+        "democratic_district_population_difference": -40804.64145658264,
+        "democratic_district_fraction_difference": -0.038333474051831296,
+        "district_count_difference": 0.235294117647058,
+        "absolute_population_difference": 40804.64145658264
+      },
+      {
+        "seed": 4441,
+        "county": "085",
+        "population": 1064465,
+        "democratic_district_population_difference": 35695.683473389334,
+        "democratic_district_fraction_difference": 0.03353391936173508,
+        "district_count_difference": -0.21288515406162478,
+        "absolute_population_difference": 35695.683473389334
+      },
+      {
+        "seed": 1117,
+        "county": "157",
+        "population": 822779,
+        "democratic_district_population_difference": 34936.99159663863,
+        "democratic_district_fraction_difference": 0.04246218194270712,
+        "district_count_difference": 0.12885154061624693,
+        "absolute_population_difference": 34936.99159663863
+      },
+      {
+        "seed": 4441,
+        "county": "453",
+        "population": 1290188,
+        "democratic_district_population_difference": -31647.728291316656,
+        "democratic_district_fraction_difference": -0.024529547857611855,
+        "district_count_difference": -0.45938375350140026,
+        "absolute_population_difference": 31647.728291316656
+      },
+      {
+        "seed": 4441,
+        "county": "029",
+        "population": 2009324,
+        "democratic_district_population_difference": 31104.59383753501,
+        "democratic_district_fraction_difference": 0.01548012855942349,
+        "district_count_difference": 0.06162464985994376,
+        "absolute_population_difference": 31104.59383753501
+      },
+      {
+        "seed": 1117,
+        "county": "201",
+        "population": 4731145,
+        "democratic_district_population_difference": 28419.591036414262,
+        "democratic_district_fraction_difference": 0.006006916092492265,
+        "district_count_difference": 0.17647058823529527,
+        "absolute_population_difference": 28419.591036414262
+      },
+      {
+        "seed": 1117,
+        "county": "209",
+        "population": 241067,
+        "democratic_district_population_difference": 27285.408963585433,
+        "democratic_district_fraction_difference": 0.11318599793246453,
+        "district_count_difference": 0.030812324929972323,
+        "absolute_population_difference": 27285.408963585433
+      },
+      {
+        "seed": 2227,
+        "county": "039",
+        "population": 372031,
+        "democratic_district_population_difference": -26781.8319327731,
+        "democratic_district_fraction_difference": -0.07198817284788928,
+        "district_count_difference": -0.16526610644257733,
+        "absolute_population_difference": 26781.8319327731
+      },
+      {
+        "seed": 2227,
+        "county": "453",
+        "population": 1290188,
+        "democratic_district_population_difference": 24372.764705882408,
+        "democratic_district_fraction_difference": 0.018890862964065946,
+        "district_count_difference": -0.3473389355742298,
+        "absolute_population_difference": 24372.764705882408
+      }
+    ],
+    "interpretation": "Leave-one-out values locate chain disagreement only; all-chain diagnostics determine freezing. County population in modeled Democratic-majority districts locates associated geographic differences, not a causal or additive decomposition of R-hat. Every saved 100-state checkpoint is used; full-state CSVs determine metric diagnostics."
+  },
+  "limitations": [
+    "A primary convergence freeze does not resolve source-data, modeled-vote, sampler-distribution or legal-compliance limitations.",
+    "Receiving-machine exact continuation requires the strict runtime compatibility and replay checks to pass."
+  ]
+}
