@@ -1,6 +1,6 @@
 # Complete diagnostic figures
 
-Every configured experiment and compatible NC joint group is included. Traces show all states; rank plots use post-warmup average ranks.
+I plotted every configured experiment and compatible NC joint group from the initial campaign, showing all recorded states in the traces and post-warmup average ranks in the rank plots.
 
 | Group                    | Trace                                              | Rank                                             |
 | ------------------------ | -------------------------------------------------- | ------------------------------------------------ |
