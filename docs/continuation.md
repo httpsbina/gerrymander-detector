@@ -30,11 +30,15 @@ MPLCONFIGDIR="$PWD/.venv/matplotlib" .venv/science/bin/python \
 
 The export copies datasets, complete CSV histories, matching final and preceding checkpoints, source files, configurations, frozen results, and checksums. It excludes credentials and the local virtual environment. Different cohort lengths are allowed in the transfer; joint convergence is evaluated only at a later common complete milestone.
 
-On the receiving machine, unpack the archive and run:
+On the receiving machine, use a fresh checkout of `research/baseline-convergence`, unpack the archive there, and run:
 
 ```sh
 RESEARCH_PYTHON=/path/to/matching/python3.12 ./resume.sh
 ```
+
+For offline setup on a compatible ARM Mac, unpack the separate `science-environment-macos-arm64-py312.tar.gz` asset into the same directory, then use `./resume_offline.sh`. This preserves the working standalone Python build and all pinned scientific packages without downloading replacements. Environment file checksums and source-side replay receipts accompany the [draft transfer release](https://github.com/httpsbina/gerrymander-detector/releases/tag/untagged-785d91d5e891559ad717).
+
+The accompanying `research-history.bundle` can create the checkout without network access: `git clone -b research/baseline-convergence research-history.bundle NEW_PROJECT_DIRECTORY`. It preserves the branch and NC freeze tag without copying credentials or Git configuration. Freeze commits and tags require an existing Bina author and committer identity; the scripts never configure or replace it.
 
 The script creates a virtual environment if needed, installs the pinned packages, verifies file checksums and the recorded runtime, and replays the last 100 recorded states of every chain into separate validation directories. Every CSV field, final assignment, plan hash, provenance record, and random state must match before sampling resumes. Replayed states are validation outputs and are never added to the ensemble. North Carolina remains frozen; Texas resumes both cohorts.
 

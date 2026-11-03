@@ -1,6 +1,6 @@
 # Gerrymander Detector
 
-**Status (November 2026):** I rebuilt the Texas and North Carolina analyses from Redistricting Data Hub sources. The new chains do not yet meet the convergence thresholds used in the audit: R-hat below 1.01 and bulk and tail ESS of at least 400 (600 for the six-chain NC groups). The earlier chain files are no longer available, so I have not been able to revalidate the historical results. The Texas rebuild produced four sampled states with 8 Democratic-majority districts, so the earlier claim that PLANC2333 falls below every sampled plan does not hold for the new ensemble. Full diagnostics are in the [campaign audit](deliverables/rebuild-campaign-2026-11-02/README.md).
+**Status (November 2026):** North Carolina's six baseline chains pass all four primary convergence screens jointly and within both starting-map groups. I froze the numerical results at 23,000 states per chain under [`nc-baseline-23000`](https://github.com/httpsbina/gerrymander-detector/tree/nc-baseline-23000). Texas continues with four baseline chains and four independent dispersed-start chains. The [freeze rule](docs/freeze_rule.md), [frozen numbers](results.json), and [continuation guide](docs/continuation.md) record the stopping criteria and reproduction commands.
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue)](https://python.org)
 [![GerryChain](https://img.shields.io/badge/GerryChain-0.3.2-green)](https://github.com/mggg/GerryChain)
@@ -10,27 +10,29 @@ I study how congressional maps compare with alternative plans sampled using Gerr
 
 ## November 2026 results
 
-The campaign contains 26 chains and 122,000 recorded states across baseline, geography and population-tolerance conditions. With 500 warmup states per chain, 109,000 states remain for the primary diagnostic view. Conditions are analyzed separately.
+North Carolina is frozen at 23,000 states per chain. The Texas values below are the completed 15,000-state baseline snapshot; the four dispersed-start chains have separately completed 1,000 states each and await their first 5,000-state audit.
 
 | Baseline group         | Chains × states | Seat R-hat | Bulk ESS | Tail ESS |
 | ---------------------- | --------------: | ---------: | -------: | -------: |
-| Texas, ±0.1%           |       4 × 4,000 |    1.03644 |    100.9 |    145.5 |
-| NC, 2023 starting map  |       3 × 5,000 |    1.00924 |    210.3 |    553.4 |
-| NC, 2025 starting map  |       3 × 5,000 |    1.01485 |    231.3 |    292.6 |
-| NC, both starting maps |       6 × 5,000 |    1.01135 |    451.8 |    758.1 |
+| Texas, ±0.1%           |      4 × 15,000 |    1.00790 |    221.7 |    385.3 |
+| NC, 2023 starting map  |      3 × 23,000 |    1.00367 |    954.0 |   1756.8 |
+| NC, 2025 starting map  |      3 × 23,000 |    1.00185 |   1118.7 |   1543.3 |
+| NC, both starting maps |      6 × 23,000 |    1.00268 |   2025.3 |   3267.9 |
 
-All 44 primary metric/group combinations fall below their bulk-ESS screen. The audit also reports tail ESS, Monte Carlo errors, trace/rank plots, autocorrelation, window stability, warmup sensitivity and starting-map sensitivity.
+All four NC primary metrics pass R-hat below 1.01 and bulk/tail ESS at least 400 within each three-chain group and at least 600 jointly. Texas has not passed its primary screens. The [progress record](deliverables/primary-freeze-2026-11-02/progress.json) includes metric diagnostics and the seed/county disagreement comparison.
 
-### Texas seat comparison
+The [initial source-rebuild campaign](deliverables/rebuild-campaign-2026-11-02/README.md) contains the original 26-chain baseline and sensitivity runs. Those files remain separate from the continued baselines.
 
-PLANC2333 is scored at Census-block resolution using modeled 2024 presidential votes. The simulation baseline uses 9,712 geographic units, 38 districts and a ±0.1% population bound.
+### Initial Texas seat comparison
 
-| Measure                                    | November 2026 baseline |
-| ------------------------------------------ | ---------------------: |
-| PLANC2333 Democratic-majority districts    |                      8 |
-| Sampled seat-count range after warmup      |                   8–17 |
-| Mean sampled Democratic-majority districts |                12.9562 |
-| Retained states with 8 districts           |             4 / 14,000 |
+PLANC2333 is scored at Census-block resolution using modeled 2024 presidential votes. The simulation baseline uses 9,712 geographic units, 38 districts and a ±0.1% population bound. The table below describes the initial campaign before continuation.
+
+| Measure                                    | Initial 4,000-state baseline |
+| ------------------------------------------ | ---------------------------: |
+| PLANC2333 Democratic-majority districts    |                            8 |
+| Sampled seat-count range after warmup      |                         8–17 |
+| Mean sampled Democratic-majority districts |                      12.9562 |
+| Retained states with 8 districts           |                   4 / 14,000 |
 
 Those four states have distinct plan hashes and occur in one chain at steps 2,253, 2,256, 2,257 and 2,258. The [assignment check](deliverables/rebuild-campaign-2026-11-02/tail_assignment_check/assignment_verification.json) verifies the four partitions directly, and the [tail audit](deliverables/rebuild-campaign-2026-11-02/enacted_tail_counts.csv) records counts for every chain and sensitivity condition.
 
