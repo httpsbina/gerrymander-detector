@@ -1,0 +1,20 @@
+{
+  "files": {
+    "paper/election-sensitivity/README.md": "297a3a69722918101c80ae927aa123eb63313b51c35e39a4327ce3470a7ceda6",
+    "paper/election-sensitivity/assignment_validation.json": "bb3cb865a1cd0841d10bf2c71e2da3c8774c7ef55439b0ef18918bf318847ede",
+    "paper/election-sensitivity/checkpoint_scores.json": "232d6d7df462d07e3d7254da2d8433ddb105f6d8da1a6627e16a4cb7ab46cc95",
+    "paper/election-sensitivity/results.json": "62d65b4409a736438bc25d24aaa1a97f010831c60ee644044fe505a816b4bf95",
+    "paper/election-sensitivity/summary.csv": "ae764aa89e86014bc76887621664b1c2f8a1394c6acb2196e94f7427f3bf82f8",
+    "paper/election-sensitivity/summary.json": "8c2fb88d6d18cb36cc23e5e693dc696765a6494fdc28beeb8c5c45608153740d",
+    "paper/score_checkpoint_elections.py": "169d0173c721325d289c7bd82e8fdacb72118f690e078ade74eed9cab7d74886",
+    "paper/summarize_checkpoint_elections.py": "5f22117733a818fc6206d0c09e39d20b4d258d16156f5023257d1a598cd3cfa1",
+    "paper/validate_checkpoint_elections.py": "0aa149f4eb07e4655e8cb804aeb4d38930891c38d0f3ac3deda0484f7dfffc1a",
+    "paper/validation/nc-cleanroom-20261103/README.md": "d0253c17a1fa001d81338f14e7c45688b84f6fe9c0b90613f885a5553ac37bac",
+    "paper/validation/nc-cleanroom-20261103/dependency-check.txt": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+    "paper/validation/nc-cleanroom-20261103/environment-installed.txt": "488d9f2ea7828304a45b94e6024d85dbe8df3c3bab7f6a89080441b281672f22",
+    "paper/validation/nc-cleanroom-20261103/full-test-suite.log": "bae402b2715e35ecab5a8a3ece649a7b79d5f797137bdaf34a9c27c1f5d6ec63",
+    "paper/validation/nc-cleanroom-20261103/task_verification.json": "50d1b1f4f7488d61f1ebb949206aea435a8a55be355117f85d865fd0fc37c1dc",
+    "paper/validation/nc-cleanroom-20261103/verification.json": "d51fe0916e1e93e70a45dcd76cab9c0885be13a19080bd1017a2260c065a0268",
+    "tests/test_checkpoint_elections.py": "eef14bf161c9fb50e7c140ff72582b4d75336fdfc2c63adc2b9335adad1f5abb"
+  }
+}

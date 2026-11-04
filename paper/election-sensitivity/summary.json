@@ -1,0 +1,1175 @@
+{
+  "source_results_sha256": "62d65b4409a736438bc25d24aaa1a97f010831c60ee644044fe505a816b4bf95",
+  "rows": [
+    {
+      "state": "tx",
+      "election": "President",
+      "group": "tx_rebuild",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 12.867415730337079,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 1
+    },
+    {
+      "state": "tx",
+      "election": "President",
+      "group": "tx_dispersed",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 12.854494382022471,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "tx",
+      "election": "President",
+      "group": "joint",
+      "checkpoints": 3560,
+      "mean_democratic_seats": 12.860955056179776,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 1
+    },
+    {
+      "state": "tx",
+      "election": "US Senate",
+      "group": "tx_rebuild",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 17.240449438202248,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "tx",
+      "election": "US Senate",
+      "group": "tx_dispersed",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 17.197752808988763,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "tx",
+      "election": "US Senate",
+      "group": "joint",
+      "checkpoints": 3560,
+      "mean_democratic_seats": 17.219101123595507,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "tx",
+      "election": "Criminal appeals 7",
+      "group": "tx_rebuild",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 13.094943820224719,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "tx",
+      "election": "Criminal appeals 7",
+      "group": "tx_dispersed",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 13.129213483146067,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "tx",
+      "election": "Criminal appeals 7",
+      "group": "joint",
+      "checkpoints": 3560,
+      "mean_democratic_seats": 13.112078651685394,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "tx",
+      "election": "Criminal appeals 8",
+      "group": "tx_rebuild",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 12.036516853932584,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 12
+    },
+    {
+      "state": "tx",
+      "election": "Criminal appeals 8",
+      "group": "tx_dispersed",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 12.10505617977528,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 8
+    },
+    {
+      "state": "tx",
+      "election": "Criminal appeals 8",
+      "group": "joint",
+      "checkpoints": 3560,
+      "mean_democratic_seats": 12.070786516853932,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 20
+    },
+    {
+      "state": "tx",
+      "election": "Criminal appeals presiding",
+      "group": "tx_rebuild",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 13.046067415730336,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "tx",
+      "election": "Criminal appeals presiding",
+      "group": "tx_dispersed",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 13.137640449438202,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 1
+    },
+    {
+      "state": "tx",
+      "election": "Criminal appeals presiding",
+      "group": "joint",
+      "checkpoints": 3560,
+      "mean_democratic_seats": 13.09185393258427,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 1
+    },
+    {
+      "state": "tx",
+      "election": "Railroad commissioner",
+      "group": "tx_rebuild",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 12.970786516853932,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "tx",
+      "election": "Railroad commissioner",
+      "group": "tx_dispersed",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 13.004494382022472,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 2
+    },
+    {
+      "state": "tx",
+      "election": "Railroad commissioner",
+      "group": "joint",
+      "checkpoints": 3560,
+      "mean_democratic_seats": 12.987640449438203,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 2
+    },
+    {
+      "state": "tx",
+      "election": "Supreme Court 2",
+      "group": "tx_rebuild",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 13.048876404494383,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "tx",
+      "election": "Supreme Court 2",
+      "group": "tx_dispersed",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 13.120786516853933,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 1
+    },
+    {
+      "state": "tx",
+      "election": "Supreme Court 2",
+      "group": "joint",
+      "checkpoints": 3560,
+      "mean_democratic_seats": 13.084831460674158,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 1
+    },
+    {
+      "state": "tx",
+      "election": "Supreme Court 4",
+      "group": "tx_rebuild",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 14.067415730337078,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "tx",
+      "election": "Supreme Court 4",
+      "group": "tx_dispersed",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 14.128651685393258,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "tx",
+      "election": "Supreme Court 4",
+      "group": "joint",
+      "checkpoints": 3560,
+      "mean_democratic_seats": 14.098033707865168,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "tx",
+      "election": "Supreme Court 6",
+      "group": "tx_rebuild",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 13.275842696629214,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "tx",
+      "election": "Supreme Court 6",
+      "group": "tx_dispersed",
+      "checkpoints": 1780,
+      "mean_democratic_seats": 13.356179775280898,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 1
+    },
+    {
+      "state": "tx",
+      "election": "Supreme Court 6",
+      "group": "joint",
+      "checkpoints": 3560,
+      "mean_democratic_seats": 13.316011235955056,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 8,
+      "checkpoints_at_or_below_enacted": 1
+    },
+    {
+      "state": "nc",
+      "election": "President",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.354074074074074,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 1
+    },
+    {
+      "state": "nc",
+      "election": "President",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.354074074074074,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 1
+    },
+    {
+      "state": "nc",
+      "election": "President",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.346666666666667,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 6
+    },
+    {
+      "state": "nc",
+      "election": "President",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.346666666666667,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 6
+    },
+    {
+      "state": "nc",
+      "election": "President",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 5.350370370370371,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 7
+    },
+    {
+      "state": "nc",
+      "election": "President",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 5.350370370370371,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 7
+    },
+    {
+      "state": "nc",
+      "election": "Attorney general",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 6.502222222222223,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 4,
+      "checkpoints_at_or_below_enacted": 4
+    },
+    {
+      "state": "nc",
+      "election": "Attorney general",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 6.502222222222223,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "nc",
+      "election": "Attorney general",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 6.48,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 4,
+      "checkpoints_at_or_below_enacted": 4
+    },
+    {
+      "state": "nc",
+      "election": "Attorney general",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 6.48,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "nc",
+      "election": "Attorney general",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 6.4911111111111115,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 4,
+      "checkpoints_at_or_below_enacted": 8
+    },
+    {
+      "state": "nc",
+      "election": "Attorney general",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 6.4911111111111115,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "nc",
+      "election": "Auditor",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.635555555555555,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "nc",
+      "election": "Auditor",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.635555555555555,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "nc",
+      "election": "Auditor",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.623703703703704,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 3
+    },
+    {
+      "state": "nc",
+      "election": "Auditor",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.623703703703704,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 3
+    },
+    {
+      "state": "nc",
+      "election": "Auditor",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 5.62962962962963,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 3
+    },
+    {
+      "state": "nc",
+      "election": "Auditor",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 5.62962962962963,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 3
+    },
+    {
+      "state": "nc",
+      "election": "Agriculture commissioner",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 4.302222222222222,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 118
+    },
+    {
+      "state": "nc",
+      "election": "Agriculture commissioner",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 4.302222222222222,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 118
+    },
+    {
+      "state": "nc",
+      "election": "Agriculture commissioner",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 4.303703703703704,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 107
+    },
+    {
+      "state": "nc",
+      "election": "Agriculture commissioner",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 4.303703703703704,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 107
+    },
+    {
+      "state": "nc",
+      "election": "Agriculture commissioner",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 4.302962962962963,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 225
+    },
+    {
+      "state": "nc",
+      "election": "Agriculture commissioner",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 4.302962962962963,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 225
+    },
+    {
+      "state": "nc",
+      "election": "Insurance commissioner",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.109629629629629,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 11
+    },
+    {
+      "state": "nc",
+      "election": "Insurance commissioner",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.109629629629629,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 11
+    },
+    {
+      "state": "nc",
+      "election": "Insurance commissioner",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.075555555555556,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 14
+    },
+    {
+      "state": "nc",
+      "election": "Insurance commissioner",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.075555555555556,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 14
+    },
+    {
+      "state": "nc",
+      "election": "Insurance commissioner",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 5.092592592592593,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 25
+    },
+    {
+      "state": "nc",
+      "election": "Insurance commissioner",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 5.092592592592593,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 25
+    },
+    {
+      "state": "nc",
+      "election": "Labor commissioner",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 4.942222222222222,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 18
+    },
+    {
+      "state": "nc",
+      "election": "Labor commissioner",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 4.942222222222222,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 18
+    },
+    {
+      "state": "nc",
+      "election": "Labor commissioner",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 4.922962962962963,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 28
+    },
+    {
+      "state": "nc",
+      "election": "Labor commissioner",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 4.922962962962963,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 28
+    },
+    {
+      "state": "nc",
+      "election": "Labor commissioner",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 4.932592592592592,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 46
+    },
+    {
+      "state": "nc",
+      "election": "Labor commissioner",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 4.932592592592592,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 46
+    },
+    {
+      "state": "nc",
+      "election": "Governor",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 11.242962962962963,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 12,
+      "checkpoints_at_or_below_enacted": 624
+    },
+    {
+      "state": "nc",
+      "election": "Governor",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 11.242962962962963,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 13,
+      "checkpoints_at_or_below_enacted": 675
+    },
+    {
+      "state": "nc",
+      "election": "Governor",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 11.201481481481482,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 12,
+      "checkpoints_at_or_below_enacted": 634
+    },
+    {
+      "state": "nc",
+      "election": "Governor",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 11.201481481481482,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 13,
+      "checkpoints_at_or_below_enacted": 675
+    },
+    {
+      "state": "nc",
+      "election": "Governor",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 11.222222222222221,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 12,
+      "checkpoints_at_or_below_enacted": 1258
+    },
+    {
+      "state": "nc",
+      "election": "Governor",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 11.222222222222221,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 13,
+      "checkpoints_at_or_below_enacted": 1350
+    },
+    {
+      "state": "nc",
+      "election": "Lieutenant governor",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 6.508148148148148,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 4,
+      "checkpoints_at_or_below_enacted": 5
+    },
+    {
+      "state": "nc",
+      "election": "Lieutenant governor",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 6.508148148148148,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "nc",
+      "election": "Lieutenant governor",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 6.475555555555555,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 4,
+      "checkpoints_at_or_below_enacted": 9
+    },
+    {
+      "state": "nc",
+      "election": "Lieutenant governor",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 6.475555555555555,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "nc",
+      "election": "Lieutenant governor",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 6.491851851851852,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 4,
+      "checkpoints_at_or_below_enacted": 14
+    },
+    {
+      "state": "nc",
+      "election": "Lieutenant governor",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 6.491851851851852,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "nc",
+      "election": "Secretary of state",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 6.779259259259259,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 4,
+      "checkpoints_at_or_below_enacted": 2
+    },
+    {
+      "state": "nc",
+      "election": "Secretary of state",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 6.779259259259259,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "nc",
+      "election": "Secretary of state",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 6.783703703703703,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 4,
+      "checkpoints_at_or_below_enacted": 4
+    },
+    {
+      "state": "nc",
+      "election": "Secretary of state",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 6.783703703703703,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "nc",
+      "election": "Secretary of state",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 6.781481481481482,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 4,
+      "checkpoints_at_or_below_enacted": 6
+    },
+    {
+      "state": "nc",
+      "election": "Secretary of state",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 6.781481481481482,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "nc",
+      "election": "Public instruction superintendent",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 6.508148148148148,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 4,
+      "checkpoints_at_or_below_enacted": 5
+    },
+    {
+      "state": "nc",
+      "election": "Public instruction superintendent",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 6.508148148148148,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "nc",
+      "election": "Public instruction superintendent",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 6.499259259259259,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 4,
+      "checkpoints_at_or_below_enacted": 3
+    },
+    {
+      "state": "nc",
+      "election": "Public instruction superintendent",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 6.499259259259259,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "nc",
+      "election": "Public instruction superintendent",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 6.503703703703704,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 4,
+      "checkpoints_at_or_below_enacted": 8
+    },
+    {
+      "state": "nc",
+      "election": "Public instruction superintendent",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 6.503703703703704,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "nc",
+      "election": "Treasurer",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.065185185185185,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 11
+    },
+    {
+      "state": "nc",
+      "election": "Treasurer",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.065185185185185,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 11
+    },
+    {
+      "state": "nc",
+      "election": "Treasurer",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.038518518518519,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 21
+    },
+    {
+      "state": "nc",
+      "election": "Treasurer",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.038518518518519,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 21
+    },
+    {
+      "state": "nc",
+      "election": "Treasurer",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 5.051851851851852,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 32
+    },
+    {
+      "state": "nc",
+      "election": "Treasurer",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 5.051851851851852,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 32
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 12",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.605925925925926,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 12",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.605925925925926,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 12",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.586666666666667,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 3
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 12",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.586666666666667,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 3
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 12",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 5.5962962962962965,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 3
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 12",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 5.5962962962962965,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 3
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 14",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.148148148148148,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 9
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 14",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.148148148148148,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 9
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 14",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.094814814814815,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 12
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 14",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.094814814814815,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 12
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 14",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 5.1214814814814815,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 21
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 14",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 5.1214814814814815,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 21
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 15",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.29037037037037,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 5
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 15",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.29037037037037,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 5
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 15",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.260740740740741,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 8
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 15",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.260740740740741,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 8
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 15",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 5.275555555555556,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 13
+    },
+    {
+      "state": "nc",
+      "election": "Appeals court 15",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 5.275555555555556,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 13
+    },
+    {
+      "state": "nc",
+      "election": "Supreme Court 6",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.942222222222222,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 4,
+      "checkpoints_at_or_below_enacted": 33
+    },
+    {
+      "state": "nc",
+      "election": "Supreme Court 6",
+      "group": "nc_block_union_2023",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.942222222222222,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 0
+    },
+    {
+      "state": "nc",
+      "election": "Supreme Court 6",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.939259259259259,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 4,
+      "checkpoints_at_or_below_enacted": 28
+    },
+    {
+      "state": "nc",
+      "election": "Supreme Court 6",
+      "group": "nc_block_union_2025",
+      "checkpoints": 675,
+      "mean_democratic_seats": 5.939259259259259,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 2
+    },
+    {
+      "state": "nc",
+      "election": "Supreme Court 6",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 5.940740740740741,
+      "enacted_year": "2023",
+      "enacted_democratic_seats": 4,
+      "checkpoints_at_or_below_enacted": 61
+    },
+    {
+      "state": "nc",
+      "election": "Supreme Court 6",
+      "group": "joint",
+      "checkpoints": 1350,
+      "mean_democratic_seats": 5.940740740740741,
+      "enacted_year": "2025",
+      "enacted_democratic_seats": 3,
+      "checkpoints_at_or_below_enacted": 2
+    }
+  ]
+}
