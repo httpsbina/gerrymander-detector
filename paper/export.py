@@ -45,6 +45,7 @@ def publish(path, data):
 
 
 def merge_results(previous, current):
+    current = json.loads(json.dumps(current, allow_nan=False))
     for state, values in previous.items():
         if state == "_paper":
             continue
@@ -153,10 +154,15 @@ def export(build, registry, destination, root=ROOT):
             selected = {"manifest": {"path": frozen["manifest"], "sha256": sha(root / frozen["manifest"])},
                         "audit": {"path": str(Path(frozen["audit_dir"]) / "diagnostics.json"),
                                   "sha256": sha(root / frozen["audit_dir"] / "diagnostics.json")}}
-            texas = collect(ROOT / "paper/texas_audits.json", root, selected, frozen=True)
+            texas_registry = ROOT / "paper/texas_frozen_audits.json"
+            if not texas_registry.is_file():
+                texas_registry = ROOT / "paper/texas_audits.json"
+            texas = collect(texas_registry, root, selected, frozen=True)
             metadata[state]["paper_outputs"] = texas
             artifacts.update({Path(name): formatted(data, name) if name.endswith(".md") else data
                               for name, data in texas_artifacts(texas).items()})
+    if (ROOT / "paper/README.md").is_file():
+        artifacts[Path("README.md")] = (ROOT / "paper/README.md").read_bytes()
     result["_paper"] = metadata
     results_path = destination / "results.json"
     if results_path.exists():
@@ -181,6 +187,10 @@ def export_provisional_texas(registry_path, source_root, destination):
     from paper.texas_outputs import collect, artifacts as texas_artifacts
     data = collect(registry_path, source_root)
     files = texas_artifacts(data)
+    if (ROOT / "paper/election-sensitivity/results.json").is_file():
+        from paper.responsiveness import artifacts as responsiveness_artifacts
+        data["responsiveness"], figures = responsiveness_artifacts(ROOT)
+        files.update(figures)
     files["results.json"] = json_bytes(data)
     files["README.md"] = formatted(("# Provisional Texas outputs\n\n"
         "I generated these figures and tables from the checksum-registered shared audit in `paper/texas_audits.json`. Every plotted or tabulated value is in `results.json`, with source fingerprints.\n\n"
@@ -192,14 +202,30 @@ def export_provisional_texas(registry_path, source_root, destination):
     receipt = {"command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m paper.export --texas",
                "process_nice": os.getpriority(os.PRIO_PROCESS, 0),
                "files": {name: hashlib.sha256(value).hexdigest() for name, value in files.items()},
-               "source_code": {name: sha(ROOT / name) for name in ("paper/export.py", "paper/texas_outputs.py")}}
+               "source_code": {name: sha(ROOT / name) for name in ("paper/export.py", "paper/texas_outputs.py", "paper/responsiveness.py") if (ROOT / name).is_file()}}
     files["artifacts.json"] = json_bytes(receipt)
+    extending = False
+    if "responsiveness" in data and (destination / "results.json").is_file():
+        previous = json.loads((destination / "results.json").read_text())
+        current = json.loads(files["results.json"])
+        extending = "responsiveness" not in previous and previous == {key: value for key, value in current.items() if key != "responsiveness"}
+        if extending:
+            old_receipt = json.loads((destination / "artifacts.json").read_text())
+            for name, expected in old_receipt["files"].items():
+                if sha(destination / name) != expected:
+                    raise ValueError(f"Existing provisional artifact changed: {name}")
     # Check every destination before creating any artifact.
     for name, value in files.items():
         target = destination / name
         if target.exists() and target.read_bytes() != value:
+            if extending and name in ("results.json", "artifacts.json"):
+                continue
             raise FileExistsError(f"Existing provisional artifact differs: {name}")
-    for name, value in files.items():publish(destination / name, value)
+    for name, value in files.items():
+        if extending and name in ("results.json", "artifacts.json"):
+            (destination / name).write_bytes(value)
+        else:
+            publish(destination / name, value)
     return data
 
 

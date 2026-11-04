@@ -1,0 +1,13 @@
+{
+  "process_nice": 15,
+  "checkpoints_verified": 4910,
+  "distinct_datasets": 3,
+  "checks": [
+    "input checksums",
+    "complete checkpoint provenance",
+    "graph identity",
+    "assignment cut-edge fingerprint"
+  ],
+  "results_sha256": "62d65b4409a736438bc25d24aaa1a97f010831c60ee644044fe505a816b4bf95",
+  "validation_code_sha256": "0aa149f4eb07e4655e8cb804aeb4d38930891c38d0f3ac3deda0484f7dfffc1a"
+}

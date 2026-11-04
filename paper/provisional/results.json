@@ -2005,5 +2005,369 @@
     "paper/audits/prefix_comparison_000.json": "35597be094843fbec84a418caf52540ed3ec2d67dbf7d8b706eb8839b631e891"
   },
   "selected_audit": "paper/audits/audit_024.json",
-  "selected_manifest": "paper/audits/shared_manifest.json"
+  "selected_manifest": "paper/audits/shared_manifest.json",
+  "responsiveness": {
+    "source_checksums": {
+      "paper/election-sensitivity/results.json": "62d65b4409a736438bc25d24aaa1a97f010831c60ee644044fe505a816b4bf95",
+      "paper/election-sensitivity/checkpoint_scores.json": "232d6d7df462d07e3d7254da2d8433ddb105f6d8da1a6627e16a4cb7ab46cc95",
+      "paper/election-sensitivity/assignment_validation.json": "bb3cb865a1cd0841d10bf2c71e2da3c8774c7ef55439b0ef18918bf318847ede"
+    },
+    "states": {
+      "tx": [
+        {
+          "election": "President",
+          "vote_columns": ["G24PREDHAR", "G24PRERTRU"],
+          "statewide_democratic_votes": 4835134,
+          "statewide_republican_votes": 6393403,
+          "statewide_democratic_two_party_share": 0.4306112185407591,
+          "checkpoint_observations": 3560,
+          "neutral_minimum_seats": 8,
+          "neutral_median_seats": 13.0,
+          "neutral_maximum_seats": 17,
+          "enacted_seats": {
+            "2025": 8
+          }
+        },
+        {
+          "election": "US Senate",
+          "vote_columns": ["G24USSDALL", "G24USSRCRU"],
+          "statewide_democratic_votes": 5031142,
+          "statewide_republican_votes": 5990637,
+          "statewide_democratic_two_party_share": 0.4564727708657559,
+          "checkpoint_observations": 3560,
+          "neutral_minimum_seats": 13,
+          "neutral_median_seats": 17.0,
+          "neutral_maximum_seats": 22,
+          "enacted_seats": {
+            "2025": 8
+          }
+        },
+        {
+          "election": "Criminal appeals 7",
+          "vote_columns": ["GCCA7DMUL", "GCCA7RPAR"],
+          "statewide_democratic_votes": 4526792,
+          "statewide_republican_votes": 6340938,
+          "statewide_democratic_two_party_share": 0.41653519180178383,
+          "checkpoint_observations": 3560,
+          "neutral_minimum_seats": 9,
+          "neutral_median_seats": 13.0,
+          "neutral_maximum_seats": 18,
+          "enacted_seats": {
+            "2025": 8
+          }
+        },
+        {
+          "election": "Criminal appeals 8",
+          "vote_columns": ["GCCA8DANY", "GCCA8RFIN"],
+          "statewide_democratic_votes": 4461229,
+          "statewide_republican_votes": 6385231,
+          "statewide_democratic_two_party_share": 0.41130737586272387,
+          "checkpoint_observations": 3560,
+          "neutral_minimum_seats": 8,
+          "neutral_median_seats": 12.0,
+          "neutral_maximum_seats": 18,
+          "enacted_seats": {
+            "2025": 8
+          }
+        },
+        {
+          "election": "Criminal appeals presiding",
+          "vote_columns": ["GCCAPDTAY", "GCCAPRSCH"],
+          "statewide_democratic_votes": 4558851,
+          "statewide_republican_votes": 6330393,
+          "statewide_democratic_two_party_share": 0.41865633647294526,
+          "checkpoint_observations": 3560,
+          "neutral_minimum_seats": 8,
+          "neutral_median_seats": 13.0,
+          "neutral_maximum_seats": 18,
+          "enacted_seats": {
+            "2025": 8
+          }
+        },
+        {
+          "election": "Railroad commissioner",
+          "vote_columns": ["GRRC01DCUL", "GRRC01RCRA"],
+          "statewide_democratic_votes": 4275865,
+          "statewide_republican_votes": 6100181,
+          "statewide_democratic_two_party_share": 0.4120900196471758,
+          "checkpoint_observations": 3560,
+          "neutral_minimum_seats": 8,
+          "neutral_median_seats": 13.0,
+          "neutral_maximum_seats": 18,
+          "enacted_seats": {
+            "2025": 8
+          }
+        },
+        {
+          "election": "Supreme Court 2",
+          "vote_columns": ["GSSC02DJON", "GSSC02RBLA"],
+          "statewide_democratic_votes": 4571175,
+          "statewide_republican_votes": 6372964,
+          "statewide_democratic_two_party_share": 0.4176824691279963,
+          "checkpoint_observations": 3560,
+          "neutral_minimum_seats": 8,
+          "neutral_median_seats": 13.0,
+          "neutral_maximum_seats": 18,
+          "enacted_seats": {
+            "2025": 8
+          }
+        },
+        {
+          "election": "Supreme Court 4",
+          "vote_columns": ["GSSC04DWEE", "GSSC04RDEV"],
+          "statewide_democratic_votes": 4656479,
+          "statewide_republican_votes": 6256558,
+          "statewide_democratic_two_party_share": 0.42668956405077707,
+          "checkpoint_observations": 3560,
+          "neutral_minimum_seats": 9,
+          "neutral_median_seats": 14.0,
+          "neutral_maximum_seats": 19,
+          "enacted_seats": {
+            "2025": 8
+          }
+        },
+        {
+          "election": "Supreme Court 6",
+          "vote_columns": ["GSSC06DGOL", "GSSC06RBLA"],
+          "statewide_democratic_votes": 4425195,
+          "statewide_republican_votes": 6145147,
+          "statewide_democratic_two_party_share": 0.41864255669305683,
+          "checkpoint_observations": 3560,
+          "neutral_minimum_seats": 8,
+          "neutral_median_seats": 13.0,
+          "neutral_maximum_seats": 18,
+          "enacted_seats": {
+            "2025": 8
+          }
+        }
+      ],
+      "nc": [
+        {
+          "election": "President",
+          "vote_columns": ["G24PREDHAR", "G24PRERTRU"],
+          "statewide_democratic_votes": 2713609,
+          "statewide_republican_votes": 2896942,
+          "statewide_democratic_two_party_share": 0.4836617651278814,
+          "checkpoint_observations": 1350,
+          "neutral_minimum_seats": 3,
+          "neutral_median_seats": 5.0,
+          "neutral_maximum_seats": 8,
+          "enacted_seats": {
+            "2023": 3,
+            "2025": 3
+          }
+        },
+        {
+          "election": "Attorney general",
+          "vote_columns": ["G24ATGDJAC", "G24ATGRBIS"],
+          "statewide_democratic_votes": 2873292,
+          "statewide_republican_votes": 2714407,
+          "statewide_democratic_two_party_share": 0.5142173907363299,
+          "checkpoint_observations": 1350,
+          "neutral_minimum_seats": 4,
+          "neutral_median_seats": 6.0,
+          "neutral_maximum_seats": 9,
+          "enacted_seats": {
+            "2023": 4,
+            "2025": 3
+          }
+        },
+        {
+          "election": "Auditor",
+          "vote_columns": ["G24AUDDHOL", "G24AUDRBOL"],
+          "statewide_democratic_votes": 2631900,
+          "statewide_republican_votes": 2728456,
+          "statewide_democratic_two_party_share": 0.4909935086400978,
+          "checkpoint_observations": 1350,
+          "neutral_minimum_seats": 3,
+          "neutral_median_seats": 6.0,
+          "neutral_maximum_seats": 8,
+          "enacted_seats": {
+            "2023": 3,
+            "2025": 3
+          }
+        },
+        {
+          "election": "Agriculture commissioner",
+          "vote_columns": ["G24COADTAB", "G24COARTRO"],
+          "statewide_democratic_votes": 2495016,
+          "statewide_republican_votes": 2921076,
+          "statewide_democratic_two_party_share": 0.46066721170910685,
+          "checkpoint_observations": 1350,
+          "neutral_minimum_seats": 2,
+          "neutral_median_seats": 4.0,
+          "neutral_maximum_seats": 7,
+          "enacted_seats": {
+            "2023": 3,
+            "2025": 3
+          }
+        },
+        {
+          "election": "Insurance commissioner",
+          "vote_columns": ["G24COIDMAR", "G24COIRCAU"],
+          "statewide_democratic_votes": 2647809,
+          "statewide_republican_votes": 2882903,
+          "statewide_democratic_two_party_share": 0.4787464977384467,
+          "checkpoint_observations": 1350,
+          "neutral_minimum_seats": 3,
+          "neutral_median_seats": 5.0,
+          "neutral_maximum_seats": 8,
+          "enacted_seats": {
+            "2023": 3,
+            "2025": 3
+          }
+        },
+        {
+          "election": "Labor commissioner",
+          "vote_columns": ["G24COLDWIN", "G24COLRFAR"],
+          "statewide_democratic_votes": 2599740,
+          "statewide_republican_votes": 2903134,
+          "statewide_democratic_two_party_share": 0.4724331322141848,
+          "checkpoint_observations": 1350,
+          "neutral_minimum_seats": 3,
+          "neutral_median_seats": 5.0,
+          "neutral_maximum_seats": 7,
+          "enacted_seats": {
+            "2023": 3,
+            "2025": 3
+          }
+        },
+        {
+          "election": "Governor",
+          "vote_columns": ["G24GOVDSTE", "G24GOVRROB"],
+          "statewide_democratic_votes": 3067746,
+          "statewide_republican_votes": 2240437,
+          "statewide_democratic_two_party_share": 0.5779277014375729,
+          "checkpoint_observations": 1350,
+          "neutral_minimum_seats": 9,
+          "neutral_median_seats": 11.0,
+          "neutral_maximum_seats": 13,
+          "enacted_seats": {
+            "2023": 12,
+            "2025": 13
+          }
+        },
+        {
+          "election": "Lieutenant governor",
+          "vote_columns": ["G24LTGDHUN", "G24LTGRWEA"],
+          "statewide_democratic_votes": 2766895,
+          "statewide_republican_votes": 2662192,
+          "statewide_democratic_two_party_share": 0.5096427815579304,
+          "checkpoint_observations": 1350,
+          "neutral_minimum_seats": 4,
+          "neutral_median_seats": 7.0,
+          "neutral_maximum_seats": 9,
+          "enacted_seats": {
+            "2023": 4,
+            "2025": 3
+          }
+        },
+        {
+          "election": "Secretary of state",
+          "vote_columns": ["G24SOSDMAR", "G24SOSRBRO"],
+          "statewide_democratic_votes": 2836357,
+          "statewide_republican_votes": 2721799,
+          "statewide_democratic_two_party_share": 0.5103053962501233,
+          "checkpoint_observations": 1350,
+          "neutral_minimum_seats": 4,
+          "neutral_median_seats": 7.0,
+          "neutral_maximum_seats": 9,
+          "enacted_seats": {
+            "2023": 4,
+            "2025": 3
+          }
+        },
+        {
+          "election": "Public instruction superintendent",
+          "vote_columns": ["G24SPIDGRE", "G24SPIRMOR"],
+          "statewide_democratic_votes": 2836037,
+          "statewide_republican_votes": 2705898,
+          "statewide_democratic_two_party_share": 0.5117412961357359,
+          "checkpoint_observations": 1350,
+          "neutral_minimum_seats": 4,
+          "neutral_median_seats": 7.0,
+          "neutral_maximum_seats": 9,
+          "enacted_seats": {
+            "2023": 4,
+            "2025": 3
+          }
+        },
+        {
+          "election": "Treasurer",
+          "vote_columns": ["G24TREDHAR", "G24TRERBRI"],
+          "statewide_democratic_votes": 2627718,
+          "statewide_republican_votes": 2898942,
+          "statewide_democratic_two_party_share": 0.4754622140678095,
+          "checkpoint_observations": 1350,
+          "neutral_minimum_seats": 3,
+          "neutral_median_seats": 5.0,
+          "neutral_maximum_seats": 7,
+          "enacted_seats": {
+            "2023": 3,
+            "2025": 3
+          }
+        },
+        {
+          "election": "Appeals court 12",
+          "vote_columns": ["GCAJ12DTHO", "GCAJ12RMUR"],
+          "statewide_democratic_votes": 2709337,
+          "statewide_republican_votes": 2808348,
+          "statewide_democratic_two_party_share": 0.49102784954197276,
+          "checkpoint_observations": 1350,
+          "neutral_minimum_seats": 3,
+          "neutral_median_seats": 6.0,
+          "neutral_maximum_seats": 8,
+          "enacted_seats": {
+            "2023": 3,
+            "2025": 3
+          }
+        },
+        {
+          "election": "Appeals court 14",
+          "vote_columns": ["GCAJ14DELD", "GCAJ14RZAC"],
+          "statewide_democratic_votes": 2626978,
+          "statewide_republican_votes": 2877705,
+          "statewide_democratic_two_party_share": 0.4772260273661535,
+          "checkpoint_observations": 1350,
+          "neutral_minimum_seats": 3,
+          "neutral_median_seats": 5.0,
+          "neutral_maximum_seats": 8,
+          "enacted_seats": {
+            "2023": 3,
+            "2025": 3
+          }
+        },
+        {
+          "election": "Appeals court 15",
+          "vote_columns": ["GCAJ15DMOO", "GCAJ15RFRE"],
+          "statewide_democratic_votes": 2653264,
+          "statewide_republican_votes": 2843226,
+          "statewide_democratic_two_party_share": 0.4827196992990072,
+          "checkpoint_observations": 1350,
+          "neutral_minimum_seats": 3,
+          "neutral_median_seats": 5.0,
+          "neutral_maximum_seats": 8,
+          "enacted_seats": {
+            "2023": 3,
+            "2025": 3
+          }
+        },
+        {
+          "election": "Supreme Court 6",
+          "vote_columns": ["GSCJ06DRIG", "GSCJ06RGRI"],
+          "statewide_democratic_votes": 2768894,
+          "statewide_republican_votes": 2768662,
+          "statewide_democratic_two_party_share": 0.5000209478694211,
+          "checkpoint_observations": 1350,
+          "neutral_minimum_seats": 3,
+          "neutral_median_seats": 6.0,
+          "neutral_maximum_seats": 9,
+          "enacted_seats": {
+            "2023": 4,
+            "2025": 3
+          }
+        }
+      ]
+    }
+  }
 }
