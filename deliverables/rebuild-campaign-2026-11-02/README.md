@@ -1,12 +1,10 @@
-# Texas and North Carolina: November 2026 campaign
+# Texas and North Carolina initial campaign
 
-Research advised by Dr. Eric Gerber, Northeastern University.
+I ran 26 chains across eight baseline and sensitivity conditions in November 2026, recording 122,000 states and retaining 109,000 after 500 warmup states per chain. All 44 primary metric/group combinations fell below the bulk-ESS screen. I keep this initial campaign separate from the continued baselines in the [project README](../../README.md).
 
-I ran this initial campaign before the continued baselines summarized in the [project README](../../README.md). I ran 26 chains across eight baseline and sensitivity conditions, producing 122,000 recorded states. The primary analysis retains 109,000 states after 500 warmup states per chain. All 44 primary metric/group combinations fall below their bulk-ESS screen. The [source audit](../rdh-research-audit-2026-11-02/README.md) describes the data and geographic construction.
+I used Redistricting Data Hub inputs, with Dr. Eric Gerber advising the research at Northeastern. The [source report](../rdh-research-audit-2026-11-02/README.md) records the geographic construction and election checks.
 
-This analysis was conducted using data from the Redistricting Data Hub.
-
-## Campaign design
+## Runs and diagnostics
 
 | Condition                        | Starting maps                        |   Chains × states | Population bound |
 | -------------------------------- | ------------------------------------ | ----------------: | ---------------: |
@@ -16,13 +14,11 @@ This analysis was conducted using data from the Redistricting Data Hub.
 | NC precinct-geometry sensitivity | 2023 and 2025                        | 3 × 5,000 per map |            ±0.5% |
 | NC population sensitivity        | 2023 and 2025, block-union geography | 3 × 5,000 per map |              ±1% |
 
-I record the chain additions in the [workflow](../../docs/research_workflow.md) and [campaign manifest](campaign_manifest.json). I used distinct seeds across NC starting maps within each condition and reused labels for sensitivity conditions, which I analyzed separately. Warmup views are 0, 250, 500 and 1,000 states; the primary view uses 500. States are recorded without thinning.
+I used different seeds for the two NC starting-map groups within each condition, reusing labels across sensitivity conditions that I analyzed separately. The [workflow](../../docs/research_workflow.md) records when I added chains. I retained every recorded state without thinning and evaluated warmup at 0, 250, 500 and 1,000 states, using 500 for the primary analysis.
 
-I used cut-edge choice and random-MST ReCom proposals with `node_repeats=2`, `max_attempts=1000`, pair reselection, population bounds, graph contiguity and always-accept for valid proposals. The [executed registries](executed_state_registries.json) and manifest contain the seeds, commands, dataset fingerprints and parameters.
+The sampler uses cut-edge choice and random-MST ReCom proposals, `node_repeats=2`, `max_attempts=1000`, pair reselection and always-accept for proposals satisfying the population and graph-contiguity constraints. I retain the parameters, seeds, commands and dataset fingerprints in the [campaign manifest](campaign_manifest.json) and [executed registries](executed_state_registries.json).
 
-## Convergence results
-
-I screened the runs with rank-normalized split R-hat below 1.01 and bulk/tail ESS of at least `max(400, 100 × chains)`: 400 for the separate Texas and NC groups, and 600 for six-chain NC combinations.
+I screened each metric for rank-normalized split R-hat below 1.01 and bulk/tail ESS of at least 400 within the Texas and separate NC groups, or 600 for six-chain NC combinations. These are the recorded seat-count results:
 
 | Condition                | Chains | Seat R-hat | Bulk ESS | Tail ESS | Mean MCSE (seats) |
 | ------------------------ | -----: | ---------: | -------: | -------: | ----------------: |
@@ -38,37 +34,31 @@ I screened the runs with rank-normalized split R-hat below 1.01 and bulk/tail ES
 | NC ±1% / 2025            |      3 |    1.01194 |    165.0 |    315.9 |            0.0667 |
 | NC ±1% / jointly         |      6 |    1.01897 |    365.2 |    599.9 |            0.0447 |
 
-I recorded four metrics: Democratic-majority district count, efficiency gap, cut edges and Democratic median-minus-mean vote share. [Primary results](primary_diagnostics.csv), [all 176 metric/warmup views](diagnostics.csv), and [diagnostic estimates and flags](diagnostics.json) are available as data files. All 1,232 core numerical estimates are finite.
+I measured Democratic-majority districts, efficiency gap, cut edges and Democratic median-minus-mean vote share. The [primary table](primary_diagnostics.csv) contains the 44 metric/group combinations; [diagnostics.csv](diagnostics.csv) contains all 176 metric/warmup views, with estimates and flags in [diagnostics.json](diagnostics.json). All 1,232 core estimates are finite.
 
-Texas baseline cut-edge R-hat is 1.13644, bulk ESS 27.7, and mean MCSE 17.45 edges. Its mean–median R-hat is 1.05979 with bulk ESS 47.3. Combined primary NC efficiency-gap R-hat is 1.02543 with bulk ESS 294.8.
+For the Texas baseline, cut-edge R-hat is 1.13644, bulk ESS is 27.7 and mean MCSE is 17.45 edges; mean-median R-hat is 1.05979 with bulk ESS 47.3. Joint primary NC efficiency-gap R-hat is 1.02543 with bulk ESS 294.8.
 
 ![Texas traces](figures/tx_rebuild_trace.png)
 
-Across warmup settings 0, 250, 500 and 1,000, primary NC joint seat bulk ESS is 487.7, 464.3, 451.8 and 401.4. Corresponding R-hat values are 1.00876, 1.01200, 1.01135 and 1.01280. Texas baseline seat bulk ESS remains below 400 at every warmup setting.
-
-The [22 trace/rank figures](figures/README.md) cover all eight conditions and the three compatible NC joint groups. Traces show all recorded states; rank plots use average ranks for ties. [Chain summaries](chain_summary.csv) include autocorrelations and first/last-window changes, with the full [window table](windows.csv) available separately.
+NC joint seat bulk ESS is 487.7, 464.3, 451.8 and 401.4 across warmup settings 0, 250, 500 and 1,000, with R-hat 1.00876, 1.01200, 1.01135 and 1.01280. Texas baseline seat bulk ESS stays below 400 at each setting. I plotted all recorded states in the traces and used post-warmup average ranks for ties in the [22 trace/rank figures](figures/README.md). The [chain summaries](chain_summary.csv) retain autocorrelations and first/last-window changes, with all windows in [windows.csv](windows.csv).
 
 ![NC primary joint ranks](figures/nc_block_union_joint_rank.png)
 
-## Enacted-score tail counts
+## Enacted scores and tail observations
 
-PLANC2333 scores 8 Democratic-majority districts using the official block assignment and modeled presidential votes. The Texas baseline contains **4 of 14,000 retained states with 8 districts**, all from seed 3331 at steps 2,253, 2,256, 2,257 and 2,258. Their plan hashes are distinct. I observed 8–17 districts in this baseline, including plans matching the PLANC2333 score.
+I score PLANC2333 at 8 Democratic-majority districts using the official block assignment and modeled presidential votes. In the initial Texas baseline, 4 of 14,000 retained states also have 8 districts, all in seed 3331 at steps 2,253, 2,256, 2,257 and 2,258. The full observed range is 8–17.
 
-I replayed steps 2,200–2,258 from the stored checkpoint and matched all 59 CSV records exactly. The four target assignments have different recomputed cut-edge fingerprints, and all six pairwise unit-weighted partition distances are positive. Independent scoring gives 8 Democratic-majority districts for each assignment; each satisfies the existing population and graph-contiguity constraints. The [assignment table](tail_assignment_check/plan_assignments.csv), [verification results and commands](tail_assignment_check/assignment_verification.json), and [replay configuration](tail_assignment_check/state.json) record the check. These replayed records are excluded from the ensemble counts.
+I replayed steps 2,200–2,258 from a stored checkpoint, matching all 59 CSV records. Each of the four target assignments has a distinct recomputed cut-edge fingerprint, and every one of the six pairwise unit-weighted partition distances is positive. Independent scoring gives 8 Democratic-majority districts for each, with the original population and graph-contiguity constraints satisfied. I keep the [assignments](tail_assignment_check/plan_assignments.csv), [verification and commands](tail_assignment_check/assignment_verification.json) and [replay configuration](tail_assignment_check/state.json); replay records are excluded from ensemble counts.
 
-The Texas wider-tolerance condition has zero states at or below 8 out of its own 14,000 retained states. Its constant indicator produces nonfinite R-hat at every warmup setting; ArviZ reports MCSE zero and ESS equal to draw count for that indicator.
+The Texas ±0.5% condition has zero states at or below 8 among its own 14,000 retained states. Its constant tail indicator returns nonfinite R-hat at every warmup setting, while ArviZ returns MCSE zero and ESS equal to the draw count.
 
-NC's primary graph has 193 of 27,000 retained states at or below the enacted score of 3 districts: 58 from 2023 starts and 135 from 2025 starts. The precinct-geometry and wider-tolerance conditions have 304 and 300 such states, respectively, each out of 27,000 retained states. [Per-chain counts](enacted_tail_counts.csv) and [indicator diagnostics](enacted_tail_diagnostics.json) retain each condition separately.
+NC's block-union baseline has 193 of 27,000 retained states at or below the enacted score of 3, comprising 58 from the 2023 group and 135 from the 2025 group. The precinct-geometry and ±1% conditions have 304 and 300, each among 27,000 retained states. I retain each condition separately in the [per-chain counts](enacted_tail_counts.csv) and [indicator diagnostics](enacted_tail_diagnostics.json).
 
-## Constraint and geographic sensitivity
+## Population and geography comparisons
 
-Texas seat bulk ESS is 24.6 in the ±0.5% condition; NC joint seat bulk ESS is 365.2 in the ±1% condition. Both also fail the R-hat screen.
+The wider population bounds give seat bulk ESS 24.6 for Texas ±0.5% and 365.2 for joint NC ±1%; both also fail R-hat. Sensitivity-minus-baseline mean seat differences are +0.13093 for Texas's population bound, +0.05563 / −0.05667 for NC precinct geometry from 2023 / 2025 starts, and −0.06667 / +0.04400 for NC's wider bound. NC's 2025-minus-2023 mean difference is −0.04022 on block unions and −0.15252 on precinct geometry.
 
-Sensitivity-minus-baseline mean seat differences are +0.13093 for Texas's population bound; +0.05563 / −0.05667 for NC precinct geometry from 2023 / 2025 starts; and −0.06667 / +0.04400 for NC's wider population bound. NC 2025-minus-2023 mean differences are −0.04022 on the block-union graph and −0.15252 on the precinct graph.
-
-I examined all 1,220 saved checkpoints. The geographic summary measures each county's population fraction assigned to districts with a modeled Democratic presidential majority. It includes zero-population units and every saved checkpoint, with separate post-warmup summaries.
-
-Among Texas counties above 500,000 population, the largest baseline across-seed ranges in the mean population fraction are:
+I examined all 1,220 saved checkpoints, measuring the fraction of each county's population assigned to districts with a modeled Democratic presidential majority. I included zero-population units and kept post-warmup summaries separately. Among Texas counties above 500,000 population, the largest across-seed ranges in mean population fraction are:
 
 | Texas county FIPS suffix | Population | Across-seed range in checkpoint mean population fraction |
 | ------------------------ | ---------: | -------------------------------------------------------: |
@@ -78,13 +68,13 @@ Among Texas counties above 500,000 population, the largest baseline across-seed 
 | 439                      |  2,110,640 |                                                   0.0745 |
 | 201                      |  4,731,145 |                                                   0.0659 |
 
-FIPS suffixes 491, 029, 453, 439 and 201 correspond to Williamson, Bexar, Travis, Tarrant and Harris counties. Williamson's range is 33.8 percentage points. Harris's last-ten minus first-ten checkpoint mean changes range from +0.0091 to +0.1879 across baseline chains; Dallas includes changes in opposing directions. The [county summaries](county_chain_summary.csv), [across-chain ranges](county_chain_ranges.csv) and [checkpoint fingerprints](geography_audit.json) locate these differences.
+FIPS suffixes 491, 029, 453, 439 and 201 identify Williamson, Bexar, Travis, Tarrant and Harris. Williamson's range is 33.8 percentage points. Harris's last-ten minus first-ten checkpoint mean changes span +0.0091 to +0.1879 across chains, while Dallas changes in opposite directions across chains. I retain the [county summaries](county_chain_summary.csv), [across-chain ranges](county_chain_ranges.csv) and [checkpoint fingerprints](geography_audit.json).
 
-## Partition comparison
+## Comparing partitions
 
-I compared every saved district assignment using [variation of information](https://doi.org/10.1016/j.jmva.2006.11.013), a label-invariant partition measure, in bits. The analysis covers 1,220 checkpoints and 159,990 pairs. Each condition has separate unit-weighted and population-weighted measures; the unit measure includes zero-population units, while their population weight is zero.
+I used [variation of information](https://doi.org/10.1016/j.jmva.2006.11.013), measured in bits, to compare assignments independently of district labels. The global analysis covers 1,220 checkpoints and 159,990 pairs. I computed unit- and population-weighted distances separately within each condition; zero-population units contribute to the unit measure and have zero population weight.
 
-For checkpoint pairs at least 2,000 states apart after the configured warmup, mean population-weighted distances are:
+For post-warmup pairs at least 2,000 states apart, with matched lag distributions across comparison categories, I obtain these mean population-weighted distances:
 
 | Condition      | Within chain | Between chains, same starting map | Between starting maps |
 | -------------- | -----------: | --------------------------------: | --------------------: |
@@ -94,17 +84,13 @@ For checkpoint pairs at least 2,000 states apart after the configured warmup, me
 | NC precinct    |      2.57550 |                           2.58450 |               2.58389 |
 | NC ±1%         |      2.60352 |                           2.60076 |               2.59967 |
 
-The lag distributions match across these comparison categories. Within-chain and between-chain averages are close, including comparisons between NC starting maps. This summary shows no clear global partition separation between chains, alongside the previously measured county-allocation differences and failed convergence diagnostics.
+Within-chain and between-chain averages are close, including comparisons across NC starts. I find no clear global partition separation in these averages, although the county political-allocation summaries differ and the convergence diagnostics fail.
 
 ![Texas partition comparisons](partition_distances/tx_rebuild_distances.png)
 
-[All lag-stratified summaries](partition_distances/distance_summary.csv), [distances to the common reference assignment](partition_distances/reference_distances.csv), and [method and input fingerprints](partition_distances/partition_distances.json) accompany the five condition heatmaps. Full pair-level tables remain with the local analysis outputs.
+I retain [lag summaries](partition_distances/distance_summary.csv), [reference-assignment distances](partition_distances/reference_distances.csv), [methods and fingerprints](partition_distances/partition_distances.json) and five condition heatmaps; pair-level tables stay with the local analysis outputs.
 
-## County partition comparison
-
-The follow-up analysis restricts the partition measure to individual counties. It includes every county with a 2020 population of at least 500,000: 12 in the Texas baseline and three in the NC block-union baseline. The [coverage table](county_partition_distances/county_coverage.csv) records all 354 counties and their selection status. Zero-population units remain in each selected county's unit-weighted measure.
-
-Across 460 saved checkpoints, the analysis makes 287,190 county-restricted pair comparisons. At matched lags of at least 2,000 states after warmup, selected mean population-weighted distances are:
+I also restricted the measure to counties with 2020 population at least 500,000, covering 12 Texas and three NC counties. The [coverage table](county_partition_distances/county_coverage.csv) records all 354 counties and selection status. I retained zero-population units in each selected county's unit-weighted comparison. Across 460 checkpoints, I computed 287,190 county-restricted pairs; selected post-warmup means at matched lags of at least 2,000 states are:
 
 | County               | Within chain | Between chains, same starting map | Between starting maps |
 | -------------------- | -----------: | --------------------------------: | --------------------: |
@@ -115,29 +101,27 @@ Across 460 saved checkpoints, the analysis makes 287,190 county-restricted pair 
 | Mecklenburg, NC      |      1.97258 |                           1.97215 |               1.96634 |
 | Wake, NC             |      2.14245 |                           2.14563 |               2.14413 |
 
-Within-chain and between-chain averages are again close in this summary. The earlier county political-allocation differences therefore do not translate into clear separation under this internal-partition measure.
+These internal-partition averages are also close within and between chains, including counties where political-allocation summaries differ.
 
 ![County-restricted Texas comparisons](county_partition_distances/tx_rebuild_county_distances.png)
 
-The [complete contrasts](county_partition_distances/long_lag_contrasts.csv), [all lag summaries](county_partition_distances/county_distance_summary.csv) and [input fingerprints](county_partition_distances/county_partition_distances.json) retain the measured results for every selected county.
+The [contrasts](county_partition_distances/long_lag_contrasts.csv), [lag summaries](county_partition_distances/county_distance_summary.csv) and [fingerprints](county_partition_distances/county_partition_distances.json) retain every selected county's results.
 
-## Data checks
+## Input checks
 
-Texas retains all 668,757 blocks, population 29,145,505 and 9,712 simulation units. Five ring self-intersections were repaired with `make_valid` in the derived geography. Eight precinct overlap pairs remain, with the largest approximately 0.198461 m². Both graph constructions agree on the candidate adjacency.
+I retained all 668,757 Texas blocks, population 29,145,505 and 9,712 simulation units, applying five `make_valid` ring repairs in a derived candidate. Eight overlaps remain, with the largest approximately 0.198461 m²; both graph constructions agree on adjacency.
 
-NC retains all 236,638 blocks, population 10,439,388 and the common 2,681-unit geography, including Onslow. The block-union baseline has zero overlaps and matching GerryChain/shared-boundary adjacency. The precinct alternative differs by 47 graph edges. Both enacted NC maps score 3 Democratic-majority districts under the modeled presidential votes.
+NC retains all 236,638 blocks, population 10,439,388 and 2,681 common units, including Onslow. Block unions have zero overlaps and matching GerryChain/shared-boundary adjacency, while the precinct alternative differs by 47 edges. Both NC assignments score 3 Democratic-majority districts under presidential votes.
 
-The [adopted-plan polygon audit](adopted_plan_geometry.json) finds valid single polygons and zero positive-area overlaps for the 38 Texas districts and both sets of 14 NC districts. Both NC polygon population fields match the block master exactly. The source audit records election-total discrepancies and enacted-plan election-model comparisons.
+The [adopted-plan audit](adopted_plan_geometry.json) finds valid single polygons and zero positive-area overlaps for the 38 Texas districts and both sets of 14 NC districts. Both NC polygon population fields match the block master. I record election-source differences and enacted-plan election-model comparisons in the source report.
 
-## Reproduction and verification
+## Records and reproducing
 
-The [manifest](campaign_manifest.json) uses repository-relative paths and retains execution-record hashes. `manifest_sha256` in the audit records identifies the original execution manifest; `publication_manifest_sha256` identifies the portable copy. Source-code, dataset, chain and checkpoint hashes retain their recorded values.
+The [portable manifest](campaign_manifest.json) uses repository-relative paths and preserves execution hashes. `manifest_sha256` identifies the original execution manifest and `publication_manifest_sha256` the portable copy; source, dataset, chain and checkpoint hashes retain their recorded values.
 
-Both state-CLI audits match the corresponding full-audit results. The campaign planner reproduces all 26 scientific definitions. Texas and NC 120-state runs match split 100+20-state continuations exactly. The [verification record](verification.json) contains the software versions and check results; numerical artifact checksums are in the [artifact manifest](artifact_manifest.json), and current README checksums are in the [documentation index](../documentation_checksums.json).
+Both state-CLI audits match the full-audit results, the campaign planner reproduces all 26 definitions, and Texas and NC uninterrupted 120-state runs match split 100+20-state runs exactly. I recorded 62 passing tests without skips, plus dependency, formatting, syntax and whitespace checks in [verification.json](verification.json) and the original test output. Numerical checksums remain in [artifact_manifest.json](artifact_manifest.json); document checksums are in [documentation_checksums.json](../documentation_checksums.json).
 
-I recorded 62 passing tests without skips for this campaign, together with dependency, formatting, syntax, and whitespace checks. The test record retains the original command output.
-
-Commands below run from the repository root. Existing result directories are protected; choose new output paths when repeating the analysis.
+I ran these commands from the repository root. They preserve the original output locations; I use new directories for repeated executions.
 
 ```sh
 export MPLCONFIGDIR="$PWD/data/external/rdh/rebuild_2026-11-02/runtime/matplotlib312"
@@ -160,10 +144,10 @@ export UV_CACHE_DIR="$PWD/.venv/uv-cache"
 
 ## Limitations
 
-MCSE estimates assume adequate sampling, and acceptance criteria for MCSE and window stability still need to be specified. The four Texas tail observations occur within six steps of one chain; descriptive frequencies are not calibrated p-values. Zero observed outcomes or a constant indicator's zero MCSE leave the event probability and uncertainty unresolved. Snapshot-based geographic summaries and similar condition means leave sampler connectivity, causal constraint effects, and distributional equivalence unresolved. Partition-distance pairs share plans and are dependent; their count is not an effective sample size. Variation of information compares membership rather than physical boundary displacement, and its global averages can mask localized differences. County-restricted distances compare internal grouping and do not measure which outside units are joined to a county.
+The chains fail the convergence screens, so I do not treat their Monte Carlo errors as reliable accuracy guarantees. MCSE and window-stability acceptance criteria still need to be specified. The four Texas tail states occur within six steps of one chain; their frequency is descriptive. Zero observations and the constant indicator's zero MCSE leave probability and uncertainty unresolved, and none of these tail frequencies is a calibrated p-value.
 
-RDH block votes are modeled allocations rather than observed block returns. Election-source differences, NC privacy noise, candidate strength and the uniform-swing assumption affect interpretation. Population and election years differ. Alternative-election scoring has been evaluated on enacted maps, but not across the full ensemble.
+Saved-checkpoint summaries leave sampler connectivity, causal constraint effects and distributional equivalence unresolved. Partition pairs share plans, so their count is not an effective sample size. Variation of information measures membership, while global averages can hide local differences; county-restricted distances also omit which outside units join a county and neither measure gives physical boundary displacement.
 
-Texas's eight precinct overlaps and broader starting-map sensitivity remain unresolved. NC geography inherits RDH block-to-precinct membership assumptions. Physical district-polygon connectedness has been checked, while independent enacted block-graph equivalence remains outstanding. The implemented population/contiguity constraints do not cover the full set of legal and demographic requirements, and ReCom sampling has not been established as uniform over valid maps.
+RDH block votes are modeled, with election-source differences, NC privacy noise, candidate effects and uniform-swing assumptions affecting interpretation. Population and election years differ. I scored alternative elections on enacted maps but have not run those models across the full ensemble.
 
-Historical chain files are unavailable, so the earlier analyses cannot be revalidated. The [historical Texas report](../../docs/archive/texas-analysis-before-2026-11-rebuild.md) is superseded by this campaign. I keep these initial results separate from the continued baselines and their freeze records.
+Texas's eight overlaps remain unresolved; starting-map sensitivity belongs to the continued study. NC inherits RDH block-to-precinct membership assumptions. I checked district-polygon connectedness, while independent enacted block-graph equivalence remains outstanding. Population and graph-contiguity constraints cover only part of the legal and demographic requirements, and I have not established uniform sampling over valid maps. The historical chain files are unavailable, so the [earlier Texas report](../../docs/archive/texas-analysis-before-2026-11-rebuild.md) remains an unrevalidated record separate from this campaign and the continued baseline freezes.

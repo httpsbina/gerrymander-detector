@@ -91,7 +91,7 @@
     ]
   },
   "code_checksums": {
-    "paper/export.py": "0479a878ad89bd85794e5a58ee4e65068265ce2a6147035fdacda6d8ba43ef6f",
+    "paper/export.py": "cfabe6dd45ccb9b98d13d2bc36dc4bd7378d4c6c22ac5422e678f48821d97b41",
     "paper/texas_outputs.py": "e4e54c16be1e70ed444aae3a46b69d08105b603846b86d5f440c660c39ceaa33",
     "tests/test_paper_export.py": "96be802506d64b2df4fe1e60738474c6f3b66c08084be22442d87222db968c46"
   },
@@ -102,5 +102,18 @@
     "results_numeric_equal": true,
     "files_compared": 27
   },
-  "repeated_export_after_json_roundtrip": true
+  "repeated_export_after_json_roundtrip": true,
+  "merge_verification": {
+    "head_before": "15f6cf13affcb2734409172c1c120ffcb92dfe01",
+    "base_merged": "1768b5341cb466d8b50eed83faefd2b2cac4dfc2",
+    "tests_passed": 118,
+    "tests_skipped": 0,
+    "test_log_sha256": "5ab2524aab6e304e0ecd3d0c0da6a876ae7ce1eaa25612f70e90e536f185ef1a",
+    "fresh_frozen_export_matches": true,
+    "scientific_values_unchanged": true,
+    "frozen_checksums_verified": {
+      "nc": 81,
+      "texas": 574
+    }
+  }
 }

@@ -2,13 +2,11 @@
 
 **Status (November 2026):** I froze North Carolina's six chains at 23,000 states per chain under [`nc-baseline-23000`](https://github.com/httpsbina/gerrymander-detector/tree/nc-baseline-23000) and Texas's eight chains at 70,000 under [`texas-baseline-70000`](https://github.com/httpsbina/gerrymander-detector/tree/texas-baseline-70000). Every primary metric passes jointly and within each starting-map cohort. The [freeze rule](docs/freeze_rule.md), [frozen numbers](paper/results.json), and [paper outputs](paper/README.md) record the stopping criteria and reproduction commands.
 
-[![Python](https://img.shields.io/badge/Python-3.12-blue)](https://python.org)
-[![GerryChain](https://img.shields.io/badge/GerryChain-0.3.2-green)](https://github.com/mggg/GerryChain)
-[![Data](https://img.shields.io/badge/Data-Redistricting%20Data%20Hub-orange)](https://redistrictingdatahub.org)
+I compare congressional maps with alternative plans sampled using GerryChain's ReCom algorithm. I conduct this research through the [PEAK Award](https://undergraduate.northeastern.edu/research/awards/peak-fellowships-overview/) at [Northeastern University](https://www.northeastern.edu/), advised by Dr. Eric Gerber, using data from the Redistricting Data Hub.
 
-I study how congressional maps compare with alternative plans sampled using GerryChain's ReCom algorithm. This is my [PEAK Award](https://undergraduate.northeastern.edu/research/awards/peak-fellowships-overview/) research at [Northeastern University](https://www.northeastern.edu/), advised by Dr. Eric Gerber.
+## Results
 
-## November 2026 results
+I ran three NC chains from the 2023 assignment and three from the 2025 assignment, using the same 2,681-unit Census-block-union geography for both. The geography retains all 236,638 blocks, population 10,439,388 and the Onslow split. Both starting maps have 3 Democratic-majority districts under the modeled 2024 presidential votes.
 
 I froze both states after all four primary metrics passed at the same complete chain length within each cohort and jointly. The table shows the seat-count diagnostics; the [frozen paper results](paper/results.json) contain every metric.
 
@@ -23,11 +21,9 @@ I froze both states after all four primary metrics passed at the same complete c
 
 I use R-hat below 1.01 and bulk/tail ESS of at least 400 within each cohort, 600 for joint NC and 800 for joint Texas. I retained all earlier states, seeds and starting maps.
 
-The [initial source-rebuild campaign](deliverables/rebuild-campaign-2026-11-02/README.md) contains the original 26-chain baseline and sensitivity runs. Those files remain separate from the continued baselines.
+## Texas rebuild
 
-### Initial Texas seat comparison
-
-PLANC2333 is scored at Census-block resolution using modeled 2024 presidential votes. The simulation baseline uses 9,712 geographic units, 38 districts and a ±0.1% population bound. The table below describes the initial campaign before continuation.
+I score PLANC2333 at Census-block resolution because its assignment splits precincts. The initial simulation baseline used 9,712 geographic units, 38 districts and a ±0.1% population bound; its 4,000-state chains gave the following presidential-vote comparison before continuation.
 
 | Measure                                    | Initial 4,000-state baseline |
 | ------------------------------------------ | ---------------------------: |
@@ -36,23 +32,17 @@ PLANC2333 is scored at Census-block resolution using modeled 2024 presidential v
 | Mean sampled Democratic-majority districts |                      12.9562 |
 | Retained states with 8 districts           |                   4 / 14,000 |
 
-Those four states have distinct plan hashes and occur in one chain at steps 2,253, 2,256, 2,257 and 2,258. The [assignment check](deliverables/rebuild-campaign-2026-11-02/tail_assignment_check/assignment_verification.json) verifies the four partitions directly, and the [tail audit](deliverables/rebuild-campaign-2026-11-02/enacted_tail_counts.csv) records counts for every chain and sensitivity condition.
+I verified that the four states have distinct partitions, at steps 2,253, 2,256, 2,257 and 2,258 of one chain. The [assignment check](deliverables/rebuild-campaign-2026-11-02/tail_assignment_check/assignment_verification.json) records that verification, and the [tail table](deliverables/rebuild-campaign-2026-11-02/enacted_tail_counts.csv) keeps counts by chain and sensitivity condition.
 
-### North Carolina geography
+## Data and method
 
-The 2023 and 2025 assignments use the same 2,681-unit Census-block-union baseline, retaining all 236,638 blocks and population 10,439,388. Both maps score 3 Democratic-majority districts under the modeled presidential votes. The common geography includes the Onslow split. The precinct-based alternative differs by 47 graph edges and is analyzed as a separate sensitivity condition.
+I join Census population, RDH election allocations and official assignments by block ID, checking coverage and statewide totals before constructing the geographic graph. I then check geometry, adjacency and district contiguity, and run ReCom with population bounds of ±0.1% for Texas and ±0.5% for NC. I keep election-model, population-bound and geography experiments separate; the precinct-based NC graph differs from the block-union graph by 47 edges.
 
-## Methods and data
+The [source report](deliverables/rdh-research-audit-2026-11-02/README.md) records the input checks and election-source differences. The [initial campaign report](deliverables/rebuild-campaign-2026-11-02/README.md) covers 26 baseline and sensitivity chains before continuation. I retain the [earlier Texas analysis](docs/archive/texas-analysis-before-2026-11-rebuild.md) as a historical record.
 
-I match Census population, RDH election allocations, and official assignments by block ID, then check coverage, totals, geometry, adjacency, and contiguity. I sample plans with ReCom under population and graph-contiguity constraints, using primary bounds of ±0.1% for Texas and ±0.5% for NC. I analyze independent chains and starting-map groups separately and jointly, with election-model, constraint, and geography comparisons kept as separate experiments.
+## Reproducing
 
-The [source audit](deliverables/rdh-research-audit-2026-11-02/README.md) records provenance, election-total discrepancies, geometry construction and enacted-plan election sensitivity. The [campaign audit](deliverables/rebuild-campaign-2026-11-02/README.md) contains the results, commands and [scientific limitations](deliverables/rebuild-campaign-2026-11-02/README.md#limitations).
-
-This analysis was conducted using data from the Redistricting Data Hub.
-
-## Running the project
-
-I use Python 3.12 and the pinned [research dependencies](requirements-research-macos-arm64-py312.txt). The [state CLI guide](docs/state_cli.md) covers validation, candidate construction, simulation, checkpoint continuation and audits. Source data and full simulation outputs are stored under the paths recorded in the manifests and are not bundled in the repository.
+I use Python 3.12, GerryChain 0.3.2 and the [pinned research packages](requirements-research-macos-arm64-py312.txt). I run these commands from the repository root; the [state CLI guide](docs/state_cli.md) covers validation, simulation, continuation and audits. The manifests record the source-data and full-output paths, which are stored separately from the checkout.
 
 ```sh
 .venv/science/bin/python main.py --texas --config configs/research_rebuild_2026-11-02.json
@@ -60,17 +50,11 @@ I use Python 3.12 and the pinned [research dependencies](requirements-research-m
 .venv/science/bin/python -m unittest discover -s tests -v
 ```
 
-## Paper outputs
-
-I regenerate the frozen analysis with `python -m paper.export`, which writes [figures](paper/figures), [tables](paper/tables), [full-precision numbers](paper/results.json), and a [one-page NC findings list](paper/nc_findings.md). Both states are registered in the frozen export. The [documentation index](docs/README.md) collects the workflow and data notes.
-
-## Earlier analysis
-
-The [historical Texas report](docs/archive/texas-analysis-before-2026-11-rebuild.md) preserves the earlier figures and reported 30,000-state results. It is superseded by the November 2026 campaign above.
+I export both frozen analyses with `python -m paper.export`. The command writes [figures](paper/figures), [tables](paper/tables), [full-precision values](paper/results.json) and the state findings, using the registered NC23k and Texas70k freezes. The [docs index](docs/README.md) links the supporting records.
 
 ## Limitations
 
-The primary convergence freeze is complete; MCSE and window-stability acceptance criteria still need scientific review. I use modeled presidential vote allocations, while ReCom supplies the implemented sampling process and population/contiguity constraints. Uniform sampling and full legal compliance are outside the model. The source and campaign reports record the remaining geographic and election-source uncertainties. I treat tail counts as descriptive frequencies, including zero counts, and retain the earlier analysis as a historical record because its chain files are unavailable.
+The primary convergence freezes are complete; MCSE and window-stability acceptance criteria still need scientific review. I use modeled presidential vote allocations and a sampler constrained by population and graph contiguity. I have not established uniform sampling over valid maps, and these constraints cover only part of the legal redistricting requirements. The source and campaign reports describe the remaining geographic and election-source uncertainties. I report tail counts as descriptive frequencies, including zero counts; they are not calibrated p-values or estimates of zero probability. The earlier Texas chain files are unavailable, so I cannot revalidate that historical analysis.
 
 ## References
 

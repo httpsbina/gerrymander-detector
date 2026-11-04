@@ -1,9 +1,10 @@
 # North Carolina findings
 
-- I ran 6 chains, recording 138,000 states and retaining 135,000 after warmup.
-- I recorded 23,000 states per chain and used 500 warmup states, leaving 22,500 per chain.
-- I started nc_block_union_2023 from the 2023 assignment with seeds 707, 808, 909; its initial map has 3 Democratic-majority districts under the presidential vote model.
-- I started nc_block_union_2025 from the 2025 assignment with seeds 1707, 1808, 1909; its initial map has 3 Democratic-majority districts under the presidential vote model.
+I ran 6 chains, recording 138,000 states and retaining 135,000 after warmup. Each chain contains 23,000 recorded states; removing 500 warmup states leaves 22,500 per chain.
+
+I started `nc_block_union_2023` from the 2023 assignment with seeds 707, 808, 909. Its initial map produces 3 Democratic-majority districts under the presidential vote model.
+
+I started `nc_block_union_2025` from the 2025 assignment with seeds 1707, 1808, 1909. Its initial map produces 3 Democratic-majority districts under the presidential vote model.
 
 | Group               | Metric                        |   R-hat | Bulk ESS | Tail ESS |
 | ------------------- | ----------------------------- | ------: | -------: | -------: |
@@ -20,8 +21,8 @@
 | joint               | Cut edges                     | 1.00411 |   2239.9 |   6248.2 |
 | joint               | Mean-median                   | 1.00581 |   1725.8 |   3947.6 |
 
-- I recorded joint seat-count mean MCSE of 0.01835663; the full precision is in `results.json`.
+I recorded joint seat-count mean MCSE of 0.01835663; the full precision is in `results.json`.
 
 ## Limitations
 
-- I use modeled presidential votes; sampler uniformity and full legal compliance remain outside the implemented model.
+I use modeled presidential votes with the recorded constraints; I have not established sampler uniformity or full legal compliance.

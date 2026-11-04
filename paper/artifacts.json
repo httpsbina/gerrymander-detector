@@ -6,7 +6,7 @@
     "texas": "deliverables/texas-baseline-freeze-70000/freeze_manifest.json"
   },
   "files": {
-    "README.md": "71e4fe32e1197ce48c8ccdcf723e5ab4c01596373f8a7fd577931f18491cfe64",
+    "README.md": "6894d5f1ffd177e13fba979b8ab7391801c641ee48062bd91c7b30f922b1663a",
     "figures/nc/nc_block_union_2023_rank.png": "e76614a39f08a2398892b731b5b1da5df4f73da555f0f57112db64f8620b0d4a",
     "figures/nc/nc_block_union_2023_trace.png": "09ad07dcda5a29faaef04428b4e0697eaab298a9924951af0a4358f356bf19e8",
     "figures/nc/nc_block_union_2025_rank.png": "d704d2ccc0987716da5bd7f08972d99ed1b24aa1deafc9b9e195a0808e329db4",
@@ -19,7 +19,7 @@
     "figures/texas/tx_dispersed_trace.png": "204a9a49c129b939107b4c9388119586fc8735d44e12bdfa1f180d1f774e76b0",
     "figures/texas/tx_rebuild_rank.png": "de5f00e7a0d5da822e94a4c380f737ff2e136944020972e744f5dc5d26d8b333",
     "figures/texas/tx_rebuild_trace.png": "98cc0121b200d65d128cfc8f4f32147d0d83a3cccfc6261056bb6ae7ca6f0478",
-    "nc_findings.md": "0509049a0778d19037ba8b27292faab6ce7858af8beed9d80bc94f94b5f6955b",
+    "nc_findings.md": "38f918095bab4c481d8fb83bf0dc4c651bbacf5184fa1f1fe97c8522404ffa14",
     "tables/nc/chain_summary.csv": "847b9f9bc0e55b04a252cf06045deb3840c4a0d6f945004077018571ad262c45",
     "tables/nc/diagnostics.csv": "699697f57e322ddcc12374f296114e07d56f3162c2f7437fffe0c8e5ef46f925",
     "tables/nc/primary_diagnostics.csv": "226a1d84b13df26b7e6866846309169d03e7250f709af4933f07fd0d55da67a2",

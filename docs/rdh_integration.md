@@ -1,16 +1,16 @@
 # RDH source acquisition
 
-I use the RDH catalog and download endpoints to inventory source files, retaining dataset IDs, byte counts, and SHA-256 receipts. The interface follows `RDH_API_SET_PARAMS.ipynb`: `GET /wp-json/download/list?states=Pennsylvania&format=csv`, followed by the selected `download/file/...` endpoint. `Download_API.txt` records the `datasetid` parameter.
+I inventory RDH files before downloading them, keeping dataset IDs, byte counts and SHA-256 receipts with each source. I follow `RDH_API_SET_PARAMS.ipynb`: `GET /wp-json/download/list?states=Pennsylvania&format=csv` returns the catalog, and `download/file/...` selects a file. `Download_API.txt` describes the `datasetid` parameter.
 
-## Source checklist
+## Reproducing
+
+I list the required sources with:
 
 ```powershell
 .\.venv\Scripts\python.exe main.py --penn --stage sources
 ```
 
-## Catalog
-
-I enter account credentials interactively and keep them outside source control.
+I enter credentials interactively and keep them outside source control:
 
 ```powershell
 $env:RDH_USERNAME = Read-Host "RDH API username"
@@ -21,18 +21,14 @@ Remove-Item Env:RDH_PASSWORD
 Remove-Item Env:RDH_USERNAME
 ```
 
-I use `--dry-run` for an offline inventory. The catalog is saved to `data/external/rdh/pennsylvania/catalog.json`, with dataset IDs and download paths.
-
-## Download
-
-I select an exact catalog filename, check for duplicate names, and inspect the dry run before downloading.
+I use `--dry-run` for an offline inventory. The catalog goes to `data/external/rdh/pennsylvania/catalog.json`, including dataset IDs and download paths. After selecting an exact filename and checking duplicate names, I inspect the download with:
 
 ```powershell
 .\.venv\Scripts\python.exe main.py --penn --stage download --rdh-file "EXACT_FILE_FROM_CATALOG.zip" --dry-run
 ```
 
-I remove `--dry-run` to download the selected entry. Its `.receipt.json` records SHA-256, bytes, dataset ID, and the `DOWNLOADED_NOT_VALIDATED` status; existing files are preserved.
+I remove `--dry-run` to download that entry. Its `.receipt.json` records the hash, size, dataset ID and `DOWNLOADED_NOT_VALIDATED` status; existing files stay in place.
 
 ## Limitations
 
-I validate year, geography, 2020 population, 2024 precinct election totals, shapes, block equivalency, 2022 congressional assignments, and district totals after acquisition. Catalog metadata alone leaves those checks open. Pennsylvania remains `pending_data`; a state with no comparable mid-decade redraw serves a different comparison from Texas or NC. The provider places account credentials in request URLs, so I keep request traces outside the published records.
+Acquisition leaves the year, geography, 2020 population, 2024 precinct votes, shapes, block equivalency, 2022 congressional assignments and district totals to be validated. Pennsylvania remains `pending_data`; without a comparable mid-decade redraw, it would answer a different comparison from Texas or NC. The provider includes credentials in request URLs, so I keep request traces outside published records.
