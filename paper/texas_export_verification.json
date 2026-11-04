@@ -1,0 +1,45 @@
+{
+  "recorded_eastern": "2026-11-03T21:52:21.908584-05:00",
+  "process_nice": 15,
+  "export_command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" ../gerrymander-detector/.venv/science/bin/python -m paper.export --texas --source-root ../gerrymander-detector",
+  "tests": {
+    "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" TMPDIR=\"$PWD/.venv/test-runtime\" ../gerrymander-detector/.venv/science/bin/python -m unittest discover -s tests -v",
+    "passed": 106,
+    "skipped": 0,
+    "log": "paper/texas_export_test_suite.log",
+    "raw_log_sha256": "f3e84771fd8329e5002d1e300b995fa3d97a4b349e55084426ea43d374390aa6",
+    "published_log_sha256": "ea0a371b5ddb32a7058c8d5b369c1c761c6f2c884f75e98910a659bb2fe12476"
+  },
+  "real_data": {
+    "registered_audits": 25,
+    "registered_prefix_comparisons": 1,
+    "retained_states": 356000,
+    "tail_count_at_or_below_block_score": 55,
+    "audited_means_match": true,
+    "figure_repeat_hashes_match": true,
+    "visually_inspected_figures": [
+      "paper/provisional/figures/texas/seat_histogram.png",
+      "paper/provisional/figures/texas/convergence_history.png"
+    ],
+    "nc_frozen_checksums_matched": 81,
+    "nc_frozen_regression_export_unchanged": true
+  },
+  "checks": {
+    "formatting": "Prettier for changed JSON and Markdown",
+    "python": "AST syntax; no configured Python formatter or linter",
+    "whitespace": "git diff --check",
+    "protected_sources_unchanged": [
+      "src/chain/",
+      "src/analysis/",
+      "configs/",
+      "docs/freeze_rule.md",
+      "reproduce_paper.py"
+    ]
+  },
+  "frozen_texas_export": "Automatic routing and common derivations tested with clearly labeled fixtures; actual frozen Texas inputs are not yet registered.",
+  "code_checksums": {
+    "paper/export.py": "98d978dc39912c5abe58e325fcac87ec00057d1cfaf3a7d6dde93934a7f192ae",
+    "paper/texas_outputs.py": "e4e54c16be1e70ed444aae3a46b69d08105b603846b86d5f440c660c39ceaa33",
+    "tests/test_texas_paper_outputs.py": "6c9005fd7a57a0a0921e6a3855aa736d3aea3055df1bdc4ef1e5114041cd9c6e"
+  }
+}

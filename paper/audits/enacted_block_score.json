@@ -1,0 +1,399 @@
+{
+  "state": "texas",
+  "research_ready": false,
+  "attribution": "This analysis was conducted using data from the Redistricting Data Hub.",
+  "vote_interpretation": "Modeled allocations to Census blocks, not observed block returns",
+  "population_blocks": 668757,
+  "election_blocks": 668757,
+  "election_precinct_ids": 9712,
+  "zero_population_blocks": 219672,
+  "population_blocks_missing_votes": 0,
+  "vote_blocks_missing_population": 0,
+  "totals": {
+    "population": 29145505,
+    "dem_votes": 4835134,
+    "rep_votes": 6393403
+  },
+  "historical_expected_totals": {
+    "geographic_units": 9712,
+    "population": 29145505,
+    "dem_votes": 4835134,
+    "rep_votes": 6393403
+  },
+  "source_files": [
+    {
+      "path": "data/external/rdh/rebuild_2026-11-02/texas/tx_pl2020_b.zip",
+      "bytes": 2140869167,
+      "sha256": "a9901c388beba44c2ef50fe3959194285294b1140ed2a563a719d4c47ee02be1"
+    },
+    {
+      "path": "data/external/rdh/rebuild_2026-11-02/texas/tx_2024_gen_2020_blocks_csv.zip",
+      "bytes": 13544758,
+      "sha256": "e78d858bdc4233938c1dbfdf02f287abd2652929d0158ed13fdac4a73c84953b"
+    },
+    {
+      "path": "data/external/rdh/rebuild_2026-11-02/texas/tx_cong_adopted_2025.zip",
+      "bytes": 26141444,
+      "sha256": "36933aec5ece1703b82ed609662ad14fa4adb9d1f5bc82636b11a5a2ea2ac4b3"
+    }
+  ],
+  "plans": {
+    "2025": {
+      "assignment_blocks": 668757,
+      "exact_block_set_match": true,
+      "missing_population_blocks": 0,
+      "extra_assignment_blocks": 0,
+      "districts": [
+        {
+          "district": 1,
+          "blocks": 27270,
+          "population": 766987,
+          "dem_modeled_votes": 80853,
+          "rep_modeled_votes": 241951,
+          "dem_two_party_share": 0.25047087396686535,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 2,
+          "blocks": 7574,
+          "population": 766987,
+          "dem_modeled_votes": 127882,
+          "rep_modeled_votes": 204844,
+          "dem_two_party_share": 0.3843462789201926,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 3,
+          "blocks": 16921,
+          "population": 766987,
+          "dem_modeled_votes": 137007,
+          "rep_modeled_votes": 223472,
+          "dem_two_party_share": 0.38006929668579864,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 4,
+          "blocks": 19732,
+          "population": 766987,
+          "dem_modeled_votes": 134651,
+          "rep_modeled_votes": 225152,
+          "dem_two_party_share": 0.3742353454529284,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 5,
+          "blocks": 16862,
+          "population": 766987,
+          "dem_modeled_votes": 113222,
+          "rep_modeled_votes": 176425,
+          "dem_two_party_share": 0.3908965050561546,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 6,
+          "blocks": 14650,
+          "population": 766987,
+          "dem_modeled_votes": 116829,
+          "rep_modeled_votes": 187695,
+          "dem_two_party_share": 0.3836446388461993,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 7,
+          "blocks": 7070,
+          "population": 766987,
+          "dem_modeled_votes": 153109,
+          "rep_modeled_votes": 93620,
+          "dem_two_party_share": 0.6205553461490136,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 8,
+          "blocks": 8446,
+          "population": 766987,
+          "dem_modeled_votes": 109498,
+          "rep_modeled_votes": 194468,
+          "dem_two_party_share": 0.36023107847588215,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 9,
+          "blocks": 12692,
+          "population": 766987,
+          "dem_modeled_votes": 78614,
+          "rep_modeled_votes": 118108,
+          "dem_two_party_share": 0.39961976799747867,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 10,
+          "blocks": 19908,
+          "population": 766987,
+          "dem_modeled_votes": 134132,
+          "rep_modeled_votes": 214153,
+          "dem_two_party_share": 0.385121380478631,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 11,
+          "blocks": 28328,
+          "population": 766987,
+          "dem_modeled_votes": 94102,
+          "rep_modeled_votes": 194572,
+          "dem_two_party_share": 0.3259801714044216,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 12,
+          "blocks": 14985,
+          "population": 766987,
+          "dem_modeled_votes": 117747,
+          "rep_modeled_votes": 192722,
+          "dem_two_party_share": 0.37925525575822383,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 13,
+          "blocks": 43795,
+          "population": 766987,
+          "dem_modeled_votes": 80157,
+          "rep_modeled_votes": 220421,
+          "dem_two_party_share": 0.26667620384725427,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 14,
+          "blocks": 18230,
+          "population": 766987,
+          "dem_modeled_votes": 124887,
+          "rep_modeled_votes": 206267,
+          "dem_two_party_share": 0.3771266540642722,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 15,
+          "blocks": 20399,
+          "population": 766987,
+          "dem_modeled_votes": 92648,
+          "rep_modeled_votes": 133387,
+          "dem_two_party_share": 0.4098834251332758,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 16,
+          "blocks": 11837,
+          "population": 766987,
+          "dem_modeled_votes": 131977,
+          "rep_modeled_votes": 94329,
+          "dem_two_party_share": 0.5831794119466563,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 17,
+          "blocks": 24107,
+          "population": 766987,
+          "dem_modeled_votes": 123175,
+          "rep_modeled_votes": 192406,
+          "dem_two_party_share": 0.3903118375314103,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 18,
+          "blocks": 10922,
+          "population": 766987,
+          "dem_modeled_votes": 186804,
+          "rep_modeled_votes": 53116,
+          "dem_two_party_share": 0.7786095365121707,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 19,
+          "blocks": 50079,
+          "population": 766987,
+          "dem_modeled_votes": 66862,
+          "rep_modeled_votes": 212708,
+          "dem_two_party_share": 0.239160138784562,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 20,
+          "blocks": 10045,
+          "population": 766987,
+          "dem_modeled_votes": 144268,
+          "rep_modeled_votes": 79626,
+          "dem_two_party_share": 0.6443584910716679,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 21,
+          "blocks": 14678,
+          "population": 766987,
+          "dem_modeled_votes": 159540,
+          "rep_modeled_votes": 249966,
+          "dem_two_party_share": 0.38959136129873556,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 22,
+          "blocks": 12374,
+          "population": 766987,
+          "dem_modeled_votes": 126910,
+          "rep_modeled_votes": 201291,
+          "dem_two_party_share": 0.3866837700067946,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 23,
+          "blocks": 36589,
+          "population": 766987,
+          "dem_modeled_votes": 133940,
+          "rep_modeled_votes": 181128,
+          "dem_two_party_share": 0.4251145784402097,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 24,
+          "blocks": 11457,
+          "population": 766987,
+          "dem_modeled_votes": 153016,
+          "rep_modeled_votes": 213030,
+          "dem_two_party_share": 0.4180239642012206,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 25,
+          "blocks": 21751,
+          "population": 766987,
+          "dem_modeled_votes": 115589,
+          "rep_modeled_votes": 189984,
+          "dem_two_party_share": 0.3782696769675331,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 26,
+          "blocks": 13665,
+          "population": 766987,
+          "dem_modeled_votes": 144965,
+          "rep_modeled_votes": 237128,
+          "dem_two_party_share": 0.37939716247091676,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 27,
+          "blocks": 26581,
+          "population": 766987,
+          "dem_modeled_votes": 125620,
+          "rep_modeled_votes": 194243,
+          "dem_two_party_share": 0.39273063780430995,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 28,
+          "blocks": 21954,
+          "population": 766987,
+          "dem_modeled_votes": 88384,
+          "rep_modeled_votes": 109012,
+          "dem_two_party_share": 0.44774970110843176,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 29,
+          "blocks": 7529,
+          "population": 766987,
+          "dem_modeled_votes": 116002,
+          "rep_modeled_votes": 61313,
+          "dem_two_party_share": 0.6542142514733666,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 30,
+          "blocks": 11537,
+          "population": 766987,
+          "dem_modeled_votes": 177383,
+          "rep_modeled_votes": 62628,
+          "dem_two_party_share": 0.7390619596601823,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 31,
+          "blocks": 17668,
+          "population": 766987,
+          "dem_modeled_votes": 134752,
+          "rep_modeled_votes": 211395,
+          "dem_two_party_share": 0.38929125487148525,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 32,
+          "blocks": 14372,
+          "population": 766987,
+          "dem_modeled_votes": 129701,
+          "rep_modeled_votes": 187132,
+          "dem_two_party_share": 0.4093670798180745,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 33,
+          "blocks": 11139,
+          "population": 766987,
+          "dem_modeled_votes": 136382,
+          "rep_modeled_votes": 68184,
+          "dem_two_party_share": 0.6666894791900903,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 34,
+          "blocks": 18253,
+          "population": 766987,
+          "dem_modeled_votes": 106947,
+          "rep_modeled_votes": 131304,
+          "dem_two_party_share": 0.4488837402571238,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 35,
+          "blocks": 12037,
+          "population": 766987,
+          "dem_modeled_votes": 133351,
+          "rep_modeled_votes": 164837,
+          "dem_two_party_share": 0.4472044482004641,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 36,
+          "blocks": 17763,
+          "population": 766987,
+          "dem_modeled_votes": 114961,
+          "rep_modeled_votes": 192718,
+          "dem_two_party_share": 0.37363940990447836,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 37,
+          "blocks": 8875,
+          "population": 766987,
+          "dem_modeled_votes": 252355,
+          "rep_modeled_votes": 67688,
+          "dem_two_party_share": 0.7885034198529572,
+          "population_relative_deviation": 3.4310608132415155e-8
+        },
+        {
+          "district": 38,
+          "blocks": 6683,
+          "population": 766986,
+          "dem_modeled_votes": 136912,
+          "rep_modeled_votes": 210980,
+          "dem_two_party_share": 0.39354742276338633,
+          "population_relative_deviation": -1.2694924997891377e-6
+        }
+      ],
+      "dem_modeled_seats": 8,
+      "tied_districts": 0,
+      "max_abs_population_deviation": 1.2694924997891377e-6
+    }
+  },
+  "errors": [],
+  "geometry_validation": "not run",
+  "convergence_diagnostics": "unavailable; no chains",
+  "tabular_integrity": "pass"
+}

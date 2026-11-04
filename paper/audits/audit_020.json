@@ -1,0 +1,573 @@
+{
+  "research_ready": false,
+  "manifest_sha256": "e6355f26f2c1e9928165f5ef06fba53bbacff8ef5fcc3b0ffe7057568d0d9e29",
+  "experiments": {
+    "tx_rebuild": {
+      "integrity": "pass",
+      "diagnostics": {
+        "dem_seats": {
+          "rank_split_rhat": 1.0095232746267728,
+          "bulk_ess": 224.59239459559095,
+          "tail_ess": 392.8356104394923,
+          "mcse_mean": 0.0868391049503691,
+          "mcse_sd": 0.06148447410851345,
+          "mcse_q05": 0.0,
+          "mcse_q95": 0.0,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": ["bulk ESS below 400", "tail ESS below 400"],
+          "ess_screening_minimum": 400
+        },
+        "efficiency_gap": {
+          "rank_split_rhat": 1.0126850026907719,
+          "bulk_ess": 209.55431654249955,
+          "tail_ess": 627.5857838545193,
+          "mcse_mean": 0.0023293452481386516,
+          "mcse_sd": 0.0016493764758564186,
+          "mcse_q05": 0.001411492877478146,
+          "mcse_q95": 0.0021951212344048,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": [
+            "rank R-hat at or above 1.01",
+            "bulk ESS below 400"
+          ],
+          "ess_screening_minimum": 400
+        },
+        "cut_edges": {
+          "rank_split_rhat": 1.0106225755764036,
+          "bulk_ess": 241.3397989998107,
+          "tail_ess": 706.6402437906879,
+          "mcse_mean": 5.475454876369776,
+          "mcse_sd": 3.884233665006921,
+          "mcse_q05": 5.0,
+          "mcse_q95": 7.0,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": [
+            "rank R-hat at or above 1.01",
+            "bulk ESS below 400"
+          ],
+          "ess_screening_minimum": 400
+        },
+        "mean_median": {
+          "rank_split_rhat": 1.031334437418846,
+          "bulk_ess": 167.01250421672657,
+          "tail_ess": 479.3349157981669,
+          "mcse_mean": 0.000996762673462683,
+          "mcse_sd": 0.0007060617607571504,
+          "mcse_q05": 0.0015308984751819495,
+          "mcse_q95": 0.0010753320340856996,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": [
+            "rank R-hat at or above 1.01",
+            "bulk ESS below 400"
+          ],
+          "ess_screening_minimum": 400
+        }
+      },
+      "warmup_sensitivity": {
+        "0": {
+          "dem_seats": {
+            "rank_split_rhat": 1.0081430414734698,
+            "bulk_ess": 233.11943703212395,
+            "tail_ess": 424.59182700586103,
+            "mcse_mean": 0.0849880246398595,
+            "mcse_sd": 0.06023733709719046,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["bulk ESS below 400"],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0109931516113884,
+            "bulk_ess": 212.22282665912425,
+            "tail_ess": 634.6465133535177,
+            "mcse_mean": 0.002316776089244292,
+            "mcse_sd": 0.0016404440894149622,
+            "mcse_q05": 0.0014848773264050513,
+            "mcse_q95": 0.0022028693497647997,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.0080987015745901,
+            "bulk_ess": 237.78990385769958,
+            "tail_ess": 848.0733872217656,
+            "mcse_mean": 5.909778936888942,
+            "mcse_sd": 4.183698162552572,
+            "mcse_q05": 5.0,
+            "mcse_q95": 7.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["bulk ESS below 400"],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.036210445803862,
+            "bulk_ess": 155.6142660621205,
+            "tail_ess": 482.1808896757099,
+            "mcse_mean": 0.0010485669972534035,
+            "mcse_sd": 0.0007428360364521259,
+            "mcse_q05": 0.0016262037985777505,
+            "mcse_q95": 0.00115496041883645,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          }
+        },
+        "250": {
+          "dem_seats": {
+            "rank_split_rhat": 1.0092830715933243,
+            "bulk_ess": 229.47745992089088,
+            "tail_ess": 408.37058714464786,
+            "mcse_mean": 0.0856142019781087,
+            "mcse_sd": 0.060616962599261484,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["bulk ESS below 400"],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0116132238966382,
+            "bulk_ess": 213.16037742131675,
+            "tail_ess": 635.0664541611458,
+            "mcse_mean": 0.0023008943733429602,
+            "mcse_sd": 0.001629188501558672,
+            "mcse_q05": 0.0013552522470202458,
+            "mcse_q95": 0.0022302549299165,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.008145142410291,
+            "bulk_ess": 251.85197768518165,
+            "tail_ess": 775.5506555079052,
+            "mcse_mean": 5.365258657989003,
+            "mcse_sd": 3.8045485111587736,
+            "mcse_q05": 5.0,
+            "mcse_q95": 7.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["bulk ESS below 400"],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.0337643191638362,
+            "bulk_ess": 162.09579703857344,
+            "tail_ess": 496.2592550860219,
+            "mcse_mean": 0.0010102655051235775,
+            "mcse_sd": 0.0007156612380941707,
+            "mcse_q05": 0.0015024973276883498,
+            "mcse_q95": 0.0010705582866856016,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          }
+        },
+        "500": {
+          "dem_seats": {
+            "rank_split_rhat": 1.0095232746267728,
+            "bulk_ess": 224.59239459559095,
+            "tail_ess": 392.8356104394923,
+            "mcse_mean": 0.0868391049503691,
+            "mcse_sd": 0.06148447410851345,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["bulk ESS below 400", "tail ESS below 400"],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0126850026907719,
+            "bulk_ess": 209.55431654249955,
+            "tail_ess": 627.5857838545193,
+            "mcse_mean": 0.0023293452481386516,
+            "mcse_sd": 0.0016493764758564186,
+            "mcse_q05": 0.001411492877478146,
+            "mcse_q95": 0.0021951212344048,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.0106225755764036,
+            "bulk_ess": 241.3397989998107,
+            "tail_ess": 706.6402437906879,
+            "mcse_mean": 5.475454876369776,
+            "mcse_sd": 3.884233665006921,
+            "mcse_q05": 5.0,
+            "mcse_q95": 7.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.031334437418846,
+            "bulk_ess": 167.01250421672657,
+            "tail_ess": 479.3349157981669,
+            "mcse_mean": 0.000996762673462683,
+            "mcse_sd": 0.0007060617607571504,
+            "mcse_q05": 0.0015308984751819495,
+            "mcse_q95": 0.0010753320340856996,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          }
+        },
+        "1000": {
+          "dem_seats": {
+            "rank_split_rhat": 1.0094136649633052,
+            "bulk_ess": 208.15028521204053,
+            "tail_ess": 367.46668087336434,
+            "mcse_mean": 0.09076890310191009,
+            "mcse_sd": 0.06427356377420883,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["bulk ESS below 400", "tail ESS below 400"],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0130029068187218,
+            "bulk_ess": 188.9869498231576,
+            "tail_ess": 610.206951999416,
+            "mcse_mean": 0.002465499526326707,
+            "mcse_sd": 0.0017460496989181,
+            "mcse_q05": 0.0015768305345567474,
+            "mcse_q95": 0.0020460813372214,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.0077512420514063,
+            "bulk_ess": 240.11517047037034,
+            "tail_ess": 687.3609340771296,
+            "mcse_mean": 5.498816014222424,
+            "mcse_sd": 3.8999659750236417,
+            "mcse_q05": 5.0,
+            "mcse_q95": 7.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["bulk ESS below 400"],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.0293891206893937,
+            "bulk_ess": 167.5185902064066,
+            "tail_ess": 447.6225875749355,
+            "mcse_mean": 0.0009986269640635916,
+            "mcse_sd": 0.0007073831666109115,
+            "mcse_q05": 0.0016527810763997501,
+            "mcse_q95": 0.0010232558299877997,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps000000-003999.csv",
+          "sha256": "aec3949fc4c96f32c8f9cd58efb306185c06a2c1cf9288230e77c9aa80b36064"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps004000-004199.csv",
+          "sha256": "1b2fc700192d9dc20ad0019f595a0a31e533959bfae58ed898da180f7532d993"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps004200-004399.csv",
+          "sha256": "6aad3aa6ca251a64d85ec219e4fa0796fd52630d89253208e8b7aebc91105e01"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps004400-006399.csv",
+          "sha256": "1323e7295807f716ddb1d1fac641894c131b3085f7ad47ff404fb89bacc5f742"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps006400-008399.csv",
+          "sha256": "d1e080f081f4f49b0d8a504f11c08ca411c38f07e934fe5fb44fc8f5e61a5cdb"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps008400-010399.csv",
+          "sha256": "51938909b30b0cb91b1a1b502f8970a128c0d4e636fea18f1cf1b0d3d150ca8d"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps010400-012399.csv",
+          "sha256": "84d127545a75d999d46296d79141ca14c0472f0c7ec718aaefd606af0665c72b"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps012400-014399.csv",
+          "sha256": "191f90a0353735383412ba15f891198a8a556780da696e3dfe9187bac2a9a425"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps000000-003999.csv",
+          "sha256": "b2393ff27aa7a440bcdedd21f5c28a8f633e6c13d8bc2deed8a82daa042cfc19"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps004000-004199.csv",
+          "sha256": "eb527697a147b2b066476db255dbdaf20106d7bbd49fc3525672379d83981abf"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps004200-004399.csv",
+          "sha256": "679de246e31dc1383c87559e9008a6f7dc055257017044f3e18a2fb269b90d26"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps004400-006399.csv",
+          "sha256": "b0e3c3bff29aebd6c7ea64803b732cef9599126cf23692b22ec24c3c26aa161f"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps006400-008399.csv",
+          "sha256": "a2aae5cb826eefdaebd153b6e6c5bd413b3a923bef29bf62b44fcd3d1f67a547"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps008400-010399.csv",
+          "sha256": "37149f9e5090039e600264ac41aaeb6749070616b2d5c0ed32f629535ce82af1"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps010400-012399.csv",
+          "sha256": "c01d85b8058bf9f4c6fb2460607f4e3107b4e98a86869030a4ac7bf4ab2a0590"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps012400-014399.csv",
+          "sha256": "d4ff77fbbaa2757f003ed74ca0ae67b3a848c26595d77477942910b9d62d5b60"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps000000-003999.csv",
+          "sha256": "52c8f62c9f6e9f5c7bbc325cdc4a1d33c7b4f32d6e9d6c67f5ca434f690d2b33"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps004000-004199.csv",
+          "sha256": "3cb62f954a0d56f9142b2c16d97840bbf3d3474c29bd630088bc3c58c82d82b8"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps004200-004399.csv",
+          "sha256": "1745a1f276e77231412057f8c30898719fb32299f0a105350314d11736715678"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps004400-006399.csv",
+          "sha256": "98991cb0e8b2aa2af79b8297c1e97717fe98b023c8c9f2977e8514f0aa3c88a3"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps006400-008399.csv",
+          "sha256": "d2eb7363d00a7e101e40a7771041fa6c3e069feedc5dfdd751b6822a1c9213fc"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps008400-010399.csv",
+          "sha256": "22bf50c09475d49baaa4d58dfbf638171130f22e862c7ff95b02e232de518013"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps010400-012399.csv",
+          "sha256": "c33ce8f3ae4ddf7e93da38f54136f5b40369136ad23c4b35924118f69ae24839"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps012400-014399.csv",
+          "sha256": "5c7e45e82cad42ff280b7087b938f2fadaad1b67d3ffb1d1d7b7e65e5417fa4c"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps000000-003999.csv",
+          "sha256": "163df59595b42585dae3c8f5d3bb7a8bcaebc12c6bad99e335d12f52dcb36afc"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps004000-004199.csv",
+          "sha256": "abe852feaf9e88f5d6de7a8b699d902d7fe00f587d221d73ca22c3831d2704cf"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps004200-004399.csv",
+          "sha256": "36d923dc3de03f003f847fd4a2fd630d882ce1a83fc604f307ec5e50e0c00bd3"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps004400-006399.csv",
+          "sha256": "200073be24aaa1774b3796a92c5d227318253d704225349e896f3c72cc1212fe"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps006400-008399.csv",
+          "sha256": "37c9039d62f20202ac0f24cecc682b65a0e86ec9e14096bbbaa801ee179c5e21"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps008400-010399.csv",
+          "sha256": "2e745386c5ed6e5a17b09ee15b4e2a7c1641411afed1b042b16688b183c7ce61"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps010400-012399.csv",
+          "sha256": "f74017f462a432b236841671598ae66033e103ade4c3dfaad9b054bf535e273a"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps012400-014399.csv",
+          "sha256": "08a94c1d99f1e4be8e949f71ae43247ff43f931bc6d232a88f02c8515383b6ed"
+        }
+      ],
+      "checkpoints": [
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed1117_next14400.pkl",
+          "sha256": "f8de3202b9b075dda12433a49145a5999a158b92b61a6be36f7aadcf2d437b5a"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed2227_next14400.pkl",
+          "sha256": "748616d6c8c786097a91ff7a5a0514b7f04ede75bf74850dde0443aac99ce6dc"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed3331_next14400.pkl",
+          "sha256": "35fae1fee6a4946abf90a9cd5b2fbd54aae5163200f55eb6c242c55f18964e38"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_005/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed4441_next14400.pkl",
+          "sha256": "5ee22602dccf64c09f3c633d3498a8a519210f039bbbb2bb209a2104f0a61e61"
+        }
+      ],
+      "checkpoint_provenance": {
+        "dataset_sha256": "ff09876b030c693307cdf362fef38a0fccf00dee5ed8b6fb973fa29b86f20179",
+        "graph_sha256": "45efa0772341fda12c7b5b39800cbea15eaf2f84029df082955181edc874c36e",
+        "runner_sha256": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+        "checkpoint_code_sha256": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102",
+        "runtime": {
+          "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "packages": {
+            "gerrychain": "0.3.2",
+            "networkx": "3.4.2",
+            "geopandas": "1.1.2",
+            "shapely": "2.0.7",
+            "pandas": "2.2.3",
+            "numpy": "1.26.4",
+            "pyproj": "3.6.1"
+          }
+        },
+        "configuration": {
+          "state": "tx_rebuild_20261102",
+          "layer": "precincts",
+          "assignment_col": "CONG_DIST",
+          "population_col": "TOTPOP",
+          "dem_col": "G24PREDHAR",
+          "rep_col": "G24PRERTRU",
+          "epsilon": 0.001,
+          "node_repeats": 2,
+          "sample_every": 1
+        }
+      }
+    }
+  },
+  "joint_nc": {
+    "nc_block_union": {
+      "status": "unavailable; both complete starting-map groups required"
+    },
+    "nc_precinct_sensitivity": {
+      "status": "unavailable; both complete starting-map groups required"
+    },
+    "nc_population_sensitivity": {
+      "status": "unavailable; both complete starting-map groups required"
+    }
+  },
+  "metric_definitions": {
+    "mean_median": "GerryChain Democratic median-minus-mean two-party district share",
+    "efficiency_gap": "GerryChain two-party efficiency gap; descriptive modeled votes"
+  },
+  "screening": {
+    "rhat_strict_upper": 1.01,
+    "ess_floor": "max(400, 100 * chains)",
+    "meaning": "Conservative numerical flags, not a complete project acceptance criterion"
+  },
+  "unresolved": [
+    "Election source/canvass and NC privacy-noise uncertainties",
+    "MCSE and stability acceptance criteria require scientific review",
+    "No historical-chain continuation or source equivalence is established",
+    "ReCom is not established as uniform or fully legally constrained"
+  ],
+  "condition_mean_differences": {
+    "tx_population": {
+      "baseline": "tx_rebuild",
+      "sensitivity": "tx_population_sensitivity",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_graph_2023": {
+      "baseline": "nc_block_union_2023",
+      "sensitivity": "nc_precinct_sensitivity_2023",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_graph_2025": {
+      "baseline": "nc_block_union_2025",
+      "sensitivity": "nc_precinct_sensitivity_2025",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_population_2023": {
+      "baseline": "nc_block_union_2023",
+      "sensitivity": "nc_population_sensitivity_2023",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_population_2025": {
+      "baseline": "nc_block_union_2025",
+      "sensitivity": "nc_population_sensitivity_2025",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    }
+  }
+}

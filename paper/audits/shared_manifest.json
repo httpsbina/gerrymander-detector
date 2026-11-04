@@ -1,0 +1,179 @@
+{
+  "source_code": {
+    "main.py": "8d73d9d443c734fe6746ed0415c2d2caa4ad3e254acf58123cd510ddf64bf19b",
+    "src/chain/run_ensemble.py": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+    "src/chain/checkpoint_integrity.py": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102"
+  },
+  "experiments": {
+    "tx_rebuild": {
+      "state": "texas",
+      "starting_plan": "current",
+      "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg",
+      "dataset_sha256": "ff09876b030c693307cdf362fef38a0fccf00dee5ed8b6fb973fa29b86f20179",
+      "districts": 38,
+      "epsilon": 0.001,
+      "node_repeats": 2,
+      "seeds": [1117, 2227, 3331, 4441],
+      "steps": 45000,
+      "warmup": 500,
+      "window": 500,
+      "prefix": "tx_rebuild_20261102",
+      "input_dir": "outputs/analysis/convergence_campaign_2026-11-02/tx_shared45000_continuation_20261103/shared_prefix_045000/comparison/snapshot/tx_rebuild/ensembles",
+      "config": "outputs/analysis/convergence_campaign_2026-11-02/states.json"
+    },
+    "tx_dispersed": {
+      "state": "texas",
+      "starting_plan": "dispersed",
+      "dataset": "outputs/analysis/convergence_campaign_2026-11-02/texas_independent_dispersed/tx_dispersed_starts.gpkg",
+      "dataset_sha256": "067a4f131ef48c84bcad9fb41256730bdecf14d8ef4ca62f9699c7d61bd247fd",
+      "districts": 38,
+      "epsilon": 0.001,
+      "node_repeats": 2,
+      "seeds": [10007, 10009, 10037, 10039],
+      "steps": 45000,
+      "warmup": 500,
+      "window": 500,
+      "prefix": "tx_dispersed_20261102",
+      "input_dir": "outputs/analysis/convergence_campaign_2026-11-02/tx_shared45000_continuation_20261103/shared_prefix_045000/comparison/snapshot/tx_dispersed/ensembles",
+      "config": "outputs/analysis/convergence_campaign_2026-11-02/texas_independent_dispersed/seed_10007.json",
+      "seed_configs": {
+        "10007": "outputs/analysis/convergence_campaign_2026-11-02/texas_independent_dispersed/seed_10007.json",
+        "10009": "outputs/analysis/convergence_campaign_2026-11-02/texas_independent_dispersed/seed_10009.json",
+        "10037": "outputs/analysis/convergence_campaign_2026-11-02/texas_independent_dispersed/seed_10037.json",
+        "10039": "outputs/analysis/convergence_campaign_2026-11-02/texas_independent_dispersed/seed_10039.json"
+      },
+      "starting_plan_hashes": {
+        "10007": "f626b25f7fc71167a92bec87edd7bdef733348a97769a962691fad37ee8e4293",
+        "10009": "acb6348f9fd24bcda2e4aa969935f64aebc5f4fc8207fbd0cbfa24f02ef5d945",
+        "10037": "d4a8d21e6c3c45ce7649682710de454acfd8e5898641b2d9826c78675a98f668",
+        "10039": "36d3afd9a7e502be122fda61d954bd8abc359bfa57c58b43ad1275825027ff93"
+      },
+      "expected_checkpoint_provenance": {
+        "10007": {
+          "dataset_sha256": "067a4f131ef48c84bcad9fb41256730bdecf14d8ef4ca62f9699c7d61bd247fd",
+          "graph_sha256": "d5c2fdb5f01d8676017a3795f99352dc6efe9c526e0503767d4c239cdeeb1cf7",
+          "runner_sha256": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+          "checkpoint_code_sha256": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102",
+          "runtime": {
+            "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+            "platform": "macOS-27.2-arm64-arm-64bit",
+            "packages": {
+              "gerrychain": "0.3.2",
+              "networkx": "3.4.2",
+              "geopandas": "1.1.2",
+              "shapely": "2.0.7",
+              "pandas": "2.2.3",
+              "numpy": "1.26.4",
+              "pyproj": "3.6.1"
+            }
+          },
+          "configuration": {
+            "state": "tx_dispersed_20261102",
+            "layer": "precincts",
+            "assignment_col": "START_10007",
+            "population_col": "TOTPOP",
+            "dem_col": "G24PREDHAR",
+            "rep_col": "G24PRERTRU",
+            "epsilon": 0.001,
+            "node_repeats": 2,
+            "sample_every": 1
+          }
+        },
+        "10009": {
+          "dataset_sha256": "067a4f131ef48c84bcad9fb41256730bdecf14d8ef4ca62f9699c7d61bd247fd",
+          "graph_sha256": "ec5fe2786efd7d09814b2921fe93418b37ade304ae7a7269721d671b79dfab90",
+          "runner_sha256": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+          "checkpoint_code_sha256": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102",
+          "runtime": {
+            "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+            "platform": "macOS-27.2-arm64-arm-64bit",
+            "packages": {
+              "gerrychain": "0.3.2",
+              "networkx": "3.4.2",
+              "geopandas": "1.1.2",
+              "shapely": "2.0.7",
+              "pandas": "2.2.3",
+              "numpy": "1.26.4",
+              "pyproj": "3.6.1"
+            }
+          },
+          "configuration": {
+            "state": "tx_dispersed_20261102",
+            "layer": "precincts",
+            "assignment_col": "START_10009",
+            "population_col": "TOTPOP",
+            "dem_col": "G24PREDHAR",
+            "rep_col": "G24PRERTRU",
+            "epsilon": 0.001,
+            "node_repeats": 2,
+            "sample_every": 1
+          }
+        },
+        "10037": {
+          "dataset_sha256": "067a4f131ef48c84bcad9fb41256730bdecf14d8ef4ca62f9699c7d61bd247fd",
+          "graph_sha256": "f678faf34c51008829abd0bfeb8783aff7a31d929220894372a35938e7bd7948",
+          "runner_sha256": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+          "checkpoint_code_sha256": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102",
+          "runtime": {
+            "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+            "platform": "macOS-27.2-arm64-arm-64bit",
+            "packages": {
+              "gerrychain": "0.3.2",
+              "networkx": "3.4.2",
+              "geopandas": "1.1.2",
+              "shapely": "2.0.7",
+              "pandas": "2.2.3",
+              "numpy": "1.26.4",
+              "pyproj": "3.6.1"
+            }
+          },
+          "configuration": {
+            "state": "tx_dispersed_20261102",
+            "layer": "precincts",
+            "assignment_col": "START_10037",
+            "population_col": "TOTPOP",
+            "dem_col": "G24PREDHAR",
+            "rep_col": "G24PRERTRU",
+            "epsilon": 0.001,
+            "node_repeats": 2,
+            "sample_every": 1
+          }
+        },
+        "10039": {
+          "dataset_sha256": "067a4f131ef48c84bcad9fb41256730bdecf14d8ef4ca62f9699c7d61bd247fd",
+          "graph_sha256": "2fb69d78f2b9b4b1ac1c590294e267b85bb90ba69bdb05fc23445b1bdf4586fc",
+          "runner_sha256": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+          "checkpoint_code_sha256": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102",
+          "runtime": {
+            "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+            "platform": "macOS-27.2-arm64-arm-64bit",
+            "packages": {
+              "gerrychain": "0.3.2",
+              "networkx": "3.4.2",
+              "geopandas": "1.1.2",
+              "shapely": "2.0.7",
+              "pandas": "2.2.3",
+              "numpy": "1.26.4",
+              "pyproj": "3.6.1"
+            }
+          },
+          "configuration": {
+            "state": "tx_dispersed_20261102",
+            "layer": "precincts",
+            "assignment_col": "START_10039",
+            "population_col": "TOTPOP",
+            "dem_col": "G24PREDHAR",
+            "rep_col": "G24PRERTRU",
+            "epsilon": 0.001,
+            "node_repeats": 2,
+            "sample_every": 1
+          }
+        }
+      },
+      "initialization_design": "independent population-balanced recursive-tree starts",
+      "kernel_equivalence_file": "outputs/analysis/convergence_campaign_2026-11-02/texas_independent_dispersed/kernel_equivalence.json",
+      "kernel_equivalence_sha256": "a07b2da6dce8e39079c149e4717cb8799c8e9a00c7b5ee0c67a227752cccd535"
+    }
+  },
+  "purpose": "Shared-prefix comparison only; full histories remain the continuation source."
+}

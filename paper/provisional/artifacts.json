@@ -1,0 +1,18 @@
+{
+  "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m paper.export --texas",
+  "process_nice": 15,
+  "files": {
+    "figures/texas/seat_histogram.png": "b8f551fec3b15e8b5b2bde9f5159bc770f49471c557aca5d988acbbd17f3c4e6",
+    "figures/texas/convergence_history.png": "396bdf50ec869406d24f390179bb0f6931e00da5b9ae50e82457f023ed8746d1",
+    "tables/texas/shared_diagnostics.csv": "430621d9f0b360d44959aa727b068db0e9563b3149ad73dbab61fb2fe9985849",
+    "tables/texas/tail_counts.csv": "d1c709e0b9d39117493c087e37051ce8b3eb46bc05d9f848024efee337781f09",
+    "tables/texas/convergence_history.csv": "6872a44d5f3a98c46b8e05b938c767447157dbcce83704a4551f40f52a6e8336",
+    "texas_findings.md": "7cff194ca410b7c236edc60ce9414b7e02985e5285f6bc8642065f516f99f87b",
+    "results.json": "ee2f593c6259209af5b1d739db87795381803c327510ab3268c18ef786ca5a59",
+    "README.md": "34cfa31381cd08dbfe6c7395cd2df91e9656c1273141f48c0def6c7d53d12d07"
+  },
+  "source_code": {
+    "paper/export.py": "98d978dc39912c5abe58e325fcac87ec00057d1cfaf3a7d6dde93934a7f192ae",
+    "paper/texas_outputs.py": "e4e54c16be1e70ed444aae3a46b69d08105b603846b86d5f440c660c39ceaa33"
+  }
+}
