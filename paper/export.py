@@ -153,7 +153,10 @@ def export(build, registry, destination, root=ROOT):
             selected = {"manifest": {"path": frozen["manifest"], "sha256": sha(root / frozen["manifest"])},
                         "audit": {"path": str(Path(frozen["audit_dir"]) / "diagnostics.json"),
                                   "sha256": sha(root / frozen["audit_dir"] / "diagnostics.json")}}
-            texas = collect(ROOT / "paper/texas_audits.json", root, selected, frozen=True)
+            texas_registry = ROOT / "paper/texas_frozen_audits.json"
+            if not texas_registry.is_file():
+                texas_registry = ROOT / "paper/texas_audits.json"
+            texas = collect(texas_registry, root, selected, frozen=True)
             metadata[state]["paper_outputs"] = texas
             artifacts.update({Path(name): formatted(data, name) if name.endswith(".md") else data
                               for name, data in texas_artifacts(texas).items()})

@@ -1,6 +1,6 @@
 # Gerrymander Detector
 
-**Status (November 2026):** North Carolina's six baseline chains pass all four primary convergence screens jointly and within both starting-map groups. I froze the numerical results at 23,000 states per chain under [`nc-baseline-23000`](https://github.com/httpsbina/gerrymander-detector/tree/nc-baseline-23000). Texas continues with four baseline chains and four independent dispersed-start chains. The [freeze rule](docs/freeze_rule.md), [frozen numbers](results.json), and [continuation guide](docs/continuation.md) record the stopping criteria and reproduction commands.
+**Status (November 2026):** I froze North Carolina's six chains at 23,000 states per chain under [`nc-baseline-23000`](https://github.com/httpsbina/gerrymander-detector/tree/nc-baseline-23000) and Texas's eight chains at 70,000 under [`texas-baseline-70000`](https://github.com/httpsbina/gerrymander-detector/tree/texas-baseline-70000). Every primary metric passes jointly and within each starting-map cohort. The [freeze rule](docs/freeze_rule.md), [frozen numbers](paper/results.json), and [paper outputs](paper/README.md) record the stopping criteria and reproduction commands.
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue)](https://python.org)
 [![GerryChain](https://img.shields.io/badge/GerryChain-0.3.2-green)](https://github.com/mggg/GerryChain)
@@ -10,16 +10,18 @@ I study how congressional maps compare with alternative plans sampled using Gerr
 
 ## November 2026 results
 
-I froze North Carolina at 23,000 states per chain; the Texas row below records the 15,000-state baseline audit. I keep later baseline and dispersed-cohort audits in the [continued-run records](deliverables/primary-freeze-2026-11-02/).
+I froze both states after all four primary metrics passed at the same complete chain length within each cohort and jointly. The table shows the seat-count diagnostics; the [frozen paper results](paper/results.json) contain every metric.
 
-| Baseline group         | Chains × states | Seat R-hat | Bulk ESS | Tail ESS |
-| ---------------------- | --------------: | ---------: | -------: | -------: |
-| Texas, ±0.1%           |      4 × 15,000 |    1.00790 |    221.7 |    385.3 |
-| NC, 2023 starting map  |      3 × 23,000 |    1.00367 |    954.0 |   1756.8 |
-| NC, 2025 starting map  |      3 × 23,000 |    1.00185 |   1118.7 |   1543.3 |
-| NC, both starting maps |      6 × 23,000 |    1.00268 |   2025.3 |   3267.9 |
+| Starting group        | Chains × states | Seat R-hat | Bulk ESS | Tail ESS |
+| --------------------- | --------------: | ---------: | -------: | -------: |
+| Texas, baseline       |      4 × 70,000 |    1.00544 |   1463.0 |   2429.7 |
+| Texas, dispersed      |      4 × 70,000 |    1.00256 |   1136.5 |   2606.0 |
+| Texas, joint          |      8 × 70,000 |    1.00385 |   2628.3 |   5024.8 |
+| NC, 2023 starting map |      3 × 23,000 |    1.00367 |    954.0 |   1756.8 |
+| NC, 2025 starting map |      3 × 23,000 |    1.00185 |   1118.7 |   1543.3 |
+| NC, joint             |      6 × 23,000 |    1.00268 |   2025.3 |   3267.9 |
 
-I require R-hat below 1.01 and bulk/tail ESS at least 400 within each three-chain NC group and at least 600 jointly. All four NC metrics pass; Texas is still running, though. The [progress record](deliverables/primary-freeze-2026-11-02/progress.json) includes metric diagnostics and the seed/county disagreement comparison.
+I use R-hat below 1.01 and bulk/tail ESS of at least 400 within each cohort, 600 for joint NC and 800 for joint Texas. I retained all earlier states, seeds and starting maps.
 
 The [initial source-rebuild campaign](deliverables/rebuild-campaign-2026-11-02/README.md) contains the original 26-chain baseline and sensitivity runs. Those files remain separate from the continued baselines.
 
@@ -60,7 +62,7 @@ I use Python 3.12 and the pinned [research dependencies](requirements-research-m
 
 ## Paper outputs
 
-I regenerate the frozen analysis with `python -m paper.export`, which writes [figures](paper/figures), [tables](paper/tables), [full-precision numbers](paper/results.json), and a [one-page NC findings list](paper/nc_findings.md). The exporter reads the freeze registry, so Texas is included when its frozen outputs are registered. The [documentation index](docs/README.md) collects the workflow and data notes.
+I regenerate the frozen analysis with `python -m paper.export`, which writes [figures](paper/figures), [tables](paper/tables), [full-precision numbers](paper/results.json), and a [one-page NC findings list](paper/nc_findings.md). Both states are registered in the frozen export. The [documentation index](docs/README.md) collects the workflow and data notes.
 
 ## Earlier analysis
 
@@ -68,7 +70,7 @@ The [historical Texas report](docs/archive/texas-analysis-before-2026-11-rebuild
 
 ## Limitations
 
-I use modeled presidential vote allocations, while ReCom supplies the implemented sampling process and population/contiguity constraints. Uniform sampling and full legal compliance are outside the model. The source and campaign reports record the remaining geographic and election-source uncertainties. I treat tail counts as descriptive frequencies, including zero counts, and retain the earlier analysis as a historical record because its chain files are unavailable.
+The primary convergence freeze is complete; MCSE and window-stability acceptance criteria still need scientific review. I use modeled presidential vote allocations, while ReCom supplies the implemented sampling process and population/contiguity constraints. Uniform sampling and full legal compliance are outside the model. The source and campaign reports record the remaining geographic and election-source uncertainties. I treat tail counts as descriptive frequencies, including zero counts, and retain the earlier analysis as a historical record because its chain files are unavailable.
 
 ## References
 

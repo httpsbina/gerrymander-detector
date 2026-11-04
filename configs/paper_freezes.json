@@ -1,3 +1,4 @@
 {
-  "nc": "deliverables/nc-baseline-freeze-23000/freeze_manifest.json"
+  "nc": "deliverables/nc-baseline-freeze-23000/freeze_manifest.json",
+  "texas": "deliverables/texas-baseline-freeze-70000/freeze_manifest.json"
 }

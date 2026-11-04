@@ -1,0 +1,104 @@
+{
+  "freeze_tag": "texas-baseline-70000",
+  "freeze_commit": "f709fd45f0cffc2c855b77f39ac98b283def456f",
+  "freeze_manifest_sha256": "13260fcf79e3f869a907079d83939d82a75708be0c203ff6fc296a83aef8dcf7",
+  "frozen_checksums_verified": {
+    "nc": 81,
+    "texas": 574
+  },
+  "reproduced_numbers_exact": true,
+  "reproduced_figures_byte_equal": {
+    "nc": {
+      "nc_block_union_joint_rank.png": true,
+      "nc_block_union_2023_trace.png": true,
+      "nc_block_union_2025_trace.png": true,
+      "nc_block_union_2023_rank.png": true,
+      "nc_block_union_joint_trace.png": true,
+      "nc_block_union_2025_rank.png": true
+    },
+    "texas": {
+      "tx_rebuild_trace.png": true,
+      "tx_dispersed_trace.png": true,
+      "tx_rebuild_rank.png": true,
+      "tx_dispersed_rank.png": true
+    }
+  },
+  "reproduced_tables_byte_equal": {
+    "nc": {
+      "windows.csv": true,
+      "diagnostics.csv": true,
+      "chain_summary.csv": true
+    },
+    "texas": {
+      "windows.csv": true,
+      "diagnostics.csv": true,
+      "chain_summary.csv": true
+    }
+  },
+  "nc_paper_numbers_unchanged": true,
+  "warmup_screens": {
+    "tx_rebuild": {
+      "0": true,
+      "250": true,
+      "500": true,
+      "1000": true
+    },
+    "tx_dispersed": {
+      "0": true,
+      "250": true,
+      "500": true,
+      "1000": true
+    },
+    "joint": {
+      "0": true,
+      "250": true,
+      "500": true,
+      "1000": true
+    }
+  },
+  "research_ready": false,
+  "remaining_acceptance_decisions": [
+    "MCSE and window-stability acceptance criteria"
+  ],
+  "tests": {
+    "passed": 117,
+    "skipped": 0,
+    "log_sha256": "9351bbb533efad99f2de1657889ff8a6d21aad686a8d516bed8c731502a31dbf"
+  },
+  "commands": [
+    "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" .venv/science/bin/python reproduce_paper.py --output-dir outputs/validation/both-frozen-reproduction-20261104",
+    "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" TMPDIR=\"$PWD/.venv/test-runtime\" ../gerrymander-detector/.venv/science/bin/python -m unittest discover -s tests -v"
+  ],
+  "process_nice": 15,
+  "remote_backup": {
+    "isDraft": true,
+    "assets": [
+      {
+        "name": "continuation-20261104-frozen-nc23000-texas70000.tar.gz",
+        "digest": "sha256:b656503f25d0701b83b2a7be38ab4974ddefb8910bf558b5b074e48a534a97bb",
+        "size": 173721294
+      },
+      {
+        "name": "continuation-20261104-frozen-nc23000-texas70000.sha256",
+        "digest": "sha256:fd29aaa7868ee41b5c27cb6427f9986ae0268709e5a23b19b2861a960192a091",
+        "size": 251
+      },
+      {
+        "name": "continuation-20261104-frozen-nc23000-texas70000.validation.json",
+        "digest": "sha256:6f45c7a9a4b05b9ccd869b8f659d4cb0e325298557b3e8e3397c37935ac2b808",
+        "size": 3677
+      }
+    ]
+  },
+  "code_checksums": {
+    "paper/export.py": "e13d61900417673786ce7368d3794cf959f38b33d1c404c0c68b33ef86a2fa0d",
+    "paper/texas_outputs.py": "e4e54c16be1e70ed444aae3a46b69d08105b603846b86d5f440c660c39ceaa33"
+  },
+  "full_suite_command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" TMPDIR=\"$PWD/.venv/test-runtime\" ../gerrymander-detector/.venv/science/bin/python -m unittest discover -s tests -v",
+  "one_command_frozen_export": {
+    "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" ../gerrymander-detector/.venv/science/bin/python -m paper.export --texas --source-root ../gerrymander-detector --output-dir .venv/provisional-task/frozen-cli",
+    "all_artifacts_byte_equal": true,
+    "results_numeric_equal": true,
+    "files_compared": 26
+  }
+}
