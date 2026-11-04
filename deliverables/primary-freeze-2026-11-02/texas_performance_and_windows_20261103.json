@@ -1,0 +1,625 @@
+{
+  "recorded_eastern": "2026-11-03T21:10:14.816786-05:00",
+  "current_rates_method": "Checkpoint next-step difference divided by file-birthtime wall interval;200 states per chain, measured with all8 samplers active.",
+  "current_dispersed_rates": [
+    {
+      "seed": 10009,
+      "first_checkpoint_next_step": 45100,
+      "last_checkpoint_next_step": 45300,
+      "states": 200,
+      "wall_seconds": 158.58345913887024,
+      "steps_per_hour": 4540.196082931335,
+      "interval_start_eastern": "2026-11-03T21:05:22.688242-05:00",
+      "interval_end_eastern": "2026-11-03T21:08:01.271701-05:00"
+    },
+    {
+      "seed": 10007,
+      "first_checkpoint_next_step": 45100,
+      "last_checkpoint_next_step": 45300,
+      "states": 200,
+      "wall_seconds": 161.15750074386597,
+      "steps_per_hour": 4467.679113144877,
+      "interval_start_eastern": "2026-11-03T21:05:09.047843-05:00",
+      "interval_end_eastern": "2026-11-03T21:07:50.205344-05:00"
+    },
+    {
+      "seed": 10037,
+      "first_checkpoint_next_step": 45100,
+      "last_checkpoint_next_step": 45300,
+      "states": 200,
+      "wall_seconds": 172.03238654136658,
+      "steps_per_hour": 4185.258453220785,
+      "interval_start_eastern": "2026-11-03T21:05:28.005535-05:00",
+      "interval_end_eastern": "2026-11-03T21:08:20.037922-05:00"
+    },
+    {
+      "seed": 10039,
+      "first_checkpoint_next_step": 45100,
+      "last_checkpoint_next_step": 45300,
+      "states": 200,
+      "wall_seconds": 217.6192970275879,
+      "steps_per_hour": 3308.5301250133375,
+      "interval_start_eastern": "2026-11-03T21:04:59.164709-05:00",
+      "interval_end_eastern": "2026-11-03T21:08:36.784006-05:00"
+    }
+  ],
+  "completed_segment_wall_vs_execution_rates": [
+    {
+      "first_step": 33000,
+      "seed": 10007,
+      "wall_seconds": 442.12012100219727,
+      "wall_states_per_hour": 8142.583494819292,
+      "recorded_monotonic_seconds": 442.0414546660031,
+      "recorded_states_per_hour": 8144.0325607472305,
+      "wall_start_eastern": "2026-11-03T14:30:58.782183-05:00",
+      "wall_end_eastern": "2026-11-03T14:38:20.902304-05:00"
+    },
+    {
+      "first_step": 33000,
+      "seed": 10037,
+      "wall_seconds": 523.7700226306915,
+      "wall_states_per_hour": 6873.2455933972915,
+      "recorded_monotonic_seconds": 523.7550117500068,
+      "recorded_states_per_hour": 6873.442581430254,
+      "wall_start_eastern": "2026-11-03T14:30:58.782344-05:00",
+      "wall_end_eastern": "2026-11-03T14:39:42.552367-05:00"
+    },
+    {
+      "first_step": 33000,
+      "seed": 10039,
+      "wall_seconds": 526.0480332374573,
+      "wall_states_per_hour": 6843.481531229232,
+      "recorded_monotonic_seconds": 526.0381993749761,
+      "recorded_states_per_hour": 6843.609464630933,
+      "wall_start_eastern": "2026-11-03T14:30:58.782485-05:00",
+      "wall_end_eastern": "2026-11-03T14:39:44.830518-05:00"
+    },
+    {
+      "first_step": 33000,
+      "seed": 10009,
+      "wall_seconds": 544.3012447357178,
+      "wall_states_per_hour": 6613.984507325458,
+      "recorded_monotonic_seconds": 544.2914282499987,
+      "recorded_states_per_hour": 6614.10379284254,
+      "wall_start_eastern": "2026-11-03T14:30:58.782288-05:00",
+      "wall_end_eastern": "2026-11-03T14:40:03.083532-05:00"
+    },
+    {
+      "first_step": 36000,
+      "seed": 10039,
+      "wall_seconds": 509.7925851345062,
+      "wall_states_per_hour": 7061.695491412764,
+      "recorded_monotonic_seconds": 509.78151229198556,
+      "recorded_states_per_hour": 7061.848876814587,
+      "wall_start_eastern": "2026-11-03T15:02:23.797503-05:00",
+      "wall_end_eastern": "2026-11-03T15:10:53.590088-05:00"
+    },
+    {
+      "first_step": 36000,
+      "seed": 10037,
+      "wall_seconds": 516.8829257488251,
+      "wall_states_per_hour": 6964.826696073513,
+      "recorded_monotonic_seconds": 516.8768860420096,
+      "recorded_states_per_hour": 6964.908080078874,
+      "wall_start_eastern": "2026-11-03T15:02:23.797744-05:00",
+      "wall_end_eastern": "2026-11-03T15:11:00.680670-05:00"
+    },
+    {
+      "first_step": 36000,
+      "seed": 10009,
+      "wall_seconds": 528.3581352233887,
+      "wall_states_per_hour": 6813.560272859105,
+      "recorded_monotonic_seconds": 528.3528585830063,
+      "recorded_states_per_hour": 6813.628319632581,
+      "wall_start_eastern": "2026-11-03T15:02:23.797374-05:00",
+      "wall_end_eastern": "2026-11-03T15:11:12.155509-05:00"
+    },
+    {
+      "first_step": 36000,
+      "seed": 10007,
+      "wall_seconds": 558.1361267566681,
+      "wall_states_per_hour": 6450.039385408751,
+      "recorded_monotonic_seconds": 558.1308847079927,
+      "recorded_states_per_hour": 6450.099965142543,
+      "wall_start_eastern": "2026-11-03T15:02:23.797614-05:00",
+      "wall_end_eastern": "2026-11-03T15:11:41.933741-05:00"
+    },
+    {
+      "first_step": 37000,
+      "seed": 10007,
+      "wall_seconds": 16679.09892463684,
+      "wall_states_per_hour": 215.8389980337852,
+      "recorded_monotonic_seconds": 688.818201874994,
+      "recorded_states_per_hour": 5226.342727588555,
+      "wall_start_eastern": "2026-11-03T15:11:41.938818-05:00",
+      "wall_end_eastern": "2026-11-03T19:49:41.037743-05:00"
+    },
+    {
+      "first_step": 37000,
+      "seed": 10037,
+      "wall_seconds": 16706.297592639923,
+      "wall_states_per_hour": 215.48760160874934,
+      "recorded_monotonic_seconds": 716.0540270830097,
+      "recorded_states_per_hour": 5027.553597687768,
+      "wall_start_eastern": "2026-11-03T15:11:41.936655-05:00",
+      "wall_end_eastern": "2026-11-03T19:50:08.234247-05:00"
+    },
+    {
+      "first_step": 37000,
+      "seed": 10039,
+      "wall_seconds": 16706.90330505371,
+      "wall_states_per_hour": 215.4797890588753,
+      "recorded_monotonic_seconds": 716.6623594170087,
+      "recorded_states_per_hour": 5023.286004484081,
+      "wall_start_eastern": "2026-11-03T15:11:41.936397-05:00",
+      "wall_end_eastern": "2026-11-03T19:50:08.839702-05:00"
+    },
+    {
+      "first_step": 37000,
+      "seed": 10009,
+      "wall_seconds": 16713.19308114052,
+      "wall_states_per_hour": 215.398696258844,
+      "recorded_monotonic_seconds": 722.9493575420056,
+      "recorded_states_per_hour": 4979.601907718452,
+      "wall_start_eastern": "2026-11-03T15:11:41.936478-05:00",
+      "wall_end_eastern": "2026-11-03T19:50:15.129559-05:00"
+    },
+    {
+      "first_step": 38000,
+      "seed": 10039,
+      "wall_seconds": 491.7949872016907,
+      "wall_states_per_hour": 7320.123412570692,
+      "recorded_monotonic_seconds": 491.7862982499937,
+      "recorded_states_per_hour": 7320.252745573613,
+      "wall_start_eastern": "2026-11-03T19:50:15.136917-05:00",
+      "wall_end_eastern": "2026-11-03T19:58:26.931904-05:00"
+    },
+    {
+      "first_step": 38000,
+      "seed": 10009,
+      "wall_seconds": 500.6065237522125,
+      "wall_states_per_hour": 7191.2766398184385,
+      "recorded_monotonic_seconds": 500.6046095000056,
+      "recorded_states_per_hour": 7191.304138400987,
+      "wall_start_eastern": "2026-11-03T19:50:15.134668-05:00",
+      "wall_end_eastern": "2026-11-03T19:58:35.741192-05:00"
+    },
+    {
+      "first_step": 38000,
+      "seed": 10007,
+      "wall_seconds": 531.9566950798035,
+      "wall_states_per_hour": 6767.468166670847,
+      "recorded_monotonic_seconds": 531.9554848750122,
+      "recorded_states_per_hour": 6767.483562738061,
+      "wall_start_eastern": "2026-11-03T19:50:15.133966-05:00",
+      "wall_end_eastern": "2026-11-03T19:59:07.090661-05:00"
+    },
+    {
+      "first_step": 38000,
+      "seed": 10037,
+      "wall_seconds": 542.0482108592987,
+      "wall_states_per_hour": 6641.475661902819,
+      "recorded_monotonic_seconds": 542.0469051249966,
+      "recorded_states_per_hour": 6641.491660523062,
+      "wall_start_eastern": "2026-11-03T19:50:15.135495-05:00",
+      "wall_end_eastern": "2026-11-03T19:59:17.183706-05:00"
+    },
+    {
+      "first_step": 43000,
+      "seed": 10039,
+      "wall_seconds": 578.4671046733856,
+      "wall_states_per_hour": 6223.34437155702,
+      "recorded_monotonic_seconds": 578.4494963330217,
+      "recorded_states_per_hour": 6223.533813792844,
+      "wall_start_eastern": "2026-11-03T20:41:59.799829-05:00",
+      "wall_end_eastern": "2026-11-03T20:51:38.266934-05:00"
+    },
+    {
+      "first_step": 43000,
+      "seed": 10037,
+      "wall_seconds": 580.8818936347961,
+      "wall_states_per_hour": 6197.47325480133,
+      "recorded_monotonic_seconds": 580.8660590419895,
+      "recorded_states_per_hour": 6197.642199885816,
+      "wall_start_eastern": "2026-11-03T20:41:59.799720-05:00",
+      "wall_end_eastern": "2026-11-03T20:51:40.681614-05:00"
+    },
+    {
+      "first_step": 43000,
+      "seed": 10009,
+      "wall_seconds": 586.3691442012787,
+      "wall_states_per_hour": 6139.477214313061,
+      "recorded_monotonic_seconds": 586.3528991669882,
+      "recorded_states_per_hour": 6139.647309861346,
+      "wall_start_eastern": "2026-11-03T20:41:59.799562-05:00",
+      "wall_end_eastern": "2026-11-03T20:51:46.168706-05:00"
+    },
+    {
+      "first_step": 43000,
+      "seed": 10007,
+      "wall_seconds": 595.037885427475,
+      "wall_states_per_hour": 6050.034944268736,
+      "recorded_monotonic_seconds": 595.022547874978,
+      "recorded_states_per_hour": 6050.190892524643,
+      "wall_start_eastern": "2026-11-03T20:41:59.799659-05:00",
+      "wall_end_eastern": "2026-11-03T20:51:54.837544-05:00"
+    },
+    {
+      "first_step": 44000,
+      "seed": 10007,
+      "wall_seconds": 567.9150106906891,
+      "wall_states_per_hour": 6338.976664169763,
+      "recorded_monotonic_seconds": 567.9059922499873,
+      "recorded_states_per_hour": 6339.07732816334,
+      "wall_start_eastern": "2026-11-03T20:51:54.839556-05:00",
+      "wall_end_eastern": "2026-11-03T21:01:22.754566-05:00"
+    },
+    {
+      "first_step": 44000,
+      "seed": 10009,
+      "wall_seconds": 584.9595639705658,
+      "wall_states_per_hour": 6154.2715458211505,
+      "recorded_monotonic_seconds": 584.9541059999901,
+      "recorded_states_per_hour": 6154.328968844029,
+      "wall_start_eastern": "2026-11-03T20:51:54.839491-05:00",
+      "wall_end_eastern": "2026-11-03T21:01:39.799055-05:00"
+    },
+    {
+      "first_step": 44000,
+      "seed": 10037,
+      "wall_seconds": 595.967188835144,
+      "wall_states_per_hour": 6040.601005294318,
+      "recorded_monotonic_seconds": 595.9588550000044,
+      "recorded_states_per_hour": 6040.685476516619,
+      "wall_start_eastern": "2026-11-03T20:51:54.842096-05:00",
+      "wall_end_eastern": "2026-11-03T21:01:50.809285-05:00"
+    },
+    {
+      "first_step": 44000,
+      "seed": 10039,
+      "wall_seconds": 607.2132842540741,
+      "wall_states_per_hour": 5928.724046975337,
+      "recorded_monotonic_seconds": 607.2076329999836,
+      "recorded_states_per_hour": 5928.779225343001,
+      "wall_start_eastern": "2026-11-03T20:51:54.839669-05:00",
+      "wall_end_eastern": "2026-11-03T21:02:02.052953-05:00"
+    }
+  ],
+  "power_findings": {
+    "on_ac_power": true,
+    "low_power_mode_enabled_now": false,
+    "thermal_state_now": "nominal (raw0)",
+    "active_logical_cpus": 8,
+    "clamshell_sleep_eastern": "2026-11-03T15:12:08-05:00",
+    "low_battery_sleep_eastern": "2026-11-03T17:28:53-05:00",
+    "hibernate_wake_eastern": "2026-11-03T19:46:01-05:00",
+    "historical_darkwake_thermal_emergency_sleep_logged": true,
+    "detailed_frequency_sample": "Unavailable: administrator password required.",
+    "caffeinate_idle_sleep_assertion_active": true
+  },
+  "audit_findings": {
+    "no_audit_process_present_in_current_cpu_snapshot": true,
+    "dispersed35_audit_wall_seconds": 3.568,
+    "dispersed40_audit_wall_seconds": 3.134,
+    "dispersed45_audit_wall_seconds": 3.419,
+    "shared45_audit_wall_seconds": 56.463
+  },
+  "windows": [
+    {
+      "cohort": "tx_rebuild",
+      "seed": 1117,
+      "windows": [
+        {
+          "first_step": 36000,
+          "last_step": 40999,
+          "dem_seats": 13.026,
+          "cut_edges": 2638.4414,
+          "mean_median": 0.010435234019639425
+        },
+        {
+          "first_step": 41000,
+          "last_step": 45999,
+          "dem_seats": 12.488,
+          "cut_edges": 2645.4726,
+          "mean_median": 0.002438751417975233
+        }
+      ]
+    },
+    {
+      "cohort": "tx_rebuild",
+      "seed": 2227,
+      "windows": [
+        {
+          "first_step": 36000,
+          "last_step": 40999,
+          "dem_seats": 13.2242,
+          "cut_edges": 2693.7118,
+          "mean_median": 0.011379103670635217
+        },
+        {
+          "first_step": 41000,
+          "last_step": 45999,
+          "dem_seats": 13.201,
+          "cut_edges": 2720.8488,
+          "mean_median": 0.01005548544221521
+        }
+      ]
+    },
+    {
+      "cohort": "tx_rebuild",
+      "seed": 3331,
+      "windows": [
+        {
+          "first_step": 36000,
+          "last_step": 40999,
+          "dem_seats": 12.5536,
+          "cut_edges": 2647.0074,
+          "mean_median": 0.008894866496319705
+        },
+        {
+          "first_step": 41000,
+          "last_step": 45999,
+          "dem_seats": 13.227,
+          "cut_edges": 2673.7014,
+          "mean_median": 0.010704307063237077
+        }
+      ]
+    },
+    {
+      "cohort": "tx_rebuild",
+      "seed": 4441,
+      "windows": [
+        {
+          "first_step": 36000,
+          "last_step": 40999,
+          "dem_seats": 12.6552,
+          "cut_edges": 2663.9324,
+          "mean_median": 0.007667912060655093
+        },
+        {
+          "first_step": 41000,
+          "last_step": 45999,
+          "dem_seats": 12.4606,
+          "cut_edges": 2669.2482,
+          "mean_median": 0.011511665389414338
+        }
+      ]
+    },
+    {
+      "cohort": "tx_dispersed",
+      "seed": 10007,
+      "windows": [
+        {
+          "first_step": 35000,
+          "last_step": 39999,
+          "dem_seats": 13.1354,
+          "cut_edges": 2670.2284,
+          "mean_median": 0.013913411520677915
+        },
+        {
+          "first_step": 40000,
+          "last_step": 44999,
+          "dem_seats": 12.7052,
+          "cut_edges": 2678.0288,
+          "mean_median": 0.011539506885504697
+        }
+      ]
+    },
+    {
+      "cohort": "tx_dispersed",
+      "seed": 10009,
+      "windows": [
+        {
+          "first_step": 35000,
+          "last_step": 39999,
+          "dem_seats": 12.5212,
+          "cut_edges": 2707.3176,
+          "mean_median": 0.012001671338634355
+        },
+        {
+          "first_step": 40000,
+          "last_step": 44999,
+          "dem_seats": 12.9796,
+          "cut_edges": 2681.0726,
+          "mean_median": 0.007055030219679875
+        }
+      ]
+    },
+    {
+      "cohort": "tx_dispersed",
+      "seed": 10037,
+      "windows": [
+        {
+          "first_step": 35000,
+          "last_step": 39999,
+          "dem_seats": 12.5046,
+          "cut_edges": 2652.1626,
+          "mean_median": 0.006983437787982086
+        },
+        {
+          "first_step": 40000,
+          "last_step": 44999,
+          "dem_seats": 12.7344,
+          "cut_edges": 2660.4334,
+          "mean_median": 0.007189939656983196
+        }
+      ]
+    },
+    {
+      "cohort": "tx_dispersed",
+      "seed": 10039,
+      "windows": [
+        {
+          "first_step": 35000,
+          "last_step": 39999,
+          "dem_seats": 13.1372,
+          "cut_edges": 2651.5134,
+          "mean_median": 0.011782771434018673
+        },
+        {
+          "first_step": 40000,
+          "last_step": 44999,
+          "dem_seats": 12.739,
+          "cut_edges": 2697.8346,
+          "mean_median": 0.006224647395575617
+        }
+      ]
+    }
+  ],
+  "windows_method": "Last10000 complete recorded states at measurement start, split into two5000-state windows. Baseline36000\u201340999 and41000\u201345999; dispersed35000\u201339999 and40000\u201344999.",
+  "dispersed_cut_edge_30000_to35000_window_changes": [
+    {
+      "seed": 10007,
+      "first_window": [25000, 29999],
+      "second_window": [30000, 34999],
+      "first_mean_cut_edges": 2637.4716,
+      "second_mean_cut_edges": 2617.2898,
+      "change_mean_cut_edges": -20.18179999999984,
+      "first_lag1": 0.981500420193479,
+      "second_lag1": 0.9827782614901625
+    },
+    {
+      "seed": 10009,
+      "first_window": [25000, 29999],
+      "second_window": [30000, 34999],
+      "first_mean_cut_edges": 2692.8338,
+      "second_mean_cut_edges": 2693.9672,
+      "change_mean_cut_edges": 1.1334000000001652,
+      "first_lag1": 0.9806933022313615,
+      "second_lag1": 0.9805216104794248
+    },
+    {
+      "seed": 10037,
+      "first_window": [25000, 29999],
+      "second_window": [30000, 34999],
+      "first_mean_cut_edges": 2656.6462,
+      "second_mean_cut_edges": 2635.2398,
+      "change_mean_cut_edges": -21.406400000000303,
+      "first_lag1": 0.9829664814152617,
+      "second_lag1": 0.9827673187917334
+    },
+    {
+      "seed": 10039,
+      "first_window": [25000, 29999],
+      "second_window": [30000, 34999],
+      "first_mean_cut_edges": 2651.545,
+      "second_mean_cut_edges": 2672.4406,
+      "change_mean_cut_edges": 20.89559999999983,
+      "first_lag1": 0.9825191393711812,
+      "second_lag1": 0.9798662893188322
+    }
+  ],
+  "informational25000": {
+    "informational_only": true,
+    "eligible_for_freeze": false,
+    "recorded_steps_inclusive": [0, 24999],
+    "retained_steps_inclusive": [500, 24999],
+    "warmup_per_chain": 500,
+    "joint_metrics": {
+      "dem_seats": {
+        "rank_split_rhat": 1.0109102645752255,
+        "bulk_ess": 719.7025208010673,
+        "tail_ess": 1610.8420699328126,
+        "all_finite": true,
+        "ess_screening_minimum": 800
+      },
+      "efficiency_gap": {
+        "rank_split_rhat": 1.0114238998787333,
+        "bulk_ess": 676.0377873872333,
+        "tail_ess": 2016.228715952357,
+        "all_finite": true,
+        "ess_screening_minimum": 800
+      },
+      "cut_edges": {
+        "rank_split_rhat": 1.0155445448463336,
+        "bulk_ess": 719.1414802310351,
+        "tail_ess": 2347.122546845707,
+        "all_finite": true,
+        "ess_screening_minimum": 800
+      },
+      "mean_median": {
+        "rank_split_rhat": 1.0210995423741729,
+        "bulk_ess": 642.5866262543046,
+        "tail_ess": 1750.8851814194677,
+        "all_finite": true,
+        "ess_screening_minimum": 800
+      }
+    },
+    "cohort_seat_means": {
+      "tx_rebuild": {
+        "retained_states": 98000,
+        "democratic_seat_sum": 1262501,
+        "mean_democratic_seats": 12.882663265306123
+      },
+      "tx_dispersed": {
+        "retained_states": 98000,
+        "democratic_seat_sum": 1260330,
+        "mean_democratic_seats": 12.860510204081633
+      }
+    },
+    "chain_seat_means": [
+      {
+        "cohort": "tx_rebuild",
+        "seed": 1117,
+        "retained_states": 24500,
+        "democratic_seat_sum": 316697,
+        "mean_democratic_seats": 12.926408163265306
+      },
+      {
+        "cohort": "tx_rebuild",
+        "seed": 2227,
+        "retained_states": 24500,
+        "democratic_seat_sum": 313670,
+        "mean_democratic_seats": 12.802857142857142
+      },
+      {
+        "cohort": "tx_rebuild",
+        "seed": 3331,
+        "retained_states": 24500,
+        "democratic_seat_sum": 312738,
+        "mean_democratic_seats": 12.764816326530612
+      },
+      {
+        "cohort": "tx_rebuild",
+        "seed": 4441,
+        "retained_states": 24500,
+        "democratic_seat_sum": 319396,
+        "mean_democratic_seats": 13.03657142857143
+      },
+      {
+        "cohort": "tx_dispersed",
+        "seed": 10007,
+        "retained_states": 24500,
+        "democratic_seat_sum": 313856,
+        "mean_democratic_seats": 12.810448979591836
+      },
+      {
+        "cohort": "tx_dispersed",
+        "seed": 10009,
+        "retained_states": 24500,
+        "democratic_seat_sum": 316041,
+        "mean_democratic_seats": 12.899632653061225
+      },
+      {
+        "cohort": "tx_dispersed",
+        "seed": 10037,
+        "retained_states": 24500,
+        "democratic_seat_sum": 314233,
+        "mean_democratic_seats": 12.825836734693878
+      },
+      {
+        "cohort": "tx_dispersed",
+        "seed": 10039,
+        "retained_states": 24500,
+        "democratic_seat_sum": 316200,
+        "mean_democratic_seats": 12.906122448979591
+      }
+    ]
+  },
+  "sampler_worker_and_power_settings_changed": false,
+  "limits": [
+    "Current rates span short200-state intervals.",
+    "Current nominal thermal status cannot quantify historical frequency throttling.",
+    "Window means identify trajectory movement but do not assign the full pooled ESS change to a single chain."
+  ]
+}
