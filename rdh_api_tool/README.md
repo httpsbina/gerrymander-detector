@@ -1,22 +1,15 @@
-# API
-This repo contains two files:
+# RDH API tools
 
-1. Jupyter notebook with API retrieval script with prompts to set parameters (RDH_API.ipynb).
-2. Jupyter notebook with API retrieval script with manually setting parameters (RDH_API_SET_PARAM.ipynb).
-3. README from GreenInfo (our web developers) with additional information on the WordPress API (Download_API.txt).
+I retain these notebooks from the [Redistricting Data Hub API repository](https://github.com/nonpartisan-redistricting-datahub/api), with the provider's WordPress API notes in `Download_API.txt`. RDH wrote the notebooks; I use them to retrieve source data.
 
-The jupyter notebooks in this repo can be used to extract data from the RDH API. Designated API users can "Run All" and fill out the prompts as needed (e.g. username, password, states of interest, filtering paramters, etc.) for the RDH_API script, and set the parameters manually at the top for RDH_API_SET_PARAM script. The scripts use pandas, requests, io, numpy, and getpass libraries. If you do not have these on your system, you may need to install them. You should not have to modify any of the code to retrieve data from the API, which will be extracted to the directory in which this script is housed on your system. You must be a designated API user by RDH in order for the script to work, this is a different status than a normal, verified account.
+## Files and execution
 
-The notebook uses pandas version 1.3.1, requests version 2.25.1, and numpy version 1.20.3. The script may run on different versions, but if you are receiving an import error, try installing these versions.
+- `RDH_API.ipynb`: interactive account and search-parameter entry.
+- `RDH_API_SET_PARAMS.ipynb`: parameters set at the top of the notebook.
+- `Download_API.txt`: provider endpoint documentation.
 
-Please note that there is additional information about datasets on our website: redistrictingdatahub.org. Should you be interested in this information, please navigate to your state(s) of interest and then desired dataset(s).
+I run the selected notebook from its directory, where it writes the downloaded files. The notebooks use pandas, requests, io, numpy and getpass; the recorded package versions are pandas 1.3.1, requests 2.25.1 and numpy 1.20.3. I keep dataset details with the state pages at [RDH](https://redistrictingdatahub.org), and the provider contact is info@redistrictingdatahub.org.
 
-If you have any questions or requests about/for the script, accessing RDH data, or becoming a designated API user, please contact info@redistrictingdatahub.org. 
+## Limitations
 
-# RDH API Tool
-
-These notebooks are from the [Redistricting Data Hub's official API repo](https://github.com/nonpartisan-redistricting-datahub/api). Included here for convenience — all credit to RDH.
-
-You need to be an approved API user to use these. Apply at redistrictingdatahub.org.
-
-`download_texas.py` is not included in this repo because it contains login credentials.
+The notebooks require designated API access, which differs from a verified website account. I keep account details outside Git; the local credential-bearing `download_texas.py` is excluded. These notebook versions describe the provider tools, while the research environment has its own pinned package set.

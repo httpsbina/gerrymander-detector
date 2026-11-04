@@ -23,42 +23,33 @@
     </nav>
     <div class="wrap">
       <div class="page-header">
-        <div class="label">Next steps</div>
-        <h1>Continue the baselines</h1>
+        <h1>Continuing the Texas baseline</h1>
         <p class="lead">
           I froze the NC baseline after its joint and starting-map screens
-          passed; Texas continues under the same recorded criteria.
+          passed; Texas is still running, though.
         </p>
       </div>
       <div class="content">
-        <div class="future-item">
-          <strong>Texas convergence</strong>
-          <p>
-            I retain the baseline and dispersed-start chains, with every primary
-            metric assessed within each cohort and jointly. I continue the same
-            chains until the recorded screens pass.
-          </p>
-        </div>
-        <div class="future-item">
-          <strong>Paper outputs</strong>
-          <p>
-            I generate figures, tables, and the findings list from registered
-            frozen outputs, keeping the numerical source record separate from
-            the prose.
-          </p>
-        </div>
-        <div class="future-item">
-          <strong>Transfer</strong>
-          <p>
-            I preserve complete chain segments and matching checkpoints so that
-            runs can continue on another machine, with replay checks and any
-            runtime boundary recorded.
-          </p>
-        </div>
+        <p>
+          I retain the four baseline and four dispersed-start Texas chains,
+          checking every primary metric within each cohort and jointly. I
+          continue those chains under the recorded sampler and constraints until
+          they meet the freeze criteria.
+        </p>
+        <p>
+          I generate paper figures, tables and findings from registered frozen
+          outputs. When Texas freezes, the same export reads its registered
+          inputs; the numerical record stays with the figures and tables.
+        </p>
+        <p>
+          I also retain complete CSV segments and matching checkpoints so I can
+          continue on another machine. I check replay there and record any
+          runtime boundary before adding a new segment.
+        </p>
         <h2>Limitations</h2>
         <p>
-          I keep the current sampler and constraints fixed during convergence
-          work; data and model sensitivity remain separate experiments.
+          The convergence runs keep the sampler and constraints fixed. I assess
+          data and model sensitivity in separate experiments.
         </p>
       </div>
       <footer>

@@ -89,19 +89,19 @@ def state_metadata(frozen, raw, root):
 def findings(raw, metadata):
     rows = raw["chain_summary"]
     lines = ["# North Carolina findings", "",
-             f"- I ran {metadata['chains']} chains, recording {metadata['recorded_states']:,} states and retaining {metadata['retained_states']:,} after warmup.",
-             f"- I recorded {rows[0]['states']:,} states per chain and used {rows[0]['warmup']:,} warmup states, leaving {rows[0]['retained_states']:,} per chain."]
+             f"I ran {metadata['chains']} chains, recording {metadata['recorded_states']:,} states and retaining {metadata['retained_states']:,} after warmup. Each chain contains {rows[0]['states']:,} recorded states; removing {rows[0]['warmup']:,} warmup states leaves {rows[0]['retained_states']:,} per chain.", ""]
     for group, details in metadata["groups"].items():
         seeds = ", ".join(map(str, details["seeds"]))
-        lines.append(f"- I started {group} from the {details['starting_plan']} assignment with seeds {seeds}; its initial map has {details['initial_democratic_majority_districts']} Democratic-majority districts under the presidential vote model.")
+        lines.append(f"I started `{group}` from the {details['starting_plan']} assignment with seeds {seeds}. Its initial map produces {details['initial_democratic_majority_districts']} Democratic-majority districts under the presidential vote model.")
+        lines.append("")
     lines.extend(["", "| Group | Metric | R-hat | Bulk ESS | Tail ESS |", "| --- | --- | ---: | ---: | ---: |"])
     for group, metrics in metadata["display"].items():
         for metric, values in metrics.items():
             lines.append(f"| {group} | {LABELS[metric]} | {values['rhat']} | {values['bulk_ess']} | {values['tail_ess']} |")
     joint = raw["primary_diagnostics"]["joint"]
-    lines.extend(["", f"- I recorded joint seat-count mean MCSE of {joint['dem_seats']['mcse_mean']:.8f}; the full precision is in `results.json`.",
+    lines.extend(["", f"I recorded joint seat-count mean MCSE of {joint['dem_seats']['mcse_mean']:.8f}; the full precision is in `results.json`.",
                   "", "## Limitations", "",
-                  "- I use modeled presidential votes; sampler uniformity and full legal compliance remain outside the implemented model."])
+                  "I use modeled presidential votes with the recorded constraints; I have not established sampler uniformity or full legal compliance."])
     return formatted(("\n".join(lines) + "\n").encode(), "nc_findings.md")
 
 

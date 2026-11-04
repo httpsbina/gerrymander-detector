@@ -1,27 +1,25 @@
 # Research workflow
 
-I compare congressional assignments with ReCom ensembles, using the same data and constraints within each experiment. NC is frozen at `nc-baseline-23000`; Texas continues with the original baseline cohort and four dispersed starts.
+I compare enacted congressional assignments with ReCom samples, keeping the geographic inputs and constraints fixed within each experiment. NC is frozen at `nc-baseline-23000`; I am continuing the four original Texas chains and four dispersed-start chains.
 
-## Data and runs
+## Data and sampling
 
-I validate block IDs, coverage, totals, geometry, adjacency, assignments, and contiguity before simulation. Texas PLANC2333 stays at Census-block resolution, while NC's two assignments share the block-union geography described in the [source audit](../deliverables/rdh-research-audit-2026-11-02/README.md).
+I check block IDs and coverage, population and election totals, geometry, adjacency, assignments and contiguity before sampling. I score Texas PLANC2333 at block resolution and use one block-union geography for both NC assignments, as recorded in the [source report](../deliverables/rdh-research-audit-2026-11-02/README.md).
 
-I added the fourth Texas seed before diagnostic review, population-sensitivity runs after the first low-ESS NC results, and four dispersed Texas starts during continuation.
+I added the fourth Texas seed before diagnostic review, population-sensitivity chains after the first low-ESS NC results, and four dispersed Texas starts during continuation.
 
-I keep every chain and recorded segment, with seeds, commands, software versions, and checksums in the execution records. The [state CLI guide](state_cli.md) lists the commands; the [continuation record](continuation.md) covers transfer and replay.
+I retain every recorded segment and chain, with seeds, commands, versions and checksums in the run records. The [state CLI guide](state_cli.md) gives the execution commands, while the [continuation record](continuation.md) describes transfer and replay.
 
-## Freeze and paper outputs
+## Freeze and paper export
 
-I freeze a state only when every primary metric passes jointly and within each starting-map group, following the [recorded rule](freeze_rule.md). A date or simulation budget never substitutes for that screen.
-
-I regenerate the registered frozen results and export the paper layout with:
+I freeze a state when every primary metric passes jointly and within each starting-map group under the [recorded rule](freeze_rule.md). I use the convergence screens as the stopping condition, regardless of the date or simulation budget.
 
 ```sh
 python -m paper.export
 ```
 
-The exporter calls the unchanged frozen reproducer, writes figures under `paper/figures`, tables under `paper/tables`, and numbers under `paper/results.json`. It reads the freeze registry, so Texas is included when its freeze is registered. It checks existing artifacts before writing and stops if an existing state's numbers or figures differ.
+I use this command to call the frozen reproducer and write figures to `paper/figures`, tables to `paper/tables` and values to `paper/results.json`. The exporter reads the freeze registry, so it includes Texas when its freeze is registered; it stops if an existing state's numbers or figures differ.
 
 ## Limitations
 
-I use modeled election allocations and the implemented population and contiguity constraints; these ensembles carry no claim of uniform sampling or full legal compliance. The source and campaign reports record the geographic and election-model uncertainties for each experiment.
+I use modeled election allocations with population and graph-contiguity constraints. I have not established sampler uniformity or full legal compliance; geographic and election-model uncertainties remain in the source and campaign reports.
