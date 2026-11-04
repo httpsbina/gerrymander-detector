@@ -1,0 +1,21 @@
+{
+  "command": "python -m paper.export",
+  "frozen_states": ["nc"],
+  "freeze_manifests": {
+    "nc": "deliverables/nc-baseline-freeze-23000/freeze_manifest.json"
+  },
+  "files": {
+    "figures/nc/nc_block_union_2023_rank.png": "e76614a39f08a2398892b731b5b1da5df4f73da555f0f57112db64f8620b0d4a",
+    "figures/nc/nc_block_union_2023_trace.png": "09ad07dcda5a29faaef04428b4e0697eaab298a9924951af0a4358f356bf19e8",
+    "figures/nc/nc_block_union_2025_rank.png": "d704d2ccc0987716da5bd7f08972d99ed1b24aa1deafc9b9e195a0808e329db4",
+    "figures/nc/nc_block_union_2025_trace.png": "71b314dbbd8d4da1564977dcf65043914558af1c489fb9f3c0fd59a416931533",
+    "figures/nc/nc_block_union_joint_rank.png": "d8a6b681837ec64f814ccadc0fe4281b31b7f9dc4e82ab82c6133ff564e44cb4",
+    "figures/nc/nc_block_union_joint_trace.png": "c5f621bb90795a4e44fbba861f274bf9a62e9786774687b62c5ecdaada3b1d58",
+    "nc_findings.md": "38f918095bab4c481d8fb83bf0dc4c651bbacf5184fa1f1fe97c8522404ffa14",
+    "tables/nc/chain_summary.csv": "847b9f9bc0e55b04a252cf06045deb3840c4a0d6f945004077018571ad262c45",
+    "tables/nc/diagnostics.csv": "699697f57e322ddcc12374f296114e07d56f3162c2f7437fffe0c8e5ef46f925",
+    "tables/nc/primary_diagnostics.csv": "226a1d84b13df26b7e6866846309169d03e7250f709af4933f07fd0d55da67a2",
+    "tables/nc/windows.csv": "a03a92c70d2ab1ff0f9c1402691eeac231a9c20f141a3e22777afd2d236b17c2",
+    "results.json": "f7a46c22d4c3f16b483039a3ff18e54568e2003c19cd9343b2ff81cee93c2c90"
+  }
+}

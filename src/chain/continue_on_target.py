@@ -134,10 +134,8 @@ def main():
         with path.open("x") as stream:
             json.dump({"source_code": manifest["source_code"], "experiments": {key: experiment}}, stream, indent=2)
         paths[key] = path
-    milestone = max(50000, (max(e["steps"] for e in texas.values()) // 5000 + 1) * 5000)
-    subprocess.run([sys.executable, "src/chain/run_texas_until_freeze.py", "--baseline-manifest", str(paths["tx_rebuild"]),
-                    "--dispersed-manifest", str(paths["tx_dispersed"]), "--output-dir", "transferred_continuation",
-                    "--first-joint-milestone", str(milestone)], cwd=ROOT, check=True)
+    subprocess.run([sys.executable, "src/chain/run_texas_shared_prefix.py", "--baseline-manifest", str(paths["tx_rebuild"]),
+                    "--dispersed-manifest", str(paths["tx_dispersed"]), "--output-dir", "transferred_continuation"], cwd=ROOT, check=True)
 
 
 if __name__ == "__main__":

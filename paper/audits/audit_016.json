@@ -1,0 +1,553 @@
+{
+  "research_ready": false,
+  "manifest_sha256": "657a5bd64a891707210ef2313fecc3b6c478bfe6459aceb6c1e88ffc495ba3c6",
+  "experiments": {
+    "tx_rebuild": {
+      "integrity": "pass",
+      "diagnostics": {
+        "dem_seats": {
+          "rank_split_rhat": 1.024082388841383,
+          "bulk_ess": 112.14593413286077,
+          "tail_ess": 216.1292025351211,
+          "mcse_mean": 0.11425941088364003,
+          "mcse_sd": 0.08100514906714856,
+          "mcse_q05": 0.0,
+          "mcse_q95": 0.0,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": [
+            "rank R-hat at or above 1.01",
+            "bulk ESS below 400",
+            "tail ESS below 400"
+          ],
+          "ess_screening_minimum": 400
+        },
+        "efficiency_gap": {
+          "rank_split_rhat": 1.0302688138442437,
+          "bulk_ess": 113.84142230971922,
+          "tail_ess": 293.43570377035115,
+          "mcse_mean": 0.002902848756293813,
+          "mcse_sd": 0.002057906755230216,
+          "mcse_q05": 0.002438474397866798,
+          "mcse_q95": 0.0027282717240901,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": [
+            "rank R-hat at or above 1.01",
+            "bulk ESS below 400",
+            "tail ESS below 400"
+          ],
+          "ess_screening_minimum": 400
+        },
+        "cut_edges": {
+          "rank_split_rhat": 1.057623913238314,
+          "bulk_ess": 90.20132990611297,
+          "tail_ess": 298.8424068134506,
+          "mcse_mean": 9.426741951071744,
+          "mcse_sd": 6.7420928180812965,
+          "mcse_q05": 7.0,
+          "mcse_q95": 11.0,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": [
+            "rank R-hat at or above 1.01",
+            "bulk ESS below 400",
+            "tail ESS below 400"
+          ],
+          "ess_screening_minimum": 400
+        },
+        "mean_median": {
+          "rank_split_rhat": 1.050583610313303,
+          "bulk_ess": 79.9752162377359,
+          "tail_ess": 229.28777340540287,
+          "mcse_mean": 0.0014764393947535428,
+          "mcse_sd": 0.0010478229266782753,
+          "mcse_q05": 0.0026250598747992503,
+          "mcse_q95": 0.0015578060504333,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": [
+            "rank R-hat at or above 1.01",
+            "bulk ESS below 400",
+            "tail ESS below 400"
+          ],
+          "ess_screening_minimum": 400
+        }
+      },
+      "warmup_sensitivity": {
+        "0": {
+          "dem_seats": {
+            "rank_split_rhat": 1.0220414527874602,
+            "bulk_ess": 120.18307091976608,
+            "tail_ess": 266.0879017101837,
+            "mcse_mean": 0.11058905865872823,
+            "mcse_sd": 0.07869186474474653,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0295480952699352,
+            "bulk_ess": 112.37018646346296,
+            "tail_ess": 310.5629949752002,
+            "mcse_mean": 0.002939989692166277,
+            "mcse_sd": 0.0020842103439554127,
+            "mcse_q05": 0.0024000455268571516,
+            "mcse_q95": 0.0029211285495162496,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.0517976508070659,
+            "bulk_ess": 76.23516449979206,
+            "tail_ess": 393.7831456147735,
+            "mcse_mean": 11.593841416276616,
+            "mcse_sd": 8.227141657220074,
+            "mcse_q05": 7.5,
+            "mcse_q95": 11.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.0479931596309116,
+            "bulk_ess": 75.85182504436091,
+            "tail_ess": 273.0832495800335,
+            "mcse_mean": 0.0015547613198080208,
+            "mcse_sd": 0.0011035345554774442,
+            "mcse_q05": 0.0022224502467099996,
+            "mcse_q95": 0.0014008188250327486,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          }
+        },
+        "250": {
+          "dem_seats": {
+            "rank_split_rhat": 1.022691046526138,
+            "bulk_ess": 118.95508627865307,
+            "tail_ess": 239.61798474468335,
+            "mcse_mean": 0.11044748469018845,
+            "mcse_sd": 0.07837459353643116,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.029546382362658,
+            "bulk_ess": 116.80074828002371,
+            "tail_ess": 311.41795014661636,
+            "mcse_mean": 0.0028546898094255944,
+            "mcse_sd": 0.0020236225508184604,
+            "mcse_q05": 0.002327596195301297,
+            "mcse_q95": 0.0027969805861617998,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.0512752336163576,
+            "bulk_ess": 112.1395715369299,
+            "tail_ess": 346.3933504766872,
+            "mcse_mean": 8.237979100246099,
+            "mcse_sd": 5.840505527673809,
+            "mcse_q05": 7.5,
+            "mcse_q95": 10.5,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.047364491272667,
+            "bulk_ess": 81.31253808004847,
+            "tail_ess": 247.84030715198193,
+            "mcse_mean": 0.0014566015718472092,
+            "mcse_sd": 0.001033666639902378,
+            "mcse_q05": 0.0025695294720573993,
+            "mcse_q95": 0.0014564623480888498,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          }
+        },
+        "500": {
+          "dem_seats": {
+            "rank_split_rhat": 1.024082388841383,
+            "bulk_ess": 112.14593413286077,
+            "tail_ess": 216.1292025351211,
+            "mcse_mean": 0.11425941088364003,
+            "mcse_sd": 0.08100514906714856,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0302688138442437,
+            "bulk_ess": 113.84142230971922,
+            "tail_ess": 293.43570377035115,
+            "mcse_mean": 0.002902848756293813,
+            "mcse_sd": 0.002057906755230216,
+            "mcse_q05": 0.002438474397866798,
+            "mcse_q95": 0.0027282717240901,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.057623913238314,
+            "bulk_ess": 90.20132990611297,
+            "tail_ess": 298.8424068134506,
+            "mcse_mean": 9.426741951071744,
+            "mcse_sd": 6.7420928180812965,
+            "mcse_q05": 7.0,
+            "mcse_q95": 11.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.050583610313303,
+            "bulk_ess": 79.9752162377359,
+            "tail_ess": 229.28777340540287,
+            "mcse_mean": 0.0014764393947535428,
+            "mcse_sd": 0.0010478229266782753,
+            "mcse_q05": 0.0026250598747992503,
+            "mcse_q95": 0.0015578060504333,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          }
+        },
+        "1000": {
+          "dem_seats": {
+            "rank_split_rhat": 1.0239470922284915,
+            "bulk_ess": 117.64297200603987,
+            "tail_ess": 200.41596872288616,
+            "mcse_mean": 0.11258594562554786,
+            "mcse_sd": 0.07981058240861455,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0329420872826904,
+            "bulk_ess": 109.90657322527744,
+            "tail_ess": 326.82182916462733,
+            "mcse_mean": 0.002956004752280429,
+            "mcse_sd": 0.0020957678031877083,
+            "mcse_q05": 0.0028564273333204562,
+            "mcse_q95": 0.0025914774115274,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.0695772519792694,
+            "bulk_ess": 68.68683300807368,
+            "tail_ess": 214.35928329318645,
+            "mcse_mean": 10.832602982926208,
+            "mcse_sd": 7.72844628922634,
+            "mcse_q05": 7.5,
+            "mcse_q95": 12.5,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.0651904814787612,
+            "bulk_ess": 70.17610641177244,
+            "tail_ess": 202.08112942471007,
+            "mcse_mean": 0.0015905081717838441,
+            "mcse_sd": 0.0011293535252538782,
+            "mcse_q05": 0.0030137458449071503,
+            "mcse_q95": 0.0017435731838239994,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps000000-003999.csv",
+          "sha256": "aec3949fc4c96f32c8f9cd58efb306185c06a2c1cf9288230e77c9aa80b36064"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps004000-004199.csv",
+          "sha256": "1b2fc700192d9dc20ad0019f595a0a31e533959bfae58ed898da180f7532d993"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps004200-004399.csv",
+          "sha256": "6aad3aa6ca251a64d85ec219e4fa0796fd52630d89253208e8b7aebc91105e01"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps004400-006399.csv",
+          "sha256": "1323e7295807f716ddb1d1fac641894c131b3085f7ad47ff404fb89bacc5f742"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps000000-003999.csv",
+          "sha256": "b2393ff27aa7a440bcdedd21f5c28a8f633e6c13d8bc2deed8a82daa042cfc19"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps004000-004199.csv",
+          "sha256": "eb527697a147b2b066476db255dbdaf20106d7bbd49fc3525672379d83981abf"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps004200-004399.csv",
+          "sha256": "679de246e31dc1383c87559e9008a6f7dc055257017044f3e18a2fb269b90d26"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps004400-006399.csv",
+          "sha256": "b0e3c3bff29aebd6c7ea64803b732cef9599126cf23692b22ec24c3c26aa161f"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps000000-003999.csv",
+          "sha256": "52c8f62c9f6e9f5c7bbc325cdc4a1d33c7b4f32d6e9d6c67f5ca434f690d2b33"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps004000-004199.csv",
+          "sha256": "3cb62f954a0d56f9142b2c16d97840bbf3d3474c29bd630088bc3c58c82d82b8"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps004200-004399.csv",
+          "sha256": "1745a1f276e77231412057f8c30898719fb32299f0a105350314d11736715678"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps004400-006399.csv",
+          "sha256": "98991cb0e8b2aa2af79b8297c1e97717fe98b023c8c9f2977e8514f0aa3c88a3"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps000000-003999.csv",
+          "sha256": "163df59595b42585dae3c8f5d3bb7a8bcaebc12c6bad99e335d12f52dcb36afc"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps004000-004199.csv",
+          "sha256": "abe852feaf9e88f5d6de7a8b699d902d7fe00f587d221d73ca22c3831d2704cf"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps004200-004399.csv",
+          "sha256": "36d923dc3de03f003f847fd4a2fd630d882ce1a83fc604f307ec5e50e0c00bd3"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps004400-006399.csv",
+          "sha256": "200073be24aaa1774b3796a92c5d227318253d704225349e896f3c72cc1212fe"
+        }
+      ],
+      "checkpoints": [
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed1117_next6400.pkl",
+          "sha256": "d65bfad6d3cf8286ae32db655e861e17db065319f65c552ab696accb980b9814"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed2227_next6400.pkl",
+          "sha256": "76aa3db8b7ffa40bce018aff0834dde5f417a66240e73c88c7773ee789964463"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed3331_next6400.pkl",
+          "sha256": "1b938477609f356338ace567cc5646d6585277efea5d7c49589fca2279a3746a"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_001/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed4441_next6400.pkl",
+          "sha256": "99f7669808a77a4b76a415bdf39fa048787be46f301f9a97413c6df4ffe6201d"
+        }
+      ],
+      "checkpoint_provenance": {
+        "dataset_sha256": "ff09876b030c693307cdf362fef38a0fccf00dee5ed8b6fb973fa29b86f20179",
+        "graph_sha256": "45efa0772341fda12c7b5b39800cbea15eaf2f84029df082955181edc874c36e",
+        "runner_sha256": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+        "checkpoint_code_sha256": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102",
+        "runtime": {
+          "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "packages": {
+            "gerrychain": "0.3.2",
+            "networkx": "3.4.2",
+            "geopandas": "1.1.2",
+            "shapely": "2.0.7",
+            "pandas": "2.2.3",
+            "numpy": "1.26.4",
+            "pyproj": "3.6.1"
+          }
+        },
+        "configuration": {
+          "state": "tx_rebuild_20261102",
+          "layer": "precincts",
+          "assignment_col": "CONG_DIST",
+          "population_col": "TOTPOP",
+          "dem_col": "G24PREDHAR",
+          "rep_col": "G24PRERTRU",
+          "epsilon": 0.001,
+          "node_repeats": 2,
+          "sample_every": 1
+        }
+      }
+    }
+  },
+  "joint_nc": {
+    "nc_block_union": {
+      "status": "unavailable; both complete starting-map groups required"
+    },
+    "nc_precinct_sensitivity": {
+      "status": "unavailable; both complete starting-map groups required"
+    },
+    "nc_population_sensitivity": {
+      "status": "unavailable; both complete starting-map groups required"
+    }
+  },
+  "metric_definitions": {
+    "mean_median": "GerryChain Democratic median-minus-mean two-party district share",
+    "efficiency_gap": "GerryChain two-party efficiency gap; descriptive modeled votes"
+  },
+  "screening": {
+    "rhat_strict_upper": 1.01,
+    "ess_floor": "max(400, 100 * chains)",
+    "meaning": "Conservative numerical flags, not a complete project acceptance criterion"
+  },
+  "unresolved": [
+    "Election source/canvass and NC privacy-noise uncertainties",
+    "MCSE and stability acceptance criteria require scientific review",
+    "No historical-chain continuation or source equivalence is established",
+    "ReCom is not established as uniform or fully legally constrained"
+  ],
+  "condition_mean_differences": {
+    "tx_population": {
+      "baseline": "tx_rebuild",
+      "sensitivity": "tx_population_sensitivity",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_graph_2023": {
+      "baseline": "nc_block_union_2023",
+      "sensitivity": "nc_precinct_sensitivity_2023",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_graph_2025": {
+      "baseline": "nc_block_union_2025",
+      "sensitivity": "nc_precinct_sensitivity_2025",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_population_2023": {
+      "baseline": "nc_block_union_2023",
+      "sensitivity": "nc_population_sensitivity_2023",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_population_2025": {
+      "baseline": "nc_block_union_2025",
+      "sensitivity": "nc_population_sensitivity_2025",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    }
+  }
+}

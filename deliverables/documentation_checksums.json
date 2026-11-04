@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "path_base": "repository root",
+  "scope": "Current documentation; original numerical study manifests and their hashes are unchanged.",
+  "original_documentation_revision": "18595f5996a460890a0c01927ccb5b81c51a9c0c",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6275,
+      "sha256": "388892b24a259a31a536a4f4049b5d76864a19230656d04657eec036929db1d2"
+    },
+    {
+      "path": "deliverables/README.txt",
+      "bytes": 548,
+      "sha256": "40dcc8cc0cad8ac11d53fabdc4a69deea1c1cbf247f1b571ffd401b3de26aba9"
+    },
+    {
+      "path": "deliverables/rdh-research-audit-2026-11-02/README.md",
+      "bytes": 12532,
+      "sha256": "5a7ab7611583a3a532267f94474676f95c01f0c47b6358329700be20b48cffff"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/README.md",
+      "bytes": 19130,
+      "sha256": "f77149e0cea056faedfd5bf3b5b462b9d3d1b39adda6ca274faa3d6a409470d4"
+    },
+    {
+      "path": "deliverables/rebuild-campaign-2026-11-02/figures/README.md",
+      "bytes": 1977,
+      "sha256": "f4749f5431da3e716904466539dcc2800d56cea0601f156240f1c77812838613"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 1170,
+      "sha256": "053e9ebf9f30229d2d5332914120e889e3cd1167b46fdb79f02f24dd367eb02f"
+    },
+    {
+      "path": "docs/about.html",
+      "bytes": 2700,
+      "sha256": "7528d8ef74560bb5a1414031ad692b6096306cf10cb52c7ef7d1a2deb0892a06"
+    },
+    {
+      "path": "docs/archive/north-carolina-methodology-before-rebuild.md",
+      "bytes": 3155,
+      "sha256": "e8b4703b1020cf8edbdcb58f2d0fbcfd3775cdae92d582daf934e37f6df804c6"
+    },
+    {
+      "path": "docs/archive/texas-analysis-before-2026-11-rebuild.md",
+      "bytes": 5154,
+      "sha256": "f758c172bac31cafabab7862ef9d530703985723e70b1c704dfdd9d2d256e832"
+    },
+    {
+      "path": "docs/continuation.md",
+      "bytes": 6465,
+      "sha256": "ac3c310270e714dec359930356a41eea991aefda9ae45a3992f0ef65ff4da173"
+    },
+    {
+      "path": "docs/freeze_rule.md",
+      "bytes": 2771,
+      "sha256": "88ec409f311f091a5af91728ee2d3cbe2a1a0d1fa4f792784f41c0c37478c7ce"
+    },
+    {
+      "path": "docs/future.html",
+      "bytes": 2506,
+      "sha256": "3a2dd7b22dc387460e34fde1b348ef318c63fd5fa8bbc65e5bae55d215829729"
+    },
+    {
+      "path": "docs/index.html",
+      "bytes": 8316,
+      "sha256": "a16df1f8e609d7841dccfeffda117da2eea49b8805035e0b2161598a7b881b4d"
+    },
+    {
+      "path": "docs/learn.html",
+      "bytes": 5058,
+      "sha256": "3c39dcc7445ceab1cc8b71c8356cf3f965227b35f96f393f4033899d94dd3c28"
+    },
+    {
+      "path": "docs/local_compute_plan.md",
+      "bytes": 4795,
+      "sha256": "6045fc66147325e9202411afc2f5c9f91f14f7dd80c2df2ca514c9540a1ccd23"
+    },
+    {
+      "path": "docs/method.html",
+      "bytes": 4388,
+      "sha256": "f48ce8836cf9e309a08155a7a0906d6dfbbc6b6a5aaea207bdc215b2be9b3d54"
+    },
+    {
+      "path": "docs/north_carolina_data.md",
+      "bytes": 1613,
+      "sha256": "b892f65b5213779c22514e217751e22c782e4a59d6134e685b7770292542a31b"
+    },
+    {
+      "path": "docs/north_carolina_methodology.md",
+      "bytes": 350,
+      "sha256": "8fc8b03fa007b4c702214cba534223d686bca5671b60445719c1048832e9c9f0"
+    },
+    {
+      "path": "docs/rdh_integration.md",
+      "bytes": 1881,
+      "sha256": "9ce65419fee5f3af889228190d8431397410ebb22cae382fa8baeec42885d9d3"
+    },
+    {
+      "path": "docs/research_workflow.md",
+      "bytes": 1915,
+      "sha256": "ef0b8d9301fc67d196ec4c5a58ee750c4ca3983faf05a46533bbc9a488f36753"
+    },
+    {
+      "path": "docs/state_cli.md",
+      "bytes": 4657,
+      "sha256": "937e6ef6ebbbe46576e0ff629215ca742adc3044a0cf0afa33dbf02e5997cd46"
+    },
+    {
+      "path": "docs/texas.html",
+      "bytes": 4969,
+      "sha256": "25d6e9eb9bcce062fc8981c566fd258ff843a01bf2194f792f72a4af970677d9"
+    },
+    {
+      "path": "paper/README.md",
+      "bytes": 935,
+      "sha256": "a9b3682d24574e7b13fd4eff3f0a481b3d7a953e8f1f3282b2c61643d0f9cdc6"
+    },
+    {
+      "path": "paper/nc_findings.md",
+      "bytes": 2032,
+      "sha256": "38f918095bab4c481d8fb83bf0dc4c651bbacf5184fa1f1fe97c8522404ffa14"
+    },
+    {
+      "path": "rdh_api_tool/README.md",
+      "bytes": 1192,
+      "sha256": "f4146d87428c82802a89da71e449e2d5f0713f384ba1f1904558dc984b96a974"
+    },
+    {
+      "path": "src/validation/README.md",
+      "bytes": 499,
+      "sha256": "f33945401d8ae819ac1b01f6a4e6e5c04f31e37df460f943efce7fe3bc602bb8"
+    }
+  ]
+}

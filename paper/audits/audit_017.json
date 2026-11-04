@@ -1,0 +1,560 @@
+{
+  "research_ready": false,
+  "manifest_sha256": "78633c395ec1d367e1dbf1f3f26a2f96952f6d832e6104273449595b4ccfca4f",
+  "experiments": {
+    "tx_rebuild": {
+      "integrity": "pass",
+      "diagnostics": {
+        "dem_seats": {
+          "rank_split_rhat": 1.0127902722349789,
+          "bulk_ess": 186.911797500539,
+          "tail_ess": 329.73235289472257,
+          "mcse_mean": 0.08905140920581035,
+          "mcse_sd": 0.06306759476586683,
+          "mcse_q05": 0.0,
+          "mcse_q95": 0.0,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": [
+            "rank R-hat at or above 1.01",
+            "bulk ESS below 400",
+            "tail ESS below 400"
+          ],
+          "ess_screening_minimum": 400
+        },
+        "efficiency_gap": {
+          "rank_split_rhat": 1.0203623807099367,
+          "bulk_ess": 199.18583562875753,
+          "tail_ess": 420.6647103238908,
+          "mcse_mean": 0.002203529202320679,
+          "mcse_sd": 0.001560415550251029,
+          "mcse_q05": 0.0019381420749648437,
+          "mcse_q95": 0.0025443207783881,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": [
+            "rank R-hat at or above 1.01",
+            "bulk ESS below 400"
+          ],
+          "ess_screening_minimum": 400
+        },
+        "cut_edges": {
+          "rank_split_rhat": 1.029875606659093,
+          "bulk_ess": 163.62859609615697,
+          "tail_ess": 490.8722133759477,
+          "mcse_mean": 6.587949896684967,
+          "mcse_sd": 4.6692143671081885,
+          "mcse_q05": 6.0,
+          "mcse_q95": 8.5,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": [
+            "rank R-hat at or above 1.01",
+            "bulk ESS below 400"
+          ],
+          "ess_screening_minimum": 400
+        },
+        "mean_median": {
+          "rank_split_rhat": 1.0304841379396044,
+          "bulk_ess": 104.35323187282245,
+          "tail_ess": 332.93652793632026,
+          "mcse_mean": 0.0012904990447170823,
+          "mcse_sd": 0.0009150748852019031,
+          "mcse_q05": 0.0018727528764633005,
+          "mcse_q95": 0.001342055229542451,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": [
+            "rank R-hat at or above 1.01",
+            "bulk ESS below 400",
+            "tail ESS below 400"
+          ],
+          "ess_screening_minimum": 400
+        }
+      },
+      "warmup_sensitivity": {
+        "0": {
+          "dem_seats": {
+            "rank_split_rhat": 1.0120636031021233,
+            "bulk_ess": 187.59282518495198,
+            "tail_ess": 356.5258259430297,
+            "mcse_mean": 0.08886847314987899,
+            "mcse_sd": 0.06293769353005031,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.01953631417588,
+            "bulk_ess": 193.2219470361165,
+            "tail_ess": 417.4294939494775,
+            "mcse_mean": 0.0022541528147133638,
+            "mcse_sd": 0.0015963265226806554,
+            "mcse_q05": 0.0016884657368987435,
+            "mcse_q95": 0.00261294058166255,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.031768553812694,
+            "bulk_ess": 137.51749643812096,
+            "tail_ess": 539.3782281864045,
+            "mcse_mean": 8.110826176477534,
+            "mcse_sd": 5.746436835533492,
+            "mcse_q05": 6.0,
+            "mcse_q95": 9.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.0240889545227896,
+            "bulk_ess": 102.82602709606213,
+            "tail_ess": 354.0653949707566,
+            "mcse_mean": 0.001331910305794952,
+            "mcse_sd": 0.0009444342339395797,
+            "mcse_q05": 0.00206089926403975,
+            "mcse_q95": 0.0014379923547038504,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          }
+        },
+        "250": {
+          "dem_seats": {
+            "rank_split_rhat": 1.0113971823576235,
+            "bulk_ess": 192.04624816010806,
+            "tail_ess": 354.6399940969174,
+            "mcse_mean": 0.08747101489960388,
+            "mcse_sd": 0.061945689490654834,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0180190781140537,
+            "bulk_ess": 206.89469939260496,
+            "tail_ess": 436.86253436362904,
+            "mcse_mean": 0.002152322962606485,
+            "mcse_sd": 0.0015240632468157655,
+            "mcse_q05": 0.0018762016814834956,
+            "mcse_q95": 0.00258181453202665,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.028617537712337,
+            "bulk_ess": 154.0209891838319,
+            "tail_ess": 529.3605347578057,
+            "mcse_mean": 6.806667916264736,
+            "mcse_sd": 4.822462381774907,
+            "mcse_q05": 6.0,
+            "mcse_q95": 8.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.0266547025024473,
+            "bulk_ess": 106.98685636593203,
+            "tail_ess": 377.68526760936805,
+            "mcse_mean": 0.0012708436847180267,
+            "mcse_sd": 0.0009010661254566822,
+            "mcse_q05": 0.0018035997755260994,
+            "mcse_q95": 0.0013986053221768501,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          }
+        },
+        "500": {
+          "dem_seats": {
+            "rank_split_rhat": 1.0127902722349789,
+            "bulk_ess": 186.911797500539,
+            "tail_ess": 329.73235289472257,
+            "mcse_mean": 0.08905140920581035,
+            "mcse_sd": 0.06306759476586683,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0203623807099367,
+            "bulk_ess": 199.18583562875753,
+            "tail_ess": 420.6647103238908,
+            "mcse_mean": 0.002203529202320679,
+            "mcse_sd": 0.001560415550251029,
+            "mcse_q05": 0.0019381420749648437,
+            "mcse_q95": 0.0025443207783881,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.029875606659093,
+            "bulk_ess": 163.62859609615697,
+            "tail_ess": 490.8722133759477,
+            "mcse_mean": 6.587949896684967,
+            "mcse_sd": 4.6692143671081885,
+            "mcse_q05": 6.0,
+            "mcse_q95": 8.5,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.0304841379396044,
+            "bulk_ess": 104.35323187282245,
+            "tail_ess": 332.93652793632026,
+            "mcse_mean": 0.0012904990447170823,
+            "mcse_sd": 0.0009150748852019031,
+            "mcse_q05": 0.0018727528764633005,
+            "mcse_q95": 0.001342055229542451,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          }
+        },
+        "1000": {
+          "dem_seats": {
+            "rank_split_rhat": 1.0146658532697512,
+            "bulk_ess": 177.77105640244648,
+            "tail_ess": 309.6244074357887,
+            "mcse_mean": 0.09192094708807254,
+            "mcse_sd": 0.06510523257773003,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0216300896302146,
+            "bulk_ess": 188.96730104443182,
+            "tail_ess": 384.2497901285276,
+            "mcse_mean": 0.0022659792825523986,
+            "mcse_sd": 0.0016047567329057443,
+            "mcse_q05": 0.0019756803580021007,
+            "mcse_q95": 0.00269282632278805,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.0344448822654888,
+            "bulk_ess": 153.0566664882166,
+            "tail_ess": 408.3526841729481,
+            "mcse_mean": 6.810375361916128,
+            "mcse_sd": 4.831902204302863,
+            "mcse_q05": 6.0,
+            "mcse_q95": 9.5,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.0395374167608098,
+            "bulk_ess": 97.86246794983364,
+            "tail_ess": 299.58780256310655,
+            "mcse_mean": 0.0013390146428918536,
+            "mcse_sd": 0.0009496565014644366,
+            "mcse_q05": 0.0020501431106507506,
+            "mcse_q95": 0.0013341093689830004,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400",
+              "tail ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps000000-003999.csv",
+          "sha256": "aec3949fc4c96f32c8f9cd58efb306185c06a2c1cf9288230e77c9aa80b36064"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps004000-004199.csv",
+          "sha256": "1b2fc700192d9dc20ad0019f595a0a31e533959bfae58ed898da180f7532d993"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps004200-004399.csv",
+          "sha256": "6aad3aa6ca251a64d85ec219e4fa0796fd52630d89253208e8b7aebc91105e01"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps004400-006399.csv",
+          "sha256": "1323e7295807f716ddb1d1fac641894c131b3085f7ad47ff404fb89bacc5f742"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps006400-008399.csv",
+          "sha256": "d1e080f081f4f49b0d8a504f11c08ca411c38f07e934fe5fb44fc8f5e61a5cdb"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps000000-003999.csv",
+          "sha256": "b2393ff27aa7a440bcdedd21f5c28a8f633e6c13d8bc2deed8a82daa042cfc19"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps004000-004199.csv",
+          "sha256": "eb527697a147b2b066476db255dbdaf20106d7bbd49fc3525672379d83981abf"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps004200-004399.csv",
+          "sha256": "679de246e31dc1383c87559e9008a6f7dc055257017044f3e18a2fb269b90d26"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps004400-006399.csv",
+          "sha256": "b0e3c3bff29aebd6c7ea64803b732cef9599126cf23692b22ec24c3c26aa161f"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps006400-008399.csv",
+          "sha256": "a2aae5cb826eefdaebd153b6e6c5bd413b3a923bef29bf62b44fcd3d1f67a547"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps000000-003999.csv",
+          "sha256": "52c8f62c9f6e9f5c7bbc325cdc4a1d33c7b4f32d6e9d6c67f5ca434f690d2b33"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps004000-004199.csv",
+          "sha256": "3cb62f954a0d56f9142b2c16d97840bbf3d3474c29bd630088bc3c58c82d82b8"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps004200-004399.csv",
+          "sha256": "1745a1f276e77231412057f8c30898719fb32299f0a105350314d11736715678"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps004400-006399.csv",
+          "sha256": "98991cb0e8b2aa2af79b8297c1e97717fe98b023c8c9f2977e8514f0aa3c88a3"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps006400-008399.csv",
+          "sha256": "d2eb7363d00a7e101e40a7771041fa6c3e069feedc5dfdd751b6822a1c9213fc"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps000000-003999.csv",
+          "sha256": "163df59595b42585dae3c8f5d3bb7a8bcaebc12c6bad99e335d12f52dcb36afc"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps004000-004199.csv",
+          "sha256": "abe852feaf9e88f5d6de7a8b699d902d7fe00f587d221d73ca22c3831d2704cf"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps004200-004399.csv",
+          "sha256": "36d923dc3de03f003f847fd4a2fd630d882ce1a83fc604f307ec5e50e0c00bd3"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps004400-006399.csv",
+          "sha256": "200073be24aaa1774b3796a92c5d227318253d704225349e896f3c72cc1212fe"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps006400-008399.csv",
+          "sha256": "37c9039d62f20202ac0f24cecc682b65a0e86ec9e14096bbbaa801ee179c5e21"
+        }
+      ],
+      "checkpoints": [
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed1117_next8400.pkl",
+          "sha256": "7afba8627367bdc27078b9c234eba684ccf70476ade0536f0e2dce19bcaa31f7"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed2227_next8400.pkl",
+          "sha256": "277ad5f4a7cca877b0834c69d4f4a07306ab8c9cbc2457c27bf1ab926d656930"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed3331_next8400.pkl",
+          "sha256": "9a9dc98e97a21ee458995d81f7943ec5e073137b9fe24d5dccae2d0a1b5c5370"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/snapshot_002/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed4441_next8400.pkl",
+          "sha256": "284d66efdf22f74d5a0567e973ce84ac53c060c23b4f66afa1246e4994a27aed"
+        }
+      ],
+      "checkpoint_provenance": {
+        "dataset_sha256": "ff09876b030c693307cdf362fef38a0fccf00dee5ed8b6fb973fa29b86f20179",
+        "graph_sha256": "45efa0772341fda12c7b5b39800cbea15eaf2f84029df082955181edc874c36e",
+        "runner_sha256": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+        "checkpoint_code_sha256": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102",
+        "runtime": {
+          "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "packages": {
+            "gerrychain": "0.3.2",
+            "networkx": "3.4.2",
+            "geopandas": "1.1.2",
+            "shapely": "2.0.7",
+            "pandas": "2.2.3",
+            "numpy": "1.26.4",
+            "pyproj": "3.6.1"
+          }
+        },
+        "configuration": {
+          "state": "tx_rebuild_20261102",
+          "layer": "precincts",
+          "assignment_col": "CONG_DIST",
+          "population_col": "TOTPOP",
+          "dem_col": "G24PREDHAR",
+          "rep_col": "G24PRERTRU",
+          "epsilon": 0.001,
+          "node_repeats": 2,
+          "sample_every": 1
+        }
+      }
+    }
+  },
+  "joint_nc": {
+    "nc_block_union": {
+      "status": "unavailable; both complete starting-map groups required"
+    },
+    "nc_precinct_sensitivity": {
+      "status": "unavailable; both complete starting-map groups required"
+    },
+    "nc_population_sensitivity": {
+      "status": "unavailable; both complete starting-map groups required"
+    }
+  },
+  "metric_definitions": {
+    "mean_median": "GerryChain Democratic median-minus-mean two-party district share",
+    "efficiency_gap": "GerryChain two-party efficiency gap; descriptive modeled votes"
+  },
+  "screening": {
+    "rhat_strict_upper": 1.01,
+    "ess_floor": "max(400, 100 * chains)",
+    "meaning": "Conservative numerical flags, not a complete project acceptance criterion"
+  },
+  "unresolved": [
+    "Election source/canvass and NC privacy-noise uncertainties",
+    "MCSE and stability acceptance criteria require scientific review",
+    "No historical-chain continuation or source equivalence is established",
+    "ReCom is not established as uniform or fully legally constrained"
+  ],
+  "condition_mean_differences": {
+    "tx_population": {
+      "baseline": "tx_rebuild",
+      "sensitivity": "tx_population_sensitivity",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_graph_2023": {
+      "baseline": "nc_block_union_2023",
+      "sensitivity": "nc_precinct_sensitivity_2023",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_graph_2025": {
+      "baseline": "nc_block_union_2025",
+      "sensitivity": "nc_precinct_sensitivity_2025",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_population_2023": {
+      "baseline": "nc_block_union_2023",
+      "sensitivity": "nc_population_sensitivity_2023",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_population_2025": {
+      "baseline": "nc_block_union_2025",
+      "sensitivity": "nc_population_sensitivity_2025",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "purpose": "Shared45000-state prefix comparison; excluded from freeze decisions.",
+  "eligible_for_freeze": false,
+  "recorded_steps_inclusive": [0, 44999],
+  "retained_steps_inclusive": [500, 44999],
+  "warmup_per_chain": 500,
+  "metrics": {
+    "tx_rebuild": {
+      "dem_seats": {
+        "rank_split_rhat": 1.0037164856894616,
+        "bulk_ess": 831.9679111898366,
+        "tail_ess": 1461.6026281538213,
+        "ess_screening_minimum": 400
+      },
+      "efficiency_gap": {
+        "rank_split_rhat": 1.0039882452252051,
+        "bulk_ess": 830.2838931278561,
+        "tail_ess": 1953.033433714228,
+        "ess_screening_minimum": 400
+      },
+      "cut_edges": {
+        "rank_split_rhat": 1.0109084262881356,
+        "bulk_ess": 449.1804199378815,
+        "tail_ess": 1636.2471082818208,
+        "ess_screening_minimum": 400
+      },
+      "mean_median": {
+        "rank_split_rhat": 1.0160845433547638,
+        "bulk_ess": 590.5100457019117,
+        "tail_ess": 1456.4073565368283,
+        "ess_screening_minimum": 400
+      }
+    },
+    "tx_dispersed": {
+      "dem_seats": {
+        "rank_split_rhat": 1.0017451903906165,
+        "bulk_ess": 631.8297432078723,
+        "tail_ess": 1624.589369461502,
+        "ess_screening_minimum": 400
+      },
+      "efficiency_gap": {
+        "rank_split_rhat": 1.002086281792812,
+        "bulk_ess": 656.9752972609286,
+        "tail_ess": 2054.412943971627,
+        "ess_screening_minimum": 400
+      },
+      "cut_edges": {
+        "rank_split_rhat": 1.0216880813507785,
+        "bulk_ess": 562.3893805250818,
+        "tail_ess": 2254.0642394294396,
+        "ess_screening_minimum": 400
+      },
+      "mean_median": {
+        "rank_split_rhat": 1.0064049836931668,
+        "bulk_ess": 517.1449306335312,
+        "tail_ess": 1622.1139529814404,
+        "ess_screening_minimum": 400
+      }
+    },
+    "joint_texas": {
+      "dem_seats": {
+        "rank_split_rhat": 1.0025651973319503,
+        "bulk_ess": 1462.6189630016509,
+        "tail_ess": 3073.9732224612917,
+        "ess_screening_minimum": 800
+      },
+      "efficiency_gap": {
+        "rank_split_rhat": 1.0023406105633261,
+        "bulk_ess": 1501.5583144091822,
+        "tail_ess": 3926.959511101511,
+        "ess_screening_minimum": 800
+      },
+      "cut_edges": {
+        "rank_split_rhat": 1.0152561959132003,
+        "bulk_ess": 935.9682609010671,
+        "tail_ess": 3480.5039182827954,
+        "ess_screening_minimum": 800
+      },
+      "mean_median": {
+        "rank_split_rhat": 1.0109757510354442,
+        "bulk_ess": 1077.5880865382726,
+        "tail_ess": 3085.135591434184,
+        "ess_screening_minimum": 800
+      }
+    }
+  },
+  "cohort_seat_means": {
+    "tx_rebuild": {
+      "retained_states": 178000,
+      "democratic_seat_sum": 2288953,
+      "mean_democratic_seats": 12.859286516853933
+    },
+    "tx_dispersed": {
+      "retained_states": 178000,
+      "democratic_seat_sum": 2287365,
+      "mean_democratic_seats": 12.850365168539327
+    }
+  },
+  "all_primary_diagnostics_finite": true,
+  "source_audit": "outputs/analysis/convergence_campaign_2026-11-02/tx_shared45000_continuation_20261103/shared_prefix_045000/comparison/audit/diagnostics.json",
+  "source_audit_sha256": "bdc0cf3eb091dab47386fa8ec4a758562e3491f7e8cbea181ee667d633b0a5ee",
+  "source_manifest": "outputs/analysis/convergence_campaign_2026-11-02/tx_shared45000_continuation_20261103/shared_prefix_045000/comparison/snapshot/manifest.json",
+  "source_manifest_sha256": "56d8f37cd19d36cdb14c8b4d09a7c89f2f0982b9a5c9f36ecaae6d13c9fc9e15",
+  "extra_baseline_states_preserved": true,
+  "continuation_from": {
+    "tx_rebuild": 46000,
+    "tx_dispersed": 45000
+  },
+  "next_full_history_shared_audit": 50000
+}

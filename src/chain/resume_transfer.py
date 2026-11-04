@@ -100,10 +100,8 @@ def main():
         path = args.verification_dir / f"{key}_manifest.json"
         path.write_text(json.dumps({"source_code": manifest["source_code"], "experiments": {key: e}}, indent=2) + "\n")
         paths.append(path)
-    next_step = (max(e["steps"] for e in texas.values()) // 5000 + 1) * 5000
-    subprocess.run([sys.executable, "src/chain/run_texas_until_freeze.py", "--baseline-manifest", str(paths[0]),
-                    "--dispersed-manifest", str(paths[1]), "--output-dir", "transferred_continuation",
-                    "--first-joint-milestone", str(next_step)], cwd=ROOT, check=True)
+    subprocess.run([sys.executable, "src/chain/run_texas_shared_prefix.py", "--baseline-manifest", str(paths[0]),
+                    "--dispersed-manifest", str(paths[1]), "--output-dir", "transferred_continuation"], cwd=ROOT, check=True)
 
 
 if __name__ == "__main__":

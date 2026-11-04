@@ -1,18 +1,7 @@
-# Ensemble Validation
+# Ensemble validation
 
-This module contains diagnostic and validation tools for the Texas
-redistricting ensemble.
+I keep the Texas ensemble diagnostics here so I can examine convergence and geographic behavior separately from the sampling pipeline. The checks cover agreement across independent chains, sample-size sensitivity, autocorrelation and window stability, along with plan similarity, county splits and district-boundary stability.
 
-The validation is designed to test:
+## Limitations
 
-- convergence across independent Markov chains
-- sensitivity to sample size
-- autocorrelation between retained plans
-- stability of ensemble statistics
-- similarity between generated plans
-- county splitting behavior
-- district boundary stability
-
-These diagnostics are kept separate from the primary analysis so that
-methodological assumptions can be tested without changing the core
-redistricting pipeline.
+These checks address different parts of the run; I use the complete study audit and recorded freeze criteria to assess convergence.

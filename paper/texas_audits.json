@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "selected": {
+    "manifest": {
+      "path": "paper/audits/shared_manifest.json",
+      "sha256": "be7a45818185e6a948fea55f0b9feedd40fae079174f1b62ce8a2a7e1c8bf5dc",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_shared45000_continuation_20261103/shared_prefix_045000/comparison/snapshot/manifest.json",
+      "source_sha256": "56d8f37cd19d36cdb14c8b4d09a7c89f2f0982b9a5c9f36ecaae6d13c9fc9e15"
+    },
+    "audit": {
+      "path": "paper/audits/audit_024.json",
+      "sha256": "688078d6c9ddcef20c24ae4be9b6a1d3b0992b98959d271d154f9df9d4577cc0",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_shared45000_continuation_20261103/shared_prefix_045000/comparison/audit/diagnostics.json",
+      "source_sha256": "bdc0cf3eb091dab47386fa8ec4a758562e3491f7e8cbea181ee667d633b0a5ee"
+    }
+  },
+  "historical_audits": [
+    {
+      "path": "paper/audits/audit_000.json",
+      "sha256": "3c8391b3827f26cb2bee1ef78c152c0152ffd7ad83c1bbbbedaa1bb23f312e87",
+      "source_path": "deliverables/rebuild-campaign-2026-11-02/diagnostics.json",
+      "source_sha256": "3c8391b3827f26cb2bee1ef78c152c0152ffd7ad83c1bbbbedaa1bb23f312e87"
+    },
+    {
+      "path": "paper/audits/audit_001.json",
+      "sha256": "2c318050ecd937d9c8884ec4fecba7d5e1526b22574b971d7fdfe31be6dc0b3c",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/audits/benchmark_8000_4400/diagnostics.json",
+      "source_sha256": "2c5b3eea0687fa9bf8dad980ba687f839a81fceedac96fe60d19564ac3e3270a"
+    },
+    {
+      "path": "paper/audits/audit_002.json",
+      "sha256": "b8b432650915798eb06428472b0cf97f59d9e0ffabd6de2f24eb5b33e73ca1b6",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_informational_joint25000_20261103/audit/diagnostics.json",
+      "source_sha256": "3916fa9121da8d0cccd0210b25dbec8c3566e8fa103bf94c9c1851fb283b61da"
+    },
+    {
+      "path": "paper/audits/audit_003.json",
+      "sha256": "7180afbb69fe1826983722b68371d41800523c01b2966594387bbdacba0096cc",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_matched_continuation_20261103/catch_up/tx_dispersed/milestone_030000/audit/diagnostics.json",
+      "source_sha256": "9f004a42762bfcffc32e275975ffef145797aa22618a5cb97246113c374ecd0b"
+    },
+    {
+      "path": "paper/audits/audit_004.json",
+      "sha256": "3a98f17cd12e47c2cb98fad28a83fc91dddb19e73cf68034c683504084c460a9",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_matched_continuation_20261103/catch_up/tx_rebuild/milestone_045000/audit/diagnostics.json",
+      "source_sha256": "6712c02ff83cbd78c3f97b3b7984b682a62c250e56713691dcfe95add154905f"
+    },
+    {
+      "path": "paper/audits/audit_005.json",
+      "sha256": "cdd67276b9a2cebc0a5c64303a5d9bb5f0d13474ad374b248ab2a64b39ac9ebc",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_dispersed/milestone_005000/audit/diagnostics.json",
+      "source_sha256": "cdd67276b9a2cebc0a5c64303a5d9bb5f0d13474ad374b248ab2a64b39ac9ebc"
+    },
+    {
+      "path": "paper/audits/audit_006.json",
+      "sha256": "1dd512da1460a24e02934129f2b5be30d6d64c85bb5a53d9008c2385cd6791c4",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_dispersed/milestone_010000/audit/diagnostics.json",
+      "source_sha256": "1dd512da1460a24e02934129f2b5be30d6d64c85bb5a53d9008c2385cd6791c4"
+    },
+    {
+      "path": "paper/audits/audit_007.json",
+      "sha256": "07ebe86fb13b005efb405a38e723afa2ca70af0981545340a84ff152a6479914",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_dispersed/milestone_015000/audit/diagnostics.json",
+      "source_sha256": "9f89ba58f25e8bee6461d63cabba2b4d7cfdfec1900537d8231322d6b563d74b"
+    },
+    {
+      "path": "paper/audits/audit_008.json",
+      "sha256": "7cfcb93fc8dcfd970a192316bccd69114fd71797562fd640811849dbd9d4a057",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_dispersed/milestone_020000/audit/diagnostics.json",
+      "source_sha256": "7cfcb93fc8dcfd970a192316bccd69114fd71797562fd640811849dbd9d4a057"
+    },
+    {
+      "path": "paper/audits/audit_009.json",
+      "sha256": "3b66b9164b1f36aaaef9dbad7a6bc3cdf2336c4f1d6639d5ce761a5cd91c00e2",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_dispersed/milestone_025000/audit/diagnostics.json",
+      "source_sha256": "3b66b9164b1f36aaaef9dbad7a6bc3cdf2336c4f1d6639d5ce761a5cd91c00e2"
+    },
+    {
+      "path": "paper/audits/audit_010.json",
+      "sha256": "44ae8e1c5a3a382db6b72e16dde413dbb75b2a5b8046d06a9e7a147b6ec21e58",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_015000/audit/diagnostics.json",
+      "source_sha256": "d8c3843129070632e97df875dc3a056de9ec1e948da069c5908615137b970128"
+    },
+    {
+      "path": "paper/audits/audit_011.json",
+      "sha256": "0306030b70501e66dbe47ec1986dad69b3dfac2ddb0e41cdf887b40472b4ec6e",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/audit/diagnostics.json",
+      "source_sha256": "562c747e0402d8c96a8d236f3c0b169c8ca3d559175a4cf7a2868e41fbd759b5"
+    },
+    {
+      "path": "paper/audits/audit_012.json",
+      "sha256": "2f885e17e0b40a56b1baf1086a4bd09cd4819b3453efd32e758e15b58953d806",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_025000/audit/diagnostics.json",
+      "source_sha256": "f359ccb3c3e93ad461242b162dc6e2538594ac5299d5a242a654cd38bf12d68c"
+    },
+    {
+      "path": "paper/audits/audit_013.json",
+      "sha256": "47f719a6e76ecfd53d7017fb44d674b39960a1eaa94b0963fb388ad9c08092a4",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_030000/audit/diagnostics.json",
+      "source_sha256": "ba6cc796d549b1c4bc5f3f0d22acd4e4fb5906b318f35a55ef88e654c08e3d1f"
+    },
+    {
+      "path": "paper/audits/audit_014.json",
+      "sha256": "640d4330b7705c906d3664237abc693aa86d7c5e9d561198a66ebd1e1b697cdb",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_035000/audit/diagnostics.json",
+      "source_sha256": "5a26674372278f0853489531ddf056cc2af68e95b029b638bf1bb2557559350e"
+    },
+    {
+      "path": "paper/audits/audit_015.json",
+      "sha256": "025574c6ac8534502ee4d699afabe370f1c3b9495e8205d7aa98279e0197df3b",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/audit/diagnostics.json",
+      "source_sha256": "b84e5370926c1ac7e4b7d45a711ce138aec5ec6431d06bcb47cc677141432b0f"
+    },
+    {
+      "path": "paper/audits/audit_016.json",
+      "sha256": "6551aa1a0c7ebbbc953fe441687d1d24c41d0ba8119ca5915dd1dd5f5acfd4f6",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/audit_001/diagnostics.json",
+      "source_sha256": "c2e7ef09f4314862ae55777904075c072dd04af087e1b3890f0de68575930ed5"
+    },
+    {
+      "path": "paper/audits/audit_017.json",
+      "sha256": "23088b0b0f33a4d74fa6fc47725107e83b6cb59479355ff727218d4edc1898c9",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/audit_002/diagnostics.json",
+      "source_sha256": "433793f7a1102d61110884d653f37e11630579daa66ed7afb17fec07862975be"
+    },
+    {
+      "path": "paper/audits/audit_018.json",
+      "sha256": "ecfc36703fb676df842ffa11d8e48f59bcab08f279afae5c1dbf66f81728a379",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/audit_003/diagnostics.json",
+      "source_sha256": "57d38a94a159fca735fb1fc8d03898582987339bf35a1658c41bcea76ac3419b"
+    },
+    {
+      "path": "paper/audits/audit_019.json",
+      "sha256": "3ff67d18623d7569f3132c59a54203f28a7e15bc0ac3de0b889d3ec6c6768411",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/audit_004/diagnostics.json",
+      "source_sha256": "710b35a7c741e19a8b9ad372fd130be29197be39ce8c7237fb868116b933b20c"
+    },
+    {
+      "path": "paper/audits/audit_020.json",
+      "sha256": "1cfe92d8ed7d27c08159e13889a3df182b37ba75c3ad2544950a70a926eec697",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_seat_continuation/audit_005/diagnostics.json",
+      "source_sha256": "14425b1e23dacde67f19b59c00465f815a4a7504d57a77e347dbc4166c1c17d6"
+    },
+    {
+      "path": "paper/audits/audit_021.json",
+      "sha256": "e973982868b824c56150c7dee53b5569ee1282b88e51bcd7c752cd99383214c4",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_shared45000_continuation_20261103/dispersed_catch_up/milestone_035000/audit/diagnostics.json",
+      "source_sha256": "6021962856daf6d98299939dcdaf44fbe5691132c9bee1415e3c6126513723c4"
+    },
+    {
+      "path": "paper/audits/audit_022.json",
+      "sha256": "59f13a6f81a6b46e0e77bd3ae871992857990bf9645c899ccbc19acbcfe6726a",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_shared45000_continuation_20261103/dispersed_catch_up/milestone_040000/audit/diagnostics.json",
+      "source_sha256": "5070c67e4b907d9836cc4789fd12c57b61ee9dfc87db4187bf26cc606a18fbfa"
+    },
+    {
+      "path": "paper/audits/audit_023.json",
+      "sha256": "00371dcac0c36d51cbe67a776839a6de697276352e61b303e4717ce3eac83cc3",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_shared45000_continuation_20261103/dispersed_catch_up/milestone_045000/audit/diagnostics.json",
+      "source_sha256": "c7382cae69171a212e095956bbd5f515664837b619a1da61925a3027d1f310a0"
+    },
+    {
+      "path": "paper/audits/audit_024.json",
+      "sha256": "688078d6c9ddcef20c24ae4be9b6a1d3b0992b98959d271d154f9df9d4577cc0",
+      "source_path": "outputs/analysis/convergence_campaign_2026-11-02/tx_shared45000_continuation_20261103/shared_prefix_045000/comparison/audit/diagnostics.json",
+      "source_sha256": "bdc0cf3eb091dab47386fa8ec4a758562e3491f7e8cbea181ee667d633b0a5ee"
+    }
+  ],
+  "prefix_comparisons": [
+    {
+      "path": "paper/audits/prefix_comparison_000.json",
+      "sha256": "35597be094843fbec84a418caf52540ed3ec2d67dbf7d8b706eb8839b631e891",
+      "source_path": "deliverables/primary-freeze-2026-11-02/texas_10000_vs_15000.json",
+      "source_sha256": "35597be094843fbec84a418caf52540ed3ec2d67dbf7d8b706eb8839b631e891"
+    }
+  ],
+  "enacted_block_score": {
+    "path": "paper/audits/enacted_block_score.json",
+    "sha256": "a2be0f9d12bf875e4e025c8d587cdec8076bd1493233cb176fa8b5e1bdc96aed",
+    "source_path": "outputs/analysis/rdh_rebuild_2026-11-02/tx_block_audit/source_audit.json",
+    "source_sha256": "0d97d04b19ffbcd1c565fbe713afbab2de23a01faa94f3e5fce3126015a6d5f0"
+  },
+  "enacted_score_pointer": ["plans", "2025", "dem_modeled_seats"],
+  "plan_label": "PLANC2333"
+}
