@@ -1,0 +1,196 @@
+{
+  "states_per_chain": 55000,
+  "warmup_per_chain": 500,
+  "primary_diagnostics": {
+    "tx_rebuild": {
+      "dem_seats": {
+        "rank_split_rhat": 1.0048584030816659,
+        "bulk_ess": 1117.7636669987537,
+        "tail_ess": 1861.4835981279878,
+        "mcse_mean": 0.03871419378811973,
+        "mcse_sd": 0.02740573116642802,
+        "mcse_q05": 0.0,
+        "mcse_q95": 0.0,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 400
+      },
+      "efficiency_gap": {
+        "rank_split_rhat": 1.0059889673191513,
+        "bulk_ess": 1074.7957503362434,
+        "tail_ess": 2628.984668434901,
+        "mcse_mean": 0.0010258834057870043,
+        "mcse_sd": 0.0007256054316640289,
+        "mcse_q05": 0.0007317961369322015,
+        "mcse_q95": 0.0009541759536438,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 400
+      },
+      "cut_edges": {
+        "rank_split_rhat": 1.0210380253161717,
+        "bulk_ess": 537.0238596328337,
+        "tail_ess": 1993.2489903883009,
+        "mcse_mean": 3.7044582364219227,
+        "mcse_sd": 2.620872659197513,
+        "mcse_q05": 3.5,
+        "mcse_q95": 4.0,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": ["rank R-hat at or above 1.01"],
+        "ess_screening_minimum": 400
+      },
+      "mean_median": {
+        "rank_split_rhat": 1.009970661467459,
+        "bulk_ess": 801.9136303602579,
+        "tail_ess": 1818.0118956033466,
+        "mcse_mean": 0.0004438107371327919,
+        "mcse_sd": 0.00031393718830065396,
+        "mcse_q05": 0.0007204603589734994,
+        "mcse_q95": 0.0004302278545590503,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 400
+      }
+    },
+    "tx_dispersed": {
+      "dem_seats": {
+        "rank_split_rhat": 1.001623650285187,
+        "bulk_ess": 807.1677246204408,
+        "tail_ess": 1850.2151320290552,
+        "mcse_mean": 0.0447688393190232,
+        "mcse_sd": 0.03177385591762227,
+        "mcse_q05": 0.0,
+        "mcse_q95": 0.0,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 400
+      },
+      "efficiency_gap": {
+        "rank_split_rhat": 1.0017253657821805,
+        "bulk_ess": 839.3869253640484,
+        "tail_ess": 2490.3293116999675,
+        "mcse_mean": 0.001150770681546166,
+        "mcse_sd": 0.000814001944583616,
+        "mcse_q05": 0.0009940297654093058,
+        "mcse_q95": 0.00106910633148375,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 400
+      },
+      "cut_edges": {
+        "rank_split_rhat": 1.0110565204128512,
+        "bulk_ess": 625.0859120501348,
+        "tail_ess": 2472.1617756750784,
+        "mcse_mean": 3.4044566413249795,
+        "mcse_sd": 2.408440796152326,
+        "mcse_q05": 3.0,
+        "mcse_q95": 3.5,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": ["rank R-hat at or above 1.01"],
+        "ess_screening_minimum": 400
+      },
+      "mean_median": {
+        "rank_split_rhat": 1.006238056242908,
+        "bulk_ess": 683.9100733962163,
+        "tail_ess": 1990.1034384011132,
+        "mcse_mean": 0.00045675759197002244,
+        "mcse_sd": 0.0003231122197795058,
+        "mcse_q05": 0.0005463041056629004,
+        "mcse_q95": 0.0004360740887540005,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 400
+      }
+    },
+    "joint_texas": {
+      "dem_seats": {
+        "rank_split_rhat": 1.0031669041392417,
+        "bulk_ess": 1917.7713999608982,
+        "tail_ess": 3730.91836179183,
+        "mcse_mean": 0.02931361845615142,
+        "mcse_sd": 0.020749016861072618,
+        "mcse_q05": 0.0,
+        "mcse_q95": 0.0,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 800
+      },
+      "efficiency_gap": {
+        "rank_split_rhat": 1.00381166276502,
+        "bulk_ess": 1884.261324991424,
+        "tail_ess": 5421.052267130004,
+        "mcse_mean": 0.0007702298866809934,
+        "mcse_sd": 0.0005447188603354561,
+        "mcse_q05": 0.0006133479366011441,
+        "mcse_q95": 0.0007072604382921499,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 800
+      },
+      "cut_edges": {
+        "rank_split_rhat": 1.0151684483811558,
+        "bulk_ess": 1002.0546212315223,
+        "tail_ess": 4315.452625851939,
+        "mcse_mean": 2.750099473854411,
+        "mcse_sd": 1.9452019709864554,
+        "mcse_q05": 2.5,
+        "mcse_q95": 2.5,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": ["rank R-hat at or above 1.01"],
+        "ess_screening_minimum": 800
+      },
+      "mean_median": {
+        "rank_split_rhat": 1.0078170849433497,
+        "bulk_ess": 1481.4167426534154,
+        "tail_ess": 3824.4489825057085,
+        "mcse_mean": 0.0003180685034459599,
+        "mcse_sd": 0.00022495251491171672,
+        "mcse_q05": 0.0004834134959421999,
+        "mcse_q95": 0.0003254099186929,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 800
+      }
+    }
+  },
+  "all_primary_screens_pass": false,
+  "ess_flat_or_decreasing": [
+    {
+      "group": "joint_texas",
+      "metric": "cut_edges",
+      "diagnostic": "bulk_ess",
+      "previous": 1068.566004401875,
+      "current": 1002.0546212315223,
+      "fractional_change": -0.062243588974723374
+    }
+  ],
+  "sources": {
+    "outputs/analysis/convergence_campaign_2026-11-02/tx_shared45000_continuation_20261103/shared_055000/audit_all/audit/diagnostics.json": "4207b97490e7eee2571b8db09871302750bdb4793f6f947dd7ccb95c0f36a3f7",
+    "outputs/analysis/convergence_campaign_2026-11-02/tx_shared45000_continuation_20261103/shared_050000/audit_all/audit/diagnostics.json": "1555224d082df8743ebaa008e8e25be5b6b93930b79f1fd99de9ef8747c8a219",
+    "outputs/analysis/convergence_campaign_2026-11-02/tx_shared45000_continuation_20261103/shared_055000/manifest.json": "aeb770d2a0310b73d3a2e322aab2fa9ddb3bed063200090a69f03584b04524f7"
+  }
+}

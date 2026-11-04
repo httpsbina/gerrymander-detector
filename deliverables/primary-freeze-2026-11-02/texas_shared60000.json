@@ -1,0 +1,187 @@
+{
+  "states_per_chain": 60000,
+  "warmup_per_chain": 500,
+  "primary_diagnostics": {
+    "tx_rebuild": {
+      "dem_seats": {
+        "rank_split_rhat": 1.0028724713553565,
+        "bulk_ess": 1262.9628862962932,
+        "tail_ess": 2111.7666919551934,
+        "mcse_mean": 0.0361412750956689,
+        "mcse_sd": 0.025561639858334134,
+        "mcse_q05": 0.0,
+        "mcse_q95": 0.0,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 400
+      },
+      "efficiency_gap": {
+        "rank_split_rhat": 1.0037766465147313,
+        "bulk_ess": 1206.3522718971647,
+        "tail_ess": 2894.0624298990097,
+        "mcse_mean": 0.0009581069592044198,
+        "mcse_sd": 0.0006776469360497124,
+        "mcse_q05": 0.0006642005098259976,
+        "mcse_q95": 0.0009061287325320998,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 400
+      },
+      "cut_edges": {
+        "rank_split_rhat": 1.012412283317413,
+        "bulk_ess": 676.9757435512098,
+        "tail_ess": 2437.0688559693604,
+        "mcse_mean": 3.285631177371382,
+        "mcse_sd": 2.325627215215494,
+        "mcse_q05": 3.5,
+        "mcse_q95": 4.0,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": ["rank R-hat at or above 1.01"],
+        "ess_screening_minimum": 400
+      },
+      "mean_median": {
+        "rank_split_rhat": 1.0071800546952319,
+        "bulk_ess": 865.4186017518477,
+        "tail_ess": 2066.8901695102672,
+        "mcse_mean": 0.000422911160044693,
+        "mcse_sd": 0.00029914490234436074,
+        "mcse_q05": 0.0006563329577981497,
+        "mcse_q95": 0.00043284877566809876,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 400
+      }
+    },
+    "tx_dispersed": {
+      "dem_seats": {
+        "rank_split_rhat": 1.0025045447863943,
+        "bulk_ess": 889.4782411839062,
+        "tail_ess": 2016.6390706018212,
+        "mcse_mean": 0.04284444173305293,
+        "mcse_sd": 0.030558299460048895,
+        "mcse_q05": 0.0,
+        "mcse_q95": 0.0,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 400
+      },
+      "efficiency_gap": {
+        "rank_split_rhat": 1.0028293601321776,
+        "bulk_ess": 897.2820251532477,
+        "tail_ess": 2655.6487487732693,
+        "mcse_mean": 0.001116451540168603,
+        "mcse_sd": 0.0007897079510920334,
+        "mcse_q05": 0.0010033809391196552,
+        "mcse_q95": 0.001076364623459,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 400
+      },
+      "cut_edges": {
+        "rank_split_rhat": 1.0107597822822663,
+        "bulk_ess": 750.4625504931338,
+        "tail_ess": 2542.6654341726185,
+        "mcse_mean": 3.1164804891431253,
+        "mcse_sd": 2.2045424066666803,
+        "mcse_q05": 3.0,
+        "mcse_q95": 3.0,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": ["rank R-hat at or above 1.01"],
+        "ess_screening_minimum": 400
+      },
+      "mean_median": {
+        "rank_split_rhat": 1.0084607259391682,
+        "bulk_ess": 781.8252846303293,
+        "tail_ess": 2235.5484402917045,
+        "mcse_mean": 0.00043064352053190195,
+        "mcse_sd": 0.0003104187352678708,
+        "mcse_q05": 0.0005804000913311501,
+        "mcse_q95": 0.00040507471231985073,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 400
+      }
+    },
+    "joint_texas": {
+      "dem_seats": {
+        "rank_split_rhat": 1.002548003097736,
+        "bulk_ess": 2144.7424990933187,
+        "tail_ess": 4179.428357669639,
+        "mcse_mean": 0.027664751424335915,
+        "mcse_sd": 0.019576999161278943,
+        "mcse_q05": 0.0,
+        "mcse_q95": 0.0,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 800
+      },
+      "efficiency_gap": {
+        "rank_split_rhat": 1.0031410834604249,
+        "bulk_ess": 2116.999293829087,
+        "tail_ess": 5868.068506168374,
+        "mcse_mean": 0.0007249292607610947,
+        "mcse_sd": 0.0005126729200564618,
+        "mcse_q05": 0.0005888567673598064,
+        "mcse_q95": 0.0006797857993431999,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 800
+      },
+      "cut_edges": {
+        "rank_split_rhat": 1.010987267716448,
+        "bulk_ess": 1377.1530141076198,
+        "tail_ess": 4874.832204818897,
+        "mcse_mean": 2.3022580547899705,
+        "mcse_sd": 1.6282875724322572,
+        "mcse_q05": 2.5,
+        "mcse_q95": 2.5,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": ["rank R-hat at or above 1.01"],
+        "ess_screening_minimum": 800
+      },
+      "mean_median": {
+        "rank_split_rhat": 1.0076768403027314,
+        "bulk_ess": 1634.2366582310356,
+        "tail_ess": 4151.475305165321,
+        "mcse_mean": 0.0003027614338812825,
+        "mcse_sd": 0.00021412266799207094,
+        "mcse_q05": 0.0004555771647812498,
+        "mcse_q95": 0.0003148521600153005,
+        "all_finite": true,
+        "issues": [],
+        "warnings": [],
+        "screening_flags": [],
+        "ess_screening_minimum": 800
+      }
+    }
+  },
+  "all_primary_screens_pass": false,
+  "ess_flat_or_decreasing": [],
+  "sources": {
+    "outputs/analysis/convergence_campaign_2026-11-02/tx_shared45000_continuation_20261103/shared_060000/audit_all/audit/diagnostics.json": "2276490781f472ca5dfd56a09e915711dd6bf908fcdf4544af5ede0c44eb6ec2",
+    "outputs/analysis/convergence_campaign_2026-11-02/tx_shared45000_continuation_20261103/shared_055000/audit_all/audit/diagnostics.json": "4207b97490e7eee2571b8db09871302750bdb4793f6f947dd7ccb95c0f36a3f7",
+    "outputs/analysis/convergence_campaign_2026-11-02/tx_shared45000_continuation_20261103/shared_060000/manifest.json": "02b85713db5ec65cf50595a38cdcbecd7e331965e304d48d2ef81945586aee6a"
+  }
+}
