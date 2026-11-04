@@ -1,0 +1,32 @@
+{
+  "process_nice": 15,
+  "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" ../gerrymander-detector/.venv/science/bin/python -m paper.export --texas --source-root ../gerrymander-detector",
+  "tests": {
+    "passed": 117,
+    "skipped": 0,
+    "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" TMPDIR=\"$PWD/.venv/test-runtime\" ../gerrymander-detector/.venv/science/bin/python -m unittest discover -s tests -v",
+    "log_sha256": "41a033386970c3384a74af0afdb1643a838c50ba124889e2fe91f0f16d683262"
+  },
+  "previous_provisional_numbers_unchanged": true,
+  "elections": {
+    "tx": 9,
+    "nc": 15
+  },
+  "protected_source_checksums": {
+    "src/chain/run_ensemble.py": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+    "src/chain/checkpoint_integrity.py": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102",
+    "src/chain/run_texas_shared_prefix.py": "e8e1a591e91cee02e9e6c5107f9a87e642a8d233b6d785cc0bec842b6142be6e",
+    "docs/freeze_rule.md": "88ec409f311f091a5af91728ee2d3cbe2a1a0d1fa4f792784f41c0c37478c7ce"
+  },
+  "code_checksums": {
+    "paper/export.py": "0c5db59f9be2ed3f6a1399226a8cb51ab8e3301bfd4dc89b27cfefcfb1d7b63c",
+    "paper/responsiveness.py": "9467c7309a8ec771603b1932de495e6d1d2449a0173799d135f021c62e315540",
+    "tests/test_responsiveness.py": "34a692c475da6e02c16044ba2c21bbdd1595a33d74753cfaa30d61f1d2712530"
+  },
+  "format_checks": [
+    "Prettier JSON",
+    "Python AST; no configured formatter or linter",
+    "git diff --check"
+  ],
+  "figures_visually_checked": true
+}
