@@ -6,8 +6,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 6275,
-      "sha256": "388892b24a259a31a536a4f4049b5d76864a19230656d04657eec036929db1d2"
+      "bytes": 6427,
+      "sha256": "7e692d45b142c34a7fe4f9b5c15ad8fc8d1e31c7b81654f8150cbdead4055b98"
     },
     {
       "path": "deliverables/README.txt",
@@ -116,8 +116,8 @@
     },
     {
       "path": "paper/README.md",
-      "bytes": 935,
-      "sha256": "a9b3682d24574e7b13fd4eff3f0a481b3d7a953e8f1f3282b2c61643d0f9cdc6"
+      "bytes": 911,
+      "sha256": "6894d5f1ffd177e13fba979b8ab7391801c641ee48062bd91c7b30f922b1663a"
     },
     {
       "path": "paper/nc_findings.md",

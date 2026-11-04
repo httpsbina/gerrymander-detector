@@ -9,6 +9,14 @@ from paper.export import FIELDS, export, merge_results, publish, sha
 
 
 class PaperExportTests(unittest.TestCase):
+    def test_repeated_histogram_metadata_preserves_json_values(self):
+        current = {"texas": {"seats": 8}, "_paper": {"texas": {"histogram": {8: 41, 9: 500}}}}
+        previous = json.loads(json.dumps(current))
+        self.assertEqual(merge_results(previous, current), previous)
+        current["_paper"]["texas"]["histogram"][8] += 1
+        with self.assertRaisesRegex(ValueError, "metadata changed"):
+            merge_results(previous, current)
+
     def test_existing_artifact_is_not_overwritten(self):
         with TemporaryDirectory() as directory:
             path = Path(directory) / "figure.png"

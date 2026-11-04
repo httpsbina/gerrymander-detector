@@ -1,0 +1,27 @@
+{
+  "tests": {
+    "passed": 113,
+    "skipped": 0,
+    "raw_log_sha256": "b06b3ffbacaf14f14bb84c3ba1dc00846f9e0d193e1e95e956940d12513728d5",
+    "published_log": "paper/validation/nc-cleanroom-20261103/full-test-suite.log"
+  },
+  "python_check": "AST syntax; no configured Python formatter or linter",
+  "unchanged_protected_sources": {
+    "src/chain/run_ensemble.py": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+    "src/chain/checkpoint_integrity.py": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102",
+    "src/chain/run_texas_shared_prefix.py": "e8e1a591e91cee02e9e6c5107f9a87e642a8d233b6d785cc0bec842b6142be6e",
+    "docs/freeze_rule.md": "88ec409f311f091a5af91728ee2d3cbe2a1a0d1fa4f792784f41c0c37478c7ce",
+    "docs/texas_shared_length_schedule.md": "347500736df9ed8c36b0aa0aa65d3adb11d9417eb5cff9dfca44ae7019d2ea21",
+    "reproduce_paper.py": "e7e7f685f66e37d760b8392662945b38d0def2fdb78f42b527fbc86290028f6a"
+  },
+  "analysis_priority": 15,
+  "election_downloads": 0,
+  "independent_existing_enacted_model_comparisons": 5,
+  "checkpoint_assignments_verified": 4910,
+  "commands": [
+    "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 ../gerrymander-detector/.venv/science/bin/python -m paper.score_checkpoint_elections --source-root ../gerrymander-detector --output-dir paper/election-sensitivity",
+    "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 ../gerrymander-detector/.venv/science/bin/python -m paper.validate_checkpoint_elections --source-root ../gerrymander-detector --results paper/election-sensitivity/results.json",
+    "nice -n 15 ../gerrymander-detector/.venv/science/bin/python -m paper.summarize_checkpoint_elections --results paper/election-sensitivity/results.json",
+    "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" TMPDIR=\"$PWD/.venv/test-runtime\" ../gerrymander-detector/.venv/science/bin/python -m unittest discover -s tests -v"
+  ]
+}

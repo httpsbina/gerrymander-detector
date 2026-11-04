@@ -8,11 +8,14 @@
     "tables/texas/tail_counts.csv": "d1c709e0b9d39117493c087e37051ce8b3eb46bc05d9f848024efee337781f09",
     "tables/texas/convergence_history.csv": "6872a44d5f3a98c46b8e05b938c767447157dbcce83704a4551f40f52a6e8336",
     "texas_findings.md": "7cff194ca410b7c236edc60ce9414b7e02985e5285f6bc8642065f516f99f87b",
-    "results.json": "ee2f593c6259209af5b1d739db87795381803c327510ab3268c18ef786ca5a59",
+    "figures/texas/responsiveness.png": "eb427b571f73376f3efce7f588944df7bf154968f5bf9b7eda3e39bdd6bea3f6",
+    "figures/nc/responsiveness.png": "5f01fc2a0f7c988c2d16e2d695e1373f7cd859fc8f52bc405d736befe7c39f19",
+    "results.json": "61acd8041ed1ff89820a53e0e4d028647ca04cc78d70a622af1ab6f8521a7fe5",
     "README.md": "34cfa31381cd08dbfe6c7395cd2df91e9656c1273141f48c0def6c7d53d12d07"
   },
   "source_code": {
-    "paper/export.py": "98d978dc39912c5abe58e325fcac87ec00057d1cfaf3a7d6dde93934a7f192ae",
-    "paper/texas_outputs.py": "e4e54c16be1e70ed444aae3a46b69d08105b603846b86d5f440c660c39ceaa33"
+    "paper/export.py": "0c5db59f9be2ed3f6a1399226a8cb51ab8e3301bfd4dc89b27cfefcfb1d7b63c",
+    "paper/texas_outputs.py": "e4e54c16be1e70ed444aae3a46b69d08105b603846b86d5f440c660c39ceaa33",
+    "paper/responsiveness.py": "9467c7309a8ec771603b1932de495e6d1d2449a0173799d135f021c62e315540"
   }
 }

@@ -1,6 +1,6 @@
 # Gerrymander Detector
 
-**Status (November 2026):** I froze North Carolina at 23,000 states per chain under [`nc-baseline-23000`](https://github.com/httpsbina/gerrymander-detector/tree/nc-baseline-23000), after all four primary metrics passed jointly and within both starting-map groups. I am continuing Texas with four baseline chains and four dispersed-start chains; Texas is still running, though. I keep the [freeze rule](docs/freeze_rule.md), [frozen numbers](results.json) and [continuation commands](docs/continuation.md) with the analysis.
+**Status (November 2026):** I froze North Carolina's six chains at 23,000 states per chain under [`nc-baseline-23000`](https://github.com/httpsbina/gerrymander-detector/tree/nc-baseline-23000) and Texas's eight chains at 70,000 under [`texas-baseline-70000`](https://github.com/httpsbina/gerrymander-detector/tree/texas-baseline-70000). Every primary metric passes jointly and within each starting-map cohort. The [freeze rule](docs/freeze_rule.md), [frozen numbers](paper/results.json), and [paper outputs](paper/README.md) record the stopping criteria and reproduction commands.
 
 I compare congressional maps with alternative plans sampled using GerryChain's ReCom algorithm. I conduct this research through the [PEAK Award](https://undergraduate.northeastern.edu/research/awards/peak-fellowships-overview/) at [Northeastern University](https://www.northeastern.edu/), advised by Dr. Eric Gerber, using data from the Redistricting Data Hub.
 
@@ -8,16 +8,18 @@ I compare congressional maps with alternative plans sampled using GerryChain's R
 
 I ran three NC chains from the 2023 assignment and three from the 2025 assignment, using the same 2,681-unit Census-block-union geography for both. The geography retains all 236,638 blocks, population 10,439,388 and the Onslow split. Both starting maps have 3 Democratic-majority districts under the modeled 2024 presidential votes.
 
-The NC rows below come from the frozen analysis. The Texas row records the earlier 15,000-state baseline audit; I keep subsequent baseline and dispersed-cohort audits in the [continued-run records](deliverables/primary-freeze-2026-11-02/).
+I froze both states after all four primary metrics passed at the same complete chain length within each cohort and jointly. The table shows the seat-count diagnostics; the [frozen paper results](paper/results.json) contain every metric.
 
-| Baseline group         | Chains × states | Seat R-hat | Bulk ESS | Tail ESS |
-| ---------------------- | --------------: | ---------: | -------: | -------: |
-| Texas, ±0.1%           |      4 × 15,000 |    1.00790 |    221.7 |    385.3 |
-| NC, 2023 starting map  |      3 × 23,000 |    1.00367 |    954.0 |   1756.8 |
-| NC, 2025 starting map  |      3 × 23,000 |    1.00185 |   1118.7 |   1543.3 |
-| NC, both starting maps |      6 × 23,000 |    1.00268 |   2025.3 |   3267.9 |
+| Starting group        | Chains × states | Seat R-hat | Bulk ESS | Tail ESS |
+| --------------------- | --------------: | ---------: | -------: | -------: |
+| Texas, baseline       |      4 × 70,000 |    1.00544 |   1463.0 |   2429.7 |
+| Texas, dispersed      |      4 × 70,000 |    1.00256 |   1136.5 |   2606.0 |
+| Texas, joint          |      8 × 70,000 |    1.00385 |   2628.3 |   5024.8 |
+| NC, 2023 starting map |      3 × 23,000 |    1.00367 |    954.0 |   1756.8 |
+| NC, 2025 starting map |      3 × 23,000 |    1.00185 |   1118.7 |   1543.3 |
+| NC, joint             |      6 × 23,000 |    1.00268 |   2025.3 |   3267.9 |
 
-I require R-hat below 1.01 and bulk/tail ESS of at least 400 within each NC starting-map group and 600 jointly, with all four metrics passing together. The [progress record](deliverables/primary-freeze-2026-11-02/progress.json) contains the recorded diagnostics and seed/county comparison.
+I use R-hat below 1.01 and bulk/tail ESS of at least 400 within each cohort, 600 for joint NC and 800 for joint Texas. I retained all earlier states, seeds and starting maps.
 
 ## Texas rebuild
 
@@ -48,11 +50,11 @@ I use Python 3.12, GerryChain 0.3.2 and the [pinned research packages](requireme
 .venv/science/bin/python -m unittest discover -s tests -v
 ```
 
-I export frozen figures and tables with `python -m paper.export`. The command writes [figures](paper/figures), [tables](paper/tables), [full-precision values](paper/results.json) and the [NC findings](paper/nc_findings.md), reading the freeze registry so that Texas is included when its freeze is registered. The [docs index](docs/README.md) links the supporting records.
+I export both frozen analyses with `python -m paper.export`. The command writes [figures](paper/figures), [tables](paper/tables), [full-precision values](paper/results.json) and the state findings, using the registered NC23k and Texas70k freezes. The [docs index](docs/README.md) links the supporting records.
 
 ## Limitations
 
-I use modeled presidential vote allocations and a sampler constrained by population and graph contiguity. I have not established uniform sampling over valid maps, and these constraints cover only part of the legal redistricting requirements. The source and campaign reports describe the remaining geographic and election-source uncertainties. I report tail counts as descriptive frequencies, including zero counts; they are not calibrated p-values or estimates of zero probability. The earlier Texas chain files are unavailable, so I cannot revalidate that historical analysis.
+The primary convergence freezes are complete; MCSE and window-stability acceptance criteria still need scientific review. I use modeled presidential vote allocations and a sampler constrained by population and graph contiguity. I have not established uniform sampling over valid maps, and these constraints cover only part of the legal redistricting requirements. The source and campaign reports describe the remaining geographic and election-source uncertainties. I report tail counts as descriptive frequencies, including zero counts; they are not calibrated p-values or estimates of zero probability. The earlier Texas chain files are unavailable, so I cannot revalidate that historical analysis.
 
 ## References
 
