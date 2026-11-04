@@ -45,6 +45,7 @@ def publish(path, data):
 
 
 def merge_results(previous, current):
+    current = json.loads(json.dumps(current, allow_nan=False))
     for state, values in previous.items():
         if state == "_paper":
             continue
@@ -160,6 +161,8 @@ def export(build, registry, destination, root=ROOT):
             metadata[state]["paper_outputs"] = texas
             artifacts.update({Path(name): formatted(data, name) if name.endswith(".md") else data
                               for name, data in texas_artifacts(texas).items()})
+    if (ROOT / "paper/README.md").is_file():
+        artifacts[Path("README.md")] = (ROOT / "paper/README.md").read_bytes()
     result["_paper"] = metadata
     results_path = destination / "results.json"
     if results_path.exists():

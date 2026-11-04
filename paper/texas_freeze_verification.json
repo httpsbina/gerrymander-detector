@@ -61,9 +61,9 @@
     "MCSE and window-stability acceptance criteria"
   ],
   "tests": {
-    "passed": 117,
+    "passed": 118,
     "skipped": 0,
-    "log_sha256": "9351bbb533efad99f2de1657889ff8a6d21aad686a8d516bed8c731502a31dbf"
+    "log_sha256": "77cd71f373316033c4a7928d1556f86719211f4ed0798aaec172696530ee1c74"
   },
   "commands": [
     "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" .venv/science/bin/python reproduce_paper.py --output-dir outputs/validation/both-frozen-reproduction-20261104",
@@ -91,14 +91,16 @@
     ]
   },
   "code_checksums": {
-    "paper/export.py": "e13d61900417673786ce7368d3794cf959f38b33d1c404c0c68b33ef86a2fa0d",
-    "paper/texas_outputs.py": "e4e54c16be1e70ed444aae3a46b69d08105b603846b86d5f440c660c39ceaa33"
+    "paper/export.py": "0479a878ad89bd85794e5a58ee4e65068265ce2a6147035fdacda6d8ba43ef6f",
+    "paper/texas_outputs.py": "e4e54c16be1e70ed444aae3a46b69d08105b603846b86d5f440c660c39ceaa33",
+    "tests/test_paper_export.py": "96be802506d64b2df4fe1e60738474c6f3b66c08084be22442d87222db968c46"
   },
   "full_suite_command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" TMPDIR=\"$PWD/.venv/test-runtime\" ../gerrymander-detector/.venv/science/bin/python -m unittest discover -s tests -v",
   "one_command_frozen_export": {
     "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" ../gerrymander-detector/.venv/science/bin/python -m paper.export --texas --source-root ../gerrymander-detector --output-dir .venv/provisional-task/frozen-cli",
     "all_artifacts_byte_equal": true,
     "results_numeric_equal": true,
-    "files_compared": 26
-  }
+    "files_compared": 27
+  },
+  "repeated_export_after_json_roundtrip": true
 }

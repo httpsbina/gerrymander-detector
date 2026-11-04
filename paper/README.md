@@ -12,4 +12,4 @@ I read the freeze registry at execution time, so the same command includes Texas
 
 ## Limitations
 
-I export registered numerical freezes; the source and campaign reports retain the data and model limitations. Texas fixtures test the export contract, while its actual paper outputs await its freeze.
+I export both registered primary numerical freezes; the freeze records retain the unresolved MCSE and window-stability acceptance criteria, data uncertainties and model limitations.
