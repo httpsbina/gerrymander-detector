@@ -1,0 +1,663 @@
+{
+  "research_ready": false,
+  "manifest_sha256": "13003513ad04c73dc6aac1dfd983c105027be2faea5eaf18b4c9658da747898f",
+  "experiments": {
+    "tx_rebuild": {
+      "integrity": "pass",
+      "diagnostics": {
+        "dem_seats": {
+          "rank_split_rhat": 1.0079651850496645,
+          "bulk_ess": 340.9459174956708,
+          "tail_ess": 584.4582026749364,
+          "mcse_mean": 0.06968673288353298,
+          "mcse_sd": 0.04933748837474727,
+          "mcse_q05": 0.0,
+          "mcse_q95": 0.0,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": ["bulk ESS below 400"],
+          "ess_screening_minimum": 400
+        },
+        "efficiency_gap": {
+          "rank_split_rhat": 1.0099476311136628,
+          "bulk_ess": 341.3069812138887,
+          "tail_ess": 972.3381011007361,
+          "mcse_mean": 0.0018196747766400416,
+          "mcse_sd": 0.001287804083057862,
+          "mcse_q05": 0.0011127451421320544,
+          "mcse_q95": 0.0017461758375111498,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": ["bulk ESS below 400"],
+          "ess_screening_minimum": 400
+        },
+        "cut_edges": {
+          "rank_split_rhat": 1.0176886289022138,
+          "bulk_ess": 260.47625514747176,
+          "tail_ess": 738.7612502950705,
+          "mcse_mean": 5.34253512379191,
+          "mcse_sd": 3.786633883349489,
+          "mcse_q05": 4.5,
+          "mcse_q95": 6.5,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": [
+            "rank R-hat at or above 1.01",
+            "bulk ESS below 400"
+          ],
+          "ess_screening_minimum": 400
+        },
+        "mean_median": {
+          "rank_split_rhat": 1.0205295705924664,
+          "bulk_ess": 254.05202037215767,
+          "tail_ess": 498.16331359577094,
+          "mcse_mean": 0.0007770208148361582,
+          "mcse_sd": 0.0005500757969886121,
+          "mcse_q05": 0.00145722136218545,
+          "mcse_q95": 0.0007698489975103487,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": [
+            "rank R-hat at or above 1.01",
+            "bulk ESS below 400"
+          ],
+          "ess_screening_minimum": 400
+        }
+      },
+      "warmup_sensitivity": {
+        "0": {
+          "dem_seats": {
+            "rank_split_rhat": 1.006589297701104,
+            "bulk_ess": 354.91420931576255,
+            "tail_ess": 610.9700979752407,
+            "mcse_mean": 0.06819925543811188,
+            "mcse_sd": 0.04830778159166199,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["bulk ESS below 400"],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0092203227775904,
+            "bulk_ess": 348.23528726710157,
+            "tail_ess": 985.1404421446292,
+            "mcse_mean": 0.0018021528662242547,
+            "mcse_sd": 0.0012753788779321222,
+            "mcse_q05": 0.0010894562666534519,
+            "mcse_q95": 0.0017453743083359998,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["bulk ESS below 400"],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.0186000414510772,
+            "bulk_ess": 246.38315434994112,
+            "tail_ess": 843.3705068253382,
+            "mcse_mean": 5.751551523298779,
+            "mcse_sd": 4.071539759121033,
+            "mcse_q05": 5.0,
+            "mcse_q95": 7.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.020303329247255,
+            "bulk_ess": 259.184294911946,
+            "tail_ess": 525.2249393470589,
+            "mcse_mean": 0.0007813240603031883,
+            "mcse_sd": 0.0005531048098884209,
+            "mcse_q05": 0.0013869133910042498,
+            "mcse_q95": 0.0007770943454606001,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          }
+        },
+        "250": {
+          "dem_seats": {
+            "rank_split_rhat": 1.0072719619607113,
+            "bulk_ess": 348.48763003548834,
+            "tail_ess": 591.2383122694096,
+            "mcse_mean": 0.0687747706115613,
+            "mcse_sd": 0.048680727668283456,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["bulk ESS below 400"],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0094992493292296,
+            "bulk_ess": 346.87161190618315,
+            "tail_ess": 993.0254097309914,
+            "mcse_mean": 0.001799988398925626,
+            "mcse_sd": 0.0012738523960478779,
+            "mcse_q05": 0.0010893226784575993,
+            "mcse_q95": 0.0017218182564656501,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["bulk ESS below 400"],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.017093556151919,
+            "bulk_ess": 264.8833167865767,
+            "tail_ess": 806.5434242033535,
+            "mcse_mean": 5.304969774930672,
+            "mcse_sd": 3.7604357571634424,
+            "mcse_q05": 5.0,
+            "mcse_q95": 6.5,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.0202771556557997,
+            "bulk_ess": 261.0155250711028,
+            "tail_ess": 565.2541862916964,
+            "mcse_mean": 0.0007655568939201069,
+            "mcse_sd": 0.0005419406506929618,
+            "mcse_q05": 0.0013449243481016499,
+            "mcse_q95": 0.0007715085104468,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          }
+        },
+        "500": {
+          "dem_seats": {
+            "rank_split_rhat": 1.0079651850496645,
+            "bulk_ess": 340.9459174956708,
+            "tail_ess": 584.4582026749364,
+            "mcse_mean": 0.06968673288353298,
+            "mcse_sd": 0.04933748837474727,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["bulk ESS below 400"],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0099476311136628,
+            "bulk_ess": 341.3069812138887,
+            "tail_ess": 972.3381011007361,
+            "mcse_mean": 0.0018196747766400416,
+            "mcse_sd": 0.001287804083057862,
+            "mcse_q05": 0.0011127451421320544,
+            "mcse_q95": 0.0017461758375111498,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["bulk ESS below 400"],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.0176886289022138,
+            "bulk_ess": 260.47625514747176,
+            "tail_ess": 738.7612502950705,
+            "mcse_mean": 5.34253512379191,
+            "mcse_sd": 3.786633883349489,
+            "mcse_q05": 4.5,
+            "mcse_q95": 6.5,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.0205295705924664,
+            "bulk_ess": 254.05202037215767,
+            "tail_ess": 498.16331359577094,
+            "mcse_mean": 0.0007770208148361582,
+            "mcse_sd": 0.0005500757969886121,
+            "mcse_q05": 0.00145722136218545,
+            "mcse_q95": 0.0007698489975103487,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          }
+        },
+        "1000": {
+          "dem_seats": {
+            "rank_split_rhat": 1.0071795711242948,
+            "bulk_ess": 333.36877231300815,
+            "tail_ess": 563.7430239576687,
+            "mcse_mean": 0.07074080560887729,
+            "mcse_sd": 0.050065099829175716,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["bulk ESS below 400"],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0090141566686694,
+            "bulk_ess": 336.1296341352814,
+            "tail_ess": 879.7476981810639,
+            "mcse_mean": 0.0018387965460074714,
+            "mcse_sd": 0.00130135311080485,
+            "mcse_q05": 0.0012259388734257998,
+            "mcse_q95": 0.00174230177983115,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["bulk ESS below 400"],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.0184730959745534,
+            "bulk_ess": 260.18773582899775,
+            "tail_ess": 724.5849549237674,
+            "mcse_mean": 5.35850202823983,
+            "mcse_sd": 3.802514732463579,
+            "mcse_q05": 5.0,
+            "mcse_q95": 6.5,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.022843011024763,
+            "bulk_ess": 246.61449040521634,
+            "tail_ess": 476.9905082727138,
+            "mcse_mean": 0.0007890325968965664,
+            "mcse_sd": 0.0005586002567592312,
+            "mcse_q05": 0.0014911887807809504,
+            "mcse_q95": 0.0007572318337755509,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [
+              "rank R-hat at or above 1.01",
+              "bulk ESS below 400"
+            ],
+            "ess_screening_minimum": 400
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps000000-003999.csv",
+          "sha256": "aec3949fc4c96f32c8f9cd58efb306185c06a2c1cf9288230e77c9aa80b36064"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps004000-004199.csv",
+          "sha256": "1b2fc700192d9dc20ad0019f595a0a31e533959bfae58ed898da180f7532d993"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps004200-004399.csv",
+          "sha256": "6aad3aa6ca251a64d85ec219e4fa0796fd52630d89253208e8b7aebc91105e01"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps004400-006399.csv",
+          "sha256": "1323e7295807f716ddb1d1fac641894c131b3085f7ad47ff404fb89bacc5f742"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps006400-008399.csv",
+          "sha256": "d1e080f081f4f49b0d8a504f11c08ca411c38f07e934fe5fb44fc8f5e61a5cdb"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps008400-010399.csv",
+          "sha256": "51938909b30b0cb91b1a1b502f8970a128c0d4e636fea18f1cf1b0d3d150ca8d"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps010400-012399.csv",
+          "sha256": "84d127545a75d999d46296d79141ca14c0472f0c7ec718aaefd606af0665c72b"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps012400-014399.csv",
+          "sha256": "191f90a0353735383412ba15f891198a8a556780da696e3dfe9187bac2a9a425"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps014400-014999.csv",
+          "sha256": "06a380527029296c2e40162833fa456b1d723cb1d1b995feea7db027a127d832"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps015000-015999.csv",
+          "sha256": "673d7aea0ef06e8ecfad28a7dee4ea057a387c3ea51740362d8ef2c03e61d79a"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps016000-016999.csv",
+          "sha256": "3e6e5a898b208a12d4f9af7a11cfb15aedb5710e54a21f0e4713ed874a30d63d"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps017000-017999.csv",
+          "sha256": "fb226c7955d8f2868253ff51e8042e771d3be0c75a38ba879339ca0f269adf72"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps018000-018999.csv",
+          "sha256": "a659abe60cb19bbb0c38461103f7f0e24191b0c3737556a96762334caa48a0d6"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps019000-019999.csv",
+          "sha256": "0ec6f1b953741194fc11fcc859a03e59907492b6c913ed7fdee23f856680c8ba"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps000000-003999.csv",
+          "sha256": "b2393ff27aa7a440bcdedd21f5c28a8f633e6c13d8bc2deed8a82daa042cfc19"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps004000-004199.csv",
+          "sha256": "eb527697a147b2b066476db255dbdaf20106d7bbd49fc3525672379d83981abf"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps004200-004399.csv",
+          "sha256": "679de246e31dc1383c87559e9008a6f7dc055257017044f3e18a2fb269b90d26"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps004400-006399.csv",
+          "sha256": "b0e3c3bff29aebd6c7ea64803b732cef9599126cf23692b22ec24c3c26aa161f"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps006400-008399.csv",
+          "sha256": "a2aae5cb826eefdaebd153b6e6c5bd413b3a923bef29bf62b44fcd3d1f67a547"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps008400-010399.csv",
+          "sha256": "37149f9e5090039e600264ac41aaeb6749070616b2d5c0ed32f629535ce82af1"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps010400-012399.csv",
+          "sha256": "c01d85b8058bf9f4c6fb2460607f4e3107b4e98a86869030a4ac7bf4ab2a0590"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps012400-014399.csv",
+          "sha256": "d4ff77fbbaa2757f003ed74ca0ae67b3a848c26595d77477942910b9d62d5b60"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps014400-014999.csv",
+          "sha256": "7720aba35e7f7f43973a876980f086cdf28fdaa0f8c4c5676969dad94cfc7648"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps015000-015999.csv",
+          "sha256": "8085b9a0450306b34e4735f9923f57174ab27d3318eba4660756c26ab650793a"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps016000-016999.csv",
+          "sha256": "195e955e3f1f94312eaeb8d690fe553acbbb8d1d21b8f81a4be17a8c43981762"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps017000-017999.csv",
+          "sha256": "4ae740c2a366900f5eba09de38eedcdefc095dae878e32dd8da0c175bc8b1465"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps018000-018999.csv",
+          "sha256": "fe5b0120d8c6604d306c77a7bf6a53a4c906e17fce3969e15b272444106e77c5"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps019000-019999.csv",
+          "sha256": "cff38bd7a4df51680bba49cbed3d06a7c7adf815ee926e553f4fdbf5d3da1c67"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps000000-003999.csv",
+          "sha256": "52c8f62c9f6e9f5c7bbc325cdc4a1d33c7b4f32d6e9d6c67f5ca434f690d2b33"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps004000-004199.csv",
+          "sha256": "3cb62f954a0d56f9142b2c16d97840bbf3d3474c29bd630088bc3c58c82d82b8"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps004200-004399.csv",
+          "sha256": "1745a1f276e77231412057f8c30898719fb32299f0a105350314d11736715678"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps004400-006399.csv",
+          "sha256": "98991cb0e8b2aa2af79b8297c1e97717fe98b023c8c9f2977e8514f0aa3c88a3"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps006400-008399.csv",
+          "sha256": "d2eb7363d00a7e101e40a7771041fa6c3e069feedc5dfdd751b6822a1c9213fc"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps008400-010399.csv",
+          "sha256": "22bf50c09475d49baaa4d58dfbf638171130f22e862c7ff95b02e232de518013"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps010400-012399.csv",
+          "sha256": "c33ce8f3ae4ddf7e93da38f54136f5b40369136ad23c4b35924118f69ae24839"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps012400-014399.csv",
+          "sha256": "5c7e45e82cad42ff280b7087b938f2fadaad1b67d3ffb1d1d7b7e65e5417fa4c"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps014400-014999.csv",
+          "sha256": "ec5019d8f53ab5defa55821cba91aaa8f5e5cf93e3b8042a6d4765caad679c49"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps015000-015999.csv",
+          "sha256": "0e551652c8f30cff641884d230ebddd71c00a0360c2bf356228c8afb83dd233a"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps016000-016999.csv",
+          "sha256": "8c487b924f2d2b516999e73e8eaffe163f4916e030fda0876acb38ee7fbfed0e"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps017000-017999.csv",
+          "sha256": "2fc7886c8f9ae2e941a431e36938b33336285e3e32432327b8b60b6c1e5e6d37"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps018000-018999.csv",
+          "sha256": "38f2cae3aeb3dd07b8320578c88c392560f2c7425f70d0fd4b1ea071e8e8599d"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps019000-019999.csv",
+          "sha256": "957d96f6332aa327b25c213f97fa50fefc9e15c693d6767d80db4adb5861f785"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps000000-003999.csv",
+          "sha256": "163df59595b42585dae3c8f5d3bb7a8bcaebc12c6bad99e335d12f52dcb36afc"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps004000-004199.csv",
+          "sha256": "abe852feaf9e88f5d6de7a8b699d902d7fe00f587d221d73ca22c3831d2704cf"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps004200-004399.csv",
+          "sha256": "36d923dc3de03f003f847fd4a2fd630d882ce1a83fc604f307ec5e50e0c00bd3"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps004400-006399.csv",
+          "sha256": "200073be24aaa1774b3796a92c5d227318253d704225349e896f3c72cc1212fe"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps006400-008399.csv",
+          "sha256": "37c9039d62f20202ac0f24cecc682b65a0e86ec9e14096bbbaa801ee179c5e21"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps008400-010399.csv",
+          "sha256": "2e745386c5ed6e5a17b09ee15b4e2a7c1641411afed1b042b16688b183c7ce61"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps010400-012399.csv",
+          "sha256": "f74017f462a432b236841671598ae66033e103ade4c3dfaad9b054bf535e273a"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps012400-014399.csv",
+          "sha256": "08a94c1d99f1e4be8e949f71ae43247ff43f931bc6d232a88f02c8515383b6ed"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps014400-014999.csv",
+          "sha256": "7881f5a68a7c8d92ec5b095ac8c507b73a31289707315c8dc5cfb75e69d1ca22"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps015000-015999.csv",
+          "sha256": "ac0500a07c441072fd02d56838d4602b6f545e1c39b768f20dafdc91af45782e"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps016000-016999.csv",
+          "sha256": "6bc65ded02f1cd9b406b5bffc6baf95c5640b085c9984f1db167af37e2da5eae"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps017000-017999.csv",
+          "sha256": "000eb1fe81133823c31c32258f18a9a19fde27e623776b71699616b528a4fd97"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps018000-018999.csv",
+          "sha256": "484628bcb8ab783c9035c52c2ff5d27d9e958884585e3ac395320d7892599183"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps019000-019999.csv",
+          "sha256": "fd2457de74a41948b4815bb8fdbcf190934136871372b8aeefca8e780bda6d79"
+        }
+      ],
+      "checkpoints": [
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed1117_next20000.pkl",
+          "sha256": "69f1713ef3f4528513a184ad37e211f51d01dbb77b515fafcb80062b22f14fbd"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed2227_next20000.pkl",
+          "sha256": "41cd4ace1ac87c3dcebad06fcf8eb51b63ed188f3f786fbf6df5d9b3012592e9"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed3331_next20000.pkl",
+          "sha256": "413d3d5857b7dc99612ca93e9cd902e6144d15530f8b783a4313856c073590cd"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_020000/snapshot/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed4441_next20000.pkl",
+          "sha256": "d27f61a6f78d9be878f2d7d1ee891843b91866acedec7e8ef47edd77ae0ffa49"
+        }
+      ],
+      "checkpoint_provenance": {
+        "dataset_sha256": "ff09876b030c693307cdf362fef38a0fccf00dee5ed8b6fb973fa29b86f20179",
+        "graph_sha256": "45efa0772341fda12c7b5b39800cbea15eaf2f84029df082955181edc874c36e",
+        "runner_sha256": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+        "checkpoint_code_sha256": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102",
+        "runtime": {
+          "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "packages": {
+            "gerrychain": "0.3.2",
+            "networkx": "3.4.2",
+            "geopandas": "1.1.2",
+            "shapely": "2.0.7",
+            "pandas": "2.2.3",
+            "numpy": "1.26.4",
+            "pyproj": "3.6.1"
+          }
+        },
+        "configuration": {
+          "state": "tx_rebuild_20261102",
+          "layer": "precincts",
+          "assignment_col": "CONG_DIST",
+          "population_col": "TOTPOP",
+          "dem_col": "G24PREDHAR",
+          "rep_col": "G24PRERTRU",
+          "epsilon": 0.001,
+          "node_repeats": 2,
+          "sample_every": 1
+        }
+      }
+    }
+  },
+  "joint_nc": {
+    "nc_block_union": {
+      "status": "unavailable; both complete starting-map groups required"
+    },
+    "nc_precinct_sensitivity": {
+      "status": "unavailable; both complete starting-map groups required"
+    },
+    "nc_population_sensitivity": {
+      "status": "unavailable; both complete starting-map groups required"
+    }
+  },
+  "metric_definitions": {
+    "mean_median": "GerryChain Democratic median-minus-mean two-party district share",
+    "efficiency_gap": "GerryChain two-party efficiency gap; descriptive modeled votes"
+  },
+  "screening": {
+    "rhat_strict_upper": 1.01,
+    "ess_floor": "max(400, 100 * chains)",
+    "meaning": "Conservative numerical flags, not a complete project acceptance criterion"
+  },
+  "unresolved": [
+    "Election source/canvass and NC privacy-noise uncertainties",
+    "MCSE and stability acceptance criteria require scientific review",
+    "No historical-chain continuation or source equivalence is established",
+    "ReCom is not established as uniform or fully legally constrained"
+  ],
+  "condition_mean_differences": {
+    "tx_population": {
+      "baseline": "tx_rebuild",
+      "sensitivity": "tx_population_sensitivity",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_graph_2023": {
+      "baseline": "nc_block_union_2023",
+      "sensitivity": "nc_precinct_sensitivity_2023",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_graph_2025": {
+      "baseline": "nc_block_union_2025",
+      "sensitivity": "nc_precinct_sensitivity_2025",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_population_2023": {
+      "baseline": "nc_block_union_2023",
+      "sensitivity": "nc_population_sensitivity_2023",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_population_2025": {
+      "baseline": "nc_block_union_2025",
+      "sensitivity": "nc_population_sensitivity_2025",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    }
+  }
+}

@@ -1,0 +1,953 @@
+{
+  "research_ready": false,
+  "manifest_sha256": "c46bfaf7b09bc29ff84c5295ca0c3ca40af118337c53badf5c4770470fe45612",
+  "experiments": {
+    "tx_rebuild": {
+      "integrity": "pass",
+      "diagnostics": {
+        "dem_seats": {
+          "rank_split_rhat": 1.0056547913180012,
+          "bulk_ess": 758.5560972557072,
+          "tail_ess": 1332.320547034494,
+          "mcse_mean": 0.04670903055479645,
+          "mcse_sd": 0.03312042321012785,
+          "mcse_q05": 0.0,
+          "mcse_q95": 0.0,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": [],
+          "ess_screening_minimum": 400
+        },
+        "efficiency_gap": {
+          "rank_split_rhat": 1.0038552842322128,
+          "bulk_ess": 774.9889832727772,
+          "tail_ess": 1780.5356309102199,
+          "mcse_mean": 0.0012038147142411934,
+          "mcse_sd": 0.0008515460340716726,
+          "mcse_q05": 0.0008225470513211,
+          "mcse_q95": 0.0011084257904658498,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": [],
+          "ess_screening_minimum": 400
+        },
+        "cut_edges": {
+          "rank_split_rhat": 1.0075945020141424,
+          "bulk_ess": 527.4770188446938,
+          "tail_ess": 1565.4385157896268,
+          "mcse_mean": 3.691921558223111,
+          "mcse_sd": 2.6120281169867816,
+          "mcse_q05": 4.0,
+          "mcse_q95": 5.0,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": [],
+          "ess_screening_minimum": 400
+        },
+        "mean_median": {
+          "rank_split_rhat": 1.011051583269832,
+          "bulk_ess": 582.5873171218849,
+          "tail_ess": 1288.347968382806,
+          "mcse_mean": 0.0005178890367427348,
+          "mcse_sd": 0.00036638845742776775,
+          "mcse_q05": 0.0008783262692631504,
+          "mcse_q95": 0.00047933824368495,
+          "all_finite": true,
+          "issues": [],
+          "warnings": [],
+          "screening_flags": ["rank R-hat at or above 1.01"],
+          "ess_screening_minimum": 400
+        }
+      },
+      "warmup_sensitivity": {
+        "0": {
+          "dem_seats": {
+            "rank_split_rhat": 1.0048100703593523,
+            "bulk_ess": 772.8137777602133,
+            "tail_ess": 1376.3319174290853,
+            "mcse_mean": 0.04624359772181799,
+            "mcse_sd": 0.032799913749954335,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0032737330041321,
+            "bulk_ess": 784.0017788553356,
+            "tail_ess": 1802.1351596654754,
+            "mcse_mean": 0.0011978711099247998,
+            "mcse_sd": 0.0008473380150834741,
+            "mcse_q05": 0.0008350152829348992,
+            "mcse_q95": 0.0011436930741734,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.0080922079269852,
+            "bulk_ess": 525.8218901070159,
+            "tail_ess": 1609.0883195752656,
+            "mcse_mean": 3.8066686645722574,
+            "mcse_sd": 2.6931778633643324,
+            "mcse_q05": 3.5,
+            "mcse_q95": 4.5,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.0103302582773872,
+            "bulk_ess": 566.9895022281723,
+            "tail_ess": 1293.884615377608,
+            "mcse_mean": 0.0005298225218319046,
+            "mcse_sd": 0.00037483601284177487,
+            "mcse_q05": 0.0008646249806358508,
+            "mcse_q95": 0.0004838292265738498,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["rank R-hat at or above 1.01"],
+            "ess_screening_minimum": 400
+          }
+        },
+        "250": {
+          "dem_seats": {
+            "rank_split_rhat": 1.0052086698684979,
+            "bulk_ess": 767.2532414431416,
+            "tail_ess": 1360.2737949806306,
+            "mcse_mean": 0.04638957464342851,
+            "mcse_sd": 0.03289989342488642,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0035666808956292,
+            "bulk_ess": 782.6267224642986,
+            "tail_ess": 1784.7874280860678,
+            "mcse_mean": 0.0011967451752210516,
+            "mcse_sd": 0.0008465421001962285,
+            "mcse_q05": 0.0008106131724908011,
+            "mcse_q95": 0.0011135021419086,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.0075544010409552,
+            "bulk_ess": 537.547628249701,
+            "tail_ess": 1618.3257202057055,
+            "mcse_mean": 3.662038235794796,
+            "mcse_sd": 2.590859655243073,
+            "mcse_q05": 3.5,
+            "mcse_q95": 5.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.0106079273960558,
+            "bulk_ess": 578.2923131926966,
+            "tail_ess": 1292.625986742959,
+            "mcse_mean": 0.0005199938359179388,
+            "mcse_sd": 0.0003678788868956807,
+            "mcse_q05": 0.0008666979115264,
+            "mcse_q95": 0.0004743035746853502,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["rank R-hat at or above 1.01"],
+            "ess_screening_minimum": 400
+          }
+        },
+        "500": {
+          "dem_seats": {
+            "rank_split_rhat": 1.0056547913180012,
+            "bulk_ess": 758.5560972557072,
+            "tail_ess": 1332.320547034494,
+            "mcse_mean": 0.04670903055479645,
+            "mcse_sd": 0.03312042321012785,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0038552842322128,
+            "bulk_ess": 774.9889832727772,
+            "tail_ess": 1780.5356309102199,
+            "mcse_mean": 0.0012038147142411934,
+            "mcse_sd": 0.0008515460340716726,
+            "mcse_q05": 0.0008225470513211,
+            "mcse_q95": 0.0011084257904658498,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.0075945020141424,
+            "bulk_ess": 527.4770188446938,
+            "tail_ess": 1565.4385157896268,
+            "mcse_mean": 3.691921558223111,
+            "mcse_sd": 2.6120281169867816,
+            "mcse_q05": 4.0,
+            "mcse_q95": 5.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.011051583269832,
+            "bulk_ess": 582.5873171218849,
+            "tail_ess": 1288.347968382806,
+            "mcse_mean": 0.0005178890367427348,
+            "mcse_sd": 0.00036638845742776775,
+            "mcse_q05": 0.0008783262692631504,
+            "mcse_q95": 0.00047933824368495,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["rank R-hat at or above 1.01"],
+            "ess_screening_minimum": 400
+          }
+        },
+        "1000": {
+          "dem_seats": {
+            "rank_split_rhat": 1.0061364175910434,
+            "bulk_ess": 735.5264300636263,
+            "tail_ess": 1299.0148577042578,
+            "mcse_mean": 0.047527038827530656,
+            "mcse_sd": 0.03370167316281587,
+            "mcse_q05": 0.0,
+            "mcse_q95": 0.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [],
+            "ess_screening_minimum": 400
+          },
+          "efficiency_gap": {
+            "rank_split_rhat": 1.0041049321427358,
+            "bulk_ess": 754.5025851273118,
+            "tail_ess": 1737.1971871055516,
+            "mcse_mean": 0.0012221205007724638,
+            "mcse_sd": 0.0008645039461860351,
+            "mcse_q05": 0.0008565229824686951,
+            "mcse_q95": 0.0011318927835389499,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [],
+            "ess_screening_minimum": 400
+          },
+          "cut_edges": {
+            "rank_split_rhat": 1.0076266495686,
+            "bulk_ess": 523.826391897576,
+            "tail_ess": 1524.3664515617088,
+            "mcse_mean": 3.7055293176041433,
+            "mcse_sd": 2.621666400970806,
+            "mcse_q05": 4.0,
+            "mcse_q95": 5.0,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": [],
+            "ess_screening_minimum": 400
+          },
+          "mean_median": {
+            "rank_split_rhat": 1.0126711423329366,
+            "bulk_ess": 575.0805222316892,
+            "tail_ess": 1251.2807785399914,
+            "mcse_mean": 0.0005214669535237794,
+            "mcse_sd": 0.00036892239232069903,
+            "mcse_q05": 0.0009146346508622505,
+            "mcse_q95": 0.0004889560577447504,
+            "all_finite": true,
+            "issues": [],
+            "warnings": [],
+            "screening_flags": ["rank R-hat at or above 1.01"],
+            "ess_screening_minimum": 400
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps000000-003999.csv",
+          "sha256": "aec3949fc4c96f32c8f9cd58efb306185c06a2c1cf9288230e77c9aa80b36064"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps004000-004199.csv",
+          "sha256": "1b2fc700192d9dc20ad0019f595a0a31e533959bfae58ed898da180f7532d993"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps004200-004399.csv",
+          "sha256": "6aad3aa6ca251a64d85ec219e4fa0796fd52630d89253208e8b7aebc91105e01"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps004400-006399.csv",
+          "sha256": "1323e7295807f716ddb1d1fac641894c131b3085f7ad47ff404fb89bacc5f742"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps006400-008399.csv",
+          "sha256": "d1e080f081f4f49b0d8a504f11c08ca411c38f07e934fe5fb44fc8f5e61a5cdb"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps008400-010399.csv",
+          "sha256": "51938909b30b0cb91b1a1b502f8970a128c0d4e636fea18f1cf1b0d3d150ca8d"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps010400-012399.csv",
+          "sha256": "84d127545a75d999d46296d79141ca14c0472f0c7ec718aaefd606af0665c72b"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps012400-014399.csv",
+          "sha256": "191f90a0353735383412ba15f891198a8a556780da696e3dfe9187bac2a9a425"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps014400-014999.csv",
+          "sha256": "06a380527029296c2e40162833fa456b1d723cb1d1b995feea7db027a127d832"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps015000-015999.csv",
+          "sha256": "673d7aea0ef06e8ecfad28a7dee4ea057a387c3ea51740362d8ef2c03e61d79a"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps016000-016999.csv",
+          "sha256": "3e6e5a898b208a12d4f9af7a11cfb15aedb5710e54a21f0e4713ed874a30d63d"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps017000-017999.csv",
+          "sha256": "fb226c7955d8f2868253ff51e8042e771d3be0c75a38ba879339ca0f269adf72"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps018000-018999.csv",
+          "sha256": "a659abe60cb19bbb0c38461103f7f0e24191b0c3737556a96762334caa48a0d6"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps019000-019999.csv",
+          "sha256": "0ec6f1b953741194fc11fcc859a03e59907492b6c913ed7fdee23f856680c8ba"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps020000-020999.csv",
+          "sha256": "e82009c871eda64a8c099a1494b35dd3396126412545fb496bbea21e9ac43363"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps021000-021999.csv",
+          "sha256": "84f32441840c7113e47c1363886b6904353ec406248f7773a163c39e19f53a34"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps022000-022999.csv",
+          "sha256": "218eb9d859e243975e3446adf3f1166bcdfb54ad28e537822fdc427c7ce29142"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps023000-023999.csv",
+          "sha256": "071668c5bfc819025e347eacb3355c8521ac5b5a1ddb3c8d0ecd4b5c73b2e43a"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps024000-024999.csv",
+          "sha256": "c35e070ae50f16d443485d6c82e384632b369c298dc90fda611898dc5eeebca9"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps025000-025999.csv",
+          "sha256": "3bc37dd1d378b079b048436b960bd09e409f21793be700b9e5cda00aa4e21b48"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps026000-026999.csv",
+          "sha256": "2360b1911a5b1d6cbf422d5215c83243b23c62306c54f63c88ae23e97727e7fa"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps027000-027999.csv",
+          "sha256": "1a44c2c2099e87ca092e5fa3e9658871953ef6d8196853fcc22ee42952318e28"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps028000-028999.csv",
+          "sha256": "629e6dfaeb292bd14c65fbc5b11b9562809637e761116fc2da3584166e6b4deb"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps029000-029999.csv",
+          "sha256": "664ca642101d70a2fa18ab0d28fd47d2d3b7a6381c943d664d210de4794d6048"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps030000-030999.csv",
+          "sha256": "107d6daa1fd01548152e95f427b94701e35663aeeb037f9e1156a152fc568e5e"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps031000-031999.csv",
+          "sha256": "e408134538142ce49f875172cad45ed2a909738a268994d2eb53641a79d5086c"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps032000-032999.csv",
+          "sha256": "d5e125bcdece6b7df0d91723639714ee8b861fb91f5eaf0cd5d5a9ecaa737e6b"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps033000-033999.csv",
+          "sha256": "c09bff69c5d3dcdcb3272445c20936d2f9e89cb728675a2a208c930a20c98383"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps034000-034999.csv",
+          "sha256": "40ffd1650f64ba0b017f009865e223d76620e7b543f18ece69fdc367fd622d7e"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps035000-035999.csv",
+          "sha256": "cf369bbe7f2ebaa1feac178816e9647e1a8ca23559f78e1ad78da9fa30c91ddc"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps036000-036999.csv",
+          "sha256": "03c7713449c9562e92934f27294f1676d3aba4fbb5819c0668724cba5ed99b3e"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps037000-037999.csv",
+          "sha256": "591180cebba356383b7a57b0d23e7c0cfbc69fd1182b37dcef6a8418dce4514b"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps038000-038999.csv",
+          "sha256": "52994b0f23a0c1858b5bbae05757a157029358f6ba48f301602e90cb923920e9"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed1117_steps039000-039999.csv",
+          "sha256": "dea1839777dc523395fb5aaf299a5fc765cf14f040ce02624d4638f8ed1c36ca"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps000000-003999.csv",
+          "sha256": "b2393ff27aa7a440bcdedd21f5c28a8f633e6c13d8bc2deed8a82daa042cfc19"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps004000-004199.csv",
+          "sha256": "eb527697a147b2b066476db255dbdaf20106d7bbd49fc3525672379d83981abf"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps004200-004399.csv",
+          "sha256": "679de246e31dc1383c87559e9008a6f7dc055257017044f3e18a2fb269b90d26"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps004400-006399.csv",
+          "sha256": "b0e3c3bff29aebd6c7ea64803b732cef9599126cf23692b22ec24c3c26aa161f"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps006400-008399.csv",
+          "sha256": "a2aae5cb826eefdaebd153b6e6c5bd413b3a923bef29bf62b44fcd3d1f67a547"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps008400-010399.csv",
+          "sha256": "37149f9e5090039e600264ac41aaeb6749070616b2d5c0ed32f629535ce82af1"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps010400-012399.csv",
+          "sha256": "c01d85b8058bf9f4c6fb2460607f4e3107b4e98a86869030a4ac7bf4ab2a0590"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps012400-014399.csv",
+          "sha256": "d4ff77fbbaa2757f003ed74ca0ae67b3a848c26595d77477942910b9d62d5b60"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps014400-014999.csv",
+          "sha256": "7720aba35e7f7f43973a876980f086cdf28fdaa0f8c4c5676969dad94cfc7648"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps015000-015999.csv",
+          "sha256": "8085b9a0450306b34e4735f9923f57174ab27d3318eba4660756c26ab650793a"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps016000-016999.csv",
+          "sha256": "195e955e3f1f94312eaeb8d690fe553acbbb8d1d21b8f81a4be17a8c43981762"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps017000-017999.csv",
+          "sha256": "4ae740c2a366900f5eba09de38eedcdefc095dae878e32dd8da0c175bc8b1465"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps018000-018999.csv",
+          "sha256": "fe5b0120d8c6604d306c77a7bf6a53a4c906e17fce3969e15b272444106e77c5"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps019000-019999.csv",
+          "sha256": "cff38bd7a4df51680bba49cbed3d06a7c7adf815ee926e553f4fdbf5d3da1c67"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps020000-020999.csv",
+          "sha256": "a553ee417cf9138d5f9a8663c7de8d7b290b6ea86510df1fc6d0d3972cb39912"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps021000-021999.csv",
+          "sha256": "2f61db303ed90e7e12469db1100a278ea4c1333a5fc0632c47b34ce28f8a6dc9"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps022000-022999.csv",
+          "sha256": "658931c628f8d1c005fd3d8520da82be357f2213ce22c35c413ffdc3343f85d9"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps023000-023999.csv",
+          "sha256": "f20e6ff814704ec4b52b4b63eb7621596c88f22e6e3d8162fccad638f3b48a37"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps024000-024999.csv",
+          "sha256": "4c5f3241aa6ed05af864acc5fcfe88d03edaf77078b2b9767f645ad2a348618a"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps025000-025999.csv",
+          "sha256": "8b973701c896023a84caa423ba73a276d2cb7f30cd48e13ee44592dde6453b6f"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps026000-026999.csv",
+          "sha256": "f40e2a04e21c0edd867eea75fcd27a699c2499884d0e6a87655557c94f5212c6"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps027000-027999.csv",
+          "sha256": "c384269331832c01e12a4f76e7ef550288ac513062e527f36dbe9747aa945f78"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps028000-028999.csv",
+          "sha256": "bc8f651add670a5ff1ff1ffaa0b90779517f3172aa4d12fe70bf9ef5b796d8af"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps029000-029999.csv",
+          "sha256": "add406ef631bbd610e5eb904721005a15cb8d042baaa5e80e3fa202e586ff192"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps030000-030999.csv",
+          "sha256": "7b6ef16fe6685328cdd180600b7bb555f5919a5fd4236c2b2fe54f03714f3b12"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps031000-031999.csv",
+          "sha256": "94b003254194f4cb9f93a97e74e400cb73157150d51daa184ecff9afe4085893"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps032000-032999.csv",
+          "sha256": "2a650b5e28098e2f61255ebdc0b64d40944385c93c3a899c7557611e82f3dcfe"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps033000-033999.csv",
+          "sha256": "02efacf8dc1f9dd891f54b572307bb0b39c753771522c69c9762d5e0701b7b05"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps034000-034999.csv",
+          "sha256": "64b378f56bb047244257095c5d02488091cf1fb75a8e6f91dc77e0aed392d040"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps035000-035999.csv",
+          "sha256": "61af6363c2cfb4656b6cd55bf3a2fa2d551358183c4591c306687a2c28c97ca5"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps036000-036999.csv",
+          "sha256": "aa0e36dfa1cfafea572c6ab1d318bc17592568fdc95d0eb52ff5eb3df2e3f22c"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps037000-037999.csv",
+          "sha256": "aa6b6bb08f4b27831e1ae62865915ca9e34604c11dbfcb7bb6e4d673d64e7e1d"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps038000-038999.csv",
+          "sha256": "2460ef625d5b5a3ec2b9dca4eedd5e2ed760320130df15e4cc3821800656742e"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed2227_steps039000-039999.csv",
+          "sha256": "76ed56ef76fd3b3c4471369bc393afa899ba9c2f362e1b2f886de014392e07c0"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps000000-003999.csv",
+          "sha256": "52c8f62c9f6e9f5c7bbc325cdc4a1d33c7b4f32d6e9d6c67f5ca434f690d2b33"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps004000-004199.csv",
+          "sha256": "3cb62f954a0d56f9142b2c16d97840bbf3d3474c29bd630088bc3c58c82d82b8"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps004200-004399.csv",
+          "sha256": "1745a1f276e77231412057f8c30898719fb32299f0a105350314d11736715678"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps004400-006399.csv",
+          "sha256": "98991cb0e8b2aa2af79b8297c1e97717fe98b023c8c9f2977e8514f0aa3c88a3"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps006400-008399.csv",
+          "sha256": "d2eb7363d00a7e101e40a7771041fa6c3e069feedc5dfdd751b6822a1c9213fc"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps008400-010399.csv",
+          "sha256": "22bf50c09475d49baaa4d58dfbf638171130f22e862c7ff95b02e232de518013"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps010400-012399.csv",
+          "sha256": "c33ce8f3ae4ddf7e93da38f54136f5b40369136ad23c4b35924118f69ae24839"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps012400-014399.csv",
+          "sha256": "5c7e45e82cad42ff280b7087b938f2fadaad1b67d3ffb1d1d7b7e65e5417fa4c"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps014400-014999.csv",
+          "sha256": "ec5019d8f53ab5defa55821cba91aaa8f5e5cf93e3b8042a6d4765caad679c49"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps015000-015999.csv",
+          "sha256": "0e551652c8f30cff641884d230ebddd71c00a0360c2bf356228c8afb83dd233a"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps016000-016999.csv",
+          "sha256": "8c487b924f2d2b516999e73e8eaffe163f4916e030fda0876acb38ee7fbfed0e"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps017000-017999.csv",
+          "sha256": "2fc7886c8f9ae2e941a431e36938b33336285e3e32432327b8b60b6c1e5e6d37"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps018000-018999.csv",
+          "sha256": "38f2cae3aeb3dd07b8320578c88c392560f2c7425f70d0fd4b1ea071e8e8599d"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps019000-019999.csv",
+          "sha256": "957d96f6332aa327b25c213f97fa50fefc9e15c693d6767d80db4adb5861f785"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps020000-020999.csv",
+          "sha256": "c4951eb50a312d95dd4cfa7723b7452dab56975f53d6502b06a5b27fcb68f439"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps021000-021999.csv",
+          "sha256": "5c69effeda45c5345396e4aad71495e39d3ebf7a0d2686d0d9c5b4c39878b4ad"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps022000-022999.csv",
+          "sha256": "344da95751613a62da53ecf1d70912dcbfb74afb5d5dc60add9bc12243b4f148"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps023000-023999.csv",
+          "sha256": "6b0b9796f3a0aca7c4e76e671ec15a7d1d196791582145972594b415276cb1f3"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps024000-024999.csv",
+          "sha256": "ebca9d6d870c22f7b560692f405979a436f313cdb996f497f328aa5eb312b741"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps025000-025999.csv",
+          "sha256": "b1951e43df4c1d39c6b22a100e88db1324395751a523595c9ae68abf251372fb"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps026000-026999.csv",
+          "sha256": "abe519e9f3d374342ce95976f773d437d8a0f5c2fac15d311326ce70c90efa94"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps027000-027999.csv",
+          "sha256": "6ee832ba07ebffc412a5614c6f908dd3dff80e5e2f5c7f6956fe4c697ffb3c85"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps028000-028999.csv",
+          "sha256": "f0922def7998dda0323592c0d6417d176f268d798f329d8304791b78ad5feb09"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps029000-029999.csv",
+          "sha256": "30b13c3850b116672e92c11ed26b48bc752cfd0e8ae615f40cf0a6d90cacb661"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps030000-030999.csv",
+          "sha256": "6201dcc45576444b067b01e994ecc54f4b971042227e7718cb805697982f4169"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps031000-031999.csv",
+          "sha256": "4e0837283f91a76c1b7cbf8642fcebeba76a93ed5de55aaae2344f0f8b0b602f"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps032000-032999.csv",
+          "sha256": "981f2dc774530a7879d344f360a51e9f15f7f02e25d429a75f216f19953e6fb0"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps033000-033999.csv",
+          "sha256": "a0083e5c36ed672a41e81875317ccfb7268e3793a887d27eb3a2533775d4aeff"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps034000-034999.csv",
+          "sha256": "45a3bdb269404d402d7c71833e16d713e15f5ef03609c95261ff23e144a3d2fd"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps035000-035999.csv",
+          "sha256": "6c827774d4187fcb0b089636e501fe0faab9a17c0020cf9f4b28d4059576b855"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps036000-036999.csv",
+          "sha256": "1ff62ef2d20c5fe2ce0af1c4eb76f16825df9835554c87eaf49ae374fb93e22d"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps037000-037999.csv",
+          "sha256": "44cc76939b93bf7ea91b9469b41b180382a85d036609e0b9a7ba22af617ea076"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps038000-038999.csv",
+          "sha256": "bd3f53e9647ecb33425993fe5a8b9add3290f2497ed1553cb8f073263d488a0d"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed3331_steps039000-039999.csv",
+          "sha256": "d1be06a8577f1add4c547017f1c5a8ab1e3a0fcb19e28d5425bbc4efdd9c309d"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps000000-003999.csv",
+          "sha256": "163df59595b42585dae3c8f5d3bb7a8bcaebc12c6bad99e335d12f52dcb36afc"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps004000-004199.csv",
+          "sha256": "abe852feaf9e88f5d6de7a8b699d902d7fe00f587d221d73ca22c3831d2704cf"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps004200-004399.csv",
+          "sha256": "36d923dc3de03f003f847fd4a2fd630d882ce1a83fc604f307ec5e50e0c00bd3"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps004400-006399.csv",
+          "sha256": "200073be24aaa1774b3796a92c5d227318253d704225349e896f3c72cc1212fe"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps006400-008399.csv",
+          "sha256": "37c9039d62f20202ac0f24cecc682b65a0e86ec9e14096bbbaa801ee179c5e21"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps008400-010399.csv",
+          "sha256": "2e745386c5ed6e5a17b09ee15b4e2a7c1641411afed1b042b16688b183c7ce61"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps010400-012399.csv",
+          "sha256": "f74017f462a432b236841671598ae66033e103ade4c3dfaad9b054bf535e273a"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps012400-014399.csv",
+          "sha256": "08a94c1d99f1e4be8e949f71ae43247ff43f931bc6d232a88f02c8515383b6ed"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps014400-014999.csv",
+          "sha256": "7881f5a68a7c8d92ec5b095ac8c507b73a31289707315c8dc5cfb75e69d1ca22"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps015000-015999.csv",
+          "sha256": "ac0500a07c441072fd02d56838d4602b6f545e1c39b768f20dafdc91af45782e"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps016000-016999.csv",
+          "sha256": "6bc65ded02f1cd9b406b5bffc6baf95c5640b085c9984f1db167af37e2da5eae"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps017000-017999.csv",
+          "sha256": "000eb1fe81133823c31c32258f18a9a19fde27e623776b71699616b528a4fd97"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps018000-018999.csv",
+          "sha256": "484628bcb8ab783c9035c52c2ff5d27d9e958884585e3ac395320d7892599183"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps019000-019999.csv",
+          "sha256": "fd2457de74a41948b4815bb8fdbcf190934136871372b8aeefca8e780bda6d79"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps020000-020999.csv",
+          "sha256": "855ae98658fd8c0a0666fd47a86e8fcf90f0c849b4370f0071cc37dd23780abe"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps021000-021999.csv",
+          "sha256": "8b90b9c21cab996735a26e4be6c473af0a3ec7d6c95570bcd9576d36b35b3cf1"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps022000-022999.csv",
+          "sha256": "f7d339bdf24f0ae506b225fa513be47a608334173d8f6372ab4ad9e7e4aa94e5"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps023000-023999.csv",
+          "sha256": "c9d36e2064ea6c43594856f0e3e4a7a0d79dc691507f6b4cac0bbe7efce88717"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps024000-024999.csv",
+          "sha256": "f5e97f1739879976741e467f1c639bd6b4f3811adcff25e4c33c7bd765179b45"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps025000-025999.csv",
+          "sha256": "be87faa645ec42c8290755a22ae5f5e1fedca8299b0f2419404886dad768150b"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps026000-026999.csv",
+          "sha256": "eb8ec46d8bb2b77424c2a7b2d46a7dd5f325657826e91ab47bb2522d444c7ba1"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps027000-027999.csv",
+          "sha256": "3759b4cdebe9a1ec714a97cf3c5cb2c0ee7a563c42ec51799094a95cb03df29e"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps028000-028999.csv",
+          "sha256": "e6f23d1309062e1bd1f9fd4dec2665c447824ea3cb4fb43f0e524425714e4f2e"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps029000-029999.csv",
+          "sha256": "8234ee5f0a5e2f14d07f8e38dd21c55bb9c524227de3e2cf790c89c33a587e71"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps030000-030999.csv",
+          "sha256": "03e5d96ea1487558ecc12b13e765ac76b4528e78adb6bdeb311edc518f4f7b33"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps031000-031999.csv",
+          "sha256": "dfe5beab674a18a4d1b0d23195b8b0e803d515bdde9504aed60012990e93b52f"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps032000-032999.csv",
+          "sha256": "9cd975df40d9ed35aadf681685cf0875790a935c42d2998d98106a88c528bbac"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps033000-033999.csv",
+          "sha256": "17c8a55743a84c2528aedd53ba9c206fff889629dc979720b7bd578a48b15b62"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps034000-034999.csv",
+          "sha256": "b0958811e2716b3070be0efc4825dd027b3eacd7f81a31d540583af036dbbc40"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps035000-035999.csv",
+          "sha256": "69df4cec4a521ed8d6180670b2fbe63a083a3f4b3b944b997f65f9c2cdf2728c"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps036000-036999.csv",
+          "sha256": "07bf704d0102c58abe3f2f440a34325eb7d9fbc120ea24d7f6e181017b4a2bd0"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps037000-037999.csv",
+          "sha256": "a34087b411a9075ff6a69528fefb4f1d50e0d179e0a635fce409782ea4e0542e"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps038000-038999.csv",
+          "sha256": "9b28db8fc709f42518f8c3c569dc6413c26b976b11a17948be59248ff4d3aeea"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/ensembles/tx_rebuild_20261102_chain_eps0p001_seed4441_steps039000-039999.csv",
+          "sha256": "2f4f4b9d4f2a468d7ef07b532657477989100ab6becd86586079b64b5437f6df"
+        }
+      ],
+      "checkpoints": [
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed1117_next40000.pkl",
+          "sha256": "fe3a9a8622a5ec44db491aecbbb977fc91177f3eb3bee7fb47cc68714af4f905"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed2227_next40000.pkl",
+          "sha256": "949b66283b27a37742e5edafa9735e47d7ba5926d7002036bf6341a16260dcb0"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed3331_next40000.pkl",
+          "sha256": "dff787aa65d6c749faeb11f3546917de1865c782d5f4ad19e60158d93ad73631"
+        },
+        {
+          "path": "outputs/analysis/convergence_campaign_2026-11-02/tx_primary_continuation/round_0001/tx_rebuild/milestone_040000/snapshot/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed4441_next40000.pkl",
+          "sha256": "e3219207bbd197b446aad0d38fdf42b7f917ae3d198295160eb2c96764c42cfe"
+        }
+      ],
+      "checkpoint_provenance": {
+        "dataset_sha256": "ff09876b030c693307cdf362fef38a0fccf00dee5ed8b6fb973fa29b86f20179",
+        "graph_sha256": "45efa0772341fda12c7b5b39800cbea15eaf2f84029df082955181edc874c36e",
+        "runner_sha256": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+        "checkpoint_code_sha256": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102",
+        "runtime": {
+          "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "packages": {
+            "gerrychain": "0.3.2",
+            "networkx": "3.4.2",
+            "geopandas": "1.1.2",
+            "shapely": "2.0.7",
+            "pandas": "2.2.3",
+            "numpy": "1.26.4",
+            "pyproj": "3.6.1"
+          }
+        },
+        "configuration": {
+          "state": "tx_rebuild_20261102",
+          "layer": "precincts",
+          "assignment_col": "CONG_DIST",
+          "population_col": "TOTPOP",
+          "dem_col": "G24PREDHAR",
+          "rep_col": "G24PRERTRU",
+          "epsilon": 0.001,
+          "node_repeats": 2,
+          "sample_every": 1
+        }
+      }
+    }
+  },
+  "joint_nc": {
+    "nc_block_union": {
+      "status": "unavailable; both complete starting-map groups required"
+    },
+    "nc_precinct_sensitivity": {
+      "status": "unavailable; both complete starting-map groups required"
+    },
+    "nc_population_sensitivity": {
+      "status": "unavailable; both complete starting-map groups required"
+    }
+  },
+  "metric_definitions": {
+    "mean_median": "GerryChain Democratic median-minus-mean two-party district share",
+    "efficiency_gap": "GerryChain two-party efficiency gap; descriptive modeled votes"
+  },
+  "screening": {
+    "rhat_strict_upper": 1.01,
+    "ess_floor": "max(400, 100 * chains)",
+    "meaning": "Conservative numerical flags, not a complete project acceptance criterion"
+  },
+  "unresolved": [
+    "Election source/canvass and NC privacy-noise uncertainties",
+    "MCSE and stability acceptance criteria require scientific review",
+    "No historical-chain continuation or source equivalence is established",
+    "ReCom is not established as uniform or fully legally constrained"
+  ],
+  "condition_mean_differences": {
+    "tx_population": {
+      "baseline": "tx_rebuild",
+      "sensitivity": "tx_population_sensitivity",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_graph_2023": {
+      "baseline": "nc_block_union_2023",
+      "sensitivity": "nc_precinct_sensitivity_2023",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_graph_2025": {
+      "baseline": "nc_block_union_2025",
+      "sensitivity": "nc_precinct_sensitivity_2025",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_population_2023": {
+      "baseline": "nc_block_union_2023",
+      "sensitivity": "nc_population_sensitivity_2023",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    },
+    "nc_population_2025": {
+      "baseline": "nc_block_union_2025",
+      "sensitivity": "nc_population_sensitivity_2025",
+      "interpretation": "Descriptive sensitivity-minus-baseline means; conditions are not pooled and paired seed labels do not establish independent uncertainty",
+      "status": "unavailable; both complete conditions required"
+    }
+  }
+}

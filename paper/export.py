@@ -148,6 +148,15 @@ def export(build, registry, destination, root=ROOT):
         artifacts[Path("tables") / state / "primary_diagnostics.csv"] = buffer.getvalue().encode()
         if state == "nc":
             artifacts[Path("nc_findings.md")] = findings(original, metadata[state])
+        if state == "texas" and set(metadata[state]["groups"]) == {"tx_rebuild", "tx_dispersed"}:
+            from paper.texas_outputs import collect, artifacts as texas_artifacts
+            selected = {"manifest": {"path": frozen["manifest"], "sha256": sha(root / frozen["manifest"])},
+                        "audit": {"path": str(Path(frozen["audit_dir"]) / "diagnostics.json"),
+                                  "sha256": sha(root / frozen["audit_dir"] / "diagnostics.json")}}
+            texas = collect(ROOT / "paper/texas_audits.json", root, selected, frozen=True)
+            metadata[state]["paper_outputs"] = texas
+            artifacts.update({Path(name): formatted(data, name) if name.endswith(".md") else data
+                              for name, data in texas_artifacts(texas).items()})
     result["_paper"] = metadata
     results_path = destination / "results.json"
     if results_path.exists():
@@ -168,28 +177,62 @@ def export(build, registry, destination, root=ROOT):
     return result
 
 
+def export_provisional_texas(registry_path, source_root, destination):
+    from paper.texas_outputs import collect, artifacts as texas_artifacts
+    data = collect(registry_path, source_root)
+    files = texas_artifacts(data)
+    files["results.json"] = json_bytes(data)
+    files["README.md"] = formatted(("# Provisional Texas outputs\n\n"
+        "I generated these figures and tables from the checksum-registered shared audit in `paper/texas_audits.json`. Every plotted or tabulated value is in `results.json`, with source fingerprints.\n\n"
+        "## Reproducing\n\n```sh\nnice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=\"$PWD/.venv/matplotlib\" .venv/science/bin/python -m paper.export --texas\n```\n\n"
+        "I use the same command after Texas freezes; it reads the freeze registry and writes the registered analysis under `paper/figures` and `paper/tables`. I preserve existing outputs and stop if a repeated export differs.\n\n"
+        "## Limitations\n\n"
+        "This shared-prefix comparison is provisional. I retain the extra baseline states in the running chains, and the findings file records the model and inference limitations.\n").encode(), "README.md")
+    files = {name: formatted(value, name) if name.endswith(".md") else value for name, value in files.items()}
+    receipt = {"command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m paper.export --texas",
+               "process_nice": os.getpriority(os.PRIO_PROCESS, 0),
+               "files": {name: hashlib.sha256(value).hexdigest() for name, value in files.items()},
+               "source_code": {name: sha(ROOT / name) for name in ("paper/export.py", "paper/texas_outputs.py")}}
+    files["artifacts.json"] = json_bytes(receipt)
+    # Check every destination before creating any artifact.
+    for name, value in files.items():
+        target = destination / name
+        if target.exists() and target.read_bytes() != value:
+            raise FileExistsError(f"Existing provisional artifact differs: {name}")
+    for name, value in files.items():publish(destination / name, value)
+    return data
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--registry", type=Path, default=Path("configs/paper_freezes.json"))
     parser.add_argument("--output-dir", type=Path, default=Path("paper"))
     parser.add_argument("--build-dir", type=Path)
+    parser.add_argument("--texas", action="store_true", help="Export provisional Texas, or registered frozen Texas when available")
+    parser.add_argument("--source-root", type=Path, default=ROOT, help="Checkout containing the registered research inputs")
     args = parser.parse_args()
     for path in (args.registry, args.output_dir):
         path.resolve().relative_to(ROOT)
+    source_root = args.source_root.resolve()
+    registry_path = source_root / args.registry
+    registry = json.loads(registry_path.read_text())
+    if args.texas and "texas" not in registry:
+        export_provisional_texas(ROOT / "paper/texas_audits.json", source_root,
+                                 args.output_dir.resolve() / "provisional")
+        return
     if args.build_dir is None:
         stamp = datetime.now(ZoneInfo("America/New_York")).strftime("%Y%m%d-%H%M%S-%f")
-        args.build_dir = Path(".venv/paper-build") / stamp
-    args.build_dir.resolve().relative_to(ROOT)
+        args.build_dir = source_root / ".venv/paper-build" / stamp
+    args.build_dir.resolve().relative_to(source_root)
     args.build_dir.parent.mkdir(parents=True, exist_ok=True)
-    registry = json.loads(args.registry.read_text())
     if not registry:
         raise ValueError("No frozen states are registered")
     env = dict(os.environ, MPLCONFIGDIR=str(ROOT / ".venv/matplotlib"))
-    command = [sys.executable, str(ROOT / "reproduce_paper.py"), "--registry", str(args.registry),
+    command = [sys.executable, str(source_root / "reproduce_paper.py"), "--registry", str(registry_path),
                "--output-dir", str(args.build_dir)]
-    subprocess.run(command, cwd=ROOT, env=env, check=True)
+    subprocess.run(command, cwd=source_root, env=env, check=True)
     args.output_dir.mkdir(parents=True, exist_ok=True)
-    export(args.build_dir.resolve(), registry, args.output_dir.resolve())
+    export(args.build_dir.resolve(), registry, args.output_dir.resolve(), source_root)
 
 
 if __name__ == "__main__":

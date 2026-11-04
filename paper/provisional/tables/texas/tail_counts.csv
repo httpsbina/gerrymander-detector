@@ -1,0 +1,12 @@
+group,kind,seed,retained_states,score_threshold,states_at_or_below_score
+tx_rebuild,chain,1117,44500,8,6
+tx_rebuild,chain,2227,44500,8,2
+tx_rebuild,chain,3331,44500,8,21
+tx_rebuild,chain,4441,44500,8,0
+tx_rebuild,cohort,,178000,8,29
+tx_dispersed,chain,10007,44500,8,0
+tx_dispersed,chain,10009,44500,8,9
+tx_dispersed,chain,10037,44500,8,0
+tx_dispersed,chain,10039,44500,8,17
+tx_dispersed,cohort,,178000,8,26
+joint_texas,joint,,356000,8,55
