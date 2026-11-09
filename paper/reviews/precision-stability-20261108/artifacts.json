@@ -1,0 +1,21 @@
+{
+  "command": "python -m paper.precision_report --results paper/reviews/precision-stability-20261108/results.json",
+  "files": {
+    "README.md": "15c3eb6f78b435bdd00f987dd7b60ddb16c63c44c62e7a38a5d5c1af4d601963",
+    "chains.csv": "1b263be50a9d3ae6c046b0a26ced65b8eb91e94be98b8a704d60f9aad7e6ef7a",
+    "halves.csv": "a5c3758af6c21b9f8708c7aa117a71e4ab367fdf6e99a6b8c62058ec9d9a6fa4",
+    "independent_cohort_differences.csv": "6d9ef7b042a3950c286c91e5a00df05b6a674aa4081c1ce96544b918e00a5cac",
+    "nc_running_means.png": "386b0cd553cdf4809c705004a95b6ff96e90a72bf5d0129fba277d8724cff831",
+    "results.json": "2c102939064da9fe65ff7343e98e7ecedeacfcf03c9637525c3d9eaeb12a91aa",
+    "summary.csv": "b8c48727454ea7f668798925f6dfffa1dd4b953eb943027be8103764a676e6a2",
+    "tail_counts.csv": "ec740e7a1b37653934b681333d3ac2134688affa420008d2a272e76d23171976",
+    "test_suite.log": "e5c3422e22056bf9cf4a3af937dda427c6ba31a6cf4cb8d4bbfeaddb9e2ffa4c",
+    "texas_running_means.png": "f9bb0fea07df0a8ca3b1ce3e7e793495e4da5f9d42b2cf34b602b9513962991a",
+    "verification.json": "3b304e51a40e09c85438a1635aa9983cc20d491d2d476a1484236c366a850ed6",
+    "warmups.csv": "435470eb114c3983adeb22f6727489c00b188ced552fa2942f31f59c7e255662"
+  },
+  "code": {
+    "paper/review_precision.py": "66a48301317726f385dfff7d402f342277ed2d8d4fdf550888b95fdc26d42d47",
+    "paper/precision_report.py": "364b268bf8f5626b4cf07a37b8e9d9f3d98049bd5aaf41ee27d4de0d53b9b8e4"
+  }
+}
