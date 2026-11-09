@@ -1,0 +1,18 @@
+{
+  "paper/reviews/geographic-clustering-20261109/README.md": "76fc37db5f941febc79e2744781afa5623286d6236f0ad487fe5d7998a447730",
+  "paper/reviews/geographic-clustering-20261109/comparisons.csv": "e47505e482ef3b12b7d09042a1413dc24b32a9e871dc9877f3d18559665f542f",
+  "paper/reviews/geographic-clustering-20261109/environment.json": "17ecebe86c403a97c72f7286d3329357f6bdd4bec2297536feb4b8a897a38d8e",
+  "paper/reviews/geographic-clustering-20261109/geographic_comparison.png": "7b7661082774f341a9cdd2ba7e04e19f0c550c836663cd1b912e05e75a7d2dc1",
+  "paper/reviews/geographic-clustering-20261109/nc_sample.csv": "56b3659cc4f1764bbcbc2da8a82ac9c92126a2b3ac950c93e469930ffee7d146",
+  "paper/reviews/geographic-clustering-20261109/post_report_tests.log": "dd45fb89d24872ac2956e5f6ab8000492d95fd6c1bc6a83002c65141bebbacd9",
+  "paper/reviews/geographic-clustering-20261109/pytest_unavailable.log": "2500009eaaf95cdba8142521c3bf19c606e498af09d7f84d928bf2e7c7ce8854",
+  "paper/reviews/geographic-clustering-20261109/results.json": "41bdfbc2e7807a03c9b3d45b3ec6a2d5f44d4a384c4bb6fd1bfb139f8284ebe2",
+  "paper/reviews/geographic-clustering-20261109/scores.csv": "c2e806b73ee80858d0a86e908262556fcd4c2e63119653f81f060363511c1da8",
+  "paper/reviews/geographic-clustering-20261109/test_suite.log": "6e96186c62006b4fb0820b75a63b938f4936d65bf7c3de1a266f5948cd5cb1a7",
+  "paper/reviews/geographic-clustering-20261109/tx_sample.csv": "4d0861f1acd1a19eb8e12aa916ae6397430f0f671cf1f6c79712941defb1222b",
+  "paper/reviews/geographic-clustering-20261109/verification.json": "967cdd4fe2f7cde89ace423bc9cb040bf1932df083491c4550e878f087f70cd8",
+  "paper/geographic_clustering.py": "3e3dc48dbfb3131f55f6bbd4a21628eac019c9f6a58c0d768f5238be3e702934",
+  "paper/geographic_report.py": "e3791d28dc4aee7a6f9531595ff79b266653a2e7bc9916e13e3f7f96aa09a84f",
+  "paper/verify_geographic.py": "5cbff6e77b09eb7c88522739c109ad42f446338102adc31479268039b61f1673",
+  "tests/test_geographic_clustering.py": "2deabe8c904d084c349795a7a0ced48da70ce508a20f71a1dd58c8ef917ca58e"
+}
