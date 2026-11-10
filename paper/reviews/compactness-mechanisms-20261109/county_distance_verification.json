@@ -1,0 +1,6 @@
+{
+  "direct_block_level_county_comparisons": 454,
+  "maximum_absolute_error_km": 1.4006218407303095e-10,
+  "pooled_distance_transformation_checks": 1362,
+  "source_county_distances_sha256": "5a7a4ee9773e5de6bb47c07db43c432efe55a32f11b6dfdbcfc8a9e3b98a62c4"
+}

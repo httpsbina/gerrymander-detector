@@ -1,0 +1,59 @@
+{
+  "definition": "All simulated assignments allocate entire simulation units, so their within-unit cut count is zero by construction. The between-unit statistic still counts atomic adjacencies and is not the original sampler cut-edge count. No assignment or measurement geometry is changed.",
+  "enacted_plans": [
+    {
+      "state": "tx",
+      "enacted": "enacted_2025",
+      "all_cut_adjacencies": 3401,
+      "within_simulation_unit_cuts": 436,
+      "between_simulation_unit_cuts": 2965,
+      "within_unit_boundary_km": 929.241176712257,
+      "between_unit_boundary_km": 11647.472587553453,
+      "neutral_between_unit_median": 2747.0,
+      "neutral_between_unit_at_or_below_enacted": 5515,
+      "neutral_between_unit_at_or_above_enacted": 45,
+      "neutral_checkpoints": 5560,
+      "neutral_within_unit_cuts": 0,
+      "neutral_common_minus_sampler_count_minimum": 44.0,
+      "neutral_common_minus_sampler_count_maximum": 118.0,
+      "neutral_common_minus_sampler_count_median": 78.0
+    },
+    {
+      "state": "nc",
+      "enacted": "enacted_2023",
+      "all_cut_adjacencies": 779,
+      "within_simulation_unit_cuts": 0,
+      "between_simulation_unit_cuts": 779,
+      "within_unit_boundary_km": 0.0,
+      "between_unit_boundary_km": 3618.3326853177746,
+      "neutral_between_unit_median": 731.0,
+      "neutral_between_unit_at_or_below_enacted": 1185,
+      "neutral_between_unit_at_or_above_enacted": 171,
+      "neutral_checkpoints": 1350,
+      "neutral_within_unit_cuts": 0,
+      "neutral_common_minus_sampler_count_minimum": 0.0,
+      "neutral_common_minus_sampler_count_maximum": 0.0,
+      "neutral_common_minus_sampler_count_median": 0.0
+    },
+    {
+      "state": "nc",
+      "enacted": "enacted_2025",
+      "all_cut_adjacencies": 761,
+      "within_simulation_unit_cuts": 0,
+      "between_simulation_unit_cuts": 761,
+      "within_unit_boundary_km": 0.0,
+      "between_unit_boundary_km": 3504.855508750574,
+      "neutral_between_unit_median": 731.0,
+      "neutral_between_unit_at_or_below_enacted": 1039,
+      "neutral_between_unit_at_or_above_enacted": 321,
+      "neutral_checkpoints": 1350,
+      "neutral_within_unit_cuts": 0,
+      "neutral_common_minus_sampler_count_minimum": 0.0,
+      "neutral_common_minus_sampler_count_maximum": 0.0,
+      "neutral_common_minus_sampler_count_median": 0.0
+    }
+  ],
+  "source_results_sha256": "8af1b8cc35ec36cd391e1e09ed5a8898a084cfa3e1a60d18e9661296bbd6eb34",
+  "source_scores_sha256": "52f5a752fdbe4852005a2f638a4e04b3489e08b133dbb8eb79039348decf0738",
+  "research_ready": false
+}

@@ -1,0 +1,3314 @@
+[
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 0,
+    "metric": "internal_boundary_km",
+    "mean": 4275.351669109218,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 1.0030294322607614,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1129.673820557425,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1249.2180679983205,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 0,
+    "metric": "common_cut_edges",
+    "mean": 731.926811594203,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 1.004127241940481,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 867.71652783086,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1249.7076597406094,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 0,
+    "metric": "density_weighted_boundary",
+    "mean": 40295.44406807944,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 1.0031919649456027,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 961.1739515804358,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1133.3361220385452,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 0,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.3004907703515649,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 1.005890484780277,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1096.4991871611908,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1310.292251241433,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 0,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.2122550408215773,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 1.0016860180857294,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1255.9828891361208,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1291.8327893236435,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 0,
+    "metric": "median_polsby_popper",
+    "mean": 0.1796873856851904,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 1.003379359281529,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1267.8678348065828,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1338.812008321868,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 250,
+    "metric": "internal_boundary_km",
+    "mean": 4274.138878575019,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 1.0031570210262468,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1127.1757782539933,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1244.7956939815258,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 250,
+    "metric": "common_cut_edges",
+    "mean": 731.6600877192982,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 1.004419479506809,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 833.8968118768857,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1226.9839285864327,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 250,
+    "metric": "density_weighted_boundary",
+    "mean": 40281.33452895684,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 1.0039403492100851,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 954.9715606287926,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1097.514018239648,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 250,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.3004577528436705,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 1.006167488428223,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1085.5790744467915,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1283.1426335434949,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 250,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.21237267072752286,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 1.0024060288908574,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1251.0488986445766,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1276.8120138824636,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 250,
+    "metric": "median_polsby_popper",
+    "mean": 0.1797476558713974,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 1.0031517654666502,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1270.9187878788684,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1331.337160994531,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 500,
+    "metric": "internal_boundary_km",
+    "mean": 4274.322970314096,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 1.0025237012144912,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1123.7879570359812,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1194.6119263292774,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 500,
+    "metric": "common_cut_edges",
+    "mean": 731.6355555555556,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 1.0033491511892476,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 879.3831143482348,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1202.447322875242,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 500,
+    "metric": "density_weighted_boundary",
+    "mean": 40278.67766011854,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 1.0048949282413606,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 952.9385340832955,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1095.1366626525348,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 500,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.30046157002895285,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 1.0058240209809943,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1083.7667436375848,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1210.0367027389987,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 500,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.21242915820331418,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 1.00289021028008,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1244.9881888599807,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1277.6744030116017,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 500,
+    "metric": "median_polsby_popper",
+    "mean": 0.17968816827664227,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 1.0024170817843927,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1264.9470173154987,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1303.3486916424915,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 1000,
+    "metric": "internal_boundary_km",
+    "mean": 4273.125013362075,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 1.002448874627652,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1129.5380000219566,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1169.4429224123494,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 1000,
+    "metric": "common_cut_edges",
+    "mean": 731.2954545454545,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 1.0029150244854066,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 881.2336932339049,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1162.4521582849281,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 1000,
+    "metric": "density_weighted_boundary",
+    "mean": 40250.59745451699,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 1.00509632037054,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 956.4296037228754,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1134.2959307393533,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 1000,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.30035581924426746,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 1.0048835778873209,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1114.4443716744322,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1154.232007864301,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 1000,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.21252154911046917,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 1.0035212900889248,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1228.3347830821638,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1268.5506401160974,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "joint",
+    "warmup": 1000,
+    "metric": "median_polsby_popper",
+    "mean": 0.17974462414480516,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 1.0020986701409043,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1243.321831238042,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1284.515740534855,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 0,
+    "metric": "internal_boundary_km",
+    "mean": 4273.744235860389,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 1.0022376386843432,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 565.7459778016344,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 583.5519590477421,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 0,
+    "metric": "common_cut_edges",
+    "mean": 731.1884057971015,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 1.0099459983981813,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 527.8787764463126,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 673.8930001178285,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 0,
+    "metric": "density_weighted_boundary",
+    "mean": 40264.336656468004,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 1.0088345110099461,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 519.2966144323838,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 524.1296356863002,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 0,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.3005050648244687,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 0.9994226433705233,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 549.1293292933277,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 632.5575176012555,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 0,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.21210388976257022,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 1.0044090686562341,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 591.6272641251237,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 582.819882344996,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 0,
+    "metric": "median_polsby_popper",
+    "mean": 0.1793409112482696,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 1.0035971256644796,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 641.471770056631,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 620.2657045620491,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 250,
+    "metric": "internal_boundary_km",
+    "mean": 4271.760143295842,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 1.0027972878059341,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 567.9559201041752,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 578.0297919519179,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 250,
+    "metric": "common_cut_edges",
+    "mean": 730.9356725146199,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 1.0104491162360711,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 531.8253577472303,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 604.8618860893063,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 250,
+    "metric": "density_weighted_boundary",
+    "mean": 40246.688141876475,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 1.0104143556364364,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 527.0621711103076,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 496.71607746977264,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 250,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.30042243684900094,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 0.999816732744921,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 539.4295539478771,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 613.3300062623073,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 250,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.21225414860485528,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 1.006054451871571,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 588.8053116470323,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 576.0196658394751,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 250,
+    "metric": "median_polsby_popper",
+    "mean": 0.17949873844673353,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 1.0037737627477297,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 643.6552586647667,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 616.6535882384233,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 500,
+    "metric": "internal_boundary_km",
+    "mean": 4271.057679892371,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 1.0023634625250892,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 557.1537130857806,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 566.0090948606926,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 500,
+    "metric": "common_cut_edges",
+    "mean": 730.7614814814815,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 1.0087737748654562,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 518.9760095601125,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 591.220448037421,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 500,
+    "metric": "density_weighted_boundary",
+    "mean": 40236.34812153273,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 1.0114737117150725,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 522.6686579085697,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 505.0238472772331,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 500,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.3004589886604656,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 0.9999517282763841,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 516.3452282977031,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 584.7297930958476,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 500,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.21228850800493201,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 1.0062435301693484,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 575.0321304143877,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 561.0530606877506,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 500,
+    "metric": "median_polsby_popper",
+    "mean": 0.17946307188091143,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 1.0027117367156635,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 643.8169436567074,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 597.5265788502068,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 1000,
+    "metric": "internal_boundary_km",
+    "mean": 4268.742062062907,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 1.0026665137416255,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 572.9573217955716,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 577.2893439303078,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 1000,
+    "metric": "common_cut_edges",
+    "mean": 730.3287878787879,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 1.009575948787791,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 523.0989043197959,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 566.7851831899761,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 1000,
+    "metric": "density_weighted_boundary",
+    "mean": 40203.977134236986,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 1.0117217781194614,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 542.3794704551171,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 555.5731440157332,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 1000,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.3002995738998976,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 0.9990479789050765,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 526.2193515025098,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 569.1735158260399,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 1000,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.21254973146927375,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 1.0065020142827747,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 583.1003925693844,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 577.6243617367302,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2023",
+    "warmup": 1000,
+    "metric": "median_polsby_popper",
+    "mean": 0.17961988936121093,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 1.0031555330380277,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 639.4434580818388,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 550.8207032551602,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 0,
+    "metric": "internal_boundary_km",
+    "mean": 4276.959102358048,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 1.0050215820895454,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 579.798398592565,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 689.744027150594,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 0,
+    "metric": "common_cut_edges",
+    "mean": 732.6652173913044,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 0.9997079942492653,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 383.6149533675918,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 604.983724712175,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 0,
+    "metric": "density_weighted_boundary",
+    "mean": 40326.551479690876,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 1.000122048721852,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 439.2315632125303,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 652.4441363299261,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 0,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.30047647587866116,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 1.0160644394330074,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 583.3148699750056,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 686.6749244918045,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 0,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.2124061918805843,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 1.0035056115301613,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 641.6845135553409,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 633.1227967896817,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 0,
+    "metric": "median_polsby_popper",
+    "mean": 0.18003386012211123,
+    "checkpoints_per_chain": 230,
+    "rhat": {
+      "value": 1.0041631471494872,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 626.3620408281657,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 712.1601140511781,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 250,
+    "metric": "internal_boundary_km",
+    "mean": 4276.5176138541965,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 1.0047520298064492,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 578.3221320316708,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 687.3726423407753,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 250,
+    "metric": "common_cut_edges",
+    "mean": 732.3845029239766,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 0.9997658036068062,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 361.06723257482633,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 585.5373512729063,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 250,
+    "metric": "density_weighted_boundary",
+    "mean": 40315.98091603722,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 1.0000162526228638,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 432.39495044651414,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 647.6629318902487,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 250,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.30049306883834,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 1.0161670363641206,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 576.7436194883126,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 682.8461368588421,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 250,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.21249119285019044,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 1.0033874399463802,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 640.5322461763337,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 631.2883378198486,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 250,
+    "metric": "median_polsby_popper",
+    "mean": 0.17999657329606125,
+    "checkpoints_per_chain": 228,
+    "rhat": {
+      "value": 1.0037861101997456,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 624.3086910687757,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 709.0792458198515,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 500,
+    "metric": "internal_boundary_km",
+    "mean": 4277.588260735822,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 1.0037495963823755,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 574.1611917623753,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 671.9589869132508,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 500,
+    "metric": "common_cut_edges",
+    "mean": 732.5096296296297,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 0.9990476586140304,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 371.25077363700433,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 584.287299791072,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 500,
+    "metric": "density_weighted_boundary",
+    "mean": 40321.00719870434,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 0.9995628966960096,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 425.10626316767804,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 632.055664566476,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 500,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.3004641513974401,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 1.0153977177321236,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 567.1014083614791,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 663.7592668837602,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 500,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.21256980840169637,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 1.0029034780862893,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 636.1965622258906,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 621.9396859687678,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 500,
+    "metric": "median_polsby_popper",
+    "mean": 0.17991326467237315,
+    "checkpoints_per_chain": 225,
+    "rhat": {
+      "value": 1.0031693637841423,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 611.2829357648963,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 710.9650203520266,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 1000,
+    "metric": "internal_boundary_km",
+    "mean": 4277.507964661243,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 1.0030789450798916,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 564.1364068502664,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 657.1384562561534,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 1000,
+    "metric": "common_cut_edges",
+    "mean": 732.2621212121212,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 0.9985437124155231,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 364.3868140873754,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 570.7375663776149,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 1000,
+    "metric": "density_weighted_boundary",
+    "mean": 40297.21777479699,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 0.9993143874372821,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 418.98347173163774,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 602.7755908013773,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 1000,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.3004120645886373,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 1.0138615149837713,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 559.5516691703912,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 653.829248148879,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 1000,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.21249336675166458,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 1.002949253251529,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 619.6756938183031,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 652.9925223581163,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "nc",
+    "cohort": "nc_block_union_2025",
+    "warmup": 1000,
+    "metric": "median_polsby_popper",
+    "mean": 0.1798693589283994,
+    "checkpoints_per_chain": 220,
+    "rhat": {
+      "value": 1.0023146167030115,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 596.3101616481047,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 673.7744074684736,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 0,
+    "metric": "internal_boundary_km",
+    "mean": 15271.863723715107,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.004667886253628,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1924.6371401049335,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 3493.00284681407,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 0,
+    "metric": "common_cut_edges",
+    "mean": 2749.025357142857,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.0054099485141208,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1423.2397006694187,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 3195.496370345736,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 0,
+    "metric": "density_weighted_boundary",
+    "mean": 125543.53316560815,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.0069054300844336,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1287.666494895522,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 2829.5115030214174,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 0,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.3584594626324557,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.015362473370493,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 539.2965114539105,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1558.1591596261496,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 0,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.16484969218084253,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.0075600059675598,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1691.2542436476278,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 3846.586413852073,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 0,
+    "metric": "median_polsby_popper",
+    "mean": 0.14249210156560035,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.001257323420084,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 2949.7619636500035,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 4147.365048159764,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 250,
+    "metric": "internal_boundary_km",
+    "mean": 15272.01074228559,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.0048015095624447,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1916.7052144249803,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 3484.8891221795143,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 250,
+    "metric": "common_cut_edges",
+    "mean": 2748.7691618911176,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.0054656723232946,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1437.6904186079687,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 3232.832856209851,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 250,
+    "metric": "density_weighted_boundary",
+    "mean": 125539.3228183723,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.006957149519991,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1288.3231003591602,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 2839.5973603785096,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 250,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.35843525081380473,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.0154502135889862,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 540.0415055011811,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1550.978102053658,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 250,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.16484773936938982,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.0075847119015269,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1687.0978054356651,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 3834.7888624257,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 250,
+    "metric": "median_polsby_popper",
+    "mean": 0.14248096277642272,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.0013208968542775,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 2939.7735673276375,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 4144.717660672377,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 500,
+    "metric": "internal_boundary_km",
+    "mean": 15271.309666234758,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.0050536660960776,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1894.9373006146668,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 3506.414900070931,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 500,
+    "metric": "common_cut_edges",
+    "mean": 2748.581115107914,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.0055646810452514,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1435.4145574223294,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 3227.8282566713724,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 500,
+    "metric": "density_weighted_boundary",
+    "mean": 125533.46808261247,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.0070347886898228,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1278.1771514957316,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 2794.8222824227487,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 500,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.358345268992391,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.0157512444711916,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 535.2634903888973,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1587.6712153837657,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 500,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.16486843663937803,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.007683802763237,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1658.169387390308,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 3778.521811622382,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 500,
+    "metric": "median_polsby_popper",
+    "mean": 0.14249105249055252,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.001375427745886,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 2928.6580498428257,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 4139.316787337094,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 1000,
+    "metric": "internal_boundary_km",
+    "mean": 15269.983132087791,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.0051997761852596,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1889.0654682311585,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 3522.0086435306785,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 1000,
+    "metric": "common_cut_edges",
+    "mean": 2748.3309782608694,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.0057777142821818,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1410.8190484557647,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 3288.331863087536,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 1000,
+    "metric": "density_weighted_boundary",
+    "mean": 125525.18358853766,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.0072464074620386,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1259.6780215760095,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 2769.704169349354,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 1000,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.3582342636777681,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.0168335383772267,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 528.7828708300378,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1638.1761181507466,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 1000,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.16491542612502952,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.007892982014487,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1648.8726871603508,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 3960.850725405784,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "joint",
+    "warmup": 1000,
+    "metric": "median_polsby_popper",
+    "mean": 0.14249456974076355,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.0015312626940314,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 2895.011060711687,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 4093.6537524174596,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 0,
+    "metric": "internal_boundary_km",
+    "mean": 15306.397733407028,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.0034333606356727,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1001.8554559817196,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1813.6493706236827,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 0,
+    "metric": "common_cut_edges",
+    "mean": 2751.5089285714284,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.0027279916978915,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 847.1715940216035,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1785.8128466410062,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 0,
+    "metric": "density_weighted_boundary",
+    "mean": 125702.89714888121,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.0054532518702877,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 615.7665677489258,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1511.3667674619849,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 0,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.3603018444365801,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.0192050618810897,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 285.44117700333567,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1113.9407775964944,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 0,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.16406613970976566,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.0082516519386895,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 864.9504148090091,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1963.3104202351713,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 0,
+    "metric": "median_polsby_popper",
+    "mean": 0.14223873305861448,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.0017004766149196,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1646.9648807329306,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 2391.2570776773478,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 250,
+    "metric": "internal_boundary_km",
+    "mean": 15306.440221535373,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.0037883063014954,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 991.6177931871165,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1806.7507166093073,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 250,
+    "metric": "common_cut_edges",
+    "mean": 2751.3133954154728,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.0029474584611449,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 863.9858327667974,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1797.5272117345676,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 250,
+    "metric": "density_weighted_boundary",
+    "mean": 125695.26712924869,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.0057648349868433,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 618.3793362464125,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1516.8898149166798,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 250,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.36027951960844234,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.019332066620849,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 287.5930484153051,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1114.527755970293,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 250,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.1640655433219557,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.0083459433135304,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 866.7681969318509,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1972.2654148097224,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 250,
+    "metric": "median_polsby_popper",
+    "mean": 0.14223206233179564,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.0016883231371934,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1645.3432050322856,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 2390.069582825447,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 500,
+    "metric": "internal_boundary_km",
+    "mean": 15305.560908954754,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.004146362856118,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 984.2190638985005,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1828.7780790043746,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 500,
+    "metric": "common_cut_edges",
+    "mean": 2751.15,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.0030533797054646,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 834.4700040477259,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1789.4547891530838,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 500,
+    "metric": "density_weighted_boundary",
+    "mean": 125687.14970771768,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.0060213194099943,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 570.7388746664886,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1499.653653344054,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 500,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.360225632218888,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.0193966410734319,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 285.6374207774842,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1106.7982112020309,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 500,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.16410058263942465,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.008622733267219,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 858.7281418924296,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1894.304447578452,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 500,
+    "metric": "median_polsby_popper",
+    "mean": 0.14224435295473564,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.001687254891152,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1642.5570743801875,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 2367.6374771729384,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 1000,
+    "metric": "internal_boundary_km",
+    "mean": 15305.455830025954,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.00424814114832,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 975.162918789129,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1800.3950593177226,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 1000,
+    "metric": "common_cut_edges",
+    "mean": 2750.9304347826087,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.003564476291564,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 797.1728102836969,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1793.8091948681977,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 1000,
+    "metric": "density_weighted_boundary",
+    "mean": 125676.66270849705,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.006598531953702,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 563.0876080248339,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1490.0706009826192,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 1000,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.36021932715745597,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.0204673234257582,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 292.48980962951964,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1143.64888431655,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 1000,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.16410079285420556,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.008938684206421,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 848.2627921959919,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1842.7379810369985,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_dispersed",
+    "warmup": 1000,
+    "metric": "median_polsby_popper",
+    "mean": 0.14224686339130868,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.0020929880868599,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1634.8781438039723,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 2381.524772721854,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 0,
+    "metric": "internal_boundary_km",
+    "mean": 15237.329714023188,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.0030849796063117,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 906.407855237721,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 2016.214845191074,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 0,
+    "metric": "common_cut_edges",
+    "mean": 2746.5417857142857,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.0081012728036536,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 660.2897391030914,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1570.7543010158408,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 0,
+    "metric": "density_weighted_boundary",
+    "mean": 125384.1691823351,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.0079936357685932,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 691.865905488034,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1530.0841169923144,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 0,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.3566170808283313,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.0074710892631,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 498.0582914342822,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 669.2252635942904,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 0,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.16563324465191942,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.005562470737646,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 952.7138247404334,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1481.5358205969799,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 0,
+    "metric": "median_polsby_popper",
+    "mean": 0.14274547007258623,
+    "checkpoints_per_chain": 700,
+    "rhat": {
+      "value": 1.0009964317175193,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1399.9869623857824,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1841.4522218232607,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 250,
+    "metric": "internal_boundary_km",
+    "mean": 15237.581263035809,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.0030531769118567,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 899.447877855411,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 2012.6848793409029,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 250,
+    "metric": "common_cut_edges",
+    "mean": 2746.224928366762,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.0079603517249625,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 667.560259166736,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1565.912734769066,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 250,
+    "metric": "density_weighted_boundary",
+    "mean": 125383.37850749593,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.0078445469826596,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 689.973224930312,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1527.966365730748,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 250,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.356590982019167,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.007537997417725,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 499.6906004247691,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 663.6645220997276,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 250,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.16562993541682391,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.005531515169509,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 953.910759824934,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1475.6547644574077,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 250,
+    "metric": "median_polsby_popper",
+    "mean": 0.14272986322104983,
+    "checkpoints_per_chain": 698,
+    "rhat": {
+      "value": 1.001132613577514,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1388.9011519137043,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1771.4285224502205,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 500,
+    "metric": "internal_boundary_km",
+    "mean": 15237.058423514763,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.0031836441483515,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 897.157485282506,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1986.1241829632806,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 500,
+    "metric": "common_cut_edges",
+    "mean": 2746.0122302158275,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.0080355712059275,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 669.9040248295687,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1604.4910050943204,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 500,
+    "metric": "density_weighted_boundary",
+    "mean": 125379.78645750726,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.0077725186853048,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 691.3523636840696,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1489.215572434502,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 500,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.35646490576589407,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.0077831294762951,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 501.0439031965496,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 725.8283007669946,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 500,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.16563629063933136,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.0054831100791226,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 951.8514705975443,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1523.968031255785,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 500,
+    "metric": "median_polsby_popper",
+    "mean": 0.14273775202636946,
+    "checkpoints_per_chain": 695,
+    "rhat": {
+      "value": 1.0012538613709054,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1378.1336658471926,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1816.7569441746136,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 1000,
+    "metric": "internal_boundary_km",
+    "mean": 15234.510434149626,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.003238429665622,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 893.2838731830894,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1996.3085324222075,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 1000,
+    "metric": "common_cut_edges",
+    "mean": 2745.7315217391306,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.0079978152899012,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 660.149287110698,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1590.3270075766163,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 1000,
+    "metric": "density_weighted_boundary",
+    "mean": 125373.70446857827,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.0077067404787774,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 683.333252139008,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1456.697913337336,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 1000,
+    "metric": "area_normalized_rms_radius",
+    "mean": 0.35624920019808026,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.0083350093713725,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 480.566461672072,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 720.6413834926732,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 1000,
+    "metric": "area_weighted_polsby_popper",
+    "mean": 0.1657300593958535,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.005350416829078,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 941.9931730676416,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1872.8101010322644,
+      "status": "finite",
+      "warnings": []
+    }
+  },
+  {
+    "state": "tx",
+    "cohort": "tx_rebuild",
+    "warmup": 1000,
+    "metric": "median_polsby_popper",
+    "mean": 0.14274227609021842,
+    "checkpoints_per_chain": 690,
+    "rhat": {
+      "value": 1.0012360461285994,
+      "status": "finite",
+      "warnings": []
+    },
+    "bulk_ess": {
+      "value": 1347.0958995497758,
+      "status": "finite",
+      "warnings": []
+    },
+    "tail_ess": {
+      "value": 1735.220187937299,
+      "status": "finite",
+      "warnings": []
+    }
+  }
+]

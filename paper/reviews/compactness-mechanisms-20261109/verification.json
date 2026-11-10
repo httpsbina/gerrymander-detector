@@ -1,0 +1,31 @@
+{
+  "input_hashes_checked": 8161,
+  "checkpoint_measurements": 6980,
+  "retained_checkpoint_measurements": 6910,
+  "county_identity_checks": 6983,
+  "main_scalar_diagnostics": 144,
+  "warmup_scalar_diagnostics": 432,
+  "unavailable_main_diagnostics": 0,
+  "unavailable_warmup_diagnostics": 0,
+  "sampler_sha256": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+  "checkpoint_code_sha256": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102",
+  "research_ready": false,
+  "tests": {
+    "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib TMPDIR=.venv/test-runtime ../gerrymander-detector/.venv/science/bin/python -m unittest discover -s tests -v",
+    "ran": 146,
+    "failures": 0,
+    "skipped": 0
+  },
+  "syntax_checks": [
+    "paper/compactness_mechanisms.py",
+    "paper/compactness_mechanism_report.py",
+    "paper/check_compactness_mechanisms.py",
+    "paper/compactness_partition_check.py",
+    "tests/test_compactness_mechanisms.py"
+  ],
+  "python_format_and_lint": "No Python formatter or linter is configured; existing style retained.",
+  "frozen_checksums_verified": {
+    "nc": 81,
+    "tx": 574
+  }
+}
