@@ -1,0 +1,4 @@
+state,enacted,all_cut_adjacencies,within_simulation_unit_cuts,between_simulation_unit_cuts,within_unit_boundary_km,between_unit_boundary_km,neutral_between_unit_median,neutral_between_unit_at_or_below_enacted,neutral_between_unit_at_or_above_enacted,neutral_checkpoints,neutral_within_unit_cuts,neutral_common_minus_sampler_count_minimum,neutral_common_minus_sampler_count_maximum,neutral_common_minus_sampler_count_median
+tx,enacted_2025,3401,436,2965,929.241176712257,11647.472587553453,2747.0,5515,45,5560,0,44.0,118.0,78.0
+nc,enacted_2023,779,0,779,0.0,3618.3326853177746,731.0,1185,171,1350,0,0.0,0.0,0.0
+nc,enacted_2025,761,0,761,0.0,3504.855508750574,731.0,1039,321,1350,0,0.0,0.0,0.0
