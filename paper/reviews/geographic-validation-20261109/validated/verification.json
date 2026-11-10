@@ -1,0 +1,85 @@
+{
+  "source_hashes_checked": 7624,
+  "coverage": {
+    "tx": {
+      "chains": 8,
+      "measurements": 5600,
+      "retained": 5560,
+      "distinct_retained_plan_hashes": 5560
+    },
+    "nc": {
+      "chains": 6,
+      "measurements": 1380,
+      "retained": 1350,
+      "distinct_retained_plan_hashes": 1350
+    }
+  },
+  "direct_population_radius_checks": [
+    {
+      "state": "tx",
+      "year": 2025,
+      "direct_radius": 0.27549313443247864,
+      "recorded_radius": 0.2754931344324793,
+      "absolute_difference": 6.661338147750939e-16
+    },
+    {
+      "state": "nc",
+      "year": 2023,
+      "direct_radius": 0.33267766895566536,
+      "recorded_radius": 0.3326776689556648,
+      "absolute_difference": 5.551115123125783e-16
+    },
+    {
+      "state": "nc",
+      "year": 2025,
+      "direct_radius": 0.3373717364472559,
+      "recorded_radius": 0.3373717364472556,
+      "absolute_difference": 2.7755575615628914e-16
+    }
+  ],
+  "unit_population_checks": [
+    {
+      "group": "tx_rebuild",
+      "units": 9712,
+      "population": 29145505
+    },
+    {
+      "group": "tx_dispersed",
+      "units": 9712,
+      "population": 29145505
+    },
+    {
+      "group": "nc_block_union_2023",
+      "units": 2681,
+      "population": 10439388
+    },
+    {
+      "group": "nc_block_union_2025",
+      "units": 2681,
+      "population": 10439388
+    }
+  ],
+  "direct_polygon_union_checks": 17,
+  "new_scalar_diagnostics": 72,
+  "nonfinite_or_unavailable_main_diagnostics": 0,
+  "sampler_sha256": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+  "checkpoint_code_sha256": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102",
+  "research_ready": false,
+  "tests": {
+    "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib TMPDIR=.venv/test-runtime ../gerrymander-detector/.venv/science/bin/python -m unittest discover -s tests -v",
+    "ran": 138,
+    "failures": 0,
+    "skipped": 0
+  },
+  "syntax_check": "AST parsing of the five changed Python files",
+  "python_format_and_lint": "No Python formatter or linter is configured; existing style retained.",
+  "additional_packages": {
+    "pyogrio": "0.10.0",
+    "matplotlib": "3.9.4"
+  },
+  "measurement_process_nice": 15,
+  "frozen_checksums_verified": {
+    "nc": 81,
+    "tx": 574
+  }
+}

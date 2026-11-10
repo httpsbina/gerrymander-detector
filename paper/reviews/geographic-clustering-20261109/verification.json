@@ -1,0 +1,11 @@
+{
+  "input_hashes_checked": 149,
+  "checkpoint_trace_matches": 140,
+  "sampler_sha256": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+  "checkpoint_code_sha256": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102",
+  "full_test_command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib TMPDIR=.venv/test-runtime python -m unittest discover -s tests -v",
+  "tests": 130,
+  "skipped": 0,
+  "pytest_attempt": "Unavailable in the preserved science environment; the repository uses unittest.",
+  "research_ready": false
+}
