@@ -1,0 +1,103 @@
+kind,state,cohort,measure,mcse_sd,mcse_q05,mcse_q95,mcse_sd_status,mcse_q05_status,mcse_q95_status
+distance,nc,joint,mean_distance_km,0.04591223694194684,0.06573984676646205,0.12864473587526248,finite,finite,finite
+distance,nc,joint,sd_distance_km,0.03296743300450049,0.053314647982659835,0.0943513773700797,finite,finite,finite
+distance,nc,joint,distance_cv,0.000748772926960063,0.0019215021626117768,0.0029703964740746547,finite,finite,finite
+distance,nc,joint,inverse_distance_cv,0.0013668353688156968,0.00514888445331807,0.003932993868031254,finite,finite,finite
+distance,nc,joint,mean_district_cv,0.0007853720310923401,0.0017076439762926943,0.0020241699410254443,finite,finite,finite
+distance,nc,nc_block_union_2023,mean_distance_km,0.06905062302542707,0.11565739822998466,0.1459512273405572,finite,finite,finite
+distance,nc,nc_block_union_2023,sd_distance_km,0.044126406436423515,0.08097046705129785,0.23960627647858956,finite,finite,finite
+distance,nc,nc_block_union_2023,distance_cv,0.0009659597926338733,0.0020689885213861503,0.0028939749884620003,finite,finite,finite
+distance,nc,nc_block_union_2023,inverse_distance_cv,0.0017252457252026302,0.00504352061675073,0.003981008139060882,finite,finite,finite
+distance,nc,nc_block_union_2023,mean_district_cv,0.0010225340733003773,0.0024777804218295563,0.0028714255214706275,finite,finite,finite
+distance,nc,nc_block_union_2025,mean_distance_km,0.07014799360458306,0.13483440483326348,0.14793076328255594,finite,finite,finite
+distance,nc,nc_block_union_2025,sd_distance_km,0.04913685896160761,0.07681905382391996,0.08612017042064402,finite,finite,finite
+distance,nc,nc_block_union_2025,distance_cv,0.0011672415633728916,0.0049834508106878506,0.0049545230300152565,finite,finite,finite
+distance,nc,nc_block_union_2025,inverse_distance_cv,0.00212077976693779,0.008135126501412127,0.009350079605332295,finite,finite,finite
+distance,nc,nc_block_union_2025,mean_district_cv,0.0012106184143881268,0.0036625582284203484,0.002687058868308445,finite,finite,finite
+distance,tx,joint,mean_distance_km,0.10177280549117498,0.0604425775839843,0.15864723058998464,finite,finite,finite
+distance,tx,joint,sd_distance_km,0.20435212439857506,0.09127926417397347,0.40044798167571116,finite,finite,finite
+distance,tx,joint,distance_cv,0.001955433478911693,0.0020064436110910355,0.007774738424977223,finite,finite,finite
+distance,tx,joint,inverse_distance_cv,0.001108734669878904,0.003906183728134005,0.0014044267951367484,finite,finite,finite
+distance,tx,joint,mean_district_cv,0.0006314892675040938,0.0007864317571420476,0.0009220410265258772,finite,finite,finite
+distance,tx,tx_dispersed,mean_distance_km,0.136036388087211,0.08338953799374238,0.20408658205317565,finite,finite,finite
+distance,tx,tx_dispersed,sd_distance_km,0.2834320115788593,0.15610477797396527,0.5067127708084627,finite,finite,finite
+distance,tx,tx_dispersed,distance_cv,0.002820436255670571,0.0027765337074291407,0.011127211641687618,finite,finite,finite
+distance,tx,tx_dispersed,inverse_distance_cv,0.0015947278503006743,0.00574719329994372,0.0020182052551930285,finite,finite,finite
+distance,tx,tx_dispersed,mean_district_cv,0.0009988772559072579,0.001023303358945682,0.0012163411988926343,finite,finite,finite
+distance,tx,tx_rebuild,mean_distance_km,0.13560852828530667,0.0923094802476001,0.24506889660589337,finite,finite,finite
+distance,tx,tx_rebuild,sd_distance_km,0.22519365856021561,0.13970366464779005,0.6023852977177135,finite,finite,finite
+distance,tx,tx_rebuild,distance_cv,0.002694786620235425,0.002640412174156115,0.012199518329619519,finite,finite,finite
+distance,tx,tx_rebuild,inverse_distance_cv,0.0015272859017994515,0.006167041403302098,0.0018328240375026228,finite,finite,finite
+distance,tx,tx_rebuild,mean_district_cv,0.0007502028092554595,0.0010788962416374837,0.001112722411748479,finite,finite,finite
+election,nc,joint,President,0.017070313253551458,0.0,0.0,finite,finite,finite
+election,nc,joint,Attorney general,0.017306737812946404,0.0,0.0,finite,finite,finite
+election,nc,joint,Auditor,0.01784225727417995,0.0,0.0,finite,finite,finite
+election,nc,joint,Agriculture commissioner,0.018622616558098392,0.0,0.0,finite,finite,finite
+election,nc,joint,Insurance commissioner,0.01829583255153384,0.0,0.0,finite,finite,finite
+election,nc,joint,Labor commissioner,0.019153977387822124,0.0,0.0,finite,finite,finite
+election,nc,joint,Governor,0.023149202026295872,0.0,0.0,finite,finite,finite
+election,nc,joint,Lieutenant governor,0.01764597461067937,0.0,0.0,finite,finite,finite
+election,nc,joint,Secretary of state,0.018342520252358163,0.0,0.0,finite,finite,finite
+election,nc,joint,Public instruction superintendent,0.01764415640965468,0.0,0.0,finite,finite,finite
+election,nc,joint,Treasurer,0.01857865949880993,0.0,0.0,finite,finite,finite
+election,nc,joint,Appeals court 12,0.017548500122357032,0.0,0.0,finite,finite,finite
+election,nc,joint,Appeals court 14,0.017856783008645124,0.0,0.0,finite,finite,finite
+election,nc,joint,Appeals court 15,0.018010949322570875,0.0,0.0,finite,finite,finite
+election,nc,joint,Supreme Court 6,0.018095835019227728,0.5,0.0,finite,finite,finite
+election,nc,nc_block_union_2023,President,0.025335979895701344,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2023,Attorney general,0.024303179600542405,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2023,Auditor,0.02627951837138998,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2023,Agriculture commissioner,0.02768637692928802,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2023,Insurance commissioner,0.026648461939521362,0.0,0.5,finite,finite,finite
+election,nc,nc_block_union_2023,Labor commissioner,0.029985264953979424,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2023,Governor,0.03281268775624548,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2023,Lieutenant governor,0.024729192227371345,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2023,Secretary of state,0.02666270074143047,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2023,Public instruction superintendent,0.02472996887933582,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2023,Treasurer,0.028332737700903738,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2023,Appeals court 12,0.025518280885200036,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2023,Appeals court 14,0.02630932629747358,0.0,0.5,finite,finite,finite
+election,nc,nc_block_union_2023,Appeals court 15,0.025853264421487526,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2023,Supreme Court 6,0.02638633775641438,0.5,0.0,finite,finite,finite
+election,nc,nc_block_union_2025,President,0.023810167202549387,0.0,0.5,finite,finite,finite
+election,nc,nc_block_union_2025,Attorney general,0.025412321278698375,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2025,Auditor,0.024290456480303126,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2025,Agriculture commissioner,0.025545155862526408,0.0,0.5,finite,finite,finite
+election,nc,nc_block_union_2025,Insurance commissioner,0.025717908756523352,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2025,Labor commissioner,0.0259479889084505,0.5,0.0,finite,finite,finite
+election,nc,nc_block_union_2025,Governor,0.03277692467558995,0.0,0.5,finite,finite,finite
+election,nc,nc_block_union_2025,Lieutenant governor,0.027075118935172744,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2025,Secretary of state,0.027575343731423386,0.5,0.0,finite,finite,finite
+election,nc,nc_block_union_2025,Public instruction superintendent,0.026182176240977944,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2025,Treasurer,0.02555434113800322,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2025,Appeals court 12,0.02475579455605116,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2025,Appeals court 14,0.025119519795895332,0.0,0.0,finite,finite,finite
+election,nc,nc_block_union_2025,Appeals court 15,0.025212488026951446,0.0,0.5,finite,finite,finite
+election,nc,nc_block_union_2025,Supreme Court 6,0.025876943884533172,0.5,0.0,finite,finite,finite
+election,tx,joint,President,0.019282162091541266,0.0,0.0,finite,finite,finite
+election,tx,joint,US Senate,0.021635944029822017,0.0,0.0,finite,finite,finite
+election,tx,joint,Criminal appeals 7,0.02268345475348347,0.0,0.0,finite,finite,finite
+election,tx,joint,Criminal appeals 8,0.020386939469542446,0.0,0.0,finite,finite,finite
+election,tx,joint,Criminal appeals presiding,0.022670055693075977,0.0,0.0,finite,finite,finite
+election,tx,joint,Railroad commissioner,0.02207594462206412,0.0,0.0,finite,finite,finite
+election,tx,joint,Supreme Court 2,0.02228541040405674,0.0,0.0,finite,finite,finite
+election,tx,joint,Supreme Court 4,0.021748327398855464,0.0,0.0,finite,finite,finite
+election,tx,joint,Supreme Court 6,0.022717404835214304,0.0,0.0,finite,finite,finite
+election,tx,tx_dispersed,President,0.030198088559385706,0.0,0.0,finite,finite,finite
+election,tx,tx_dispersed,US Senate,0.030228620181613427,0.0,0.0,finite,finite,finite
+election,tx,tx_dispersed,Criminal appeals 7,0.031154689785731732,0.0,0.0,finite,finite,finite
+election,tx,tx_dispersed,Criminal appeals 8,0.028898901055836253,0.0,0.0,finite,finite,finite
+election,tx,tx_dispersed,Criminal appeals presiding,0.030416313082506644,0.0,0.0,finite,finite,finite
+election,tx,tx_dispersed,Railroad commissioner,0.031115690582456886,0.0,0.0,finite,finite,finite
+election,tx,tx_dispersed,Supreme Court 2,0.03192024452563449,0.0,0.0,finite,finite,finite
+election,tx,tx_dispersed,Supreme Court 4,0.03193049032015325,0.0,0.0,finite,finite,finite
+election,tx,tx_dispersed,Supreme Court 6,0.03211479144332854,0.0,0.5,finite,finite,finite
+election,tx,tx_rebuild,President,0.0263587249513633,0.0,0.0,finite,finite,finite
+election,tx,tx_rebuild,US Senate,0.031341320697472225,0.0,0.0,finite,finite,finite
+election,tx,tx_rebuild,Criminal appeals 7,0.03180419669391529,0.0,0.0,finite,finite,finite
+election,tx,tx_rebuild,Criminal appeals 8,0.027499359413987703,0.0,0.0,finite,finite,finite
+election,tx,tx_rebuild,Criminal appeals presiding,0.03230953037303509,0.0,0.0,finite,finite,finite
+election,tx,tx_rebuild,Railroad commissioner,0.031219835501495687,0.0,0.0,finite,finite,finite
+election,tx,tx_rebuild,Supreme Court 2,0.031138861562682495,0.0,0.0,finite,finite,finite
+election,tx,tx_rebuild,Supreme Court 4,0.030303834988231294,0.0,0.0,finite,finite,finite
+election,tx,tx_rebuild,Supreme Court 6,0.030935541027222825,0.0,0.0,finite,finite,finite

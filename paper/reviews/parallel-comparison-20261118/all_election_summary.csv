@@ -1,0 +1,118 @@
+state,cohort,election,enacted_year,enacted_seats,checkpoints,mean_democratic_seats,median_democratic_seats,minimum,maximum,at_or_below_enacted
+tx,joint,President,2025,8,5560,12.863489208633094,13.0,8,18,2
+tx,tx_dispersed,President,2025,8,2780,12.843884892086331,13.0,9,18,0
+tx,tx_rebuild,President,2025,8,2780,12.883093525179856,13.0,8,17,2
+tx,joint,US Senate,2025,8,5560,17.2,17.0,12,22,0
+tx,tx_dispersed,US Senate,2025,8,2780,17.197841726618705,17.0,12,22,0
+tx,tx_rebuild,US Senate,2025,8,2780,17.202158273381293,17.0,13,22,0
+tx,joint,Criminal appeals 7,2025,8,5560,13.11726618705036,13.0,9,18,0
+tx,tx_dispersed,Criminal appeals 7,2025,8,2780,13.119064748201438,13.0,9,18,0
+tx,tx_rebuild,Criminal appeals 7,2025,8,2780,13.11546762589928,13.0,9,18,0
+tx,joint,Criminal appeals 8,2025,8,5560,12.082374100719424,12.0,8,18,22
+tx,tx_dispersed,Criminal appeals 8,2025,8,2780,12.098561151079137,12.0,8,18,9
+tx,tx_rebuild,Criminal appeals 8,2025,8,2780,12.066187050359712,12.0,8,17,13
+tx,joint,Criminal appeals presiding,2025,8,5560,13.095863309352518,13.0,8,18,1
+tx,tx_dispersed,Criminal appeals presiding,2025,8,2780,13.112589928057554,13.0,8,18,1
+tx,tx_rebuild,Criminal appeals presiding,2025,8,2780,13.079136690647482,13.0,9,18,0
+tx,joint,Railroad commissioner,2025,8,5560,12.985971223021583,13.0,8,18,2
+tx,tx_dispersed,Railroad commissioner,2025,8,2780,12.989928057553957,13.0,8,18,2
+tx,tx_rebuild,Railroad commissioner,2025,8,2780,12.982014388489208,13.0,9,18,0
+tx,joint,Supreme Court 2,2025,8,5560,13.093345323741007,13.0,8,18,1
+tx,tx_dispersed,Supreme Court 2,2025,8,2780,13.103597122302158,13.0,8,18,1
+tx,tx_rebuild,Supreme Court 2,2025,8,2780,13.083093525179857,13.0,9,18,0
+tx,joint,Supreme Court 4,2025,8,5560,14.103237410071943,14.0,9,20,0
+tx,tx_dispersed,Supreme Court 4,2025,8,2780,14.104676258992805,14.0,10,20,0
+tx,tx_rebuild,Supreme Court 4,2025,8,2780,14.10179856115108,14.0,9,19,0
+tx,joint,Supreme Court 6,2025,8,5560,13.325719424460432,13.0,8,19,1
+tx,tx_dispersed,Supreme Court 6,2025,8,2780,13.33884892086331,13.0,8,18,1
+tx,tx_rebuild,Supreme Court 6,2025,8,2780,13.312589928057553,13.0,9,19,0
+nc,joint,President,2023,3,1350,5.350370370370371,5.0,3,8,7
+nc,joint,President,2025,3,1350,5.350370370370371,5.0,3,8,7
+nc,nc_block_union_2023,President,2023,3,675,5.354074074074074,5.0,3,7,1
+nc,nc_block_union_2023,President,2025,3,675,5.354074074074074,5.0,3,7,1
+nc,nc_block_union_2025,President,2023,3,675,5.346666666666667,5.0,3,8,6
+nc,nc_block_union_2025,President,2025,3,675,5.346666666666667,5.0,3,8,6
+nc,joint,Attorney general,2023,4,1350,6.4911111111111115,6.0,4,9,8
+nc,joint,Attorney general,2025,3,1350,6.4911111111111115,6.0,4,9,0
+nc,nc_block_union_2023,Attorney general,2023,4,675,6.502222222222223,6.0,4,9,4
+nc,nc_block_union_2023,Attorney general,2025,3,675,6.502222222222223,6.0,4,9,0
+nc,nc_block_union_2025,Attorney general,2023,4,675,6.48,6.0,4,9,4
+nc,nc_block_union_2025,Attorney general,2025,3,675,6.48,6.0,4,9,0
+nc,joint,Auditor,2023,3,1350,5.62962962962963,6.0,3,8,3
+nc,joint,Auditor,2025,3,1350,5.62962962962963,6.0,3,8,3
+nc,nc_block_union_2023,Auditor,2023,3,675,5.635555555555555,6.0,4,8,0
+nc,nc_block_union_2023,Auditor,2025,3,675,5.635555555555555,6.0,4,8,0
+nc,nc_block_union_2025,Auditor,2023,3,675,5.623703703703704,6.0,3,8,3
+nc,nc_block_union_2025,Auditor,2025,3,675,5.623703703703704,6.0,3,8,3
+nc,joint,Agriculture commissioner,2023,3,1350,4.302962962962963,4.0,2,7,225
+nc,joint,Agriculture commissioner,2025,3,1350,4.302962962962963,4.0,2,7,225
+nc,nc_block_union_2023,Agriculture commissioner,2023,3,675,4.302222222222222,4.0,3,7,118
+nc,nc_block_union_2023,Agriculture commissioner,2025,3,675,4.302222222222222,4.0,3,7,118
+nc,nc_block_union_2025,Agriculture commissioner,2023,3,675,4.303703703703704,4.0,2,7,107
+nc,nc_block_union_2025,Agriculture commissioner,2025,3,675,4.303703703703704,4.0,2,7,107
+nc,joint,Insurance commissioner,2023,3,1350,5.092592592592593,5.0,3,8,25
+nc,joint,Insurance commissioner,2025,3,1350,5.092592592592593,5.0,3,8,25
+nc,nc_block_union_2023,Insurance commissioner,2023,3,675,5.109629629629629,5.0,3,7,11
+nc,nc_block_union_2023,Insurance commissioner,2025,3,675,5.109629629629629,5.0,3,7,11
+nc,nc_block_union_2025,Insurance commissioner,2023,3,675,5.075555555555556,5.0,3,8,14
+nc,nc_block_union_2025,Insurance commissioner,2025,3,675,5.075555555555556,5.0,3,8,14
+nc,joint,Labor commissioner,2023,3,1350,4.932592592592592,5.0,3,7,46
+nc,joint,Labor commissioner,2025,3,1350,4.932592592592592,5.0,3,7,46
+nc,nc_block_union_2023,Labor commissioner,2023,3,675,4.942222222222222,5.0,3,7,18
+nc,nc_block_union_2023,Labor commissioner,2025,3,675,4.942222222222222,5.0,3,7,18
+nc,nc_block_union_2025,Labor commissioner,2023,3,675,4.922962962962963,5.0,3,7,28
+nc,nc_block_union_2025,Labor commissioner,2025,3,675,4.922962962962963,5.0,3,7,28
+nc,joint,Governor,2023,12,1350,11.222222222222221,11.0,9,13,1258
+nc,joint,Governor,2025,13,1350,11.222222222222221,11.0,9,13,1350
+nc,nc_block_union_2023,Governor,2023,12,675,11.242962962962963,11.0,9,13,624
+nc,nc_block_union_2023,Governor,2025,13,675,11.242962962962963,11.0,9,13,675
+nc,nc_block_union_2025,Governor,2023,12,675,11.201481481481482,11.0,9,13,634
+nc,nc_block_union_2025,Governor,2025,13,675,11.201481481481482,11.0,9,13,675
+nc,joint,Lieutenant governor,2023,4,1350,6.491851851851852,7.0,4,9,14
+nc,joint,Lieutenant governor,2025,3,1350,6.491851851851852,7.0,4,9,0
+nc,nc_block_union_2023,Lieutenant governor,2023,4,675,6.508148148148148,7.0,4,9,5
+nc,nc_block_union_2023,Lieutenant governor,2025,3,675,6.508148148148148,7.0,4,9,0
+nc,nc_block_union_2025,Lieutenant governor,2023,4,675,6.475555555555555,6.0,4,9,9
+nc,nc_block_union_2025,Lieutenant governor,2025,3,675,6.475555555555555,6.0,4,9,0
+nc,joint,Secretary of state,2023,4,1350,6.781481481481482,7.0,4,9,6
+nc,joint,Secretary of state,2025,3,1350,6.781481481481482,7.0,4,9,0
+nc,nc_block_union_2023,Secretary of state,2023,4,675,6.779259259259259,7.0,4,9,2
+nc,nc_block_union_2023,Secretary of state,2025,3,675,6.779259259259259,7.0,4,9,0
+nc,nc_block_union_2025,Secretary of state,2023,4,675,6.783703703703703,7.0,4,9,4
+nc,nc_block_union_2025,Secretary of state,2025,3,675,6.783703703703703,7.0,4,9,0
+nc,joint,Public instruction superintendent,2023,4,1350,6.503703703703704,7.0,4,9,8
+nc,joint,Public instruction superintendent,2025,3,1350,6.503703703703704,7.0,4,9,0
+nc,nc_block_union_2023,Public instruction superintendent,2023,4,675,6.508148148148148,7.0,4,9,5
+nc,nc_block_union_2023,Public instruction superintendent,2025,3,675,6.508148148148148,7.0,4,9,0
+nc,nc_block_union_2025,Public instruction superintendent,2023,4,675,6.499259259259259,6.0,4,9,3
+nc,nc_block_union_2025,Public instruction superintendent,2025,3,675,6.499259259259259,6.0,4,9,0
+nc,joint,Treasurer,2023,3,1350,5.051851851851852,5.0,3,7,32
+nc,joint,Treasurer,2025,3,1350,5.051851851851852,5.0,3,7,32
+nc,nc_block_union_2023,Treasurer,2023,3,675,5.065185185185185,5.0,3,7,11
+nc,nc_block_union_2023,Treasurer,2025,3,675,5.065185185185185,5.0,3,7,11
+nc,nc_block_union_2025,Treasurer,2023,3,675,5.038518518518519,5.0,3,7,21
+nc,nc_block_union_2025,Treasurer,2025,3,675,5.038518518518519,5.0,3,7,21
+nc,joint,Appeals court 12,2023,3,1350,5.5962962962962965,6.0,3,8,3
+nc,joint,Appeals court 12,2025,3,1350,5.5962962962962965,6.0,3,8,3
+nc,nc_block_union_2023,Appeals court 12,2023,3,675,5.605925925925926,6.0,4,8,0
+nc,nc_block_union_2023,Appeals court 12,2025,3,675,5.605925925925926,6.0,4,8,0
+nc,nc_block_union_2025,Appeals court 12,2023,3,675,5.586666666666667,6.0,3,8,3
+nc,nc_block_union_2025,Appeals court 12,2025,3,675,5.586666666666667,6.0,3,8,3
+nc,joint,Appeals court 14,2023,3,1350,5.1214814814814815,5.0,3,8,21
+nc,joint,Appeals court 14,2025,3,1350,5.1214814814814815,5.0,3,8,21
+nc,nc_block_union_2023,Appeals court 14,2023,3,675,5.148148148148148,5.0,3,7,9
+nc,nc_block_union_2023,Appeals court 14,2025,3,675,5.148148148148148,5.0,3,7,9
+nc,nc_block_union_2025,Appeals court 14,2023,3,675,5.094814814814815,5.0,3,8,12
+nc,nc_block_union_2025,Appeals court 14,2025,3,675,5.094814814814815,5.0,3,8,12
+nc,joint,Appeals court 15,2023,3,1350,5.275555555555556,5.0,3,8,13
+nc,joint,Appeals court 15,2025,3,1350,5.275555555555556,5.0,3,8,13
+nc,nc_block_union_2023,Appeals court 15,2023,3,675,5.29037037037037,5.0,3,7,5
+nc,nc_block_union_2023,Appeals court 15,2025,3,675,5.29037037037037,5.0,3,7,5
+nc,nc_block_union_2025,Appeals court 15,2023,3,675,5.260740740740741,5.0,3,8,8
+nc,nc_block_union_2025,Appeals court 15,2025,3,675,5.260740740740741,5.0,3,8,8
+nc,joint,Supreme Court 6,2023,4,1350,5.940740740740741,6.0,3,9,61
+nc,joint,Supreme Court 6,2025,3,1350,5.940740740740741,6.0,3,9,2
+nc,nc_block_union_2023,Supreme Court 6,2023,4,675,5.942222222222222,6.0,4,8,33
+nc,nc_block_union_2023,Supreme Court 6,2025,3,675,5.942222222222222,6.0,4,8,0
+nc,nc_block_union_2025,Supreme Court 6,2023,4,675,5.939259259259259,6.0,3,9,28
+nc,nc_block_union_2025,Supreme Court 6,2025,3,675,5.939259259259259,6.0,3,9,2
