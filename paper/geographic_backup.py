@@ -12,6 +12,14 @@ REPOSITORY = 'httpsbina/gerrymander-detector'
 RELEASE = 'continuation-snapshot-2026-11-02'
 
 
+def verify_archive(archive, checksums):
+    # Match the archive's member order to avoid repeated gzip seeks.
+    with tarfile.open(archive) as stream:
+        for name, expected in sorted(checksums.items()):
+            if hashlib.file_digest(stream.extractfile(name), 'sha256').hexdigest() != expected:
+                raise ValueError('Archive content checksum differs')
+
+
 def backup(root, paper, campaign, manifest_path, destination):
     destination.mkdir(parents=True, exist_ok=False)
     manifest = json.loads(manifest_path.read_text())
@@ -68,10 +76,7 @@ def backup(root, paper, campaign, manifest_path, destination):
                             'environment_asset': 'science-environment-macos-arm64-py312.tar.gz'}, indent=2) + '\n').encode()
         item = tarfile.TarInfo('BACKUP.json');item.size = len(data)
         stream.addfile(item, io.BytesIO(data))
-    with tarfile.open(archive) as stream:
-        for name, expected in checksums.items():
-            if hashlib.file_digest(stream.extractfile(name), 'sha256').hexdigest() != expected:
-                raise ValueError('Archive content checksum differs')
+    verify_archive(archive, checksums)
     digest = sha(archive)
     sidecar = destination / (archive.name + '.sha256')
     sidecar.write_text(digest + '  ' + archive.name + '\n')
