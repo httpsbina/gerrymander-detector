@@ -1,0 +1,37 @@
+[
+  {
+    "cohort": "nc_block_union_2023",
+    "metric": "normalized_rms_radius",
+    "diagnostic": "bulk_ess",
+    "previous": 315.99505945232215,
+    "current": 303.3448370246479
+  },
+  {
+    "cohort": "nc_block_union_2023",
+    "metric": "normalized_rms_radius",
+    "diagnostic": "tail_ess",
+    "previous": 386.906222298574,
+    "current": 368.8427975530127
+  },
+  {
+    "cohort": "nc_block_union_2023",
+    "metric": "mean_distance_km",
+    "diagnostic": "bulk_ess",
+    "previous": 218.72668453864006,
+    "current": 217.6566676699368
+  },
+  {
+    "cohort": "nc_block_union_2023",
+    "metric": "mean_distance_km",
+    "diagnostic": "tail_ess",
+    "previous": 418.8743123663161,
+    "current": 386.1651951224351
+  },
+  {
+    "cohort": "nc_block_union_2023",
+    "metric": "mean_district_cv",
+    "diagnostic": "bulk_ess",
+    "previous": 308.67525454172403,
+    "current": 290.69560500912803
+  }
+]
