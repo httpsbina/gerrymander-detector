@@ -1,0 +1,849 @@
+state,cohort,election,sample,metric,scope,spearman,status,observations
+nc,joint,President,all_frozen_checkpoints,silhouette,pooled,-0.04291468582189411,finite,1350
+nc,joint,President,all_frozen_checkpoints,silhouette,seed_707,-0.07771764293333917,finite,225
+nc,joint,President,all_frozen_checkpoints,silhouette,seed_808,0.03485283387459852,finite,225
+nc,joint,President,all_frozen_checkpoints,silhouette,seed_909,-0.07511126404480699,finite,225
+nc,joint,President,all_frozen_checkpoints,silhouette,seed_1707,-0.03025555196246097,finite,225
+nc,joint,President,all_frozen_checkpoints,silhouette,seed_1808,-0.13830620857080836,finite,225
+nc,joint,President,all_frozen_checkpoints,silhouette,seed_1909,0.03152392718570905,finite,225
+nc,joint,President,all_frozen_checkpoints,normalized_rms_radius,pooled,0.06515736693319453,finite,1350
+nc,joint,President,all_frozen_checkpoints,normalized_rms_radius,seed_707,0.11297730189441828,finite,225
+nc,joint,President,all_frozen_checkpoints,normalized_rms_radius,seed_808,-0.018256703240167926,finite,225
+nc,joint,President,all_frozen_checkpoints,normalized_rms_radius,seed_909,0.040196020638657425,finite,225
+nc,joint,President,all_frozen_checkpoints,normalized_rms_radius,seed_1707,0.05241825878971979,finite,225
+nc,joint,President,all_frozen_checkpoints,normalized_rms_radius,seed_1808,0.1407941874364016,finite,225
+nc,joint,President,all_frozen_checkpoints,normalized_rms_radius,seed_1909,0.05623996346669948,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_polsby_popper,pooled,0.01177678676548881,finite,1350
+nc,joint,President,all_frozen_checkpoints,mean_polsby_popper,seed_707,0.032462724523179234,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_polsby_popper,seed_808,-0.018989906440321832,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_polsby_popper,seed_909,0.03313825712803716,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_polsby_popper,seed_1707,0.014453419643053527,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_polsby_popper,seed_1808,-0.028932285446086985,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_polsby_popper,seed_1909,0.006905625420669853,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_distance_km,pooled,0.07081348047788473,finite,1350
+nc,joint,President,all_frozen_checkpoints,mean_distance_km,seed_707,0.14819689177860254,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_distance_km,seed_808,0.0037563258637600106,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_distance_km,seed_909,0.0512811364827593,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_distance_km,seed_1707,0.0752126411742583,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_distance_km,seed_1808,0.1316420399816745,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_distance_km,seed_1909,0.010387701663397152,finite,225
+nc,joint,President,all_frozen_checkpoints,sd_distance_km,pooled,0.04347906258424326,finite,1350
+nc,joint,President,all_frozen_checkpoints,sd_distance_km,seed_707,0.04479271314287987,finite,225
+nc,joint,President,all_frozen_checkpoints,sd_distance_km,seed_808,-0.05745965032768882,finite,225
+nc,joint,President,all_frozen_checkpoints,sd_distance_km,seed_909,0.02822492073559082,finite,225
+nc,joint,President,all_frozen_checkpoints,sd_distance_km,seed_1707,0.018084131404715133,finite,225
+nc,joint,President,all_frozen_checkpoints,sd_distance_km,seed_1808,0.11500901169271767,finite,225
+nc,joint,President,all_frozen_checkpoints,sd_distance_km,seed_1909,0.09388082125830921,finite,225
+nc,joint,President,all_frozen_checkpoints,distance_cv,pooled,-0.023145930953932425,finite,1350
+nc,joint,President,all_frozen_checkpoints,distance_cv,seed_707,-0.04107306123000699,finite,225
+nc,joint,President,all_frozen_checkpoints,distance_cv,seed_808,-0.07799046880528561,finite,225
+nc,joint,President,all_frozen_checkpoints,distance_cv,seed_909,-0.02317553644485159,finite,225
+nc,joint,President,all_frozen_checkpoints,distance_cv,seed_1707,-0.07658639324207195,finite,225
+nc,joint,President,all_frozen_checkpoints,distance_cv,seed_1808,-0.015284266987926986,finite,225
+nc,joint,President,all_frozen_checkpoints,distance_cv,seed_1909,0.09552980710302113,finite,225
+nc,joint,President,all_frozen_checkpoints,inverse_distance_cv,pooled,0.023145930953932425,finite,1350
+nc,joint,President,all_frozen_checkpoints,inverse_distance_cv,seed_707,0.04107306123000699,finite,225
+nc,joint,President,all_frozen_checkpoints,inverse_distance_cv,seed_808,0.07799046880528561,finite,225
+nc,joint,President,all_frozen_checkpoints,inverse_distance_cv,seed_909,0.02317553644485159,finite,225
+nc,joint,President,all_frozen_checkpoints,inverse_distance_cv,seed_1707,0.07658639324207195,finite,225
+nc,joint,President,all_frozen_checkpoints,inverse_distance_cv,seed_1808,0.015284266987926986,finite,225
+nc,joint,President,all_frozen_checkpoints,inverse_distance_cv,seed_1909,-0.09552980710302113,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_district_cv,pooled,-0.08430568181373542,finite,1350
+nc,joint,President,all_frozen_checkpoints,mean_district_cv,seed_707,-0.1143187694406023,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_district_cv,seed_808,-0.08674318783899357,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_district_cv,seed_909,-0.05306202577434733,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_district_cv,seed_1707,-0.13920137512669029,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_district_cv,seed_1808,-0.06891447294131493,finite,225
+nc,joint,President,all_frozen_checkpoints,mean_district_cv,seed_1909,-0.029457864976414595,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,silhouette,pooled,-0.04084707987345545,finite,675
+nc,nc_block_union_2023,President,all_frozen_checkpoints,silhouette,seed_707,-0.07771764293333917,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,silhouette,seed_808,0.03485283387459852,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,silhouette,seed_909,-0.07511126404480699,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,normalized_rms_radius,pooled,0.04926982423375317,finite,675
+nc,nc_block_union_2023,President,all_frozen_checkpoints,normalized_rms_radius,seed_707,0.11297730189441828,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,normalized_rms_radius,seed_808,-0.018256703240167926,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,normalized_rms_radius,seed_909,0.040196020638657425,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,mean_polsby_popper,pooled,0.016632467496152267,finite,675
+nc,nc_block_union_2023,President,all_frozen_checkpoints,mean_polsby_popper,seed_707,0.032462724523179234,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,mean_polsby_popper,seed_808,-0.018989906440321832,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,mean_polsby_popper,seed_909,0.03313825712803716,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,mean_distance_km,pooled,0.0689065817842255,finite,675
+nc,nc_block_union_2023,President,all_frozen_checkpoints,mean_distance_km,seed_707,0.14819689177860254,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,mean_distance_km,seed_808,0.0037563258637600106,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,mean_distance_km,seed_909,0.0512811364827593,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,sd_distance_km,pooled,0.010216654392317568,finite,675
+nc,nc_block_union_2023,President,all_frozen_checkpoints,sd_distance_km,seed_707,0.04479271314287987,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,sd_distance_km,seed_808,-0.05745965032768882,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,sd_distance_km,seed_909,0.02822492073559082,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,distance_cv,pooled,-0.04660256463396828,finite,675
+nc,nc_block_union_2023,President,all_frozen_checkpoints,distance_cv,seed_707,-0.04107306123000699,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,distance_cv,seed_808,-0.07799046880528561,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,distance_cv,seed_909,-0.02317553644485159,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,inverse_distance_cv,pooled,0.04660256463396828,finite,675
+nc,nc_block_union_2023,President,all_frozen_checkpoints,inverse_distance_cv,seed_707,0.04107306123000699,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,inverse_distance_cv,seed_808,0.07799046880528561,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,inverse_distance_cv,seed_909,0.02317553644485159,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,mean_district_cv,pooled,-0.0907336835715737,finite,675
+nc,nc_block_union_2023,President,all_frozen_checkpoints,mean_district_cv,seed_707,-0.1143187694406023,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,mean_district_cv,seed_808,-0.08674318783899357,finite,225
+nc,nc_block_union_2023,President,all_frozen_checkpoints,mean_district_cv,seed_909,-0.05306202577434733,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,silhouette,pooled,-0.044170369588887114,finite,675
+nc,nc_block_union_2025,President,all_frozen_checkpoints,silhouette,seed_1707,-0.03025555196246097,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,silhouette,seed_1808,-0.13830620857080836,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,silhouette,seed_1909,0.03152392718570905,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,normalized_rms_radius,pooled,0.08034746015285063,finite,675
+nc,nc_block_union_2025,President,all_frozen_checkpoints,normalized_rms_radius,seed_1707,0.05241825878971979,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,normalized_rms_radius,seed_1808,0.1407941874364016,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,normalized_rms_radius,seed_1909,0.05623996346669948,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,mean_polsby_popper,pooled,0.005311572148130515,finite,675
+nc,nc_block_union_2025,President,all_frozen_checkpoints,mean_polsby_popper,seed_1707,0.014453419643053527,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,mean_polsby_popper,seed_1808,-0.028932285446086985,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,mean_polsby_popper,seed_1909,0.006905625420669853,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,mean_distance_km,pooled,0.07061642785464155,finite,675
+nc,nc_block_union_2025,President,all_frozen_checkpoints,mean_distance_km,seed_1707,0.0752126411742583,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,mean_distance_km,seed_1808,0.1316420399816745,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,mean_distance_km,seed_1909,0.010387701663397152,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,sd_distance_km,pooled,0.07392426215888073,finite,675
+nc,nc_block_union_2025,President,all_frozen_checkpoints,sd_distance_km,seed_1707,0.018084131404715133,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,sd_distance_km,seed_1808,0.11500901169271767,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,sd_distance_km,seed_1909,0.09388082125830921,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,distance_cv,pooled,-0.0004140405033054698,finite,675
+nc,nc_block_union_2025,President,all_frozen_checkpoints,distance_cv,seed_1707,-0.07658639324207195,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,distance_cv,seed_1808,-0.015284266987926986,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,distance_cv,seed_1909,0.09552980710302113,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,inverse_distance_cv,pooled,0.0004140405033054698,finite,675
+nc,nc_block_union_2025,President,all_frozen_checkpoints,inverse_distance_cv,seed_1707,0.07658639324207195,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,inverse_distance_cv,seed_1808,0.015284266987926986,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,inverse_distance_cv,seed_1909,-0.09552980710302113,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,mean_district_cv,pooled,-0.07884684393600609,finite,675
+nc,nc_block_union_2025,President,all_frozen_checkpoints,mean_district_cv,seed_1707,-0.13920137512669029,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,mean_district_cv,seed_1808,-0.06891447294131493,finite,225
+nc,nc_block_union_2025,President,all_frozen_checkpoints,mean_district_cv,seed_1909,-0.029457864976414595,finite,225
+nc,joint,President,existing_election_checkpoint_subset,silhouette,pooled,-0.04291468582189411,finite,1350
+nc,joint,President,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.06515736693319453,finite,1350
+nc,joint,President,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.01177678676548881,finite,1350
+nc,joint,President,existing_election_checkpoint_subset,mean_distance_km,pooled,0.07081348047788473,finite,1350
+nc,joint,President,existing_election_checkpoint_subset,sd_distance_km,pooled,0.04347906258424326,finite,1350
+nc,joint,President,existing_election_checkpoint_subset,distance_cv,pooled,-0.023145930953932425,finite,1350
+nc,joint,President,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.023145930953932425,finite,1350
+nc,joint,President,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.08430568181373542,finite,1350
+nc,joint,Attorney general,existing_election_checkpoint_subset,silhouette,pooled,-0.023151697056282096,finite,1350
+nc,joint,Attorney general,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.03329945944557598,finite,1350
+nc,joint,Attorney general,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.010869986537871466,finite,1350
+nc,joint,Attorney general,existing_election_checkpoint_subset,mean_distance_km,pooled,0.03119159595461985,finite,1350
+nc,joint,Attorney general,existing_election_checkpoint_subset,sd_distance_km,pooled,0.02174686943604787,finite,1350
+nc,joint,Attorney general,existing_election_checkpoint_subset,distance_cv,pooled,0.0014298750541864257,finite,1350
+nc,joint,Attorney general,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.0014298750541864257,finite,1350
+nc,joint,Attorney general,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.0025398485669507246,finite,1350
+nc,joint,Auditor,existing_election_checkpoint_subset,silhouette,pooled,-0.053836671237309876,finite,1350
+nc,joint,Auditor,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.07281187423212233,finite,1350
+nc,joint,Auditor,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.01696853321465316,finite,1350
+nc,joint,Auditor,existing_election_checkpoint_subset,mean_distance_km,pooled,0.0784228807982826,finite,1350
+nc,joint,Auditor,existing_election_checkpoint_subset,sd_distance_km,pooled,0.043955753894654864,finite,1350
+nc,joint,Auditor,existing_election_checkpoint_subset,distance_cv,pooled,-0.026750472203461943,finite,1350
+nc,joint,Auditor,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.026750472203461943,finite,1350
+nc,joint,Auditor,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.07595628754025434,finite,1350
+nc,joint,Agriculture commissioner,existing_election_checkpoint_subset,silhouette,pooled,-0.12439261247121619,finite,1350
+nc,joint,Agriculture commissioner,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.06534774916289861,finite,1350
+nc,joint,Agriculture commissioner,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.027066903236723026,finite,1350
+nc,joint,Agriculture commissioner,existing_election_checkpoint_subset,mean_distance_km,pooled,0.09699664238196119,finite,1350
+nc,joint,Agriculture commissioner,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.0003172056792528467,finite,1350
+nc,joint,Agriculture commissioner,existing_election_checkpoint_subset,distance_cv,pooled,-0.11178792118060354,finite,1350
+nc,joint,Agriculture commissioner,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.11178792118060354,finite,1350
+nc,joint,Agriculture commissioner,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.17362192012021435,finite,1350
+nc,joint,Insurance commissioner,existing_election_checkpoint_subset,silhouette,pooled,-0.08798261310075355,finite,1350
+nc,joint,Insurance commissioner,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.08650612946491198,finite,1350
+nc,joint,Insurance commissioner,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.02734941308694553,finite,1350
+nc,joint,Insurance commissioner,existing_election_checkpoint_subset,mean_distance_km,pooled,0.09805952172817493,finite,1350
+nc,joint,Insurance commissioner,existing_election_checkpoint_subset,sd_distance_km,pooled,0.049192488771154085,finite,1350
+nc,joint,Insurance commissioner,existing_election_checkpoint_subset,distance_cv,pooled,-0.03729452643690778,finite,1350
+nc,joint,Insurance commissioner,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.03729452643690778,finite,1350
+nc,joint,Insurance commissioner,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.1198612545013861,finite,1350
+nc,joint,Labor commissioner,existing_election_checkpoint_subset,silhouette,pooled,-0.11141894733812288,finite,1350
+nc,joint,Labor commissioner,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.08877798874027701,finite,1350
+nc,joint,Labor commissioner,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.016156997544349336,finite,1350
+nc,joint,Labor commissioner,existing_election_checkpoint_subset,mean_distance_km,pooled,0.09656954445650413,finite,1350
+nc,joint,Labor commissioner,existing_election_checkpoint_subset,sd_distance_km,pooled,0.052889079598783494,finite,1350
+nc,joint,Labor commissioner,existing_election_checkpoint_subset,distance_cv,pooled,-0.03721767259736116,finite,1350
+nc,joint,Labor commissioner,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.03721767259736116,finite,1350
+nc,joint,Labor commissioner,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.12686416662954836,finite,1350
+nc,joint,Governor,existing_election_checkpoint_subset,silhouette,pooled,0.35790938300322117,finite,1350
+nc,joint,Governor,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.27992969852588345,finite,1350
+nc,joint,Governor,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.05260325797761118,finite,1350
+nc,joint,Governor,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.3129412634312435,finite,1350
+nc,joint,Governor,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.17854606124114783,finite,1350
+nc,joint,Governor,existing_election_checkpoint_subset,distance_cv,pooled,0.10585538091426643,finite,1350
+nc,joint,Governor,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.10585538091426643,finite,1350
+nc,joint,Governor,existing_election_checkpoint_subset,mean_district_cv,pooled,0.36569462679674036,finite,1350
+nc,joint,Lieutenant governor,existing_election_checkpoint_subset,silhouette,pooled,0.04012724639438175,finite,1350
+nc,joint,Lieutenant governor,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.0324447228871279,finite,1350
+nc,joint,Lieutenant governor,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.01743431499230602,finite,1350
+nc,joint,Lieutenant governor,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.03774168316081628,finite,1350
+nc,joint,Lieutenant governor,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.024484711027901958,finite,1350
+nc,joint,Lieutenant governor,existing_election_checkpoint_subset,distance_cv,pooled,0.016270750411317224,finite,1350
+nc,joint,Lieutenant governor,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.016270750411317224,finite,1350
+nc,joint,Lieutenant governor,existing_election_checkpoint_subset,mean_district_cv,pooled,0.01985574300550831,finite,1350
+nc,joint,Secretary of state,existing_election_checkpoint_subset,silhouette,pooled,0.025508101298770323,finite,1350
+nc,joint,Secretary of state,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.05375453287231338,finite,1350
+nc,joint,Secretary of state,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.025551553071059063,finite,1350
+nc,joint,Secretary of state,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.048642467385235776,finite,1350
+nc,joint,Secretary of state,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.04983329175260748,finite,1350
+nc,joint,Secretary of state,existing_election_checkpoint_subset,distance_cv,pooled,-0.007966306048079215,finite,1350
+nc,joint,Secretary of state,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.007966306048079215,finite,1350
+nc,joint,Secretary of state,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.018194754196172894,finite,1350
+nc,joint,Public instruction superintendent,existing_election_checkpoint_subset,silhouette,pooled,-0.05517796442162179,finite,1350
+nc,joint,Public instruction superintendent,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.057676785580614474,finite,1350
+nc,joint,Public instruction superintendent,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.024405019576667315,finite,1350
+nc,joint,Public instruction superintendent,existing_election_checkpoint_subset,mean_distance_km,pooled,0.06511127980249456,finite,1350
+nc,joint,Public instruction superintendent,existing_election_checkpoint_subset,sd_distance_km,pooled,0.029652292490282693,finite,1350
+nc,joint,Public instruction superintendent,existing_election_checkpoint_subset,distance_cv,pooled,-0.019354086892375014,finite,1350
+nc,joint,Public instruction superintendent,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.019354086892375014,finite,1350
+nc,joint,Public instruction superintendent,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.05622157462597625,finite,1350
+nc,joint,Treasurer,existing_election_checkpoint_subset,silhouette,pooled,-0.13184654651038297,finite,1350
+nc,joint,Treasurer,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.11118262843108899,finite,1350
+nc,joint,Treasurer,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.01861209069409119,finite,1350
+nc,joint,Treasurer,existing_election_checkpoint_subset,mean_distance_km,pooled,0.11694369593913938,finite,1350
+nc,joint,Treasurer,existing_election_checkpoint_subset,sd_distance_km,pooled,0.07326186021867448,finite,1350
+nc,joint,Treasurer,existing_election_checkpoint_subset,distance_cv,pooled,-0.02972221246102499,finite,1350
+nc,joint,Treasurer,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.02972221246102499,finite,1350
+nc,joint,Treasurer,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.12298048440811615,finite,1350
+nc,joint,Appeals court 12,existing_election_checkpoint_subset,silhouette,pooled,-0.04834965093016001,finite,1350
+nc,joint,Appeals court 12,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.07595623842154033,finite,1350
+nc,joint,Appeals court 12,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.0055568975776309135,finite,1350
+nc,joint,Appeals court 12,existing_election_checkpoint_subset,mean_distance_km,pooled,0.07896332613307305,finite,1350
+nc,joint,Appeals court 12,existing_election_checkpoint_subset,sd_distance_km,pooled,0.04902912460718814,finite,1350
+nc,joint,Appeals court 12,existing_election_checkpoint_subset,distance_cv,pooled,-0.025792646316080192,finite,1350
+nc,joint,Appeals court 12,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.025792646316080192,finite,1350
+nc,joint,Appeals court 12,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.0891116167008736,finite,1350
+nc,joint,Appeals court 14,existing_election_checkpoint_subset,silhouette,pooled,-0.09400818080103962,finite,1350
+nc,joint,Appeals court 14,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.08989292935249578,finite,1350
+nc,joint,Appeals court 14,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.012469461153925462,finite,1350
+nc,joint,Appeals court 14,existing_election_checkpoint_subset,mean_distance_km,pooled,0.10001373956908144,finite,1350
+nc,joint,Appeals court 14,existing_election_checkpoint_subset,sd_distance_km,pooled,0.05204100424138507,finite,1350
+nc,joint,Appeals court 14,existing_election_checkpoint_subset,distance_cv,pooled,-0.03725660153387169,finite,1350
+nc,joint,Appeals court 14,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.03725660153387169,finite,1350
+nc,joint,Appeals court 14,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.11308936642367402,finite,1350
+nc,joint,Appeals court 15,existing_election_checkpoint_subset,silhouette,pooled,-0.05740227665440764,finite,1350
+nc,joint,Appeals court 15,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.06726480987830408,finite,1350
+nc,joint,Appeals court 15,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.00702092160182617,finite,1350
+nc,joint,Appeals court 15,existing_election_checkpoint_subset,mean_distance_km,pooled,0.0742483287811947,finite,1350
+nc,joint,Appeals court 15,existing_election_checkpoint_subset,sd_distance_km,pooled,0.03976728931337155,finite,1350
+nc,joint,Appeals court 15,existing_election_checkpoint_subset,distance_cv,pooled,-0.03287659883021235,finite,1350
+nc,joint,Appeals court 15,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.03287659883021235,finite,1350
+nc,joint,Appeals court 15,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.08326289802206638,finite,1350
+nc,joint,Supreme Court 6,existing_election_checkpoint_subset,silhouette,pooled,-0.03740458046813552,finite,1350
+nc,joint,Supreme Court 6,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.06402572345103225,finite,1350
+nc,joint,Supreme Court 6,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.02287973815468799,finite,1350
+nc,joint,Supreme Court 6,existing_election_checkpoint_subset,mean_distance_km,pooled,0.05794889995490553,finite,1350
+nc,joint,Supreme Court 6,existing_election_checkpoint_subset,sd_distance_km,pooled,0.05862615652744813,finite,1350
+nc,joint,Supreme Court 6,existing_election_checkpoint_subset,distance_cv,pooled,0.008060351570292399,finite,1350
+nc,joint,Supreme Court 6,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.008060351570292399,finite,1350
+nc,joint,Supreme Court 6,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.039703498844968405,finite,1350
+nc,nc_block_union_2023,President,existing_election_checkpoint_subset,silhouette,pooled,-0.04084707987345545,finite,675
+nc,nc_block_union_2023,President,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.04926982423375317,finite,675
+nc,nc_block_union_2023,President,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.016632467496152267,finite,675
+nc,nc_block_union_2023,President,existing_election_checkpoint_subset,mean_distance_km,pooled,0.0689065817842255,finite,675
+nc,nc_block_union_2023,President,existing_election_checkpoint_subset,sd_distance_km,pooled,0.010216654392317568,finite,675
+nc,nc_block_union_2023,President,existing_election_checkpoint_subset,distance_cv,pooled,-0.04660256463396828,finite,675
+nc,nc_block_union_2023,President,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.04660256463396828,finite,675
+nc,nc_block_union_2023,President,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.0907336835715737,finite,675
+nc,nc_block_union_2023,Attorney general,existing_election_checkpoint_subset,silhouette,pooled,0.011659912213762433,finite,675
+nc,nc_block_union_2023,Attorney general,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.014101460502514804,finite,675
+nc,nc_block_union_2023,Attorney general,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.003253572178319962,finite,675
+nc,nc_block_union_2023,Attorney general,existing_election_checkpoint_subset,mean_distance_km,pooled,0.00968682397055024,finite,675
+nc,nc_block_union_2023,Attorney general,existing_election_checkpoint_subset,sd_distance_km,pooled,0.015707657008663892,finite,675
+nc,nc_block_union_2023,Attorney general,existing_election_checkpoint_subset,distance_cv,pooled,0.028680264880802914,finite,675
+nc,nc_block_union_2023,Attorney general,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.028680264880802914,finite,675
+nc,nc_block_union_2023,Attorney general,existing_election_checkpoint_subset,mean_district_cv,pooled,0.01171001701627726,finite,675
+nc,nc_block_union_2023,Auditor,existing_election_checkpoint_subset,silhouette,pooled,-0.03728489235541344,finite,675
+nc,nc_block_union_2023,Auditor,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.051273339651590796,finite,675
+nc,nc_block_union_2023,Auditor,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.04509600909994017,finite,675
+nc,nc_block_union_2023,Auditor,existing_election_checkpoint_subset,mean_distance_km,pooled,0.06412904012459686,finite,675
+nc,nc_block_union_2023,Auditor,existing_election_checkpoint_subset,sd_distance_km,pooled,0.018186382240257693,finite,675
+nc,nc_block_union_2023,Auditor,existing_election_checkpoint_subset,distance_cv,pooled,-0.03424139936354,finite,675
+nc,nc_block_union_2023,Auditor,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.03424139936354,finite,675
+nc,nc_block_union_2023,Auditor,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.0601015373068946,finite,675
+nc,nc_block_union_2023,Agriculture commissioner,existing_election_checkpoint_subset,silhouette,pooled,-0.11498633808046824,finite,675
+nc,nc_block_union_2023,Agriculture commissioner,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.012494983054071155,finite,675
+nc,nc_block_union_2023,Agriculture commissioner,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.04768903165773002,finite,675
+nc,nc_block_union_2023,Agriculture commissioner,existing_election_checkpoint_subset,mean_distance_km,pooled,0.053390346841959056,finite,675
+nc,nc_block_union_2023,Agriculture commissioner,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.051189631206863095,finite,675
+nc,nc_block_union_2023,Agriculture commissioner,existing_election_checkpoint_subset,distance_cv,pooled,-0.11385156131043747,finite,675
+nc,nc_block_union_2023,Agriculture commissioner,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.11385156131043747,finite,675
+nc,nc_block_union_2023,Agriculture commissioner,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.18414257942100895,finite,675
+nc,nc_block_union_2023,Insurance commissioner,existing_election_checkpoint_subset,silhouette,pooled,-0.08850935151729974,finite,675
+nc,nc_block_union_2023,Insurance commissioner,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.05290672412903235,finite,675
+nc,nc_block_union_2023,Insurance commissioner,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.056264038969254235,finite,675
+nc,nc_block_union_2023,Insurance commissioner,existing_election_checkpoint_subset,mean_distance_km,pooled,0.08136186819380302,finite,675
+nc,nc_block_union_2023,Insurance commissioner,existing_election_checkpoint_subset,sd_distance_km,pooled,0.00035084232829568927,finite,675
+nc,nc_block_union_2023,Insurance commissioner,existing_election_checkpoint_subset,distance_cv,pooled,-0.06152235532319096,finite,675
+nc,nc_block_union_2023,Insurance commissioner,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.06152235532319096,finite,675
+nc,nc_block_union_2023,Insurance commissioner,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.13444017245072243,finite,675
+nc,nc_block_union_2023,Labor commissioner,existing_election_checkpoint_subset,silhouette,pooled,-0.12239955613795458,finite,675
+nc,nc_block_union_2023,Labor commissioner,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.06151191782164362,finite,675
+nc,nc_block_union_2023,Labor commissioner,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.03468490694031164,finite,675
+nc,nc_block_union_2023,Labor commissioner,existing_election_checkpoint_subset,mean_distance_km,pooled,0.08133446067316778,finite,675
+nc,nc_block_union_2023,Labor commissioner,existing_election_checkpoint_subset,sd_distance_km,pooled,0.015100141288553824,finite,675
+nc,nc_block_union_2023,Labor commissioner,existing_election_checkpoint_subset,distance_cv,pooled,-0.04450059758718898,finite,675
+nc,nc_block_union_2023,Labor commissioner,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.04450059758718898,finite,675
+nc,nc_block_union_2023,Labor commissioner,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.1460956051771378,finite,675
+nc,nc_block_union_2023,Governor,existing_election_checkpoint_subset,silhouette,pooled,0.32759896665776894,finite,675
+nc,nc_block_union_2023,Governor,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.23710651143599715,finite,675
+nc,nc_block_union_2023,Governor,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.00709655979009768,finite,675
+nc,nc_block_union_2023,Governor,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.28548340400872724,finite,675
+nc,nc_block_union_2023,Governor,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.12575365076250108,finite,675
+nc,nc_block_union_2023,Governor,existing_election_checkpoint_subset,distance_cv,pooled,0.11306598733147714,finite,675
+nc,nc_block_union_2023,Governor,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.11306598733147714,finite,675
+nc,nc_block_union_2023,Governor,existing_election_checkpoint_subset,mean_district_cv,pooled,0.36755480562789333,finite,675
+nc,nc_block_union_2023,Lieutenant governor,existing_election_checkpoint_subset,silhouette,pooled,0.05710717335747076,finite,675
+nc,nc_block_union_2023,Lieutenant governor,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.03870695329605698,finite,675
+nc,nc_block_union_2023,Lieutenant governor,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.031054419524078065,finite,675
+nc,nc_block_union_2023,Lieutenant governor,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.038574589407144255,finite,675
+nc,nc_block_union_2023,Lieutenant governor,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.03337385905317086,finite,675
+nc,nc_block_union_2023,Lieutenant governor,existing_election_checkpoint_subset,distance_cv,pooled,0.014034411566149745,finite,675
+nc,nc_block_union_2023,Lieutenant governor,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.014034411566149745,finite,675
+nc,nc_block_union_2023,Lieutenant governor,existing_election_checkpoint_subset,mean_district_cv,pooled,0.04257397946047614,finite,675
+nc,nc_block_union_2023,Secretary of state,existing_election_checkpoint_subset,silhouette,pooled,0.028402316161473536,finite,675
+nc,nc_block_union_2023,Secretary of state,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.05429285485271207,finite,675
+nc,nc_block_union_2023,Secretary of state,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.039258068137924214,finite,675
+nc,nc_block_union_2023,Secretary of state,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.046518155949554156,finite,675
+nc,nc_block_union_2023,Secretary of state,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.04873902314973504,finite,675
+nc,nc_block_union_2023,Secretary of state,existing_election_checkpoint_subset,distance_cv,pooled,-0.0009079475691970575,finite,675
+nc,nc_block_union_2023,Secretary of state,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.0009079475691970575,finite,675
+nc,nc_block_union_2023,Secretary of state,existing_election_checkpoint_subset,mean_district_cv,pooled,0.021874009455418786,finite,675
+nc,nc_block_union_2023,Public instruction superintendent,existing_election_checkpoint_subset,silhouette,pooled,-0.024286479834713288,finite,675
+nc,nc_block_union_2023,Public instruction superintendent,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.03133960460961347,finite,675
+nc,nc_block_union_2023,Public instruction superintendent,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.01620821117360153,finite,675
+nc,nc_block_union_2023,Public instruction superintendent,existing_election_checkpoint_subset,mean_distance_km,pooled,0.035951098031820485,finite,675
+nc,nc_block_union_2023,Public instruction superintendent,existing_election_checkpoint_subset,sd_distance_km,pooled,0.01892757900868097,finite,675
+nc,nc_block_union_2023,Public instruction superintendent,existing_election_checkpoint_subset,distance_cv,pooled,0.008965769152283205,finite,675
+nc,nc_block_union_2023,Public instruction superintendent,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.008965769152283205,finite,675
+nc,nc_block_union_2023,Public instruction superintendent,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.013840175277793978,finite,675
+nc,nc_block_union_2023,Treasurer,existing_election_checkpoint_subset,silhouette,pooled,-0.13231147865452714,finite,675
+nc,nc_block_union_2023,Treasurer,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.07824534182713554,finite,675
+nc,nc_block_union_2023,Treasurer,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.0070566917011324806,finite,675
+nc,nc_block_union_2023,Treasurer,existing_election_checkpoint_subset,mean_distance_km,pooled,0.09981282990500924,finite,675
+nc,nc_block_union_2023,Treasurer,existing_election_checkpoint_subset,sd_distance_km,pooled,0.027835838035240278,finite,675
+nc,nc_block_union_2023,Treasurer,existing_election_checkpoint_subset,distance_cv,pooled,-0.04334960126247102,finite,675
+nc,nc_block_union_2023,Treasurer,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.04334960126247102,finite,675
+nc,nc_block_union_2023,Treasurer,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.14125567870146183,finite,675
+nc,nc_block_union_2023,Appeals court 12,existing_election_checkpoint_subset,silhouette,pooled,-0.03504377666122895,finite,675
+nc,nc_block_union_2023,Appeals court 12,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.07126903236623085,finite,675
+nc,nc_block_union_2023,Appeals court 12,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.023286982389285903,finite,675
+nc,nc_block_union_2023,Appeals court 12,existing_election_checkpoint_subset,mean_distance_km,pooled,0.08510989446479601,finite,675
+nc,nc_block_union_2023,Appeals court 12,existing_election_checkpoint_subset,sd_distance_km,pooled,0.030121398995709196,finite,675
+nc,nc_block_union_2023,Appeals court 12,existing_election_checkpoint_subset,distance_cv,pooled,-0.04175273642879447,finite,675
+nc,nc_block_union_2023,Appeals court 12,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.04175273642879447,finite,675
+nc,nc_block_union_2023,Appeals court 12,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.08283303420783879,finite,675
+nc,nc_block_union_2023,Appeals court 14,existing_election_checkpoint_subset,silhouette,pooled,-0.08492019551053072,finite,675
+nc,nc_block_union_2023,Appeals court 14,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.06267919043833023,finite,675
+nc,nc_block_union_2023,Appeals court 14,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.024112150204935782,finite,675
+nc,nc_block_union_2023,Appeals court 14,existing_election_checkpoint_subset,mean_distance_km,pooled,0.08897689891044165,finite,675
+nc,nc_block_union_2023,Appeals court 14,existing_election_checkpoint_subset,sd_distance_km,pooled,0.00716744187237345,finite,675
+nc,nc_block_union_2023,Appeals court 14,existing_election_checkpoint_subset,distance_cv,pooled,-0.057893294903965435,finite,675
+nc,nc_block_union_2023,Appeals court 14,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.057893294903965435,finite,675
+nc,nc_block_union_2023,Appeals court 14,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.1259580794067762,finite,675
+nc,nc_block_union_2023,Appeals court 15,existing_election_checkpoint_subset,silhouette,pooled,-0.046692969719556304,finite,675
+nc,nc_block_union_2023,Appeals court 15,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.04028607503377705,finite,675
+nc,nc_block_union_2023,Appeals court 15,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.023256802102813227,finite,675
+nc,nc_block_union_2023,Appeals court 15,existing_election_checkpoint_subset,mean_distance_km,pooled,0.056955766765081024,finite,675
+nc,nc_block_union_2023,Appeals court 15,existing_election_checkpoint_subset,sd_distance_km,pooled,0.0036511975789922145,finite,675
+nc,nc_block_union_2023,Appeals court 15,existing_election_checkpoint_subset,distance_cv,pooled,-0.04071640711592575,finite,675
+nc,nc_block_union_2023,Appeals court 15,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.04071640711592575,finite,675
+nc,nc_block_union_2023,Appeals court 15,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.08575506692781458,finite,675
+nc,nc_block_union_2023,Supreme Court 6,existing_election_checkpoint_subset,silhouette,pooled,0.005323398800657945,finite,675
+nc,nc_block_union_2023,Supreme Court 6,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.034322524261299885,finite,675
+nc,nc_block_union_2023,Supreme Court 6,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.01679649252886122,finite,675
+nc,nc_block_union_2023,Supreme Court 6,existing_election_checkpoint_subset,mean_distance_km,pooled,0.03891800454210778,finite,675
+nc,nc_block_union_2023,Supreme Court 6,existing_election_checkpoint_subset,sd_distance_km,pooled,0.024407938939319626,finite,675
+nc,nc_block_union_2023,Supreme Court 6,existing_election_checkpoint_subset,distance_cv,pooled,-0.01747033914616978,finite,675
+nc,nc_block_union_2023,Supreme Court 6,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.01747033914616978,finite,675
+nc,nc_block_union_2023,Supreme Court 6,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.020772177047061424,finite,675
+nc,nc_block_union_2025,President,existing_election_checkpoint_subset,silhouette,pooled,-0.044170369588887114,finite,675
+nc,nc_block_union_2025,President,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.08034746015285063,finite,675
+nc,nc_block_union_2025,President,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.005311572148130515,finite,675
+nc,nc_block_union_2025,President,existing_election_checkpoint_subset,mean_distance_km,pooled,0.07061642785464155,finite,675
+nc,nc_block_union_2025,President,existing_election_checkpoint_subset,sd_distance_km,pooled,0.07392426215888073,finite,675
+nc,nc_block_union_2025,President,existing_election_checkpoint_subset,distance_cv,pooled,-0.0004140405033054698,finite,675
+nc,nc_block_union_2025,President,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.0004140405033054698,finite,675
+nc,nc_block_union_2025,President,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.07884684393600609,finite,675
+nc,nc_block_union_2025,Attorney general,existing_election_checkpoint_subset,silhouette,pooled,-0.055144044758856536,finite,675
+nc,nc_block_union_2025,Attorney general,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.051637699517400146,finite,675
+nc,nc_block_union_2025,Attorney general,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.026264639795239745,finite,675
+nc,nc_block_union_2025,Attorney general,existing_election_checkpoint_subset,mean_distance_km,pooled,0.05148245761692288,finite,675
+nc,nc_block_union_2025,Attorney general,existing_election_checkpoint_subset,sd_distance_km,pooled,0.026216638747527894,finite,675
+nc,nc_block_union_2025,Attorney general,existing_election_checkpoint_subset,distance_cv,pooled,-0.027360618202776982,finite,675
+nc,nc_block_union_2025,Attorney general,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.027360618202776982,finite,675
+nc,nc_block_union_2025,Attorney general,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.016479379386658274,finite,675
+nc,nc_block_union_2025,Auditor,existing_election_checkpoint_subset,silhouette,pooled,-0.06867098420959127,finite,675
+nc,nc_block_union_2025,Auditor,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.09475217401480412,finite,675
+nc,nc_block_union_2025,Auditor,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.011405174197547668,finite,675
+nc,nc_block_union_2025,Auditor,existing_election_checkpoint_subset,mean_distance_km,pooled,0.09055086493735849,finite,675
+nc,nc_block_union_2025,Auditor,existing_election_checkpoint_subset,sd_distance_km,pooled,0.06849994312865819,finite,675
+nc,nc_block_union_2025,Auditor,existing_election_checkpoint_subset,distance_cv,pooled,-0.01949910193158725,finite,675
+nc,nc_block_union_2025,Auditor,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.01949910193158725,finite,675
+nc,nc_block_union_2025,Auditor,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.09309332675288316,finite,675
+nc,nc_block_union_2025,Agriculture commissioner,existing_election_checkpoint_subset,silhouette,pooled,-0.13224120040080845,finite,675
+nc,nc_block_union_2025,Agriculture commissioner,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.11829920558830345,finite,675
+nc,nc_block_union_2025,Agriculture commissioner,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.005664390515699456,finite,675
+nc,nc_block_union_2025,Agriculture commissioner,existing_election_checkpoint_subset,mean_distance_km,pooled,0.14033469727475248,finite,675
+nc,nc_block_union_2025,Agriculture commissioner,existing_election_checkpoint_subset,sd_distance_km,pooled,0.04946680815190037,finite,675
+nc,nc_block_union_2025,Agriculture commissioner,existing_election_checkpoint_subset,distance_cv,pooled,-0.10972436736910494,finite,675
+nc,nc_block_union_2025,Agriculture commissioner,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.10972436736910494,finite,675
+nc,nc_block_union_2025,Agriculture commissioner,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.16270164918692523,finite,675
+nc,nc_block_union_2025,Insurance commissioner,existing_election_checkpoint_subset,silhouette,pooled,-0.0885400165977771,finite,675
+nc,nc_block_union_2025,Insurance commissioner,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.12095180760255025,finite,675
+nc,nc_block_union_2025,Insurance commissioner,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.0018413354495347921,finite,675
+nc,nc_block_union_2025,Insurance commissioner,existing_election_checkpoint_subset,mean_distance_km,pooled,0.11400215626886889,finite,675
+nc,nc_block_union_2025,Insurance commissioner,existing_election_checkpoint_subset,sd_distance_km,pooled,0.09751936182703673,finite,675
+nc,nc_block_union_2025,Insurance commissioner,existing_election_checkpoint_subset,distance_cv,pooled,-0.013957493527812202,finite,675
+nc,nc_block_union_2025,Insurance commissioner,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.013957493527812202,finite,675
+nc,nc_block_union_2025,Insurance commissioner,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.1063486173414213,finite,675
+nc,nc_block_union_2025,Labor commissioner,existing_election_checkpoint_subset,silhouette,pooled,-0.10189247639373152,finite,675
+nc,nc_block_union_2025,Labor commissioner,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.11561803274577226,finite,675
+nc,nc_block_union_2025,Labor commissioner,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.0030648275009916895,finite,675
+nc,nc_block_union_2025,Labor commissioner,existing_election_checkpoint_subset,mean_distance_km,pooled,0.10995834929065779,finite,675
+nc,nc_block_union_2025,Labor commissioner,existing_election_checkpoint_subset,sd_distance_km,pooled,0.08980519747720543,finite,675
+nc,nc_block_union_2025,Labor commissioner,existing_election_checkpoint_subset,distance_cv,pooled,-0.03075952441373746,finite,675
+nc,nc_block_union_2025,Labor commissioner,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.03075952441373746,finite,675
+nc,nc_block_union_2025,Labor commissioner,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.10814018052945124,finite,675
+nc,nc_block_union_2025,Governor,existing_election_checkpoint_subset,silhouette,pooled,0.3845542971330961,finite,675
+nc,nc_block_union_2025,Governor,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.3206565427646643,finite,675
+nc,nc_block_union_2025,Governor,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.09690485045228298,finite,675
+nc,nc_block_union_2025,Governor,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.33720191038292857,finite,675
+nc,nc_block_union_2025,Governor,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.22954346637572157,finite,675
+nc,nc_block_union_2025,Governor,existing_election_checkpoint_subset,distance_cv,pooled,0.09953447036395985,finite,675
+nc,nc_block_union_2025,Governor,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.09953447036395985,finite,675
+nc,nc_block_union_2025,Governor,existing_election_checkpoint_subset,mean_district_cv,pooled,0.3643178722260115,finite,675
+nc,nc_block_union_2025,Lieutenant governor,existing_election_checkpoint_subset,silhouette,pooled,0.025256188396912856,finite,675
+nc,nc_block_union_2025,Lieutenant governor,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.024710476666807042,finite,675
+nc,nc_block_union_2025,Lieutenant governor,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.0022417886295114124,finite,675
+nc,nc_block_union_2025,Lieutenant governor,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.03566196727130378,finite,675
+nc,nc_block_union_2025,Lieutenant governor,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.01703043876209289,finite,675
+nc,nc_block_union_2025,Lieutenant governor,existing_election_checkpoint_subset,distance_cv,pooled,0.017685998302018443,finite,675
+nc,nc_block_union_2025,Lieutenant governor,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.017685998302018443,finite,675
+nc,nc_block_union_2025,Lieutenant governor,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.004000939836588538,finite,675
+nc,nc_block_union_2025,Secretary of state,existing_election_checkpoint_subset,silhouette,pooled,0.025618397863166914,finite,675
+nc,nc_block_union_2025,Secretary of state,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.05436121611952187,finite,675
+nc,nc_block_union_2025,Secretary of state,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.015057213823077509,finite,675
+nc,nc_block_union_2025,Secretary of state,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.051417941466881674,finite,675
+nc,nc_block_union_2025,Secretary of state,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.053054771712726434,finite,675
+nc,nc_block_union_2025,Secretary of state,existing_election_checkpoint_subset,distance_cv,pooled,-0.015880991676304676,finite,675
+nc,nc_block_union_2025,Secretary of state,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.015880991676304676,finite,675
+nc,nc_block_union_2025,Secretary of state,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.05907660760464729,finite,675
+nc,nc_block_union_2025,Public instruction superintendent,existing_election_checkpoint_subset,silhouette,pooled,-0.08256052898069062,finite,675
+nc,nc_block_union_2025,Public instruction superintendent,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.08251552954535671,finite,675
+nc,nc_block_union_2025,Public instruction superintendent,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.03283609005907502,finite,675
+nc,nc_block_union_2025,Public instruction superintendent,existing_election_checkpoint_subset,mean_distance_km,pooled,0.0916669307798278,finite,675
+nc,nc_block_union_2025,Public instruction superintendent,existing_election_checkpoint_subset,sd_distance_km,pooled,0.03835075304391255,finite,675
+nc,nc_block_union_2025,Public instruction superintendent,existing_election_checkpoint_subset,distance_cv,pooled,-0.048406565379498445,finite,675
+nc,nc_block_union_2025,Public instruction superintendent,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.048406565379498445,finite,675
+nc,nc_block_union_2025,Public instruction superintendent,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.09789674315126444,finite,675
+nc,nc_block_union_2025,Treasurer,existing_election_checkpoint_subset,silhouette,pooled,-0.13211040666068596,finite,675
+nc,nc_block_union_2025,Treasurer,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.1438420604268697,finite,675
+nc,nc_block_union_2025,Treasurer,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.031041731707612444,finite,675
+nc,nc_block_union_2025,Treasurer,existing_election_checkpoint_subset,mean_distance_km,pooled,0.1329419246262807,finite,675
+nc,nc_block_union_2025,Treasurer,existing_election_checkpoint_subset,sd_distance_km,pooled,0.1174196468861965,finite,675
+nc,nc_block_union_2025,Treasurer,existing_election_checkpoint_subset,distance_cv,pooled,-0.01717875255268776,finite,675
+nc,nc_block_union_2025,Treasurer,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.01717875255268776,finite,675
+nc,nc_block_union_2025,Treasurer,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.10578595311206422,finite,675
+nc,nc_block_union_2025,Appeals court 12,existing_election_checkpoint_subset,silhouette,pooled,-0.06065653191135741,finite,675
+nc,nc_block_union_2025,Appeals court 12,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.08144525150373891,finite,675
+nc,nc_block_union_2025,Appeals court 12,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.01247506886873029,finite,675
+nc,nc_block_union_2025,Appeals court 12,existing_election_checkpoint_subset,mean_distance_km,pooled,0.07213739952119286,finite,675
+nc,nc_block_union_2025,Appeals court 12,existing_election_checkpoint_subset,sd_distance_km,pooled,0.06615616965546912,finite,675
+nc,nc_block_union_2025,Appeals court 12,existing_election_checkpoint_subset,distance_cv,pooled,-0.01023513282426341,finite,675
+nc,nc_block_union_2025,Appeals court 12,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.01023513282426341,finite,675
+nc,nc_block_union_2025,Appeals court 12,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.0966125302235327,finite,675
+nc,nc_block_union_2025,Appeals court 14,existing_election_checkpoint_subset,silhouette,pooled,-0.10382849988396477,finite,675
+nc,nc_block_union_2025,Appeals court 14,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.11962900981394907,finite,675
+nc,nc_block_union_2025,Appeals court 14,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.00021281079345842772,finite,675
+nc,nc_block_union_2025,Appeals court 14,existing_election_checkpoint_subset,mean_distance_km,pooled,0.11258460445206368,finite,675
+nc,nc_block_union_2025,Appeals court 14,existing_election_checkpoint_subset,sd_distance_km,pooled,0.09691810729966623,finite,675
+nc,nc_block_union_2025,Appeals court 14,existing_election_checkpoint_subset,distance_cv,pooled,-0.017364408265572465,finite,675
+nc,nc_block_union_2025,Appeals court 14,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.017364408265572465,finite,675
+nc,nc_block_union_2025,Appeals court 14,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.10168808040929184,finite,675
+nc,nc_block_union_2025,Appeals court 15,existing_election_checkpoint_subset,silhouette,pooled,-0.06803753653712154,finite,675
+nc,nc_block_union_2025,Appeals court 15,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.09413655419520776,finite,675
+nc,nc_block_union_2025,Appeals court 15,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.010238435594617437,finite,675
+nc,nc_block_union_2025,Appeals court 15,existing_election_checkpoint_subset,mean_distance_km,pooled,0.0899002186980686,finite,675
+nc,nc_block_union_2025,Appeals court 15,existing_election_checkpoint_subset,sd_distance_km,pooled,0.07493236358437959,finite,675
+nc,nc_block_union_2025,Appeals court 15,existing_election_checkpoint_subset,distance_cv,pooled,-0.025753541072398016,finite,675
+nc,nc_block_union_2025,Appeals court 15,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.025753541072398016,finite,675
+nc,nc_block_union_2025,Appeals court 15,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.08153575577229072,finite,675
+nc,nc_block_union_2025,Supreme Court 6,existing_election_checkpoint_subset,silhouette,pooled,-0.0753350249734424,finite,675
+nc,nc_block_union_2025,Supreme Court 6,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.09261943535816122,finite,675
+nc,nc_block_union_2025,Supreme Court 6,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.02846612572309213,finite,675
+nc,nc_block_union_2025,Supreme Court 6,existing_election_checkpoint_subset,mean_distance_km,pooled,0.07295105477045555,finite,675
+nc,nc_block_union_2025,Supreme Court 6,existing_election_checkpoint_subset,sd_distance_km,pooled,0.09053721727694511,finite,675
+nc,nc_block_union_2025,Supreme Court 6,existing_election_checkpoint_subset,distance_cv,pooled,0.033701886144521985,finite,675
+nc,nc_block_union_2025,Supreme Court 6,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.033701886144521985,finite,675
+nc,nc_block_union_2025,Supreme Court 6,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.05860434268155218,finite,675
+tx,joint,President,all_frozen_checkpoints,silhouette,pooled,0.039178808142804444,finite,5560
+tx,joint,President,all_frozen_checkpoints,silhouette,seed_10007,0.11260965568564726,finite,695
+tx,joint,President,all_frozen_checkpoints,silhouette,seed_10009,0.020208583568844415,finite,695
+tx,joint,President,all_frozen_checkpoints,silhouette,seed_10037,0.05921376150456924,finite,695
+tx,joint,President,all_frozen_checkpoints,silhouette,seed_10039,0.006267429779019716,finite,695
+tx,joint,President,all_frozen_checkpoints,silhouette,seed_1117,0.08164446386183392,finite,695
+tx,joint,President,all_frozen_checkpoints,silhouette,seed_2227,-0.010040972981017552,finite,695
+tx,joint,President,all_frozen_checkpoints,silhouette,seed_3331,0.07903246580183662,finite,695
+tx,joint,President,all_frozen_checkpoints,silhouette,seed_4441,-0.03291744984482157,finite,695
+tx,joint,President,all_frozen_checkpoints,normalized_rms_radius,pooled,0.030666454076521975,finite,5560
+tx,joint,President,all_frozen_checkpoints,normalized_rms_radius,seed_10007,0.07821900102930744,finite,695
+tx,joint,President,all_frozen_checkpoints,normalized_rms_radius,seed_10009,-0.0009763776013788375,finite,695
+tx,joint,President,all_frozen_checkpoints,normalized_rms_radius,seed_10037,0.01225332120727276,finite,695
+tx,joint,President,all_frozen_checkpoints,normalized_rms_radius,seed_10039,0.07591783665484061,finite,695
+tx,joint,President,all_frozen_checkpoints,normalized_rms_radius,seed_1117,-0.04050362964467416,finite,695
+tx,joint,President,all_frozen_checkpoints,normalized_rms_radius,seed_2227,0.05471664292879751,finite,695
+tx,joint,President,all_frozen_checkpoints,normalized_rms_radius,seed_3331,0.009696167483066653,finite,695
+tx,joint,President,all_frozen_checkpoints,normalized_rms_radius,seed_4441,0.06938636519865865,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_polsby_popper,pooled,-0.014988683105527655,finite,5560
+tx,joint,President,all_frozen_checkpoints,mean_polsby_popper,seed_10007,-0.037774785651253764,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_polsby_popper,seed_10009,-0.022068063869775452,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_polsby_popper,seed_10037,0.09008691016185807,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_polsby_popper,seed_10039,-0.056986827038594104,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_polsby_popper,seed_1117,0.02947666524464462,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_polsby_popper,seed_2227,-0.012774204153859268,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_polsby_popper,seed_3331,-0.0511956643582474,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_polsby_popper,seed_4441,-0.05789765107481598,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_distance_km,pooled,0.006580023573855208,finite,5560
+tx,joint,President,all_frozen_checkpoints,mean_distance_km,seed_10007,0.04847567799958611,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_distance_km,seed_10009,-0.016804838562632114,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_distance_km,seed_10037,-0.015301531563667944,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_distance_km,seed_10039,0.03388039585249976,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_distance_km,seed_1117,-0.08426891381572668,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_distance_km,seed_2227,0.048931842031050735,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_distance_km,seed_3331,-0.0074352601488661,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_distance_km,seed_4441,0.056764127776203835,finite,695
+tx,joint,President,all_frozen_checkpoints,sd_distance_km,pooled,0.03713900411048963,finite,5560
+tx,joint,President,all_frozen_checkpoints,sd_distance_km,seed_10007,0.08467856558523597,finite,695
+tx,joint,President,all_frozen_checkpoints,sd_distance_km,seed_10009,0.0010467557531111315,finite,695
+tx,joint,President,all_frozen_checkpoints,sd_distance_km,seed_10037,0.019746318432374937,finite,695
+tx,joint,President,all_frozen_checkpoints,sd_distance_km,seed_10039,0.08614984735195375,finite,695
+tx,joint,President,all_frozen_checkpoints,sd_distance_km,seed_1117,-0.017674857293500768,finite,695
+tx,joint,President,all_frozen_checkpoints,sd_distance_km,seed_2227,0.05463340441067385,finite,695
+tx,joint,President,all_frozen_checkpoints,sd_distance_km,seed_3331,0.01724865115363252,finite,695
+tx,joint,President,all_frozen_checkpoints,sd_distance_km,seed_4441,0.06971091270839942,finite,695
+tx,joint,President,all_frozen_checkpoints,distance_cv,pooled,0.04950556061969893,finite,5560
+tx,joint,President,all_frozen_checkpoints,distance_cv,seed_10007,0.08633464884816652,finite,695
+tx,joint,President,all_frozen_checkpoints,distance_cv,seed_10009,0.006190121710601944,finite,695
+tx,joint,President,all_frozen_checkpoints,distance_cv,seed_10037,0.04548560338786196,finite,695
+tx,joint,President,all_frozen_checkpoints,distance_cv,seed_10039,0.1081780023417328,finite,695
+tx,joint,President,all_frozen_checkpoints,distance_cv,seed_1117,0.06411247861912157,finite,695
+tx,joint,President,all_frozen_checkpoints,distance_cv,seed_2227,0.03811759021149792,finite,695
+tx,joint,President,all_frozen_checkpoints,distance_cv,seed_3331,0.04088677430439019,finite,695
+tx,joint,President,all_frozen_checkpoints,distance_cv,seed_4441,0.04967854361077554,finite,695
+tx,joint,President,all_frozen_checkpoints,inverse_distance_cv,pooled,-0.04950556061969893,finite,5560
+tx,joint,President,all_frozen_checkpoints,inverse_distance_cv,seed_10007,-0.08633464884816652,finite,695
+tx,joint,President,all_frozen_checkpoints,inverse_distance_cv,seed_10009,-0.006190121710601944,finite,695
+tx,joint,President,all_frozen_checkpoints,inverse_distance_cv,seed_10037,-0.04548560338786196,finite,695
+tx,joint,President,all_frozen_checkpoints,inverse_distance_cv,seed_10039,-0.1081780023417328,finite,695
+tx,joint,President,all_frozen_checkpoints,inverse_distance_cv,seed_1117,-0.06411247861912157,finite,695
+tx,joint,President,all_frozen_checkpoints,inverse_distance_cv,seed_2227,-0.03811759021149792,finite,695
+tx,joint,President,all_frozen_checkpoints,inverse_distance_cv,seed_3331,-0.04088677430439019,finite,695
+tx,joint,President,all_frozen_checkpoints,inverse_distance_cv,seed_4441,-0.04967854361077554,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_district_cv,pooled,-0.05722938734792414,finite,5560
+tx,joint,President,all_frozen_checkpoints,mean_district_cv,seed_10007,-0.08995066127068742,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_district_cv,seed_10009,-0.04256817737371532,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_district_cv,seed_10037,-0.04531029275852775,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_district_cv,seed_10039,-0.06739671613123853,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_district_cv,seed_1117,0.005389017710068836,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_district_cv,seed_2227,-0.06434573066400905,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_district_cv,seed_3331,-0.10095162910993861,finite,695
+tx,joint,President,all_frozen_checkpoints,mean_district_cv,seed_4441,-0.05210327053097064,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,silhouette,pooled,0.05182152902700223,finite,2780
+tx,tx_dispersed,President,all_frozen_checkpoints,silhouette,seed_10007,0.11260965568564726,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,silhouette,seed_10009,0.020208583568844415,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,silhouette,seed_10037,0.05921376150456924,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,silhouette,seed_10039,0.006267429779019716,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,normalized_rms_radius,pooled,0.03484035470577353,finite,2780
+tx,tx_dispersed,President,all_frozen_checkpoints,normalized_rms_radius,seed_10007,0.07821900102930744,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,normalized_rms_radius,seed_10009,-0.0009763776013788375,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,normalized_rms_radius,seed_10037,0.01225332120727276,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,normalized_rms_radius,seed_10039,0.07591783665484061,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,mean_polsby_popper,pooled,-0.0060120740996883575,finite,2780
+tx,tx_dispersed,President,all_frozen_checkpoints,mean_polsby_popper,seed_10007,-0.037774785651253764,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,mean_polsby_popper,seed_10009,-0.022068063869775452,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,mean_polsby_popper,seed_10037,0.09008691016185807,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,mean_polsby_popper,seed_10039,-0.056986827038594104,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,mean_distance_km,pooled,0.0057175755302241804,finite,2780
+tx,tx_dispersed,President,all_frozen_checkpoints,mean_distance_km,seed_10007,0.04847567799958611,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,mean_distance_km,seed_10009,-0.016804838562632114,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,mean_distance_km,seed_10037,-0.015301531563667944,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,mean_distance_km,seed_10039,0.03388039585249976,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,sd_distance_km,pooled,0.04213775551513497,finite,2780
+tx,tx_dispersed,President,all_frozen_checkpoints,sd_distance_km,seed_10007,0.08467856558523597,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,sd_distance_km,seed_10009,0.0010467557531111315,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,sd_distance_km,seed_10037,0.019746318432374937,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,sd_distance_km,seed_10039,0.08614984735195375,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,distance_cv,pooled,0.05638949219203377,finite,2780
+tx,tx_dispersed,President,all_frozen_checkpoints,distance_cv,seed_10007,0.08633464884816652,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,distance_cv,seed_10009,0.006190121710601944,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,distance_cv,seed_10037,0.04548560338786196,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,distance_cv,seed_10039,0.1081780023417328,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,inverse_distance_cv,pooled,-0.05638949219203377,finite,2780
+tx,tx_dispersed,President,all_frozen_checkpoints,inverse_distance_cv,seed_10007,-0.08633464884816652,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,inverse_distance_cv,seed_10009,-0.006190121710601944,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,inverse_distance_cv,seed_10037,-0.04548560338786196,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,inverse_distance_cv,seed_10039,-0.1081780023417328,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,mean_district_cv,pooled,-0.059518977535106585,finite,2780
+tx,tx_dispersed,President,all_frozen_checkpoints,mean_district_cv,seed_10007,-0.08995066127068742,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,mean_district_cv,seed_10009,-0.04256817737371532,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,mean_district_cv,seed_10037,-0.04531029275852775,finite,695
+tx,tx_dispersed,President,all_frozen_checkpoints,mean_district_cv,seed_10039,-0.06739671613123853,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,silhouette,pooled,0.025667162357283103,finite,2780
+tx,tx_rebuild,President,all_frozen_checkpoints,silhouette,seed_1117,0.08164446386183392,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,silhouette,seed_2227,-0.010040972981017552,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,silhouette,seed_3331,0.07903246580183662,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,silhouette,seed_4441,-0.03291744984482157,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,normalized_rms_radius,pooled,0.02837219944242416,finite,2780
+tx,tx_rebuild,President,all_frozen_checkpoints,normalized_rms_radius,seed_1117,-0.04050362964467416,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,normalized_rms_radius,seed_2227,0.05471664292879751,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,normalized_rms_radius,seed_3331,0.009696167483066653,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,normalized_rms_radius,seed_4441,0.06938636519865865,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,mean_polsby_popper,pooled,-0.024435716751215367,finite,2780
+tx,tx_rebuild,President,all_frozen_checkpoints,mean_polsby_popper,seed_1117,0.02947666524464462,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,mean_polsby_popper,seed_2227,-0.012774204153859268,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,mean_polsby_popper,seed_3331,-0.0511956643582474,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,mean_polsby_popper,seed_4441,-0.05789765107481598,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,mean_distance_km,pooled,0.00874910852830693,finite,2780
+tx,tx_rebuild,President,all_frozen_checkpoints,mean_distance_km,seed_1117,-0.08426891381572668,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,mean_distance_km,seed_2227,0.048931842031050735,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,mean_distance_km,seed_3331,-0.0074352601488661,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,mean_distance_km,seed_4441,0.056764127776203835,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,sd_distance_km,pooled,0.03411614525110053,finite,2780
+tx,tx_rebuild,President,all_frozen_checkpoints,sd_distance_km,seed_1117,-0.017674857293500768,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,sd_distance_km,seed_2227,0.05463340441067385,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,sd_distance_km,seed_3331,0.01724865115363252,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,sd_distance_km,seed_4441,0.06971091270839942,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,distance_cv,pooled,0.043895540601250005,finite,2780
+tx,tx_rebuild,President,all_frozen_checkpoints,distance_cv,seed_1117,0.06411247861912157,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,distance_cv,seed_2227,0.03811759021149792,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,distance_cv,seed_3331,0.04088677430439019,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,distance_cv,seed_4441,0.04967854361077554,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,inverse_distance_cv,pooled,-0.043895540601250005,finite,2780
+tx,tx_rebuild,President,all_frozen_checkpoints,inverse_distance_cv,seed_1117,-0.06411247861912157,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,inverse_distance_cv,seed_2227,-0.03811759021149792,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,inverse_distance_cv,seed_3331,-0.04088677430439019,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,inverse_distance_cv,seed_4441,-0.04967854361077554,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,mean_district_cv,pooled,-0.05527130215967186,finite,2780
+tx,tx_rebuild,President,all_frozen_checkpoints,mean_district_cv,seed_1117,0.005389017710068836,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,mean_district_cv,seed_2227,-0.06434573066400905,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,mean_district_cv,seed_3331,-0.10095162910993861,finite,695
+tx,tx_rebuild,President,all_frozen_checkpoints,mean_district_cv,seed_4441,-0.05210327053097064,finite,695
+tx,joint,President,existing_election_checkpoint_subset,silhouette,pooled,0.030400105239622378,finite,3560
+tx,joint,President,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.05176475163108324,finite,3560
+tx,joint,President,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.03262216202038185,finite,3560
+tx,joint,President,existing_election_checkpoint_subset,mean_distance_km,pooled,0.024718199672275558,finite,3560
+tx,joint,President,existing_election_checkpoint_subset,sd_distance_km,pooled,0.05784193471268733,finite,3560
+tx,joint,President,existing_election_checkpoint_subset,distance_cv,pooled,0.06365123836017819,finite,3560
+tx,joint,President,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.06365123836017819,finite,3560
+tx,joint,President,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.0426626286514356,finite,3560
+tx,joint,US Senate,existing_election_checkpoint_subset,silhouette,pooled,-0.027772637484396356,finite,3560
+tx,joint,US Senate,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.029148180217872778,finite,3560
+tx,joint,US Senate,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.04336636040494857,finite,3560
+tx,joint,US Senate,existing_election_checkpoint_subset,mean_distance_km,pooled,0.014960002235393077,finite,3560
+tx,joint,US Senate,existing_election_checkpoint_subset,sd_distance_km,pooled,0.030833339454312898,finite,3560
+tx,joint,US Senate,existing_election_checkpoint_subset,distance_cv,pooled,0.033326889180235915,finite,3560
+tx,joint,US Senate,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.033326889180235915,finite,3560
+tx,joint,US Senate,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.05335582039964035,finite,3560
+tx,joint,Criminal appeals 7,existing_election_checkpoint_subset,silhouette,pooled,0.032463286235433104,finite,3560
+tx,joint,Criminal appeals 7,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.00323805804370766,finite,3560
+tx,joint,Criminal appeals 7,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.04180099876236447,finite,3560
+tx,joint,Criminal appeals 7,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.024159392375225325,finite,3560
+tx,joint,Criminal appeals 7,existing_election_checkpoint_subset,sd_distance_km,pooled,0.005850012812076762,finite,3560
+tx,joint,Criminal appeals 7,existing_election_checkpoint_subset,distance_cv,pooled,0.03468567925846097,finite,3560
+tx,joint,Criminal appeals 7,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.03468567925846097,finite,3560
+tx,joint,Criminal appeals 7,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.03079628786142602,finite,3560
+tx,joint,Criminal appeals 8,existing_election_checkpoint_subset,silhouette,pooled,0.036747775668885686,finite,3560
+tx,joint,Criminal appeals 8,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.016177374403491783,finite,3560
+tx,joint,Criminal appeals 8,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.03125881489996573,finite,3560
+tx,joint,Criminal appeals 8,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.007823502863767448,finite,3560
+tx,joint,Criminal appeals 8,existing_election_checkpoint_subset,sd_distance_km,pooled,0.025353045161201425,finite,3560
+tx,joint,Criminal appeals 8,existing_election_checkpoint_subset,distance_cv,pooled,0.046930933777496776,finite,3560
+tx,joint,Criminal appeals 8,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.046930933777496776,finite,3560
+tx,joint,Criminal appeals 8,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.022682081987749066,finite,3560
+tx,joint,Criminal appeals presiding,existing_election_checkpoint_subset,silhouette,pooled,0.024578381735728606,finite,3560
+tx,joint,Criminal appeals presiding,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.0011483309505080969,finite,3560
+tx,joint,Criminal appeals presiding,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.02539827595265861,finite,3560
+tx,joint,Criminal appeals presiding,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.015079400841243543,finite,3560
+tx,joint,Criminal appeals presiding,existing_election_checkpoint_subset,sd_distance_km,pooled,0.004470855959765152,finite,3560
+tx,joint,Criminal appeals presiding,existing_election_checkpoint_subset,distance_cv,pooled,0.02296823003509662,finite,3560
+tx,joint,Criminal appeals presiding,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.02296823003509662,finite,3560
+tx,joint,Criminal appeals presiding,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.025229947736707937,finite,3560
+tx,joint,Railroad commissioner,existing_election_checkpoint_subset,silhouette,pooled,0.03132021723399935,finite,3560
+tx,joint,Railroad commissioner,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.005208899453307514,finite,3560
+tx,joint,Railroad commissioner,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.041420998399077556,finite,3560
+tx,joint,Railroad commissioner,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.015980005466126632,finite,3560
+tx,joint,Railroad commissioner,existing_election_checkpoint_subset,sd_distance_km,pooled,0.014275718245578006,finite,3560
+tx,joint,Railroad commissioner,existing_election_checkpoint_subset,distance_cv,pooled,0.03809965898439508,finite,3560
+tx,joint,Railroad commissioner,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.03809965898439508,finite,3560
+tx,joint,Railroad commissioner,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.027716461248354318,finite,3560
+tx,joint,Supreme Court 2,existing_election_checkpoint_subset,silhouette,pooled,0.03026233340635604,finite,3560
+tx,joint,Supreme Court 2,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.009294275286797549,finite,3560
+tx,joint,Supreme Court 2,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.02586115568571318,finite,3560
+tx,joint,Supreme Court 2,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.026407879722677427,finite,3560
+tx,joint,Supreme Court 2,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.0015476638833771365,finite,3560
+tx,joint,Supreme Court 2,existing_election_checkpoint_subset,distance_cv,pooled,0.02361246218508919,finite,3560
+tx,joint,Supreme Court 2,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.02361246218508919,finite,3560
+tx,joint,Supreme Court 2,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.019222350743828654,finite,3560
+tx,joint,Supreme Court 4,existing_election_checkpoint_subset,silhouette,pooled,0.03137600360407938,finite,3560
+tx,joint,Supreme Court 4,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.006310949168188476,finite,3560
+tx,joint,Supreme Court 4,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.02039044706039708,finite,3560
+tx,joint,Supreme Court 4,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.008386052073935361,finite,3560
+tx,joint,Supreme Court 4,existing_election_checkpoint_subset,sd_distance_km,pooled,0.011102463703534633,finite,3560
+tx,joint,Supreme Court 4,existing_election_checkpoint_subset,distance_cv,pooled,0.030357219991964224,finite,3560
+tx,joint,Supreme Court 4,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.030357219991964224,finite,3560
+tx,joint,Supreme Court 4,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.03146086728728373,finite,3560
+tx,joint,Supreme Court 6,existing_election_checkpoint_subset,silhouette,pooled,0.0327058735955714,finite,3560
+tx,joint,Supreme Court 6,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-3.396884371076685e-05,finite,3560
+tx,joint,Supreme Court 6,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.024949077637821393,finite,3560
+tx,joint,Supreme Court 6,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.019160560486459116,finite,3560
+tx,joint,Supreme Court 6,existing_election_checkpoint_subset,sd_distance_km,pooled,0.007523561264952189,finite,3560
+tx,joint,Supreme Court 6,existing_election_checkpoint_subset,distance_cv,pooled,0.03151259791875832,finite,3560
+tx,joint,Supreme Court 6,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.03151259791875832,finite,3560
+tx,joint,Supreme Court 6,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.0249035087104838,finite,3560
+tx,tx_dispersed,President,existing_election_checkpoint_subset,silhouette,pooled,0.03879509692337775,finite,1780
+tx,tx_dispersed,President,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.04154802154050505,finite,1780
+tx,tx_dispersed,President,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.025444730579688192,finite,1780
+tx,tx_dispersed,President,existing_election_checkpoint_subset,mean_distance_km,pooled,0.014328305407234409,finite,1780
+tx,tx_dispersed,President,existing_election_checkpoint_subset,sd_distance_km,pooled,0.04636805540654194,finite,1780
+tx,tx_dispersed,President,existing_election_checkpoint_subset,distance_cv,pooled,0.05121141727052589,finite,1780
+tx,tx_dispersed,President,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.05121141727052589,finite,1780
+tx,tx_dispersed,President,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.028583269102137945,finite,1780
+tx,tx_dispersed,US Senate,existing_election_checkpoint_subset,silhouette,pooled,-0.03145384129760974,finite,1780
+tx,tx_dispersed,US Senate,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.010341223249236677,finite,1780
+tx,tx_dispersed,US Senate,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.061821878563931565,finite,1780
+tx,tx_dispersed,US Senate,existing_election_checkpoint_subset,mean_distance_km,pooled,0.0022278716103854433,finite,1780
+tx,tx_dispersed,US Senate,existing_election_checkpoint_subset,sd_distance_km,pooled,0.009677014234189592,finite,1780
+tx,tx_dispersed,US Senate,existing_election_checkpoint_subset,distance_cv,pooled,0.009187716647301407,finite,1780
+tx,tx_dispersed,US Senate,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.009187716647301407,finite,1780
+tx,tx_dispersed,US Senate,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.03685667591037304,finite,1780
+tx,tx_dispersed,Criminal appeals 7,existing_election_checkpoint_subset,silhouette,pooled,0.025729450842499415,finite,1780
+tx,tx_dispersed,Criminal appeals 7,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.026535900011069587,finite,1780
+tx,tx_dispersed,Criminal appeals 7,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.07034033743998086,finite,1780
+tx,tx_dispersed,Criminal appeals 7,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.04115210010697226,finite,1780
+tx,tx_dispersed,Criminal appeals 7,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.019461541954114918,finite,1780
+tx,tx_dispersed,Criminal appeals 7,existing_election_checkpoint_subset,distance_cv,pooled,0.004164139879359124,finite,1780
+tx,tx_dispersed,Criminal appeals 7,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.004164139879359124,finite,1780
+tx,tx_dispersed,Criminal appeals 7,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.003706805620416073,finite,1780
+tx,tx_dispersed,Criminal appeals 8,existing_election_checkpoint_subset,silhouette,pooled,0.0283076087199075,finite,1780
+tx,tx_dispersed,Criminal appeals 8,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.0008462197293275263,finite,1780
+tx,tx_dispersed,Criminal appeals 8,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.059385828375221425,finite,1780
+tx,tx_dispersed,Criminal appeals 8,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.023683221439483076,finite,1780
+tx,tx_dispersed,Criminal appeals 8,existing_election_checkpoint_subset,sd_distance_km,pooled,0.006721443091749485,finite,1780
+tx,tx_dispersed,Criminal appeals 8,existing_election_checkpoint_subset,distance_cv,pooled,0.02813438388686321,finite,1780
+tx,tx_dispersed,Criminal appeals 8,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.02813438388686321,finite,1780
+tx,tx_dispersed,Criminal appeals 8,existing_election_checkpoint_subset,mean_district_cv,pooled,0.0051950937362426775,finite,1780
+tx,tx_dispersed,Criminal appeals presiding,existing_election_checkpoint_subset,silhouette,pooled,0.03241101685239738,finite,1780
+tx,tx_dispersed,Criminal appeals presiding,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.03012542434571449,finite,1780
+tx,tx_dispersed,Criminal appeals presiding,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.05893523721819472,finite,1780
+tx,tx_dispersed,Criminal appeals presiding,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.03687056985014661,finite,1780
+tx,tx_dispersed,Criminal appeals presiding,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.02668904995201406,finite,1780
+tx,tx_dispersed,Criminal appeals presiding,existing_election_checkpoint_subset,distance_cv,pooled,-0.012218020614982027,finite,1780
+tx,tx_dispersed,Criminal appeals presiding,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.012218020614982027,finite,1780
+tx,tx_dispersed,Criminal appeals presiding,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.0047339043638483565,finite,1780
+tx,tx_dispersed,Railroad commissioner,existing_election_checkpoint_subset,silhouette,pooled,0.04586106938324482,finite,1780
+tx,tx_dispersed,Railroad commissioner,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.023935216535995604,finite,1780
+tx,tx_dispersed,Railroad commissioner,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.0846839272963724,finite,1780
+tx,tx_dispersed,Railroad commissioner,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.046733023218347304,finite,1780
+tx,tx_dispersed,Railroad commissioner,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.013402072100013917,finite,1780
+tx,tx_dispersed,Railroad commissioner,existing_election_checkpoint_subset,distance_cv,pooled,0.017412506124157595,finite,1780
+tx,tx_dispersed,Railroad commissioner,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.017412506124157595,finite,1780
+tx,tx_dispersed,Railroad commissioner,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.0005640254643621587,finite,1780
+tx,tx_dispersed,Supreme Court 2,existing_election_checkpoint_subset,silhouette,pooled,0.04343228588281473,finite,1780
+tx,tx_dispersed,Supreme Court 2,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.037858916652484045,finite,1780
+tx,tx_dispersed,Supreme Court 2,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.06558665554393611,finite,1780
+tx,tx_dispersed,Supreme Court 2,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.05411942081692373,finite,1780
+tx,tx_dispersed,Supreme Court 2,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.030093547461356743,finite,1780
+tx,tx_dispersed,Supreme Court 2,existing_election_checkpoint_subset,distance_cv,pooled,-0.002092003233865136,finite,1780
+tx,tx_dispersed,Supreme Court 2,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.002092003233865136,finite,1780
+tx,tx_dispersed,Supreme Court 2,existing_election_checkpoint_subset,mean_district_cv,pooled,0.006017818501382735,finite,1780
+tx,tx_dispersed,Supreme Court 4,existing_election_checkpoint_subset,silhouette,pooled,0.04537874576605398,finite,1780
+tx,tx_dispersed,Supreme Court 4,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.02869824822397046,finite,1780
+tx,tx_dispersed,Supreme Court 4,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.05921504700581112,finite,1780
+tx,tx_dispersed,Supreme Court 4,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.03727793659975105,finite,1780
+tx,tx_dispersed,Supreme Court 4,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.02450995085804637,finite,1780
+tx,tx_dispersed,Supreme Court 4,existing_election_checkpoint_subset,distance_cv,pooled,-0.004564030771608474,finite,1780
+tx,tx_dispersed,Supreme Court 4,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.004564030771608474,finite,1780
+tx,tx_dispersed,Supreme Court 4,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.017564397864710007,finite,1780
+tx,tx_dispersed,Supreme Court 6,existing_election_checkpoint_subset,silhouette,pooled,0.050147792970623564,finite,1780
+tx,tx_dispersed,Supreme Court 6,existing_election_checkpoint_subset,normalized_rms_radius,pooled,-0.03460021420858821,finite,1780
+tx,tx_dispersed,Supreme Court 6,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.06483096487218024,finite,1780
+tx,tx_dispersed,Supreme Court 6,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.04738764483345757,finite,1780
+tx,tx_dispersed,Supreme Court 6,existing_election_checkpoint_subset,sd_distance_km,pooled,-0.028185899009925672,finite,1780
+tx,tx_dispersed,Supreme Court 6,existing_election_checkpoint_subset,distance_cv,pooled,-0.0011466761145623168,finite,1780
+tx,tx_dispersed,Supreme Court 6,existing_election_checkpoint_subset,inverse_distance_cv,pooled,0.0011466761145623168,finite,1780
+tx,tx_dispersed,Supreme Court 6,existing_election_checkpoint_subset,mean_district_cv,pooled,0.0008843917596309116,finite,1780
+tx,tx_rebuild,President,existing_election_checkpoint_subset,silhouette,pooled,0.021422599527925974,finite,1780
+tx,tx_rebuild,President,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.06147819896375518,finite,1780
+tx,tx_rebuild,President,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.04049973206410581,finite,1780
+tx,tx_rebuild,President,existing_election_checkpoint_subset,mean_distance_km,pooled,0.031874107331477185,finite,1780
+tx,tx_rebuild,President,existing_election_checkpoint_subset,sd_distance_km,pooled,0.0687411077431663,finite,1780
+tx,tx_rebuild,President,existing_election_checkpoint_subset,distance_cv,pooled,0.07559707734777799,finite,1780
+tx,tx_rebuild,President,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.07559707734777799,finite,1780
+tx,tx_rebuild,President,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.05687746701960713,finite,1780
+tx,tx_rebuild,US Senate,existing_election_checkpoint_subset,silhouette,pooled,-0.025249838448605993,finite,1780
+tx,tx_rebuild,US Senate,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.051764667362067134,finite,1780
+tx,tx_rebuild,US Senate,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.02641861071438559,finite,1780
+tx,tx_rebuild,US Senate,existing_election_checkpoint_subset,mean_distance_km,pooled,0.027747565437242303,finite,1780
+tx,tx_rebuild,US Senate,existing_election_checkpoint_subset,sd_distance_km,pooled,0.05732721956940394,finite,1780
+tx,tx_rebuild,US Senate,existing_election_checkpoint_subset,distance_cv,pooled,0.06145513673813912,finite,1780
+tx,tx_rebuild,US Senate,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.06145513673813912,finite,1780
+tx,tx_rebuild,US Senate,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.07066553796185586,finite,1780
+tx,tx_rebuild,Criminal appeals 7,existing_election_checkpoint_subset,silhouette,pooled,0.0397652510457109,finite,1780
+tx,tx_rebuild,Criminal appeals 7,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.01331379877459412,finite,1780
+tx,tx_rebuild,Criminal appeals 7,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.013412063457191016,finite,1780
+tx,tx_rebuild,Criminal appeals 7,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.017577271767048028,finite,1780
+tx,tx_rebuild,Criminal appeals 7,existing_election_checkpoint_subset,sd_distance_km,pooled,0.02541624964347413,finite,1780
+tx,tx_rebuild,Criminal appeals 7,existing_election_checkpoint_subset,distance_cv,pooled,0.059454032441003626,finite,1780
+tx,tx_rebuild,Criminal appeals 7,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.059454032441003626,finite,1780
+tx,tx_rebuild,Criminal appeals 7,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.05543427631619855,finite,1780
+tx,tx_rebuild,Criminal appeals 8,existing_election_checkpoint_subset,silhouette,pooled,0.04764935463238514,finite,1780
+tx,tx_rebuild,Criminal appeals 8,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.01999863766947727,finite,1780
+tx,tx_rebuild,Criminal appeals 8,existing_election_checkpoint_subset,mean_polsby_popper,pooled,0.0042326951159223965,finite,1780
+tx,tx_rebuild,Criminal appeals 8,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.007410126775972855,finite,1780
+tx,tx_rebuild,Criminal appeals 8,existing_election_checkpoint_subset,sd_distance_km,pooled,0.03208534397958079,finite,1780
+tx,tx_rebuild,Criminal appeals 8,existing_election_checkpoint_subset,distance_cv,pooled,0.05766477957729926,finite,1780
+tx,tx_rebuild,Criminal appeals 8,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.05766477957729926,finite,1780
+tx,tx_rebuild,Criminal appeals 8,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.04650237272746881,finite,1780
+tx,tx_rebuild,Criminal appeals presiding,existing_election_checkpoint_subset,silhouette,pooled,0.01937411909843995,finite,1780
+tx,tx_rebuild,Criminal appeals presiding,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.014991784781886123,finite,1780
+tx,tx_rebuild,Criminal appeals presiding,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.006718837336412449,finite,1780
+tx,tx_rebuild,Criminal appeals presiding,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.009450502682264068,finite,1780
+tx,tx_rebuild,Criminal appeals presiding,existing_election_checkpoint_subset,sd_distance_km,pooled,0.0238401526978861,finite,1780
+tx,tx_rebuild,Criminal appeals presiding,existing_election_checkpoint_subset,distance_cv,pooled,0.04864326423702864,finite,1780
+tx,tx_rebuild,Criminal appeals presiding,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.04864326423702864,finite,1780
+tx,tx_rebuild,Criminal appeals presiding,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.041943666239931475,finite,1780
+tx,tx_rebuild,Railroad commissioner,existing_election_checkpoint_subset,silhouette,pooled,0.01744532725202194,finite,1780
+tx,tx_rebuild,Railroad commissioner,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.028058730269824264,finite,1780
+tx,tx_rebuild,Railroad commissioner,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.0009823017276490173,finite,1780
+tx,tx_rebuild,Railroad commissioner,existing_election_checkpoint_subset,mean_distance_km,pooled,0.005945408571011367,finite,1780
+tx,tx_rebuild,Railroad commissioner,existing_election_checkpoint_subset,sd_distance_km,pooled,0.03623837224368916,finite,1780
+tx,tx_rebuild,Railroad commissioner,existing_election_checkpoint_subset,distance_cv,pooled,0.053495291725943854,finite,1780
+tx,tx_rebuild,Railroad commissioner,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.053495291725943854,finite,1780
+tx,tx_rebuild,Railroad commissioner,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.052406187437405306,finite,1780
+tx,tx_rebuild,Supreme Court 2,existing_election_checkpoint_subset,silhouette,pooled,0.018618787886739624,finite,1780
+tx,tx_rebuild,Supreme Court 2,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.010245021009580992,finite,1780
+tx,tx_rebuild,Supreme Court 2,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.013476843718069143,finite,1780
+tx,tx_rebuild,Supreme Court 2,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.012282450833899625,finite,1780
+tx,tx_rebuild,Supreme Court 2,existing_election_checkpoint_subset,sd_distance_km,pooled,0.019252350455448597,finite,1780
+tx,tx_rebuild,Supreme Court 2,existing_election_checkpoint_subset,distance_cv,pooled,0.042738151613239975,finite,1780
+tx,tx_rebuild,Supreme Court 2,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.042738151613239975,finite,1780
+tx,tx_rebuild,Supreme Court 2,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.04129786982767905,finite,1780
+tx,tx_rebuild,Supreme Court 4,existing_election_checkpoint_subset,silhouette,pooled,0.01830125332920599,finite,1780
+tx,tx_rebuild,Supreme Court 4,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.03418262183294499,finite,1780
+tx,tx_rebuild,Supreme Court 4,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.017248187060682884,finite,1780
+tx,tx_rebuild,Supreme Court 4,existing_election_checkpoint_subset,mean_distance_km,pooled,0.010277970143523366,finite,1780
+tx,tx_rebuild,Supreme Court 4,existing_election_checkpoint_subset,sd_distance_km,pooled,0.04047889464211897,finite,1780
+tx,tx_rebuild,Supreme Court 4,existing_election_checkpoint_subset,distance_cv,pooled,0.059692303863500454,finite,1780
+tx,tx_rebuild,Supreme Court 4,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.059692303863500454,finite,1780
+tx,tx_rebuild,Supreme Court 4,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.043559548058254405,finite,1780
+tx,tx_rebuild,Supreme Court 6,existing_election_checkpoint_subset,silhouette,pooled,0.017234416696740428,finite,1780
+tx,tx_rebuild,Supreme Court 6,existing_election_checkpoint_subset,normalized_rms_radius,pooled,0.025032123674149274,finite,1780
+tx,tx_rebuild,Supreme Court 6,existing_election_checkpoint_subset,mean_polsby_popper,pooled,-0.013906915014741757,finite,1780
+tx,tx_rebuild,Supreme Court 6,existing_election_checkpoint_subset,mean_distance_km,pooled,-0.004143482298179665,finite,1780
+tx,tx_rebuild,Supreme Court 6,existing_election_checkpoint_subset,sd_distance_km,pooled,0.03518549739057285,finite,1780
+tx,tx_rebuild,Supreme Court 6,existing_election_checkpoint_subset,distance_cv,pooled,0.05711009039678303,finite,1780
+tx,tx_rebuild,Supreme Court 6,existing_election_checkpoint_subset,inverse_distance_cv,pooled,-0.05711009039678303,finite,1780
+tx,tx_rebuild,Supreme Court 6,existing_election_checkpoint_subset,mean_district_cv,pooled,-0.04743021141449593,finite,1780

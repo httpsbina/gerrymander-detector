@@ -1,0 +1,10 @@
+{
+  "method": "All Census-block locations on the previously defined ten-checkpoint-per-chain pilot and each enacted map. GRS80 ellipsoidal distances go to the same EPSG:5070 population-center locations; centers are not re-optimized on the ellipsoid. This tests distance projection sensitivity, not every possible center definition.",
+  "assignments_checked": 143,
+  "maximum_absolute_relative_changes": {
+    "mean_km": 0.0026349351104393293,
+    "sd_km": 0.006750849529101766,
+    "cv": 0.004105097752462816
+  },
+  "research_ready": false
+}
