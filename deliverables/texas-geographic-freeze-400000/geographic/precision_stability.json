@@ -1,0 +1,867 @@
+{
+  "steps_per_chain": 400000,
+  "complete_geographic_score_rows": 32000,
+  "terminal_measurements_recomputed": 112,
+  "geographic_audit_and_windows_byte_identical": true,
+  "geographic_trace_pixels_identical": true,
+  "warmup_state_count": 500,
+  "geographic_checkpoint_spacing": 100,
+  "starting_map_comparison": "Dispersed-minus-baseline means and combined Monte Carlo error are descriptive.",
+  "primary": {
+    "dem_seats": {
+      "tx_rebuild": {
+        "mean": 12.906413016270339,
+        "mcse_mean": 0.0160012736947757,
+        "half_history": {
+          "first_states_per_chain": 199750,
+          "second_states_per_chain": 199750,
+          "first_mean": 12.88931664580726,
+          "second_mean": 12.923509386733416,
+          "second_minus_first": 0.03419274092615687,
+          "first_mcse_mean": {
+            "value": 0.021163883288154283,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.024444690677013534,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": 12.887973717146433,
+        "mcse_mean": 0.016095939250658255,
+        "half_history": {
+          "first_states_per_chain": 199750,
+          "second_states_per_chain": 199750,
+          "first_mean": 12.872366708385481,
+          "second_mean": 12.903580725907384,
+          "second_minus_first": 0.03121401752190245,
+          "first_mcse_mean": {
+            "value": 0.02257865799873614,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.02224128500868975,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": -0.018439299123905073,
+      "combined_mcse": 0.02269625564307914,
+      "difference_over_combined_mcse": -0.8124379375118574
+    },
+    "efficiency_gap": {
+      "tx_rebuild": {
+        "mean": -0.051524246407912276,
+        "mcse_mean": 0.0004429071453190124,
+        "half_history": {
+          "first_states_per_chain": 199750,
+          "second_states_per_chain": 199750,
+          "first_mean": -0.05183060701480945,
+          "second_mean": -0.05121788580101512,
+          "second_minus_first": 0.000612721213794333,
+          "first_mcse_mean": {
+            "value": 0.0005723567733800459,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.0006750800809535585,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": -0.05189157522562923,
+        "mcse_mean": 0.0004277273663977359,
+        "half_history": {
+          "first_states_per_chain": 199750,
+          "second_states_per_chain": 199750,
+          "first_mean": -0.05241537134919745,
+          "second_mean": -0.05136777910206101,
+          "second_minus_first": 0.0010475922471364432,
+          "first_mcse_mean": {
+            "value": 0.0006056282752037799,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.0005882698307803463,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": -0.00036732881771695675,
+      "combined_mcse": 0.000615725132945034,
+      "difference_over_combined_mcse": -0.596579217028239
+    },
+    "cut_edges": {
+      "tx_rebuild": {
+        "mean": 2673.5917046307886,
+        "mcse_mean": 1.4260569782084336,
+        "half_history": {
+          "first_states_per_chain": 199750,
+          "second_states_per_chain": 199750,
+          "first_mean": 2672.4783504380475,
+          "second_mean": 2674.7050588235293,
+          "second_minus_first": 2.226708385481743,
+          "first_mcse_mean": {
+            "value": 1.9645927861343313,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 1.9387297217172903,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": 2673.4963729662077,
+        "mcse_mean": 1.5048222376577614,
+        "half_history": {
+          "first_states_per_chain": 199750,
+          "second_states_per_chain": 199750,
+          "first_mean": 2673.7374392991237,
+          "second_mean": 2673.2553066332916,
+          "second_minus_first": -0.4821326658320686,
+          "first_mcse_mean": {
+            "value": 1.9763969910848598,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 2.161168524280446,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": -0.09533166458095366,
+      "combined_mcse": 2.073192820758909,
+      "difference_over_combined_mcse": -0.04598301886172688
+    },
+    "mean_median": {
+      "tx_rebuild": {
+        "mean": 0.009597554247977008,
+        "mcse_mean": 0.00017699021375965,
+        "half_history": {
+          "first_states_per_chain": 199750,
+          "second_states_per_chain": 199750,
+          "first_mean": 0.009413290235856521,
+          "second_mean": 0.009781818260097497,
+          "second_minus_first": 0.00036852802424097546,
+          "first_mcse_mean": {
+            "value": 0.0002296635709660589,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.0002580439242020622,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": 0.010019527083004322,
+        "mcse_mean": 0.0001669469038946434,
+        "half_history": {
+          "first_states_per_chain": 199750,
+          "second_states_per_chain": 199750,
+          "first_mean": 0.009665135469787086,
+          "second_mean": 0.010373918696221562,
+          "second_minus_first": 0.0007087832264344764,
+          "first_mcse_mean": {
+            "value": 0.00022300380740364288,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.00024400496395144178,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": 0.0004219728350273143,
+      "combined_mcse": 0.00024330393438391806,
+      "difference_over_combined_mcse": 1.7343444778063808
+    }
+  },
+  "geographic": {
+    "silhouette": {
+      "tx_rebuild": {
+        "mean": 0.1481952790644338,
+        "mcse_mean": 0.0004714731976255775,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 0.14882662700815272,
+          "second_mean": 0.14756424711067673,
+          "second_minus_first": -0.0012623798974759903,
+          "first_mcse_mean": {
+            "value": 0.0005782659664155255,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.0006992208837256236,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": 0.14853294371348047,
+        "mcse_mean": 0.00045363032767034366,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 0.14843471307382283,
+          "second_mean": 0.14863112518865382,
+          "second_minus_first": 0.00019641211483098497,
+          "first_mcse_mean": {
+            "value": 0.0006094755131217782,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.0006187951863081943,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": 0.00033766464904666504,
+      "combined_mcse": 0.0006542686376876017,
+      "difference_over_combined_mcse": 0.5160948112079494
+    },
+    "normalized_rms_radius": {
+      "tx_rebuild": {
+        "mean": 0.20318928997417232,
+        "mcse_mean": 0.0006167988502732922,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 0.2022664444355138,
+          "second_mean": 0.2041116736281769,
+          "second_minus_first": 0.0018452291926630837,
+          "first_mcse_mean": {
+            "value": 0.0009158071291823554,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.0007502423895962616,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": 0.20344417655786914,
+        "mcse_mean": 0.0006309424450232264,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 0.2030224994904663,
+          "second_mean": 0.20386564257568862,
+          "second_minus_first": 0.0008431430852223198,
+          "first_mcse_mean": {
+            "value": 0.0008631223365176212,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.0008638486829532495,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": 0.0002548865836968228,
+      "combined_mcse": 0.0008823430118895611,
+      "difference_over_combined_mcse": 0.2888747122856183
+    },
+    "mean_polsby_popper": {
+      "tx_rebuild": {
+        "mean": 0.1561610155853836,
+        "mcse_mean": 9.757711959381031e-05,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 0.15619200623407653,
+          "second_mean": 0.15613004044752582,
+          "second_minus_first": -6.196578655071061e-05,
+          "first_mcse_mean": {
+            "value": 0.00014439287752675454,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.0001349677606710374,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": 0.15616887915234837,
+        "mcse_mean": 9.966108935500134e-05,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 0.15603526902170334,
+          "second_mean": 0.15630242241105613,
+          "second_minus_first": 0.0002671533893527922,
+          "first_mcse_mean": {
+            "value": 0.00014355937333516945,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.00013084620222238524,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": 7.863566964777524e-06,
+      "combined_mcse": 0.00013947625962740153,
+      "difference_over_combined_mcse": 0.056379250388448515
+    },
+    "mean_distance_km": {
+      "tx_rebuild": {
+        "mean": 38.0863726577171,
+        "mcse_mean": 0.08240954685645914,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 37.95137853811435,
+          "second_mean": 38.221299212695435,
+          "second_minus_first": 0.26992067458108693,
+          "first_mcse_mean": {
+            "value": 0.12153278951515922,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.10072130049961758,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": 38.111089926221176,
+        "mcse_mean": 0.08075666428252913,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 38.09095869340522,
+          "second_mean": 38.131211083345036,
+          "second_minus_first": 0.04025238993981617,
+          "first_mcse_mean": {
+            "value": 0.11818207791957916,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.10669280026357826,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": 0.024717268504076628,
+      "combined_mcse": 0.11538185402882054,
+      "difference_over_combined_mcse": 0.21422145372965365
+    },
+    "sd_distance_km": {
+      "tx_rebuild": {
+        "mean": 49.1843780301292,
+        "mcse_mean": 0.17652789554704112,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 48.93197095906931,
+          "second_mean": 49.4366587713237,
+          "second_minus_first": 0.5046878122543887,
+          "first_mcse_mean": {
+            "value": 0.2607679882974881,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.21665913139659804,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": 49.26248528143982,
+        "mcse_mean": 0.18627685390667503,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 49.117326589267286,
+          "second_mean": 49.40757132161428,
+          "second_minus_first": 0.29024473234699144,
+          "first_mcse_mean": {
+            "value": 0.24419083014670265,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.2578198255495042,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": 0.07810725131061957,
+      "combined_mcse": 0.25663430052827274,
+      "difference_over_combined_mcse": 0.3043523455354118
+    },
+    "distance_cv": {
+      "tx_rebuild": {
+        "mean": 1.2901102566309928,
+        "mcse_mean": 0.002080493427862495,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 1.2881341421990051,
+          "second_mean": 1.292085382016718,
+          "second_minus_first": 0.003951239817712837,
+          "first_mcse_mean": {
+            "value": 0.0030146510353347786,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.002802339468730134,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": 1.2912949952371713,
+        "mcse_mean": 0.0024575510633507297,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 1.28828570546367,
+          "second_mean": 1.2943027788596349,
+          "second_minus_first": 0.0060170733959648,
+          "first_mcse_mean": {
+            "value": 0.002750959788574924,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.003851205748389213,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": 0.0011847386061785148,
+      "combined_mcse": 0.003219939460976765,
+      "difference_over_combined_mcse": 0.3679381617377135
+    },
+    "inverse_distance_cv": {
+      "tx_rebuild": {
+        "mean": 0.7770568855873702,
+        "mcse_mean": 0.001202921004713931,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 0.778208749784641,
+          "second_mean": 0.7759055978987065,
+          "second_minus_first": -0.0023031518859345512,
+          "first_mcse_mean": {
+            "value": 0.0017441826303558085,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.0016189986631073828,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": 0.776456995594914,
+        "mcse_mean": 0.00139673360231141,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 0.7780593587075418,
+          "second_mean": 0.774855434465826,
+          "second_minus_first": -0.003203924241715783,
+          "first_mcse_mean": {
+            "value": 0.0015665206308843015,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.0021788893140649995,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": -0.0005998899924561929,
+      "combined_mcse": 0.0018433349395613869,
+      "difference_over_combined_mcse": -0.3254373253506137
+    },
+    "mean_district_cv": {
+      "tx_rebuild": {
+        "mean": 0.5440754476161246,
+        "mcse_mean": 0.0004789219681381891,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 0.5447109336786554,
+          "second_mean": 0.543440279614686,
+          "second_minus_first": -0.001270654063969423,
+          "first_mcse_mean": {
+            "value": 0.000623577851272917,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.0006871294889464874,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": 0.543837674073662,
+        "mcse_mean": 0.0005426788524799292,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 0.5439993462050872,
+          "second_mean": 0.5436760828592198,
+          "second_minus_first": -0.00032326334586740835,
+          "first_mcse_mean": {
+            "value": 0.000786270975442818,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.0006967294945993664,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": -0.00023777354246257154,
+      "combined_mcse": 0.0007237862864784668,
+      "difference_over_combined_mcse": -0.3285134671719778
+    },
+    "internal_boundary_km": {
+      "tx_rebuild": {
+        "mean": 15276.44921395056,
+        "mcse_mean": 8.802528722794737,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 15271.644045552344,
+          "second_mean": 15281.251977359587,
+          "second_minus_first": 9.607931807242494,
+          "first_mcse_mean": {
+            "value": 13.107974010755292,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 11.883316535516496,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": 15276.980090025814,
+        "mcse_mean": 9.314714221415255,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 15288.026656407623,
+          "second_mean": 15265.939052456004,
+          "second_minus_first": -22.087603951618803,
+          "first_mcse_mean": {
+            "value": 12.478609655485283,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 12.972317168948388,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": 0.5308760752541275,
+      "combined_mcse": 12.815943700807285,
+      "difference_over_combined_mcse": 0.04142309670263979
+    },
+    "common_cut_edges": {
+      "tx_rebuild": {
+        "mean": 2751.7219649561953,
+        "mcse_mean": 1.5307442624896013,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 2750.5031296945417,
+          "second_mean": 2752.94019019019,
+          "second_minus_first": 2.4370604956484385,
+          "first_mcse_mean": {
+            "value": 2.11852251747895,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 2.011457636221022,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": 2751.9436795994993,
+        "mcse_mean": 1.6077357620692991,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 2752.372809213821,
+          "second_mean": 2751.5147647647645,
+          "second_minus_first": -0.8580444490562513,
+          "first_mcse_mean": {
+            "value": 2.0963906112207775,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 2.2896448777586036,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": 0.22171464330403978,
+      "combined_mcse": 2.219908168772164,
+      "difference_over_combined_mcse": 0.09987559234338537
+    },
+    "density_weighted_boundary": {
+      "tx_rebuild": {
+        "mean": 125725.88562534032,
+        "mcse_mean": 84.59648900309922,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 125653.76764230758,
+          "second_mean": 125797.96751328646,
+          "second_minus_first": 144.19987097888952,
+          "first_mcse_mean": {
+            "value": 123.62805142244744,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 98.29992649952625,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": 125722.84820227655,
+        "mcse_mean": 85.55975736859108,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 125706.50947600887,
+          "second_mean": 125739.17875100358,
+          "second_minus_first": 32.66927499471058,
+          "first_mcse_mean": {
+            "value": 118.6831981519276,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 117.921158648483,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": -3.037423063768074,
+      "combined_mcse": 120.32056363159069,
+      "difference_over_combined_mcse": -0.025244421835226388
+    },
+    "area_normalized_rms_radius": {
+      "tx_rebuild": {
+        "mean": 0.3602721932288307,
+        "mcse_mean": 0.0007199251978716658,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 0.3592472709790052,
+          "second_mean": 0.3612966025045571,
+          "second_minus_first": 0.0020493315255518674,
+          "first_mcse_mean": {
+            "value": 0.0009195128869328373,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.0010176658684134736,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": 0.36015572391253026,
+        "mcse_mean": 0.0007881193623302508,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 0.35976398273057963,
+          "second_mean": 0.36054726902782314,
+          "second_minus_first": 0.0007832862972435017,
+          "first_mcse_mean": {
+            "value": 0.000996388881106453,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.0011562328386463623,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": -0.00011646931630043822,
+      "combined_mcse": 0.0010674382510526771,
+      "difference_over_combined_mcse": -0.10911105741768154
+    },
+    "area_weighted_polsby_popper": {
+      "tx_rebuild": {
+        "mean": 0.16437101151724257,
+        "mcse_mean": 0.00023688187263695996,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 0.16471911672576628,
+          "second_mean": 0.16402308053554995,
+          "second_minus_first": -0.0006960361902163259,
+          "first_mcse_mean": {
+            "value": 0.0003336260446817626,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.00031762791182995536,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": 0.16434697803058557,
+        "mcse_mean": 0.0002582730056263593,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 0.16427645768326554,
+          "second_mean": 0.1644174630824365,
+          "second_minus_first": 0.0001410053991709459,
+          "first_mcse_mean": {
+            "value": 0.00037472087961713167,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.00032307199575952466,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": -2.4033486656999115e-05,
+      "combined_mcse": 0.0003504539442198737,
+      "difference_over_combined_mcse": -0.06857815999331593
+    },
+    "median_polsby_popper": {
+      "tx_rebuild": {
+        "mean": 0.14257414466266605,
+        "mcse_mean": 0.00010772841823857616,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 0.14254322147050422,
+          "second_mean": 0.14260505237775478,
+          "second_minus_first": 6.183090725056517e-05,
+          "first_mcse_mean": {
+            "value": 0.0001569966211118699,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.0001514049185379577,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "tx_dispersed": {
+        "mean": 0.14255198442186695,
+        "mcse_mean": 0.00010118016257877017,
+        "half_history": {
+          "first_states_per_chain": 1997,
+          "second_states_per_chain": 1998,
+          "first_mean": 0.14241566175099094,
+          "second_mean": 0.142688238863178,
+          "second_minus_first": 0.00027257711218706127,
+          "first_mcse_mean": {
+            "value": 0.0001441444451436423,
+            "status": "finite",
+            "warnings": []
+          },
+          "second_mcse_mean": {
+            "value": 0.00014153566296816757,
+            "status": "finite",
+            "warnings": []
+          }
+        }
+      },
+      "second_minus_first": -2.2160240799096176e-05,
+      "combined_mcse": 0.0001477932251344829,
+      "difference_over_combined_mcse": -0.14994084322154616
+    }
+  },
+  "checksums": {
+    "outputs/analysis/geographic_continuation_20261118/production/tx_400000/geography/geographic_scores.csv": "74e68bfa259fedc10141e0a7470807e3824b2da8358e07731a13ec707fd1c7e7",
+    "outputs/analysis/geographic_continuation_20261118/production/tx_400000/geography/geographic_diagnostics.json": "731f7f7b2e2caf08c545b5d5034ed03f1078511317a7c4de8d1762656efa6cb7",
+    "outputs/analysis/geographic_continuation_20261118/production/tx_400000/primary/audit/diagnostics.json": "3b2504deedfd7bf52628bfed73dd9e940ca363df5183a4f66838d7673eb1352b",
+    "outputs/analysis/geographic_continuation_20261118/production/manifest_000330.json": "8293aca370e59a0a1bd4b58612ea4e644ecae88ea4635f1bda2b6354113bc8ea"
+  },
+  "research_ready": false
+}
