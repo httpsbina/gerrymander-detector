@@ -1,0 +1,49 @@
+{
+  "scope": "Read-only analysis and report export; original chains, sampler, constraints, thresholds and numerical freezes are unchanged. Commands record the executed output paths; rerunning requires fresh output directories. Report-only reproduction uses copied score inputs on this runtime, not a new clean-room data rebuild or a Linux test.",
+  "commands": [
+    {
+      "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib ../gerrymander-detector/.venv/science/bin/python -m paper.parallel_analysis --source-root ../gerrymander-detector --measurement-cache outputs/analysis/geographic_measurement_20261109 --geographic-review paper/reviews/geographic-validation-20261109/validated --election-review paper/election-sensitivity --output-dir paper/reviews/parallel-comparison-20261118",
+      "exit_status": 0
+    },
+    {
+      "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib ../gerrymander-detector/.venv/science/bin/python -m paper.frozen_elections --source-root ../gerrymander-detector --output-dir paper/reviews/parallel-comparison-20261118/full_elections",
+      "exit_status": 0
+    },
+    {
+      "command": "node .venv/formatting/node_modules/prettier/bin/prettier.cjs --write paper/reviews/parallel-comparison-20261118/results.json paper/reviews/parallel-comparison-20261118/full_elections/results.json paper/reviews/parallel-comparison-20261118/full_elections/checkpoint_scores.json",
+      "exit_status": 0
+    },
+    {
+      "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib ../gerrymander-detector/.venv/science/bin/python -m paper.frozen_elections --source-root ../gerrymander-detector --output-dir paper/reviews/parallel-comparison-20261118/full_elections --audit-only",
+      "exit_status": 0
+    },
+    {
+      "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib ../gerrymander-detector/.venv/science/bin/python -m paper.check_parallel_comparison --source-root ../gerrymander-detector --review-dir paper/reviews/parallel-comparison-20261118",
+      "exit_status": 0
+    },
+    {
+      "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib ../gerrymander-detector/.venv/science/bin/python -m paper.parallel_precision paper/reviews/parallel-comparison-20261118",
+      "exit_status": 0
+    },
+    {
+      "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib ../gerrymander-detector/.venv/science/bin/python -m paper.parallel_projection --source-root ../gerrymander-detector --measurement-cache outputs/analysis/geographic_measurement_20261109 --review-dir paper/reviews/parallel-comparison-20261118",
+      "exit_status": 0
+    },
+    {
+      "command": "node .venv/formatting/node_modules/prettier/bin/prettier.cjs --write paper/reviews/parallel-comparison-20261118/paired_election_results.json",
+      "exit_status": 0
+    },
+    {
+      "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib ../gerrymander-detector/.venv/science/bin/python -m paper.parallel_report paper/reviews/parallel-comparison-20261118",
+      "exit_status": 0
+    },
+    {
+      "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib ../gerrymander-detector/.venv/science/bin/python -m paper.parallel_report outputs/analysis/parallel_report_reproduction_20261118",
+      "exit_status": 0
+    },
+    {
+      "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib TMPDIR=.venv/test-runtime ../gerrymander-detector/.venv/science/bin/python -m unittest discover -s tests -v",
+      "exit_status": 0
+    }
+  ]
+}

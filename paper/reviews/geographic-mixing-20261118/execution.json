@@ -1,0 +1,37 @@
+{
+  "commands": [
+    {
+      "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib ../gerrymander-detector/.venv/science/bin/python -u -m paper.geographic_mixing --source-root ../gerrymander-detector --measurement-cache outputs/analysis/geographic_measurement_20261109 --parallel-review paper/reviews/parallel-comparison-20261118 --mechanism-review paper/reviews/compactness-mechanisms-20261109 --output-dir paper/reviews/geographic-mixing-20261118",
+      "exit_status": 0
+    },
+    {
+      "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib ../gerrymander-detector/.venv/science/bin/python -u -m paper.geographic_mean_drivers --source-root ../gerrymander-detector --measurement-cache outputs/analysis/geographic_measurement_20261109 --parallel-review paper/reviews/parallel-comparison-20261118 --review-dir paper/reviews/geographic-mixing-20261118",
+      "exit_status": 0
+    },
+    {
+      "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib ../gerrymander-detector/.venv/science/bin/python -m paper.geographic_unit_support --source-root ../gerrymander-detector --measurement-cache outputs/analysis/geographic_measurement_20261109 --review-dir paper/reviews/geographic-mixing-20261118",
+      "exit_status": 0
+    },
+    {
+      "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib ../gerrymander-detector/.venv/science/bin/python -m paper.geographic_mixing_report paper/reviews/geographic-mixing-20261118",
+      "exit_status": 0
+    },
+    {
+      "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib ../gerrymander-detector/.venv/science/bin/python -m paper.geographic_mixing_report outputs/analysis/geographic_mixing_report_reproduction_20261118",
+      "exit_status": 0
+    },
+    {
+      "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib TMPDIR=.venv/test-runtime ../gerrymander-detector/.venv/science/bin/python -m unittest discover -s tests -v",
+      "exit_status": 0
+    },
+    {
+      "command": "nice -n 15 env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=.venv/matplotlib ../gerrymander-detector/.venv/science/bin/python -m paper.check_geographic_mixing --source-root ../gerrymander-detector --review-dir paper/reviews/geographic-mixing-20261118 --reproduced-dir outputs/analysis/geographic_mixing_report_reproduction_20261118 --parallel-review paper/reviews/parallel-comparison-20261118",
+      "exit_status": 0
+    }
+  ],
+  "path_scope": "Commands are relative to this checkout and use the preserved sibling research environment. New analysis outputs are protected against collisions. The report-only reproduction uses copies of the eleven input tables/JSON files and the existing repository county-half table.",
+  "formatting": "Existing Prettier format/check API via node --input-type=module; only Markdown and JSON files created for this review. Python uses the existing style, AST parsing and unittest; no Python formatter or linter is configured.",
+  "new_simulations": false,
+  "replay_performed": false,
+  "continuation_certified": false
+}

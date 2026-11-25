@@ -1,0 +1,13 @@
+{
+  "files": {
+    "README.md": "9a0f6c639ad01369588041364fabd1b368d1bdb125e68eff5c9403d3ac7a26f2",
+    "backup.json": "0276023197c6f6ac728a00bc2eaa96a7f922ac21efe4cffc2339f32a36a335a0",
+    "ess_changes.json": "39d69640921273099ac833e48b2d891851a793779cb06f71319565cbce2d42c2",
+    "geographic_diagnostics.json": "21e51930640f5eabee4e0268cb0d1187c59553021ccd56844e1e49ee515ed321",
+    "geographic_scores.csv": "3bcf8ea45af903dfb33b559177bc728511374b5c23754852697665cf5b220022",
+    "geographic_traces.png": "5099e20f806ddf9ab2942f529273ea730af6a52378dec5309a33664ef2f3c81e",
+    "primary_screens.json": "e1d3c2e6090818fb5697c4ef113d38f955b37e8b05c38a2d9325d4ef84395d5b",
+    "records.json": "a41e35ec9082f3ad6cc1b5c8547d0206a15f305200adedc5dfe42e3c8df9f9fe",
+    "window_stability.csv": "4de54e764d74f93a2ba4c7bbad87e2b25d1a288fe6810f067cd39cf5912506b7"
+  }
+}

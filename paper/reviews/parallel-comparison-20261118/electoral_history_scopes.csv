@@ -1,0 +1,7 @@
+state,enacted_year,enacted_seats,scope,observations,mean_democratic_seats,at_or_below_enacted
+tx,2025,8,full_retained_history,556000,12.862685251798561,76
+tx,2025,8,saved_postwarmup_checkpoints,5560,12.863489208633094,2
+nc,2023,3,full_retained_history,135000,5.3210296296296296,1020
+nc,2023,3,saved_postwarmup_checkpoints,1350,5.350370370370371,7
+nc,2025,3,full_retained_history,135000,5.3210296296296296,1020
+nc,2025,3,saved_postwarmup_checkpoints,1350,5.350370370370371,7

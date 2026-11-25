@@ -1,0 +1,5 @@
+state,group,checkpoints,atomic_multiplicity_cut_excess_min,atomic_multiplicity_cut_excess_median,atomic_multiplicity_cut_excess_max,measurement_only_cuts_min,measurement_only_cuts_median,measurement_only_cuts_max,native_only_cuts_min,native_only_cuts_median,native_only_cuts_max
+nc,nc_block_union_2023,675,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+nc,nc_block_union_2025,675,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+tx,tx_dispersed,2780,47.0,78.0,118.0,0.0,0.0,0.0,0.0,0.0,0.0
+tx,tx_rebuild,2780,44.0,78.0,116.0,0.0,0.0,0.0,0.0,0.0,0.0
