@@ -1,0 +1,36 @@
+{
+  "tests_run": 162,
+  "test_failures": 0,
+  "test_skips": 0,
+  "report_exports_byte_identical": 10,
+  "previous_distance_diagnostic_cases_reproduced": 30,
+  "all_retained_assignments_matched": 6910,
+  "frozen_checksums": {
+    "nc-baseline-freeze-23000": {
+      "checked": 81,
+      "failures": [],
+      "manifest_sha256": "8107515fcf216caa1c51ae5a7062ec35bc001f3c24e22e8bc9a6261642631387"
+    },
+    "texas-baseline-freeze-70000": {
+      "checked": 574,
+      "failures": [],
+      "manifest_sha256": "13260fcf79e3f869a907079d83939d82a75708be0c203ff6fc296a83aef8dcf7"
+    }
+  },
+  "unchanged_source_hashes": {
+    "src/chain/run_ensemble.py": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+    "src/chain/checkpoint_integrity.py": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102"
+  },
+  "analysis_source_hashes": {
+    "paper/geographic_mixing.py": "aeac0572bc15bedc51c6aa1680c6d521d82bcf1d797af28aec48d1a8504f4cfa",
+    "paper/geographic_mean_drivers.py": "a5710847d819cfb21d0185a2260a6f2d0cf67f15944ed6c33e4fd0743e7a99cf",
+    "paper/geographic_unit_support.py": "14483a428ecf7cb173134e1ef662a0624ca2f6565cae718c72fe95fcc6aee7fc",
+    "paper/geographic_mixing_report.py": "78dc47baf9cb8382f6c8079ea0a6b9b69600aa981ef10bd86c708ae4d6ea332e",
+    "paper/check_geographic_mixing.py": "f89bf111d8d2300e2e90728babf864b23dde746a6c664c08fb21369bc27d4780",
+    "tests/test_geographic_mixing.py": "d7e8a5b5cb8ba7ffecdca7a435f22f209db8fb36cbea6730c3ec9bfb8791081c"
+  },
+  "report_reproduction_scope": "Copied score inputs using this runtime and repository county-half records; no clean-room raw-data rebuild or Linux execution.",
+  "python_checks": "AST parsing and unittest; no Python formatter or linter configured.",
+  "verification_code_sha256": "f89bf111d8d2300e2e90728babf864b23dde746a6c664c08fb21369bc27d4780",
+  "research_ready": false
+}

@@ -1,0 +1,234 @@
+{
+  "analysis_only": true,
+  "replay_performed": false,
+  "continuation_certified": false,
+  "checkpoints_verified": 6910,
+  "distinct_datasets": 3,
+  "results_sha256": "0e6ac483cce4e54184486f02b1ad5fd28286085d5f01670bb4b51bea559e6329",
+  "validation_code_sha256": "a391082295c6711a8168a6ee69ee3c47cdb7efe6682302661ee9ab51276487cf",
+  "runtime_profiles": [
+    {
+      "recorded": {
+        "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+        "platform": "macOS-27.2-arm64-arm-64bit",
+        "packages": {
+          "gerrychain": "0.3.2",
+          "networkx": "3.4.2",
+          "geopandas": "1.1.2",
+          "shapely": "2.0.7",
+          "pandas": "2.2.3",
+          "numpy": "1.26.4",
+          "pyproj": "3.6.1"
+        }
+      },
+      "analysis": {
+        "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+        "platform": "macOS-27.2.1-arm64-arm-64bit",
+        "packages": {
+          "gerrychain": "0.3.2",
+          "networkx": "3.4.2",
+          "geopandas": "1.1.2",
+          "shapely": "2.0.7",
+          "pandas": "2.2.3",
+          "numpy": "1.26.4",
+          "pyproj": "3.6.1"
+        }
+      },
+      "platform_equal": false
+    },
+    {
+      "recorded": {
+        "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+        "platform": "macOS-27.2-arm64-arm-64bit",
+        "packages": {
+          "gerrychain": "0.3.2",
+          "networkx": "3.4.2",
+          "geopandas": "1.1.2",
+          "shapely": "2.0.7",
+          "pandas": "2.2.3",
+          "numpy": "1.26.4",
+          "pyproj": "3.6.1"
+        }
+      },
+      "analysis": {
+        "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+        "platform": "macOS-27.2.1-arm64-arm-64bit",
+        "packages": {
+          "gerrychain": "0.3.2",
+          "networkx": "3.4.2",
+          "geopandas": "1.1.2",
+          "shapely": "2.0.7",
+          "pandas": "2.2.3",
+          "numpy": "1.26.4",
+          "pyproj": "3.6.1"
+        }
+      },
+      "platform_equal": false
+    },
+    {
+      "recorded": {
+        "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+        "platform": "macOS-27.2-arm64-arm-64bit",
+        "packages": {
+          "gerrychain": "0.3.2",
+          "networkx": "3.4.2",
+          "geopandas": "1.1.2",
+          "shapely": "2.0.7",
+          "pandas": "2.2.3",
+          "numpy": "1.26.4",
+          "pyproj": "3.6.1"
+        }
+      },
+      "analysis": {
+        "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+        "platform": "macOS-27.2.1-arm64-arm-64bit",
+        "packages": {
+          "gerrychain": "0.3.2",
+          "networkx": "3.4.2",
+          "geopandas": "1.1.2",
+          "shapely": "2.0.7",
+          "pandas": "2.2.3",
+          "numpy": "1.26.4",
+          "pyproj": "3.6.1"
+        }
+      },
+      "platform_equal": false
+    },
+    {
+      "recorded": {
+        "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+        "platform": "macOS-27.2-arm64-arm-64bit",
+        "packages": {
+          "gerrychain": "0.3.2",
+          "networkx": "3.4.2",
+          "geopandas": "1.1.2",
+          "shapely": "2.0.7",
+          "pandas": "2.2.3",
+          "numpy": "1.26.4",
+          "pyproj": "3.6.1"
+        }
+      },
+      "analysis": {
+        "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+        "platform": "macOS-27.2.1-arm64-arm-64bit",
+        "packages": {
+          "gerrychain": "0.3.2",
+          "networkx": "3.4.2",
+          "geopandas": "1.1.2",
+          "shapely": "2.0.7",
+          "pandas": "2.2.3",
+          "numpy": "1.26.4",
+          "pyproj": "3.6.1"
+        }
+      },
+      "platform_equal": false
+    },
+    {
+      "recorded": {
+        "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+        "platform": "macOS-27.2-arm64-arm-64bit",
+        "packages": {
+          "gerrychain": "0.3.2",
+          "networkx": "3.4.2",
+          "geopandas": "1.1.2",
+          "shapely": "2.0.7",
+          "pandas": "2.2.3",
+          "numpy": "1.26.4",
+          "pyproj": "3.6.1"
+        }
+      },
+      "analysis": {
+        "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+        "platform": "macOS-27.2.1-arm64-arm-64bit",
+        "packages": {
+          "gerrychain": "0.3.2",
+          "networkx": "3.4.2",
+          "geopandas": "1.1.2",
+          "shapely": "2.0.7",
+          "pandas": "2.2.3",
+          "numpy": "1.26.4",
+          "pyproj": "3.6.1"
+        }
+      },
+      "platform_equal": false
+    },
+    {
+      "recorded": {
+        "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+        "platform": "macOS-27.2-arm64-arm-64bit",
+        "packages": {
+          "gerrychain": "0.3.2",
+          "networkx": "3.4.2",
+          "geopandas": "1.1.2",
+          "shapely": "2.0.7",
+          "pandas": "2.2.3",
+          "numpy": "1.26.4",
+          "pyproj": "3.6.1"
+        }
+      },
+      "analysis": {
+        "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+        "platform": "macOS-27.2.1-arm64-arm-64bit",
+        "packages": {
+          "gerrychain": "0.3.2",
+          "networkx": "3.4.2",
+          "geopandas": "1.1.2",
+          "shapely": "2.0.7",
+          "pandas": "2.2.3",
+          "numpy": "1.26.4",
+          "pyproj": "3.6.1"
+        }
+      },
+      "platform_equal": false
+    },
+    {
+      "recorded": {
+        "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+        "platform": "macOS-27.2-arm64-arm-64bit",
+        "packages": {
+          "gerrychain": "0.3.2",
+          "networkx": "3.4.2",
+          "geopandas": "1.1.2",
+          "shapely": "2.0.7",
+          "pandas": "2.2.3",
+          "numpy": "1.26.4",
+          "pyproj": "3.6.1"
+        }
+      },
+      "analysis": {
+        "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+        "platform": "macOS-27.2.1-arm64-arm-64bit",
+        "packages": {
+          "gerrychain": "0.3.2",
+          "networkx": "3.4.2",
+          "geopandas": "1.1.2",
+          "shapely": "2.0.7",
+          "pandas": "2.2.3",
+          "numpy": "1.26.4",
+          "pyproj": "3.6.1"
+        }
+      },
+      "platform_equal": false
+    }
+  ],
+  "geometry_warnings": [
+    {
+      "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg",
+      "message": "Found overlaps among the given polygons. Indices of overlaps: {(3633, 4872), (6297, 6355), (6298, 6355), (6297, 6358), (4872, 9271), (1320, 6299), (1320, 6298), (1317, 6298)}"
+    },
+    {
+      "dataset": "outputs/analysis/convergence_campaign_2026-11-02/texas_independent_dispersed/tx_dispersed_starts.gpkg",
+      "message": "Found overlaps among the given polygons. Indices of overlaps: {(3633, 4872), (6297, 6355), (6298, 6355), (6297, 6358), (4872, 9271), (1320, 6299), (1320, 6298), (1317, 6298)}"
+    }
+  ],
+  "checks": [
+    "all input hashes",
+    "checkpoint identity",
+    "dataset and graph fingerprints",
+    "sampler and checkpoint code",
+    "configuration",
+    "assignment cut-edge fingerprint",
+    "same Python build and packages"
+  ],
+  "platform_scope": "Platform strings are recorded separately for deterministic read-only assignment scoring. This audit does not relax continuation or exact-replay requirements."
+}

@@ -1,0 +1,7793 @@
+{
+  "scope": "Saved postwarmup checkpoint series, not full-history frequency uncertainty. Adjacent event runs refer to successive saved checkpoints, which are 100 raw states apart. A constant indicator has unavailable uncertainty, rather than zero estimated error.",
+  "research_ready": false,
+  "precision": [
+    {
+      "kind": "distance",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "mean_distance_km",
+      "mcse_sd": {
+        "value": 0.04591223694194684,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.06573984676646205,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.12864473587526248,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "sd_distance_km",
+      "mcse_sd": {
+        "value": 0.03296743300450049,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.053314647982659835,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0943513773700797,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "distance_cv",
+      "mcse_sd": {
+        "value": 0.000748772926960063,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0019215021626117768,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0029703964740746547,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "inverse_distance_cv",
+      "mcse_sd": {
+        "value": 0.0013668353688156968,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.00514888445331807,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.003932993868031254,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "mean_district_cv",
+      "mcse_sd": {
+        "value": 0.0007853720310923401,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0017076439762926943,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0020241699410254443,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "mean_distance_km",
+      "mcse_sd": {
+        "value": 0.06905062302542707,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.11565739822998466,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.1459512273405572,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "sd_distance_km",
+      "mcse_sd": {
+        "value": 0.044126406436423515,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.08097046705129785,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.23960627647858956,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "distance_cv",
+      "mcse_sd": {
+        "value": 0.0009659597926338733,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0020689885213861503,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0028939749884620003,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "inverse_distance_cv",
+      "mcse_sd": {
+        "value": 0.0017252457252026302,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.00504352061675073,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.003981008139060882,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "mean_district_cv",
+      "mcse_sd": {
+        "value": 0.0010225340733003773,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0024777804218295563,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0028714255214706275,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "mean_distance_km",
+      "mcse_sd": {
+        "value": 0.07014799360458306,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.13483440483326348,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.14793076328255594,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "sd_distance_km",
+      "mcse_sd": {
+        "value": 0.04913685896160761,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.07681905382391996,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.08612017042064402,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "distance_cv",
+      "mcse_sd": {
+        "value": 0.0011672415633728916,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0049834508106878506,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0049545230300152565,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "inverse_distance_cv",
+      "mcse_sd": {
+        "value": 0.00212077976693779,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.008135126501412127,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.009350079605332295,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "mean_district_cv",
+      "mcse_sd": {
+        "value": 0.0012106184143881268,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0036625582284203484,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.002687058868308445,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "tx",
+      "cohort": "joint",
+      "measure": "mean_distance_km",
+      "mcse_sd": {
+        "value": 0.10177280549117498,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0604425775839843,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.15864723058998464,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "tx",
+      "cohort": "joint",
+      "measure": "sd_distance_km",
+      "mcse_sd": {
+        "value": 0.20435212439857506,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.09127926417397347,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.40044798167571116,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "tx",
+      "cohort": "joint",
+      "measure": "distance_cv",
+      "mcse_sd": {
+        "value": 0.001955433478911693,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0020064436110910355,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.007774738424977223,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "tx",
+      "cohort": "joint",
+      "measure": "inverse_distance_cv",
+      "mcse_sd": {
+        "value": 0.001108734669878904,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.003906183728134005,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0014044267951367484,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "tx",
+      "cohort": "joint",
+      "measure": "mean_district_cv",
+      "mcse_sd": {
+        "value": 0.0006314892675040938,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0007864317571420476,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0009220410265258772,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "measure": "mean_distance_km",
+      "mcse_sd": {
+        "value": 0.136036388087211,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.08338953799374238,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.20408658205317565,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "measure": "sd_distance_km",
+      "mcse_sd": {
+        "value": 0.2834320115788593,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.15610477797396527,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.5067127708084627,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "measure": "distance_cv",
+      "mcse_sd": {
+        "value": 0.002820436255670571,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0027765337074291407,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.011127211641687618,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "measure": "inverse_distance_cv",
+      "mcse_sd": {
+        "value": 0.0015947278503006743,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.00574719329994372,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0020182052551930285,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "measure": "mean_district_cv",
+      "mcse_sd": {
+        "value": 0.0009988772559072579,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.001023303358945682,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0012163411988926343,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "measure": "mean_distance_km",
+      "mcse_sd": {
+        "value": 0.13560852828530667,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0923094802476001,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.24506889660589337,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "measure": "sd_distance_km",
+      "mcse_sd": {
+        "value": 0.22519365856021561,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.13970366464779005,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.6023852977177135,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "measure": "distance_cv",
+      "mcse_sd": {
+        "value": 0.002694786620235425,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.002640412174156115,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.012199518329619519,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "measure": "inverse_distance_cv",
+      "mcse_sd": {
+        "value": 0.0015272859017994515,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.006167041403302098,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0018328240375026228,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "distance",
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "measure": "mean_district_cv",
+      "mcse_sd": {
+        "value": 0.0007502028092554595,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0010788962416374837,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.001112722411748479,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "President",
+      "mcse_sd": {
+        "value": 0.017070313253551458,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "Attorney general",
+      "mcse_sd": {
+        "value": 0.017306737812946404,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "Auditor",
+      "mcse_sd": {
+        "value": 0.01784225727417995,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "Agriculture commissioner",
+      "mcse_sd": {
+        "value": 0.018622616558098392,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "Insurance commissioner",
+      "mcse_sd": {
+        "value": 0.01829583255153384,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "Labor commissioner",
+      "mcse_sd": {
+        "value": 0.019153977387822124,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "Governor",
+      "mcse_sd": {
+        "value": 0.023149202026295872,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "Lieutenant governor",
+      "mcse_sd": {
+        "value": 0.01764597461067937,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "Secretary of state",
+      "mcse_sd": {
+        "value": 0.018342520252358163,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "Public instruction superintendent",
+      "mcse_sd": {
+        "value": 0.01764415640965468,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "Treasurer",
+      "mcse_sd": {
+        "value": 0.01857865949880993,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "Appeals court 12",
+      "mcse_sd": {
+        "value": 0.017548500122357032,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "Appeals court 14",
+      "mcse_sd": {
+        "value": 0.017856783008645124,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "Appeals court 15",
+      "mcse_sd": {
+        "value": 0.018010949322570875,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "joint",
+      "measure": "Supreme Court 6",
+      "mcse_sd": {
+        "value": 0.018095835019227728,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.5,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "President",
+      "mcse_sd": {
+        "value": 0.025335979895701344,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "Attorney general",
+      "mcse_sd": {
+        "value": 0.024303179600542405,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "Auditor",
+      "mcse_sd": {
+        "value": 0.02627951837138998,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "Agriculture commissioner",
+      "mcse_sd": {
+        "value": 0.02768637692928802,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "Insurance commissioner",
+      "mcse_sd": {
+        "value": 0.026648461939521362,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.5,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "Labor commissioner",
+      "mcse_sd": {
+        "value": 0.029985264953979424,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "Governor",
+      "mcse_sd": {
+        "value": 0.03281268775624548,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "Lieutenant governor",
+      "mcse_sd": {
+        "value": 0.024729192227371345,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "Secretary of state",
+      "mcse_sd": {
+        "value": 0.02666270074143047,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "Public instruction superintendent",
+      "mcse_sd": {
+        "value": 0.02472996887933582,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "Treasurer",
+      "mcse_sd": {
+        "value": 0.028332737700903738,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "Appeals court 12",
+      "mcse_sd": {
+        "value": 0.025518280885200036,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "Appeals court 14",
+      "mcse_sd": {
+        "value": 0.02630932629747358,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.5,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "Appeals court 15",
+      "mcse_sd": {
+        "value": 0.025853264421487526,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "measure": "Supreme Court 6",
+      "mcse_sd": {
+        "value": 0.02638633775641438,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.5,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "President",
+      "mcse_sd": {
+        "value": 0.023810167202549387,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.5,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "Attorney general",
+      "mcse_sd": {
+        "value": 0.025412321278698375,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "Auditor",
+      "mcse_sd": {
+        "value": 0.024290456480303126,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "Agriculture commissioner",
+      "mcse_sd": {
+        "value": 0.025545155862526408,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.5,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "Insurance commissioner",
+      "mcse_sd": {
+        "value": 0.025717908756523352,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "Labor commissioner",
+      "mcse_sd": {
+        "value": 0.0259479889084505,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.5,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "Governor",
+      "mcse_sd": {
+        "value": 0.03277692467558995,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.5,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "Lieutenant governor",
+      "mcse_sd": {
+        "value": 0.027075118935172744,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "Secretary of state",
+      "mcse_sd": {
+        "value": 0.027575343731423386,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.5,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "Public instruction superintendent",
+      "mcse_sd": {
+        "value": 0.026182176240977944,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "Treasurer",
+      "mcse_sd": {
+        "value": 0.02555434113800322,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "Appeals court 12",
+      "mcse_sd": {
+        "value": 0.02475579455605116,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "Appeals court 14",
+      "mcse_sd": {
+        "value": 0.025119519795895332,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "Appeals court 15",
+      "mcse_sd": {
+        "value": 0.025212488026951446,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.5,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "measure": "Supreme Court 6",
+      "mcse_sd": {
+        "value": 0.025876943884533172,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.5,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "joint",
+      "measure": "President",
+      "mcse_sd": {
+        "value": 0.019282162091541266,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "joint",
+      "measure": "US Senate",
+      "mcse_sd": {
+        "value": 0.021635944029822017,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "joint",
+      "measure": "Criminal appeals 7",
+      "mcse_sd": {
+        "value": 0.02268345475348347,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "joint",
+      "measure": "Criminal appeals 8",
+      "mcse_sd": {
+        "value": 0.020386939469542446,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "joint",
+      "measure": "Criminal appeals presiding",
+      "mcse_sd": {
+        "value": 0.022670055693075977,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "joint",
+      "measure": "Railroad commissioner",
+      "mcse_sd": {
+        "value": 0.02207594462206412,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "joint",
+      "measure": "Supreme Court 2",
+      "mcse_sd": {
+        "value": 0.02228541040405674,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "joint",
+      "measure": "Supreme Court 4",
+      "mcse_sd": {
+        "value": 0.021748327398855464,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "joint",
+      "measure": "Supreme Court 6",
+      "mcse_sd": {
+        "value": 0.022717404835214304,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "measure": "President",
+      "mcse_sd": {
+        "value": 0.030198088559385706,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "measure": "US Senate",
+      "mcse_sd": {
+        "value": 0.030228620181613427,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "measure": "Criminal appeals 7",
+      "mcse_sd": {
+        "value": 0.031154689785731732,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "measure": "Criminal appeals 8",
+      "mcse_sd": {
+        "value": 0.028898901055836253,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "measure": "Criminal appeals presiding",
+      "mcse_sd": {
+        "value": 0.030416313082506644,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "measure": "Railroad commissioner",
+      "mcse_sd": {
+        "value": 0.031115690582456886,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "measure": "Supreme Court 2",
+      "mcse_sd": {
+        "value": 0.03192024452563449,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "measure": "Supreme Court 4",
+      "mcse_sd": {
+        "value": 0.03193049032015325,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "measure": "Supreme Court 6",
+      "mcse_sd": {
+        "value": 0.03211479144332854,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.5,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "measure": "President",
+      "mcse_sd": {
+        "value": 0.0263587249513633,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "measure": "US Senate",
+      "mcse_sd": {
+        "value": 0.031341320697472225,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "measure": "Criminal appeals 7",
+      "mcse_sd": {
+        "value": 0.03180419669391529,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "measure": "Criminal appeals 8",
+      "mcse_sd": {
+        "value": 0.027499359413987703,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "measure": "Criminal appeals presiding",
+      "mcse_sd": {
+        "value": 0.03230953037303509,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "measure": "Railroad commissioner",
+      "mcse_sd": {
+        "value": 0.031219835501495687,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "measure": "Supreme Court 2",
+      "mcse_sd": {
+        "value": 0.031138861562682495,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "measure": "Supreme Court 4",
+      "mcse_sd": {
+        "value": 0.030303834988231294,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "kind": "election",
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "measure": "Supreme Court 6",
+      "mcse_sd": {
+        "value": 0.030935541027222825,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q05": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      },
+      "mcse_q95": {
+        "value": 0.0,
+        "status": "finite",
+        "warnings": []
+      }
+    }
+  ],
+  "enacted_score_frequency": [
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "President",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [1, 0, 0, 1, 4, 1],
+      "event_runs_by_chain": [1, 0, 0, 1, 4, 1],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 7,
+      "observations": 1350,
+      "frequency": 0.005185185185185185,
+      "constant_chain_indices": [1, 2],
+      "mcse_frequency": {
+        "value": 0.001933695840319115,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1380.5495811204332,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.001786014354245,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "President",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [1, 0, 0, 1, 4, 1],
+      "event_runs_by_chain": [1, 0, 0, 1, 4, 1],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 7,
+      "observations": 1350,
+      "frequency": 0.005185185185185185,
+      "constant_chain_indices": [1, 2],
+      "mcse_frequency": {
+        "value": 0.001933695840319115,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1380.5495811204332,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.001786014354245,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Attorney general",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 4,
+      "events_by_chain": [1, 2, 1, 1, 2, 1],
+      "event_runs_by_chain": [1, 2, 1, 1, 2, 1],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 8,
+      "observations": 1350,
+      "frequency": 0.005925925925925926,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.0020640543553401853,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1383.7400938581343,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9996124447335658,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Attorney general",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0, 0, 0],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 0,
+      "observations": 1350,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3, 4, 5],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Auditor",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0, 0, 3, 0],
+      "event_runs_by_chain": [0, 0, 0, 0, 3, 0],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 3,
+      "observations": 1350,
+      "frequency": 0.0022222222222222222,
+      "constant_chain_indices": [0, 1, 2, 3, 5],
+      "mcse_frequency": {
+        "value": 0.001271862633865281,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1371.7112976887188,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0024736932751865,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Auditor",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0, 0, 3, 0],
+      "event_runs_by_chain": [0, 0, 0, 0, 3, 0],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 3,
+      "observations": 1350,
+      "frequency": 0.0022222222222222222,
+      "constant_chain_indices": [0, 1, 2, 3, 5],
+      "mcse_frequency": {
+        "value": 0.001271862633865281,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1371.7112976887188,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0024736932751865,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Agriculture commissioner",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [41, 37, 40, 36, 35, 36],
+      "event_runs_by_chain": [32, 30, 34, 29, 28, 29],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 225,
+      "observations": 1350,
+      "frequency": 0.16666666666666666,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.010397740147119637,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1285.6163976301116,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9978167068968915,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Agriculture commissioner",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [41, 37, 40, 36, 35, 36],
+      "event_runs_by_chain": [32, 30, 34, 29, 28, 29],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 225,
+      "observations": 1350,
+      "frequency": 0.16666666666666666,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.010397740147119637,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1285.6163976301116,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9978167068968915,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Insurance commissioner",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [2, 3, 6, 4, 7, 3],
+      "event_runs_by_chain": [2, 3, 5, 4, 7, 3],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 25,
+      "observations": 1350,
+      "frequency": 0.018518518518518517,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.003727198226311447,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1309.3181471443172,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9992826373383225,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Insurance commissioner",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [2, 3, 6, 4, 7, 3],
+      "event_runs_by_chain": [2, 3, 5, 4, 7, 3],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 25,
+      "observations": 1350,
+      "frequency": 0.018518518518518517,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.003727198226311447,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1309.3181471443172,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9992826373383225,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Labor commissioner",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [5, 4, 9, 7, 15, 6],
+      "event_runs_by_chain": [5, 4, 7, 6, 12, 6],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 46,
+      "observations": 1350,
+      "frequency": 0.034074074074074076,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.00538629064925727,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1135.298687113551,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0063391312026302,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Labor commissioner",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [5, 4, 9, 7, 15, 6],
+      "event_runs_by_chain": [5, 4, 7, 6, 12, 6],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 46,
+      "observations": 1350,
+      "frequency": 0.034074074074074076,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.00538629064925727,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1135.298687113551,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0063391312026302,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Governor",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 12,
+      "events_by_chain": [210, 206, 208, 219, 204, 211],
+      "event_runs_by_chain": [11, 16, 13, 7, 19, 15],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 1258,
+      "observations": 1350,
+      "frequency": 0.9318518518518518,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.00876661307299322,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 826.9115780082835,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0020349740338343,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Governor",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 13,
+      "events_by_chain": [225, 225, 225, 225, 225, 225],
+      "event_runs_by_chain": [1, 1, 1, 1, 1, 1],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 1350,
+      "observations": 1350,
+      "frequency": 1.0,
+      "constant_chain_indices": [0, 1, 2, 3, 4, 5],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Lieutenant governor",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 4,
+      "events_by_chain": [1, 3, 1, 4, 4, 1],
+      "event_runs_by_chain": [1, 3, 1, 4, 3, 1],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 14,
+      "observations": 1350,
+      "frequency": 0.01037037037037037,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.0029122514322522707,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1210.9634650229223,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.002472275384267,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Lieutenant governor",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0, 0, 0],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 0,
+      "observations": 1350,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3, 4, 5],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Secretary of state",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 4,
+      "events_by_chain": [0, 2, 0, 1, 3, 0],
+      "event_runs_by_chain": [0, 2, 0, 1, 3, 0],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 6,
+      "observations": 1350,
+      "frequency": 0.0044444444444444444,
+      "constant_chain_indices": [0, 2, 5],
+      "mcse_frequency": {
+        "value": 0.0017931601912392174,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1377.1036307086104,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0045624318818691,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Secretary of state",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0, 0, 0],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 0,
+      "observations": 1350,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3, 4, 5],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Public instruction superintendent",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 4,
+      "events_by_chain": [1, 2, 2, 1, 2, 0],
+      "event_runs_by_chain": [1, 2, 2, 1, 2, 0],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 8,
+      "observations": 1350,
+      "frequency": 0.005925925925925926,
+      "constant_chain_indices": [5],
+      "mcse_frequency": {
+        "value": 0.0020640543553401853,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1383.7400938581343,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9996124447335658,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Public instruction superintendent",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0, 0, 0],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 0,
+      "observations": 1350,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3, 4, 5],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Treasurer",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [3, 1, 7, 3, 13, 5],
+      "event_runs_by_chain": [3, 1, 6, 3, 11, 5],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 32,
+      "observations": 1350,
+      "frequency": 0.023703703703703703,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.0045380792734836545,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1124.541569874433,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0082596904785752,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Treasurer",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [3, 1, 7, 3, 13, 5],
+      "event_runs_by_chain": [3, 1, 6, 3, 11, 5],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 32,
+      "observations": 1350,
+      "frequency": 0.023703703703703703,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.0045380792734836545,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1124.541569874433,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0082596904785752,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Appeals court 12",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0, 0, 3, 0],
+      "event_runs_by_chain": [0, 0, 0, 0, 3, 0],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 3,
+      "observations": 1350,
+      "frequency": 0.0022222222222222222,
+      "constant_chain_indices": [0, 1, 2, 3, 5],
+      "mcse_frequency": {
+        "value": 0.001271862633865281,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1371.7112976887188,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0024736932751865,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Appeals court 12",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0, 0, 3, 0],
+      "event_runs_by_chain": [0, 0, 0, 0, 3, 0],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 3,
+      "observations": 1350,
+      "frequency": 0.0022222222222222222,
+      "constant_chain_indices": [0, 1, 2, 3, 5],
+      "mcse_frequency": {
+        "value": 0.001271862633865281,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1371.7112976887188,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0024736932751865,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Appeals court 14",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [2, 1, 6, 2, 8, 2],
+      "event_runs_by_chain": [2, 1, 5, 2, 8, 2],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 21,
+      "observations": 1350,
+      "frequency": 0.015555555555555555,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.0034598384010412226,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1280.2268408236312,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0031670755376374,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Appeals court 14",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [2, 1, 6, 2, 8, 2],
+      "event_runs_by_chain": [2, 1, 5, 2, 8, 2],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 21,
+      "observations": 1350,
+      "frequency": 0.015555555555555555,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.0034598384010412226,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1280.2268408236312,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0031670755376374,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Appeals court 15",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [1, 1, 3, 1, 6, 1],
+      "event_runs_by_chain": [1, 1, 2, 1, 6, 1],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 13,
+      "observations": 1350,
+      "frequency": 0.00962962962962963,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.0028193959759816286,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1200.651285785111,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0011858293627927,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Appeals court 15",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [1, 1, 3, 1, 6, 1],
+      "event_runs_by_chain": [1, 1, 2, 1, 6, 1],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 13,
+      "observations": 1350,
+      "frequency": 0.00962962962962963,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.0028193959759816286,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1200.651285785111,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0011858293627927,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Supreme Court 6",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 4,
+      "events_by_chain": [9, 15, 9, 11, 10, 7],
+      "event_runs_by_chain": [8, 15, 9, 10, 8, 7],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 61,
+      "observations": 1350,
+      "frequency": 0.04518518518518518,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.005830913606891315,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1269.8833254695867,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0004635709119445,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "joint",
+      "election": "Supreme Court 6",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0, 0, 2, 0],
+      "event_runs_by_chain": [0, 0, 0, 0, 2, 0],
+      "retained_by_chain": [225, 225, 225, 225, 225, 225],
+      "events": 2,
+      "observations": 1350,
+      "frequency": 0.0014814814814814814,
+      "constant_chain_indices": [0, 1, 2, 3, 5],
+      "mcse_frequency": {
+        "value": 0.0010391463521865856,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 1370.947218892884,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9995940734559763,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "President",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [1, 0, 0],
+      "event_runs_by_chain": [1, 0, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 1,
+      "observations": 675,
+      "frequency": 0.0014814814814814814,
+      "constant_chain_indices": [1, 2],
+      "mcse_frequency": {
+        "value": 0.0014713485116072227,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 684.3292742328299,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "President",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [1, 0, 0],
+      "event_runs_by_chain": [1, 0, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 1,
+      "observations": 675,
+      "frequency": 0.0014814814814814814,
+      "constant_chain_indices": [1, 2],
+      "mcse_frequency": {
+        "value": 0.0014713485116072227,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 684.3292742328299,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Attorney general",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 4,
+      "events_by_chain": [1, 2, 1],
+      "event_runs_by_chain": [1, 2, 1],
+      "retained_by_chain": [225, 225, 225],
+      "events": 4,
+      "observations": 675,
+      "frequency": 0.005925925925925926,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.0029225815579939298,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 690.6938088504734,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0000202001838236,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Attorney general",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 0,
+      "observations": 675,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Auditor",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 0,
+      "observations": 675,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Auditor",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 0,
+      "observations": 675,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Agriculture commissioner",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [41, 37, 40],
+      "event_runs_by_chain": [32, 30, 34],
+      "retained_by_chain": [225, 225, 225],
+      "events": 118,
+      "observations": 675,
+      "frequency": 0.1748148148148148,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.014790444505067779,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 660.4061068247945,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.998349272528593,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Agriculture commissioner",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [41, 37, 40],
+      "event_runs_by_chain": [32, 30, 34],
+      "retained_by_chain": [225, 225, 225],
+      "events": 118,
+      "observations": 675,
+      "frequency": 0.1748148148148148,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.014790444505067779,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 660.4061068247945,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.998349272528593,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Insurance commissioner",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [2, 3, 6],
+      "event_runs_by_chain": [2, 3, 5],
+      "retained_by_chain": [225, 225, 225],
+      "events": 11,
+      "observations": 675,
+      "frequency": 0.016296296296296295,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.005586668703570339,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 514.388510262308,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9999020258382233,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Insurance commissioner",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [2, 3, 6],
+      "event_runs_by_chain": [2, 3, 5],
+      "retained_by_chain": [225, 225, 225],
+      "events": 11,
+      "observations": 675,
+      "frequency": 0.016296296296296295,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.005586668703570339,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 514.388510262308,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9999020258382233,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Labor commissioner",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [5, 4, 9],
+      "event_runs_by_chain": [5, 4, 7],
+      "retained_by_chain": [225, 225, 225],
+      "events": 18,
+      "observations": 675,
+      "frequency": 0.02666666666666667,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.007957559250070379,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 410.5012116933455,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9991947307157448,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Labor commissioner",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [5, 4, 9],
+      "event_runs_by_chain": [5, 4, 7],
+      "retained_by_chain": [225, 225, 225],
+      "events": 18,
+      "observations": 675,
+      "frequency": 0.02666666666666667,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.007957559250070379,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 410.5012116933455,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9991947307157448,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Governor",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 12,
+      "events_by_chain": [210, 206, 208],
+      "event_runs_by_chain": [11, 16, 13],
+      "retained_by_chain": [225, 225, 225],
+      "events": 624,
+      "observations": 675,
+      "frequency": 0.9244444444444444,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.013180215387768101,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 402.6670393482473,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9993334970752683,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Governor",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 13,
+      "events_by_chain": [225, 225, 225],
+      "event_runs_by_chain": [1, 1, 1],
+      "retained_by_chain": [225, 225, 225],
+      "events": 675,
+      "observations": 675,
+      "frequency": 1.0,
+      "constant_chain_indices": [0, 1, 2],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Lieutenant governor",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 4,
+      "events_by_chain": [1, 3, 1],
+      "event_runs_by_chain": [1, 3, 1],
+      "retained_by_chain": [225, 225, 225],
+      "events": 5,
+      "observations": 675,
+      "frequency": 0.007407407407407408,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.003263279648495026,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 691.4687423184882,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0029328576429684,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Lieutenant governor",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 0,
+      "observations": 675,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Secretary of state",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 4,
+      "events_by_chain": [0, 2, 0],
+      "event_runs_by_chain": [0, 2, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 2,
+      "observations": 675,
+      "frequency": 0.002962962962962963,
+      "constant_chain_indices": [0, 2],
+      "mcse_frequency": {
+        "value": 0.002079258346877165,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 684.328273239231,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0045351706590013,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Secretary of state",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 0,
+      "observations": 675,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Public instruction superintendent",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 4,
+      "events_by_chain": [1, 2, 2],
+      "event_runs_by_chain": [1, 2, 2],
+      "retained_by_chain": [225, 225, 225],
+      "events": 5,
+      "observations": 675,
+      "frequency": 0.007407407407407408,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.003258378134893857,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 693.5506324433825,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9985814014356595,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Public instruction superintendent",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 0,
+      "observations": 675,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Treasurer",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [3, 1, 7],
+      "event_runs_by_chain": [3, 1, 6],
+      "retained_by_chain": [225, 225, 225],
+      "events": 11,
+      "observations": 675,
+      "frequency": 0.016296296296296295,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.006837923703782169,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 343.35912514138596,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0029003767930151,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Treasurer",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [3, 1, 7],
+      "event_runs_by_chain": [3, 1, 6],
+      "retained_by_chain": [225, 225, 225],
+      "events": 11,
+      "observations": 675,
+      "frequency": 0.016296296296296295,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.006837923703782169,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 343.35912514138596,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0029003767930151,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Appeals court 12",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 0,
+      "observations": 675,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Appeals court 12",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 0,
+      "observations": 675,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Appeals court 14",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [2, 1, 6],
+      "event_runs_by_chain": [2, 1, 5],
+      "retained_by_chain": [225, 225, 225],
+      "events": 9,
+      "observations": 675,
+      "frequency": 0.013333333333333334,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.005355245708709399,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 459.4034639571454,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0012700419376375,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Appeals court 14",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [2, 1, 6],
+      "event_runs_by_chain": [2, 1, 5],
+      "retained_by_chain": [225, 225, 225],
+      "events": 9,
+      "observations": 675,
+      "frequency": 0.013333333333333334,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.005355245708709399,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 459.4034639571454,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0012700419376375,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Appeals court 15",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [1, 1, 3],
+      "event_runs_by_chain": [1, 1, 2],
+      "retained_by_chain": [225, 225, 225],
+      "events": 5,
+      "observations": 675,
+      "frequency": 0.007407407407407408,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.003876646839509696,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 489.9690639283894,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9985814014356595,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Appeals court 15",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [1, 1, 3],
+      "event_runs_by_chain": [1, 1, 2],
+      "retained_by_chain": [225, 225, 225],
+      "events": 5,
+      "observations": 675,
+      "frequency": 0.007407407407407408,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.003876646839509696,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 489.9690639283894,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9985814014356595,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Supreme Court 6",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 4,
+      "events_by_chain": [9, 15, 9],
+      "event_runs_by_chain": [8, 15, 9],
+      "retained_by_chain": [225, 225, 225],
+      "events": 33,
+      "observations": 675,
+      "frequency": 0.04888888888888889,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.008123525831691182,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 705.6610831433527,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.999881764291328,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2023",
+      "election": "Supreme Court 6",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2023",
+          "seed": 707
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 808
+        },
+        {
+          "group": "nc_block_union_2023",
+          "seed": 909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 0,
+      "observations": 675,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "President",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [1, 4, 1],
+      "event_runs_by_chain": [1, 4, 1],
+      "retained_by_chain": [225, 225, 225],
+      "events": 6,
+      "observations": 675,
+      "frequency": 0.008888888888888889,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.0035640208757039826,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 694.597507280948,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0009411155922794,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "President",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [1, 4, 1],
+      "event_runs_by_chain": [1, 4, 1],
+      "retained_by_chain": [225, 225, 225],
+      "events": 6,
+      "observations": 675,
+      "frequency": 0.008888888888888889,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.0035640208757039826,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 694.597507280948,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0009411155922794,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Attorney general",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 4,
+      "events_by_chain": [1, 2, 1],
+      "event_runs_by_chain": [1, 2, 1],
+      "retained_by_chain": [225, 225, 225],
+      "events": 4,
+      "observations": 675,
+      "frequency": 0.005925925925925926,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.0029225815579939298,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 690.6938088504734,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0000202001838236,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Attorney general",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 0,
+      "observations": 675,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Auditor",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 3, 0],
+      "event_runs_by_chain": [0, 3, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 3,
+      "observations": 675,
+      "frequency": 0.0044444444444444444,
+      "constant_chain_indices": [0, 2],
+      "mcse_frequency": {
+        "value": 0.002538419733125645,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 687.7015259004456,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0018218191237076,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Auditor",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 3, 0],
+      "event_runs_by_chain": [0, 3, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 3,
+      "observations": 675,
+      "frequency": 0.0044444444444444444,
+      "constant_chain_indices": [0, 2],
+      "mcse_frequency": {
+        "value": 0.002538419733125645,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 687.7015259004456,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0018218191237076,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Agriculture commissioner",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [36, 35, 36],
+      "event_runs_by_chain": [29, 28, 29],
+      "retained_by_chain": [225, 225, 225],
+      "events": 107,
+      "observations": 675,
+      "frequency": 0.15851851851851853,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.014619001483215233,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 625.0762869372826,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.997119409947838,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Agriculture commissioner",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [36, 35, 36],
+      "event_runs_by_chain": [29, 28, 29],
+      "retained_by_chain": [225, 225, 225],
+      "events": 107,
+      "observations": 675,
+      "frequency": 0.15851851851851853,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.014619001483215233,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 625.0762869372826,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.997119409947838,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Insurance commissioner",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [4, 7, 3],
+      "event_runs_by_chain": [4, 7, 3],
+      "retained_by_chain": [225, 225, 225],
+      "events": 14,
+      "observations": 675,
+      "frequency": 0.02074074074074074,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.005338515979575752,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 713.7148478724932,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9991723311387467,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Insurance commissioner",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [4, 7, 3],
+      "event_runs_by_chain": [4, 7, 3],
+      "retained_by_chain": [225, 225, 225],
+      "events": 14,
+      "observations": 675,
+      "frequency": 0.02074074074074074,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.005338515979575752,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 713.7148478724932,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9991723311387467,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Labor commissioner",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [7, 15, 6],
+      "event_runs_by_chain": [6, 12, 6],
+      "retained_by_chain": [225, 225, 225],
+      "events": 28,
+      "observations": 675,
+      "frequency": 0.04148148148148148,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.008438257249496185,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 559.2334240562905,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0111787357323085,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Labor commissioner",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [7, 15, 6],
+      "event_runs_by_chain": [6, 12, 6],
+      "retained_by_chain": [225, 225, 225],
+      "events": 28,
+      "observations": 675,
+      "frequency": 0.04148148148148148,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.008438257249496185,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 559.2334240562905,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0111787357323085,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Governor",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 12,
+      "events_by_chain": [219, 204, 211],
+      "event_runs_by_chain": [7, 19, 15],
+      "retained_by_chain": [225, 225, 225],
+      "events": 634,
+      "observations": 675,
+      "frequency": 0.9392592592592592,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.011254272629134495,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 451.10182303245944,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0054697348777346,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Governor",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 13,
+      "events_by_chain": [225, 225, 225],
+      "event_runs_by_chain": [1, 1, 1],
+      "retained_by_chain": [225, 225, 225],
+      "events": 675,
+      "observations": 675,
+      "frequency": 1.0,
+      "constant_chain_indices": [0, 1, 2],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Lieutenant governor",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 4,
+      "events_by_chain": [4, 4, 1],
+      "event_runs_by_chain": [4, 3, 1],
+      "retained_by_chain": [225, 225, 225],
+      "events": 9,
+      "observations": 675,
+      "frequency": 0.013333333333333334,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.004826230806764835,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 565.6358069965152,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0024892720573275,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Lieutenant governor",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 0,
+      "observations": 675,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Secretary of state",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 4,
+      "events_by_chain": [1, 3, 0],
+      "event_runs_by_chain": [1, 3, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 4,
+      "observations": 675,
+      "frequency": 0.005925925925925926,
+      "constant_chain_indices": [2],
+      "mcse_frequency": {
+        "value": 0.0029280299100964678,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 688.1257736638605,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.005476685930171,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Secretary of state",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 0,
+      "observations": 675,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Public instruction superintendent",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 4,
+      "events_by_chain": [1, 2, 0],
+      "event_runs_by_chain": [1, 2, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 3,
+      "observations": 675,
+      "frequency": 0.0044444444444444444,
+      "constant_chain_indices": [2],
+      "mcse_frequency": {
+        "value": 0.002538419733125645,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 687.7015259004456,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0018218191237076,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Public instruction superintendent",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 0,
+      "observations": 675,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Treasurer",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [3, 13, 5],
+      "event_runs_by_chain": [3, 11, 5],
+      "retained_by_chain": [225, 225, 225],
+      "events": 21,
+      "observations": 675,
+      "frequency": 0.03111111111111111,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.007102637057991993,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 598.4035038123391,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0108714709421658,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Treasurer",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [3, 13, 5],
+      "event_runs_by_chain": [3, 11, 5],
+      "retained_by_chain": [225, 225, 225],
+      "events": 21,
+      "observations": 675,
+      "frequency": 0.03111111111111111,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.007102637057991993,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 598.4035038123391,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0108714709421658,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Appeals court 12",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 3, 0],
+      "event_runs_by_chain": [0, 3, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 3,
+      "observations": 675,
+      "frequency": 0.0044444444444444444,
+      "constant_chain_indices": [0, 2],
+      "mcse_frequency": {
+        "value": 0.002538419733125645,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 687.7015259004456,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0018218191237076,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Appeals court 12",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 3, 0],
+      "event_runs_by_chain": [0, 3, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 3,
+      "observations": 675,
+      "frequency": 0.0044444444444444444,
+      "constant_chain_indices": [0, 2],
+      "mcse_frequency": {
+        "value": 0.002538419733125645,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 687.7015259004456,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0018218191237076,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Appeals court 14",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [2, 8, 2],
+      "event_runs_by_chain": [2, 8, 2],
+      "retained_by_chain": [225, 225, 225],
+      "events": 12,
+      "observations": 675,
+      "frequency": 0.017777777777777778,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.004977684371858761,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 705.791452996338,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0055987338691919,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Appeals court 14",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [2, 8, 2],
+      "event_runs_by_chain": [2, 8, 2],
+      "retained_by_chain": [225, 225, 225],
+      "events": 12,
+      "observations": 675,
+      "frequency": 0.017777777777777778,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.004977684371858761,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 705.791452996338,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0055987338691919,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Appeals court 15",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [1, 6, 1],
+      "event_runs_by_chain": [1, 6, 1],
+      "retained_by_chain": [225, 225, 225],
+      "events": 8,
+      "observations": 675,
+      "frequency": 0.011851851851851851,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.004099485248711741,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 697.9004775623547,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0032413144460517,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Appeals court 15",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [1, 6, 1],
+      "event_runs_by_chain": [1, 6, 1],
+      "retained_by_chain": [225, 225, 225],
+      "events": 8,
+      "observations": 675,
+      "frequency": 0.011851851851851851,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.004099485248711741,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 697.9004775623547,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0032413144460517,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Supreme Court 6",
+      "enacted_year": "2023",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 4,
+      "events_by_chain": [11, 10, 7],
+      "event_runs_by_chain": [10, 8, 7],
+      "retained_by_chain": [225, 225, 225],
+      "events": 28,
+      "observations": 675,
+      "frequency": 0.04148148148148148,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.00850816720815459,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 550.080956188444,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0017991069409533,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "nc",
+      "cohort": "nc_block_union_2025",
+      "election": "Supreme Court 6",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1707
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1808
+        },
+        {
+          "group": "nc_block_union_2025",
+          "seed": 1909
+        }
+      ],
+      "threshold": 3,
+      "events_by_chain": [0, 2, 0],
+      "event_runs_by_chain": [0, 2, 0],
+      "retained_by_chain": [225, 225, 225],
+      "events": 2,
+      "observations": 675,
+      "frequency": 0.002962962962962963,
+      "constant_chain_indices": [0, 2],
+      "mcse_frequency": {
+        "value": 0.0020754313402602874,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 686.8543442060926,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9991067439039163,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "joint",
+      "election": "President",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [0, 0, 0, 0, 1, 0, 1, 0],
+      "event_runs_by_chain": [0, 0, 0, 0, 1, 0, 1, 0],
+      "retained_by_chain": [695, 695, 695, 695, 695, 695, 695, 695],
+      "events": 2,
+      "observations": 5560,
+      "frequency": 0.00035971223021582735,
+      "constant_chain_indices": [0, 1, 2, 3, 5, 7],
+      "mcse_frequency": {
+        "value": 0.0002537293996069853,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 5586.444504623174,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.999903933906306,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "joint",
+      "election": "US Senate",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [0, 0, 0, 0, 0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0, 0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695, 695, 695, 695, 695],
+      "events": 0,
+      "observations": 5560,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3, 4, 5, 6, 7],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "joint",
+      "election": "Criminal appeals 7",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [0, 0, 0, 0, 0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0, 0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695, 695, 695, 695, 695],
+      "events": 0,
+      "observations": 5560,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3, 4, 5, 6, 7],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "joint",
+      "election": "Criminal appeals 8",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [1, 1, 3, 4, 2, 4, 6, 1],
+      "event_runs_by_chain": [1, 1, 3, 4, 2, 4, 6, 1],
+      "retained_by_chain": [695, 695, 695, 695, 695, 695, 695, 695],
+      "events": 22,
+      "observations": 5560,
+      "frequency": 0.003956834532374101,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.0008370918679969505,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 5625.458442105227,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0013528355066827,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "joint",
+      "election": "Criminal appeals presiding",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [1, 0, 0, 0, 0, 0, 0, 0],
+      "event_runs_by_chain": [1, 0, 0, 0, 0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695, 695, 695, 695, 695],
+      "events": 1,
+      "observations": 5560,
+      "frequency": 0.00017985611510791367,
+      "constant_chain_indices": [1, 2, 3, 4, 5, 6, 7],
+      "mcse_frequency": {
+        "value": 0.00017946470849619598,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 5584.278800130311,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "joint",
+      "election": "Railroad commissioner",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [1, 0, 0, 1, 0, 0, 0, 0],
+      "event_runs_by_chain": [1, 0, 0, 1, 0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695, 695, 695, 695, 695],
+      "events": 2,
+      "observations": 5560,
+      "frequency": 0.00035971223021582735,
+      "constant_chain_indices": [1, 2, 4, 5, 6, 7],
+      "mcse_frequency": {
+        "value": 0.0002537293996069853,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 5586.444504623174,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.999903933906306,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "joint",
+      "election": "Supreme Court 2",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [1, 0, 0, 0, 0, 0, 0, 0],
+      "event_runs_by_chain": [1, 0, 0, 0, 0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695, 695, 695, 695, 695],
+      "events": 1,
+      "observations": 5560,
+      "frequency": 0.00017985611510791367,
+      "constant_chain_indices": [1, 2, 3, 4, 5, 6, 7],
+      "mcse_frequency": {
+        "value": 0.00017946470849619598,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 5584.278800130311,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "joint",
+      "election": "Supreme Court 4",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [0, 0, 0, 0, 0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0, 0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695, 695, 695, 695, 695],
+      "events": 0,
+      "observations": 5560,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3, 4, 5, 6, 7],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "joint",
+      "election": "Supreme Court 6",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [1, 0, 0, 0, 0, 0, 0, 0],
+      "event_runs_by_chain": [1, 0, 0, 0, 0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695, 695, 695, 695, 695],
+      "events": 1,
+      "observations": 5560,
+      "frequency": 0.00017985611510791367,
+      "constant_chain_indices": [1, 2, 3, 4, 5, 6, 7],
+      "mcse_frequency": {
+        "value": 0.00017946470849619598,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 5584.278800130311,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "election": "President",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 0,
+      "observations": 2780,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "election": "US Senate",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 0,
+      "observations": 2780,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "election": "Criminal appeals 7",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 0,
+      "observations": 2780,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "election": "Criminal appeals 8",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [1, 1, 3, 4],
+      "event_runs_by_chain": [1, 1, 3, 4],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 9,
+      "observations": 2780,
+      "frequency": 0.003237410071942446,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.0010723481259993879,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 2807.204802565608,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0009250824102087,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "election": "Criminal appeals presiding",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [1, 0, 0, 0],
+      "event_runs_by_chain": [1, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 1,
+      "observations": 2780,
+      "frequency": 0.00035971223021582735,
+      "constant_chain_indices": [1, 2, 3],
+      "mcse_frequency": {
+        "value": 0.00035892941699239197,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 2792.1394000651553,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "election": "Railroad commissioner",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [1, 0, 0, 1],
+      "event_runs_by_chain": [1, 0, 0, 1],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 2,
+      "observations": 2780,
+      "frequency": 0.0007194244604316547,
+      "constant_chain_indices": [1, 2],
+      "mcse_frequency": {
+        "value": 0.0005073006216985931,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 2794.4613369974318,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9997941327821726,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "election": "Supreme Court 2",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [1, 0, 0, 0],
+      "event_runs_by_chain": [1, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 1,
+      "observations": 2780,
+      "frequency": 0.00035971223021582735,
+      "constant_chain_indices": [1, 2, 3],
+      "mcse_frequency": {
+        "value": 0.00035892941699239197,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 2792.1394000651553,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "election": "Supreme Court 4",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 0,
+      "observations": 2780,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_dispersed",
+      "election": "Supreme Court 6",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_dispersed",
+          "seed": 10007
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10009
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10037
+        },
+        {
+          "group": "tx_dispersed",
+          "seed": 10039
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [1, 0, 0, 0],
+      "event_runs_by_chain": [1, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 1,
+      "observations": 2780,
+      "frequency": 0.00035971223021582735,
+      "constant_chain_indices": [1, 2, 3],
+      "mcse_frequency": {
+        "value": 0.00035892941699239197,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 2792.1394000651553,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "election": "President",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [1, 0, 1, 0],
+      "event_runs_by_chain": [1, 0, 1, 0],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 2,
+      "observations": 2780,
+      "frequency": 0.0007194244604316547,
+      "constant_chain_indices": [1, 3],
+      "mcse_frequency": {
+        "value": 0.0005073006216985931,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 2794.4613369974318,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 0.9997941327821726,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "election": "US Senate",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 0,
+      "observations": 2780,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "election": "Criminal appeals 7",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 0,
+      "observations": 2780,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "election": "Criminal appeals 8",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [2, 4, 6, 1],
+      "event_runs_by_chain": [2, 4, 6, 1],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 13,
+      "observations": 2780,
+      "frequency": 0.004676258992805755,
+      "constant_chain_indices": [],
+      "mcse_frequency": {
+        "value": 0.001286279225923485,
+        "status": "finite",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": 2814.1591690757773,
+        "status": "finite",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": 1.0018600146845658,
+        "status": "finite",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "election": "Criminal appeals presiding",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 0,
+      "observations": 2780,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "election": "Railroad commissioner",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 0,
+      "observations": 2780,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "election": "Supreme Court 2",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 0,
+      "observations": 2780,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "election": "Supreme Court 4",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 0,
+      "observations": 2780,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    },
+    {
+      "state": "tx",
+      "cohort": "tx_rebuild",
+      "election": "Supreme Court 6",
+      "enacted_year": "2025",
+      "chain_order": [
+        {
+          "group": "tx_rebuild",
+          "seed": 1117
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 2227
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 3331
+        },
+        {
+          "group": "tx_rebuild",
+          "seed": 4441
+        }
+      ],
+      "threshold": 8,
+      "events_by_chain": [0, 0, 0, 0],
+      "event_runs_by_chain": [0, 0, 0, 0],
+      "retained_by_chain": [695, 695, 695, 695],
+      "events": 0,
+      "observations": 2780,
+      "frequency": 0.0,
+      "constant_chain_indices": [0, 1, 2, 3],
+      "mcse_frequency": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "ess_mean_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      },
+      "rank_split_rhat_indicator": {
+        "value": null,
+        "status": "unavailable_constant_indicator",
+        "warnings": []
+      }
+    }
+  ]
+}

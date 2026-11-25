@@ -1,0 +1,118 @@
+state,cohort,election,enacted_year,threshold,events,observations,frequency,mcse_frequency,mcse_status
+nc,joint,President,2023,3,7,1350,0.005185185185185185,0.001933695840319115,finite
+nc,joint,President,2025,3,7,1350,0.005185185185185185,0.001933695840319115,finite
+nc,joint,Attorney general,2023,4,8,1350,0.005925925925925926,0.0020640543553401853,finite
+nc,joint,Attorney general,2025,3,0,1350,0.0,,unavailable_constant_indicator
+nc,joint,Auditor,2023,3,3,1350,0.0022222222222222222,0.001271862633865281,finite
+nc,joint,Auditor,2025,3,3,1350,0.0022222222222222222,0.001271862633865281,finite
+nc,joint,Agriculture commissioner,2023,3,225,1350,0.16666666666666666,0.010397740147119637,finite
+nc,joint,Agriculture commissioner,2025,3,225,1350,0.16666666666666666,0.010397740147119637,finite
+nc,joint,Insurance commissioner,2023,3,25,1350,0.018518518518518517,0.003727198226311447,finite
+nc,joint,Insurance commissioner,2025,3,25,1350,0.018518518518518517,0.003727198226311447,finite
+nc,joint,Labor commissioner,2023,3,46,1350,0.034074074074074076,0.00538629064925727,finite
+nc,joint,Labor commissioner,2025,3,46,1350,0.034074074074074076,0.00538629064925727,finite
+nc,joint,Governor,2023,12,1258,1350,0.9318518518518518,0.00876661307299322,finite
+nc,joint,Governor,2025,13,1350,1350,1.0,,unavailable_constant_indicator
+nc,joint,Lieutenant governor,2023,4,14,1350,0.01037037037037037,0.0029122514322522707,finite
+nc,joint,Lieutenant governor,2025,3,0,1350,0.0,,unavailable_constant_indicator
+nc,joint,Secretary of state,2023,4,6,1350,0.0044444444444444444,0.0017931601912392174,finite
+nc,joint,Secretary of state,2025,3,0,1350,0.0,,unavailable_constant_indicator
+nc,joint,Public instruction superintendent,2023,4,8,1350,0.005925925925925926,0.0020640543553401853,finite
+nc,joint,Public instruction superintendent,2025,3,0,1350,0.0,,unavailable_constant_indicator
+nc,joint,Treasurer,2023,3,32,1350,0.023703703703703703,0.0045380792734836545,finite
+nc,joint,Treasurer,2025,3,32,1350,0.023703703703703703,0.0045380792734836545,finite
+nc,joint,Appeals court 12,2023,3,3,1350,0.0022222222222222222,0.001271862633865281,finite
+nc,joint,Appeals court 12,2025,3,3,1350,0.0022222222222222222,0.001271862633865281,finite
+nc,joint,Appeals court 14,2023,3,21,1350,0.015555555555555555,0.0034598384010412226,finite
+nc,joint,Appeals court 14,2025,3,21,1350,0.015555555555555555,0.0034598384010412226,finite
+nc,joint,Appeals court 15,2023,3,13,1350,0.00962962962962963,0.0028193959759816286,finite
+nc,joint,Appeals court 15,2025,3,13,1350,0.00962962962962963,0.0028193959759816286,finite
+nc,joint,Supreme Court 6,2023,4,61,1350,0.04518518518518518,0.005830913606891315,finite
+nc,joint,Supreme Court 6,2025,3,2,1350,0.0014814814814814814,0.0010391463521865856,finite
+nc,nc_block_union_2023,President,2023,3,1,675,0.0014814814814814814,0.0014713485116072227,finite
+nc,nc_block_union_2023,President,2025,3,1,675,0.0014814814814814814,0.0014713485116072227,finite
+nc,nc_block_union_2023,Attorney general,2023,4,4,675,0.005925925925925926,0.0029225815579939298,finite
+nc,nc_block_union_2023,Attorney general,2025,3,0,675,0.0,,unavailable_constant_indicator
+nc,nc_block_union_2023,Auditor,2023,3,0,675,0.0,,unavailable_constant_indicator
+nc,nc_block_union_2023,Auditor,2025,3,0,675,0.0,,unavailable_constant_indicator
+nc,nc_block_union_2023,Agriculture commissioner,2023,3,118,675,0.1748148148148148,0.014790444505067779,finite
+nc,nc_block_union_2023,Agriculture commissioner,2025,3,118,675,0.1748148148148148,0.014790444505067779,finite
+nc,nc_block_union_2023,Insurance commissioner,2023,3,11,675,0.016296296296296295,0.005586668703570339,finite
+nc,nc_block_union_2023,Insurance commissioner,2025,3,11,675,0.016296296296296295,0.005586668703570339,finite
+nc,nc_block_union_2023,Labor commissioner,2023,3,18,675,0.02666666666666667,0.007957559250070379,finite
+nc,nc_block_union_2023,Labor commissioner,2025,3,18,675,0.02666666666666667,0.007957559250070379,finite
+nc,nc_block_union_2023,Governor,2023,12,624,675,0.9244444444444444,0.013180215387768101,finite
+nc,nc_block_union_2023,Governor,2025,13,675,675,1.0,,unavailable_constant_indicator
+nc,nc_block_union_2023,Lieutenant governor,2023,4,5,675,0.007407407407407408,0.003263279648495026,finite
+nc,nc_block_union_2023,Lieutenant governor,2025,3,0,675,0.0,,unavailable_constant_indicator
+nc,nc_block_union_2023,Secretary of state,2023,4,2,675,0.002962962962962963,0.002079258346877165,finite
+nc,nc_block_union_2023,Secretary of state,2025,3,0,675,0.0,,unavailable_constant_indicator
+nc,nc_block_union_2023,Public instruction superintendent,2023,4,5,675,0.007407407407407408,0.003258378134893857,finite
+nc,nc_block_union_2023,Public instruction superintendent,2025,3,0,675,0.0,,unavailable_constant_indicator
+nc,nc_block_union_2023,Treasurer,2023,3,11,675,0.016296296296296295,0.006837923703782169,finite
+nc,nc_block_union_2023,Treasurer,2025,3,11,675,0.016296296296296295,0.006837923703782169,finite
+nc,nc_block_union_2023,Appeals court 12,2023,3,0,675,0.0,,unavailable_constant_indicator
+nc,nc_block_union_2023,Appeals court 12,2025,3,0,675,0.0,,unavailable_constant_indicator
+nc,nc_block_union_2023,Appeals court 14,2023,3,9,675,0.013333333333333334,0.005355245708709399,finite
+nc,nc_block_union_2023,Appeals court 14,2025,3,9,675,0.013333333333333334,0.005355245708709399,finite
+nc,nc_block_union_2023,Appeals court 15,2023,3,5,675,0.007407407407407408,0.003876646839509696,finite
+nc,nc_block_union_2023,Appeals court 15,2025,3,5,675,0.007407407407407408,0.003876646839509696,finite
+nc,nc_block_union_2023,Supreme Court 6,2023,4,33,675,0.04888888888888889,0.008123525831691182,finite
+nc,nc_block_union_2023,Supreme Court 6,2025,3,0,675,0.0,,unavailable_constant_indicator
+nc,nc_block_union_2025,President,2023,3,6,675,0.008888888888888889,0.0035640208757039826,finite
+nc,nc_block_union_2025,President,2025,3,6,675,0.008888888888888889,0.0035640208757039826,finite
+nc,nc_block_union_2025,Attorney general,2023,4,4,675,0.005925925925925926,0.0029225815579939298,finite
+nc,nc_block_union_2025,Attorney general,2025,3,0,675,0.0,,unavailable_constant_indicator
+nc,nc_block_union_2025,Auditor,2023,3,3,675,0.0044444444444444444,0.002538419733125645,finite
+nc,nc_block_union_2025,Auditor,2025,3,3,675,0.0044444444444444444,0.002538419733125645,finite
+nc,nc_block_union_2025,Agriculture commissioner,2023,3,107,675,0.15851851851851853,0.014619001483215233,finite
+nc,nc_block_union_2025,Agriculture commissioner,2025,3,107,675,0.15851851851851853,0.014619001483215233,finite
+nc,nc_block_union_2025,Insurance commissioner,2023,3,14,675,0.02074074074074074,0.005338515979575752,finite
+nc,nc_block_union_2025,Insurance commissioner,2025,3,14,675,0.02074074074074074,0.005338515979575752,finite
+nc,nc_block_union_2025,Labor commissioner,2023,3,28,675,0.04148148148148148,0.008438257249496185,finite
+nc,nc_block_union_2025,Labor commissioner,2025,3,28,675,0.04148148148148148,0.008438257249496185,finite
+nc,nc_block_union_2025,Governor,2023,12,634,675,0.9392592592592592,0.011254272629134495,finite
+nc,nc_block_union_2025,Governor,2025,13,675,675,1.0,,unavailable_constant_indicator
+nc,nc_block_union_2025,Lieutenant governor,2023,4,9,675,0.013333333333333334,0.004826230806764835,finite
+nc,nc_block_union_2025,Lieutenant governor,2025,3,0,675,0.0,,unavailable_constant_indicator
+nc,nc_block_union_2025,Secretary of state,2023,4,4,675,0.005925925925925926,0.0029280299100964678,finite
+nc,nc_block_union_2025,Secretary of state,2025,3,0,675,0.0,,unavailable_constant_indicator
+nc,nc_block_union_2025,Public instruction superintendent,2023,4,3,675,0.0044444444444444444,0.002538419733125645,finite
+nc,nc_block_union_2025,Public instruction superintendent,2025,3,0,675,0.0,,unavailable_constant_indicator
+nc,nc_block_union_2025,Treasurer,2023,3,21,675,0.03111111111111111,0.007102637057991993,finite
+nc,nc_block_union_2025,Treasurer,2025,3,21,675,0.03111111111111111,0.007102637057991993,finite
+nc,nc_block_union_2025,Appeals court 12,2023,3,3,675,0.0044444444444444444,0.002538419733125645,finite
+nc,nc_block_union_2025,Appeals court 12,2025,3,3,675,0.0044444444444444444,0.002538419733125645,finite
+nc,nc_block_union_2025,Appeals court 14,2023,3,12,675,0.017777777777777778,0.004977684371858761,finite
+nc,nc_block_union_2025,Appeals court 14,2025,3,12,675,0.017777777777777778,0.004977684371858761,finite
+nc,nc_block_union_2025,Appeals court 15,2023,3,8,675,0.011851851851851851,0.004099485248711741,finite
+nc,nc_block_union_2025,Appeals court 15,2025,3,8,675,0.011851851851851851,0.004099485248711741,finite
+nc,nc_block_union_2025,Supreme Court 6,2023,4,28,675,0.04148148148148148,0.00850816720815459,finite
+nc,nc_block_union_2025,Supreme Court 6,2025,3,2,675,0.002962962962962963,0.0020754313402602874,finite
+tx,joint,President,2025,8,2,5560,0.00035971223021582735,0.0002537293996069853,finite
+tx,joint,US Senate,2025,8,0,5560,0.0,,unavailable_constant_indicator
+tx,joint,Criminal appeals 7,2025,8,0,5560,0.0,,unavailable_constant_indicator
+tx,joint,Criminal appeals 8,2025,8,22,5560,0.003956834532374101,0.0008370918679969505,finite
+tx,joint,Criminal appeals presiding,2025,8,1,5560,0.00017985611510791367,0.00017946470849619598,finite
+tx,joint,Railroad commissioner,2025,8,2,5560,0.00035971223021582735,0.0002537293996069853,finite
+tx,joint,Supreme Court 2,2025,8,1,5560,0.00017985611510791367,0.00017946470849619598,finite
+tx,joint,Supreme Court 4,2025,8,0,5560,0.0,,unavailable_constant_indicator
+tx,joint,Supreme Court 6,2025,8,1,5560,0.00017985611510791367,0.00017946470849619598,finite
+tx,tx_dispersed,President,2025,8,0,2780,0.0,,unavailable_constant_indicator
+tx,tx_dispersed,US Senate,2025,8,0,2780,0.0,,unavailable_constant_indicator
+tx,tx_dispersed,Criminal appeals 7,2025,8,0,2780,0.0,,unavailable_constant_indicator
+tx,tx_dispersed,Criminal appeals 8,2025,8,9,2780,0.003237410071942446,0.0010723481259993879,finite
+tx,tx_dispersed,Criminal appeals presiding,2025,8,1,2780,0.00035971223021582735,0.00035892941699239197,finite
+tx,tx_dispersed,Railroad commissioner,2025,8,2,2780,0.0007194244604316547,0.0005073006216985931,finite
+tx,tx_dispersed,Supreme Court 2,2025,8,1,2780,0.00035971223021582735,0.00035892941699239197,finite
+tx,tx_dispersed,Supreme Court 4,2025,8,0,2780,0.0,,unavailable_constant_indicator
+tx,tx_dispersed,Supreme Court 6,2025,8,1,2780,0.00035971223021582735,0.00035892941699239197,finite
+tx,tx_rebuild,President,2025,8,2,2780,0.0007194244604316547,0.0005073006216985931,finite
+tx,tx_rebuild,US Senate,2025,8,0,2780,0.0,,unavailable_constant_indicator
+tx,tx_rebuild,Criminal appeals 7,2025,8,0,2780,0.0,,unavailable_constant_indicator
+tx,tx_rebuild,Criminal appeals 8,2025,8,13,2780,0.004676258992805755,0.001286279225923485,finite
+tx,tx_rebuild,Criminal appeals presiding,2025,8,0,2780,0.0,,unavailable_constant_indicator
+tx,tx_rebuild,Railroad commissioner,2025,8,0,2780,0.0,,unavailable_constant_indicator
+tx,tx_rebuild,Supreme Court 2,2025,8,0,2780,0.0,,unavailable_constant_indicator
+tx,tx_rebuild,Supreme Court 4,2025,8,0,2780,0.0,,unavailable_constant_indicator
+tx,tx_rebuild,Supreme Court 6,2025,8,0,2780,0.0,,unavailable_constant_indicator

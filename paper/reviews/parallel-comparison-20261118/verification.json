@@ -1,0 +1,30 @@
+{
+  "input_hashes_checked": 8165,
+  "matched_primary_checkpoints": 6910,
+  "matched_full_election_checkpoints": 6910,
+  "independent_election_tallies": 70290,
+  "legacy_election_score_cells_reproduced": 52290,
+  "direct_radial_identities_checked": 6983,
+  "prewarmup_election_assignments_verified": 70,
+  "prewarmup_graph_warnings": [
+    {
+      "dataset": "outputs/analysis/rdh_rebuild_2026-11-02/tx_candidate/tx_candidate.gpkg",
+      "message": "Found overlaps among the given polygons. Indices of overlaps: {(3633, 4872), (6297, 6355), (6298, 6355), (6297, 6358), (4872, 9271), (1320, 6299), (1320, 6298), (1317, 6298)}"
+    },
+    {
+      "dataset": "outputs/analysis/convergence_campaign_2026-11-02/texas_independent_dispersed/tx_dispersed_starts.gpkg",
+      "message": "Found overlaps among the given polygons. Indices of overlaps: {(3633, 4872), (6297, 6355), (6298, 6355), (6297, 6358), (4872, 9271), (1320, 6299), (1320, 6298), (1317, 6298)}"
+    }
+  ],
+  "unavailable_distance_diagnostics": 0,
+  "unavailable_election_diagnostics": 0,
+  "sampler_sha256": "592903bb4604e1fc7deb8e9a7e2adb36790ac2ceeca82681ff5d1a675865da2c",
+  "checkpoint_code_sha256": "2341131a7353e25cc2c1696546ea71b6eb702962c01136e90e312933496e1102",
+  "research_ready": false,
+  "report_export_files_reproduced_byte_for_byte": 14,
+  "tests_run": 156,
+  "test_failures": 0,
+  "test_skips": 0,
+  "report_reproduction_scope": "Copied score inputs and the same report exporter on this runtime; not a clean-room data rebuild or Linux execution.",
+  "python_validation": "AST parsing; no Python formatter or linter configured."
+}

@@ -1,0 +1,15 @@
+{
+  "source_files": {
+    "outputs/analysis/geographic_continuation_20261118/production/nc_025000/geography/geographic_diagnostics.json": "847db2fece1444b949a9dd3999ae737b73fcc2514b9cf362cc3a18a787c0f8af",
+    "outputs/analysis/geographic_continuation_20261118/production/nc_025000/geography/geographic_scores.csv": "3bcf8ea45af903dfb33b559177bc728511374b5c23754852697665cf5b220022",
+    "outputs/analysis/geographic_continuation_20261118/production/nc_025000/geography/window_stability.csv": "4de54e764d74f93a2ba4c7bbad87e2b25d1a288fe6810f067cd39cf5912506b7",
+    "outputs/analysis/geographic_continuation_20261118/production/nc_025000/geography/geographic_traces.png": "5099e20f806ddf9ab2942f529273ea730af6a52378dec5309a33664ef2f3c81e",
+    "outputs/analysis/geographic_continuation_20261118/production/nc_025000/ess_changes.json": "39d69640921273099ac833e48b2d891851a793779cb06f71319565cbce2d42c2",
+    "outputs/analysis/geographic_backups_20261118/wave_000002/verification.json": "0276023197c6f6ac728a00bc2eaa96a7f922ac21efe4cffc2339f32a36a335a0"
+  },
+  "primary_audit_sha256": "fe9c0e33065fe5cc4106e3522764b94268cc4335f0abf7404a7d305a5c8593f7",
+  "controller_commit": "d5cf9f3df14a522f3a2b9f5733c511e8166b0dfc",
+  "backup_commit": "005a5663e55cdc53c987a3da6c00a188ac4b9118",
+  "geographic_screens_pass": false,
+  "frozen_results_changed": false
+}
