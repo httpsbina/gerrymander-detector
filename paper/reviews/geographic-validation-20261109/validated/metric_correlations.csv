@@ -1,0 +1,7 @@
+state,first,second,spearman
+nc,silhouette,normalized_rms_radius,-0.7352903824181339
+nc,silhouette,mean_polsby_popper,0.38298057776712086
+nc,normalized_rms_radius,mean_polsby_popper,-0.3797265647028857
+tx,silhouette,normalized_rms_radius,-0.37723461847520345
+tx,silhouette,mean_polsby_popper,0.2713007411677725
+tx,normalized_rms_radius,mean_polsby_popper,-0.17259323402036447
