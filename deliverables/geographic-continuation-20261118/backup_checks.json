@@ -1,0 +1,11 @@
+{
+  "tests_run": 171,
+  "failures": 0,
+  "skips": 0,
+  "checks": [
+    "archive verification in member order",
+    "corrupted archive content rejected"
+  ],
+  "backup_code_sha256": "9c6602041ac6834bf000d96c8ddc8578ad49205efbbb7b8672f277a1b45112d8",
+  "archive_upload_execution": "Pending first completed production audit; no completed backup claimed."
+}
