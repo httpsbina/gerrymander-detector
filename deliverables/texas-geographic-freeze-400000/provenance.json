@@ -1,0 +1,234 @@
+{
+  "sampling_launch": {
+    "pid": 80597,
+    "command": [
+      "caffeinate",
+      "-i",
+      "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/.venv/science/bin/python",
+      "-u",
+      "-m",
+      "paper.geographic_continue",
+      "--source-root",
+      "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector",
+      "--manifest",
+      "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/geographic_continuation_20261118/manifest.json",
+      "--measurement-cache",
+      "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-paper-cleanup/outputs/analysis/geographic_measurement_20261109",
+      "--output-dir",
+      "/Users/httpsbina/Developer/01_Projects/Research/PEAK/httpsbina/gerrymander-detector/outputs/analysis/geographic_continuation_20261118/production"
+    ],
+    "commit": "d5cf9f3df14a522f3a2b9f5733c511e8166b0dfc"
+  },
+  "source_checkout_revision": "63eb69020b9c2f156d1f139630806edd7dccdfa4",
+  "paper_checkout_revision": "997122d267b7335f5b4540b81c69a7fac2d9dca8",
+  "paper_source_sha256": {
+    "paper/geographic_continue.py": "fdcd017fb8a8429cff1d61472827ae987451dbaa1145964dc45b4525d3704d67",
+    "paper/geographic_geometry.py": "c802e30bbbd93ffd37ebb82d1e206eed2c54142f7caf053e24c956d3aca451c4",
+    "paper/geographic_refinement.py": "289dc18200f79ffc6fff73d47b0c6575ea683cef4d103244d9722696fddb7d46",
+    "paper/geographic_clustering.py": "3e3dc48dbfb3131f55f6bbd4a21628eac019c9f6a58c0d768f5238be3e702934",
+    "paper/parallel_analysis.py": "5b5a885ceb14c2f009db127f7dd1a04c47c9f8ef7f5edb8cea43d31cabdaef9d",
+    "paper/compactness_mechanisms.py": "0f5dc87b2036a3558a9e2c4890fdfe64a5e7c54959b8d004d0b8cff3cdd16fc7",
+    "paper/review_precision.py": "66a48301317726f385dfff7d402f342277ed2d8d4fdf550888b95fdc26d42d47",
+    "docs/geographic_continuation.md": "dfed9a13e6825d0c83370303840ee59b6047cf9716665383c1b3b27b2773c9db",
+    "outputs/analysis/geographic_measurement_20261109/inventory.json": "820461b02c3c69fb1eac2da5adc9dcdcd7363d9630c7a3e8d24ca9ad3223da51",
+    "paper/reviews/parallel-comparison-20261118/paired_presidential.csv": "eee072ca457c560869150b9161106657e010fcc1011c309826bfc45bafd99b8a",
+    "paper/reviews/compactness-mechanisms-20261109/scores.csv": "52f5a752fdbe4852005a2f638a4e04b3489e08b133dbb8eb79039348decf0738"
+  },
+  "runtime": {
+    "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+    "packages": {
+      "arviz": "0.17.1",
+      "certifi": "2026.10.23",
+      "contourpy": "1.3.3",
+      "cycler": "0.12.1",
+      "fonttools": "4.68.0",
+      "geopandas": "1.1.2",
+      "gerrychain": "0.3.2",
+      "h5netcdf": "1.8.2",
+      "kiwisolver": "1.5.1",
+      "matplotlib": "3.9.4",
+      "networkx": "3.4.2",
+      "numpy": "1.26.4",
+      "packaging": "26.3",
+      "pandas": "2.2.3",
+      "pillow": "13.0.0",
+      "pyogrio": "0.10.0",
+      "pyparsing": "3.3.3",
+      "pyproj": "3.6.1",
+      "python-dateutil": "4.0.0",
+      "pytz": "2026.6",
+      "scipy": "1.12.0",
+      "setuptools": "84.2.1",
+      "shapely": "2.0.7",
+      "typing-extensions": "4.16.0",
+      "tzdata": "2026.6",
+      "xarray": "2026.9.0",
+      "xarray-einstats": "0.9.1"
+    }
+  },
+  "analysis_environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONHASHSEED": "0",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "configured_rules": {
+    "metrics": [
+      "silhouette",
+      "normalized_rms_radius",
+      "mean_polsby_popper",
+      "mean_distance_km",
+      "sd_distance_km",
+      "distance_cv",
+      "inverse_distance_cv",
+      "mean_district_cv",
+      "internal_boundary_km",
+      "common_cut_edges",
+      "density_weighted_boundary",
+      "area_normalized_rms_radius",
+      "area_weighted_polsby_popper",
+      "median_polsby_popper"
+    ],
+    "rhat_below": 1.01,
+    "ess_minimum": "max(400,100*chains)",
+    "warmup": 500,
+    "checkpoint_interval": 100,
+    "audit_interval": 5000,
+    "workers": 8,
+    "controller_sha256": "fdcd017fb8a8429cff1d61472827ae987451dbaa1145964dc45b4525d3704d67",
+    "frozen_results_changed": false
+  },
+  "chains": {
+    "tx_rebuild": {
+      "seeds": [
+        1117,
+        2227,
+        3331,
+        4441
+      ],
+      "states_per_chain": 400000,
+      "warmup": 500,
+      "platform_transitions": [
+        {
+          "path": "outputs/analysis/geographic_continuation_20261118/verification/tx_rebuild/transition_receipt.json",
+          "sha256": "4f307026311ba576a958ab9b0190000a1aa7e5dc5f7bab3801bd02a18e116249"
+        }
+      ],
+      "terminal_checkpoints": [
+        {
+          "path": "outputs/analysis/geographic_continuation_20261118/production/tx_400000/primary/snapshot/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed1117_next400000.pkl",
+          "sha256": "c491eb93b3f2044293a4d7b5ad4745c40c5796324f41d0c4020d4d5f0387e95f"
+        },
+        {
+          "path": "outputs/analysis/geographic_continuation_20261118/production/tx_400000/primary/snapshot/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed2227_next400000.pkl",
+          "sha256": "61fb31e14a2541a947a27078b991949c3f9d5349144b5e7534b07e79748ee480"
+        },
+        {
+          "path": "outputs/analysis/geographic_continuation_20261118/production/tx_400000/primary/snapshot/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed3331_next400000.pkl",
+          "sha256": "8474e9d095a480595caed1be9129e206c02353cfd9ba03d81830ed71fdfa27f6"
+        },
+        {
+          "path": "outputs/analysis/geographic_continuation_20261118/production/tx_400000/primary/snapshot/tx_rebuild/checkpoints/tx_rebuild_20261102_checkpoint_eps0p001_seed4441_next400000.pkl",
+          "sha256": "0d6c7013868b06d9450b4f02178c502abe4e0377b5f54e1f03d0393347d04fa7"
+        }
+      ]
+    },
+    "tx_dispersed": {
+      "seeds": [
+        10007,
+        10009,
+        10037,
+        10039
+      ],
+      "states_per_chain": 400000,
+      "warmup": 500,
+      "platform_transitions": [
+        {
+          "path": "outputs/analysis/geographic_continuation_20261118/verification/tx_dispersed/transition_receipt.json",
+          "sha256": "bec71f44e9fcd9dd253b4e921491247bd09bb531193075bae8647691f098539e"
+        }
+      ],
+      "terminal_checkpoints": [
+        {
+          "path": "outputs/analysis/geographic_continuation_20261118/production/tx_400000/primary/snapshot/tx_dispersed/checkpoints/tx_dispersed_20261102_checkpoint_eps0p001_seed10007_next400000.pkl",
+          "sha256": "eaf3d1c7f05e7adb76a8e277b79597d22313a326caa1396e9443694262a81d48"
+        },
+        {
+          "path": "outputs/analysis/geographic_continuation_20261118/production/tx_400000/primary/snapshot/tx_dispersed/checkpoints/tx_dispersed_20261102_checkpoint_eps0p001_seed10009_next400000.pkl",
+          "sha256": "8dc559c91c62829ddf800dfc912226c2cf9853516a39755813ca6cbdae52d609"
+        },
+        {
+          "path": "outputs/analysis/geographic_continuation_20261118/production/tx_400000/primary/snapshot/tx_dispersed/checkpoints/tx_dispersed_20261102_checkpoint_eps0p001_seed10037_next400000.pkl",
+          "sha256": "041d3fb42e20209b24ca00c809858dba3400678a5771da2aaa66db06515704c7"
+        },
+        {
+          "path": "outputs/analysis/geographic_continuation_20261118/production/tx_400000/primary/snapshot/tx_dispersed/checkpoints/tx_dispersed_20261102_checkpoint_eps0p001_seed10039_next400000.pkl",
+          "sha256": "6795a6a7cfe7fa7e5c04db22a6df8c198ea091bff2a23a7b3fd9d0f9788bb749"
+        }
+      ]
+    }
+  },
+  "backup": {
+    "receipt": "outputs/analysis/geographic_backups_20261118/wave_000330/verification.json",
+    "archive_path": "outputs/analysis/geographic_backups_20261118/wave_000330/geographic-wave_000330.tar.gz",
+    "archive": "geographic-wave_000330.tar.gz",
+    "sha256": "6f11d7af5eb9dce67a5ec22e76b3394ede2beca631c6187c5c220ef39c3e823f",
+    "files_verified": 42817,
+    "remote_digest_matches": true,
+    "isDraft": true,
+    "source_manifest_sha256": "8293aca370e59a0a1bd4b58612ea4e644ecae88ea4635f1bda2b6354113bc8ea"
+  },
+  "commands": {
+    "primary_figures": [
+      ".venv/science/bin/python",
+      "-m",
+      "src.analysis.plot_rebuild_campaign",
+      "--manifest",
+      "outputs/analysis/geographic_continuation_20261118/production/tx_400000/primary/snapshot/manifest.json",
+      "--output-dir",
+      "outputs/analysis/texas_paper_freeze_400000/primary_figures"
+    ],
+    "freeze_record": [
+      ".venv/science/bin/python",
+      "-m",
+      "src.analysis.freeze_baseline",
+      "--state",
+      "texas",
+      "--manifest",
+      "outputs/analysis/geographic_continuation_20261118/production/tx_400000/primary/snapshot/manifest.json",
+      "--audit-dir",
+      "outputs/analysis/geographic_continuation_20261118/production/tx_400000/primary/audit",
+      "--figures-dir",
+      "outputs/analysis/texas_paper_freeze_400000/primary_figures",
+      "--output-dir",
+      "deliverables/texas-geographic-freeze-400000"
+    ],
+    "paper_export_preflight": [
+      ".venv/science/bin/python",
+      "-m",
+      "paper.export",
+      "--registry",
+      "outputs/analysis/texas_paper_freeze_400000/candidate_registry.json",
+      "--build-dir",
+      "outputs/analysis/texas_paper_freeze_400000/paper_reproduction",
+      "--output-dir",
+      "outputs/analysis/texas_paper_freeze_400000/paper_export"
+    ],
+    "geographic_reproduction": [
+      ".venv/science/bin/python",
+      "-B",
+      "-P",
+      "-c",
+      "import paper, runpy, sys; sys.path.insert(0, \".\"); runpy.run_path(\"deliverables/texas-geographic-freeze-400000/verify_geographic.py\", run_name=\"__main__\")",
+      "--paper-source",
+      "../gerrymander-paper-cleanup",
+      "--milestone",
+      "outputs/analysis/geographic_continuation_20261118/production/tx_400000",
+      "--wave-manifest",
+      "outputs/analysis/geographic_continuation_20261118/production/manifest_000330.json",
+      "--output-dir",
+      "outputs/analysis/texas_paper_freeze_400000/geographic_reproduction"
+    ]
+  }
+}

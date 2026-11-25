@@ -1,0 +1,22 @@
+{
+  "research_ready": false,
+  "manifest_sha256": "deab6d52fa3370ac6a745111123d578db07e01a27b01b1fbb7cf6b9008b4e828",
+  "figures": [
+    {
+      "path": "deliverables/texas-geographic-freeze-400000/primary_figures/tx_rebuild_trace.png",
+      "sha256": "7e23ed52f731366ecab9a974dc31ed3ce8e91b64495d14d1f629285c42b3482e"
+    },
+    {
+      "path": "deliverables/texas-geographic-freeze-400000/primary_figures/tx_rebuild_rank.png",
+      "sha256": "d9fe357a8da7d2826230197f3c9f1b2cbafca2eb496fffc912fa27483ea1756c"
+    },
+    {
+      "path": "deliverables/texas-geographic-freeze-400000/primary_figures/tx_dispersed_trace.png",
+      "sha256": "ff4d0ff11c250a95d1e1e96d26ef9fb543f28dc8ab4ef1a9ad4d9d3725492f04"
+    },
+    {
+      "path": "deliverables/texas-geographic-freeze-400000/primary_figures/tx_dispersed_rank.png",
+      "sha256": "ceab65b6ffcc1cc248636b6a5c7c9dcff6971e33b60e8d73213024c3e60c6a19"
+    }
+  ]
+}
